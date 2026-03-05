@@ -78,3 +78,26 @@ BlockEvents.modification(e=>{
 	})
 })
 
+//理念方块
+// priority: 10
+let IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty');
+let BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
+
+StartupEvents.registry('block', event => {
+    // 获取方块总数，用于确定 variant 范围
+    let totalBlocks = 0;
+    BuiltInRegistries.BLOCK.entrySet().forEach(() => totalBlocks++);
+
+    // 创建整数属性 variant，范围 0 ~ totalBlocks（包含）
+    let variantProperty = IntegerProperty.create('variant', 0, totalBlocks);
+
+    let builder = event.create('miehex:idea_block',"cardinal")
+        .soundType("amethyst")
+        .hardness(1.0)
+        .tagBlock('mineable/pickaxe')
+        .property(variantProperty)
+		.defaultCutout()
+        
+
+   
+    });

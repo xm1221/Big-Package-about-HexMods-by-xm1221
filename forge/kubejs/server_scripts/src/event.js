@@ -259,10 +259,39 @@ ItemEvents.entityInteracted(event => {
         let before = item.count;
         item.count -= 15;
 
+
     // 音效与粒子
     let level = target.level;
     level.playSound(null, target.x, target.y, target.z,
         'minecraft:entity.zombie.converted_to_drowned', 'blocks', 1.0, 1.0);
     level.spawnParticles('minecraft:smoke', true,
         target.x, target.y + 1, target.z, 0, 0.1, 0, 20, 0.1);
+});
+
+//理念方块
+let mapping = null;
+
+function loadMapping() {
+    if (mapping) return mapping;
+    try {
+        mapping = JsonIO.read('kubejs/config/idea_block_mapping.json') || { default: 0 };
+    } catch (e) {
+        mapping = { default: 0 };
+    }
+    return mapping;
+}
+
+BlockEvents.rightClicked('miehex:idea_block', event => {
+    if (event.hand !== 'MAIN_HAND') return;
+    if (event.item.isEmpty()) return;
+
+    let handItemId = event.item.id;
+    if (!Block.getBlock(handItemId)) return;
+
+    let mapping = loadMapping();
+    let index = mapping[handItemId];
+    if (index === undefined) return;
+
+    event.block.set('miehex:idea_block', { variant: String(index) });
+    event.cancel();
 });

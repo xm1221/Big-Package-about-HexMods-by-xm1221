@@ -1,7 +1,0 @@
-{
-  "name": "收集意识配方",
-  "icon": "miehex:media_netherite",
-  "description": "把散落的意识能量聚集起来，就可以创造出奇异的方块，甚至从纯粹的意识中提取出实际的物质，这近乎于奇迹。",
-  "sortnum": 1,
-  "parent": "hexcasting:items"
-}

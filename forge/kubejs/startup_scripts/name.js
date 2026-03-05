@@ -11,6 +11,10 @@ StartupEvents.registry('hexcasting:action', e => {
         let pattern = HexPattern.fromAngles(seq, dir)
         e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
     }
+    //开发者之策略
+    registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
+    //开发者之策略，二
+    registerPatternWrap("qqqaq",HexDir.NORTH_EAST,"xmbug")
     //捐献
     registerPatternWrap('dadawaawad',HexDir.NORTH_EAST,'donate',false,null,'miehex')
     
@@ -66,6 +70,18 @@ StartupEvents.registry('hexcasting:action', e => {
 
     //提取精魄
     registerPatternWrap("wqwqwqwqwqwawwaqqqqqddewqa",HexDir.EAST,"create_symbols")
+
+    //构筑方块，理念型
+    registerPatternWrap('wqwawqwqwqwqwqaweeeee',HexDir.EAST,"create_block/idea")
+
+    //探古寻迹
+    registerPatternWrap('edeeeeeqdwdwww',HexDir.EAST,"locate")
+
+    //分海
+//    registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
+
+    //方块理念化
+    registerPatternWrap("wqwawqwqwqwqwqawew",HexDir.EAST,"idealized_block")
 
      
 

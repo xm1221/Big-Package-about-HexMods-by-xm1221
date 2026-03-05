@@ -7,7 +7,6 @@ let NearestAttackableTargetGoal = Java.loadClass('net.minecraft.world.entity.ai.
 let TicketType = Java.loadClass('net.minecraft.server.level.TicketType')
 let ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel')
 let Level = Java.loadClass('net.minecraft.world.level.Level')
-let LazyOptional = Java.loadClass('net.minecraftforge.common.util.LazyOptional')
 let SoundEvents = Java.loadClass('net.minecraft.sounds.SoundEvents')
 let SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
 let Mob = Java.loadClass('net.minecraft.world.entity.Mob')
@@ -44,9 +43,9 @@ let MeleeAttackGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.MeleeAt
 let ContainerLevelAccess = Java.loadClass('net.minecraft.world.inventory.ContainerLevelAccess')
 let CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 let DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource')
+let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
+let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation');
 let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
-let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 let BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity')
 let BlockEntityType = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntityType')
 let EntityTypeTags = Java.loadClass('net.minecraft.tags.EntityTypeTags')
@@ -55,6 +54,17 @@ let AABB = Java.loadClass('net.minecraft.world.phys.AABB')
 let TransientCraftingContainer = Java.loadClass('net.minecraft.world.inventory.TransientCraftingContainer')
 let BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 let TagKey = Java.loadClass('net.minecraft.tags.TagKey')
+let BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
+let BooleanProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.BooleanProperty')
+let ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
+let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
+let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
+let Holder = Java.loadClass("net.minecraft.core.Holder")
+
+//息壤相关
+//let WR = Java.loadClass('com.worldreloader.WorldReloader')
+
+
 
 //Vec3
 let Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3')
@@ -71,8 +81,6 @@ let BrainsweepRecipe = Java.loadClass('at.petrak.hexcasting.common.recipe.Brains
 let HexRecipeStuffRegistry = Java.loadClass('at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry')
 let ItemSpellbook = Java.loadClass('at.petrak.hexcasting.common.items.storage.ItemSpellbook')
 let AccessorWrappers = Java.loadClass('at.petrak.hexcasting.ktxt.AccessorWrappers')
-let HexCapabilities = Java.loadClass('at.petrak.hexcasting.forge.cap.HexCapabilities')
-let CapStaticMediaHolder = Java.loadClass('at.petrak.hexcasting.forge.cap.adimpl.CapStaticMediaHolder')
 let IXplatAbstractions = Java.loadClass('at.petrak.hexcasting.xplat.IXplatAbstractions')
 let HexEvalSounds = Java.loadClass('at.petrak.hexcasting.common.lib.hex.HexEvalSounds')
 
@@ -178,6 +186,21 @@ let MoteIota = Java.loadClass('ram.talia.hexal.api.casting.iota.MoteIota')
 // ram.talia.hexal.api.mediafieditems 相关
 let ItemRecord = Java.loadClass('ram.talia.hexal.api.mediafieditems.ItemRecord')
 let MediafiedItemManager = Java.loadClass('ram.talia.hexal.api.mediafieditems.MediafiedItemManager')
+
+//wisp
+let BaseCastingWisp = Java.loadClass('ram.talia.hexal.common.entities.BaseCastingWisp');
+let TickingWisp = Java.loadClass('ram.talia.hexal.common.entities.TickingWisp');
+let SerialisedIotaList = Java.loadClass('ram.talia.hexal.api.nbt.SerialisedIotaList');
+let  WispCastingManager = Java.loadClass('ram.talia.hexal.api.casting.wisp.WispCastingManager');
+let ProjectileWisp = Java.loadClass('ram.talia.hexal.common.entities.ProjectileWisp');
+let MediaConstants = Java.loadClass('at.petrak.hexcasting.api.misc.MediaConstants');
+
+//fakeplayer
+let GameProfile = Java.loadClass('com.mojang.authlib.GameProfile');
+let UUID = Java.loadClass('java.util.UUID');
+let IXplatAbstraction = Java.loadClass('ram.talia.hexal.xplat.IXplatAbstractions')
+let FakePlayer = Java.loadClass('net.fabricmc.fabric.api.entity.FakePlayer');
+
 
 // ram.talia.moreiotas.common.lib.hex 相关
 let MoreIotasActions = Java.loadClass('ram.talia.moreiotas.common.lib.hex.MoreIotasActions')

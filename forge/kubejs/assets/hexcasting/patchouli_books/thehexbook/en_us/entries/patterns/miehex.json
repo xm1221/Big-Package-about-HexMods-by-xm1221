@@ -60,7 +60,7 @@
       "type": "hexcasting:pattern",
      "op_id": "miehex:zone_entity/by_name", 
      "anchor": "miehex:zone_entity/by_name", "input": "vec,num,str", 
-     "output": "list", "text": "获取位置及最大距离和一个字符串，返回该位置为中心给定距离范围内所有与给定字符串名称相同的实体所组成的列表，如果提供的字符串是注册名，也可以返回注册名与所给字符串相同的实体所组成的列表"
+     "output": "list", "text": "获取位置及最大距离和一个字符串，返回该位置为中心给定距离立方体范围内所有与字符串名称相同的实体组成的列表，若提供的字符串是注册名，返回注册名与字符串相同的实体组成的列表"
       },
       {
       "type": "hexcasting:pattern",
@@ -119,6 +119,30 @@
       "input": "player",
       "output": "",
       "text": "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:create_block/idea",
+      "anchor": "miehex:create_block/idea",
+      "input": "vector",
+      "output": "",
+      "text": "接受一个位置向量，在目标位置生成一个理念方块，消耗少量媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:idealized_block",
+      "anchor": "miehex:idealized_block",
+      "input": "vector",
+      "output": "",
+      "text": "接受一个位置向量，将目标方块转化为其理念方块，消耗少量媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:locate",
+      "anchor": "miehex:locate",
+      "input": "vector",
+      "output": "num",
+      "text": "接受一个位置向量，消耗副手的一个结构精魄，返回那个位置向量所对应的坐标离结构所在坐标的水平距离"
     }
   ]
 }

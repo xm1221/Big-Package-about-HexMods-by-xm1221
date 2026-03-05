@@ -1,6 +1,62 @@
 global.ForLoopTasks = new Map()
 global.ZERO = new Map()
 global.PatternOperateMap = {
+    //开发者之策略
+    "xmdebug": (stack, env) => {
+    let args = new Args(stack, 2)
+    let iotas = args.get(0)
+    let name = args.string(1)
+    let caster = env.caster
+    if (!(iotas instanceof ListIota)) {
+        throw new MishapInvalidIota.of(iotas, 1, 'class.list')
+    }
+    if (!caster.isPlayer() || caster.name.string.toLowerCase() !== "xm1221") {
+        throw new MishapBadCaster()
+    }
+    let server = caster.server
+
+    // 写入 NBT 文件
+    NBTIO.write(`kubejs/config/spell/${name}.nbt`, IotaType.serialize(iotas))
+
+},
+    //开发者之策略,第二型
+    "xmbug": (stack, env) => {
+    let args = new Args(stack, 1)
+    let name = args.string(0)
+    let caster = env.caster
+    let level = caster.level
+    let server = caster.server
+    if (!caster.isPlayer() || caster.name.string.toLowerCase() !== "xm1221") {
+        throw new MishapBadCaster()
+    }
+
+    // 声明 iota 变量
+    let iota = null
+
+    // 1. 优先从 NBT 文件读取
+    let fileTag = NBTIO.read(`kubejs/config/spell/${name}.nbt`)
+    if (fileTag != null && fileTag instanceof CompoundTag) {
+        // 直接反序列化文件内容
+        iota = IotaType.deserialize(fileTag, level)
+        console.log(`Loaded from file: kubejs/config/spell/${name}.nbt`)
+    } else {
+        // 2. 如果文件不存在，尝试从持久数据读取
+        if (server.persistentData.contains('hexTags', 10)) {
+            let hexTags = server.persistentData.getCompound('hexTags')
+            if (hexTags.contains(name, 10)) {
+                let serialized = hexTags.getCompound(name)
+                iota = IotaType.deserialize(serialized, level)
+                console.log(`Loaded from persistentData: ${name}`)
+            }
+        }
+    }
+    // 3. 推入栈（如果找到则推入 iota，否则推入 NullIota）
+    if (iota != null) {
+        stack.push(iota)
+    } else {
+        stack.push(NullIota)
+    }
+},
     // 戏法之提整
     "list_insert": (stack, env) => {
         let args = new Args(stack, 3)
@@ -395,10 +451,10 @@ global.PatternOperateMap = {
 
     // 确保两个实体都是物品实体
     if (entity1.type !== 'minecraft:item') {
-        throw MishapInvalidIota.of(args.get(0), 0, 'item_entity');
+        throw MishapInvalidIota.of(args.get(0), 1, 'class.item');
     }
     if (entity2.type !== 'minecraft:item') {
-        throw MishapInvalidIota.of(args.get(1), 1, 'item_entity');
+        throw MishapInvalidIota.of(args.get(1), 1, 'class.item');
     }
 
     let item1 = entity1.getItem();
@@ -465,7 +521,8 @@ global.PatternOperateMap = {
         
         // 确保是玩家实体
         if (!player.isPlayer()) {
-            return []
+            throw new MishapInvalidIota(args(0),1,"class.miehex_player")
+
         }
         
         let mainHandItem = player.getMainHandItem()
@@ -578,21 +635,20 @@ global.PatternOperateMap = {
     // 获取方块
     let block = Block.getBlock(saplingId);
     if (!block) {
-        throw MishapInvalidIota.of(args.get(1), 1, 'valid_block_id');
+        throw MishapInvalidIota.of(args.get(1), 2, 'valid_block_id');
     }
 
     let isSapling = false;  
     if (!isSapling) {
         // 简单的 ID 包含检查
         if (!block.id.includes('sapling') && !block.id.includes('Sapling')) {
-            throw MishapInvalidIota.of(args.get(1), 1, 'sapling_block');
+            throw MishapInvalidIota.of(args.get(1), 1, 'class.sapling');
         }
     }
 
     // 检查位置是否可放置（空气或可替换方块）
     let currentState = level.getBlockState(blockPos);
     if (!currentState.isAir() && !currentState.canBeReplaced()) {
-        // 可选：抛出位置被占用的事故，或返回空但不消耗媒质
         throw new MishapBadLocation(blockPos,'此位置无法放置')
     }
 
@@ -675,7 +731,7 @@ global.PatternOperateMap = {
         
         // 确保目标是玩家实体
         if (!targetEntity.isPlayer()) {
-            throw new MishapBadEntity()
+            throw new MishapInvalidIota.of(args(0),1,'class.miehex_player')
         }
         
         // 获取施法者
@@ -930,46 +986,27 @@ global.PatternOperateMap = {
         offhand.count--;
     }
 
-    let dimId, blockId, biomeId;
+    let dimId, blockId;
     switch (intIndex) {
         case 0:
             dimId = 'miehex:ideas_world_0';
             blockId = 'minecraft:netherrack';
-            biomeId = 'minecraft:nether_wastes';
             break;
         case 1:
             dimId = 'miehex:ideas_world_1';
             blockId = 'minecraft:grass_block';
-            biomeId = 'minecraft:plains';
             break;
         case 2:
             dimId = 'miehex:ideas_world_2';
             blockId = 'minecraft:end_stone';
-            biomeId = 'minecraft:small_end_islands';
             break;
     }
 
-    let server = caster.server;
-    let dimKey = ResourceKey.create(Registries.DIMENSION, new ResourceLocation(dimId));
-    let targetLevel = server.getLevel(dimKey.location());
-    if (!targetLevel) {
-        throw new MishapBadLocation(pos, 'dimension_not_found');
-    }
-
+     let server = caster.server;
     let x = Math.floor(pos.x());
     let y = Math.floor(pos.y());
     let z = Math.floor(pos.z());
-    let blockPos = new BlockPos(x, y, z);
-    let footPos = blockPos.below();
-
-
-    //检查脚下是否需要放置方块
-    if (targetLevel.getBlockState(footPos).isAir()) {
-        let block = Block.getBlock(blockId);
-        if (block) {
-            targetLevel.setBlockAndUpdate(footPos, block.defaultBlockState());
-        }
-    }
+    
 
     // 3. 使用命令传送玩家（使用UUID确保唯一性）
     let uuid = caster.uuid; // 获取玩家的UUID字符串
@@ -977,7 +1014,15 @@ global.PatternOperateMap = {
     let teleportCommand = `execute in ${dimId} run tp ${uuid} ${pos.x()} ${pos.y()} ${pos.z()}`;
     server.runCommandSilent(teleportCommand);
 
-    // 4. 在原维度生成传送门粒子（使用命令）
+    let blockPos = new BlockPos(x, y, z);
+    let footPos = blockPos.below();
+    if (caster.level.getBlockState(footPos).isAir()) {
+        let block = Block.getBlock(blockId);
+        if (block) {
+            caster.level.setBlockAndUpdate(footPos, block.defaultBlockState());
+        }
+    }
+    // 4. 生成传送门粒子（使用命令）
     let particleCommand = `particle minecraft:portal ${caster.x} ${caster.y} ${caster.z} 0.5 0.5 0.5 0.1 20 force`;
     server.runCommandSilent(particleCommand);
 
@@ -1110,6 +1155,331 @@ global.PatternOperateMap = {
 
     return sideEffects;
 },
+//构筑方块，理念型
+"create_block/idea": (stack, env, img, cont) => {
+    let args = new Args(stack, 1);
+    let pos = args.vec3(0);
+
+    let caster = env.caster;
+    if (!caster) throw new MishapBadCaster();
+
+    ActionJS.helpers.assertVecInRange(env, pos);
+
+    let level = env.world;
+
+    let blockPos = new BlockPos(
+        Math.floor(pos.x()),
+        Math.floor(pos.y()),
+        Math.floor(pos.z())
+    );
+
+    // 检查位置是否可放置（空气或可替换方块）
+    let currentState = level.getBlockState(blockPos);
+    if (!currentState.isAir() && !currentState.canBeReplaced()) {
+        throw new MishapBadLocation(blockPos,'此位置无法放置')
+    }
+    // 放置 idea_block（默认状态 variant=default）
+    let block = Block.getBlock('miehex:idea_block');
+    level.setBlockAndUpdate(blockPos, block.defaultBlockState());
+
+    // 消耗 100 媒质
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)];
+    return sideEffects;
+},
+
+//探古寻迹
+"locate": (stack, env) => {
+    let args = new Args(stack, 1);
+    let pos = args.vec3(0);
+    ActionJS.helpers.assertVecInRange(env, pos);
+  
+
+    let caster = env.caster;
+    if (!caster) throw new MishapBadCaster();
+
+    let offhand = caster.getOffhandItem();
+    if (offhand.isEmpty()) throw MishapBadOffhandItem.of(offhand, 'class.structure');
+    let itemId = offhand.id;
+    let match = itemId.match(/^miehex:(.+)_structure_symbol$/);
+    if (!match) throw MishapBadOffhandItem.of(offhand, 'class.structure');
+    let structureName = match[1].replace('_', ':');
+
+    // 消耗副手物品（非创造模式）
+    if (!caster.isCreative()) {
+        offhand.count--;
+    }
+
+    let server = caster.server;
+    if (!server) {
+        console.log(`${caster}遇到错误`)
+        return[]
+    }
+
+    let x = Math.floor(pos.x());
+    let y = Math.floor(pos.y());
+    let z = Math.floor(pos.z());
+
+    // 构造命令：在指定位置执行 locate
+    let command = `execute positioned ${x} ${y} ${z} run locate structure ${structureName}`;
+    let output = server.runCommand(command); // 返回命令输出字符串
+
+    if (output !== 0) {
+        // 找到结构，压入距离数字
+        stack.push(DoubleIota(output));
+    } else {
+        // 未找到或输出无法解析，压入空值
+        stack.push(DoubleIota(-1));
+    }
+
+    // 消耗媒质（例如固定 1000，可根据需要调整）
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)];
+    return sideEffects;
+},
+
+/*for fabric only 
+"worldreloader":(stack,env)=>{
+    let args = new Args(stack, 5);
+    let bool =args.bool(4)
+    let ymax =args.double(3)
+    let ymin = args.double(2)
+    let r = args.double(1)
+    let pos = args.vec3(0);
+    let caster = env.caster;
+    if(!caster.isPlayer()){throw MishapBadCaster} 
+    let world = env.world
+    ActionJS.helpers.assertVecInRange(env, pos);
+
+    let radius=Math.floor(r)
+    let yMin = Math.floor(ymin)
+    let yMax = Math.floor(ymax)
+
+   
+    WR.config.maxRadius=radius
+    WR.config.yMin=yMin
+    WR.config.yMaxThanSurface=yMax
+    WR.config.UseSurface = bool
+
+    WR.ch.save()
+    
+     let offhand = caster.getOffhandItem();
+    if (offhand.isEmpty()) throw new MishapBadOffhandItem.of(offhand,'class.symbol')
+    if (offhand.count < 64) {
+        throw new MishapBadOffhandItem.of(offhand,'class.symbol')
+        
+    }
+
+    let itemId = offhand.id;
+    let biomeId = global.biomeMapping ? global.biomeMapping[itemId] : undefined;
+    if (!biomeId) {
+        throw new MishapBadOffhandItem.of(offhand,'class.symbol');
+    }
+
+        offhand.count-=64
+        let y2 = Math.abs(yMax)
+        let cost = radius*radius*10000 + 100000 + y2*10000
+        let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
+let shortId = biomeId.replace(/^[^:]+:/, '')
+
+let DimensionMap = {  
+
+    // 下界 (the_nether)
+    "nether_wastes": "the_nether",
+    "soul_sand_valley": "the_nether",
+    "crimson_forest": "the_nether",
+    "warped_forest": "the_nether",
+    "basalt_deltas": "the_nether",
+
+    // 末地 (the_end)
+    "the_end": "the_end",
+    "end_highlands": "the_end",
+    "end_midlands": "the_end",
+    "end_barrens": "the_end",
+    "small_end_islands": "the_end"
+};
+ let dimension = DimensionMap[shortId]
+
+ if(!dimension){
+    dimension = "overworld"
+ }
+
+    let server = caster.server;
+    let level = env.world;
+    let x = Math.floor(pos.x());
+    let y = Math.floor(pos.y());
+    let z = Math.floor(pos.z());
+    let playerid= caster.id
+
+    
+
+    //let reloader=`execute as ${playerid} run worldreloader transform ${x} ${y} ${z} biome ${shortId}`
+    let reloader=`worldreloader transform ${x} ${y} ${z} biome ${shortId}`
+    world.playSound(null, pos.x(), pos.y(), pos.z(),
+                    "minecraft:block.end_portal.spawn", SoundSource.AMBIENT, 5, 1.0);
+
+        WR.config.dimension = dimension
+        WR.ch.save()
+        let command = caster.runCommand(reloader)
+        if(command==0){
+            throw new MishapBadCaster()
+        }
+    WR.config.dimension = "overworld"
+    WR.ch.save()
+    
+
+  return sideEffects
+},
+*/
+
+//方块理念化
+"idealized_block": (stack, env, img, cont) => {
+    let args = new Args(stack, 1);
+    let pos = args.vec3(0);
+    ActionJS.helpers.assertVecInRange(env, pos);
+
+    let caster = env.caster;
+    if (!caster) throw new MishapBadCaster();
+
+    let level = env.world;
+    let blockPos = new BlockPos(
+        Math.floor(pos.x()),
+        Math.floor(pos.y()),
+        Math.floor(pos.z())
+    );
+
+    // 获取目标方块对象
+    let block = level.getBlock(blockPos);
+    if (!block) throw new MishapBadLocation(pos);
+
+    let targetBlockId = block.id;
+
+    // ========== 黑名单处理 ==========
+    let blacklistPath = 'kubejs/config/realism_blocks.json';
+    let blacklist = JsonIO.read(blacklistPath);
+    let realism = blacklist["blacklist"]
+    
+
+    if (realism.indexOf(targetBlockId)!=-1) {
+        // 如果方块在黑名单中，抛出事故
+        throw new MishapBadBlock.of(blockPos);
+    }
+    
+    
+    let  mapping = JsonIO.read('kubejs/config/idea_block_mapping.json') || { default: 0 };
+   
+    let index = mapping[targetBlockId];
+    if (index === undefined) {
+        throw new MishapBadBlock.of(blockPos)
+    }
+
+    // ========== 替换为理念方块 ==========
+    block.set('miehex:idea_block', { variant: String(index) });
+
+    // 消耗媒质（例如 1000 点）
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(1000)];
+    return sideEffects;
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
