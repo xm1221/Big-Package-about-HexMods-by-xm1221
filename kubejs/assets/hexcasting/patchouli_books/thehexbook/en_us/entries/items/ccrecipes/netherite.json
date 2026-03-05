@@ -1,0 +1,32 @@
+{
+     "name": "下界合金",
+  "category": "hexcasting:items/ccrecipes",
+  "icon": "minecraft:netherite_ingot",
+  "sortnum": 5,
+  "advancement": "minecraft:nether/loot_bastion",
+  "entry_color": "54398a",
+  "pages":[
+    {
+      "type": "patchouli:text",
+      "text": "经过一番大战，我已经深刻理解了这些强大的战士坚韧的意志，那么，如何应用这种意志呢？"
+    },
+    
+     {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:piglin_brute",
+      "text": "接受由两个实体iota所组成的列表，等待5秒钟，消耗一个充能紫水晶"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "伴随着一阵炫目的金光和震耳欲聋的响声，我得到了它，这看起来像是我曾经在堡垒遗迹的箱子里面找到的那些古怪的金属，我对升级模板的运用已告诉我它们的强大。十分让人惊讶的是，作为由意识凝聚而成的方块，它竟然拥有实体！为了让这意志变成我确实可以使用的材料，我尝试了很多的材料用来诱导它沉淀，最后使用了堡垒遗迹中雕刻着古怪花纹的黑石砖，它沉淀了！可惜并没有直接给我一个下界合金块，而是变成了一个远古残骸——有点遗憾，但也许够用了。"
+    },
+    {
+            "type": "patchouli:spotlight",
+            "text": "坚硬的意志凝结成的强大方块，使用雕纹黑石砖右键可以将其沉淀为远古残骸。",
+            "item": "miehex:media_netherite"
+        }
+  ]
+}

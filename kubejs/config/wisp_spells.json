@@ -1,0 +1,3 @@
+{
+  "nbt": "{\"hexcasting:data\":[{\"hexcasting:data\":{level:0,parent:{angles:[B;2B,1B,2B,0B,5B,5B,0B,2B,1B,2B,0B,5B,5B,4B,0B],start_dir:0b}},\"hexcasting:type\":\"hexcasting:pattern\"},{\"hexcasting:data\":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},\"hexcasting:type\":\"hexcasting:pattern\"},{\"hexcasting:data\":{level:0,parent:{angles:[B;4B,5B,4B,4B],start_dir:2b}},\"hexcasting:type\":\"hexcasting:pattern\"},{\"hexcasting:data\":{level:0,parent:{angles:[B;4B,4B,0B,4B,4B,0B,4B,4B],start_dir:1b}},\"hexcasting:type\":\"hexcasting:pattern\"}],\"hexcasting:type\":\"hexcasting:list\"}"
+}

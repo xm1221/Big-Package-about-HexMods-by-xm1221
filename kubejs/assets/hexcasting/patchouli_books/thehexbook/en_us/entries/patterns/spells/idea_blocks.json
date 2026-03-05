@@ -1,0 +1,30 @@
+{
+  "name": "理念方块",
+  "category": "hexcasting:patterns/spells",
+  "icon": "miehex:idea_block",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "经过研究，我发现可以构筑一种奇异的方块。当手持方块右键它时，它便会变为那方块一样的形状，我称之为理念方块。我还发现，它的变形似乎有极限，用一些较复杂的方块（比如门、床、一些台阶）右键时它可能会变成紫黑相间的古怪方块，而用箱子右键则会变为透明的方块......另外，当世界中的方块总种类发生变化时，它们的外形则会变的混乱。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:create_block/idea",
+      "anchor": "miehex:create_block/idea",
+      "input": "vector",
+      "output": "",
+      "text": "接受一个位置向量，在目标位置生成一个理念方块，消耗少量媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:idealized_block",
+      "anchor": "miehex:idealized_block",
+      "input": "vector",
+      "output": "",
+      "text": "接受一个位置向量，将目标方块转化为其理念方块，消耗少量媒质"
+    }
+  ]
+}

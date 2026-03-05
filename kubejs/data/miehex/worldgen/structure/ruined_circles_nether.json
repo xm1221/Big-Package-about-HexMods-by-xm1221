@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "#minecraft:has_structure/nether_fortress",
+    "step": "strongholds",
+    "terrain_adaptation": "beard_thin",
+    "spawn_overrides": {},
+    "start_pool": "miehex:ruined_circles_nether",
+    "size": 7,
+    "start_height": {
+        "absolute": 80
+    },
+    "max_distance_from_center": 100,
+    "start_jigsaw_name": "miehex:ruined_circles_nether",
+    "use_expansion_hack": false
+}

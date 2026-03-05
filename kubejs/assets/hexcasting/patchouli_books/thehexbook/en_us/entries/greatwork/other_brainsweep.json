@@ -1,0 +1,24 @@
+{
+  "name": "其他意识剥离配方",
+  "category": "hexcasting:greatwork",
+  "icon": "hexcasting:directrix/redstone",
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "通过一些研究，我得到了一些关于强大生物的剥离意识配方，我很好奇，对于这些强大的生物，我是否真的会有用上这些配方的一天。"
+    },
+    {
+      "type": "hexcasting:brainsweep",
+      "recipe": "miehex_ender_dragon",
+      "text": "消耗256个充能紫水晶，虽然不知道为什么并不能真的让强大的龙失去意识"
+    },
+    {
+      "type": "hexcasting:brainsweep",
+      "recipe": "miehex_wither",
+      "text": "消耗256个充能紫水晶，这个倒是可以让凋灵失去意识，据说古代的咒法师会用这种法术把凋灵摆在家里，威慑敌人。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "miehex:ruined_circles_nether",
+    "fallback":"minecraft:empty",
+    "elements": [
+        {
+            "weight": 2,
+            "element": {
+                "projection":"rigid",
+                "element_type": "minecraft:single_pool_element",
+                "processors":"minecraft:empty",
+                "location":"miehex:ruined_circle_nether_1"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection":"rigid",
+                "element_type": "minecraft:single_pool_element",
+                "processors":"minecraft:empty",
+                "location":"miehex:ruined_circle_nether_2"
+            }
+        }
+        
+    ]}

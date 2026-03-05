@@ -1,0 +1,16 @@
+{
+  "name": "媒质剑",
+  "category": "hexcasting:items",
+  "icon": "miehex:media_sword",
+  "sortnum": 2,
+  "advancement": "hexcasting:root",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "miehex:media_sword",
+      "anchor": "miehex:media_sword",
+      "link_recipe": true,
+      "text": "强大的媒质之剑，只能使用特殊的法术制造，据说用那种法术制造出来的剑，天然就具有抢夺三与不可破坏的特性，唯一的弊端是在使用这把剑攻击的时候会扣除一个紫水晶粉的媒质。"
+    }
+]
+}

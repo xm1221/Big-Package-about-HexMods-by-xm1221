@@ -1,0 +1,30 @@
+{
+  "name": "群系精魄",
+  "category": "hexcasting:items/ccrecipes",
+  "icon": "miehex:the_void_symbol",
+  "sortnum": 6,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "我明白了，物质可以影响意识，意识反作用于物质……我们所生活的世界当中的一草一木，一花一树都有自己的意志，如果借由粹灵晶这种美好的材料，便可以拓印出它们意识的影子——这几乎与他们本来的意识别无二致。如果真的这么做，那么便可以将淬灵晶转变为群系精魄。如果将这样子得到的“群系精魄”反作用于我所处的环境，我便可以改变那一小块区域的群系——人为的去创造那属于我的自然"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:create_symbols",
+      "anchor": "miehex:create_symbols",
+      "input": "vector",
+      "output": "",
+      "text": "获取目标位置的群系，将副手的1个粹灵晶碎片转化为16个群系精魄，消耗一个紫水晶碎片"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:change_biome",
+      "anchor": "miehex:change_biome",
+      "input": "vector",
+      "output": "",
+      "text": "消耗副手的一个群系精魄，把目标向量处的一小片区域转变为对应群系，消耗少量媒质"
+    }
+  ]
+}

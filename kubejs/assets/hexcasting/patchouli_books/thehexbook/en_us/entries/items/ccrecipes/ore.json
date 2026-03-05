@@ -1,0 +1,58 @@
+{
+     "name": "意识中的金属",
+  "category": "hexcasting:items/ccrecipes",
+  "icon": "minecraft:iron_ingot",
+  "sortnum": 1,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "pages":[
+    {
+      "type": "patchouli:text",
+      "text": "古人说：“坚刚不可夺其志”，当我发现可以通过收集铁傀儡的意识来创造意识之铁时，我更深刻的明白了这句话，如果一次只收集一个铁傀儡的意识，那么在1分钟的等待后，便可以得到意识之铁。而如果一次将三个铁傀儡实体iota放进列表中，便只需等待5秒。"
+    },
+    
+     {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:iron_golem",
+      "text": "可以接受1个实体iota或者3个实体iota所组成的列表，消耗一个或三个紫水晶粉,每一个作为对象的实体受到15点伤害"
+    },
+    {
+            "type": "patchouli:spotlight",
+            "text": "空无而发光的，貌似铁块的奇异方块，手持平滑石右键可以使它沉淀为铁块。",
+            "item": "miehex:media_iron"
+        },
+    {
+      "type": "patchouli:text",
+      "text": "如果说铁傀儡的意志坚定的如同钢铁一样的话，那么像是僵尸这种亡灵生物，它的意识就好像是锈蚀的铜，不过经过收集意识的提纯，最后得到的铜似乎也是比较光洁的了。提供1个实体等待1分钟，提供3个实体则等待5秒"
+    },
+    
+     {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 30,
+      "entity": "minecraft:zombie",
+      "text": "可以接受1个实体iota或者3个实体iota所组成的列表，固定消耗1个紫水晶粉，对对象实体造成15点伤害。"
+    },
+    {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 30,
+      "entity": "minecraft:drowned",
+      "text": "使用溺尸的等待时间会稍短一点。"
+    },
+    {
+            "type": "patchouli:spotlight",
+            "text": "空无而发光的，貌似铜块的奇异方块，手持平滑石右键可以使它沉淀为铜块。",
+            "item": "miehex:media_copper"
+        },
+        {
+      "type": "patchouli:text",
+      "text": "据说在下界中存在着一种从古代存活到现在的强悍战士，也许从他们的意识中可以提取出与他们的身份相配的强力金属。"
+    }
+  ]
+}

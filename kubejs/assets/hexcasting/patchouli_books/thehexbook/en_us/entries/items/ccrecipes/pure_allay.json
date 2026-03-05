@@ -1,0 +1,33 @@
+{
+     "name": "纯粹的灵性",
+  "category": "hexcasting:items/ccrecipes",
+  "icon": "miehex:pure_allay_block",
+  "sortnum": 2,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "pages":[
+    {
+      "type": "patchouli:text",
+      "text": "我曾经在卓伟的觉醒中瞥见关于悦灵和媒质那奇妙的关系，我运用卓越的办法淬炼了悦灵，得到了淬灵晶。但是自人手开创的法术未必不能超越自然赐予的启迪。所以我试图收集悦灵逸散的意识，这出乎意料的容易，这可能是因为它们本身就在不断的变化、重组与解体。"
+    },
+    
+     {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:allay",
+      "text": "只能接受由一个实体所组成的列表，消耗少量媒质，等待10秒。"
+    },
+    {
+            "type": "patchouli:spotlight",
+            "text": "说实在的，得到的这种材料让我沮丧，所谓纯粹灵性的结晶，结果是相当虚幻不实又脆弱不堪的奇怪方块。我将其称之为粹灵晶，将粹灵晶块打碎，可以得到粹灵晶碎片。",
+            "item": "miehex:pure_allay_block"
+        },
+    {
+            "type": "patchouli:spotlight",
+            "text": "粹灵晶碎片也看不出来有什么用处，不过拿着它的时候总是让我有一种心境透明，重获新生的感觉。也许我应该试着用它制作一些物品。",
+            "item": "miehex:pure_allay_shard"
+        }
+  ]
+}
