@@ -1,0 +1,124 @@
+{
+  "name": "咒法学大包新增图案",
+  "category": "hexcasting:patterns",
+  "icon": "miehex:man_made_stone",
+  "sortnum": 1,
+  "advancement": "hexcasting:enlightenment",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:import_quine",
+      "anchor": "miehex:import_quine",
+      "input": "",
+      "output": "list",
+      "text": "这个图案会返回一个特殊的图案列表，这个图案列表在一次赫尔墨斯之策略后，仍得其本身，也许这会有什么好的作用。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:exchant_exchange",
+      "anchor": "miehex:exchant_exchange",
+      "input": "entity,entity",
+      "output": "",
+      "text": "接受两个物品实体iota，交换两者的附有的魔咒，或使一个拥有魔咒的物品失去其魔咒，另一个不具有魔咒的物品获得一样的附魔,消耗1枚充能紫水晶"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "似乎不能用这个法术去让书被附魔，也许应该使用一种“空”的附魔书"
+    },
+    {
+       "type": "hexcasting:pattern",
+     "op_id": "miehex:list_insert", 
+     "anchor": "miehex:list_insert", "input": "any,list,any", 
+     "output": "list", "text": "将栈下标为0处的iota加入在栈下标为一处的列表首位，将栈下标为0处的iota加入那个列表的末尾，输出最后得到的列表" 
+    },
+     { 
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:easy_thrust", 
+     "anchor": "miehex:easy_thrust", "input": "list,list,num", 
+     "output": "list", "text": "在栈下标为0处接受一个列表，1处接受一个列表，2处接受一个数，0处接受的列表从下标为所给数的元素后面依次填入一处所给的列表中的每一个元素，原有的0处所给列表的其余元素不变"
+     },
+     { 
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:easy_extract", 
+     "anchor": "miehex:easy_extract", "input": "list,num,num", 
+     "output": "list,list", "text": "在栈下标为0处接受一个列表，栈下标为1、2处，各接收一个数字，返回所给列表中下标为第一个数往后的总共由第二个数数量的元素所组成的列表，以及原先列表剩余所有元素组成的列表"
+     },
+      { 
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:cube_type", 
+     "anchor": "miehex:cube_type", "input": "vec,vec,str", 
+     "output": "list", "text": "接受两个位置向量与一个字符串，返回两个位置向量所确定的立方体中所有ID与所给字符串相同的方块的坐标的列表"
+      },
+      { 
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:cube_types", 
+     "anchor": "miehex:cube_types", "input": "vec,vec,list of str", 
+     "output": "list", "text": "接受两个位置向量与一个字符串列表，返回由两个位置向量所确定的立方体中所有ID与所给列表中任意一个字符串相同的方块的坐标所组成的列表"
+      },
+      { 
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:zone_entity/by_name", 
+     "anchor": "miehex:zone_entity/by_name", "input": "vec,num,str", 
+     "output": "list", "text": "获取位置及最大距离和一个字符串，返回该位置为中心给定距离范围内所有与给定字符串名称相同的实体所组成的列表，如果提供的字符串是注册名，也可以返回注册名与所给字符串相同的实体所组成的列表"
+      },
+      {
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:create_sapling", 
+     "anchor": "miehex:create_sapling", "input": "vec,str", 
+     "output": "", "text": "这个法术接受一个位置向量和一个字符串，那之后便会在那个位置向量上放置一个方块ID与所给字符串相同的树苗,消耗一个紫水晶粉。"
+      },
+       {
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:imposter", 
+     "anchor": "miehex:imposter", "input": "player,list of patterns", 
+     "output": "", "text": "这个罪恶的法术接受一个玩家实体和一个图案列表，那之后便会控制那个玩家释放那个图案列表中所规定的法术，仅需64枚充能紫水晶，只能在法杖中释放"
+      },
+      {
+      "type": "hexcasting:pattern",
+     "op_id": "miehex:create_sword", 
+     "anchor":"miehex:create_sword" , "input": "player", 
+     "output": "", "text": "这个法术接受一个玩家实体,那之后给予那玩家一柄媒质剑，附有抢夺三魔咒，不可破坏，仅需10枚充能紫水晶"
+      },
+      {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:collect_consciousness",
+      "anchor": "miehex:collect_consciousness",
+      "input": "list of entities,vector",
+      "output": "",
+      "text": "接受一个由生物实体组成的列表和一个位置，收集它们逸散在外的意识能量，并集中在那个位置处，一段时间后那个位置处聚集的意识能量便会形成特殊的方块，"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:create_symbols",
+      "anchor": "miehex:create_symbols",
+      "input": "vector",
+      "output": "",
+      "text": "获取目标位置的群系，将副手的1个粹灵晶碎片转化为16个群系精魄，消耗一个紫水晶碎片"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:change_biome",
+      "anchor": "miehex:change_biome",
+      "input": "vector",
+      "output": "",
+      "text": "消耗副手的一个群系精魄，把目标向量处的一小片区域转变为对应群系，消耗少量媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:idea_entry",
+      "anchor": "miehex:idea_entry",
+      "input": "vector,num",
+      "output": "",
+      "text": "接受一个位置向量和一个介于0，1，2之间的整数，消耗副手的一个理念世界入口，消耗极少量媒质。将自己传送到那个世界对应的坐标，这里的整数似乎是指这个位面的三个不同侧面，又或者本来就是指向三个不同的维度。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:back_to_overworld",
+      "anchor": "miehex:back_to_overworld",
+      "input": "player",
+      "output": "",
+      "text": "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。"
+    }
+  ]
+}

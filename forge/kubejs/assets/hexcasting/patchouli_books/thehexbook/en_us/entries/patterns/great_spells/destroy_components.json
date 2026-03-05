@@ -1,0 +1,22 @@
+{
+  "name": "hexcasting.action.miehex:destroy_components",
+  "category": "hexcasting:patterns/great_spells",
+  "icon": "minecraft:grindstone",
+  "sortnum": 0,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:destroy_components",
+      "anchor": "miehex:destroy_components",
+      "input": "player",
+      "output": "",
+      "text": "摧毁元件是极为恐怖和极有破坏力的法术，它接受一个玩家实体，然后清除其手持的物品所有的“特殊”标签，如果主手物品不符合目标，则清除副手物品，"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "特别的，当清除类似核心这种储存iota的介质时，会往其中填入一个垃圾iota。所谓的特殊标签，有些人称之为nbt标签，因此，这个法术也可以去除装备上的附魔、咒符与各种药水的特殊效果,消耗30个充能紫水晶。"
+    }
+  ]
+}

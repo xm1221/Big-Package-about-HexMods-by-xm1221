@@ -1,0 +1,208 @@
+========================================
+  自定义咒法图案迁移包 - 使用说明
+========================================
+
+【文件清单】
+
+本迁移包包含以下核心文件：
+
+1. Imports.js
+   - 作用：导入所有必要的Java类和Hex Casting API
+   - 包含：Minecraft原生类、Hex Casting API、Hexal API、MoreIotas API等
+   - 优先级：10
+   - 说明：这是所有自定义法术的基础依赖文件，必须首先加载
+
+2. pattern.js
+   - 作用：提供法术开发的核心工具函数和类
+   - 包含：
+     * Args类：用于解析法术参数
+     * ActionJS类：用于注册法术动作
+     * 工具函数：RL()、typeHurt()、avada_kedavra()等
+   - 优先级：10
+   - 说明：提供法术开发的基础框架，必须加载
+
+3. ClassOp.js
+   - 作用：提供Java类反射操作工具
+   - 包含：toRawClass()、loadRawClass()等函数
+   - 优先级：114514
+   - 说明：用于高级Java反射操作，可选加载
+
+4. FieldOp.js
+   - 作用：提供Java字段反射操作工具
+   - 包含：getDeclaredField()、getField()、setField()等函数
+   - 优先级：114514
+   - 说明：用于高级Java反射操作，可选加载
+
+【使用方法】
+
+1. 文件放置
+   将这4个文件复制到目标项目的kubejs/startup_scripts/目录下
+
+2. 创建法术实现文件
+   在kubejs/startup_scripts/目录下创建pattern文件夹
+   在pattern文件夹下创建spell.js文件（或其他名称）
+
+3. 定义法术函数
+   在spell.js中定义法术函数，格式如下：
+
+   global.PatternOperateMap = {
+       "法术ID": (stack, env, img, cont) => {
+           // 法术逻辑
+           // stack: 法术栈
+           // env: 施法环境
+           // img: 施法镜像
+           // cont: 延续
+           
+           // 示例：获取参数
+           let args = new Args(stack, 2)
+           let param1 = args.double(0)
+           let param2 = args.entity(1)
+           
+           // 示例：执行操作
+           // ... 你的法术逻辑 ...
+           
+           // 示例：返回副作用
+           return [
+               OperatorSideEffect.ConsumeMedia(1000),  // 消耗媒质
+               OperatorSideEffect.Particles(ParticleSpray.burst(env.caster.blockPosition(), 0.5, 20))  // 粒子效果
+           ]
+       }
+   }
+
+4. 注册法术
+   在kubejs/startup_scripts/目录下创建name.js文件
+   使用以下格式注册法术：
+
+   StartupEvents.registry('hexcasting:action', e => {
+       registerPatternWrap('图案序列', HexDir.方向, '法术ID', 是否为卓越法术, 选项, '命名空间')
+   })
+
+   示例：
+   registerPatternWrap('qqq', HexDir.EAST, 'test_spell', false, null, 'homo')
+
+   参数说明：
+   - 图案序列：使用q/w/e/a/d表示的图案，如'qqq'
+   - 方向：HexDir.EAST/WEST/NORTH_EAST等
+   - 法术ID：与PatternOperateMap中的ID一致
+   - 是否为卓越法术：true/false
+   - 选项：可选，如{sound: EvalSound.SHARD}
+   - 命名空间：默认为'homo'，可自定义
+
+【重要提示】
+
+1. 加载顺序
+   - Imports.js和pattern.js必须先于spell.js和name.js加载
+   - 建议设置priority:10确保优先加载
+   - ClassOp.js和FieldOp.js的priority设置为114514，确保最后加载
+
+2. 命名空间
+   - 默认命名空间为'homo'
+   - 自定义命名空间需要在注册时指定
+   - 翻译文件路径：assets/命名空间/lang/语言文件.json
+
+3. 参数类型
+   Args类支持的参数类型：
+   - double(i): 获取双精度浮点数
+   - entity(i): 获取实体
+   - list(i): 获取列表
+   - string(i): 获取字符串
+   - pattern(i): 获取图案
+   - vec3(i) / vector(i): 获取向量
+   - bool(i) / boolean(i): 获取布尔值
+   - entity.brainmerge_target(i): 获取可脑融合实体
+   - villager(i): 获取村民
+
+4. 副作用类型
+   OperatorSideEffect支持的副作用：
+   - ConsumeMedia(amount): 消耗媒质
+   - Particles(spray): 生成粒子效果
+   - DoMishap(mishap, context): 触发事故
+
+5. 事故类型
+   常用事故类型：
+   - MishapBadLocation: 位置错误
+   - MishapBadEntity: 实体错误
+   - MishapNotEnoughMedia: 媒质不足
+   - MishapInvalidIota: 无效参数
+   - MishapEntityTooFarAway: 实体过远
+
+【示例法术】
+
+简单法术示例（消耗1000媒质，在施法者位置生成粒子）：
+
+global.PatternOperateMap = {
+    "example_spell": (stack, env, img, cont) => {
+        let args = new Args(stack, 1)
+        let message = args.string(0)
+        
+        let player = env.caster
+        let pos = player.blockPosition()
+        
+        // 执行操作
+        env.world.runCommandSilent(`tellraw @a ${message}`)
+        
+        // 返回副作用
+        return [
+            OperatorSideEffect.ConsumeMedia(1000),
+            OperatorSideEffect.Particles(ParticleSpray.burst(pos, 0.5, 20))
+        ]
+    }
+}
+
+注册：
+registerPatternWrap('qqq', HexDir.EAST, 'example_spell', false, null, 'homo')
+
+【高级功能】
+
+1. 反射操作（需要ClassOp.js和FieldOp.js）
+   - global.toRawClass(cls): 获取原始类
+   - global.getDeclaredField(obj, name, isStatic, superCount): 获取字段
+   - global.getField(obj, name, isStatic, superCount): 读取字段值
+   - global.setField(obj, name, value, isStatic, superCount): 设置字段值
+
+2. 工具函数
+   - RL(string): 处理命名空间字符串
+   - typeHurt(level, player, entity, type, num): 造成指定类型的伤害
+   - avada_kedavra(player, entity, level): 强制杀死实体
+
+3. ActionJS辅助方法
+   - ActionJS.helpers.assertVecInRange(ctx, vec): 检查向量是否在范围内
+   - ActionJS.helpers.assertEntityInRange(ctx, entity): 检查实体是否在范围内
+
+【注意事项】
+
+1. 确保目标项目已安装以下模组：
+   - Hex Casting
+   - KubeJS
+   - ProbeJS（推荐，用于代码提示）
+
+2. 法术ID必须全局唯一
+3. 图案序列不能与现有法术冲突
+4. 测试法术时建议先在创造模式进行
+5. 复杂法术建议分步实现和测试
+
+【故障排除】
+
+1. 法术不生效
+   - 检查法术ID是否正确
+   - 检查图案序列是否正确
+   - 查看日志文件：logs/kubejs/startup.log
+
+2. 参数解析错误
+   - 检查Args使用是否正确
+   - 确保栈中参数类型匹配
+
+3. 媒质消耗异常
+   - 检查ConsumeMedia的数值
+   - 确保返回副作用数组
+
+【联系方式】
+
+如有问题，请参考：
+- Hex Casting官方文档
+- KubeJS文档
+- ProbeJS文档
+
+========================================
+祝您创作愉快！
+========================================

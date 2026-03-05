@@ -1,0 +1,52 @@
+{
+     "name": "另一条路",
+  "category": "hexcasting:items/ccrecipes",
+  "icon": "minecraft:amethyst_block",
+  "sortnum": 10,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "pages":[
+    {
+      "type": "patchouli:text",
+      "text": "虽然我对于收集意识的理解还不完全，但我已经发现，一些简单物品的制造，其实根本用不上剥离意识。比如说，收集村民的意识可以很容易的制成紫水晶块,放在砧板上一切就是媒质了。再比如说同时收集悦灵和村民的意识，也可以很轻松的得到淬灵晶块。我只需要把他们圈养起来，时不时给予他们一些治疗，就可以很方便的获得媒质了——这听起来似乎还是不太合于道德，不过比剥离意识人道多了不是吗？"
+    },
+    
+     {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:villager",
+      "text": "接受1个，3个或7个实体iota所组成的列表，分别等待50秒、5秒和0.5秒，固定消耗少量媒质，对实体造成15点伤害"
+    },
+    {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:allay",
+      "text": "只接受由1个村民和1个悦灵的实体iota组成的列表，等待10秒，消耗一个充能紫水晶，对实体造成18点伤害"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "如果说对于这些友善的生物还需要讲点道德的话，那么对于那些对我有着敌意的智慧就不需要留什么情面了，不过也许我还是可以以德报怨地赐予他们一次活命的机会……收集女巫或者唤魔者的意识可以得到青金石块，如果好好利用这种特殊的矿物，也许可以制造出十分不错的物品。"
+    },
+    {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:witch",
+      "text": "等待10秒，消耗少量媒质，对实体造成10点伤害"
+    },
+    {
+      "type": "patchouli:entity",
+      "x": 50,
+      "y": 44,
+      "render_size": 37,
+      "entity": "minecraft:evoker",
+      "text": "等待5秒，消耗少量媒质，对实体造成10点伤害"
+    }
+    
+  ]
+}

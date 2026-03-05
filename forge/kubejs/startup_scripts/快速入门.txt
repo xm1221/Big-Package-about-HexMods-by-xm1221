@@ -1,0 +1,130 @@
+========================================
+  快速入门指南 - 5分钟创建你的第一个法术
+========================================
+
+【步骤1：准备文件】
+
+将以下文件复制到目标项目的 kubejs/startup_scripts/ 目录：
+- Imports.js
+- pattern.js
+- ClassOp.js（可选）
+- FieldOp.js（可选）
+
+【步骤2：创建法术实现】
+
+在 kubejs/startup_scripts/ 目录下创建 pattern 文件夹
+在 pattern 文件夹下创建 spell.js 文件
+
+复制以下代码到 spell.js：
+
+// priority:20
+
+global.PatternOperateMap = {
+    "my_first_spell": (stack, env, img, cont) => {
+        let args = new Args(stack, 1)
+        let message = args.string(0)
+        
+        let player = env.caster
+        let pos = player.blockPosition()
+        
+        env.world.runCommandSilent(`tellraw @a {"text":"${message}","color":"gold"}`)
+        
+        return [
+            OperatorSideEffect.ConsumeMedia(1000),
+            OperatorSideEffect.Particles(ParticleSpray.burst(pos, 0.5, 20))
+        ]
+    }
+}
+
+【步骤3：注册法术】
+
+在 kubejs/startup_scripts/ 目录下创建 name.js 文件
+
+复制以下代码到 name.js：
+
+// priority:20
+
+StartupEvents.registry('hexcasting:action', e => {
+    function registerPatternWrap(seq, dir, id, isGreat, options, namespace) {
+        isGreat = !!isGreat
+        if (!(id in global.PatternOperateMap)) {
+            throw new Error('missing operate: ' + id)
+        }
+        let resourceKey = (namespace || 'homo') + ':' + id
+        if (isGreat) {
+            global.perWorldPatterns.push(resourceKey)
+        }
+        let pattern = HexPattern.fromAngles(seq, dir)
+        e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
+    }
+    
+    registerPatternWrap('qqq', HexDir.EAST, 'my_first_spell', false, null, 'homo')
+})
+
+【步骤4：测试法术】
+
+1. 启动游戏
+2. 进入创造模式
+3. 获取法术书和施法杖
+4. 在法术书中绘制图案：qqq（三个向东的笔画）
+5. 施法时传入一个字符串，例如："Hello World!"
+6. 应该会在聊天栏看到金色文字显示你的消息
+
+【步骤5：修改法术】
+
+尝试修改法术来学习更多功能：
+
+1. 修改消耗媒质：
+   将 OperatorSideEffect.ConsumeMedia(1000) 改为 OperatorSideEffect.ConsumeMedia(5000)
+
+2. 修改粒子效果：
+   将 ParticleSpray.burst(pos, 0.5, 20) 改为 ParticleSpray.burst(pos, 1.0, 50)
+
+3. 添加更多参数：
+   let args = new Args(stack, 2)
+   let message = args.string(0)
+   let count = args.double(1)
+   
+   // 循环显示消息
+   for (let i = 0; i < count; i++) {
+       env.world.runCommandSilent(`tellraw @a {"text":"${message}","color":"gold"}`)
+   }
+
+【常见问题】
+
+Q: 法术不生效？
+A: 检查以下几点：
+   - 文件是否放在正确的目录
+   - 法术ID是否一致
+   - 图案是否正确绘制
+   - 查看日志文件：logs/kubejs/startup.log
+
+Q: 如何获取图案序列？
+A: 使用HexPattern.fromAngles()来测试：
+   let pattern = HexPattern.fromAngles('qqq', HexDir.EAST)
+   console.log(pattern.toString())
+
+Q: 如何调试法术？
+A: 可以使用env.world.runCommandSilent()输出调试信息：
+   env.world.runCommandSilent(`tellraw @a {"text":"调试信息","color":"red"}`)
+
+Q: 如何创建更复杂的法术？
+A: 参考"示例spell.js"和"示例name.js"文件，里面包含多个示例法术
+
+【下一步】
+
+1. 阅读"使用说明.txt"了解详细文档
+2. 查看"示例spell.js"学习更多法术示例
+3. 查看"示例name.js"学习更多注册方法
+4. 参考Hex Casting官方文档了解更多API
+
+【提示】
+
+- 使用ProbeJS可以获得代码提示和自动补全
+- 在创造模式下测试法术更安全
+- 保存游戏前先测试法术
+- 复杂法术建议分步实现
+
+========================================
+开始你的法术创作之旅吧！
+========================================
