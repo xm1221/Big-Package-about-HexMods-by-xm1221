@@ -1378,6 +1378,53 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(1000)];
     return sideEffects;
 },
+//污染
+"push":(stack,env,img,cont)=>{
+    let args =new Args(stack,2)
+    let player = args.entity(0)
+    let level = player.level
+    if(!player.isPlayer()){
+        throw MishapInvalidIota.of(args.get(0), 0, 'class.miehex_player');
+            }
+    // 创建以目标玩家为施法者的新施法环境
+            let newEnv = new PackagedItemCastEnv(player, InteractionHand.MAIN_HAND)
+  
+            
+            // 创建施法虚拟机
+            let vm = new CastingVM(img,newEnv)
+            
+            let code = spellsfromnbt("import",level).list
+            
+            // 执行图案列表
+            vm.queueExecuteAndWrapIotas(code, newEnv.world)
+    
+
+        player.level.spawnParticles('minecraft:witch', true,
+            player.x, player.y + 1, player.z, 0, 0.1, 0, 20, 0.2);
+
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(10000)]
+    return sideEffects
+},
+
+//进程崩溃
+"crash":(stack)=>{
+    let args =new Args(stack,1)
+    let player = args.entity(0)
+    if(!player.isPlayer()){
+        throw MishapInvalidIota.of(args.get(0), 0, 'class.miehex_player');
+            }
+    let casstteState = player.getCassetteState()
+    let {owned}= casstteState
+    if(owned>0){
+        casstteState.setOwned(owned-1)
+        player.drop(Item.of("hexcassettes:cassette"),false)
+        casstteState.sync(player)
+    }
+
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
+    return sideEffects
+},
+
 
 
 

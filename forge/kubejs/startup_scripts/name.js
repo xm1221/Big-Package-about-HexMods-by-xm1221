@@ -83,6 +83,12 @@ StartupEvents.registry('hexcasting:action', e => {
     //方块理念化
     registerPatternWrap("wqwawqwqwqwqwqawew",HexDir.EAST,"idealized_block")
 
+    //污染
+    registerPatternWrap('aq',HexDir.NORTH_WEST,"push")
+
+    //进程崩溃
+    registerPatternWrap("qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",HexDir.NORTH_EAST,"crash")
+
      
 
 
