@@ -124,6 +124,11 @@
     "hexcasting.action.miehex:locate":"探古寻迹",
     "hexcasting.action.miehex:worldreloader":"分海",
     "hexcasting.action.miehex:idealized_block":"方块理念化",
+<<<<<<< Updated upstream
+=======
+    "hexcasting.action.miehex:crash":"进程崩溃",
+    "hexcasting.action.miehex:push":"污染",
+>>>>>>> Stashed changes
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.invalid_value.class.dimension_index":"0,1或者2",

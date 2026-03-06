@@ -294,4 +294,9 @@ BlockEvents.rightClicked('miehex:idea_block', event => {
 
     event.block.set('miehex:idea_block', { variant: String(index) });
     event.cancel();
+<<<<<<< Updated upstream
 });
+=======
+});
+
+>>>>>>> Stashed changes

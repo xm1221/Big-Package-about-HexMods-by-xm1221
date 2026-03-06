@@ -143,6 +143,25 @@
       "input": "vector",
       "output": "num",
       "text": "接受一个位置向量，消耗副手的一个结构精魄，返回那个位置向量所对应的坐标离结构所在坐标的水平距离"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:push",
+      "anchor": "miehex:push",
+      "input": "player,any",
+      "output": "",
+      "text": "接受一个玩家实体和一个iota，把那iota置入玩家法杖栈中，并使那iota在其视野中央显示一段时间，消耗一份紫水晶粉"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:crash",
+      "anchor": "miehex:crash",
+      "input": "player",
+      "output": "",
+      "text": "接受一个玩家实体，从其脑中弹出一份其已经服用的磁带，消耗一枚充能紫水晶。"
+>>>>>>> Stashed changes
     }
   ]
 }

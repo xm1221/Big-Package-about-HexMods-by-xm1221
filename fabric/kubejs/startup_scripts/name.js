@@ -77,12 +77,25 @@ StartupEvents.registry('hexcasting:action', e => {
     //探古寻迹
     registerPatternWrap('edeeeeeqdwdwww',HexDir.EAST,"locate")
 
+<<<<<<< Updated upstream
     //分海
+=======
+    //分海(fabric only)
+>>>>>>> Stashed changes
     registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
 
     //方块理念化
     registerPatternWrap("wqwawqwqwqwqwqawew",HexDir.EAST,"idealized_block")
 
+<<<<<<< Updated upstream
+=======
+    //污染
+    registerPatternWrap('aq',HexDir.NORTH_WEST,"push")
+
+    //进程崩溃
+    registerPatternWrap("qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",HexDir.NORTH_EAST,"crash")
+
+>>>>>>> Stashed changes
      
 
 
