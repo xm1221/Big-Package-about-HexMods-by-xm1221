@@ -223,10 +223,7 @@ global.spells = {
     mob:mobCasting
 }
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 // 命名空间
 function RL(string) {
     let length = string.length

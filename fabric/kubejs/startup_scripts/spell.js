@@ -451,10 +451,10 @@ global.PatternOperateMap = {
 
     // 确保两个实体都是物品实体
     if (entity1.type !== 'minecraft:item') {
-        throw MishapInvalidIota.of(args.get(0), 1, 'class.item');
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item');
     }
     if (entity2.type !== 'minecraft:item') {
-        throw MishapInvalidIota.of(args.get(1), 1, 'class.item');
+        throw new MishapInvalidIota.of(args.get(1), 1, 'class.item');
     }
 
     let item1 = entity1.getItem();
@@ -544,9 +544,6 @@ global.PatternOperateMap = {
                 // 尝试获取物品的 NBT 数据
                 let nbt = item.nbt
  
-                
-                // 直接检查物品是否有 hexcasting 相关的 NBT 数据
-                // 简化检查逻辑，只要物品有 NBT 数据，就认为它有 iota
                 if (nbt) {
 
                     return true
@@ -590,7 +587,6 @@ global.PatternOperateMap = {
                 "hexcasting:type": "hexcasting:garbage",
                 "hexcasting:data": {}
             })
-            
             
             // 更新玩家物品
             if (isMainHand) {
@@ -1236,10 +1232,7 @@ global.PatternOperateMap = {
     return sideEffects;
 },
 
-<<<<<<< Updated upstream
-=======
 //分海
->>>>>>> Stashed changes
 "worldreloader":(stack,env)=>{
     let args = new Args(stack, 5);
     let bool =args.bool(4)
@@ -1380,8 +1373,6 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(1000)];
     return sideEffects;
 },
-<<<<<<< Updated upstream
-=======
 //污染
 "push":(stack,env,img,cont)=>{
     let args =new Args(stack,2)
@@ -1415,7 +1406,7 @@ let DimensionMap = {
     let args =new Args(stack,1)
     let player = args.entity(0)
     if(!player.isPlayer()){
-        throw MishapInvalidIota.of(args.get(0), 0, 'class.miehex_player');
+        throw MishapInvalidIota.of(args.get(0), 1, 'class.miehex_player');
             }
     let casstteState = player.getCassetteState()
     let {owned}= casstteState
@@ -1428,7 +1419,123 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
     return sideEffects
 },
->>>>>>> Stashed changes
+//随心（物品栏槽位操控）
+"inventory_control":(stack,env)=>{
+
+    let args = new Args(stack,2)
+    let num1 = args.double(0)
+    let num2 = args.double(1)
+    let Num1 = Math.floor(num1)
+    let Num2 = Math.floor(num2)
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let inv = caster.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    let stackB = inv.getStackInSlot(Num2)
+
+    inv.setStackInSlot(Num2,stackA)
+    inv.setStackInSlot(Num1,stackB)
+    if(caster.isSpectator){
+        return
+
+    }
+let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+return sideEffects
+   
+},
+//所欲
+"item_control":(stack,env)=>{
+    let args = new Args(stack,1)
+    let num1 = args.get(0)
+    //如果是数
+
+    if (num1 instanceof DoubleIota){
+        let Num1 = Math.floor(num1.getDouble())
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let inv = caster.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    caster.drop(stackA.split(1),false)
+    if(caster.isSpectator){
+        return
+
+    }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+return sideEffects
+
+    }
+    //如果是物品实体
+    if (num1 instanceof EntityIota){
+      let caster = env.caster
+      let item =num1.getEntity()
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    } 
+    if(item.type !== 'minecraft:item'){
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item')
+        
+    } 
+    let stackA=item.getItem()
+    let inv = caster.getInventory()
+    let Num=inv.getFreeSlot()
+    inv.setStackInSlot(Num,stackA)
+    item.kill()
+
+    if(caster.isSpectator){
+        return
+     }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+     return sideEffects
+
+     }
+     throw new MishapInvalidIota.of(args.get(0), 1, 'class.item_control')
+},
+//缴械
+"Expelliarmus":(stack)=>{
+     let args = new Args(stack,1)
+    let target = args.entity(0)
+    let item=target.getMainHandItem().split(1)
+    target.drop(item,false)
+    let item2 = target.getOffhandItem().split(1)
+     target.drop(item2,false)
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(50000)]
+     return sideEffects
+},
+//惑心
+"puzzle":(stack)=>{
+    let args = new Args(stack,3)
+    let target = args.entity(0)
+     let num1 = args.double(1)
+    let num2 = args.double(2)
+    let Num1 = Math.floor(num1)
+    let Num2 = Math.floor(num2)
+    if(!target.isPlayer()){
+        throw new MishapInvalidIota.of(args.get(0),3, "class.miehex_player")
+    }
+    if(Num1>35 ||Num1<0){
+        throw new MishapInvalidIota.of(args.get(1),2, 'class.slot')
+    }
+    if(Num2>35 ||Num2<0){
+        throw new MishapInvalidIota.of(args.get(2),1, 'class.slot')
+    }
+    let inv = target.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    let stackB = inv.getStackInSlot(Num2)
+
+    inv.setStackInSlot(Num2,stackA)
+    inv.setStackInSlot(Num1,stackB)
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
+     return sideEffects
+},
+//复生
+"Resurrectionem":(stack,env)=>{
+
+}
+
 
 
 

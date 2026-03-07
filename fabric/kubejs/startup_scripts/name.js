@@ -77,25 +77,33 @@ StartupEvents.registry('hexcasting:action', e => {
     //探古寻迹
     registerPatternWrap('edeeeeeqdwdwww',HexDir.EAST,"locate")
 
-<<<<<<< Updated upstream
-    //分海
-=======
     //分海(fabric only)
->>>>>>> Stashed changes
     registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
 
     //方块理念化
     registerPatternWrap("wqwawqwqwqwqwqawew",HexDir.EAST,"idealized_block")
 
-<<<<<<< Updated upstream
-=======
     //污染
     registerPatternWrap('aq',HexDir.NORTH_WEST,"push")
 
     //进程崩溃
     registerPatternWrap("qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",HexDir.NORTH_EAST,"crash")
 
->>>>>>> Stashed changes
+    //随心
+    registerPatternWrap("qwawqwadawqwa",HexDir.EAST,"inventory_control")
+
+    //所欲
+    registerPatternWrap("dwewdweqawqwa",HexDir.EAST,"item_control")
+
+    //缴械
+    registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"Expelliarmus")
+
+    //惑心
+    registerPatternWrap("dwewdweqawqwaewqqqwaw",HexDir.EAST,"puzzle")
+
+    //复生
+    registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"Resurrectionem")
+
      
 
 

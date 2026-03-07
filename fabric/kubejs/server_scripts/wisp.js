@@ -35,15 +35,8 @@
             player.x, player.y + 1, player.z, 0, 0.1, 0, 20, 0.2);
     
 })*/
-<<<<<<< Updated upstream
-EntityEvents.hurt(e=>{
-    let mob=e.entity
-    let casting=global.spells.mob("boom",mob,"mie")
-})
-=======
 /*EntityEvents.hurt(e=>{
     let mob=e.entity
     let casting=global.spells.mob("boom",mob,"mie")
 })*/
->>>>>>> Stashed changes
 

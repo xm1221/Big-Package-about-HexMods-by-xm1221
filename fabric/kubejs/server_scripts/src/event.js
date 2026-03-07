@@ -141,7 +141,7 @@ BlockEvents.rightClicked('miehex:media_netherite', event => {
     // 播放音效（可选）
     server.runCommandSilent(`playsound minecraft:block.anvil.place block @a ${x} ${y} ${z} 1 1`);
 
-    // 消耗一个物品（非创造模式）
+    // 消耗一个物品
         item.count--;
 
     // 取消事件，防止原方块的右键行为（如打开GUI）干扰
@@ -294,9 +294,5 @@ BlockEvents.rightClicked('miehex:idea_block', event => {
 
     event.block.set('miehex:idea_block', { variant: String(index) });
     event.cancel();
-<<<<<<< Updated upstream
-});
-=======
 });
 
->>>>>>> Stashed changes

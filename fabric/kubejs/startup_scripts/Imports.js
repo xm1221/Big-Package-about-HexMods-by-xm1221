@@ -60,20 +60,14 @@ let ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
 let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
-
-<<<<<<< Updated upstream
-//息壤相关
-=======
+let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
+let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
 //息壤相关(fabric only)
->>>>>>> Stashed changes
 let WR = Java.loadClass('com.worldreloader.WorldReloader')
 
 
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 //Vec3
 let Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3')
 

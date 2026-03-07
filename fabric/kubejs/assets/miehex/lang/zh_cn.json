@@ -124,11 +124,13 @@
     "hexcasting.action.miehex:locate":"探古寻迹",
     "hexcasting.action.miehex:worldreloader":"分海",
     "hexcasting.action.miehex:idealized_block":"方块理念化",
-<<<<<<< Updated upstream
-=======
     "hexcasting.action.miehex:crash":"进程崩溃",
     "hexcasting.action.miehex:push":"污染",
->>>>>>> Stashed changes
+    "hexcasting.action.miehex:inventory_control":"随心",
+    "hexcasting.action.miehex:item_control":"所欲",
+    "hexcasting.action.miehex:Expelliarmus":"缴械",
+    "hexcasting.action.miehex:puzzle":"惑心",
+    "hexcasting.action.miehex:Resurrectionem":"复生",
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.invalid_value.class.dimension_index":"0,1或者2",
@@ -138,6 +140,8 @@
     "hexcasting.mishap.invalid_value.class.biome_symbol_not_registered":"群系未适配",
     "hexcasting.mishap.invalid_value.class.sapling":"树苗id",
     "hexcasting.mishap.invalid_value.class.item":"物品",
+    "hexcasting.mishap.invalid_value.class.item_control":"物品或一个数",
+    "hexcasting.mishap.invalid_value.class.slot":"一个合适范围的数",
     "hexcasting.mishap.bad_item.class.structure":"结构精魄"
 
 

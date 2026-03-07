@@ -1,6 +1,6 @@
 ServerEvents.tags('hexcasting:action',event =>{
     let great_spells = [
-        'miehex:destroy_components','miehex:worldreloader'
+        'miehex:destroy_components','miehex:worldreloader',"miehex:Resurrectionem"
     ]
     event.add('hexcasting:can_start_enlighten',great_spells);
     event.add('hexcasting:per_world_pattern',great_spells);
