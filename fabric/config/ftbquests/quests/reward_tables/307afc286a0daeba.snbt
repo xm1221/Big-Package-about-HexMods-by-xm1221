@@ -1,0 +1,25 @@
+{
+	id: "307AFC286A0DAEBA"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "hexcasting:pride_colorizer_aroace" }
+		{ item: "hexcasting:pride_colorizer_agender" }
+		{ item: "hexcasting:pride_colorizer_asexual" }
+		{ item: "hexcasting:pride_colorizer_bisexual" }
+		{ item: "hexcasting:pride_colorizer_demiboy" }
+		{ item: "hexcasting:pride_colorizer_demigirl" }
+		{ item: "hexcasting:pride_colorizer_gay" }
+		{ item: "hexcasting:pride_colorizer_genderfluid" }
+		{ item: "hexcasting:pride_colorizer_genderqueer" }
+		{ item: "hexcasting:pride_colorizer_intersex" }
+		{ item: "hexcasting:pride_colorizer_lesbian" }
+		{ item: "hexcasting:pride_colorizer_nonbinary" }
+		{ item: "hexcasting:pride_colorizer_pansexual" }
+		{ item: "hexcasting:pride_colorizer_plural" }
+		{ item: "hexcasting:pride_colorizer_transgender" }
+		{ item: "hexcasting:ancient_colorizer" }
+		{ item: "hexcasting:uuid_colorizer" }
+	]
+	title: "染色剂奖池"
+}

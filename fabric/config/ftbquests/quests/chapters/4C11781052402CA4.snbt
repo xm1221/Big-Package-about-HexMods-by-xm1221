@@ -1,0 +1,1135 @@
+{
+	autofocus_id: "31B9E4BF38CAEB17"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4C11781052402CA4"
+	group: ""
+	icon: "hexical:hex_gummy"
+	id: "4C11781052402CA4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"这书讲了一些很有意思的东西——那为什么不去试着找一找那种在地底缓慢生长的&d晶体&r呢？"
+				"（咒术笔记会随着你的咒法研究的深入而解锁新的章节，所以有的章节一时看不见和找不到是正常现象。）"
+			]
+			id: "31B9E4BF38CAEB17"
+			rewards: [{
+				count: 32
+				id: "4C7D95006DCADFF0"
+				item: "hexcasting:amethyst_dust"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "读书使人强大"
+			tasks: [{
+				id: "327D89BA667F449F"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "hexcasting:thehexbook"
+					}
+				}
+				type: "item"
+			}]
+			title: "前人留下的笔记"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31B9E4BF38CAEB17"]
+			description: [
+				"破坏紫水晶簇在获得紫水晶碎片之外还有几率掉落紫水晶粉和充能紫水晶"
+				"，紫水晶含有用于施法的媒质，一个紫水晶碎片中的媒质相当于5个紫水晶粉，而一个充能紫水晶相当于两个紫水晶碎片。"
+				"“既然得到了&d充能紫水晶&r，就快去尝试合成一根法杖来施法吧！”"
+				"相关章节："
+				"{\"text\":\"媒质\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:basics/media 1\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "376C6E96A24B6F90"
+			rewards: [{
+				id: "5A410CBCD3396D3E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "“媒质！媒质！媒质！”"
+			tasks: [{
+				id: "25E176C3482C0E22"
+				item: "hexcasting:charged_amethyst"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "32980B2BA69D3FAC"
+			rewards: [{
+				id: "5E770E6828CE9F5C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2861D1A8A5E341AC"
+				item: "hexcasting:staff/oak"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "1ED5551ECCEE7C78"
+			rewards: [{
+				id: "77C9D02C6606B2BD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7A8C186596FAE3E3"
+				item: "hexcasting:staff/spruce"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "246C5720B46CAAE5"
+			rewards: [{
+				id: "3C8083510D6CFC88"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4FDDFCDFD1024059"
+				item: "hexcasting:staff/birch"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "3607D4D5491FF9E4"
+			rewards: [{
+				id: "2B15584AE2C9460F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "65A93B60E69A3164"
+				item: "hexcasting:staff/jungle"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "00D776D450F5CB68"
+			rewards: [{
+				id: "1E6D35A7E6961DAE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "66452361EACAD560"
+				item: "hexcasting:staff/acacia"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "6CB62871C276CCFD"
+			rewards: [{
+				id: "69E794484086B96B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7E8007D888916EFE"
+				item: "hexcasting:staff/bamboo"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "3A186DA14B49F0C0"
+			rewards: [{
+				id: "6ADDC0823CDEC473"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "45169A1244E03DAF"
+				item: "hexcasting:staff/cherry"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "086AFC7105B1CAC0"
+			rewards: [{
+				id: "70A87C5E09A9D915"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DD742E77793EBF4"
+				item: "hexcasting:staff/mangrove"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["376C6E96A24B6F90"]
+			hide_until_deps_complete: true
+			id: "44ED861FF126EB11"
+			rewards: [{
+				id: "75849C140F378EA3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "464CA8F8E37D9B29"
+				item: "hexcasting:staff/dark_oak"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"32980B2BA69D3FAC"
+				"1ED5551ECCEE7C78"
+				"246C5720B46CAAE5"
+				"3607D4D5491FF9E4"
+				"00D776D450F5CB68"
+				"6CB62871C276CCFD"
+				"3A186DA14B49F0C0"
+				"086AFC7105B1CAC0"
+				"44ED861FF126EB11"
+			]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_until_deps_complete: true
+			id: "37572DA362FF1D32"
+			rewards: [{
+				id: "4FB228717F6CADC3"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "“工欲善其事，必先利其器”"
+			tasks: [{
+				id: "6C57E6BEDDB74D3A"
+				item: "hexcasting:staff/edified"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37572DA362FF1D32"]
+			hide_until_deps_complete: true
+			id: "622F42C0223C17C7"
+			rewards: [{
+				id: "4024FA05039A40F2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "你真做的出来......"
+			tasks: [{
+				id: "69539C4B547117DA"
+				item: "hexcasting:staff/quenched"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"622F42C0223C17C7"
+				"37572DA362FF1D32"
+			]
+			hide_until_deps_complete: true
+			id: "4B25A77705BFF1D2"
+			subtitle: "很好的工具，不是吗？"
+			tasks: [{
+				id: "52DB8C29D4B98BBB"
+				item: "hexcasting:staff/mindsplice"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			id: "36B83476A12A85D1"
+			rewards: [{
+				id: "4A39704C8A73CAA7"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "“多快好省，力大砖飞“"
+			tasks: [{
+				id: "2643B610662E62E5"
+				item: "hexical:lightning_rod_staff"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31B9E4BF38CAEB17"]
+			description: [
+				"构筑咒术软糖的法术会移除栈顶一个&4位置向量&r。可以尝试依次绘制：&5意识之精思 -> 指南针之纯化 -> 构筑咒术软糖&r来获得一颗软糖——但是为什么这样子就可以呢？"
+				"是这样的：&e意识之精思&r会往栈顶置入&l施法者对应的实体iota&r，而&e指南针之纯化&r会移除栈顶的实体iota，将&l其眼部所在的位置向量iota&r（也就是坐标）置入栈顶，最后绘制&e构筑咒术软糖&r，它会移除栈顶的位置向量iota，然后在那个位置生成一颗咒术软糖。"
+				"也许还可以用&e彿尔循环之策略&r来获得更多的糖。相关法术记述在咒术笔记中（图案->法术->构筑小物件）本章节的”相关图案“板块也有提及。"
+				""
+				"相关图案："
+				"{\"text\":\"构筑咒术软糖\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/conjurable_delights 1\"}}]"
+				"{\"text\":\"指南针之纯化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 1\"}}"
+				"{\"text\":\"意识之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 1\"}}"
+				"{\"text\":\"佛尔循环之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:hexextra 1\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "4A7EC25D76EDA0C2"
+			rewards: [{
+				count: 64
+				id: "3ABEF33A4FB0ACD0"
+				item: "hexical:hex_gummy"
+				type: "item"
+			}]
+			subtitle: "“无中生有的艺术”"
+			tasks: [{
+				id: "4F488118304EDC9C"
+				item: "hexical:hex_gummy"
+				type: "item"
+			}]
+			title: "咒法与饮食"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4A7EC25D76EDA0C2"]
+			description: [
+				"所谓的&eiota&r，也就是&e信息&r。创造&d咒术星爆糖&r的法术，会依次移除栈顶一个&biota&r和一个&4位置向量&r，然后就在那个位置处生成一个包含着所给iota的星爆糖，如果吃掉它就会在自己的栈顶置入那个&biota&r"
+				"相关法术记述在咒术笔记中（图案->法术->构筑小物件）"
+				"相关图案："
+				"{\"text\":\"构筑咒术星爆糖\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/conjurable_delights 3\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "hexical:hexburst"
+				tag: {
+					iota: {
+						"hexcasting:data": [
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										4b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										5b
+										4b
+										4b
+										0b
+										2b
+										2b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+						]
+						"hexcasting:type": "hexcasting:list"
+					}
+				}
+			}
+			id: "62D5FE9106BBEB8B"
+			rewards: [{
+				id: "17EE9534D5DB2D68"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "“媒质+信息=口感独特的糖”"
+			tasks: [{
+				id: "34343E4685011A01"
+				item: {
+					Count: 1
+					id: "hexical:hexburst"
+					tag: {
+						iota: {
+							"hexcasting:data": {
+								name: "{\"extra\":[{\"text\":\": \"},{\"inlinecomps\":{\"inlinedata\":{\"type\":\"inline:playerhead\",\"value\":{\"username\":\"xm1221\"}},\"size\":1.5},\"text\":\".\"}],\"text\":\"xm1221\"}"
+								uuid: [I;
+									-441552534
+									566969718
+									-1463084282
+									-1386170661
+								]
+							}
+							"hexcasting:type": "hexcasting:entity"
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "iota与饮食"
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62D5FE9106BBEB8B"]
+			description: [
+				"超乎意料的，图案本身也可以用作iota——如果我们运用&e内省&r和&e反思&r这两个图案，就可以将它们之间的一系列图案制成一个&d图案列表&r，压入栈顶。构筑咒术多滋的法术，会依次移除栈顶的一个&d图案列表&r和一个&4位置向量&r，在&4位置向量&r所指的位置生成一片记述了那一串图案的新鲜可口小零食，当人们吃下它时，人们就会控制不住自己地主动释放它里面记述的法术——这可以用于&l快速和自动施法&r。"
+				"相关法术记述在咒术笔记中（图案->法术->构筑小物件）"
+				"相关图案："
+				"{\"text\":\"构筑咒术多滋\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/conjurable_delights 5\"}}"
+				"{\"text\":\"将图案用做iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 1\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "36856DD4D86575E8"
+			rewards: [
+				{
+					id: "4B0FB62FB68E4A73"
+					item: "sophisticatedbackpacks:copper_backpack"
+					type: "item"
+				}
+				{
+					id: "0CD251F4E378D7AA"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			subtitle: "“好吃到爆炸”"
+			tasks: [{
+				id: "53A553CD76D2408F"
+				item: {
+					Count: 1
+					id: "hexical:hextito"
+					tag: {
+						hex: [ ]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "自动施法与饮食"
+			x: -12.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"古代的咒法师把他们施法时iota存放的地方称之为”栈“，栈的内容会显示在施法界面的左上角，先进入栈的iota在下面，后进入的iota在上面，就好像把盘子摞在一起一样。使用”精思“一类的法术，可以往栈中置入iota。"
+				"相关章节："
+				"{\"text\":\"咒法101\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:casting/101 1\"}}"
+			]
+			id: "644A503ED00635A5"
+			rewards: [{
+				id: "7BC5EF56497043BA"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "460DDED86AE8FDA1"
+				title: "什么是栈？"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"世间几乎一切都包含信息，信息便是iota。iota是世间万物的真名与索引，通过处理iota，便可以改变世界。iota可以通过”精思“”考察“之类的图案被加入到栈中，而像”纯化“、”馏化“、”分解“一类的图案可以实现不同iota之间的转化。"
+				"相关章节："
+				"{\"text\":\"咒法101\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:casting/101 1\"}}"
+			]
+			id: "4A0A4C4467471ADB"
+			rewards: [{
+				id: "2F27357A9890B9AA"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08E91D31C06B494D"
+				title: "什么是iota？"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"毫无疑问，施法首先需要一根&d法杖&r，&l手持法杖右键&r便可以打开施法界面，这个时候便可以按住左键，在施法界面上绘制图案来施法（请注意笔顺）松开的时候一个图案就会绘制完成，一般来说，可能会需要一系列的图案才能构成一个完整的法术。"
+				"&l手持&d法杖&rshift+右键&r会在打开施法界面的同时&n清空&r你的施法界面和栈，而按esc退出施法界面时你的栈和原本施法界面上记录的图案都会保留。"
+				"施法范围一般是32格半径，有一些办法可以拓展它。"
+				"也可以查阅咒术笔记来学习这些知识（咒法学->咒术101）"
+				"相关章节："
+				"{\"text\":\"咒法101\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:casting/101 1\"}}"
+			]
+			id: "751A725443AE22F0"
+			rewards: [{
+				id: "159BC64DA8E89592"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "576EDDDE7C0BF6AB"
+				title: "施法需要什么"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"施法需要目的，正确的表达愿望自然才能回应。绝大部分的咒法图案都是对iota的处理，而大部分法术也差不多。比如”爆炸“需要提供一个位置向量来指出爆炸的位置，还需要一个数字来指明爆炸的强度。当然，还要注意栈中iota的顺序。这些知识详细的说明可以在咒术笔记中查阅到。（图案-->如何阅读此章节）"
+				"另外，错误的施法会招致&a事故&r，这在咒术笔记中亦有记载（咒法学->事故）"
+				"相关章节："
+				"{\"text\":\"事故\",\"color\":\"red\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:casting/mishaps 1\"}}"
+			]
+			id: "459CE8B4E862CC2F"
+			rewards: [{
+				id: "5BF04AE07DA353A4"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "580C30AB79CD5FFF"
+				title: "正确的使用法术"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			description: ["&d珠宝匠锤&r只能破坏&l不完整方块&r，这样子就不用担心在&d采集紫水晶&r时一不小心破坏&d母岩&r&l了，是采集紫水晶的不二之选。"]
+			id: "55806056011133FA"
+			rewards: [{
+				id: "0AAC0107479A77D4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "“小心！别出错”"
+			tasks: [{
+				id: "4BACA8B9505A3276"
+				item: {
+					Count: 1
+					id: "hexcasting:jeweler_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			description: ["将紫水晶块放在&e砧板&r上，手持镐子右键砧板，可以得到&e紫水晶碎片&r，另外，紫水晶碎片可以分解为5个&e紫水晶粉末&r。"]
+			id: "0A5FF555F102E8A7"
+			rewards: [{
+				id: "79D806BF36D4E299"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "“砍瓜切菜”"
+			tasks: [{
+				id: "28D8386C0A19E5EE"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&e媒质罐&r可以储存&d媒质&r，&l可惜把存进去的媒质取出来并不容易&r。不过，利用媒质罐，可以更方便地合成一些物品。"
+				"相关章节："
+				"{\"text\":\"媒质罐\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/media_jar 1\"}}"
+			]
+			id: "1038DD7171BE3EB2"
+			rewards: [{
+				id: "226074F47E238219"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "“一种储存媒质的方案，并不尽善尽美”"
+			tasks: [{
+				id: "6166E5175CEA22B4"
+				item: {
+					Count: 1
+					id: "hexical:media_jar"
+					tag: {
+						BlockEntityTag: {
+							media: 6400000L
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"古代的咒法师们留下了很多的遗物，其中最为特别的就是这些“远古杂件”，它们是古代的咒法师制作的施法物品，不知道经过多久，它们原本坚硬鲜亮的外壳已经染上了一层铜绿，因此其上镌刻的图案也就显示出来，通过远古杂件可以学习古代咒法师的法术，感受古人的智慧。"
+				"*可以在许多结构的宝箱中找到它们。"
+				"相关章节："
+				"{\"text\":\"制作杂件\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 1\"}}"
+				"{\"text\":\"施法物品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/hexcasting 1\"}}"
+			]
+			id: "3679486A2E73E868"
+			rewards: [
+				{
+					id: "2E72008854D89682"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "47CF3F93530DFF44"
+					item: "minecraft:creeper_banner_pattern"
+					type: "item"
+				}
+			]
+			subtitle: "“古人的智慧”"
+			tasks: [
+				{
+					id: "147CF09E805F1577"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0659C65E8FEB91C0"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "222D5C1C8C7BFA49"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 3
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03CA970549314929"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 4
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55F4154AB77D36FC"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 5
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "631E73019F047A34"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 6
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2820C5E2CBB5BDD7"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							variant: 7
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["36856DD4D86575E8"]
+			description: [
+				"这是一个&l吃不完&r的咒力多滋。"
+				""
+				"&n咒力多滋在食用后会让使用者释放咒术，&o如果说写入的是构筑咒力多滋的咒术的话，就可以在食用后再获得一个咒力多滋&r&r。那么如此推理，&e可不可以制造出吃不完的咒力多滋呢&r？"
+				""
+				"{@pagebreak}"
+				"这似乎可以通过&l嵌套&r的方式来得到，利用多层&e内省与反思&r，来做出一个吃掉之后会得到一个写着“吃掉以后会得到一个写着“吃到一个以后会得到一个写着“……”的多滋”的多滋”的多滋，显然，凡人&c无法&r在有限次绘制中完成真正的无限嵌套。但是也许有另外一种办法："
+				""
+				"&b如果有这样一个咒力多滋，它被吃掉之后的效果是再次构筑它自身，那么这岂不也是吃不完的多滋吗？&r"
+				""
+				"{@pagebreak}"
+				"要制成这样的多滋，需要了解关于&e列表操作&r和&e元运行&r的一系列图案。试想：如果依次执行列表中的图案的可以实现再次生成一个一模一样的列表，这不就接近我们想要的无限多滋了吗？"
+				""
+				"事实上，是存在这样的列表的，这样的列表被称为&e循环列表&r，如果搭配上&e异步咒术&r，就会形成古代的咒法师所说的“&e守护序列&r”。"
+				""
+				""
+				"{@pagebreak}"
+				"如果能弄明白关于&l循环列表和守护序列&r的知识，也就能明白这个无限咒力多滋的原理了吧。"
+				"相关章节："
+				"{\"text\":\"列表操作\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/lists 1\"}}"
+				"{\"text\":\"守护进程\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:async 5\"}}"
+				"{\"text\":\"异步咒术\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:async 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:music_disc_11"
+			id: "6A22352CA95F861F"
+			rewards: [{
+				id: "67C2039B0C14068B"
+				item: {
+					Count: 1
+					id: "hexical:hextito"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"无限咒力多滋\"}"
+						}
+						hex: [
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										0b
+										4b
+										1b
+										4b
+										0b
+										5b
+									]
+									start_dir: 5b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										1b
+										4b
+										4b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										1b
+										4b
+										4b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										2b
+										2b
+										1b
+										0b
+										1b
+										2b
+										2b
+									]
+									start_dir: 2b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										0b
+										2b
+										2b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										1b
+										2b
+										5b
+										2b
+										1b
+									]
+									start_dir: 3b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										2b
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										4b
+										4b
+										0b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										0b
+										2b
+										2b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+										2b
+										5b
+										4b
+										5b
+										2b
+										0b
+										4b
+										0b
+										4b
+										0b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+										2b
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "“无限牛排！？”"
+			tasks: [{
+				id: "387DE610BF72F67D"
+				title: "无限咒力多滋？"
+				type: "checkmark"
+			}]
+			x: -14.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"绘制图案虽然看起来直观，但有的时候会显得不够简洁。"
+				"而&bHexParse&r可以将一套以&d法术注册名为主的自定义代码&r解析为法术列表以及反向解析，还增加了用于给代码段添加换行与注释的新iota。"
+				"*在咒术笔记中查看关于某一图案的条目时，按住shift便会在图案图案的上方显示其注册名。"
+				"可以在咒术笔记的“咒法学”章节下的HexParse指令部分找到更详细的资料（&l在书页的左侧&r）"
+			]
+			id: "3D9DCBD3BAFDFB69"
+			subtitle: "“门格海绵！”"
+			tasks: [{
+				id: "28555C576B7FCAAF"
+				title: "关于HexParse"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"有的时候绘制图案到一半会忘记自己本来要绘制什么，实际上，可以在&e法杖&r的&b施法界面&r中&n单独点击一个点&r，之后输入法术的名称或者其&e注册名&r（ID），用上下键进行筛选。按回车直接补全绘制。"
+				"*在咒术笔记中查看关于某一图案的条目时，按住shift便会在图案图案的上方显示其注册名。"
+			]
+			id: "60565C2935AF892A"
+			subtitle: "“Tab”"
+			tasks: [{
+				id: "760C53D2C9119C31"
+				title: "关于图案补全"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"&e探知透镜&r，佩戴后可以让施法网格变得更密集一些，如果带着它看向&n卓伟之作&r的某些组成部分的话，也许还会有额外的信息显示出来。"
+				"相关章节："
+				"{\"text\":\"探知透镜\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/lens 1\"}}"
+			]
+			id: "2A0E8CDEFA0207A5"
+			rewards: [{
+				id: "748A99E5D3CDE2CD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "\"看见真理\""
+			tasks: [{
+				id: "754CB903C1A520AA"
+				item: "hexcasting:lens"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+	]
+	title: "初入咒法"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ponderer:focus",
+  "items": [
+    "hexcasting:focus"
+  ],
+  "title": {
+    "en_us": "New Scene - cypher",
+    "zh_cn": "核心"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "steps": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "核心"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:casting_items",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "核心是可以反复读写的iota储存器"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            1.5,
+            3.0,
+            1.5
+          ],
+          "motion": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "count": 1,
+          "item": "hexcasting:focus",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "使用“书吏之精思”读取"
+          },
+          "point": [
+            1.5,
+            1.0,
+            1.5
+          ]
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "direction": "right",
+          "item": "hexcasting:staff/edified"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "使用“书吏之策略”写入"
+          },
+          "point": [
+            1.5,
+            1.0,
+            1.5
+          ]
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "direction": "left",
+          "item": "hexcasting:staff/edified"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "indicate_redstone",
+          "blockPos": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "play_sound",
+          "sound": "minecraft:block.amethyst_cluster.break",
+          "soundVolume": 5.0
+        }
+      ]
+    }
+  ]
+}

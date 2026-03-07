@@ -1,0 +1,971 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "072961A9149BD3CF"
+	group: ""
+	icon: "minecraft:ender_eye"
+	id: "072961A9149BD3CF"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"据说这个世界上存在着比一般的法术更为强大的卓越法术，可惜笔记上只记录了他们的图案，而没有笔顺。也许在一些&l遗迹中可以找到古代的咒法师留下的卷轴&r（？）"
+				"拿到之后就应该试一试照着卷轴施法了。"
+				"相关章节:"
+				"{\"text\":\"远古卷轴\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/scroll 1\"}}"
+			]
+			icon: "minecraft:heart_of_the_sea"
+			id: "0CE2A3115E6989F8"
+			subtitle: "“先人的遗产”"
+			tasks: [{
+				id: "1D8E3E89A5909A33"
+				title: "卓越法术"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"栈，具有后进先出的性质，即后放入的iota在栈顶，要移除iota时也必须从上往下进行操作，即先移除最上面的iota。而自然给予我们一些图案，可以较为容易的改变栈内iota的顺序或者移除和复制栈内的iota。"
+				"最为常用的是初学者之策略、弄臣之策略与双子之分解，初学者之策略可以移除栈顶的一个iota，而弄成之策略则会交换栈顶两个iota的顺序。双子之分解会把一个与现在栈顶的iota相同的iita置入栈顶。"
+				"还有许许多多的栈操作，这些图案丰富了操作法术、操纵iota的方法和可能性，另外的一些图案也可以去咒术笔记中翻阅和查找。"
+				"相关章节："
+				"{\"text\":\"栈操作\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "hexcasting:uuid_colorizer"
+			id: "71ADB42800A2ECFD"
+			rewards: [
+				{
+					id: "55EE9256F5B2E20E"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "7D2A7F041C6A31EF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "“先来后到，秩序分明”"
+			tasks: [{
+				id: "62D53A1030FA8F5E"
+				title: "关于栈操作"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0CE2A3115E6989F8"]
+			description: [
+				"为什么我就是无法使用这些法术！？我的绘制分毫无差，媒质量也绝对足够……我为什么无法使用它们？卷轴没有问题！我能够感受到那潜藏在纸张中的力量，那笔记……对！笔记！让我看看笔记上面写了什么……"
+				"他这是什么意思？“拜&d紫水晶&r所赐，我能仅凭我自身的意识和生命能量来释放法术”……“我现在知道了那个代价是什么。”……“我的生命力最旺盛时，大概就相当于两个充能紫水晶中的媒质”"
+				"{@pagebreak}"
+				"这是什么意思？不对，这书上以前有这些字吗？他到底是指……"
+				"我明白了！我明白了！"
+				"“&l&d我是媒质&r&r！”"
+				"我明白我要做什么了，我明白我要用什么办法来谋得自然的垂怜了。"
+				"我只需要短暂的越过那个界限——&d去用一次施法消耗自己几乎所有生命值，仅留下最后半颗心的生命&r。"
+				"也许，&e天底法术&r是一个好办法？"
+				"相关章节："
+				"{\"text\":\"挫折\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:basics/couldnt_cast 1\"}}"
+				"{\"text\":\"天底法术\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/nadirs 1\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "2675CDE287A55CE6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DFC7DB598ED8784"
+				table_id: 2133223167371922543L
+				type: "choice"
+			}]
+			subtitle: "”挫折“"
+			tasks: [{
+				advancement: "hexcasting:y_u_no_cast_angy"
+				criterion: ""
+				icon: "minecraft:writable_book"
+				id: "0F0DBB4BA2EF80F0"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2675CDE287A55CE6"
+				"0B7F41C20400D890"
+			]
+			description: [
+				"我听见了！我看见了！我既不是听见也不是看见——但是我就是知道了！自然的真理，一切的真相，祂为我降下了赐福，祂要我向这个世界去传播那伟大的福音！这就是自然的语言，这就是自然的一切！"
+				"这就是我那一天所看见的东西，是一也是全，是极微小也是极宏大，既包含所有又好似空无！"
+				"赞美伟大的自然！"
+				"相关章节："
+				"{\"text\":\"我看见了什么？\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:basics/start_to_see 1\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "75889B61B3A9923D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00E495A656AAD03B"
+				table_id: 6448003585841629008L
+				type: "random"
+			}]
+			subtitle: "“我看见了！”"
+			tasks: [{
+				advancement: "hexcasting:enlightenment"
+				criterion: ""
+				icon: "minecraft:ender_eye"
+				id: "6A141C0E35208FC9"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"在施法过程中，有的时候会需要进行逻辑判断：“如果……为真，那么那么释放这个咒术，如果……为假，则什么也不做”"
+				"比较常用的逻辑判断方法是使用占卜师之提整，它会从上到下依次读取栈顶的三个值，从上往下的第三个值应当为一个布尔值（True or False），它会先移除这个布尔值，如果移除的是True（真），那么保留第二个参数并移除栈顶参数，反之，若移除的是False（假）移除第二个参数并保留栈顶参数。"
+				"如果先用逻辑运算中的种种运算方法，如“相等之馏化”等处理收集到的iota并做出真与假的判断，然后再提供两种不同的咒术的图案列表，再使用占卜师之提整，最后用赫尔墨斯之策略执行经过占卜师之提整筛选过的图案列表。这样就可以根据具体情况来施展咒术了。"
+				"相关章节："
+				"{\"text\":\"逻辑运算\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:comparator"
+			id: "17D7681320EF94CD"
+			rewards: [
+				{
+					id: "2A9DDFCA00F2812D"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "11EFAED02B61BEC6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "“真还是假？”"
+			tasks: [{
+				id: "19FE6854F30B667E"
+				title: "关于逻辑判断"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&e赫尔墨斯之策略&r是&o无法直接执行&r&d非图案的iota&r的，如果直接写一个[1,1,加法之馏化]这样的列表，再使用&e赫尔墨斯之策略&r执行，便会遭遇&c事故&r。"
+				"这个时候就需要用到&e转义&r的方法，所谓&e转义&r，也就是把不是图案的东西变成图案，比较常见的一种办法是使用&e内省和反思&r，把其他种类的iota置入列表中，再在后面加上一个&e群体之拆解&r释放那些iota，这样得到的列表+拆解的形式就可以用赫尔墨斯之策略直接执行了。"
+				"另外，使用”封泡之纯化“也是一种简单的方法。"
+				"相关章节："
+				"{\"text\":\"转义\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 9\"}}"
+				"{\"text\":\"群体之拆解\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/lists 13\"}}"
+				"{\"text\":\"封泡之纯化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/bubble 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:flower_banner_pattern"
+			id: "0D56A4F6E05F17F1"
+			rewards: [
+				{
+					id: "4007E48283A19293"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "3D37419A468C836F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "\"/escape\""
+			tasks: [{
+				id: "08F29F7F6834CC7A"
+				title: "转义"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&e内省和反思&r是一对用于创建列表的&e虚指&r，当绘制了&e内省&r之后，直到绘制&e反思&r为止，所绘制的图案都仅仅只是被当做&l单纯的&r&5图案iota&r，并且在绘制&e反思&r之后被按照先后顺序置入一个图案列表中。"
+				"如果绘制内省之后立刻绘制反思，则会得到一个&l空列表&r。"
+				"&e考察&r则可以让你绘制的下一个图案作为一个单纯的图案iota被置入栈顶。"
+				"利用&e剪接台&r则可以往内省和反思中插入更多东西。"
+				"相关章节："
+				"{\"text\":\"考察、内省与反思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 1\"}}"
+				"{\"text\":\"剪接台\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/splicing_table 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:emerald_block"
+			id: "15E9CEABFD0D1286"
+			rewards: [
+				{
+					id: "0646041BD7E94C7F"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "4A5A77848FDF6AEC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "“不，先让我想想。”"
+			tasks: [{
+				id: "38FD83552AC3D5B9"
+				title: "内省、反思与考察"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"所谓的&e列表操作图案&r，便是一系列用于创造列表、更改列表和删除、拆解列表的图案。比如&e整合之馏化&r可以把元素加入列表中，而&e群体之拆解&r可以把列表中的元素释放，"
+				"合理的运用列表操作图案便可以实现更复杂的咒术。譬如，通过生成一个合适的坐标列表，再对其中的每一个iota进行“破坏方块”操作，便可以实现大规模挖掘。"
+				"相关章节："
+				"{\"text\":\"列表操作\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/lists 1\"}}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "152A4770D8239EC4"
+			rewards: [
+				{
+					id: "71228040EA26916D"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "5F4290E1074281BD"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "“你看，他们像柱子一样。”"
+			tasks: [{
+				id: "328454DD8ACD713A"
+				title: "关于列表操作"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&e托特之策略&r、&e伊里斯之策略&r、&e卡戎之策略&r——这是三种常用的元运行。"
+				"其中，托特之策略接受一个列表和一个图案列表，并&n对前一个列表中的每一个元素依次执行图案列表中的图案&r，那之后将所得的每一个元素整合进一个列表中输出。"
+				"而伊里斯之策略和赫尔墨斯之策略一样也会运行图案列表，但是会在开始之前将一个独特的&4跳转iota（jump）&r压入栈中，当执行至跳转时，法术会直接跳过图案列表中剩余的图案直接到列表尾部。"
+				""
+				"{@pagebreak}"
+				"&e卡戎之策略&r的功能则是：执行到卡戎之策略时当时释放的那一个咒术会立刻终止。"
+				"除此之外还有各种各样的元运行，&l它们散布在咒术笔记中的各个角落&r，也许是这位咒法师在不同的精神状态下发现的吧。如果能熟练的运用元运行，成为&n卓越的咒法师&r，也是指日可待的事情啊。"
+				"相关章节："
+				"{\"text\":\"元运行\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/meta 1\"}}"
+			]
+			icon: "minecraft:bedrock"
+			id: "3FA4E6152CA8380C"
+			rewards: [
+				{
+					id: "02794D98232D6592"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "7B08501CF0F17A0C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "“基石”"
+			tasks: [{
+				id: "7B87D18F17966928"
+				title: "更进一步的元运行"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"颇为可疑的手稿，有的似乎是两位咒法师之间的来往书信，而有的则是不知所谓的胡言乱语。"
+				"从纸张的颜色来看，这些稿件的时代并没有离我们如今的时代特别遥远，但当中提到的东西又好像是那些&l古代的咒法师&r们才知晓的秘密……姑且把它们称为“&e中古手稿&r”好了。"
+			]
+			id: "7E7A20C78969BD0E"
+			invisible: true
+			rewards: [
+				{
+					id: "2325C1B4F67CACDF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "57CD65ED7D4B719E"
+					item: {
+						Count: 1
+						id: "hexical:animated_scroll_large"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"守护序列之远古活线卷轴\"}"
+							}
+							patterns: [
+								{
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								{
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								{
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								{
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										5b
+										0b
+										4b
+										1b
+										4b
+										0b
+										5b
+									]
+									start_dir: 5b
+								}
+								{
+									angles: [B;
+										4b
+										4b
+										1b
+										4b
+										4b
+									]
+									start_dir: 0b
+								}
+								{
+									angles: [B;
+										4b
+										4b
+										1b
+										4b
+										4b
+									]
+									start_dir: 0b
+								}
+								{
+									angles: [B;
+										2b
+										2b
+										1b
+										0b
+										1b
+										2b
+										2b
+									]
+									start_dir: 2b
+								}
+								{
+									angles: [B;
+										4b
+										4b
+										0b
+										2b
+										2b
+									]
+									start_dir: 3b
+								}
+								{
+									angles: [B;
+										1b
+										2b
+										5b
+										2b
+										1b
+									]
+									start_dir: 3b
+								}
+								{
+									angles: [B;
+										5b
+										5b
+										5b
+									]
+									start_dir: 4b
+								}
+								{
+									angles: [B;
+										4b
+										4b
+										2b
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+								{
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										0b
+										4b
+										4b
+										0b
+									]
+									start_dir: 0b
+								}
+								{
+									angles: [B;
+										4b
+										5b
+										4b
+										4b
+										0b
+									]
+									start_dir: 2b
+								}
+								{
+									angles: [B;
+										5b
+										1b
+										5b
+										0b
+										5b
+										0b
+										5b
+										0b
+										5b
+										0b
+										5b
+										1b
+										5b
+										4b
+										0b
+										1b
+										5b
+										5b
+										5b
+										5b
+										5b
+										0b
+										0b
+										1b
+										1b
+										0b
+										1b
+										0b
+										1b
+										1b
+										0b
+										5b
+										2b
+										0b
+										0b
+										1b
+										0b
+										1b
+										0b
+										0b
+										1b
+										0b
+										0b
+										1b
+										0b
+										1b
+										0b
+										0b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;4b]
+									start_dir: 2b
+								}
+								{
+									angles: [B;
+										1b
+										1b
+										1b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										4b
+										4b
+										2b
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								{
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+							]
+							state: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "”可疑的手稿“"
+			tasks: [{
+				id: "2C99296A68F04449"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "筱乜"
+						filtered_title: "中古手稿-一"
+						generation: 2
+						pages: [
+							"{\"text\":\"我明白了！我明白了！\\n这就是守护序列！！！\\n哈哈哈！\\n那老婆子原来是这个意思！\\n我得把它记下来：\\n\\n“于内省之中：\\n    思所欲为之事\\n    内省\\n       复内省\\n       反思\\n    再反思\\n    叫那结群的相互离散     \\n\\n\"}"
+							"{\"text\":\"  两次轮换\\n  演讲者！\\n//命前者归于前\\n  弄臣！\\n  整合！\\n//令后者归于后\\n  内省：\\n     双子\\n     //使一化为二\\n     大哉赫尔墨斯！\\n  反思\\n  相加\\n  <间隔之数>\"}"
+							"{\"text\":\" 入吾队列\\n 初学者躬扫尘杂\\n反思于是终矣\\n双子、赫尔墨斯\"}"
+						]
+						resolved: 1b
+						title: "中古手稿-一"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"颇为可疑的手稿，有的似乎是两位咒法师之间的来往书信，而有的则是不知所谓的胡言乱语。"
+				"从纸张的颜色来看，这些稿件的时代并没有离我们如今的时代特别遥远，但当中提到的东西又好像是那些古代的咒法师们才知晓的秘密……姑且把它们称为“&e中古手稿&r”好了。"
+			]
+			id: "5518B492A3D6A782"
+			invisible: true
+			rewards: [
+				{
+					id: "33EA3F460F91ABDD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0A13A89816A54781"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexcasting:flight"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "”能不能说人话“"
+			tasks: [{
+				id: "1397640778BD5177"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "罗非"
+						filtered_title: "中古手稿-二"
+						generation: 2
+						pages: [
+							"{\"text\":\"筱乜：\\n     虽然翱翔这个卓越法术很好用，但还需要额外配合烟花或者驱动法术。\\n这样实在是不太方便，得想个办法才行。\\n如果可以制作一个法术让它检测我是否在翱翔来滑翔，在我没滑翔的时候使用翱翔使我长出鞘翅那样的翅膀，而在我已在滑翔的时候给予我一个正确方向上的加速度，就好像是使用烟花加速那样——将这样的法术铭刻到造物或者缀品里就会方便很多。\"}"
+							"{\"text\":\"我在一位咒法大师所做的不知所云的诗歌中找到了灵感，现在将全文记录如下：\\n唤吾之真名\\n召测高仪\\n内省：\\n   ＜1.8＞\\n反思\\n叫结群的离散\\n至大者的第二张脸\\n内省：\\n   再唤吾之真名\\n   伟大的卓越：翱翔\"}"
+							"{\"text\":\"反思\\n内省：\\n   吾名\\n   吾名\\n   照准仪\\n   其数曰二\\n   相乘\\n   驱动\\n反思\\n占卜师提整\\n//揭示正确的道途\\n大哉赫尔墨斯！\\n\\n你说具体的图案呢？这可是咒法\"}"
+							"{\"text\":\"师的秘密！自己去想吧！我可爱的筱乜同学！\\n\\n\\n追求卓越的咒法师，\\n你的好友：\\n\\n罗非\\n\"}"
+						]
+						title: "中古手稿-二"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"颇为可疑的手稿，有的似乎是两位咒法师之间的来往书信，而有的则是不知所谓的胡言乱语。"
+				"从纸张的颜色来看，这些稿件的时代并没有离我们如今的时代特别遥远，但当中提到的东西又好像是那些古代的咒法师们才知晓的秘密……姑且把它们称为&e“中古手稿”&r好了。"
+			]
+			id: "174CE6C6522D86B7"
+			invisible: true
+			rewards: [
+				{
+					id: "0982A1F5D7746F13"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6428D40A53957704"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexcasting:lightning"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5385F2030952255C"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexcasting:summon_rain"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E834DF6350A7A7A"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexcasting:dispel_rain"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "”也许该多看看“"
+			tasks: [{
+				id: "3B384855171E8B22"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "筱乜"
+						filtered_title: "中古手稿-三"
+						generation: 2
+						pages: [
+							"{\"text\":\"罗非：\\n见字如面。\\n来信已收到，你对于翱翔法术的改进很好，我很喜欢在山峰之间翱翔，风吹的我很舒服。\\n但是你自己写的歪七扭八的句子就不要假托是什么咒法大师写的了。\\n你让我去找的可以操纵天气的卓越法术我也找到了一些。\\n你之前设想的用召雷法术来攻击敌人我认为是不切实际的，雷电和爆炸法术并不一样，我的爆炸并不会伤害我，而雷霆的火焰\"}"
+							"{\"text\":\"却会灼伤我。这样伤敌一千自损八百的法术，真的会有人用吗？\\n不过驱雨应该会很有用，我讨厌下雨。\\n——不过既然你真的很喜欢，我曾经从一位做法大师不知所云的诗句中看到过关于五雷轰顶的咒术，现在全文摘录如下:\\n\\n意识之精思\\n指南针之纯化\\n意识之精思\\n照准仪之纯化\\n侦察员之馏化\"}"
+							"{\"text\":\"指南针之纯化，第二型\\n数字之精思:5\\n内省\\n双子之分解\\n召雷\\n反思\\n彿尔循环之策略\\n初学者之策略\\n\\n不过说实在的，这个法术这么昂贵而且不实用，你到底要用来干什么呢？\\n\"}"
+							"{\"text\":\"你的好友，\\n旅行中的咒法师：\\n\\n筱乜\"}"
+						]
+						title: "中古手稿-三"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"颇为可疑的手稿，有的似乎是两位咒法师之间的来往书信，而有的则是不知所谓的胡言乱语。"
+				"从纸张的颜色来看，这些稿件的时代并没有离我们如今的时代特别遥远，但当中提到的东西又好像是那些古代的咒法师们才知晓的秘密……姑且把它们称为&e“中古手稿”&r好了。"
+			]
+			id: "0F815135666024E8"
+			invisible: true
+			rewards: [
+				{
+					id: "7EA45469C03786BC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6321E185D4F4B5BB"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexcasting:teleport/great"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "“多看看吧”"
+			tasks: [{
+				id: "5E7DD5769CD910C3"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "罗非"
+						filtered_title: "中古手稿-四"
+						generation: 2
+						pages: [
+							"{\"text\":\"筱乜：\\n祝安\\n你猜我找到了什么？\\n卓越传送之远古卷轴！\\n据说这是可以任何实体传送到这个世界上的任何地方的伟大的法术！经过几次试验，我发现这个法术具有如下的性质：\\n\\n一、它固定消耗10个充能紫水晶的媒质，不管是把什么东西传送到什么地方。\\n二、它接受的两个iota分别是目标实体和偏移向量，也就是起点\\n\"}"
+							"{\"text\":\"到传送终点之间连线的那一个向量。\\n\\n偏移向量看上去不太直观，但并不难以得到——只需要把终点坐标减去目标实体的坐标就行了（建议起点坐标使用指南针之纯化第二型得到，不然可能会传送到地里面）\\n\\n三、我发现它在传送像我们这样复杂的实体时，可能会打乱我们的物品栏，甚至随机丢失一些物品——我因此损失了一个空白造\"}"
+							"{\"text\":\"物。\\n\\n总的来说，卓越传送是相当完美的传送法术，比闪现不知道强了多少。而对于丢失物品的问题，我也有了一个初步的解决方案——把我身上的家当都塞到背包或者潜影盒里然后再把背包放进魔袋里，传送到了地方再从魔袋里把东西拿出来就好了。\\n\\n\"}"
+							"{\"text\":\"追求卓越的咒法师，\\n你的好友，\\n\\n罗非\"}"
+						]
+						resolved: 1b
+						title: "中古手稿-四"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			description: ["*本包已禁用沼气驱动、个人媒质条等破坏平衡的组件，如有需要请自行配置。"]
+			id: "2B52AD57B32C20CA"
+			invisible: true
+			rewards: [{
+				id: "53F77C4F7B0A2821"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			subtitle: "“不存在的恶臭法术”"
+			tasks: [{
+				id: "1665CDBD8D75AAEF"
+				item: {
+					Count: 1
+					id: "hexcasting:scroll"
+					tag: {
+						op_id: "hexoverpowered:yjsp_media"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2675CDE287A55CE6"]
+			description: [
+				"&e没错，没错，我想的没错！&r"
+				"&d紫水晶&r给了我那样的一种能力，当施法时，如果我不能提供足够的媒质，自然便会收走我的生命作为代价，&n我每半颗心的生命值相当于一个紫水晶粉&r——那么为了获得更多的知识，我要做的事情也就明了了："
+				"在完全健康的状态下，&n不携带媒质&r，施展一个消耗&n19个紫水晶粉&r的法术，我相信如果是这样，自然一定会对我降下垂怜，祂一定会赐给我&e启迪&r！"
+				"哈哈哈哈哈哈哈！祂一定会赐给我&e启迪&r！"
+				"祂一定……"
+				"一定要对我降下垂怜……"
+				"垂怜……"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:ender_pearl"
+			id: "0B7F41C20400D890"
+			tasks: [{
+				advancement: "hexcasting:opened_eyes"
+				criterion: ""
+				id: "7B76A108E9FE79AD"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&e字符串iota&r，顾名思义，是一种记录了&n字符串&r的iota，在许多方面都有着广泛的用途，比如说，我们可以把 “铁矿石”这个名字中的“矿石”选择出来，然后通过比对名字，筛选出所有名字里带有矿石的方块，并将其破坏——当然，&l在实际应用中，用的更多的是方块的ID&r。"
+				"在&e字符串&r这一章节中提到了很多用于创建和操作字符串的图案，如果能理解并熟练的运用它们，想来就能成为杰出的咒法师了。"
+				"相关章节："
+				"{\"text\":\"字符串\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/strings 1\"}}"
+			]
+			icon: "minecraft:string"
+			id: "16267ECAD105FD5F"
+			rewards: [{
+				id: "3773D5B3182DB07D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“字符的神奇力量”"
+			tasks: [{
+				id: "1B93B10425FF8181"
+				title: "字符串iota"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&n文本iota与字符串iota不同&r，文本可以带有&d字体特征&r（比如颜色），它们可以在单个iota中存下非常非常多的信息，因此也很容易因为一些细小的干扰而完全失去意义，关于文本iota的图案，可以很容易的在咒术笔记中找到。"
+				"相关章节："
+				"{\"text\":\"文本iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/text_iotas 1\"}}"
+				"{\"text\":\"文本的一些精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/scrying/chat 1\"}}"
+			]
+			icon: "minecraft:chiseled_bookshelf"
+			id: "0AA361B3BD70E1D0"
+			rewards: [{
+				id: "6645957710C18C66"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "\"文以载道\""
+			tasks: [{
+				id: "2B71750959FE709B"
+				title: "文本iota"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"除了&e侦查员之馏化&r，还有许多可以检测实体或者同时检测大量实体的图案，这些在咒术笔记中的&e实体&r一节都有提及。"
+				"相关章节："
+				"{\"text\":\"实体\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/entities 1\"}}"
+			]
+			icon: "minecraft:apple"
+			id: "096568BC57F7DF57"
+			rewards: [{
+				id: "7903799FE2972B30"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“更好的探知”"
+			tasks: [{
+				id: "117A7F03F576471C"
+				title: "实体iota"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"&e类型iota&r，是一系列用来说明实体方块物品甚至是iota的类型的iota（比如说：“&d紫水晶簇&r”的种类就是“&b紫水晶簇&r”而&d锋利三的钻石剑&r的种类是“&b钻石剑&r”）通过不同的操作，可以得到不同的类型iota，在筛选单一种类的目标时十分好用。"
+				"相关章节："
+				"{\"text\":\"类型iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/types 1\"}}"
+			]
+			icon: "minecraft:item_frame"
+			id: "62FECBB20BF85082"
+			rewards: [{
+				id: "0D072BED3EA833FD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“分门别类”"
+			tasks: [{
+				id: "6C985F6D3E595A66"
+				title: "类型iota"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"颇为可疑的手稿，有的似乎是两位咒法师之间的来往书信，而有的则是不知所谓的胡言乱语。"
+				"从纸张的颜色来看，这些稿件的时代并没有离我们如今的时代特别遥远，但当中提到的东西又好像是那些&l古代的咒法师&r们才知晓的秘密……姑且把它们称为“&e中古手稿&r”好了。"
+			]
+			id: "015CE1F0852BCC90"
+			invisible: true
+			rewards: [
+				{
+					id: "7D587E92836EA4A8"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexical:greater_blink"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78DFE4219A2331D1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "\"莫名其妙\""
+			tasks: [{
+				id: "75BC904433EFFB95"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "筱乜"
+						filtered_title: "中古手稿-五"
+						generation: 2
+						pages: [
+							"{\"text\":\"罗非：\\n见字如面。\\n我最近找到了一份古老的卷轴，上面记载着被称为卓越闪现的强大法术。\\n只需要两个紫水晶粉，就可以把施法者传送到128格以内的任何地方。这听起来真是让人向往。\\n\\n但详细了解之后，我才明白使用这个法术的困难之处：它接受的不是由自然所规定的这个世界的绝对坐标，而是由我们本人的朝向所决定的相对坐标——\"}"
+							"{\"text\":\"在这个坐标系中，面朝的方向为z轴右侧方向为x轴，头顶方向为y轴，如果说要定点传送，得进行一系列变换才行。\\n\\n我因此拜访了一位精通向量的大师，他告诉我除法之馏化不仅仅包括简单的除法，也包括向量与向量之间的“叉乘”。\\n\\n具体的细节你去图书馆也能查到，我在这里不再赘述，只讲思路。我们用照准仪之纯化得到我们面朝方向上的单位向量之后,\"}"
+							"{\"text\":\"如果将它叉乘一个Y轴方向上的单位向量，就会得到我们右侧方向的向量，如果叉乘一个X轴上的单位向量，便会得到我们头顶方向的向量，然后再让这些向量各自除以它们自身的长度（长度之纯化你肯定没有忘吧），便可以把它们化为单位向量，这样我们就构建了以我们自身的朝向为参照的坐标系。\\n\\n再把目标位置到我们的位置（指南针之纯化，不要忘了是第二型，除非你想卡进地里)\"}"
+							"{\"text\":\"的偏移向量复制三份，每份各自和我们的坐标系的各轴向单位向量作点乘，得到的三份就是分别对应的在各轴上的坐标，也就是我们成功将世界中的一个绝对位置转化为了以我们的朝向为参照系的坐标系中的相对位置。\\n\\n这样我们就可以使用卓越闪现了，真好。\\n\\n还在旅行中的咒法师，\\n来无影去无踪的传说人物，\\n筱乜\"}"
+						]
+						title: "中古手稿-五"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+	]
+	title: "那天我所看见的"
+}

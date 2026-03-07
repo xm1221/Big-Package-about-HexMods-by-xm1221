@@ -1,0 +1,38 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "491CA69373D936D1"
+	group: ""
+	icon: "minecraft:compass"
+	id: "491CA69373D936D1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"1.本包是以咒法学及其附属为核心的整合包，主要玩法是咒法学的高自由度施法与探索。"
+			"2.任务线不是必要的，仅仅作为新手引导和实践案例分享。"
+			"3.本包修改和增加了一些合成配方，JEI中一般都有记述。"
+			"4.如果你是新手，请一定要多翻书！多看任务描述！这会很大的提升你的游玩体验！"
+			"5.本包已禁用沼气驱动、个人媒质条等破坏平衡的组件，如有需要请自行配置。"
+			"6.记得装数据包！！！"
+			"相关章节："
+			"{\"text\":\"大包新增图案\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/miehex 1\"}}"
+		]
+		id: "526009D077141FEE"
+		rewards: [{
+			advancement: "minecraft:story/root"
+			criterion: ""
+			id: "7C75065C7110260F"
+			type: "advancement"
+		}]
+		subtitle: "“祝君一路顺风”"
+		tasks: [{
+			id: "5E595CB2728DA93D"
+			title: "游玩须知"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "在一切之前"
+}

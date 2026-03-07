@@ -1,0 +1,137 @@
+{
+  "id": "ponderer:battery",
+  "items": [
+    "hexcasting:battery"
+  ],
+  "title": {
+    "en_us": "New Scene - cypher",
+    "zh_cn": "媒质之瓶"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "steps": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "媒质之瓶"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:casting_items",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "媒质之瓶可以储存大量的媒质"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            1.5,
+            3.0,
+            1.5
+          ],
+          "motion": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "count": 1,
+          "item": "hexcasting:battery",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "使用制作媒质瓶的卓越法术可以制作它"
+          },
+          "point": [
+            1.5,
+            1.0,
+            1.5
+          ]
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "direction": "right",
+          "item": "hexcasting:scroll"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "媒质之瓶在魔袋中时仍然可以为施法者提供媒质"
+          },
+          "point": [
+            1.5,
+            1.0,
+            1.5
+          ]
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "direction": "left",
+          "item": "minecraft:chest"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "indicate_success",
+          "blockPos": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "play_sound",
+          "sound": "minecraft:block.amethyst_cluster.break",
+          "soundVolume": 5.0
+        }
+      ]
+    }
+  ]
+}

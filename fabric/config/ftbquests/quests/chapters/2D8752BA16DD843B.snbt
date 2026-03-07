@@ -1,0 +1,682 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2D8752BA16DD843B"
+	group: ""
+	icon: "minecraft:soul_campfire"
+	id: "2D8752BA16DD843B"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"*本文由Racter撰写"
+				"对于一般的咒法师来说，不会破坏完整方块的&d珠宝匠锤&r在防止误伤紫水晶母岩方面已经做得足够完美了。它甚至还可以附魔，允许采掘紫水晶簇时获得更快的速度和更多的紫水晶。"
+				""
+				"但是我是个完美主义者。珠宝匠锤虽好，但还不够好，不但有耐久耗尽的一天，而且也不能防止我失手打碎未长成的紫水晶芽和家里的瓶瓶罐罐。基于这个理念，我决定编写一个法术一一进阶版的珠宝匠锤。"
+				"{@pagebreak}"
+				"首先从我所看的方块开始。接下来我需要知道这个方块是不是紫水晶簇，所以我需要利用&e双子之分解&r复制它，用&e分拣员之纯化&r把方块坐标的复制品转化为方块类型，并且用&e相等之馏化&r与硬编码的紫水晶簇类型（使用&e转义&r在图案列表中嵌入“紫水晶簇”这个类型iota）相比较。"
+				""
+				"然后，我需要往栈里面按顺序压入两个图案列表。一个图案列表用&e提取方块&r挖掘目标方块;另一个则用&e初学者之策略&r直接把坐标iota消去，代表什么也不做。"
+				""
+				"最后，我需要根据比较的结果，用&e占卜师之提整&r在两个图案列表里面选择一个，之后用&e赫尔墨斯之策略&r执行"
+				"就这样完成了我的进阶版珠宝匠锤法术，是时候深入地下了!"
+				""
+				"{@pagebreak}"
+				"相关图案："
+				"{\"text\":\"双子之分解\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 5\"}}"
+				"{\"text\":\"初学者之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 1\"}}"
+				"{\"text\":\"分拣员之纯化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/types 3\"}}"
+				"{\"text\":\"转义\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 9\"}}"
+				"{\"text\":\"相等之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 7\"}}"
+				"{\"text\":\"将图案用做iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 1\"}}"
+				"{\"text\":\"占卜师之提整\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 7\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "hexcasting:jeweler_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2172FD986E23B1C6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E78DD66BEF1B449"
+					table_id: 6448003585841629008L
+					type: "random"
+				}
+				{
+					id: "69BD26D3020B8609"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					id: "494B53B33B5C1A1A"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"远古杂件：进阶珠宝匠锤\"}"
+							}
+							"hexcasting:media": 300000L
+							"hexcasting:start_media": 300000L
+							patterns: [
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											0b
+											4b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											0b
+											5b
+											4b
+											4b
+											0b
+											2b
+											2b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+											2b
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+											5b
+											4b
+											1b
+											4b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											5b
+											5b
+										]
+										start_dir: 4b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										block: "minecraft:amethyst_cluster"
+									}
+									"hexcasting:type": "moreiotas:item_type"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											1b
+											1b
+											1b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											0b
+											4b
+											1b
+											4b
+											0b
+											5b
+										]
+										start_dir: 5b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											2b
+										]
+										start_dir: 4b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											5b
+											5b
+										]
+										start_dir: 4b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											5b
+											4b
+											4b
+											0b
+											4b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+											5b
+											5b
+											5b
+											5b
+											2b
+											1b
+											1b
+											1b
+											5b
+											1b
+											1b
+											1b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											1b
+											1b
+											1b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											5b
+											5b
+										]
+										start_dir: 4b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;4b]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											1b
+											1b
+											1b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											0b
+											2b
+											2b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											2b
+											1b
+											4b
+											5b
+											5b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+							]
+							pigment: {
+								owner: [I;
+									-441552534
+									566969718
+									-1463084282
+									-1386170661
+								]
+								stack: {
+									Count: 1b
+									id: "hexcasting:uuid_colorizer"
+								}
+							}
+							variant: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "“小心！再小心！”"
+			tasks: [{
+				id: "009D48E4F5DB5E3B"
+				title: "进阶珠宝匠锤"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"用法杖施法时一旦出错就得&l从头再来&r，而直接用法杖制作&e施法物品&r时，也很容易刻录错误。"
+				"而&d剪接台&r则可以很方便的编辑&e核心&r和&e法术书&r中的图案。"
+				"往核心或者法术书中写入一个&b空列表&r，右键剪接台打开GUI，核心或者法术书放在中间，把法杖和一些媒质也放入剪接台中，就可以很方便的往核心中写入图案，复制、粘贴与剪切也很方便。"
+				"相关章节："
+				"{\"text\":\"剪接台\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/splicing_table 1\"}}"
+			]
+			id: "6AF7F252568CAED4"
+			rewards: [{
+				count: 16
+				id: "7A32F4183B5FD214"
+				item: "farmersdelight:cake_slice"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "“更精确的编辑”"
+			tasks: [{
+				id: "7A0D58997A16EA48"
+				item: "hexdebug:splicing_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"大部分咒术都会在我们绘制完成对应的图案之后&l立刻释放&r，要实现&d延迟施法&r，一般得借助&e磁带&r的力量。"
+				"通过&o食用&r这种方式，将一盒磁带纳入自己体内，这样就可以获得一个可以容纳延时法术的空位。通过&e入队列&r这一图案将法术填入磁带中，在规定的时间后释放，这样就实现了延时施法"
+				"常人最多只能容纳六盒磁带，因此能够同时准备的延时法术也是有数量上限的。"
+				"相关章节:"
+				"{\"text\":\"磁带\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:async 1\"}}"
+			]
+			id: "714F7F7181A2A11C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52B0FEABC719CA8B"
+				table_id: 3493381711487413946L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "“滋滋滋......”"
+			tasks: [{
+				id: "166229AD295FF75D"
+				item: "hexcassettes:cassette"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"714F7F7181A2A11C"
+				"49AAD9F666C695E5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"如果填入磁带的延时咒术可以做到&l把自己的复制品填回磁带中延时释放&r，那么每隔一段时间这一咒术就会被释放一次，这样就实现了&l常态化的、持续性&r的施法，古人称之为“&e守护进程&r”"
+				"&o试想，每5秒钟就用”&e旅者之飞行&r“给自己施加6秒的飞行能力，那岂不是能一直飞？&r"
+				"这种用“&d咒术去释放咒术&r”的方法，如今已经失传了，不知道现代人能不能复原它。"
+				"相关章节："
+				"{\"text\":\"守护进程\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:async 5\"}}"
+			]
+			hide_until_deps_complete: true
+			id: "43DDD51F7BBC6C9A"
+			rewards: [{
+				id: "65569976A940421D"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "”守护进程“"
+			tasks: [{
+				advancement: "hexcassettes:quinio"
+				criterion: ""
+				id: "5660F518437AFD55"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"使用单次的“&e破坏方块&r”法术或者“&e特种破坏&r”法术虽然挖掘效率比镐高了不少，但还不够好，如果能一次&l破坏更多方块&r那就更好了。"
+				"“&e托特之策略&r”可以满足这个想法:这个元运行图案会移除一个图案列表和一个列表，然后对后面一个列表中的每一个元素&l单独创建一个新栈&r，这个新的栈包含&o原有的栈内所有的iota，以及那个列表中的一个元素&r，那之后对于&l每一个&r新的栈，各自刻画一遍那个图案列表中的所有图案，再将每一个新栈中的所剩iota存进一个列表中，最后得到&l一个列表&r，将&l这个列表压入原本的栈&r中。"
+				"那么很显然，如果我们能得到一个包含了&l3×3×3范围内总共27个位置向量iota&r（或者说坐标）的列表，然后先绘制包含“采集方块”的图案列表，再将那个坐标列表压入栈顶，然后执行“托特之策略”，就可以一次性采集整整27个方块！甚至是更多！当然，不要忘了&e转义&r"
+				"{@pagebreak}"
+				"那么要怎样得到这个列表呢？"
+				"很显然，如果要对我们提供的每一个坐标都进行一系列复杂的变换，将其转化为相应的3×3×3坐标列表，这无疑会让咒术过于冗长，只需要预先做出一个以（0,0,0）为中心的列表，然后让这个列表根据实际的方块坐标平移就可以了。"
+				""
+				"{@pagebreak}"
+				"那么具体是如何平移呢？"
+				"可以发现，当我们面对着一堵岩壁时，如果我们选择以弓箭手之馏化确定我们所看的方块的坐标，那我们所得到的只是表层的方块坐标，如果直接将那个列表的中心平移到这个位置，我们的破坏便是不完整的，这个时候运用&e建筑师之馏化&r与&e减法之馏化&r，让这个方块坐标向内平移一格，这个时候再把列表中心平移过来，就可以很好的完成我们一次性破坏27个方块的目的。"
+				"至于那个以（0,0,0）为中心的列表，用几个&e向量之精思&r互相之间的加减及&e彿尔循环之策略&r可以很容易的制成。"
+				"{@pagebreak}"
+				"相关图案："
+				"{\"text\":\"特种破坏\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/break_special 1\"}}"
+				"{\"text\":\"托特之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/meta 5\"}}"
+				"{\"text\":\"栈操作\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 1\"}}"
+				"{\"text\":\"转义\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 9\"}}"
+				"{\"text\":\"建筑师之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 6\"}}"
+				"{\"text\":\"数学运算\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/math 1\"}}"
+				"{\"text\":\"向量之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/consts 4\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5645C7E03E5C1FED"
+			rewards: [
+				{
+					id: "16C52AEAFAC0DD08"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "507463B5C13FED39"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "”挖掘者的梦想“"
+			tasks: [{
+				consume_items: true
+				count: 1768L
+				id: "1943049A7323CBD2"
+				item: { Count: 1768, id: "minecraft:deepslate" }
+				type: "item"
+			}]
+			title: "大采集术"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43DDD51F7BBC6C9A"]
+			description: [
+				"守护序列之所以被称为&n守护序列&r，是因为&e常态和持续的施法&r确确实实可以起到“&e守护&r”的作用。"
+				""
+				"比如说，利用守护序列，可以制作出一个在每一个瞬间都把我们附近一定范围内的弹射物弹开的法术——这样就实现了&l真正的弹射物保护&r。"
+				""
+				"利用&e区域之馏化&r以及它的一系列变体，可以筛出我们周围一定范围内的非生物实体，并将其整合在一个列表中，将这个列表填入栈顶。"
+				"{@pagebreak}"
+				"之后再利用“&e托特之策略&r”，对所有被筛选出来的非生物实体进行&e驱动&r——驱动的&4偏移向量&r可以那个&o实体的位置向量减去我的位置向量&r所得的差来得到。"
+				""
+				"当然，为了节省媒质考虑，还应当利用&e长度之纯化&r、&e除法之馏化&r等办法来改变这个向量的模长，比如说，对一个向量先进行&e双子之分解&r得到它的副本，再进行&e长度之纯化&r将副本转化为它的长度（模长），再使用&e除法之馏化&r，使这个向量变为与它自身同方向的&b单位向量&r——之后也可以使用&e乘法之馏化&r来调节到合适的模长。"
+				""
+				"{@pagebreak}"
+				"在托特处理完后用&e初学者之策略&r移除托特留下的列表，然后加上&e守护序列&r，利用它奇妙的特性便可以持续的施展这个法术。"
+				""
+				"——不过要小心，如果一时之间的弹射物太多，可能会超出栈的大小上限从而招致&c事故&r——也许会有办法避免吧。"
+				""
+				"相关图案："
+				"{\"text\":\"区域之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/entities 6\"}}"
+				"{\"text\":\"托特之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/meta 5\"}}"
+				"{\"text\":\"数学运算\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/math 1\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5D7292B8B01E8023"
+			rewards: [{
+				id: "79DE6472F1B467B5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			subtitle: "“万箭丛中过，片羽不沾身”"
+			tasks: [{
+				id: "161FB0A9DD8EB471"
+				title: "真-弹射物保护"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"除了利用&e磁带&r来实现咒术的延时释放外，还可以使用&e拖延之策略&r，它接受一个图案列表和一个数字。那个图案列表是将要被延时释放的咒术，&l那个数字的1/20则是将要被延迟的秒数&r，如果接受的不是大于0的数，那么咒术就会立刻释放。"
+				""
+				"&n每种执行途径最多只能使用这个方式拥有一个延时，发起新延时将取消已有延时动作&r。"
+				"{@pagebreak}"
+				"&e拖延之策略&r可以作为没有磁带时的替代——&l有的时候会比磁带更好用。&r"
+				""
+				"另外，利用&e拖延之策略&r也是可以实现&e守护序列&r的。"
+				"相关图案："
+				"{\"text\":\"拖延之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:pages 9\"}}"
+			]
+			icon: "minecraft:recovery_compass"
+			id: "49AAD9F666C695E5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D6EF3F1A12C08A9"
+				table_id: 3493381711487413946L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“更轻松的延时咒术”"
+			tasks: [{
+				id: "0461EE03DA54EB77"
+				title: "拖延的力量"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5645C7E03E5C1FED"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "298146669248E16A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B7CBA269F6D7B2D"
+					table_id: 4181570100285425864L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09D7651AA9509D17"
+					table_id: 3493381711487413946L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12C7F29079C74758"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+				{
+					id: "46CB0B29C3D13198"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "“真正的矿工”"
+			tasks: [{
+				count: 1728L
+				id: "2C656D9BD81DA2EC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+				title: "Any #forge:ores/iron"
+				type: "item"
+			}]
+			title: "连锁采集与连锁采集之后"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"在咒法学中，存在着一些可以监测施法者按键行为的图案，它们被统称为&e心灵感应图案&r。"
+				"比如说：“&e心灵感应之精思&r”会返回施法者按下G键的时间，如果没有按下，则返回-1，如果搭配&d守护序列&r和&d逻辑判断&r的相关图案（比如占卜师之提整、不等之馏化）持续检测施法者是否按下某一按键以及按下的时间，然后据此来判断是否释放法术，就可以随心所欲的操纵咒术了。"
+				""
+				"{@pagebreak}"
+				"相关章节："
+				""
+				"{\"text\":\"心灵感应\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/telepathy 1\"}}"
+				"{\"text\":\"不等之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 8\"}}"
+				"{\"text\":\"将图案用做iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 1\"}}"
+				"{\"text\":\"占卜师之提整\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 7\"}}"
+			]
+			icon: "minecraft:enchanting_table"
+			id: "3474CFBFA4C41DA7"
+			rewards: [{
+				id: "2783935A5C393409"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			subtitle: "“随心如意”"
+			tasks: [{
+				id: "35EA8F8A20476D59"
+				title: "心灵感应的运用"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&e次级传送&r，是让人摸不着头脑的法术。它接受一个实体和一个向量，将那个实体的位置坐标的小数部分变为那个向量对应的值。消耗极少量媒质，传送一小点距离，&b真是让人迷惑的法术&r，不是吗？"
+				"不过，有一位咒法大师曾经说过：“&l没有废物的咒术，只有废物的咒法师&r”，也许这说的有几分道理，毕竟自然的造物必然是完美的，不可能有没用的东西。"
+				""
+				""
+				"{@pagebreak}"
+				"实际上，如果运用&d守护序列&r，在&l每一个tick内对某一个实体执行一次向上的次级传送&r，这个实体就会被不断的传送到离地面大概一格左右的空中，几次循环落下一次，由于留在空中的时间较长，就好像是从比较高的地方摔下来，所以会&n不断的受到摔落伤害&r。这样消耗的媒质会比较少，而且，由于不断的传送，实体的行动也会受到限制，并且伤害来源是从高处落下这种自然的伤害，不会吸引到一些中立生物的仇恨，也许这种运用是次级传送一种比较好的运用方式。"
+				""
+				""
+				"{@pagebreak}"
+				"相关章节："
+				"{\"text\":\"次级传送\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:lesserteleport 1\"}}"
+			]
+			icon: "minecraft:armor_stand"
+			id: "2C9CBA0DB8C128D4"
+			rewards: [{
+				id: "0A647FAFB2183191"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			subtitle: "‘重力掌握-伪’"
+			tasks: [{
+				id: "1F914EEDFC24A254"
+				title: "次级传送的用法探究"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+	]
+	title: "进阶法术"
+}

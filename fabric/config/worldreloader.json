@@ -1,0 +1,160 @@
+{
+  "UseSpecificPos": false,
+  "Posx": 0,
+  "Posy": 0,
+  "Posz": 0,
+  "maxRadius": 85,
+  "itemCleanupInterval": 20,
+  "Debug": false,
+  "preserveBeacon": false,
+  "targetBlockDict": [
+    {
+      "itemId": "nether_star",
+      "count": 1,
+      "enabled": true
+    }
+  ],
+  "targetBlock": "command_block",
+  "dimension": "overworld",
+  "paddingCount": 12,
+  "totalSteps2": 5,
+  "yMin": 50,
+  "yMaxThanSurface": 90,
+  "UseSurface": false,
+  "totalSteps": 10,
+  "HEIGHT": 15,
+  "DEPTH": 15,
+  "UseLine": false,
+  "tool": "wooden_shovel",
+  "width": 5,
+  "savedPositions": [],
+  "structureMappings": [
+    {
+      "itemId": "target",
+      "structureId": "village_snowy",
+      "enabled": true
+    },
+    {
+      "itemId": "cobblestone",
+      "structureId": "pillager_outpost",
+      "enabled": true
+    },
+    {
+      "itemId": "mossy_cobblestone",
+      "structureId": "jungle_pyramid",
+      "enabled": true
+    },
+    {
+      "itemId": "smooth_sandstone",
+      "structureId": "desert_pyramid",
+      "enabled": true
+    },
+    {
+      "itemId": "bookshelf",
+      "structureId": "mansion",
+      "enabled": true
+    }
+  ],
+  "biomeMappings": [
+    {
+      "itemId": "grass_block",
+      "BiomeId": "plains",
+      "enabled": true
+    },
+    {
+      "itemId": "jungle_log",
+      "BiomeId": "jungle",
+      "enabled": true
+    },
+    {
+      "itemId": "sand",
+      "BiomeId": "desert",
+      "enabled": true
+    },
+    {
+      "itemId": "snow_block",
+      "BiomeId": "snowy_plains",
+      "enabled": true
+    },
+    {
+      "itemId": "dark_oak_log",
+      "BiomeId": "dark_forest",
+      "enabled": true
+    },
+    {
+      "itemId": "mycelium",
+      "BiomeId": "mushroom_fields",
+      "enabled": true
+    },
+    {
+      "itemId": "oak_log",
+      "BiomeId": "forest",
+      "enabled": true
+    },
+    {
+      "itemId": "amethyst_block",
+      "BiomeId": "flower_forest",
+      "enabled": true
+    },
+    {
+      "itemId": "hay_block",
+      "BiomeId": "sunflower_plains",
+      "enabled": true
+    },
+    {
+      "itemId": "moss_block",
+      "BiomeId": "swamp",
+      "enabled": true
+    },
+    {
+      "itemId": "podzol",
+      "BiomeId": "old_growth_pine_taiga",
+      "enabled": true
+    },
+    {
+      "itemId": "mud",
+      "BiomeId": "mangrove_swamp",
+      "enabled": true
+    },
+    {
+      "itemId": "sandstone",
+      "BiomeId": "badlands",
+      "enabled": true
+    },
+    {
+      "itemId": "red_sandstone",
+      "BiomeId": "eroded_badlands",
+      "enabled": true
+    },
+    {
+      "itemId": "ice",
+      "BiomeId": "ice_spikes",
+      "enabled": true
+    },
+    {
+      "itemId": "packed_ice",
+      "BiomeId": "frozen_peaks",
+      "enabled": true
+    },
+    {
+      "itemId": "birch_log",
+      "BiomeId": "birch_forest",
+      "enabled": true
+    },
+    {
+      "itemId": "spruce_log",
+      "BiomeId": "taiga",
+      "enabled": true
+    },
+    {
+      "itemId": "acacia_log",
+      "BiomeId": "savanna",
+      "enabled": true
+    },
+    {
+      "itemId": "cherry_log",
+      "BiomeId": "cherry_grove",
+      "enabled": true
+    }
+  ]
+}

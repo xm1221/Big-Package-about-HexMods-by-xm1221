@@ -1,0 +1,574 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0CA17C86B0FB61A9"
+	group: ""
+	icon: "hexcasting:trinket"
+	id: "0CA17C86B0FB61A9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["iota不仅可以被临时存放在栈里，也可以被存放在一些&l永久性介质&r中，比如&e结念绳&r、&e核心&r或&e法术书&r。结念绳是比较廉价的介质，它只能被写入一次，写入后不可修改。"]
+			id: "1C056F4AD89B0C23"
+			size: 2.0d
+			subtitle: "”信息存储“"
+			tasks: [{
+				id: "7E87C51517144689"
+				item: "hexcasting:thought_knot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C056F4AD89B0C23"]
+			description: [
+				"使用书吏之策略、编年史家之策略这样的图案，可以往介质中写入iota，不妨用&e数字之精思&r和&e书吏之策略&r制作一条记述一条记述着数字“0”的结念绳吧"
+				"相关图案："
+				"{\"text\":\"数字之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/numbers 1\"}}"
+				"{\"text\":\"书吏之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 3\"}}"
+			]
+			id: "3E41BDBA5941A088"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "637CDB0877D7337F"
+				table_id: 6448003585841629008L
+				type: "random"
+			}]
+			subtitle: "“第一次输入”"
+			tasks: [{
+				id: "77AE5F59AE32BAE0"
+				item: {
+					Count: 1
+					id: "hexcasting:thought_knot"
+					tag: {
+						data: {
+							"hexcasting:data": 0.0d
+							"hexcasting:type": "hexcasting:double"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "结绳记事"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E41BDBA5941A088"]
+			description: ["与结念绳不同，&e核心&r可以反复读写，使用&e书吏之策略&r写入一个iota后，也可以再次使用书吏之策略写入另外一个，覆盖上一个。"]
+			id: "1DEF25AAF1AB4578"
+			rewards: [{
+				count: 16
+				id: "28DF10CB4B2996D6"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			subtitle: "”可读写的便携记录“"
+			tasks: [{
+				id: "40B664C3447B34F1"
+				item: "hexcasting:focus"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&e元运行&r是一门非常复杂的学问，这一类特殊的图案让自然创造的咒法系统成为了一个图灵完备的系统。"
+				"在所有的元运行图案中，最为简单也最为常用的，是&e“赫尔墨斯之策略”&r它会移除栈顶的图案列表，并立刻释放那个图案列表所对应的法术（就好像是&4依次刻画&r那个图案列表中的每一个图案&4一样&r）古代的咒法师们经常绘制它作为自己的标志和象征。"
+				"相关章节："
+				"{\"text\":\"元运行\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/meta 1\"}}"
+			]
+			icon: "minecraft:stone"
+			id: "3E220F0852F20252"
+			rewards: [{
+				id: "37050766A0C21D4D"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			subtitle: "“原初”"
+			tasks: [{
+				id: "51521EDEEA0362A0"
+				title: "元运行初步"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D3C1D74FF6EA589"]
+			description: [
+				"杂件是最简单的一种施法物品，制作起来也很简单。"
+				"“制作杂件”法术会依次移除栈顶的图案列表iota和媒质类的物品实体iota，把图案列表刻录进另一只手上的杂件中，而物品实体则被填入杂件中，当做提供能量的“电池”。"
+				"相关图案："
+				"{\"text\":\"制作杂件\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 1\"}}"
+			]
+			id: "3FDBAAD0C7CA5795"
+			rewards: [{
+				id: "3160CB04B5FF910B"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "047EAB300589220F"
+				item: "hexcasting:cypher"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3FDBAAD0C7CA5795"
+				"1D3C1D74FF6EA589"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"缀品是比较高级的施法物品，它可以通过重新充能法术进行反复充能，制作成本也不算高昂。"
+				"相关图案："
+				"{\"text\":\"制作缀品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 2\"}}"
+				"{\"text\":\"重新充能\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 4\"}}"
+			]
+			id: "00984107840FF5B2"
+			rewards: [{
+				id: "0DB6BF577BDE65CA"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03C6250C23D66A33"
+				item: "hexcasting:trinket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00984107840FF5B2"]
+			description: [
+				"造物是最为高级的施法物品，他除了可以使用重新充能法术进行反复充能，在其中储存的媒质耗尽后还会从施法者的物品栏中去汲取媒质，而当物品栏中也没有时……它会从最后一个它能找到媒质的地方来汲取媒质。"
+				"相关图案："
+				"{\"text\":\"制作造物\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 2\"}}"
+			]
+			id: "329B442E0AB688DA"
+			rewards: [{
+				id: "3B2778D5C97C7631"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "020A1D15AD071A32"
+				item: "hexcasting:artifact"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"使用&e书吏之精思&r+&e赫尔墨斯之策略&r的组合，便可以读出&l副手&r的&l永久性介质&r中所记录的图案列表，并施放那对应的法术。"
+				"如果制作出了会自动使用“&e书吏之精思&r”+“&e赫尔墨斯之策略&r”的&l施法物品&r，那么只需要一只手手持着记载着法术的结念绳，另外一只手手持施法物品右键，就可以快速使用出结念绳中所记录的法术了。"
+				"相关图案："
+				"{\"text\":\"书吏之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 3\"}}"
+				"{\"text\":\"赫尔墨斯之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/meta 1\"}}"
+				"{\"text\":\"施法物品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/hexcasting 1\"}}"
+				"{\"text\":\"制作施法物品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 1\"}}"
+			]
+			icon: "minecraft:writable_book"
+			id: "14E9D70477815688"
+			rewards: [{
+				id: "28EBE6C06F0E3899"
+				item: {
+					Count: 1
+					id: "hexcasting:ancient_cypher"
+					tag: {
+						"hexcasting:media": 1600000L
+						"hexcasting:start_media": 1600000L
+						patterns: [
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										5b
+										5b
+										5b
+										5b
+										5b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										2b
+										1b
+										4b
+										5b
+										5b
+									]
+									start_dir: 2b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+						]
+						pigment: {
+							owner: [I;
+								0
+								0
+								0
+								0
+							]
+							stack: {
+								Count: 1b
+								id: "hexcasting:default_colorizer"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "4831C635A60F1AF3"
+				title: "爱读书的赫尔墨斯"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"“光线照射曼达罗”是一组最为常见的用于定位实体或者方块的图案，分为两种形式:"
+				"意识之精思、指南针之纯化、意识之精思、照准仪之纯化、弓箭手之馏化——这5个图案最终会在你的栈顶置入一个你所看到的方块的位置向量（也就是你看到的方块的坐标）"
+				"第二种形式则是将最后的弓箭手之馏化改为侦察员之馏化，这样最后就会置入一个你所看到的实体对应的iota"
+				"相关图案："
+				"{\"text\":\"弓箭手之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 4\"}}"
+				"{\"text\":\"侦察员之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 9\"}}"
+				"{\"text\":\"照准仪之纯化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 2\"}}"
+			]
+			icon: "minecraft:ender_eye"
+			id: "1C55747F35FF445D"
+			rewards: [{
+				id: "71030B05E7410932"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			subtitle: "“我在，我望，我见。”"
+			tasks: [{
+				id: "29357196AE5774C1"
+				title: "光线照射"
+				type: "checkmark"
+			}]
+			title: "光线照射曼达罗"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1DEF25AAF1AB4578"]
+			description: ["法术书是相当好用的记录介质，把它放在手上，然后shift+滚轮就可以上下翻页，每一页都可以写入不同的iota，每一页都可以单独在铁砧上命名，所需的都是便宜材料——不过在哪里可以找到紫颂果呢？"]
+			id: "34D7A56D1027F281"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "507C0CD06C6B8FB1"
+					table_id: 6448003585841629008L
+					type: "random"
+				}
+				{
+					id: "4B62DE066CA28BEC"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "“好读书，读好书”"
+			tasks: [{
+				id: "32607456B0E06243"
+				item: {
+					Count: 1
+					id: "hexcasting:spellbook"
+					tag: {
+						page_idx: 0
+						page_names: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E41BDBA5941A088"]
+			description: [
+				"除了将iota保存在结念绳这种永久性介质中，也可以通过一些图案让咒术自己来临时的保存他们，iota会被临时存放在一个叫做渡鸦之思的地方，当咒术完成或者选择结束绘制后，被保存起来的iots就会消失。"
+				"运用福金之策略与雾尼之精思这两个图案可以实现对渡鸦之思的写入和读取。"
+				"相关图案："
+				"{\"text\":\"福金之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 11\"}}"
+				"{\"text\":\"雾尼之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 12\"}}"
+			]
+			icon: "minecraft:egg"
+			id: "523A7299976412EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60818C753E382DF8"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			subtitle: "”记下我的言论吧，但要为我守秘。“"
+			tasks: [{
+				id: "1DCB31629F72D376"
+				title: "渡鸦之思"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["329B442E0AB688DA"]
+			description: [
+				"古代的咒法师可以简单的用&d充能紫水晶&r合成&d紫水晶装备&r，如今的人却无法做到。不过，利用锻造台，将&e造物&r作为升级模板便可以将&b钻石装备&r升级成紫水晶的版本，这仅限于剑、镐、斧这样的工具，&l而紫水晶盔甲如今已经无法制作了&r。"
+				"特别的，紫水晶箭的合成依然简单，也许是确实没什么技术含量。"
+				"紫水晶装备最为特殊的一点便是它们会在一定的条件下自动释放咒术，利用&e“装备融能”&r这一图案，可以决定装备会在被触发时使用什么咒术。"
+				"相关图案："
+				"{\"text\":\"装备融能\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:imbuing 1\"}}"
+			]
+			id: "559459964FCE315E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65012E60B4BC2A97"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6AE2C863CC801D57"
+					table_id: 6448003585841629008L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3C200BD587F6507A"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+			]
+			subtitle: "“将意志熔铸成武器”"
+			tasks: [
+				{
+					id: "147FC2637A22D09A"
+					item: {
+						Count: 1
+						id: "hexchanting:amethyst_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16D5F62905437D37"
+					item: {
+						Count: 1
+						id: "hexchanting:amethyst_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38F101F681FF2D03"
+					item: {
+						Count: 1
+						id: "hexchanting:amethyst_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19FCDD63A348BEC2"
+					item: {
+						Count: 1
+						id: "hexchanting:amethyst_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04F4BC82CFC4E3D6"
+					item: {
+						Count: 1
+						id: "hexchanting:amethyst_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36EE913F06D271FA"
+					item: "hexchanting:amethyst_arrow"
+					type: "item"
+				}
+			]
+			title: "装备融能"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C056F4AD89B0C23"]
+			description: [
+				"施法物品可以使用它自身的媒质来快速释放咒术，只需手持它右键即可，施法物品分为三类，后面会详细讲到。"
+				"“&e制作施法物品&r”这一法术，会依次移除栈顶的一个&5图案列表iota&r和一个&b物品实体iota&r，&b物品实体iota&r可以使用&e侦查员之馏化&r来获得（&n依次绘制意识之精思、指南针之纯化、意识之精思、照准仪之纯化、侦查员之馏化，返回所看到的第一个实体&r）"
+				"{@pagebreak}"
+				"图案列表一般通过&e内省和反思&r来获得。"
+				"这里的物品实体必须是&l天然含有媒质的物质&r，比如说&d紫水晶粉&r或者&d紫水晶碎片&r，它们会充当施法物品的“媒质电池”，会决定制作出来的&l施法物品的媒质上限&r。"
+				"而图案列表就决定了当你右键使用这个施法物品时会释放的咒术。"
+				"如果在制作施法物品时，填入了错误的咒术，就只好使用&d&e清除物品&r&r了，那样会损失不少的媒质。"
+				"相关图案："
+				"{\"text\":\"施法物品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/hexcasting 1\"}}"
+				"{\"text\":\"制作施法物品\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexcasting 1\"}}"
+				"{\"text\":\"考察、内省与反思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/patterns_as_iotas 1\"}}"
+			]
+			id: "1D3C1D74FF6EA589"
+			rewards: [{
+				id: "73EDD07D95DA5B94"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“方便快捷”"
+			tasks: [{
+				id: "5C58746F6AAC0EDD"
+				title: "制作施法物品"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E41BDBA5941A088"]
+			description: [
+				"&l为什么一定要把iota记录在永久性或临时性的物质中呢？"
+				"&r既然已经可以通过咒法来&n干涉这个世界&r，那为什么不试着直接把iota记录在&b世界本身&r上呢？"
+				"使用“&e薛定谔之精思&r”可以将一个指向随机&b质性&r的&b质性iota&r置入栈顶。所谓&b质性iota&r，就是&b质性&r的索引，而所谓&b质性&r，就是这世界法则的一部分，可以用以容纳iota的地方。利用质性iota作为密钥，便可以访问质性，读取、修改其中的iota。"
+				"“&e薛定谔之策略&r”接受一个质性iota和一个任意iota，将后者写入质性中。"
+				""
+				"{@pagebreak}"
+				"而“&e观测之纯化&r”接受一个质性iota，并输出质性中储存的iota。"
+				"“&e薛定谔之纯化&r”则可以创建只能读取，不能修改的质性iota，它接受一个质性iota，将其转化为其只读副本。"
+				"有人说这类似于什么“全局变量”，但是似乎没有人理解这到底是什么意思。"
+				"相关章节："
+				"{\"text\":\"质性iota\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:properties 1\"}}"
+			]
+			icon: "minecraft:reinforced_deepslate"
+			id: "1C2B261CC8EFAC47"
+			rewards: [{
+				id: "537C156023775A6C"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“世界就是我的图书馆”"
+			tasks: [{
+				id: "3EBD595C6F1403D2"
+				title: "质性iota"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E41BDBA5941A088"]
+			description: [
+				"&e咒术枪&r是比较实用的一种&e施法道具&r，手持咒术枪shift右键便可以打开界面往其中填入术弹。"
+				"使用&e书吏之策略&r可以简单的往术弹中写入咒术，甚至也可以简单的进行读取和复写。"
+				"你扣下法术枪的扳机时咒弹便会射出，在命中后释放咒术。值得一提的是，咒弹并不会因此消耗。也许是因为射出的并不是广泛意义上的子弹吧。"
+				""
+				""
+				"{@pagebreak}"
+				"普通的紫水晶术弹并不能为施法者提供施法范围，而方块术弹和目标术弹，除了它们自身的独特性质以外，还会把它们&n命中位置附近的一小块区域暂时在一小段时间内变成施法者的施法范围&r。"
+				"咒术枪在使用过一次之后便会切换到下一颗术弹，&e但似乎并不会切换到空弹仓&r。"
+				"咒术枪释放的咒术消耗的是物品栏中的媒质，有时会不太方便，但有的时候也可以当做缀品这类施法物品的替代。"
+				"相关章节："
+				"{\"text\":\"书吏之策略\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/readwrite 3\"}}"
+				"{\"text\":\"咒术枪\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/gun 1\"}}"
+			]
+			id: "02081711B7FB8AD3"
+			rewards: [
+				{
+					id: "47F6166150B8D4B6"
+					item: "hex_machina:amethyst_bullet"
+					type: "item"
+				}
+				{
+					id: "1C77F2F9DF2C5443"
+					item: "hex_machina:amethyst_bullet/target_projectile"
+					type: "item"
+				}
+				{
+					id: "65834C2995DA12DF"
+					item: "hex_machina:amethyst_bullet/block_projectile"
+					type: "item"
+				}
+			]
+			subtitle: "\"biu!\""
+			tasks: [{
+				id: "05FB6D15B66D934F"
+				item: {
+					Count: 1
+					id: "hex_machina:hex_gun"
+					tag: {
+						CurrentBulletSlot: 0
+						GunData: [
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+							{
+								Count: 1b
+								id: "minecraft:air"
+							}
+						]
+						Index: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+	]
+	title: "iota记录与施法物品"
+}

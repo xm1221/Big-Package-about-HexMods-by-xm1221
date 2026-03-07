@@ -1,0 +1,36 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7929752DAB6B590C"
+	group: ""
+	hide_quest_until_deps_complete: true
+	icon: "miehex:pure_allay_shard"
+	id: "7929752DAB6B590C"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["75889B61B3A9923D"]
+		description: [
+			"剥离意识太过激了、太邪恶了、&l太浪费了&r……完全可以有更简单，更善良也&l更节约&r的运用意识方法。比如说“收集意识”，生物只要依然存活，它的意识就会一刻不停的运作，在运作过程中难免有能量会逸散出来，收集这些逸散出来的能量可以用以创造很多东西，这些能量或许和意识主体比起来微不足道，但是积累起来，也可以&e创造奇迹&r。"
+			"相关章节："
+		]
+		icon: {
+			Count: 1
+			id: "minecraft:potion"
+			tag: {
+				Potion: "hexical:wooleyed"
+			}
+		}
+		id: "56DEE197BD0BBD26"
+		size: 2.0d
+		subtitle: "“聚集的祈愿”"
+		tasks: [{
+			id: "20BA6CBFFE67DF96"
+			title: "收集意识"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: 0.5d
+	}]
+	title: "纯粹灵性？"
+}

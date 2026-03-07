@@ -1,0 +1,130 @@
+{
+  "id": "ponderer:lens",
+  "items": [
+    "hexcasting:lens"
+  ],
+  "title": {
+    "en_us": "New Scene - lens",
+    "zh_cn": "看见真实"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "steps": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "红石"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:plate",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "佩戴着探知透镜看向红石元件时会显示一些额外的信息"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "indicate_redstone",
+          "blockPos": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_2",
+      "title": {
+        "zh_cn": "阿卡夏"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:akasha"
+        },
+        {
+          "type": "rotate_camera_y",
+          "degrees": 180.0
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "佩戴着探知透镜看向阿卡夏书架会显示其记录的iota"
+          },
+          "point": [
+            1.0,
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "type": "indicate_success",
+          "blockPos": [
+            1,
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_3",
+      "title": {
+        "zh_cn": "卓伟之作"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:circle_1"
+        },
+        {
+          "type": "rotate_camera_y",
+          "degrees": 90.0
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "在看向促动石时会返回其中储存的媒质和信息"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "type": "indicate_redstone",
+          "blockPos": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "258B27014A1BD524"
+	group: ""
+	icon: "minecraft:wither_skeleton_skull"
+	id: "258B27014A1BD524"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3B6E294FC6DCDA19"]
+			description: [
+				"&n促动石是法术环的起点，是用于产生稳定的媒质波源的装置&r，媒质波在促动石中诞生，也必须回到促动石——至少古代的咒法师都这么说。"
+				"当然，&n要往其中注入意识才行&r。"
+				"相关章节："
+				"{\"text\":\"促动石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/impetus 1\"}}"
+			]
+			id: "3019206EC340E192"
+			rewards: [
+				{
+					id: "25D71B321C374D20"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60306622A264873D"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+			]
+			subtitle: "“灵魂的监牢”"
+			tasks: [{
+				id: "229E042A7F62D5D9"
+				item: "hexcasting:impetus/empty"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["75889B61B3A9923D"]
+			description: [
+				"“&5剥离意识&r”，听起来就不像什么正经法术。实际上也确实如此。这个邪恶的卓越法术接受一个生物实体和一个位置向量，那之后将那个生物实体的意识&n扭曲&r并注入那个位置的方块中，那个方块会因为意识的注入而发生改变"
+				"——这样便能得到一些新材料。"
+				"&n扭曲意识的消耗视对象与配方会有所不同。"
+				"&r当没有对应配方或配方错误时，会引发&c事故&r，并对&l目标实体&r造成一定的伤害。"
+				"相关章节："
+				"{\"text\":\"剥离意识\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/great_spells/brainsweep 1\"}}"
+				"{\"text\":\"关于意识的剥离\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/brainsweeping 1\"}}"
+			]
+			id: "462BBBBC6F3C2112"
+			rewards: [{
+				id: "7F1C473169B99A1D"
+				type: "xp"
+				xp: 100
+			}]
+			size: 2.5d
+			subtitle: "“听起来像什么黑魔法”"
+			tasks: [{
+				id: "5BCFE98E400593B2"
+				item: {
+					Count: 1
+					id: "hexcasting:scroll"
+					tag: {
+						op_id: "hexcasting:brainsweep"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -3.75d
+			y: -1.25d
+		}
+		{
+			dependencies: ["3B6E294FC6DCDA19"]
+			description: [
+				"简单、单向的法术环有时不能满足咒法师们的需求，这个时候就需要&e导向石&r来引导媒质波的方向。"
+				"当媒质波&n流过&r导向石时，&n它的方向会顺应导向石中的意识而发生改变。&r"
+				"&o讲道理，这种操纵的精度完全比不上启动法术环所需要的精度。咒法师自己操作似乎也完全可行。但是封进一个意识实在是太方便了……&r"
+				"相关章节："
+				"{\"text\":\"导向石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/directrix 1\"}}"
+			]
+			id: "5F60F74318BCF5BB"
+			rewards: [
+				{
+					id: "2F6929A5EC480DFD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "242F954B6430BC70"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+			]
+			subtitle: "“意识的囚笼”"
+			tasks: [{
+				id: "181D694C2F5914AA"
+				item: "hexcasting:directrix/empty"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28AFA4572655B03B"]
+			description: ["阿卡夏桥接块可以用于连接阿卡夏书架和阿卡夏记录，在建筑时会更为方便"]
+			id: "1E5CFA307FE82993"
+			subtitle: "“心灵的镣铐”"
+			tasks: [{
+				id: "2C36A95B50AAD11E"
+				item: "hexcasting:akashic_connector"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: ["（待补）"]
+			hide_dependency_lines: true
+			id: "316AC112A9078D1C"
+			subtitle: "“精神的枷锁”"
+			tasks: [{
+				id: "09DAEDA8FC0B5899"
+				item: "hexdebug:enlightened_splicing_table"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: [
+				"将&b悦灵&r的意识注入到&d紫水晶块&r中，便可以得到&e淬灵晶块&r，&e淬灵晶块&r被破坏后会得到&e淬灵晶碎片&r，&e淬灵晶&r拥有种种奇妙的性质，而且富含媒质，这些在咒术笔记中记载的十分详细。"
+				""
+				"相关章节："
+				"{\"text\":\"淬灵\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/quenching_allays 1\"}}"
+			]
+			hide_dependency_lines: true
+			id: "7E868A1531B37427"
+			subtitle: "“对最美好的最残忍”"
+			tasks: [{
+				id: "0673432269D0E553"
+				item: "hexcasting:quenched_allay"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: ["（待补）"]
+			hide_dependency_lines: true
+			id: "0F37CA4EAE214F29"
+			subtitle: "“万物与我为一”"
+			tasks: [{
+				id: "4DB940E7FCF3567D"
+				item: "hierophantics:flay_bed"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F60F74318BCF5BB"]
+			description: [
+				"&e石匠导向石&r会在接受红石信号之后改变方向。"
+				"值得一提的是，&n导向石并不是阀门，而更像是换向器。类似于受到红石信号的拐弯处铁轨&r，如果理解了这一点，那么，如何利用&e导向石&r来搭建复杂结构也就清晰明了了。"
+				"相关章节："
+				"{\"text\":\"导向石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/directrix 1\"}}"
+			]
+			id: "2D73344F3A552CC7"
+			subtitle: "“砌石为路”"
+			tasks: [{
+				id: "502F85199B01ECD4"
+				item: "hexcasting:directrix/redstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5F60F74318BCF5BB"]
+			description: [
+				"牧羊人导向石会先从法术环栈顶弹出一个逻辑值（布尔值），根据其值（true or false）决定是否改变方向。"
+				"相关章节："
+				"{\"text\":\"导向石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/directrix 1\"}}"
+			]
+			id: "5EB4EF654A52B511"
+			subtitle: "“能分辨善恶的牧羊人”"
+			tasks: [{
+				id: "19AA68320A04B351"
+				item: "hexcasting:directrix/boolean"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3019206EC340E192"]
+			description: [
+				"&e工具匠促动石&r是剥离工具匠村民的意识的产物，它会在被右键交互后启动，&n以交互玩家的名义施法&r。"
+				"相关章节："
+				"{\"text\":\"促动石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/impetus 1\"}}"
+			]
+			id: "63EC8B9E4E0D10D8"
+			subtitle: "\"小心翼翼\""
+			tasks: [{
+				id: "2D7FC29C196F34FD"
+				item: "hexcasting:impetus/rightclick"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3019206EC340E192"]
+			description: [
+				"制箭师促动石是剥离制箭师村民意识的产物，它会在被注视一段时间后启动，以&n注视玩家的名义施法&r。"
+				"相关章节："
+				"{\"text\":\"促动石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/impetus 1\"}}"
+			]
+			id: "1AD30876D173CB5A"
+			subtitle: "“我，看见你了”"
+			tasks: [{
+				id: "6A37AEF27FA88044"
+				item: "hexcasting:impetus/look"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3019206EC340E192"]
+			description: [
+				"牧师促动石是剥离牧师意识的产物，他会在收到红石信号时启动。特别的，也可以手持记录了玩家&e实体iota&r将那个玩家实体与促动石绑定，这样子&n就可以让其以那个玩家的名义释放&r。"
+				"相关章节："
+				"{\"text\":\"促动石\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/impetus 1\"}}"
+			]
+			id: "5E11EA0C6206244C"
+			subtitle: "“以神的名，畜牧众民”"
+			tasks: [{
+				id: "4BC8F9B50209BCE3"
+				item: "hexcasting:impetus/redstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: [
+				"&e法术环&r，早已被遗忘的卓伟结构，它由&e促动石、石板&r等方块组成。促动石可以产生&d媒质波&r。"
+				""
+				"这种波会随着石板或者其他合适的方块穿梭，运行它碰到的图案，如果波无法回到促动石处，施法就会立刻失败，&l因此法术环必须是封闭的&r。"
+				""
+				"而且波流出任何方块的方向必须&n唯一确定&r，否则法术环便会在分叉时失效。"
+				""
+				"{@pagebreak}"
+				"法术环不会从物品栏中去汲取媒质而是需要通过漏斗等类似装置向促动石提供&n晶态的媒质&r（比如充"
+				"能紫水晶、紫水晶碎片，紫水晶粉等）"
+				""
+				"法术环释放的法术似乎无法影响环外的事物，另外还有一些图案似乎只在法术环适用。"
+				""
+				"相关章节："
+				"{\"text\":\"法术环\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/spellcircles 1\"}}"
+				"{\"text\":\"法术环图案\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/circle 1\"}}"
+			]
+			icon: "minecraft:lodestone"
+			id: "3B6E294FC6DCDA19"
+			rewards: [{
+				id: "134C32F9A650F424"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "“操控世界的卓伟回路”"
+			tasks: [{
+				id: "40A82ACF0545C735"
+				title: "法术环"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: ["阿卡夏图书馆，是古代的咒法师们存放iota的宏伟图书馆，是由阿卡夏记录，阿卡夏桥接块和阿卡夏书架组成的多方块结构"]
+			icon: "minecraft:bookshelf"
+			id: "28AFA4572655B03B"
+			subtitle: "“独属于我的图书馆”"
+			tasks: [{
+				id: "29B9B014F3F701EE"
+				title: "阿卡夏图书馆"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["28AFA4572655B03B"]
+			description: [
+				"阿卡夏书架是阿卡夏图书馆中真正用于储存信息的部件，每一个书架存储一个iota，并有一个图案iota作为索引，那个图案iota被称为图案键，会显示在书架的表面。手持空白卷轴对阿卡夏书架右键可以拓印下其图案键。"
+				"另外，阿卡夏书架也可以为附魔台提供附魔能力。"
+			]
+			id: "5E16C018EE901273"
+			subtitle: "“知识的坟墓”"
+			tasks: [{
+				id: "049240CBD5A6D218"
+				item: "hexcasting:akashic_record"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["28AFA4572655B03B"]
+			description: [
+				"阿卡夏书架是阿卡夏图书馆中真正用于储存信息的部件，每一个书架存储一个iota，并有一个图案iota作为索引，那个图案iota被称为图案键，会显示在书架的表面。手持空白卷轴对阿卡夏书架右键可以拓印下其图案键。"
+				"另外，阿卡夏书架也可以为附魔台提供附魔能力。"
+			]
+			id: "6DE724EE2F17BC00"
+			subtitle: "“真理的棺椁”"
+			tasks: [{
+				id: "4800FA860E1CA537"
+				item: "hexcasting:akashic_bookshelf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["462BBBBC6F3C2112"]
+			description: [
+				"把物品的概念本身抽象化，便可以将其作为物元存入枢纽之中，同种类的物元可以无上限堆叠，有一些相关的图案用于操控枢纽和物元。"
+				"相关章节:"
+			]
+			hide_dependency_lines: true
+			id: "0BB3C4AE33C8DB61"
+			subtitle: "\"媒质化存储\""
+			tasks: [{
+				id: "61969FC1847B98DF"
+				item: "hexal:mediafied_storage"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B6E294FC6DCDA19"]
+			description: [
+				"当媒质波经过石板时，便会执行石板上所绘制的图案。石板之间&n只需要碰撞箱互相接触&r便能够形成传递媒质波的线路，因此，法术环也可以是立体的，&n如果能善用这些机制，便可以使用尽可能少的石板来实现尽可能大的施法范围&r。"
+				"*可以使用&e考察&r来获得图案iota，再用&e书吏之策略&r或者&e编年史家之策略&r往石板中写入图案。"
+				"相关章节："
+				"{\"text\":\"法术环\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/spellcircles 1\"}}"
+				"{\"text\":\"法术环图案\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/circle 1\"}}"
+				"{\"text\":\"石板\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/slate 1\"}}"
+			]
+			id: "343535916374F430"
+			rewards: [{
+				id: "7CD2D0F0AFEBDD7A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "\"传奇之石\""
+			tasks: [{
+				id: "4E73D85F4635F544"
+				item: "hexcasting:slate"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["343535916374F430"]
+			description: [
+				"&e支座&r有种种妙用。"
+				"既可以用来暂时储存物品实体方便与之交互，也可以充当法术环的另一只手，还可以用来简化法术环以及往法术环中直接置入iota，&n这些知识在咒术笔记里面记载的很详细&r。"
+				"相关章节："
+				"{\"text\":\"支座\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/pedestals 1\"}}"
+				"{\"text\":\"法术环里的支座\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:greatwork/pedestal_circles 1\"}}"
+				"{\"text\":\"法术环法术\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/circle_spells 1\"}}"
+			]
+			id: "131492228491F411"
+			rewards: [
+				{
+					id: "05BDC911FC8C82C9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22746DC370BD88B5"
+					table_id: 8979075579767597037L
+					type: "random"
+				}
+			]
+			subtitle: "\"宝物与奴仆\""
+			tasks: [{
+				id: "454B5C2C19C63AFD"
+				item: "hexical:pedestal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+	]
+	title: "剥离意识之后"
+}

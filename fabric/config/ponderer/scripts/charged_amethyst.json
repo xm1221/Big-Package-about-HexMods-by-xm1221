@@ -1,0 +1,152 @@
+{
+  "id": "ponderer:charged_amethyst",
+  "items": [
+    "hexcasting:charged_amethyst"
+  ],
+  "title": {
+    "en_us": "New Scene - charged_amethyst",
+    "zh_cn": "New Scene - charged_amethyst"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "steps": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "媒质"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:mother",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "这是紫水晶簇"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "破坏它！"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "show_controls",
+          "duration": 30,
+          "point": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "direction": "right",
+          "action": "left",
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "destroy_block",
+          "blockPos": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "play_sound",
+          "sound": "minecraft:block.large_amethyst_bud.break",
+          "soundVolume": 5.0
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count": 3,
+          "item": "hexcasting:amethyst_dust"
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count": 3,
+          "item": "hexcasting:charged_amethyst"
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "可以获得不同大小的紫水晶"
+          },
+          "point": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "它们都可以作为媒质使用"
+          },
+          "point": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

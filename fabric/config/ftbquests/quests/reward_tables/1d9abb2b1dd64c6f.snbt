@@ -1,0 +1,39 @@
+{
+	id: "1D9ABB2B1DD64C6F"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			type: "xp"
+			xp: 50
+		}
+		{
+			type: "xp_levels"
+			xp_levels: 2
+		}
+		{
+			type: "xp"
+			xp: 100
+		}
+		{
+			advancement: "hexcasting:opened_eyes"
+			criterion: ""
+			type: "advancement"
+		}
+		{
+			advancement: "hexcasting:enlightenment"
+			criterion: ""
+			type: "advancement"
+			weight: 0.5f
+		}
+		{ item: "minecraft:oak_sapling" }
+		{ item: "minecraft:spruce_sapling" }
+		{ item: "minecraft:jungle_sapling" }
+		{ item: "minecraft:cherry_sapling" }
+		{ item: "minecraft:mangrove_propagule" }
+		{ item: "sophisticatedbackpacks:iron_backpack" }
+		{ item: "hexcasting:lore_fragment" }
+		{ item: "hexcassettes:cassette", weight: 0.1f }
+	]
+	title: "平淡奖池"
+}

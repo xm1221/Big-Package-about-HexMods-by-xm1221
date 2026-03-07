@@ -1,0 +1,6 @@
+{
+  "x_limit": 100,
+  "y_limit": 50,
+  "z_limit": 100,
+  "BlocksPerTick": 1
+}

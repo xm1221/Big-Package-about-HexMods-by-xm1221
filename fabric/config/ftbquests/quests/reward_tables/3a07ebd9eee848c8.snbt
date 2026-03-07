@@ -1,0 +1,116 @@
+{
+	id: "3A07EBD9EEE848C8"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:brainsweep"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:craft/battery"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:create_lava"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexoverpowered:factor_cut"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:potion/absorption"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:potion/haste"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:potion/night_vision"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:potion/regeneration"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexcasting:potion/strength"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexal:tick"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexal:wisp/consume"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hexcasting:scroll"
+				tag: {
+					op_id: "hexal:wisp/seon/set"
+				}
+			}
+		}
+	]
+	title: "卷轴"
+}

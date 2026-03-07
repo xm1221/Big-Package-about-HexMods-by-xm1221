@@ -1,0 +1,32 @@
+{
+	// can directly parse great spell patterns, without scrolls
+	"parseGreatSpells": "BY_SCROLL",
+	/* how comments get parsed into iotas
+	   ALL: including single & multi line comments;
+	   MANUAL(default): only `comment_%s`s;
+	   DISABLED: no comments at all
+	*/
+	"commentParsingMode": "MANUAL",
+	/* how indents get parsed into iotas
+	   ALL(default): coding indents will be auto-converted into `tab_%d`;
+	   MANUAL: only `tab_%d`s accepted;
+	   DISABLED: no indents at all
+	*/
+	"indentParsingMode": "MANUAL",
+	// code indentation add to `tab_N`'s inside nested macros
+	"addIndentInsideMacro": true,
+	// cost to parse single keyword into iota
+	"parserBaseCost": 0,
+	// display colorful nested lists and intro/retros
+	"showColorfulNested": true,
+	/* how to handle unsupported iota's inner data
+	   KEEP_NBT(default): save whole NBT as Base64 string;
+	   SHOW_NBT: output `UNKNOWN(serialized NBT)`;
+	   SIMPLE: show `UNKNOWN` only
+	*/
+	"showUnknownNBT": "KEEP_NBT",
+	// how many continuous blank lines are allowed in parsed spell; excess ones will be ignored
+	"maxBlankLineCount": 0,
+	// randomize property names based on input string
+	"fairPlayPropNames": false
+}

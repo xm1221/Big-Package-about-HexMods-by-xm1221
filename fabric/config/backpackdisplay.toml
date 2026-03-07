@@ -1,0 +1,31 @@
+keybindRequirement = "NOT_NEEDED"
+priorities = ["items:0", "fluid:-1"]
+verbose_info = false
+
+[appearance]
+tooltipWidth = 9
+tooltipHeight = 4
+full_digits = 4
+offset_x = 0
+offset_y = -8
+label_scale = 0.5
+
+[appearance.backgroundColor]
+alpha = 240
+red = 16
+green = 0
+blue = 16
+
+[appearance.borderColor]
+alpha = 80
+red = 80
+green = 0
+blue = 255
+
+[itemSection]
+displayRules = ["minecraft:shulker_box#list#BlockEntityTag.Items", "minecraft:{white,orange,magenta,light_blue,yellow,lime,pink,gray,silver,cyan,purple,blue,brown,gree,red,black}_shulker_box#list#BlockEntityTag.Items", "storagedrawers:{oak,birch,jungle,spruce,acacia,dark_oak,mangrove,cherry,bamboo,crimson,warped,framed}_{full,half}_drawers_{1,2,4}#list#{BlockEntityTag,tile}.Drawers;Item;Count", "storagedrawers:compacting_drawers_{2,3}#single#BlockEntityTag.Drawers.Items.0.Item;BlockEntityTag.Drawers.Count;/BlockEntityTag.Drawers.Items.0.Conv", "storagedrawers:compacting_drawers_{2,3}#single#BlockEntityTag.Drawers.Items.1.Item;BlockEntityTag.Drawers.Count;/BlockEntityTag.Drawers.Items.1.Conv", "storagedrawers:compacting_drawers_3#single#BlockEntityTag.Drawers.Items.2.Item;BlockEntityTag.Drawers.Count;/BlockEntityTag.Drawers.Items.2.Conv", "storagedrawers:compacting_drawers_{2,3}#single#tile.Drawers.Items.0.Item;tile.Drawers.Count;/tile.Drawers.Items.0.Conv", "storagedrawers:compacting_drawers_{2,3}#single#tile.Drawers.Items.1.Item;tile.Drawers.Count;/tile.Drawers.Items.1.Conv", "storagedrawers:compacting_drawers_3#single#tile.Drawers.Items.2.Item;tile.Drawers.Count;/tile.Drawers.Items.2.Conv"]
+
+[fluidSection]
+simpleRule = true
+simpleContainerListIsBlacklist = false
+simpleContainerList = []

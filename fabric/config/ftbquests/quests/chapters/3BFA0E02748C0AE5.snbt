@@ -1,0 +1,1110 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3BFA0E02748C0AE5"
+	group: ""
+	icon: "minecraft:campfire"
+	id: "3BFA0E02748C0AE5"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&e“破坏方块”&r这个法术会移除栈顶的一个&4位置向量&r，那之后将那个位置向量处的方块破坏。"
+				"这个法术可以以很快的速度破坏任何&b钻石镐&r可以破坏的方块。"
+				"可以采用&e光线照射曼达罗&r来获取所看到的方块的坐标，那之后使用破坏方块的法术破坏它。"
+				"——如果把这6个图案刻录在&e施法物品&r中也许可以得到一把非常好用的神镐呢。"
+				"相关图案:"
+				"{\"text\":\"破坏方块\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 1\"}}"
+				"{\"text\":\"光线照射曼达罗\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 4\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7C47874294EDCE11"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0815D1CC7A285781"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“崩坏的前奏”"
+			tasks: [{
+				id: "70CBAB0D3E872001"
+				title: "简单破坏"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&e“构筑光源”&r会移除栈顶的一个位置向量，如果那个位置向量所指的位置上是一个空气方块，那么便在那里生成一个魔法光源。"
+				"可以发现，光线照射曼达罗返回的是&l我们所看到的方块的坐标（并非空气）&r所以在使用光线照射曼达罗后，直接使用&e构筑光源&r是无法成功的。"
+				"也许可以先把那个位置向量iota用&e双子之分解&r复制一份，之后依次使用&e破坏方块&r和&e构筑光源&r。"
+				"又或者可以使用&e加法之馏化&r一类的图案把所给的那个方块的位置向量&e变换&r为一个空气的位置向量，然后再使用构筑光源。"
+				"相关图案："
+				"{\"text\":\"破坏方块\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 1\"}}"
+				"{\"text\":\"光线照射曼达罗\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 4\"}}"
+				"{\"text\":\"加法之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/math 3\"}}"
+				"{\"text\":\"双子之分解\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 4\"}}"
+			]
+			icon: "minecraft:glowstone"
+			id: "7F5DB263C09C8907"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34FBC09AE1E49C45"
+				table_id: 2133223167371922543L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			subtitle: "“我说：’要有光。‘”"
+			tasks: [{
+				id: "0C01B500790F89A2"
+				title: "简单照明"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&e“催生”&r法术会移除栈顶的一个&4位置向量&r，之后对那个&4位置向量&r的方块进行催生，就好像对那个方块&l使用骨粉&r一样。"
+				"&l值得注意的是&r，&e光线照射曼达罗&r会&l越过&r树苗、草、作物这种方块而返回“更为实在”的方块的&4位置向量&r——显然骨粉要撒在小麦上，而不是泥土上，这个时候不妨使用&e“向量之精思，+Y型”&r和&e“加法之馏化”&r来对所得的&4位置向量&r进行&e变换&r，这样子原本的位置向量就会变成泥土上面一格的位置向量，就能实现正确的催生了。"
+				"&e“启迪树苗”“制造水源”“构筑光源”&r也许也可以采用相似的使用方法。"
+				"相关图案："
+				"{\"text\":\"催生\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 7\"}}"
+				"{\"text\":\"制造水源\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 3\"}}"
+				"{\"text\":\"启迪树苗\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 7\"}}"
+				"{\"text\":\"构筑光源\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 5\"}}"
+				"{\"text\":\"加法之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/math 3\"}}"
+				"{\"text\":\"向量之精思，+Y型\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/consts 5\"}}"
+			]
+			icon: "minecraft:bone_meal"
+			id: "0B99D2C401C8F014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69B6B91E22972F06"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“春回大地”"
+			tasks: [{
+				id: "2E9E89A2B7726FFB"
+				title: "催生"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"这种木材似乎太过稀有了，在整个主世界都找不到它的踪迹。也许古代的咒法师们是通过其他的方法来获得它的？"
+				""
+				"&l值得注意的是&r，&e光线照射曼达罗&r会&l越过&r树苗、草、作物这种方块而返回“更为实在”的方块的&4位置向量&r——显然启迪要在树苗上，而不是泥土上，这个时候不妨使用&e“向量之精思，+Y型”&r和&e“加法之馏化”&r来对所得的&4位置向量&r进行&e变换&r，这样子原本的位置向量就会变成泥土上面一格的位置向量，就能实现正确的启迪树苗了。"
+				"相关章节："
+				"{\"text\":\"启迪树\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/edified 0\"}}"
+				"{\"text\":\"启迪树苗\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 7\"}}"
+				"{\"text\":\"加法之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/math 3\"}}"
+				"{\"text\":\"向量之精思，+Y型\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/consts 5\"}}"
+			]
+			id: "3097C396A3B8021F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16B935A1FBF704F5"
+				table_id: 6448003585841629008L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“十年树木，百年树人”"
+			tasks: [{
+				id: "15886EEA4E2D1C65"
+				item: "hexcasting:edified_log"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"使用“加深印象”这个图案，会移除栈顶的一个图案列表，将那个图案列表深刻的记忆下来，当你按下R键，就会在1秒的吟唱之后使用那个图案列表所对应的法术——这比使用施法物品慢多了，不过，也许在有的场合会更有用一些。"
+				"相关图案："
+				"{\"text\":\"加深印象\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/evocation 1\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:player_head"
+				tag: { }
+			}
+			id: "3A567265B45B9954"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6035C8D06D030A9A"
+					table_id: 2133223167371922543L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "2FC13731B49782C4"
+					item: "hexcasting:sub_sandwich"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "“天人合一”"
+			tasks: [{
+				id: "45F22E640B3345E9"
+				title: "心灵感应"
+				type: "checkmark"
+			}]
+			title: "唤咒施法"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&e“熔炼物品”&r需要移除栈顶的一个被选中的&d物品实体iota&r，之后将那个物品实体熔炼，就好像把它放进熔炉里熔炼一样。"
+				"至于如何往栈中置入实体iota……也许应该使用&e侦察员之馏化&r？"
+				"相关图案："
+				"{\"text\":\"烧炼\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexal_spells 0\"}}"
+			]
+			icon: "minecraft:furnace"
+			id: "572708562072AA6D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D8D8E0A5992A11F"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“烈火焚烧若等闲”"
+			tasks: [{
+				id: "1FCA4F7E8F59A6BF"
+				title: "熔炼物品"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"“爆炸”是非常基础和简单的法术，但是相当有用，既可以用来破坏方块也可以用来攻击。"
+				"爆炸需要依次移除栈顶的一个数字常量iota和一个位置向量，然后在那个位置向量处造成一次强度为那个数字常量的爆炸（强度最高为10）"
+				"相关图案："
+				"{\"text\":\"爆炸\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/basic 1\"}}"
+				"{\"text\":\"数字之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/numbers 1\"}}"
+			]
+			icon: "minecraft:tnt"
+			id: "0354FADEDA2F0B1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B9A6419B79D9F5F"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“爆炸就是艺术！”"
+			tasks: [{
+				id: "7669D87333973BA5"
+				title: "Boom！"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0354FADEDA2F0B1D"]
+			description: [
+				"在使用&e爆炸&r来攻击时不仅会造成伤害，还会破坏地形——有的时候这相当不利于我们：&o&l战斗是为了保护我们的家园，怎么能自己破坏它呢？&r"
+				"&r还好，我们有更好的方法来运用&e爆炸&r，如果能在预先要&e爆炸&r的位置放置一个&b水源&r，再让&b爆炸在水源中发生&r，这样便不会破坏方块，之后再在那个位置构筑一个方块，再把那个位置的方块破坏掉，以此去除水源，这样不就实现了不破坏地形的爆炸了吗？"
+				"具体实践上来，我们可以使用&e双子之分解&r之类的图案把用&e光线照射曼达罗&r得到的位置向量iota（或者说是坐标）&b复制&r四份，分别用于&e“制造水源”“爆炸”“构筑方块”“破坏方块”&r。"
+				"——这样还有一些不足的地方，但也许够用。"
+				"相关图案："
+				"{\"text\":\"破坏方块\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 1\"}}"
+				"{\"text\":\"光线照射曼达罗\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 4\"}}"
+				"{\"text\":\"双子之分解\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 4\"}}"
+				"{\"text\":\"制造水源\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 3\"}}"
+				"{\"text\":\"构筑方块\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/blockworks 5\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:creeper_head"
+			id: "61820367ADB7E1B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1661F341AE066F65"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“只伤人，不伤物”"
+			tasks: [{
+				id: "432BAB8088FB55BE"
+				title: "冷爆炸"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0354FADEDA2F0B1D"]
+			description: [
+				"如果使用光线照射曼达罗的方块追踪版本来确定爆炸发生的坐标，那样子就得盯着敌人的脚底进行攻击——这是相当不方便的，而如果把光线照射曼达罗中的&e“弓箭手之馏化”&r改为&e“侦查员之馏化”&r这样就可以改为寻找所看见的实体，再使用&e“指南针之纯化，第二型”&r将实体iota改为实体脚部所在的坐标iota，让爆炸在这个坐标发生，显然会更精确，更好用——搭配上冷爆炸就是一个非常好用的攻击手段"
+				"相关图案:"
+				"{\"text\":\"侦察员之馏化\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/basics 9\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:firework_rocket"
+				tag: {
+					Fireworks: {
+						Flight: 3b
+					}
+				}
+			}
+			id: "26197169C3FF50A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "35B392CDA66FAB9D"
+					table_id: 6448003585841629008L
+					type: "random"
+				}
+				{
+					id: "73F9F2A796FA255D"
+					item: {
+						Count: 1
+						id: "hexcasting:ancient_cypher"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"远古杂件：爆裂\"}"
+							}
+							"hexcasting:media": 300000L
+							"hexcasting:start_media": 300000L
+							patterns: [
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											0b
+											4b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											0b
+											1b
+											4b
+											5b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											2b
+											2b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+											2b
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+											2b
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+											2b
+											4b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											5b
+											4b
+											0b
+											5b
+											4b
+											2b
+											4b
+											5b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											5b
+											4b
+											4b
+											0b
+											4b
+											0b
+										]
+										start_dir: 2b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											4b
+											4b
+											0b
+											4b
+											4b
+											0b
+											4b
+											4b
+										]
+										start_dir: 0b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											5b
+											4b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+								{
+									"hexcasting:data": {
+										angles: [B;
+											5b
+											4b
+											5b
+											5b
+											5b
+											5b
+											5b
+										]
+										start_dir: 1b
+									}
+									"hexcasting:type": "hexcasting:pattern"
+								}
+							]
+							pigment: {
+								owner: [I;
+									-441552534
+									566969718
+									-1463084282
+									-1386170661
+								]
+								stack: {
+									Count: 1b
+									id: "hexcasting:pride_colorizer_gay"
+								}
+							}
+							variant: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "“如外科手术般”"
+			tasks: [{
+				id: "1888637F93044043"
+				title: "更精准的打击手段"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&e闪现&r是最为简单的传送魔法，它会依次移除栈顶的一个数字常量iota和一个实体iota，然后将那个实体向&l他所面朝的方向&r传送那个数字数量的距离。"
+				"——&o不过要是那个数字是负数会怎么样呢？&r"
+				"相关图案："
+				"{\"text\":\"闪现\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/basic 5\"}}"
+			]
+			icon: "minecraft:ender_pearl"
+			id: "2A083CE7D1EA0EC8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BA95D1BD0F411EA"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“瞬息之间”"
+			tasks: [{
+				id: "3B3AEEDE44EA40B8"
+				title: "闪现"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&e隐士之飞行&r接受一个实体iota（一般而言是玩家）和一个数字iota，这样子就会让那玩家可以在他现在的所在位置的&d对应数字为半径的圆内飞行&r（高度不限）玩家&l离开那个范围时&r，整个飞行效果就会结束，哪怕再次进入也不会获得飞行能力"
+				"相关图案："
+				"{\"text\":\"隐士之飞行\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/flight 3\"}}"
+				"{\"text\":\"数字之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/numbers 1\"}}"
+			]
+			icon: "minecraft:feather"
+			id: "1F7CB5328A10C523"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E555E5061C37056"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“南阳有隐居，高眠卧不足”"
+			tasks: [{
+				id: "0592E60CD0A8209A"
+				title: "隐者之飞行"
+				type: "checkmark"
+			}]
+			title: "隐者之飞行"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&e旅者之飞行&r和&e隐士之飞行&r一样，接受一个实体iota和一个数字iota，之后让那个玩家可以获得飞行能力，&l持续时间由那个数字所规定&r&o，单位为秒。"
+				"相关图案:"
+				"{\"text\":\"隐士之飞行\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/flight 5\"}}"
+				"{\"text\":\"数字之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/numbers 1\"}}"
+			]
+			icon: "minecraft:phantom_membrane"
+			id: "3613EE7AC8A3035D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "652C55531E762EE4"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“读万卷书，行万里路”"
+			tasks: [{
+				id: "770BF16C4457559E"
+				title: "旅行家之飞行"
+				type: "checkmark"
+			}]
+			title: "旅者之飞行"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&e驱动&r，接受一个实体和一个向量，那之后那个实体便会受到由&d那个向量所规定的大小和方向&r的&l驱动力&r。"
+				"*&o消耗的媒质量由那个向量的模长的平方决定&r。"
+				"相关图案:"
+				"{\"text\":\"驱动\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/basic 5\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "41A04BC79D958E93"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A2F44A3ABF832F0"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“行路从此不再难”"
+			tasks: [{
+				id: "7D43CFC05F87C031"
+				title: "驱动"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&d天底法术&r是一类给予debuff的法术，它会依次移除两个数字iota和一个实体iota，两个数字&l分别作为效果的等级和作用时间&r，最后一个实体则是目标。"
+				"&o消耗的媒质量由效果等级和作用时间共同决定&r。"
+				"相关图案:"
+				"{\"text\":\"天底法术\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/nadirs 1\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:splash_potion"
+				tag: {
+					Potion: "minecraft:strong_harming"
+				}
+			}
+			id: "75EE1ABFAF78AAF4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "139E93776A20FB70"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“这是诅咒.....”"
+			tasks: [{
+				id: "53A35597F552E2DA"
+				title: "天底的诅咒"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"火球，和爆炸相似，只不过它爆炸时还会同时点燃一些周围的方块而已——讲道理，这用处似乎不是很大。"
+				"相关图案:"
+				"{\"text\":\"火球\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/basic 3\"}}"
+			]
+			icon: "minecraft:torchflower"
+			id: "3D25660AA0592ABB"
+			shape: "hexagon"
+			subtitle: "“这火焰将吞噬一切”"
+			tasks: [{
+				id: "289D695138EC42D1"
+				title: "火球"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C47874294EDCE11"]
+			description: [
+				"在一般的破坏方块之外，古代的咒法师们还发明了&e“特种破坏”&r的方法，它们分别是提取方块和采集方块。前者类似于&d时运&r，而后者在古代被称为&d“丝绸之触”&r，如今的人们称它为&d“精准采集”&r。"
+				"相关图案:"
+				"{\"text\":\"特种破坏\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/break_special 1\"}}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:golden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A4A80C012910E77"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "“更温柔还是更深入？”"
+			tasks: [{
+				id: "49A10CA51D352C05"
+				title: "特种破坏"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"魔袋，是一种&d储物法术&r，使用&e“藏入魔袋”&r法术便可以把另一只手中的物品藏入魔袋中，还可以使用其他的相关法术将其从魔袋中抛出。"
+				"&o*某些&d图腾&r可在魔袋中运作，魔袋中的&d媒质之瓶&r也仍然可以为咒术提供媒质&r。"
+				"相关图案："
+				"{\"text\":\"魔袋\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/wristpocket 1\"}}"
+			]
+			icon: "minecraft:trapped_chest"
+			id: "7B46215CB9B5C4F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14BA547BD4F4CB4D"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“袖里乾坤”"
+			tasks: [{
+				id: "306440CB62E7798A"
+				title: "魔袋"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&e染色剂&r是一种神奇的物质，它可以改变你&d思维的颜色&r——具体来说，当你在&l副手&r持有一个染色剂，并使用&e内化染色剂&r法术后，你施法是绘制出的图案的颜色就会变成染色剂所对应的颜色。"
+				"使用&e施法者之魅力&r这个法术还可以根据自己思维的颜色来改变&l另一只手&r中的&e杂件&r、&e缀品&r、&e造物&r和&e核心&r的材质。"
+				"&o*这些染色剂的颜色的名称有些古怪，没人知道古代的咒法师们为他们取名时到底是抱着怎么样的想法。&r"
+				"相关章节："
+				"{\"text\":\"染色剂\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/pigments 1\"}}"
+				"{\"text\":\"内化染色剂\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/colorize 1\"}}"
+				"{\"text\":\"施法者之魅力\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/cyclevariant 1\"}}"
+			]
+			icon: "hexcasting:pride_colorizer_gay"
+			id: "5CE036EF458D0708"
+			shape: "hexagon"
+			subtitle: "“缤纷多彩”"
+			tasks: [{
+				id: "7677DFB4946EA077"
+				title: "内化染色剂"
+				type: "checkmark"
+			}]
+			title: "思维染色"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"咒法师可以通过&e构筑尖刺&r的法术来攻击敌人，这似乎与&9唤魔者&r的魔法相似，如果搭配上&e唤咒&r，那就更像了。"
+				"构筑尖刺法术需要移除栈顶的三个iota，它们分别表示&l尖刺出现的位置，被尖刺所刺到的实体被击退的方向与尖刺延迟出现的时间&r。"
+				"&o尽管单个尖刺的伤害比起爆炸来说不值一提，但也许也会有它自己的用处？毕竟自然怎么会创造无用之物呢？&r"
+				"相关图案："
+				"{\"text\":\"构筑尖刺\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/spike 1\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:white_banner"
+				tag: {
+					BlockEntityTag: {
+						Patterns: [
+							{
+								Color: 9
+								Pattern: "mr"
+							}
+							{
+								Color: 8
+								Pattern: "bs"
+							}
+							{
+								Color: 7
+								Pattern: "cs"
+							}
+							{
+								Color: 8
+								Pattern: "bo"
+							}
+							{
+								Color: 15
+								Pattern: "ms"
+							}
+							{
+								Color: 8
+								Pattern: "hh"
+							}
+							{
+								Color: 8
+								Pattern: "mc"
+							}
+							{
+								Color: 15
+								Pattern: "bo"
+							}
+						]
+						id: "minecraft:banner"
+					}
+					display: {
+						Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+					}
+				}
+			}
+			id: "52F128557C5242FE"
+			rewards: [{
+				id: "64188FDAC4B25A98"
+				item: {
+					Count: 1
+					id: "hexcasting:ancient_cypher"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"远古杂件：尖刺\"}"
+						}
+						"hexcasting:media": 300000L
+						"hexcasting:start_media": 300000L
+						patterns: [
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										4b
+										5b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										4b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										1b
+										4b
+										5b
+										4b
+									]
+									start_dir: 1b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										2b
+										2b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+										5b
+										5b
+										1b
+										0b
+									]
+									start_dir: 5b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										0b
+										2b
+										2b
+										0b
+									]
+									start_dir: 5b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										5b
+										5b
+										5b
+										5b
+										1b
+										0b
+									]
+									start_dir: 5b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										4b
+										5b
+										4b
+										4b
+									]
+									start_dir: 2b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+							{
+								"hexcasting:data": {
+									angles: [B;
+										5b
+										2b
+										5b
+										2b
+										5b
+										2b
+										5b
+										2b
+										0b
+										0b
+									]
+									start_dir: 0b
+								}
+								"hexcasting:type": "hexcasting:pattern"
+							}
+						]
+						pigment: {
+							owner: [I;
+								-441552534
+								566969718
+								-1463084282
+								-1386170661
+							]
+							stack: {
+								Count: 1b
+								id: "hexcasting:pride_colorizer_gay"
+							}
+						}
+						variant: 1
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "“刺穿我的敌人吧！”"
+			tasks: [{
+				id: "68C2A1F9C6569ABA"
+				title: "构筑尖刺"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&d长春花&r是古代的花朵，现在已经很少见了。如果用特殊的法术则可以让&b嗅探兽&r挖出它。"
+				"相关章节："
+				"{\"text\":\"长春花\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/periwinkle 1\"}}"
+			]
+			id: "34D045BAC551CF06"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0EA5048927EA444F"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“枯荣相继，长盛不衰”"
+			tasks: [{
+				id: "076468C095846572"
+				item: "hexical:periwinkle"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"运用媒质罐，将铜浸泡在媒质中，可以让铜变化为黄金。"
+				"媒质罐还有一些其他作用，在咒术笔记中有详细记载。"
+				"相关章节："
+				"{\"text\":\"媒质罐\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/media_jar 1\"}}"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "344650A0FC327871"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "582E950B5247DC42"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“炼金术”"
+			tasks: [{
+				id: "7D5DB6576DF29450"
+				title: "点铜成金"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&e实体胶囊&r可以将实体俘获并储存起来，之后可以在其他地方将其释放，是很方便的搬运实体的方法。"
+				"实体胶囊的读取与写入都要依靠咒术：&e胶囊捕获&r法术可以消耗媒质抓捕实体，&e胶囊释放&r则可以释放其中的实体。"
+				"相关章节："
+				"{\"text\":\"实体胶囊\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:items/entity_capsule 1\"}}"
+				"{\"text\":\"实体胶囊法术\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/entity_capsule 1\"}}"
+			]
+			id: "65D08F9B88543667"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07FDCE6B0884704A"
+				table_id: 6448003585841629008L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“我要成为宝可梦大师！”"
+			tasks: [{
+				id: "243A91C6C86461E6"
+				item: "hex_machina:entity_capsule"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"“构筑火球”法术和“火球”法术不同，前者会生成一个火焰弹实体，而后者只不过是一次附带燃烧的爆炸而已。“构筑火球”法术接受一个位置向量iota，然后在那个位置产生一个火焰弹实体，并将其实体iota置入栈顶，这个火焰弹实体就好像是静止不动的恶魂火球，可以右键将其打飞，如果搭配上驱动法术的话，也许可以像恶魂或者烈焰人一样发射火球。"
+				"相关图案："
+				"{\"text\":\"构筑火球\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/projectiles 5\"}}"
+			]
+			icon: "minecraft:fire_charge"
+			id: "4DB7CCC54BE247B9"
+			shape: "hexagon"
+			subtitle: "“见鬼去吧！”"
+			tasks: [{
+				id: "6439DDAC938E867F"
+				title: "烈焰弹"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"“&e命名&r”这一法术接受一个实体iota和一个字符串iota，用那个字符串给那个实体命名。"
+				"&n当给物品实体命名时，也会同时给物品命名&r。"
+				"字符串iota可以用“&e耳语之精思&r”等&d字符串相关图案&r得到。"
+				"相关图案："
+				"{\"text\":\"耳语之精思\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/strings 11\"}}"
+				"{\"text\":\"命名\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/strings 18\"}}"
+			]
+			icon: "minecraft:name_tag"
+			id: "5981E3DFCE0F8DF4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E714F346857BA8E"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "\"今天，我赐予你新的名字\""
+			tasks: [{
+				id: "03E7ED1F1BA557F5"
+				title: "命名法术"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&e喘息&r这个法术接受一个实体，释放后会立刻将那个实体的&b氧气条&r填满，真是水下探险的好帮手！另外，这个法术也可以帮助鱼们在陆地上生存。"
+				"相关图案："
+				"{\"text\":\"喘息\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/hexical_spells 10\"}}"
+			]
+			icon: "minecraft:pufferfish"
+			id: "5794635E3360A10D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00BC297749228837"
+				table_id: 2133223167371922543L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "“如鱼得水”"
+			tasks: [{
+				id: "64CDBED631BF798F"
+				title: "水下呼吸"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+	]
+	title: "简单法术"
+}

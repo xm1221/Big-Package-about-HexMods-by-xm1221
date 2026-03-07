@@ -1,0 +1,9 @@
+[itemHallucinations]
+baseEmeraldRate = 0.001
+maxEmeraldRate = 0.1
+mediaRate = 0.1
+[audioHallucinations]
+baseVillagerRate = 2.0E-4
+maxVillagerRate = 0.004
+allayRate = 0.004
+cooldown = 70

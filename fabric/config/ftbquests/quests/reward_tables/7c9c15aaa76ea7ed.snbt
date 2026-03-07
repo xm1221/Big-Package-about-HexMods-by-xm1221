@@ -1,0 +1,23 @@
+{
+	id: "7C9C15AAA76EA7ED"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "minecraft:sentry_armor_trim_smithing_template" }
+		{ item: "minecraft:vex_armor_trim_smithing_template" }
+		{ item: "minecraft:wild_armor_trim_smithing_template" }
+		{ item: "minecraft:coast_armor_trim_smithing_template" }
+		{ item: "minecraft:dune_armor_trim_smithing_template" }
+		{ item: "minecraft:wayfinder_armor_trim_smithing_template" }
+		{ item: "minecraft:raiser_armor_trim_smithing_template" }
+		{ item: "minecraft:shaper_armor_trim_smithing_template" }
+		{ item: "minecraft:host_armor_trim_smithing_template" }
+		{ item: "minecraft:ward_armor_trim_smithing_template" }
+		{ item: "minecraft:silence_armor_trim_smithing_template" }
+		{ item: "minecraft:tide_armor_trim_smithing_template" }
+		{ item: "minecraft:rib_armor_trim_smithing_template" }
+		{ item: "minecraft:eye_armor_trim_smithing_template" }
+		{ item: "minecraft:spire_armor_trim_smithing_template" }
+	]
+	title: "模板"
+}
