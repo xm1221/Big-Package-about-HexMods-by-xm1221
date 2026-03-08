@@ -201,22 +201,20 @@ function mobCasting(spell,mob,name){
     caster.setItemInHand(InteractionHand.MAIN_HAND, item)
     caster.setPos(x,y,z)
     caster.setRotation(yaw,pitch)
-        // 1. 创建施法环境
+        // 创建施法环境
         let hand = InteractionHand.MAIN_HAND;
         let env = new StaffCastEnv(caster, hand);
 
-        // 2. 创建空虚拟机
+        // 创建空虚拟机
         let vm = CastingVM.empty(env);
 
         let Iotas = global.spells.nbt(spell,level)
         let List =Iotas.list
 
-        // 4. 异步执行
+        // 执行
         vm.queueExecuteAndWrapIotas(List, env.world);
 
-        // 粒子效果
-        player.level.spawnParticles('minecraft:witch', true,
-            player.x, player.y + 1, player.z, 0, 0.1, 0, 20, 0.2);
+
 }
 global.spells = {
     nbt:spellsfromnbt,

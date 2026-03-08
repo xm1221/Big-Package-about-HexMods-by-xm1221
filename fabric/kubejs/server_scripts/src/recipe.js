@@ -146,7 +146,7 @@ ServerEvents.recipes(e=>{
     ["minecraft:village_taiga", "minecraft:spruce_log", "minecraft:cobblestone", "minecraft:taiga"],
 
     // 其他原版结构
-    ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:ender_pearl", "minecraft:plains"],
+    ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:stone", "minecraft:plains"],
     ["minecraft:ancient_city", "minecraft:deepslate", "minecraft:echo_shard", "minecraft:deep_dark"],
     ["minecraft:trail_ruins", "minecraft:terracotta", "minecraft:sand", "minecraft:jungle"],
     ["minecraft:jungle_pyramid", "minecraft:mossy_cobblestone", "minecraft:vine", "minecraft:jungle"],
@@ -157,8 +157,8 @@ ServerEvents.recipes(e=>{
     ["minecraft:shipwreck", "minecraft:oak_log", "minecraft:iron_ingot", "minecraft:ocean"],
     ["minecraft:ocean_ruin", "minecraft:stone_bricks", "minecraft:prismarine", "minecraft:ocean"],
     ["minecraft:bastion_remnant", "minecraft:blackstone", "minecraft:gold_ingot", "minecraft:nether_wastes"],
-    ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:blaze_rod", "minecraft:nether_wastes"],
-    ["minecraft:end_city", "minecraft:purpur_block", "minecraft:shulker_shell", "minecraft:the_end"],
+    ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:nether_bricks", "minecraft:nether_wastes"],
+    ["minecraft:end_city", "minecraft:purpur_block", "minecraft:purpur_block", "minecraft:the_end"],
 
     // 自定义结构
     ["miehex:abadoned_greatwork", 'hexcasting:edified_log', 'hexcasting:slate_block', "minecraft:nether_wastes"],

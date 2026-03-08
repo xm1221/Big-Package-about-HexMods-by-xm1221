@@ -1,6 +1,37 @@
+//the first package made by xm1221.He(maybe she?) received alot of help from 爰何云、YukkuriC、Scheinlethe and others.
 global.ForLoopTasks = new Map()
 global.ZERO = new Map()
 global.PatternOperateMap = {
+    //意识之精思
+    "get_caster":(stack,env)=>{
+        let caster = env.caster
+        if(!caster.isPlayer()){
+            stack.push(NullIota)
+            return
+        }
+        let id = caster.id
+        let level =caster.level
+        let server = caster.server
+        if (server.persistentData.contains('hexTags')) {
+             let hexTags = server.persistentData.getCompound('hexTags')
+             let namespace = hexTags.getCompound(id)
+             let serializeIota = namespace.getCompound('name')
+             let iota = IotaType.deserialize(serializeIota, level)
+             if(!iota){
+                let iota = EntityIota(caster)
+                stack.push(iota)
+                return
+             }
+             if(iota instanceof GarbageIota){
+                let iota = EntityIota(caster)
+                stack.push(iota)
+                return
+             }
+             stack.push(iota)
+             return
+}
+        
+   },
     //开发者之策略
     "xmdebug": (stack, env) => {
     let args = new Args(stack, 2)
@@ -56,6 +87,15 @@ global.PatternOperateMap = {
     } else {
         stack.push(NullIota)
     }
+},
+//测试员之策略
+"test":(stack,env,img,cont)=>{
+  /*let args = new Args(stack,1)
+  let iota = args.string(0)
+  console.log(`${iota}`)
+  let caster = env.caster
+  caster.runCommandSilent(`title @p title {"text":"${iota}"}`)
+  return*/
 },
     // 戏法之提整
     "list_insert": (stack, env) => {
@@ -434,6 +474,33 @@ global.PatternOperateMap = {
     return [];
 },
 
+//故乡之精思
+"get_spawn":(stack,env)=>{
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let respawnPos = caster.getRespawnPosition()
+    let iota = Vec3Iota(respawnPos)
+    stack.push(iota)
+},
+//仇雠之纯化
+"get_target":(stack,env)=>{
+    let args = new Args(stack,1)
+    let entity = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, entity)   
+    let target = entity.getTarget()
+    if(target!=null){
+        let iota = new EntityIota(target)
+    stack.push(iota)
+    return
+}
+let nulliota =new NullIota
+     stack.push(nulliota)
+        return
+    
+},
+
        
     //spells====================
 
@@ -448,6 +515,8 @@ global.PatternOperateMap = {
     let args = new Args(stack, 2);
     let entity1 = args.entity(0);
     let entity2 = args.entity(1);
+    ActionJS.helpers.assertEntityInRange(env, entity1)
+    ActionJS.helpers.assertEntityInRange(env, entity2)
 
     // 确保两个实体都是物品实体
     if (entity1.type !== 'minecraft:item') {
@@ -654,71 +723,29 @@ global.PatternOperateMap = {
     // 消耗 10000 点媒质
     let sideEffects = [];
     sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
-
     return sideEffects;
 },
-// 强制施法
+// 冒名顶替
    "imposter": (stack, env, img) => {
-        let args = new Args(stack, 2)
-        let targetPlayer = args.entity(0)
-        let code = args.list(1)
+       let args = new Args(stack, 1)
+       let iota = args.get(0)
+       let caster =env.caster
+       let server = caster.server
+       if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+       }
+       let id = caster.id
+       let serializeIota = new CompoundTag()
+        serializeIota.put('name', IotaType.serialize(iota))
+       let persistentIota = server.persistentData.getCompound('hexTags')
+       persistentIota.put(id, serializeIota)
+       server.persistentData.put('hexTags', persistentIota)
 
-        // 确保只能由法杖释放
-        if (!(env instanceof StaffCastEnv)) {
-            throw new MishapBadCaster()
-        }
-        
-        // 确保是玩家实体
-        if (!targetPlayer.isPlayer()) {
-            throw new MishapBadCaster()
-        }
-        
-        // 检查递归深度，防止无限递归
-        let userData = img.userData
-        let recursionDepth = 0
-        if (userData && userData.contains("imposter:recursion_depth")) {
-            recursionDepth = userData.getInt("imposter:recursion_depth")
-        }
-        
-        // 设置最大递归深度为 5
-        const MAX_RECURSION_DEPTH = 5
-        if (recursionDepth >= MAX_RECURSION_DEPTH) {
-            throw new MishapEvalTooMuch
-        }
-        
-        // 增加递归深度并保存到用户数据
-        let newUserData = userData ? userData.copy() : new CompoundTag()
-        newUserData.putInt("imposter:recursion_depth", recursionDepth + 1)
-        
-        // 保存原施法环境，用于获取原施法者
-        let originalEnv = env
-        
-        // 消耗 6400000 点媒质作为使用此图案的成本
-        let sideEffects = []
-        sideEffects.push(OperatorSideEffect.ConsumeMedia(6400000))
-        
-        // 创建执行函数
-        let executor = () => {
-            // 创建以目标玩家为施法者的新施法环境
-            let newEnv = new StaffCastEnv(targetPlayer, InteractionHand.MAIN_HAND)
-            
-            // 创建空的施法虚拟机
-            let harness = CastingVM.empty(newEnv)
-            
-            // 加载用户数据，包含递归深度信息
-            let Tag = new CompoundTag()
-            Tag.put("userdata", newUserData)
-            let image = harness.image.loadFromNbt(Tag, originalEnv.world)
-            harness.setImage(image)
-            
-            // 执行图案列表
-            harness.queueExecuteAndWrapIotas(code, originalEnv.world)
-        }
-        
-        // 立即执行
-        executor()
-        
-        return sideEffects
+       let sideEffects = [];
+       sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
+       return sideEffects;
+       
+
     },
     // 构筑媒质剑
     "create_sword": (stack, env) => {
@@ -753,6 +780,7 @@ global.PatternOperateMap = {
     let args = new Args(stack, 2);
     let entitiesIota = args.list(0);
     let pos = args.vec3(1);
+    ActionJS.helpers.assertVecInRange(env, pos);
 
     let entities = entitiesIota.list;
 
@@ -1084,6 +1112,8 @@ global.PatternOperateMap = {
 "create_symbols": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
     let pos = args.vec3(0);  // 目标位置
+
+    ActionJS.helpers.assertVecInRange(env, pos);
 
     let caster = env.caster;
     if (!caster) throw new MishapBadCaster();
@@ -1472,6 +1502,7 @@ return sideEffects
     if (num1 instanceof EntityIota){
       let caster = env.caster
       let item =num1.getEntity()
+      ActionJS.helpers.assertEntityInRange(env, item)
     if(!caster.isPlayer()){
         throw new MishapBadCaster()
     } 
@@ -1495,13 +1526,29 @@ return sideEffects
      throw new MishapInvalidIota.of(args.get(0), 1, 'class.item_control')
 },
 //缴械
-"Expelliarmus":(stack)=>{
+"Expelliarmus":(stack,env)=>{
      let args = new Args(stack,1)
     let target = args.entity(0)
+     ActionJS.helpers.assertEntityInRange(env, target)
+     let level = target.level
+     let x=target.x
+     let y = target.y
+     let z= target.z
+
     let item=target.getMainHandItem().split(1)
-    target.drop(item,false)
+    let itemEntity = level.createEntity('item')
+    itemEntity.setPosition(x+0.3, y+0.3, z+0.3)
+    itemEntity.item = item // 设置物品栈
+    itemEntity.setMotion(0.5, 0.5, 0.5)                                       
+    itemEntity.spawn()
+
     let item2 = target.getOffhandItem().split(1)
-     target.drop(item2,false)
+    let itemEntity2 = level.createEntity('item')
+    itemEntity2.setPosition(x+0.3, y+0.3, z+0.3)
+    itemEntity2.item = item2 // 设置物品栈
+    itemEntity2.setMotion(0.5, 0.5, 0.5)                                        
+    itemEntity2.spawn()
+   
     let sideEffects = [OperatorSideEffect.ConsumeMedia(50000)]
      return sideEffects
 },
@@ -1533,8 +1580,48 @@ return sideEffects
 },
 //复生
 "Resurrectionem":(stack,env)=>{
+    let args = new Args(stack,3)
+    let pos = args.vec3(2)
+    let player = args.entity(1)
+    let target = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, target)
+    ActionJS.helpers.assertVecInRange(env,pos)
+    let server =player.server
+    if(!player.isSpectator){
+        return
+ }
+    if(target.type!="minecraft:villager"){
+        throw new MishapInvalidIota.of(args.get(1),2,"class.respawn_0")
+    }
+    let respawn = player.getRespawnPosition()
+    let Respawn = Vec3Iota(respawn).vec3
 
-}
+    if(Respawn.x!=pos.x||Respawn.y!=pos.y||Respawn.z!=pos.z){
+       throw new MishapInvalidIota.of(args.get(2),1,"class.respawn_1")
+    }
+    let x =target.x
+    let y = target.y
+    let z =target.z
+    player.level.broadcastEntityEvent(target,35)
+    target.discard()
+    player.setGameMode("survival")
+    player.teleportTo(x,y,z)
+    player.setPos(x,y,z)
+    let world = env.world
+    player.level.broadcastEntityEvent(player,35)
+    player.level.spawnParticles('minecraft:crit', true,
+            player.x, player.y + 1, player.z, 0, 0.1, 0, 40, 0.2);
+    player.level.spawnParticles('minecraft:glow', true,
+            player.x, player.y + 1, player.z, 0, 0.1, 0, 30, 0.2);
+     world.playSound(null, x, y, z,
+                    "minecraft:block.end_portal.spawn", SoundSource.AMBIENT, 5, 1.0);
+
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(10000000)]
+    return sideEffects
+
+},
+
+
 
 
 

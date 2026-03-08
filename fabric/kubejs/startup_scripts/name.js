@@ -11,10 +11,18 @@ StartupEvents.registry('hexcasting:action', e => {
         let pattern = HexPattern.fromAngles(seq, dir)
         e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
     }
+    //意识之精思
+    registerPatternWrap("qaq",HexDir.NORTH_EAST,"get_caster",false,null,"miehex")
+
     //开发者之策略
     registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
+
     //开发者之策略，二
     registerPatternWrap("qqqaq",HexDir.NORTH_EAST,"xmbug")
+    
+    //测试员之策略
+    registerPatternWrap("adaw",HexDir.SOUTH_EAST,'test')
+
     //捐献
     registerPatternWrap('dadawaawad',HexDir.NORTH_EAST,'donate',false,null,'miehex')
     
@@ -38,6 +46,12 @@ StartupEvents.registry('hexcasting:action', e => {
 
     // 区域名号之提整
     registerPatternWrap('qqqqqwdeddwwded', HexDir.SOUTH_EAST, 'zone_entity/by_name',false,null,"miehex")
+
+    //故乡之精思
+    registerPatternWrap('wqaqwawqwwawwqwwa',HexDir.NORTH_EAST,'get_spawn')
+
+    //仇雠之纯化
+    registerPatternWrap("wadwdqdwd",HexDir.EAST,"get_target")
 
     //spells===============================
 
