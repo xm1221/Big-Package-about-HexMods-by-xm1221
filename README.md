@@ -1,2 +1,3 @@
 # Big Package about HexMods by xm1221
-the first package made by xm1221
+xm1221制作的Minecraft咒法学(HexCasting)整合包，它的名字就叫做大包，在许多人的帮助下持续更新中。。。
+xm1221's Minecraft HexCasting modpack, named "Big Package" (Dabao), is continuously updated with the help of many people...
