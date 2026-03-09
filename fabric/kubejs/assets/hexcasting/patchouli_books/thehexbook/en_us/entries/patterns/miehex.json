@@ -207,6 +207,38 @@
       "input": "entity",
       "output": "entity",
       "text": "接受一个实体，返回其想要攻击的实体。"
+    },
+        {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:angleBetweenVectors",
+      "anchor": "miehex:angleBetweenVectors",
+      "input": "vec, vec",
+      "output": "num, num",
+      "text": "接受两个向量，计算从第一个向量指向第二个向量所需的偏航角和俯仰角（弧度），依次压入栈中（先偏航，后俯仰）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:angleBetweenScalar",
+      "anchor": "miehex:angleBetweenScalar",
+      "input": "vec, vec",
+      "output": "num",
+      "text": "接受两个向量，计算它们之间的空间夹角（弧度）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:rotateVector",
+      "anchor": "miehex:rotateVector",
+      "input": "vec, num, num",
+      "output": "vec",
+      "text": "接受一个向量、偏航角和俯仰角（均为弧度），先将向量绕 Y 轴旋转偏航角，再绕 X 轴旋转俯仰角，返回旋转后的新向量。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:great_connect",
+      "anchor": "miehex:great_connect",
+      "input": "list",
+      "output": "",
+      "text": "接受一个图案列表，创建一个新的法杖施法环境（继承原施法者），并在其中执行该列表。此图案只能在法术环中施放。"
     }
   ]
 }

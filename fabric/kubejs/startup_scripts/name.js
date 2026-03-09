@@ -53,6 +53,18 @@ StartupEvents.registry('hexcasting:action', e => {
     //仇雠之纯化
     registerPatternWrap("wadwdqdwd",HexDir.EAST,"get_target")
 
+    //旋转之提整
+    registerPatternWrap("wdww",HexDir.EAST,"rotateVector")
+
+    //夹角之馏化
+    registerPatternWrap("wadewqaeaqwed",HexDir.EAST,"angleBetweenScalar")
+
+    //夹角之策略
+    registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"angleBetweenVectors")
+
+    //连接卓伟
+    registerPatternWrap("daaedewdweeqawa", HexDir.WEST,"great_connect");
+
     //spells===============================
 
     // 附魔转移

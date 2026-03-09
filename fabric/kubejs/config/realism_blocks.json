@@ -1,7 +1,5 @@
 {"blacklist":[
-  "minecraft:air",
-  "minecraft:cave_air",
-  "minecraft:void_air",
   "minecraft:bedrock",
-  "minecraft:barrier"
+  "minecraft:barrier",
+  "miehex:idea_block"
 ]}

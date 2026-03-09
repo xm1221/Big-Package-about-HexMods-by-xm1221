@@ -500,9 +500,70 @@ let nulliota =new NullIota
         return
     
 },
+//旋转之提整
+"rotateVector":(stack)=>{
+    let args = new Args(stack,3)
+    let v = args.vec3(0)
+    let vec = toVec3(v)
+    let yaw = args.double(1)
+    let pitch =args.double(2)
+    let result=rotateVector(vec, yaw, pitch)
+    let iota = Vec3Iota(result)
+    stack.push(iota)
+    return
+},
 
-       
-    //spells====================
+//夹角之馏化
+"angleBetweenScalar":(stack)=>{
+    let args = new Args(stack,2)
+    let v1 = args.vec3(0)
+    let v2 = args.vec3(1)
+    let vec1 = toVec3(v1)
+    let vec2 = toVec3(v2)
+    let result = angleBetweenVectors(vec1, vec2)
+    let iota = new DoubleIota(result)
+    stack.push(iota)
+    return
+
+},
+
+//夹角之策略
+"angleBetweenVectors":(stack)=>{
+    let args = new Args(stack,2)
+    let v1 = args.vec3(0)
+    let v2 = args.vec3(1)
+    let vec1 = toVec3(v1)
+    let vec2 = toVec3(v2)
+    let result = angleBetweenVectors(vec1, vec2)
+    let pitch = result[1]
+    let yaw = result[0]
+    let iota1 = DoubleIota(yaw)
+    stack.push(iota1)
+    let iota2 = DoubleIota(pitch)
+    stack.push(iota2)
+    return
+
+},
+//连接卓伟
+"great_connect": (stack, env, img, cont) => {
+    // 检查是否在法术环中施法
+    if (!(env instanceof CircleCastEnv)) {
+        throw new MishapBadCaster()
+    }
+
+    let args = new Args(stack, 1);
+    let listIota = args.list(0);               // 获取列表 iota
+    let codeList = listIota.list;          // 提取内部的 Java List<Iota>
+
+    // 创建新的法杖施法环境（继承原施法者，使用主手）
+    let newEnv = new StaffCastEnv(env.caster, InteractionHand.MAIN_HAND);
+    let vm = CastingVM.empty(newEnv);            // 空虚拟机
+    vm.queueExecuteAndWrapIotas(codeList, newEnv.world); // 执行图案列表
+
+    return ; // 无副作用
+},
+
+  //spells====================
 
     //捐献
       'donate':(env)=>{
@@ -978,7 +1039,7 @@ let nulliota =new NullIota
 
     let dimension = level.dimension;
     let fillBiomeCommand = `execute in ${dimension} run fillbiome ${x} ${y} ${z} ${x} ${y} ${z} ${biomeId}`;
-    server.runCommand(fillBiomeCommand);
+    server.runCommandSilent(fillBiomeCommand);
 
     let sideEffects = [
         OperatorSideEffect.ConsumeMedia(1000),
@@ -1373,7 +1434,7 @@ let DimensionMap = {
 
     // 获取目标方块对象
     let block = level.getBlock(blockPos);
-    if (!block) throw new MishapBadLocation(pos);
+    if (!block) throw new MishapBadLocation(pos,"那里什么都没有");
 
     let targetBlockId = block.id;
 
@@ -1385,7 +1446,7 @@ let DimensionMap = {
 
     if (realism.indexOf(targetBlockId)!=-1) {
         // 如果方块在黑名单中，抛出事故
-        throw new MishapBadBlock.of(blockPos);
+        throw new MishapBadLocation(pos,"那里容不下理念了");
     }
     
     
@@ -1620,6 +1681,7 @@ return sideEffects
     return sideEffects
 
 },
+
 
 
 
