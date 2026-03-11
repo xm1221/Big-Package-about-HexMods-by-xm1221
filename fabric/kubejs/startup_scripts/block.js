@@ -1,6 +1,7 @@
 StartupEvents.registry('block',e=>{
     e.create('miehex:xm1221',"cardinal").defaultCutout()
     e.create('miehex:man_made_stone','basic').hardness(-1)
+	e.create('miehex:idea_portal','carpet')
     
 })
 StartupEvents.registry("block", (event) => {

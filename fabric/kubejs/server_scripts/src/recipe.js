@@ -4,7 +4,7 @@ ServerEvents.recipes(event =>{
     event.shapeless(Item.of('ftbquests:book', "{RepairCost:0,display:{Name:'{\"text\":\"你的咒法学研究笔记\"}'}}"),['minecraft:dirt'])
     
     event.remove({id:'ftbquests:book'})
-    event.remove({id:'hierophantics:flay_bed'})
+
 
     })
 
@@ -22,7 +22,7 @@ ServerEvents.recipes(event =>{
     event.smithing('hexchanting:amethyst_pickaxe','hexcasting:artifact','minecraft:diamond_pickaxe','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_shovel','hexcasting:artifact','minecraft:diamond_shovel','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_hoe','hexcasting:artifact','minecraft:diamond_hoe','hexcasting:charged_amethyst')
-    event.smithing('hierophantics:flay_bed','minecraft:end_crystal','#minecraft:beds','hexcasting:quenched_allay_shard')
+   
     
     
     
@@ -44,6 +44,11 @@ ServerEvents.recipes(e=>{
         ["miehex:pure_allay_shard","#minecraft:biome_symbols","miehex:pure_allay_shard"],
         ["hexcasting:quenched_allay_shard","miehex:pure_allay_shard","hexcasting:quenched_allay_shard"]
     ]).id("miehex:entry")
+    e.shaped('miehex:idea_portal',[
+        ["miehex:pure_allay_block","hexcasting:quenched_allay_shard","miehex:pure_allay_block"],
+        ["miehex:pure_allay_block","#minecraft:biome_symbols","miehex:pure_allay_block"],
+        ["miehex:pure_allay_block",'miehex:ideas_world_entry',"miehex:pure_allay_block"]
+    ]).id("miehex:carpet")
 })
 
 //结构精魄

@@ -3545,6 +3545,1404 @@
 		},
 		"variant=1181": {
 			"model": "hexcasting:block/slate_amethyst_tiles"
+		},
+		"variant=1182": {
+			"model": "minecraft:block/redstone_lamp"
+		},
+		"variant=1183": {
+			"model": "hexcasting:block/akashic_record"
+		},
+		"variant=1184": {
+			"model": "minecraft:block/acacia_door"
+		},
+		"variant=1185": {
+			"model": "minecraft:block/quartz_block"
+		},
+		"variant=1186": {
+			"model": "minecraft:block/potted_crimson_fungus"
+		},
+		"variant=1187": {
+			"model": "minecells:block/ancient_septite_brick_slab"
+		},
+		"variant=1188": {
+			"model": "minecraft:block/potted_mangrove_propagule"
+		},
+		"variant=1189": {
+			"model": "minecraft:block/bubble_coral"
+		},
+		"variant=1190": {
+			"model": "minecraft:block/jungle_fence"
+		},
+		"variant=1191": {
+			"model": "hexdebug:block/enlightened_splicing_table"
+		},
+		"variant=1192": {
+			"model": "minecraft:block/water"
+		},
+		"variant=1193": {
+			"model": "minecraft:block/suspicious_gravel"
+		},
+		"variant=1194": {
+			"model": "minecraft:block/brain_coral_fan"
+		},
+		"variant=1195": {
+			"model": "minecraft:block/infested_deepslate"
+		},
+		"variant=1196": {
+			"model": "minecells:block/bloomrock_bricks"
+		},
+		"variant=1197": {
+			"model": "minecraft:block/weeping_vines"
+		},
+		"variant=1198": {
+			"model": "minecraft:block/infested_mossy_stone_bricks"
+		},
+		"variant=1199": {
+			"model": "minecells:block/ancient_septite_brick_wall"
+		},
+		"variant=1200": {
+			"model": "storagedrawers:block/bamboo_full_drawers_2"
+		},
+		"variant=1201": {
+			"model": "minecraft:block/black_concrete_powder"
+		},
+		"variant=1202": {
+			"model": "minecraft:block/stone"
+		},
+		"variant=1203": {
+			"model": "farmersdelight:block/shepherds_pie_block"
+		},
+		"variant=1204": {
+			"model": "minecells:block/spikes"
+		},
+		"variant=1205": {
+			"model": "minecraft:block/light_blue_wool"
+		},
+		"variant=1206": {
+			"model": "minecraft:block/stone_bricks"
+		},
+		"variant=1207": {
+			"model": "minecraft:block/cyan_glazed_terracotta"
+		},
+		"variant=1208": {
+			"model": "minecraft:block/spruce_log"
+		},
+		"variant=1209": {
+			"model": "minecraft:block/turtle_egg"
+		},
+		"variant=1210": {
+			"model": "minecraft:block/birch_trapdoor"
+		},
+		"variant=1211": {
+			"model": "hexcasting:block/edified_fence"
+		},
+		"variant=1212": {
+			"model": "minecraft:block/jungle_wood"
+		},
+		"variant=1213": {
+			"model": "minecraft:block/polished_blackstone_brick_wall"
+		},
+		"variant=1214": {
+			"model": "minecraft:block/chiseled_sandstone"
+		},
+		"variant=1215": {
+			"model": "majruszsdifficulty:block/infernal_sponge"
+		},
+		"variant=1216": {
+			"model": "minecraft:block/snow_block"
+		},
+		"variant=1217": {
+			"model": "minecells:block/large_cyan_ribbon_flag"
+		},
+		"variant=1218": {
+			"model": "minecraft:block/potted_dark_oak_sapling"
+		},
+		"variant=1219": {
+			"model": "storagedrawers:block/spruce_full_drawers_4"
+		},
+		"variant=1220": {
+			"model": "minecraft:block/brown_shulker_box"
+		},
+		"variant=1221": {
+			"model": "minecraft:block/poppy"
+		},
+		"variant=1222": {
+			"model": "minecraft:block/warped_hyphae"
+		},
+		"variant=1223": {
+			"model": "storagedrawers:block/jungle_half_drawers_1"
+		},
+		"variant=1224": {
+			"model": "minecraft:block/oak_door"
+		},
+		"variant=1225": {
+			"model": "minecraft:block/iron_trapdoor"
+		},
+		"variant=1226": {
+			"model": "minecraft:block/red_nether_brick_wall"
+		},
+		"variant=1227": {
+			"model": "majruszsdifficulty:block/enderium_block"
+		},
+		"variant=1228": {
+			"model": "oneironaut:block/concept_modifier_gridsize"
+		},
+		"variant=1229": {
+			"model": "minecraft:block/birch_sign"
+		},
+		"variant=1230": {
+			"model": "farmersdelight:block/cabbage_crate"
+		},
+		"variant=1231": {
+			"model": "minecraft:block/light_blue_carpet"
+		},
+		"variant=1232": {
+			"model": "minecraft:block/kelp"
+		},
+		"variant=1233": {
+			"model": "minecraft:block/polished_blackstone_stairs"
+		},
+		"variant=1234": {
+			"model": "minecraft:block/crimson_door"
+		},
+		"variant=1235": {
+			"model": "minecraft:block/fire_coral"
+		},
+		"variant=1236": {
+			"model": "minecraft:block/orange_shulker_box"
+		},
+		"variant=1237": {
+			"model": "minecells:block/cracked_bloomrock_bricks"
+		},
+		"variant=1238": {
+			"model": "minecraft:block/deepslate_coal_ore"
+		},
+		"variant=1239": {
+			"model": "minecraft:block/pink_glazed_terracotta"
+		},
+		"variant=1240": {
+			"model": "minecraft:block/redstone_wall_torch"
+		},
+		"variant=1241": {
+			"model": "minecraft:block/exposed_cut_copper"
+		},
+		"variant=1242": {
+			"model": "minecells:block/bloomrock_tile_slab"
+		},
+		"variant=1243": {
+			"model": "oneironaut:block/hex_resistant_block"
+		},
+		"variant=1244": {
+			"model": "minecraft:block/player_wall_head"
+		},
+		"variant=1245": {
+			"model": "minecraft:block/light_gray_stained_glass_pane"
+		},
+		"variant=1246": {
+			"model": "minecraft:block/brown_wall_banner"
+		},
+		"variant=1247": {
+			"model": "minecells:block/cobbled_ancient_septite_stairs"
+		},
+		"variant=1248": {
+			"model": "farmersdelight:block/carrot_crate"
+		},
+		"variant=1249": {
+			"model": "storagedrawers:block/crimson_half_drawers_4"
+		},
+		"variant=1250": {
+			"model": "minecraft:block/gray_candle"
+		},
+		"variant=1251": {
+			"model": "minecraft:block/spruce_button"
+		},
+		"variant=1252": {
+			"model": "minecraft:block/acacia_log"
+		},
+		"variant=1253": {
+			"model": "minecraft:block/reinforced_deepslate"
+		},
+		"variant=1254": {
+			"model": "storagedrawers:block/cherry_full_drawers_2"
+		},
+		"variant=1255": {
+			"model": "minecraft:block/dead_horn_coral"
+		},
+		"variant=1256": {
+			"model": "minecraft:block/cherry_door"
+		},
+		"variant=1257": {
+			"model": "minecraft:block/dark_oak_stairs"
+		},
+		"variant=1258": {
+			"model": "minecraft:block/polished_diorite_slab"
+		},
+		"variant=1259": {
+			"model": "minecraft:block/granite_stairs"
+		},
+		"variant=1260": {
+			"model": "minecraft:block/yellow_bed"
+		},
+		"variant=1261": {
+			"model": "storagedrawers:block/meta_comp_indicator"
+		},
+		"variant=1262": {
+			"model": "minecells:block/insufferable_crypt_flag"
+		},
+		"variant=1263": {
+			"model": "minecraft:block/lapis_ore"
+		},
+		"variant=1264": {
+			"model": "minecraft:block/warped_wart_block"
+		},
+		"variant=1265": {
+			"model": "minecraft:block/stripped_dark_oak_wood"
+		},
+		"variant=1266": {
+			"model": "minecraft:block/dark_oak_slab"
+		},
+		"variant=1267": {
+			"model": "minecraft:block/sandstone_wall"
+		},
+		"variant=1268": {
+			"model": "minecells:block/gray_ribbon_flag"
+		},
+		"variant=1269": {
+			"model": "lapisworks:block/amel_constructs/holder"
+		},
+		"variant=1270": {
+			"model": "minecraft:block/acacia_button"
+		},
+		"variant=1271": {
+			"model": "minecells:block/putrid_door"
+		},
+		"variant=1272": {
+			"model": "minecraft:block/big_dripleaf"
+		},
+		"variant=1273": {
+			"model": "minecraft:block/gray_carpet"
+		},
+		"variant=1274": {
+			"model": "hexcasting:block/stripped_edified_log"
+		},
+		"variant=1275": {
+			"model": "lapisworks:block/amel_constructs/live_jukebox"
+		},
+		"variant=1276": {
+			"model": "minecraft:block/wither_skeleton_skull"
+		},
+		"variant=1277": {
+			"model": "minecraft:block/spruce_pressure_plate"
+		},
+		"variant=1278": {
+			"model": "minecraft:block/torchflower_crop"
+		},
+		"variant=1279": {
+			"model": "minecraft:block/yellow_stained_glass"
+		},
+		"variant=1280": {
+			"model": "minecells:block/red_wilted_hanging_leaves"
+		},
+		"variant=1281": {
+			"model": "minecraft:block/cyan_concrete"
+		},
+		"variant=1282": {
+			"model": "minecraft:block/cobweb"
+		},
+		"variant=1283": {
+			"model": "minecraft:block/light_blue_shulker_box"
+		},
+		"variant=1284": {
+			"model": "minecraft:block/blue_banner"
+		},
+		"variant=1285": {
+			"model": "minecraft:block/polished_blackstone_button"
+		},
+		"variant=1286": {
+			"model": "minecraft:block/cobbled_deepslate_stairs"
+		},
+		"variant=1287": {
+			"model": "minecraft:block/light"
+		},
+		"variant=1288": {
+			"model": "minecells:block/cracked_prison_bricks"
+		},
+		"variant=1289": {
+			"model": "minecraft:block/deepslate_lapis_ore"
+		},
+		"variant=1290": {
+			"model": "minecraft:block/birch_wall_hanging_sign"
+		},
+		"variant=1291": {
+			"model": "storagedrawers:block/jungle_half_drawers_2"
+		},
+		"variant=1292": {
+			"model": "minecraft:block/cracked_polished_blackstone_bricks"
+		},
+		"variant=1293": {
+			"model": "minecells:block/unbreakable_cell_crafter"
+		},
+		"variant=1294": {
+			"model": "minecraft:block/beehive"
+		},
+		"variant=1295": {
+			"model": "minecells:block/small_prison_bricks"
+		},
+		"variant=1296": {
+			"model": "minecells:block/return_stone"
+		},
+		"variant=1297": {
+			"model": "farmersdelight:block/blue_canvas_wall_sign"
+		},
+		"variant=1298": {
+			"model": "minecells:block/bloomrock_stairs"
+		},
+		"variant=1299": {
+			"model": "minecells:block/small_prison_brick_stairs"
+		},
+		"variant=1300": {
+			"model": "minecraft:block/brewing_stand"
+		},
+		"variant=1301": {
+			"model": "minecraft:block/activator_rail"
+		},
+		"variant=1302": {
+			"model": "ephemera:block/relay_tp_detector"
+		},
+		"variant=1303": {
+			"model": "minecraft:block/bubble_column"
+		},
+		"variant=1304": {
+			"model": "minecraft:block/campfire"
+		},
+		"variant=1305": {
+			"model": "storagedrawers:block/cherry_half_drawers_2"
+		},
+		"variant=1306": {
+			"model": "minecraft:block/hanging_roots"
+		},
+		"variant=1307": {
+			"model": "minecells:block/elevator_assembler"
+		},
+		"variant=1308": {
+			"model": "minecraft:block/oak_planks"
+		},
+		"variant=1309": {
+			"model": "farmersdelight:block/chocolate_pie"
+		},
+		"variant=1310": {
+			"model": "minecraft:block/netherite_block"
+		},
+		"variant=1311": {
+			"model": "minecraft:block/weathered_cut_copper_slab"
+		},
+		"variant=1312": {
+			"model": "minecraft:block/dead_bubble_coral_wall_fan"
+		},
+		"variant=1313": {
+			"model": "minecraft:block/cut_red_sandstone"
+		},
+		"variant=1314": {
+			"model": "farmersdelight:block/spruce_cabinet"
+		},
+		"variant=1315": {
+			"model": "farmersdelight:block/rice_panicle"
+		},
+		"variant=1316": {
+			"model": "minecraft:block/orange_tulip"
+		},
+		"variant=1317": {
+			"model": "farmersdelight:block/purple_canvas_sign"
+		},
+		"variant=1318": {
+			"model": "hexcasting:block/directrix/boolean"
+		},
+		"variant=1319": {
+			"model": "lapisworks:block/rod"
+		},
+		"variant=1320": {
+			"model": "storagedrawers:block/meta_missing_slot_1_1"
+		},
+		"variant=1321": {
+			"model": "hexcasting:block/amethyst_pillar"
+		},
+		"variant=1322": {
+			"model": "minecraft:block/dark_oak_sign"
+		},
+		"variant=1323": {
+			"model": "farmersdelight:block/canvas_wall_sign"
+		},
+		"variant=1324": {
+			"model": "hexcasting:block/citrine_edified_leaves"
+		},
+		"variant=1325": {
+			"model": "oneironaut:block/transformingskull"
+		},
+		"variant=1326": {
+			"model": "minecraft:block/anvil"
+		},
+		"variant=1327": {
+			"model": "minecells:block/beam_placer"
+		},
+		"variant=1328": {
+			"model": "slate_work:block/speed_loci"
+		},
+		"variant=1329": {
+			"model": "lapisworks:block/amel_constructs/jumpslate/rebound_2"
+		},
+		"variant=1330": {
+			"model": "minecells:block/prison_stone_button"
+		},
+		"variant=1331": {
+			"model": "minecraft:block/yellow_glazed_terracotta"
+		},
+		"variant=1332": {
+			"model": "oneironaut:block/concept_decorator_color/pink"
+		},
+		"variant=1333": {
+			"model": "minecraft:block/purple_shulker_box"
+		},
+		"variant=1334": {
+			"model": "minecraft:block/green_stained_glass"
+		},
+		"variant=1335": {
+			"model": "minecraft:block/hopper"
+		},
+		"variant=1336": {
+			"model": "sophisticatedbackpacks:block/gold_backpack"
+		},
+		"variant=1337": {
+			"model": "oneironaut:block/concept_modifier_antierosion"
+		},
+		"variant=1338": {
+			"model": "minecells:block/ancient_septite_brick_stairs"
+		},
+		"variant=1339": {
+			"model": "miehex:block/man_made_stone"
+		},
+		"variant=1340": {
+			"model": "minecraft:block/blue_concrete"
+		},
+		"variant=1341": {
+			"model": "minecraft:block/waxed_cut_copper_stairs"
+		},
+		"variant=1342": {
+			"model": "minecraft:block/soul_lantern"
+		},
+		"variant=1343": {
+			"model": "minecraft:block/blackstone_stairs"
+		},
+		"variant=1344": {
+			"model": "minecraft:block/green_concrete"
+		},
+		"variant=1345": {
+			"model": "minecraft:block/smooth_basalt"
+		},
+		"variant=1346": {
+			"model": "minecraft:block/podzol"
+		},
+		"variant=1347": {
+			"model": "minecraft:block/acacia_trapdoor"
+		},
+		"variant=1348": {
+			"model": "minecraft:block/spruce_stairs"
+		},
+		"variant=1349": {
+			"model": "slate_work:block/macro_loci"
+		},
+		"variant=1350": {
+			"model": "minecraft:block/diamond_block"
+		},
+		"variant=1351": {
+			"model": "minecraft:block/prismarine_bricks"
+		},
+		"variant=1352": {
+			"model": "farmersdelight:block/straw_bale"
+		},
+		"variant=1353": {
+			"model": "minecraft:block/loom"
+		},
+		"variant=1354": {
+			"model": "minecraft:block/yellow_concrete_powder"
+		},
+		"variant=1355": {
+			"model": "minecraft:block/scaffolding"
+		},
+		"variant=1356": {
+			"model": "minecells:block/bloomrock_tile_wall"
+		},
+		"variant=1357": {
+			"model": "minecraft:block/warped_hanging_sign"
+		},
+		"variant=1358": {
+			"model": "oneironaut:block/concept_modifier_falsy"
+		},
+		"variant=1359": {
+			"model": "farmersdelight:block/rice_roll_medley_block"
+		},
+		"variant=1360": {
+			"model": "minecells:block/putrid_fence"
+		},
+		"variant=1361": {
+			"model": "minecraft:block/light_blue_glazed_terracotta"
+		},
+		"variant=1362": {
+			"model": "farmersdelight:block/budding_tomatoes"
+		},
+		"variant=1363": {
+			"model": "minecraft:block/spawner"
+		},
+		"variant=1364": {
+			"model": "oneironaut:block/concept_modifier_stack_size"
+		},
+		"variant=1365": {
+			"model": "minecraft:block/diorite_wall"
+		},
+		"variant=1366": {
+			"model": "minecraft:block/orange_bed"
+		},
+		"variant=1367": {
+			"model": "hexcasting:block/edified_button"
+		},
+		"variant=1368": {
+			"model": "minecells:block/magenta_ribbon_flag"
+		},
+		"variant=1369": {
+			"model": "minecraft:block/bamboo_sapling"
+		},
+		"variant=1370": {
+			"model": "minecraft:block/frogspawn"
+		},
+		"variant=1371": {
+			"model": "minecraft:block/cherry_fence_gate"
+		},
+		"variant=1372": {
+			"model": "minecraft:block/dead_bubble_coral_fan"
+		},
+		"variant=1373": {
+			"model": "minecraft:block/dead_horn_coral_block"
+		},
+		"variant=1374": {
+			"model": "minecraft:block/bricks"
+		},
+		"variant=1375": {
+			"model": "minecraft:block/netherrack"
+		},
+		"variant=1376": {
+			"model": "minecraft:block/glass_pane"
+		},
+		"variant=1377": {
+			"model": "minecells:block/small_crate"
+		},
+		"variant=1378": {
+			"model": "minecraft:block/wheat"
+		},
+		"variant=1379": {
+			"model": "minecraft:block/mangrove_leaves"
+		},
+		"variant=1380": {
+			"model": "minecraft:block/mangrove_pressure_plate"
+		},
+		"variant=1381": {
+			"model": "minecells:block/orange_wilted_leaves"
+		},
+		"variant=1382": {
+			"model": "minecraft:block/sponge"
+		},
+		"variant=1383": {
+			"model": "storagedrawers:block/mangrove_half_drawers_4"
+		},
+		"variant=1384": {
+			"model": "minecells:block/putrid_board_stairs"
+		},
+		"variant=1385": {
+			"model": "minecells:block/polished_ancient_septite"
+		},
+		"variant=1386": {
+			"model": "minecraft:block/deepslate_copper_ore"
+		},
+		"variant=1387": {
+			"model": "minecraft:block/large_fern"
+		},
+		"variant=1388": {
+			"model": "oneironaut:block/media_gel"
+		},
+		"variant=1389": {
+			"model": "minecraft:block/lime_concrete_powder"
+		},
+		"variant=1390": {
+			"model": "minecraft:block/smoker"
+		},
+		"variant=1391": {
+			"model": "minecells:block/putrid_board_block"
+		},
+		"variant=1392": {
+			"model": "minecraft:block/light_blue_stained_glass"
+		},
+		"variant=1393": {
+			"model": "minecraft:block/crimson_pressure_plate"
+		},
+		"variant=1394": {
+			"model": "minecraft:block/white_stained_glass_pane"
+		},
+		"variant=1395": {
+			"model": "storagedrawers:block/meta_missing_slot_2_1"
+		},
+		"variant=1396": {
+			"model": "oneironaut:block/cell"
+		},
+		"variant=1397": {
+			"model": "hexcasting:block/edified_panel"
+		},
+		"variant=1398": {
+			"model": "minecraft:block/cauldron"
+		},
+		"variant=1399": {
+			"model": "farmersdelight:block/wild_beetroots"
+		},
+		"variant=1400": {
+			"model": "minecraft:block/soul_torch"
+		},
+		"variant=1401": {
+			"model": "minecells:block/brown_ribbon_flag"
+		},
+		"variant=1402": {
+			"model": "minecraft:block/cyan_carpet"
+		},
+		"variant=1403": {
+			"model": "hexal:block/relay"
+		},
+		"variant=1404": {
+			"model": "minecraft:block/potted_lily_of_the_valley"
+		},
+		"variant=1405": {
+			"model": "minecells:block/polished_ancient_septite_wall"
+		},
+		"variant=1406": {
+			"model": "farmersdelight:block/tomato_crate"
+		},
+		"variant=1407": {
+			"model": "minecraft:block/white_tulip"
+		},
+		"variant=1408": {
+			"model": "minecells:block/cracked_prison_brick_stairs"
+		},
+		"variant=1409": {
+			"model": "minecraft:block/mangrove_sign"
+		},
+		"variant=1410": {
+			"model": "minecraft:block/cobbled_deepslate"
+		},
+		"variant=1411": {
+			"model": "minecraft:block/blue_wall_banner"
+		},
+		"variant=1412": {
+			"model": "minecraft:block/farmland"
+		},
+		"variant=1413": {
+			"model": "minecraft:block/jack_o_lantern"
+		},
+		"variant=1414": {
+			"model": "minecells:block/cyan_ribbon_flag"
+		},
+		"variant=1415": {
+			"model": "minecraft:block/mangrove_planks"
+		},
+		"variant=1416": {
+			"model": "minecraft:block/light_gray_concrete_powder"
+		},
+		"variant=1417": {
+			"model": "minecraft:block/cobblestone_wall"
+		},
+		"variant=1418": {
+			"model": "minecells:block/rotting_corpse"
+		},
+		"variant=1419": {
+			"model": "minecells:block/large_light_gray_ribbon_flag"
+		},
+		"variant=1420": {
+			"model": "minecraft:block/sunflower"
+		},
+		"variant=1421": {
+			"model": "minecraft:block/crimson_stairs"
+		},
+		"variant=1422": {
+			"model": "minecraft:block/seagrass"
+		},
+		"variant=1423": {
+			"model": "minecraft:block/light_weighted_pressure_plate"
+		},
+		"variant=1424": {
+			"model": "minecraft:block/red_nether_bricks"
+		},
+		"variant=1425": {
+			"model": "minecraft:block/glow_lichen"
+		},
+		"variant=1426": {
+			"model": "minecraft:block/green_carpet"
+		},
+		"variant=1427": {
+			"model": "miehex:block/xm1221"
+		},
+		"variant=1428": {
+			"model": "minecraft:block/infested_cobblestone"
+		},
+		"variant=1429": {
+			"model": "minecraft:block/blast_furnace"
+		},
+		"variant=1430": {
+			"model": "minecraft:block/crimson_planks"
+		},
+		"variant=1431": {
+			"model": "lapisworks:block/conjureable"
+		},
+		"variant=1432": {
+			"model": "hexcasting:block/ancient_scroll_paper"
+		},
+		"variant=1433": {
+			"model": "storagedrawers:block/cherry_half_drawers_4"
+		},
+		"variant=1434": {
+			"model": "minecraft:block/red_terracotta"
+		},
+		"variant=1435": {
+			"model": "minecraft:block/conduit"
+		},
+		"variant=1436": {
+			"model": "storagedrawers:block/mangrove_full_drawers_4"
+		},
+		"variant=1437": {
+			"model": "minecraft:block/deepslate_tile_wall"
+		},
+		"variant=1438": {
+			"model": "minecraft:block/purpur_slab"
+		},
+		"variant=1439": {
+			"model": "minecraft:block/potted_warped_fungus"
+		},
+		"variant=1440": {
+			"model": "farmersdelight:block/full_tatami_mat"
+		},
+		"variant=1441": {
+			"model": "minecraft:block/bamboo_trapdoor"
+		},
+		"variant=1442": {
+			"model": "minecraft:block/yellow_candle"
+		},
+		"variant=1443": {
+			"model": "farmersdelight:block/yellow_canvas_sign"
+		},
+		"variant=1444": {
+			"model": "oneironaut:block/sentinel_sensor"
+		},
+		"variant=1445": {
+			"model": "minecraft:block/oxidized_copper"
+		},
+		"variant=1446": {
+			"model": "minecraft:block/piston_head"
+		},
+		"variant=1447": {
+			"model": "minecraft:block/prismarine_stairs"
+		},
+		"variant=1448": {
+			"model": "minecraft:block/black_carpet"
+		},
+		"variant=1449": {
+			"model": "minecraft:block/target"
+		},
+		"variant=1450": {
+			"model": "storagedrawers:block/meta_framed_trim_side"
+		},
+		"variant=1451": {
+			"model": "minecraft:block/brick_wall"
+		},
+		"variant=1452": {
+			"model": "minecells:block/lime_ribbon_flag"
+		},
+		"variant=1453": {
+			"model": "minecraft:block/oak_trapdoor"
+		},
+		"variant=1454": {
+			"model": "hexcasting:block/edified_log_aventurine"
+		},
+		"variant=1455": {
+			"model": "storagedrawers:block/warped_full_drawers_2"
+		},
+		"variant=1456": {
+			"model": "minecraft:block/gray_glazed_terracotta"
+		},
+		"variant=1457": {
+			"model": "storagedrawers:block/spruce_half_drawers_2"
+		},
+		"variant=1458": {
+			"model": "minecells:block/overworld_doorway"
+		},
+		"variant=1459": {
+			"model": "minecraft:block/dead_bubble_coral_block"
+		},
+		"variant=1460": {
+			"model": "minecraft:block/bamboo_mosaic_stairs"
+		},
+		"variant=1461": {
+			"model": "minecraft:block/dead_fire_coral_wall_fan"
+		},
+		"variant=1462": {
+			"model": "minecraft:block/blackstone_slab"
+		},
+		"variant=1463": {
+			"model": "oneironaut:block/wisp_lantern_tinted"
+		},
+		"variant=1464": {
+			"model": "minecraft:block/infested_stone"
+		},
+		"variant=1465": {
+			"model": "minecells:block/putrid_trapdoor"
+		},
+		"variant=1466": {
+			"model": "slate_work:block/accelerator_loci"
+		},
+		"variant=1467": {
+			"model": "minecells:block/ancient_sewers_torch"
+		},
+		"variant=1468": {
+			"model": "minecraft:block/light_gray_concrete"
+		},
+		"variant=1469": {
+			"model": "minecraft:block/iron_ore"
+		},
+		"variant=1470": {
+			"model": "minecraft:block/cobblestone_stairs"
+		},
+		"variant=1471": {
+			"model": "minecraft:block/light_gray_stained_glass"
+		},
+		"variant=1472": {
+			"model": "minecraft:block/stripped_mangrove_wood"
+		},
+		"variant=1473": {
+			"model": "minecraft:block/waxed_weathered_cut_copper"
+		},
+		"variant=1474": {
+			"model": "minecraft:block/warped_wall_sign"
+		},
+		"variant=1475": {
+			"model": "minecraft:block/tinted_glass"
+		},
+		"variant=1476": {
+			"model": "minecraft:block/blue_stained_glass_pane"
+		},
+		"variant=1477": {
+			"model": "minecraft:block/oak_fence"
+		},
+		"variant=1478": {
+			"model": "minecraft:block/lapis_block"
+		},
+		"variant=1479": {
+			"model": "hexcasting:block/directrix/redstone"
+		},
+		"variant=1480": {
+			"model": "oneironaut:block/concept_decorator_color/lime"
+		},
+		"variant=1481": {
+			"model": "hexcasting:block/conjured_block"
+		},
+		"variant=1482": {
+			"model": "farmersdelight:block/sweet_berry_cheesecake"
+		},
+		"variant=1483": {
+			"model": "minecraft:block/white_concrete_powder"
+		},
+		"variant=1484": {
+			"model": "minecraft:block/pink_concrete_powder"
+		},
+		"variant=1485": {
+			"model": "minecells:block/small_ancient_septite_brick_slab"
+		},
+		"variant=1486": {
+			"model": "minecraft:block/jungle_stairs"
+		},
+		"variant=1487": {
+			"model": "minecells:block/prison_doorway"
+		},
+		"variant=1488": {
+			"model": "minecraft:block/potted_spruce_sapling"
+		},
+		"variant=1489": {
+			"model": "minecraft:block/gray_shulker_box"
+		},
+		"variant=1490": {
+			"model": "minecraft:block/purple_candle"
+		},
+		"variant=1491": {
+			"model": "minecraft:block/skeleton_skull"
+		},
+		"variant=1492": {
+			"model": "minecraft:block/raw_gold_block"
+		},
+		"variant=1493": {
+			"model": "oneironaut:block/decorative_wisp_battery"
+		},
+		"variant=1494": {
+			"model": "minecells:block/putrid_sapling"
+		},
+		"variant=1495": {
+			"model": "minecraft:block/purple_wall_banner"
+		},
+		"variant=1496": {
+			"model": "minecraft:block/polished_deepslate_slab"
+		},
+		"variant=1497": {
+			"model": "minecraft:block/verdant_froglight"
+		},
+		"variant=1498": {
+			"model": "minecraft:block/quartz_pillar"
+		},
+		"variant=1499": {
+			"model": "minecells:block/hanged_skeleton"
+		},
+		"variant=1500": {
+			"model": "minecells:block/prison_stone"
+		},
+		"variant=1501": {
+			"model": "minecells:block/septite_brick_wall"
+		},
+		"variant=1502": {
+			"model": "minecraft:block/nether_wart"
+		},
+		"variant=1503": {
+			"model": "storagedrawers:block/compacting_drawers_3"
+		},
+		"variant=1504": {
+			"model": "farmersdelight:block/white_canvas_wall_sign"
+		},
+		"variant=1505": {
+			"model": "storagedrawers:block/keybutton_concealment"
+		},
+		"variant=1506": {
+			"model": "farmersdelight:block/black_canvas_wall_sign"
+		},
+		"variant=1507": {
+			"model": "hexcasting:block/edified_log_purple"
+		},
+		"variant=1508": {
+			"model": "minecraft:block/furnace"
+		},
+		"variant=1509": {
+			"model": "farmersdelight:block/beetroot_crate"
+		},
+		"variant=1510": {
+			"model": "oneironaut:block/concept_core"
+		},
+		"variant=1511": {
+			"model": "minecells:block/rift"
+		},
+		"variant=1512": {
+			"model": "minecells:block/large_gray_ribbon_flag"
+		},
+		"variant=1513": {
+			"model": "minecraft:block/potted_blue_orchid"
+		},
+		"variant=1514": {
+			"model": "minecraft:block/chain"
+		},
+		"variant=1515": {
+			"model": "minecraft:block/gray_concrete"
+		},
+		"variant=1516": {
+			"model": "minecraft:block/basalt"
+		},
+		"variant=1517": {
+			"model": "storagedrawers:block/framed_compacting_half_drawers_3"
+		},
+		"variant=1518": {
+			"model": "minecraft:block/oak_wood"
+		},
+		"variant=1519": {
+			"model": "minecraft:block/smooth_sandstone"
+		},
+		"variant=1520": {
+			"model": "minecells:block/cracked_bloomrock_brick_stairs"
+		},
+		"variant=1521": {
+			"model": "storagedrawers:block/meta_hopper"
+		},
+		"variant=1522": {
+			"model": "storagedrawers:block/meta_missing_slot_4_2"
+		},
+		"variant=1523": {
+			"model": "minecraft:block/peony"
+		},
+		"variant=1524": {
+			"model": "minecraft:block/mangrove_button"
+		},
+		"variant=1525": {
+			"model": "minecraft:block/polished_blackstone_wall"
+		},
+		"variant=1526": {
+			"model": "illagerinvasion:block/magic_fire"
+		},
+		"variant=1527": {
+			"model": "storagedrawers:block/cherry_full_drawers_1"
+		},
+		"variant=1528": {
+			"model": "minecraft:block/polished_basalt"
+		},
+		"variant=1529": {
+			"model": "storagedrawers:block/birch_full_drawers_1"
+		},
+		"variant=1530": {
+			"model": "minecraft:block/potted_crimson_roots"
+		},
+		"variant=1531": {
+			"model": "minecraft:block/water_cauldron"
+		},
+		"variant=1532": {
+			"model": "minecraft:block/rooted_dirt"
+		},
+		"variant=1533": {
+			"model": "farmersdelight:block/magenta_canvas_wall_sign"
+		},
+		"variant=1534": {
+			"model": "minecraft:block/brown_candle_cake"
+		},
+		"variant=1535": {
+			"model": "storagedrawers:block/meta_framed_controller_io_shading"
+		},
+		"variant=1536": {
+			"model": "storagedrawers:block/oak_full_drawers_2"
+		},
+		"variant=1537": {
+			"model": "minecraft:block/mangrove_trapdoor"
+		},
+		"variant=1538": {
+			"model": "minecraft:block/potted_cactus"
+		},
+		"variant=1539": {
+			"model": "hexcasting:block/impetus/look"
+		},
+		"variant=1540": {
+			"model": "minecraft:block/nether_brick_fence"
+		},
+		"variant=1541": {
+			"model": "minecraft:block/gilded_blackstone"
+		},
+		"variant=1542": {
+			"model": "minecraft:block/stripped_birch_wood"
+		},
+		"variant=1543": {
+			"model": "minecraft:block/flowering_azalea"
+		},
+		"variant=1544": {
+			"model": "minecraft:block/sniffer_egg"
+		},
+		"variant=1545": {
+			"model": "minecraft:block/orange_candle_cake"
+		},
+		"variant=1546": {
+			"model": "hexcasting:block/quenched_allay_bricks_small"
+		},
+		"variant=1547": {
+			"model": "minecells:block/orange_ribbon_flag"
+		},
+		"variant=1548": {
+			"model": "minecraft:block/crimson_stem"
+		},
+		"variant=1549": {
+			"model": "minecraft:block/dead_fire_coral_block"
+		},
+		"variant=1550": {
+			"model": "hexical:block/casting_carpet"
+		},
+		"variant=1551": {
+			"model": "minecells:block/ancient_septite_wall"
+		},
+		"variant=1552": {
+			"model": "storagedrawers:block/meta_framed_controller_front"
+		},
+		"variant=1553": {
+			"model": "minecraft:block/brown_stained_glass"
+		},
+		"variant=1554": {
+			"model": "minecells:block/putrid_pressure_plate"
+		},
+		"variant=1555": {
+			"model": "minecraft:block/coarse_dirt"
+		},
+		"variant=1556": {
+			"model": "oneironaut:block/wisp_battery"
+		},
+		"variant=1557": {
+			"model": "minecraft:block/red_sandstone_stairs"
+		},
+		"variant=1558": {
+			"model": "minecells:block/bloomrock"
+		},
+		"variant=1559": {
+			"model": "minecraft:block/pitcher_crop"
+		},
+		"variant=1560": {
+			"model": "ftbquests:block/screen_7"
+		},
+		"variant=1561": {
+			"model": "minecraft:block/gray_wall_banner"
+		},
+		"variant=1562": {
+			"model": "sophisticatedbackpacks:block/copper_backpack"
+		},
+		"variant=1563": {
+			"model": "minecraft:block/brown_stained_glass_pane"
+		},
+		"variant=1564": {
+			"model": "minecells:block/ramparts_flag"
+		},
+		"variant=1565": {
+			"model": "hexcasting:block/edified_stairs"
+		},
+		"variant=1566": {
+			"model": "farmersdelight:block/jungle_cabinet"
+		},
+		"variant=1567": {
+			"model": "minecells:block/blue_ribbon_flag"
+		},
+		"variant=1568": {
+			"model": "minecraft:block/oak_pressure_plate"
+		},
+		"variant=1569": {
+			"model": "minecraft:block/amethyst_block"
+		},
+		"variant=1570": {
+			"model": "minecells:block/ancient_septite_slab"
+		},
+		"variant=1571": {
+			"model": "minecraft:block/green_stained_glass_pane"
+		},
+		"variant=1572": {
+			"model": "storagedrawers:block/acacia_half_drawers_2"
+		},
+		"variant=1573": {
+			"model": "minecraft:block/green_candle_cake"
+		},
+		"variant=1574": {
+			"model": "minecraft:block/sculk_shrieker"
+		},
+		"variant=1575": {
+			"model": "minecraft:block/waxed_oxidized_copper"
+		},
+		"variant=1576": {
+			"model": "slate_work:block/sentinel_loci"
+		},
+		"variant=1577": {
+			"model": "minecraft:block/acacia_leaves"
+		},
+		"variant=1578": {
+			"model": "farmersdelight:block/cyan_canvas_sign"
+		},
+		"variant=1579": {
+			"model": "oneironaut:block/raycast_blocker"
+		},
+		"variant=1580": {
+			"model": "minecraft:block/stripped_bamboo_block"
+		},
+		"variant=1581": {
+			"model": "minecells:block/red_wilted_leaves"
+		},
+		"variant=1582": {
+			"model": "minecraft:block/sandstone"
+		},
+		"variant=1583": {
+			"model": "minecraft:block/spruce_leaves"
+		},
+		"variant=1584": {
+			"model": "minecells:block/black_bridge_doorway"
+		},
+		"variant=1585": {
+			"model": "minecraft:block/shulker_box"
+		},
+		"variant=1586": {
+			"model": "minecraft:block/black_stained_glass_pane"
+		},
+		"variant=1587": {
+			"model": "minecraft:block/red_sandstone_wall"
+		},
+		"variant=1588": {
+			"model": "minecraft:block/purpur_pillar"
+		},
+		"variant=1589": {
+			"model": "minecraft:block/smooth_red_sandstone_stairs"
+		},
+		"variant=1590": {
+			"model": "minecraft:block/waxed_exposed_cut_copper"
+		},
+		"variant=1591": {
+			"model": "minecraft:block/yellow_stained_glass_pane"
+		},
+		"variant=1592": {
+			"model": "minecraft:block/green_bed"
+		},
+		"variant=1593": {
+			"model": "minecells:block/hardstone"
+		},
+		"variant=1594": {
+			"model": "minecraft:block/pink_stained_glass"
+		},
+		"variant=1595": {
+			"model": "minecells:block/large_green_ribbon_flag"
+		},
+		"variant=1596": {
+			"model": "minecraft:block/white_glazed_terracotta"
+		},
+		"variant=1597": {
+			"model": "minecraft:block/dragon_wall_head"
+		},
+		"variant=1598": {
+			"model": "minecraft:block/orange_glazed_terracotta"
+		},
+		"variant=1599": {
+			"model": "minecraft:block/brown_wool"
+		},
+		"variant=1600": {
+			"model": "minecraft:block/redstone_wire"
+		},
+		"variant=1601": {
+			"model": "minecraft:block/honeycomb_block"
+		},
+		"variant=1602": {
+			"model": "farmersdelight:block/canvas_rug"
+		},
+		"variant=1603": {
+			"model": "minecraft:block/lightning_rod"
+		},
+		"variant=1604": {
+			"model": "minecraft:block/red_sand"
+		},
+		"variant=1605": {
+			"model": "minecraft:block/orange_candle"
+		},
+		"variant=1606": {
+			"model": "minecraft:block/medium_amethyst_bud"
+		},
+		"variant=1607": {
+			"model": "hexcasting:block/edified_log"
+		},
+		"variant=1608": {
+			"model": "minecraft:block/chorus_plant"
+		},
+		"variant=1609": {
+			"model": "minecells:block/kingdom_portal_core"
+		},
+		"variant=1610": {
+			"model": "minecraft:block/sticky_piston"
+		},
+		"variant=1611": {
+			"model": "minecraft:block/infested_stone_bricks"
+		},
+		"variant=1612": {
+			"model": "minecraft:block/bamboo_wall_sign"
+		},
+		"variant=1613": {
+			"model": "miehex:block/idea_block"
+		},
+		"variant=1614": {
+			"model": "minecraft:block/black_bed"
+		},
+		"variant=1615": {
+			"model": "storagedrawers:block/jungle_full_drawers_1"
+		},
+		"variant=1616": {
+			"model": "minecraft:block/powered_rail"
+		},
+		"variant=1617": {
+			"model": "minecraft:block/structure_block"
+		},
+		"variant=1618": {
+			"model": "minecraft:block/pink_tulip"
+		},
+		"variant=1619": {
+			"model": "minecraft:block/carved_pumpkin"
+		},
+		"variant=1620": {
+			"model": "hexcasting:block/edified_fence_gate"
+		},
+		"variant=1621": {
+			"model": "farmersdelight:block/stuffed_pumpkin_block"
+		},
+		"variant=1622": {
+			"model": "minecells:block/cobbled_ancient_septite_wall"
+		},
+		"variant=1623": {
+			"model": "minecraft:block/powder_snow_cauldron"
+		},
+		"variant=1624": {
+			"model": "minecraft:block/lime_terracotta"
+		},
+		"variant=1625": {
+			"model": "farmersdelight:block/rope"
+		},
+		"variant=1626": {
+			"model": "minecraft:block/blue_bed"
+		},
+		"variant=1627": {
+			"model": "minecraft:block/melon"
+		},
+		"variant=1628": {
+			"model": "storagedrawers:block/framed_compacting_drawers_3"
+		},
+		"variant=1629": {
+			"model": "storagedrawers:block/framed_controller_io"
+		},
+		"variant=1630": {
+			"model": "minecraft:block/stripped_acacia_log"
+		},
+		"variant=1631": {
+			"model": "minecraft:block/lily_of_the_valley"
+		},
+		"variant=1632": {
+			"model": "minecraft:block/acacia_sign"
+		},
+		"variant=1633": {
+			"model": "minecraft:block/chiseled_quartz_block"
+		},
+		"variant=1634": {
+			"model": "minecraft:block/dark_oak_leaves"
+		},
+		"variant=1635": {
+			"model": "farmersdelight:block/potato_crate"
+		},
+		"variant=1636": {
+			"model": "minecells:block/crate"
+		},
+		"variant=1637": {
+			"model": "minecells:block/kings_crest_flag"
+		},
+		"variant=1638": {
+			"model": "storagedrawers:block/bamboo_full_drawers_4"
+		},
+		"variant=1639": {
+			"model": "minecells:block/boss_entry_barrier_controller"
+		},
+		"variant=1640": {
+			"model": "minecraft:block/andesite_slab"
+		},
+		"variant=1641": {
+			"model": "minecraft:block/nether_wart_block"
+		},
+		"variant=1642": {
+			"model": "minecraft:block/cyan_wool"
+		},
+		"variant=1643": {
+			"model": "farmersdelight:block/stove"
+		},
+		"variant=1644": {
+			"model": "minecraft:block/red_concrete_powder"
+		},
+		"variant=1645": {
+			"model": "minecraft:block/sandstone_slab"
+		},
+		"variant=1646": {
+			"model": "minecraft:block/dirt_path"
+		},
+		"variant=1647": {
+			"model": "minecraft:block/tall_grass"
 		}
 	}
 }

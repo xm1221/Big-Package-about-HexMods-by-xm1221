@@ -6,7 +6,8 @@ global.PatternOperateMap = {
     "get_caster":(stack,env)=>{
         let caster = env.caster
         if(!caster.isPlayer()){
-            stack.push(NullIota)
+            let iota = new NullIota
+            stack.push(iota)
             return
         }
         let id = caster.id
@@ -26,10 +27,12 @@ global.PatternOperateMap = {
                 let iota = EntityIota(caster)
                 stack.push(iota)
                 return
-             }
-             stack.push(iota)
-             return
-}
+             }}
+        else{
+            let iota = EntityIota(caster)
+                stack.push(iota)
+                return
+        }
         
    },
     //开发者之策略
@@ -786,6 +789,7 @@ let nulliota =new NullIota
     sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
     return sideEffects;
 },
+
 // 冒名顶替
    "imposter": (stack, env, img) => {
        let args = new Args(stack, 1)
@@ -808,6 +812,7 @@ let nulliota =new NullIota
        
 
     },
+
     // 构筑媒质剑
     "create_sword": (stack, env) => {
         let args = new Args(stack, 1)
@@ -836,6 +841,7 @@ let nulliota =new NullIota
         
         return sideEffects
     },
+
     // 收集意识
 "collect_consciousness": (stack, env) => {
     let args = new Args(stack, 2);
@@ -1005,6 +1011,7 @@ let nulliota =new NullIota
     server.scheduleInTicks(2, ritualLoop);
     return sideEffects;
 },
+
 //人造自然
 "change_biome": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
@@ -1047,6 +1054,7 @@ let nulliota =new NullIota
     ];
     return sideEffects;
 },
+
 //前往理念世界
 "idea_entry": (stack, env, img, cont) => {
     let args = new Args(stack, 2);
@@ -1169,6 +1177,7 @@ let nulliota =new NullIota
 
     return sideEffects;
 },
+
 //提取精魄
 "create_symbols": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
@@ -1242,6 +1251,7 @@ let nulliota =new NullIota
 
     return sideEffects;
 },
+
 //构筑方块，理念型
 "create_block/idea": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
@@ -1464,6 +1474,7 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(1000)];
     return sideEffects;
 },
+
 //污染
 "push":(stack,env,img,cont)=>{
     let args =new Args(stack,2)
@@ -1510,6 +1521,7 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
     return sideEffects
 },
+
 //随心（物品栏槽位操控）
 "inventory_control":(stack,env)=>{
 
@@ -1536,6 +1548,7 @@ let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
 return sideEffects
    
 },
+
 //所欲
 "item_control":(stack,env)=>{
     let args = new Args(stack,1)
@@ -1586,6 +1599,7 @@ return sideEffects
      }
      throw new MishapInvalidIota.of(args.get(0), 1, 'class.item_control')
 },
+
 //缴械
 "Expelliarmus":(stack,env)=>{
      let args = new Args(stack,1)
@@ -1613,6 +1627,7 @@ return sideEffects
     let sideEffects = [OperatorSideEffect.ConsumeMedia(50000)]
      return sideEffects
 },
+
 //惑心
 "puzzle":(stack)=>{
     let args = new Args(stack,3)
@@ -1639,6 +1654,7 @@ return sideEffects
     let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
      return sideEffects
 },
+
 //复生
 "Resurrectionem":(stack,env)=>{
     let args = new Args(stack,3)

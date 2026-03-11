@@ -295,4 +295,71 @@ BlockEvents.rightClicked('miehex:idea_block', event => {
     event.block.set('miehex:idea_block', { variant: String(index) });
     event.cancel();
 });
+//理念世界传送毯
+BlockEvents.rightClicked('miehex:idea_portal',event=>{
+    const { player, block, level, hand } = event
+    if (hand !== 'MAIN_HAND') return
+       let blockPos = block.pos
+    let x = blockPos.x
+    let y = blockPos.y
+    let z = blockPos.z
+    let vec = new Vec3(x,y,z)
+     let currentDim = level.dimension
+    let targetDim
+
+    // 根据当前维度决定目标理念世界
+    if (currentDim == 'minecraft:overworld') {
+        targetDim = 'miehex:ideas_world_1'
+    } else if (currentDim == 'minecraft:the_nether') {
+        targetDim = 'miehex:ideas_world_0'
+    } else if (currentDim == 'minecraft:the_end') {
+        targetDim = 'miehex:ideas_world_2'
+    } else {
+        // 如果不在以上维度，默认传送到 ideas_world_0
+        targetDim = 'miehex:ideas_world_1'
+    }
+    // 获取站在该方块上方的所有实体
+    // 检测区域：
+    let ab = new AABB.ofSize(vec,1,3,1)
+    let entities = level.getEntitiesWithin(
+        ab
+        )
+    if (entities.length === 0) {
+        return
+    }
+  // 遍历所有站在上面的实体
+    entities.forEach(entity => {
+        if((!entity.isPlayer()) && entity.isAlive())
+            {
+        let cost = Math.floor(entity.getHealth())/2
+        console.log(`${cost}`)
+         let item = player.getMainHandItem()
+         console.log(`${item.id}`)
+         if (item.id !== 'miehex:pure_allay_shard') return;
+        if (item.count < cost) {
+              return[]
+     }
+            item.count -= cost
+        }
+
+         // 计算目标位置
+        let targetLevel = player.server.getLevel(targetDim)
+        if (!targetLevel) return
+        
+        // 传送实体
+            entity.teleportTo(
+            targetLevel,                    // arg0: 目标世界
+            x + 0.5,                         // arg1: 目标 X
+            y + 1,                           // arg2: 目标 Y（传送到方块上方一格）
+            z + 0.5,                         // arg3: 目标 Z
+            new HashSet(),         // arg4: 空 Set（不使用相对移动）
+            entity.yaw,                      // arg5: 原偏航角
+            entity.pitch                     // arg6: 原俯仰角
+        )
+
+    
+    // 在原位置也播放音效
+    level.playSound(null, x, y, z, 'minecraft:block.portal.trigger', 'blocks', 1.0, 1.0)
+})
+})
 
