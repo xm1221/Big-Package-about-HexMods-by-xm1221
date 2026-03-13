@@ -60,9 +60,16 @@ let ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
 let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
+<<<<<<< Updated upstream
 
 //息壤相关
 //let WR = Java.loadClass('com.worldreloader.WorldReloader')
+=======
+let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
+let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
+
+
+>>>>>>> Stashed changes
 
 
 
@@ -121,6 +128,10 @@ let PlayerBasedCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.e
 let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv')
 let CircleCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv')
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 // at.petrak.hexcasting.api.casting.iota 相关
 let Iota = Java.loadClass('at.petrak.hexcasting.api.casting.iota.Iota')
 let IotaType = Java.loadClass('at.petrak.hexcasting.api.casting.iota.IotaType')
@@ -164,6 +175,10 @@ let MishapTooManyCloseParens = Java.loadClass('at.petrak.hexcasting.api.casting.
 let MishapUnenlightened = Java.loadClass('at.petrak.hexcasting.api.casting.mishaps.MishapUnenlightened')
 let MishapUnescapedValue = Java.loadClass('at.petrak.hexcasting.api.casting.mishaps.MishapUnescapedValue')
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 // ram.talia.hexal.xplat.IXplatAbstractions 相关
 let HexalIXplatAbstractions = Java.loadClass('ram.talia.hexal.xplat.IXplatAbstractions')
 

@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 // priority: 5
+=======
+// priority: 100000
+>>>>>>> Stashed changes
 let BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
 let blockstatePath = 'kubejs/assets/miehex/blockstates/idea_block.json';
 let mappingPath = 'kubejs/config/idea_block_mapping.json';

@@ -11,10 +11,25 @@ StartupEvents.registry('hexcasting:action', e => {
         let pattern = HexPattern.fromAngles(seq, dir)
         e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
     }
+<<<<<<< Updated upstream
     //开发者之策略
     registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
     //开发者之策略，二
     registerPatternWrap("qqqaq",HexDir.NORTH_EAST,"xmbug")
+=======
+    //意识之精思
+    registerPatternWrap("qaq",HexDir.NORTH_EAST,"get_caster",false,null,"miehex")
+
+    //开发者之策略
+    registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
+
+    //开发者之策略，二
+    registerPatternWrap("qqqaq",HexDir.NORTH_EAST,"xmbug")
+    
+    //测试员之策略
+    registerPatternWrap("adaw",HexDir.SOUTH_EAST,'test')
+
+>>>>>>> Stashed changes
     //捐献
     registerPatternWrap('dadawaawad',HexDir.NORTH_EAST,'donate',false,null,'miehex')
     
@@ -39,6 +54,27 @@ StartupEvents.registry('hexcasting:action', e => {
     // 区域名号之提整
     registerPatternWrap('qqqqqwdeddwwded', HexDir.SOUTH_EAST, 'zone_entity/by_name',false,null,"miehex")
 
+<<<<<<< Updated upstream
+=======
+    //故乡之精思
+    registerPatternWrap('wqaqwawqwwawwqwwa',HexDir.NORTH_EAST,'get_spawn')
+
+    //仇雠之纯化
+    registerPatternWrap("wadwdqdwd",HexDir.EAST,"get_target")
+
+    //旋转之提整
+    registerPatternWrap("wdww",HexDir.EAST,"rotateVector")
+
+    //夹角之馏化
+    registerPatternWrap("wadewqaeaqwed",HexDir.EAST,"angleBetweenScalar")
+
+    //夹角之策略
+    registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"angleBetweenVectors")
+
+    //连接卓伟
+    registerPatternWrap("daaedewdweeqawa", HexDir.WEST,"great_connect");
+
+>>>>>>> Stashed changes
     //spells===============================
 
     // 附魔转移
@@ -77,8 +113,13 @@ StartupEvents.registry('hexcasting:action', e => {
     //探古寻迹
     registerPatternWrap('edeeeeeqdwdwww',HexDir.EAST,"locate")
 
+<<<<<<< Updated upstream
     //分海
 //    registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
+=======
+    //分海(fabric only)
+    registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
+>>>>>>> Stashed changes
 
     //方块理念化
     registerPatternWrap("wqwawqwqwqwqwqawew",HexDir.EAST,"idealized_block")
@@ -89,6 +130,36 @@ StartupEvents.registry('hexcasting:action', e => {
     //进程崩溃
     registerPatternWrap("qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",HexDir.NORTH_EAST,"crash")
 
+<<<<<<< Updated upstream
+=======
+    //随心
+    registerPatternWrap("qwawqwadawqwa",HexDir.EAST,"inventory_control")
+
+    //所欲
+    registerPatternWrap("dwewdweqawqwa",HexDir.EAST,"item_control")
+
+    //缴械
+    registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"Expelliarmus")
+
+    //惑心
+    registerPatternWrap("dwewdweqawqwaewqqqwaw",HexDir.EAST,"puzzle")
+
+    //复生
+    registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"Resurrectionem")
+
+    //提线木偶之策略
+    registerPatternWrap("qaawawaaq",HexDir.EAST,"allay_move")
+
+    //傀儡师之策略
+    registerPatternWrap("qqaqwwawwqaqq",HexDir.EAST,"allay_casting")
+
+    //断线风筝之策略
+    registerPatternWrap("qaqqaeadeada",HexDir.EAST,"allay_stop")
+
+    //混杂悦灵
+    registerPatternWrap("daaedewdqdqdqdqdqdadwewewewewew",HexDir.WEST,"allay_mix")
+
+>>>>>>> Stashed changes
      
 
 

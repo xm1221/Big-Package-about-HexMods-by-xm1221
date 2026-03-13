@@ -4,7 +4,11 @@ ServerEvents.recipes(event =>{
     event.shapeless(Item.of('ftbquests:book', "{RepairCost:0,display:{Name:'{\"text\":\"你的咒法学研究笔记\"}'}}"),['minecraft:dirt'])
     
     event.remove({id:'ftbquests:book'})
+<<<<<<< Updated upstream
     event.remove({id:'hierophantics:flay_bed'})
+=======
+
+>>>>>>> Stashed changes
 
     })
 
@@ -22,7 +26,11 @@ ServerEvents.recipes(event =>{
     event.smithing('hexchanting:amethyst_pickaxe','hexcasting:artifact','minecraft:diamond_pickaxe','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_shovel','hexcasting:artifact','minecraft:diamond_shovel','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_hoe','hexcasting:artifact','minecraft:diamond_hoe','hexcasting:charged_amethyst')
+<<<<<<< Updated upstream
     event.smithing('hierophantics:flay_bed','minecraft:end_crystal','#minecraft:beds','hexcasting:quenched_allay_shard')
+=======
+   
+>>>>>>> Stashed changes
     
     
     
@@ -44,6 +52,14 @@ ServerEvents.recipes(e=>{
         ["miehex:pure_allay_shard","#minecraft:biome_symbols","miehex:pure_allay_shard"],
         ["hexcasting:quenched_allay_shard","miehex:pure_allay_shard","hexcasting:quenched_allay_shard"]
     ]).id("miehex:entry")
+<<<<<<< Updated upstream
+=======
+    e.shaped('miehex:idea_portal',[
+        ["miehex:pure_allay_block","hexcasting:quenched_allay_shard","miehex:pure_allay_block"],
+        ["miehex:pure_allay_block","#minecraft:biome_symbols","miehex:pure_allay_block"],
+        ["miehex:pure_allay_block",'miehex:ideas_world_entry',"miehex:pure_allay_block"]
+    ]).id("miehex:carpet")
+>>>>>>> Stashed changes
 })
 
 //结构精魄
@@ -146,7 +162,11 @@ ServerEvents.recipes(e=>{
     ["minecraft:village_taiga", "minecraft:spruce_log", "minecraft:cobblestone", "minecraft:taiga"],
 
     // 其他原版结构
+<<<<<<< Updated upstream
     ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:ender_pearl", "minecraft:plains"],
+=======
+    ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:stone", "minecraft:plains"],
+>>>>>>> Stashed changes
     ["minecraft:ancient_city", "minecraft:deepslate", "minecraft:echo_shard", "minecraft:deep_dark"],
     ["minecraft:trail_ruins", "minecraft:terracotta", "minecraft:sand", "minecraft:jungle"],
     ["minecraft:jungle_pyramid", "minecraft:mossy_cobblestone", "minecraft:vine", "minecraft:jungle"],
@@ -157,8 +177,13 @@ ServerEvents.recipes(e=>{
     ["minecraft:shipwreck", "minecraft:oak_log", "minecraft:iron_ingot", "minecraft:ocean"],
     ["minecraft:ocean_ruin", "minecraft:stone_bricks", "minecraft:prismarine", "minecraft:ocean"],
     ["minecraft:bastion_remnant", "minecraft:blackstone", "minecraft:gold_ingot", "minecraft:nether_wastes"],
+<<<<<<< Updated upstream
     ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:blaze_rod", "minecraft:nether_wastes"],
     ["minecraft:end_city", "minecraft:purpur_block", "minecraft:shulker_shell", "minecraft:the_end"],
+=======
+    ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:nether_bricks", "minecraft:nether_wastes"],
+    ["minecraft:end_city", "minecraft:purpur_block", "minecraft:purpur_block", "minecraft:the_end"],
+>>>>>>> Stashed changes
 
     // 自定义结构
     ["miehex:abadoned_greatwork", 'hexcasting:edified_log', 'hexcasting:slate_block', "minecraft:nether_wastes"],

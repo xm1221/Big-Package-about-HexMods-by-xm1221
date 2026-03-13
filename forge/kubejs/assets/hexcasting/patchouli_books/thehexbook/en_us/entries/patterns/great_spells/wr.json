@@ -1,0 +1,28 @@
+{
+  "name": "分海",
+  "category": "hexcasting:patterns/great_spells",
+  "icon": "minecraft:wooden_axe",
+  "sortnum": 17,
+  "advancement": "hexcasting:enlightenment",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:worldreloader",
+      "anchor": "miehex:worldreloader",
+      "input": "vector,num,num,num,bool",
+      "output": "",
+      "text": "我最伟大的作品，拥有强大的力量，它会以所给向量为圆心，在由几个数确定的范围内改变周围的地形与群系，同时会消耗副手的64个群系精魄来确定群系"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "第一个数是影响半径，第二个是最低作用点的y坐标，第三个是最高生成点相对地面的y值，第四个则决定了是只改变地表还是让改造深入地下，为true时，后两个数无实际意义，消耗10个充能紫水晶，额外消耗半径的平方加上高度数目的紫水晶粉。"
+
+    },
+    {
+      "type": "patchouli:text",
+      "text": "群系精魄并不像看起来那样温顺，因此有时这个法术会失败，这会浪费媒质和精魄，末地的群系精魄尤其难以驾驭，尽管如此，这个法术还是过于强大，为了避免心怀不轨之人利用，或许我该把笔顺删去......"
+      
+    }
+  ]
+}

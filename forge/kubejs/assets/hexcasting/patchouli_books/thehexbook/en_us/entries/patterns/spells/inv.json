@@ -1,0 +1,50 @@
+{
+  "name": "物品栏操控",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:knowledge_book",
+  "sortnum": 11,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "存在可以通过意识和媒质操控自身物品栏的咒术，它们依靠物品栏索引来确认物品栏的槽位，快捷栏从左到右为0~8，物品栏从左到右、从上到下为9~35，如果给出了超出索引的数，也许物品会被送到奇怪的地方消失掉吧。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:inventory_control",
+      "anchor": "miehex:inventory_control",
+      "input": "num,num",
+      "output": "",
+      "text": "接受两个物品栏的索引，交换自身物品栏相应槽位的物品，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:item_control",
+      "anchor": "miehex:item_control",
+      "input": "num/entity",
+      "output": "",
+      "text": "接受一个物品栏的索引或一个物品实体，将索引对应槽位的物品丢出一份，或者把那些物品实体填入自身物品栏的空槽位中，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "对自己的物品栏进行操控确实有些无用，但好在我发现了修改其他实体物品栏的一些图案————它们不够强大，但也许在战斗中会有奇效。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:Expelliarmus",
+      "anchor": "miehex:Expelliarmus",
+      "input": "entity",
+      "output": "",
+      "text": "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:puzzle",
+      "anchor": "miehex:puzzle",
+      "input": "player,num,num",
+      "output": "",
+      "text": "接受玩家和其两个物品栏的索引，交换其物品栏相应槽位的物品，消耗一个充能紫水晶。"
+    }
+  ]
+}

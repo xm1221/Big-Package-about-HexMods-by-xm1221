@@ -71,8 +71,13 @@
        {
       "type": "hexcasting:pattern",
      "op_id": "miehex:imposter", 
+<<<<<<< Updated upstream
      "anchor": "miehex:imposter", "input": "player,list of patterns", 
      "output": "", "text": "这个罪恶的法术接受一个玩家实体和一个图案列表，那之后便会控制那个玩家释放那个图案列表中所规定的法术，仅需64枚充能紫水晶，只能在法杖中释放"
+=======
+     "anchor": "miehex:imposter", "input": "any", 
+     "output": "", "text": "这个法术拥有奇怪的效果，可以改变施法者使用意识之精思时返回的iota————不过在这么做之前，至少应该保存一下自己原本的真名。"
+>>>>>>> Stashed changes
       },
       {
       "type": "hexcasting:pattern",
@@ -122,6 +127,17 @@
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
+=======
+      "op_id": "miehex:get_spawn",
+      "anchor": "miehex:get_spawn",
+      "input": "",
+      "output": "vec",
+      "text": "返回重生点位置向量"
+    },
+    {
+      "type": "hexcasting:pattern",
+>>>>>>> Stashed changes
       "op_id": "miehex:create_block/idea",
       "anchor": "miehex:create_block/idea",
       "input": "vector",
@@ -159,7 +175,83 @@
       "input": "player",
       "output": "",
       "text": "接受一个玩家实体，从其脑中弹出一份其已经服用的磁带，消耗一枚充能紫水晶。"
+<<<<<<< Updated upstream
     }
 
+=======
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:inventory_control",
+      "anchor": "miehex:inventory_control",
+      "input": "num,num",
+      "output": "",
+      "text": "接受两个物品栏的索引，交换自身物品栏相应槽位的物品，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:item_control",
+      "anchor": "miehex:item_control",
+      "input": "num/entity",
+      "output": "",
+      "text": "接受一个物品栏的索引或一个物品实体，将索引对应槽位的物品丢出一份，或者把那些物品实体填入自身物品栏的空槽位中，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:Expelliarmus",
+      "anchor": "miehex:Expelliarmus",
+      "input": "entity",
+      "output": "",
+      "text": "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:puzzle",
+      "anchor": "miehex:puzzle",
+      "input": "player,num,num",
+      "output": "",
+      "text": "接受玩家和其两个物品栏的索引，交换其物品栏相应槽位的物品，消耗一个充能紫水晶，只接受范围内的索引。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:get_target",
+      "anchor": "miehex:get_target",
+      "input": "entity",
+      "output": "entity",
+      "text": "接受一个实体，返回其想要攻击的实体。"
+    },
+        {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:angleBetweenVectors",
+      "anchor": "miehex:angleBetweenVectors",
+      "input": "vec, vec",
+      "output": "num, num",
+      "text": "接受两个向量，计算从第一个向量指向第二个向量所需的偏航角和俯仰角（弧度），依次压入栈中（先偏航，后俯仰）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:angleBetweenScalar",
+      "anchor": "miehex:angleBetweenScalar",
+      "input": "vec, vec",
+      "output": "num",
+      "text": "接受两个向量，计算它们之间的空间夹角（弧度）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:rotateVector",
+      "anchor": "miehex:rotateVector",
+      "input": "vec, num, num",
+      "output": "vec",
+      "text": "接受一个向量、偏航角和俯仰角（均为弧度），先将向量绕 Y 轴旋转偏航角，再绕 X 轴旋转俯仰角，返回旋转后的新向量。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:great_connect",
+      "anchor": "miehex:great_connect",
+      "input": "list",
+      "output": "",
+      "text": "接受一个图案列表，创建一个新的法杖施法环境（继承原施法者），并在其中执行该列表。此图案只能在法术环中施放。"
+    }
+>>>>>>> Stashed changes
   ]
 }

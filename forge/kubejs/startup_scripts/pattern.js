@@ -198,6 +198,7 @@ function mobCasting(spell,mob,name){
     let pitch = mob.getPitch(); // X轴旋转角（垂直）
     let item = Item.of('hexcasting:creative_unlocker')
     let caster = global.Faker.create(level,name)
+<<<<<<< Updated upstream
     caster.setItemInHand(InteractionHand.MAIN_HAND, item)
     caster.setPos(x,y,z)
     caster.setRotation(yaw,pitch)
@@ -223,6 +224,72 @@ global.spells = {
     mob:mobCasting
 }
 
+=======
+    let inv = caster.getInventory()
+    let slot = Math.floor(Math.random()*10+5)
+    inv.setStackInSlot(slot,item)
+    caster.setPos(x,y,z)
+    caster.setRotation(yaw,pitch)
+        // 创建施法环境
+        let hand = InteractionHand.MAIN_HAND;
+        let env = new StaffCastEnv(caster, hand);
+
+        // 创建空虚拟机
+        let vm = CastingVM.empty(env);
+
+        //let Iotas = global.spells.nbt(spell,level)
+        let List =Iotas.list
+
+        // 执行
+        vm.queueExecuteAndWrapIotas(List, env.world);
+}
+//有限生物施法（悦灵）
+function allaycasting(spells,mob,media){
+    let level = mob.level
+    let pos = mob.position()
+    let x = pos.x()
+    let y = pos.y()
+    let z = pos.z()
+    let yaw = mob.getYaw();     // Y轴旋转角（水平）
+    let pitch = mob.getPitch(); // X轴旋转角（垂直）
+    let nbt = `{"hexcasting:media":${media}L,"hexcasting:start_media":${media}L}`
+    let item = Item.of('hexcasting:battery', nbt)
+    let caster = global.Faker.create(level,mob.uuid)
+    let inv = caster.getInventory()
+    let slot = Math.floor(Math.random()*10+5)
+    inv.setStackInSlot(slot,item)
+    //caster.setItemInHand(InteractionHand.MAIN_HAND, item)
+    caster.runCommandSilent('advancement grant @s only hexcasting:enlightenment');
+    caster.setPos(x,y-1,z)
+    caster.setRotation(yaw,pitch)
+    let before = mob.getHealth()
+    caster.setHealth(before)
+
+        // 创建施法环境
+        let hand = InteractionHand.MAIN_HAND;
+        let env = new StaffCastEnv(caster, hand);
+
+        // 创建空虚拟机
+        let vm = CastingVM.empty(env);
+        let List =spells
+        let stop = global.spells.nbt('stop',level).list
+
+        // 执行
+        vm.queueExecuteAndWrapIotas(List, env.world);
+
+      caster.kill()
+      caster.discard()
+      //mob.persistentData.putInt('casting',1 )
+        
+}
+global.spells = {
+    nbt:spellsfromnbt,
+    mob:mobCasting,
+    hurts:typeHurt
+}
+
+
+>>>>>>> Stashed changes
 // 命名空间
 function RL(string) {
     let length = string.length
@@ -416,4 +483,13 @@ ActionJS.helpers = {
     assertEntityInRange(ctx, entity) {
         if (!ctx.isEntityInRange(entity)) throw new MishapEntityTooFarAway(entity)
     }
+<<<<<<< Updated upstream
+=======
+}
+
+function requireMedia(env, cost) { 
+    if (env.extractMedia(cost, true) > 0) {
+        throw new MishapNotEnoughMedia(cost);
+    }
+>>>>>>> Stashed changes
 }

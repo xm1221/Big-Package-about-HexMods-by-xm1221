@@ -1,6 +1,48 @@
+<<<<<<< Updated upstream
 global.ForLoopTasks = new Map()
 global.ZERO = new Map()
 global.PatternOperateMap = {
+=======
+//the first package made by xm1221.He(maybe she?) received alot of help from 爰何云、YukkuriC、Scheinlethe and others.
+global.ForLoopTasks = new Map()
+global.ZERO = new Map()
+global.PatternOperateMap = {
+    //意识之精思
+    "get_caster":(stack,env)=>{
+        let caster = env.caster
+        if(!caster.isPlayer()){
+            let iota = new NullIota
+            stack.push(iota)
+            return
+        }
+        let id = caster.uuid
+        let level =caster.level
+        let server = caster.server
+        if (caster.persistentData.contains('hexTags')) {
+             let hexTags = caster.persistentData.getCompound('hexTags')
+             let namespace = hexTags.getCompound(id)
+             let serializeIota = namespace.getCompound('name')
+             let iota = IotaType.deserialize(serializeIota, level)
+             console.log(`${iota}`)
+             if(!iota){
+                let iota = EntityIota(caster)
+                stack.push(iota)
+                return
+             }
+             if(iota instanceof GarbageIota){
+                let iota = EntityIota(caster)
+                stack.push(iota)
+                return
+             }
+             stack.push(iota)
+            return
+            }
+        else{
+                let iota = EntityIota(caster)
+                stack.push(iota)
+                return}
+     },
+>>>>>>> Stashed changes
     //开发者之策略
     "xmdebug": (stack, env) => {
     let args = new Args(stack, 2)
@@ -57,6 +99,18 @@ global.PatternOperateMap = {
         stack.push(NullIota)
     }
 },
+<<<<<<< Updated upstream
+=======
+//测试员之策略
+"test":(stack,env,img,cont)=>{
+  /*let args = new Args(stack,1)
+  let iota = args.string(0)
+  console.log(`${iota}`)
+  let caster = env.caster
+  caster.runCommandSilent(`title @p title {"text":"${iota}"}`)
+  return*/
+},
+>>>>>>> Stashed changes
     // 戏法之提整
     "list_insert": (stack, env) => {
         let args = new Args(stack, 3)
@@ -434,8 +488,101 @@ global.PatternOperateMap = {
     return [];
 },
 
+<<<<<<< Updated upstream
        
     //spells====================
+=======
+//故乡之精思
+"get_spawn":(stack,env)=>{
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let respawnPos = caster.getRespawnPosition()
+    let iota = Vec3Iota(respawnPos)
+    stack.push(iota)
+},
+//仇雠之纯化
+"get_target":(stack,env)=>{
+    let args = new Args(stack,1)
+    let entity = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, entity)   
+    let target = entity.getTarget()
+    if(target!=null){
+        let iota = new EntityIota(target)
+    stack.push(iota)
+    return
+}
+let nulliota =new NullIota
+     stack.push(nulliota)
+        return
+    
+},
+//旋转之提整
+"rotateVector":(stack)=>{
+    let args = new Args(stack,3)
+    let v = args.vec3(0)
+    let vec = toVec3(v)
+    let yaw = args.double(1)
+    let pitch =args.double(2)
+    let result=rotateVector(vec, yaw, pitch)
+    let iota = Vec3Iota(result)
+    stack.push(iota)
+    return
+},
+
+//夹角之馏化
+"angleBetweenScalar":(stack)=>{
+    let args = new Args(stack,2)
+    let v1 = args.vec3(0)
+    let v2 = args.vec3(1)
+    let vec1 = toVec3(v1)
+    let vec2 = toVec3(v2)
+    let result = angleBetweenVectors(vec1, vec2)
+    let iota = new DoubleIota(result)
+    stack.push(iota)
+    return
+
+},
+
+//夹角之策略
+"angleBetweenVectors":(stack)=>{
+    let args = new Args(stack,2)
+    let v1 = args.vec3(0)
+    let v2 = args.vec3(1)
+    let vec1 = toVec3(v1)
+    let vec2 = toVec3(v2)
+    let result = angleBetweenVectors(vec1, vec2)
+    let pitch = result[1]
+    let yaw = result[0]
+    let iota1 = DoubleIota(yaw)
+    stack.push(iota1)
+    let iota2 = DoubleIota(pitch)
+    stack.push(iota2)
+    return
+
+},
+//连接卓伟
+"great_connect": (stack, env, img, cont) => {
+    // 检查是否在法术环中施法
+    if (!(env instanceof CircleCastEnv)) {
+        throw new MishapBadCaster()
+    }
+
+    let args = new Args(stack, 1);
+    let listIota = args.list(0);               // 获取列表 iota
+    let codeList = listIota.list;          // 提取内部的 Java List<Iota>
+
+    // 创建新的法杖施法环境（继承原施法者，使用主手）
+    let newEnv = new StaffCastEnv(env.caster, InteractionHand.MAIN_HAND);
+    let vm = CastingVM.empty(newEnv);            // 空虚拟机
+    vm.queueExecuteAndWrapIotas(codeList, newEnv.world); // 执行图案列表
+
+    return ; // 无副作用
+},
+
+  //spells====================
+>>>>>>> Stashed changes
 
     //捐献
       'donate':(env)=>{
@@ -448,6 +595,7 @@ global.PatternOperateMap = {
     let args = new Args(stack, 2);
     let entity1 = args.entity(0);
     let entity2 = args.entity(1);
+<<<<<<< Updated upstream
 
     // 确保两个实体都是物品实体
     if (entity1.type !== 'minecraft:item') {
@@ -455,6 +603,17 @@ global.PatternOperateMap = {
     }
     if (entity2.type !== 'minecraft:item') {
         throw MishapInvalidIota.of(args.get(1), 1, 'class.item');
+=======
+    ActionJS.helpers.assertEntityInRange(env, entity1)
+    ActionJS.helpers.assertEntityInRange(env, entity2)
+
+    // 确保两个实体都是物品实体
+    if (entity1.type !== 'minecraft:item') {
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item');
+    }
+    if (entity2.type !== 'minecraft:item') {
+        throw new MishapInvalidIota.of(args.get(1), 1, 'class.item');
+>>>>>>> Stashed changes
     }
 
     let item1 = entity1.getItem();
@@ -544,9 +703,12 @@ global.PatternOperateMap = {
                 // 尝试获取物品的 NBT 数据
                 let nbt = item.nbt
  
+<<<<<<< Updated upstream
                 
                 // 直接检查物品是否有 hexcasting 相关的 NBT 数据
                 // 简化检查逻辑，只要物品有 NBT 数据，就认为它有 iota
+=======
+>>>>>>> Stashed changes
                 if (nbt) {
 
                     return true
@@ -591,7 +753,10 @@ global.PatternOperateMap = {
                 "hexcasting:data": {}
             })
             
+<<<<<<< Updated upstream
             
+=======
+>>>>>>> Stashed changes
             // 更新玩家物品
             if (isMainHand) {
                 // 主手物品槽位索引是 0
@@ -658,6 +823,7 @@ global.PatternOperateMap = {
     // 消耗 10000 点媒质
     let sideEffects = [];
     sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
+<<<<<<< Updated upstream
 
     return sideEffects;
 },
@@ -724,6 +890,34 @@ global.PatternOperateMap = {
         
         return sideEffects
     },
+=======
+    return sideEffects;
+},
+
+// 冒名顶替
+   "imposter": (stack, env, img) => {
+       let args = new Args(stack, 1)
+       let iota = args.get(0)
+       let caster =env.caster
+       let server = caster.server
+       if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+       }
+       let id = caster.uuid
+       let serializeIota = new CompoundTag()
+        serializeIota.put('name', IotaType.serialize(iota))
+       let persistentIota = caster.persistentData.getCompound('hexTags')
+       persistentIota.put(id, serializeIota)
+       caster.persistentData.put('hexTags', persistentIota)
+
+       let sideEffects = [];
+       sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
+       return sideEffects;
+       
+
+    },
+
+>>>>>>> Stashed changes
     // 构筑媒质剑
     "create_sword": (stack, env) => {
         let args = new Args(stack, 1)
@@ -752,11 +946,19 @@ global.PatternOperateMap = {
         
         return sideEffects
     },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     // 收集意识
 "collect_consciousness": (stack, env) => {
     let args = new Args(stack, 2);
     let entitiesIota = args.list(0);
     let pos = args.vec3(1);
+<<<<<<< Updated upstream
+=======
+    ActionJS.helpers.assertVecInRange(env, pos);
+>>>>>>> Stashed changes
 
     let entities = entitiesIota.list;
 
@@ -920,6 +1122,10 @@ global.PatternOperateMap = {
     server.scheduleInTicks(2, ritualLoop);
     return sideEffects;
 },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 //人造自然
 "change_biome": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
@@ -954,7 +1160,11 @@ global.PatternOperateMap = {
 
     let dimension = level.dimension;
     let fillBiomeCommand = `execute in ${dimension} run fillbiome ${x} ${y} ${z} ${x} ${y} ${z} ${biomeId}`;
+<<<<<<< Updated upstream
     server.runCommand(fillBiomeCommand);
+=======
+    server.runCommandSilent(fillBiomeCommand);
+>>>>>>> Stashed changes
 
     let sideEffects = [
         OperatorSideEffect.ConsumeMedia(1000),
@@ -962,6 +1172,10 @@ global.PatternOperateMap = {
     ];
     return sideEffects;
 },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 //前往理念世界
 "idea_entry": (stack, env, img, cont) => {
     let args = new Args(stack, 2);
@@ -1084,11 +1298,20 @@ global.PatternOperateMap = {
 
     return sideEffects;
 },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 //提取精魄
 "create_symbols": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
     let pos = args.vec3(0);  // 目标位置
 
+<<<<<<< Updated upstream
+=======
+    ActionJS.helpers.assertVecInRange(env, pos);
+
+>>>>>>> Stashed changes
     let caster = env.caster;
     if (!caster) throw new MishapBadCaster();
 
@@ -1155,6 +1378,10 @@ global.PatternOperateMap = {
 
     return sideEffects;
 },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 //构筑方块，理念型
 "create_block/idea": (stack, env, img, cont) => {
     let args = new Args(stack, 1);
@@ -1236,8 +1463,15 @@ global.PatternOperateMap = {
     return sideEffects;
 },
 
+<<<<<<< Updated upstream
 /*for fabric only 
 "worldreloader":(stack,env)=>{
+=======
+//分海
+"worldreloader":(stack,env)=>{
+    //息壤相关(fabric only)
+    let WR = Java.loadClass('com.worldreloader.WorldReloader')
+>>>>>>> Stashed changes
     let args = new Args(stack, 5);
     let bool =args.bool(4)
     let ymax =args.double(3)
@@ -1277,6 +1511,10 @@ global.PatternOperateMap = {
         offhand.count-=64
         let y2 = Math.abs(yMax)
         let cost = radius*radius*10000 + 100000 + y2*10000
+<<<<<<< Updated upstream
+=======
+        requireMedia(env,cost)
+>>>>>>> Stashed changes
         let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
 let shortId = biomeId.replace(/^[^:]+:/, '')
 
@@ -1328,7 +1566,10 @@ let DimensionMap = {
 
   return sideEffects
 },
+<<<<<<< Updated upstream
 */
+=======
+>>>>>>> Stashed changes
 
 //方块理念化
 "idealized_block": (stack, env, img, cont) => {
@@ -1348,7 +1589,11 @@ let DimensionMap = {
 
     // 获取目标方块对象
     let block = level.getBlock(blockPos);
+<<<<<<< Updated upstream
     if (!block) throw new MishapBadLocation(pos);
+=======
+    if (!block) throw new MishapBadLocation(pos,"那里什么都没有");
+>>>>>>> Stashed changes
 
     let targetBlockId = block.id;
 
@@ -1360,7 +1605,11 @@ let DimensionMap = {
 
     if (realism.indexOf(targetBlockId)!=-1) {
         // 如果方块在黑名单中，抛出事故
+<<<<<<< Updated upstream
         throw new MishapBadBlock.of(blockPos);
+=======
+        throw new MishapBadLocation(pos,"那里容不下理念了");
+>>>>>>> Stashed changes
     }
     
     
@@ -1378,6 +1627,10 @@ let DimensionMap = {
     let sideEffects = [OperatorSideEffect.ConsumeMedia(1000)];
     return sideEffects;
 },
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 //污染
 "push":(stack,env,img,cont)=>{
     let args =new Args(stack,2)
@@ -1401,6 +1654,10 @@ let DimensionMap = {
 
         player.level.spawnParticles('minecraft:witch', true,
             player.x, player.y + 1, player.z, 0, 0.1, 0, 20, 0.2);
+<<<<<<< Updated upstream
+=======
+            requireMedia(env,10000)
+>>>>>>> Stashed changes
 
     let sideEffects = [OperatorSideEffect.ConsumeMedia(10000)]
     return sideEffects
@@ -1411,7 +1668,11 @@ let DimensionMap = {
     let args =new Args(stack,1)
     let player = args.entity(0)
     if(!player.isPlayer()){
+<<<<<<< Updated upstream
         throw MishapInvalidIota.of(args.get(0), 0, 'class.miehex_player');
+=======
+        throw MishapInvalidIota.of(args.get(0), 1, 'class.miehex_player');
+>>>>>>> Stashed changes
             }
     let casstteState = player.getCassetteState()
     let {owned}= casstteState
@@ -1425,6 +1686,274 @@ let DimensionMap = {
     return sideEffects
 },
 
+<<<<<<< Updated upstream
+=======
+//随心（物品栏槽位操控）
+"inventory_control":(stack,env)=>{
+
+    let args = new Args(stack,2)
+    let num1 = args.double(0)
+    let num2 = args.double(1)
+    let Num1 = Math.floor(num1)
+    let Num2 = Math.floor(num2)
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let inv = caster.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    let stackB = inv.getStackInSlot(Num2)
+
+    inv.setStackInSlot(Num2,stackA)
+    inv.setStackInSlot(Num1,stackB)
+    if(caster.isSpectator){
+        return
+
+    }
+let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+return sideEffects
+   
+},
+
+//所欲
+"item_control":(stack,env)=>{
+    let args = new Args(stack,1)
+    let num1 = args.get(0)
+    //如果是数
+
+    if (num1 instanceof DoubleIota){
+        let Num1 = Math.floor(num1.getDouble())
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let inv = caster.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    caster.drop(stackA.split(1),false)
+    if(caster.isSpectator){
+        return
+
+    }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+return sideEffects
+
+    }
+    //如果是物品实体
+    if (num1 instanceof EntityIota){
+      let caster = env.caster
+      let item =num1.getEntity()
+      ActionJS.helpers.assertEntityInRange(env, item)
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    } 
+    if(item.type !== 'minecraft:item'){
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item')
+        
+    } 
+    let stackA=item.getItem()
+    let inv = caster.getInventory()
+    let Num=inv.getFreeSlot()
+    inv.setStackInSlot(Num,stackA)
+    item.kill()
+
+    if(caster.isSpectator){
+        return
+     }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100)]
+     return sideEffects
+
+     }
+     throw new MishapInvalidIota.of(args.get(0), 1, 'class.item_control')
+},
+
+//缴械
+"Expelliarmus":(stack,env)=>{
+     let args = new Args(stack,1)
+    let target = args.entity(0)
+     ActionJS.helpers.assertEntityInRange(env, target)
+     let level = target.level
+     let x=target.x
+     let y = target.y
+     let z= target.z
+
+    let item=target.getMainHandItem().split(1)
+    let itemEntity = level.createEntity('item')
+    itemEntity.setPosition(x+0.3, y+0.3, z+0.3)
+    itemEntity.item = item // 设置物品栈
+    itemEntity.setMotion(0.5, 0.5, 0.5)                                       
+    itemEntity.spawn()
+
+    let item2 = target.getOffhandItem().split(1)
+    let itemEntity2 = level.createEntity('item')
+    itemEntity2.setPosition(x+0.3, y+0.3, z+0.3)
+    itemEntity2.item = item2 // 设置物品栈
+    itemEntity2.setMotion(0.5, 0.5, 0.5)                                        
+    itemEntity2.spawn()
+   
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(50000)]
+     return sideEffects
+},
+
+//惑心
+"puzzle":(stack)=>{
+    let args = new Args(stack,3)
+    let target = args.entity(0)
+     let num1 = args.double(1)
+    let num2 = args.double(2)
+    let Num1 = Math.floor(num1)
+    let Num2 = Math.floor(num2)
+    if(!target.isPlayer()){
+        throw new MishapInvalidIota.of(args.get(0),3, "class.miehex_player")
+    }
+    if(Num1>35 ||Num1<0){
+        throw new MishapInvalidIota.of(args.get(1),2, 'class.slot')
+    }
+    if(Num2>35 ||Num2<0){
+        throw new MishapInvalidIota.of(args.get(2),1, 'class.slot')
+    }
+    let inv = target.getInventory()
+    let stackA = inv.getStackInSlot(Num1)
+    let stackB = inv.getStackInSlot(Num2)
+
+    inv.setStackInSlot(Num2,stackA)
+    inv.setStackInSlot(Num1,stackB)
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(100000)]
+     return sideEffects
+},
+
+//复生
+"Resurrectionem":(stack,env)=>{
+    let args = new Args(stack,3)
+    let pos = args.vec3(2)
+    let player = args.entity(1)
+    let target = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, target)
+    ActionJS.helpers.assertVecInRange(env,pos)
+    let server =player.server
+    if(!player.isSpectator){
+        return
+ }
+    if(target.type!="minecraft:villager"){
+        throw new MishapInvalidIota.of(args.get(1),2,"class.respawn_0")
+    }
+    let respawn = player.getRespawnPosition()
+    let Respawn = Vec3Iota(respawn).vec3
+
+    if(Respawn.x!=pos.x||Respawn.y!=pos.y||Respawn.z!=pos.z){
+       throw new MishapInvalidIota.of(args.get(2),1,"class.respawn_1")
+    }
+    let x =target.x
+    let y = target.y
+    let z =target.z
+    player.level.broadcastEntityEvent(target,35)
+    target.discard()
+    player.setGameMode("survival")
+    player.teleportTo(x,y,z)
+    player.setPos(x,y,z)
+    let world = env.world
+    player.level.broadcastEntityEvent(player,35)
+    player.level.spawnParticles('minecraft:crit', true,
+            player.x, player.y + 1, player.z, 0, 0.1, 0, 40, 0.2);
+    player.level.spawnParticles('minecraft:glow', true,
+            player.x, player.y + 1, player.z, 0, 0.1, 0, 30, 0.2);
+     world.playSound(null, x, y, z,
+                    "minecraft:block.end_portal.spawn", SoundSource.AMBIENT, 5, 1.0);
+
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(10000000)]
+    return sideEffects
+
+},
+
+//提线木偶
+"allay_move":(stack,env)=>{
+
+    let args= new Args(stack,2)
+    let allay = args.entity(0)
+    let goal =args.vec3(1)
+    let targetPos = {
+            X: goal.x(),
+            Y: goal.y(),
+            Z: goal.z()
+        }
+        allay.persistentData.put('Target', targetPos)
+        return
+
+},
+
+//傀儡师
+"allay_casting":(stack,env)=>{
+    let caster = env.caster
+
+    let args= new Args(stack,3)
+    let allay = args.entity(0)
+    let spell = args.get(1).list
+    let media = args.double(2)
+    let check = allay.persistentData.getInt('casting')
+    if(check==1){
+        allay.persistentData.putInt('casting',0 )
+        console.log("check!")
+        return
+    }
+    if (media==0){
+        return
+    }
+    
+    let Media = Math.floor((media)*10000)
+    let server = allay.server
+    let cost = Media
+    requireMedia(env,cost)
+    server.scheduleInTicks(5, callback => {
+        allaycasting(spell,allay,Media)
+        })
+    
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
+    
+    return sideEffects
+
+},
+
+//断线风筝
+"allay_stop":(stack,env)=>{
+    
+    let args= new Args(stack,1)
+    let allay = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, allay)
+    allay.persistentData.putInt('casting',1 )
+
+},
+
+//混杂悦灵
+'allay_mix':(stack,env)=>{
+
+    let args= new Args(stack,1)
+    let allay = args.entity(0)
+    let caster =env.caster
+    if(!caster.isPlayer()){throw new MishapBadCaster()}
+    let item=caster.getOffhandItem()
+    if(item.id !== 'hexcasting:quenched_allay_shard'){
+        throw new MishapBadOffhandItem.of(item,'class.q_allay')
+    }
+    let p = Math.random() + item.getCount()/100
+    item.count -= item.count
+    if(p>0.4){
+        let newUUID = UUID.randomUUID();
+        let mix = allay.level.createEntity('miehex:mix_allay')
+        mix.setUUID(newUUID)
+        mix.setPos(allay.x, allay.y, allay.z)
+        mix.spawn()
+        allay.discard()       
+        let iota = EntityIota(mix)
+        stack.push(iota)
+    }
+        else{throw new MishapUnenlightened()}
+    
+    
+
+}
+
+
+
+>>>>>>> Stashed changes
 
 
 
