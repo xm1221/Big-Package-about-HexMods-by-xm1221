@@ -62,8 +62,7 @@ let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
 let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
 let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
-//息壤相关(fabric only)
-let WR = Java.loadClass('com.worldreloader.WorldReloader')
+
 
 
 
@@ -122,6 +121,7 @@ let PackagedItemCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.
 let PlayerBasedCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.PlayerBasedCastEnv')
 let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv')
 let CircleCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv')
+
 
 // at.petrak.hexcasting.api.casting.iota 相关
 let Iota = Java.loadClass('at.petrak.hexcasting.api.casting.iota.Iota')

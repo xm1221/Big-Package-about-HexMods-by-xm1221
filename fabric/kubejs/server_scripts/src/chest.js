@@ -53,6 +53,7 @@ ServerEvents.chestLootTables(event => {
     loot.addPool(pool => {
       addCypherVariants(pool, '远古杂件：丝绸之触');
       addCypherVariants(pool, '远古杂件：提取');
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
     });
   });
 
@@ -63,6 +64,7 @@ ServerEvents.chestLootTables(event => {
       addVariantItems(pool, 'hexcasting:focus', VARIANTS);
       addVariantItems(pool, 'hexcasting:artifact', VARIANTS);
       addCypherVariants(pool, '远古杂件：驾雾');
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
     });
   });
 
@@ -107,6 +109,7 @@ ServerEvents.chestLootTables(event => {
       });
       addCypherVariants(pool, '远古杂件：云腾');
       addCypherVariants(pool, '远古杂件：驾雾');
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
       addBooks(pool);
     });
   });
@@ -155,6 +158,7 @@ ServerEvents.chestLootTables(event => {
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：云腾'));
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：丝绸之触'));
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：提取'));
+    pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
   });
 
   // 废弃阿卡夏
@@ -163,6 +167,7 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('hexdebug:evaluator').weight(1);
       pool.addItem(Item.of('hexdebug:debugger').enchant('minecraft:bane_of_arthropods', 1)).weight(1);
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"hexcasting:brainsweep"}')).weight(1);
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
       pool.addItem('hexcasting:quenched_allay_shard').weight(1);
       pool.addItem('hexcasting:slate').weight(1);
       pool.addItem('hexcasting:slate_block').weight(1);
@@ -227,7 +232,7 @@ ServerEvents.chestLootTables(event => {
     });
   });
 
-  // 废弃伟大工程房间
+  // 废弃卓伟房间
   event.modify('abadoned_greatwork_room', loot => {
      loot.addPool(pool => addBooks(pool));
     loot.addPool(pool => {
@@ -267,6 +272,7 @@ ServerEvents.chestLootTables(event => {
       pool.addItem(Item.of('hexcasting:battery', '{"hexcasting:media":6400000L,"hexcasting:start_media":64000000L}')).weight(1);
       pool.addItem('minecraft:air').weight(1);
       pool.addItem('@hex_machina').weight(1);
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
     });
     loot.addPool(pool => {
       addVariantItems(pool, 'hexcasting:focus', VARIANTS);

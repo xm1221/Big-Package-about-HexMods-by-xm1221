@@ -10,14 +10,15 @@ global.PatternOperateMap = {
             stack.push(iota)
             return
         }
-        let id = caster.id
+        let id = caster.uuid
         let level =caster.level
         let server = caster.server
-        if (server.persistentData.contains('hexTags')) {
-             let hexTags = server.persistentData.getCompound('hexTags')
+        if (caster.persistentData.contains('hexTags')) {
+             let hexTags = caster.persistentData.getCompound('hexTags')
              let namespace = hexTags.getCompound(id)
              let serializeIota = namespace.getCompound('name')
              let iota = IotaType.deserialize(serializeIota, level)
+             console.log(`${iota}`)
              if(!iota){
                 let iota = EntityIota(caster)
                 stack.push(iota)
@@ -27,14 +28,15 @@ global.PatternOperateMap = {
                 let iota = EntityIota(caster)
                 stack.push(iota)
                 return
-             }}
+             }
+             stack.push(iota)
+            return
+            }
         else{
-            let iota = EntityIota(caster)
+                let iota = EntityIota(caster)
                 stack.push(iota)
-                return
-        }
-        
-   },
+                return}
+     },
     //开发者之策略
     "xmdebug": (stack, env) => {
     let args = new Args(stack, 2)
@@ -799,12 +801,12 @@ let nulliota =new NullIota
        if(!caster.isPlayer()){
         throw new MishapBadCaster()
        }
-       let id = caster.id
+       let id = caster.uuid
        let serializeIota = new CompoundTag()
         serializeIota.put('name', IotaType.serialize(iota))
-       let persistentIota = server.persistentData.getCompound('hexTags')
+       let persistentIota = caster.persistentData.getCompound('hexTags')
        persistentIota.put(id, serializeIota)
-       server.persistentData.put('hexTags', persistentIota)
+       caster.persistentData.put('hexTags', persistentIota)
 
        let sideEffects = [];
        sideEffects.push(OperatorSideEffect.ConsumeMedia(10000));
@@ -1335,6 +1337,8 @@ let nulliota =new NullIota
 
 //分海
 "worldreloader":(stack,env)=>{
+    //息壤相关(fabric only)
+    let WR = Java.loadClass('com.worldreloader.WorldReloader')
     let args = new Args(stack, 5);
     let bool =args.bool(4)
     let ymax =args.double(3)
@@ -1374,6 +1378,7 @@ let nulliota =new NullIota
         offhand.count-=64
         let y2 = Math.abs(yMax)
         let cost = radius*radius*10000 + 100000 + y2*10000
+        requireMedia(env,cost)
         let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
 let shortId = biomeId.replace(/^[^:]+:/, '')
 
@@ -1498,6 +1503,7 @@ let DimensionMap = {
 
         player.level.spawnParticles('minecraft:witch', true,
             player.x, player.y + 1, player.z, 0, 0.1, 0, 20, 0.2);
+            requireMedia(env,10000)
 
     let sideEffects = [OperatorSideEffect.ConsumeMedia(10000)]
     return sideEffects
@@ -1698,6 +1704,92 @@ return sideEffects
 
 },
 
+//提线木偶
+"allay_move":(stack,env)=>{
+
+    let args= new Args(stack,2)
+    let allay = args.entity(0)
+    let goal =args.vec3(1)
+    let targetPos = {
+            X: goal.x(),
+            Y: goal.y(),
+            Z: goal.z()
+        }
+        allay.persistentData.put('Target', targetPos)
+        return
+
+},
+
+//傀儡师
+"allay_casting":(stack,env)=>{
+    let caster = env.caster
+
+    let args= new Args(stack,3)
+    let allay = args.entity(0)
+    let spell = args.get(1).list
+    let media = args.double(2)
+    let check = allay.persistentData.getInt('casting')
+    if(check==1){
+        allay.persistentData.putInt('casting',0 )
+        console.log("check!")
+        return
+    }
+    if (media==0){
+        return
+    }
+    
+    let Media = Math.floor((media)*10000)
+    let server = allay.server
+    let cost = Media
+    requireMedia(env,cost)
+    server.scheduleInTicks(5, callback => {
+        allaycasting(spell,allay,Media)
+        })
+    
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
+    
+    return sideEffects
+
+},
+
+//断线风筝
+"allay_stop":(stack,env)=>{
+    
+    let args= new Args(stack,1)
+    let allay = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env, allay)
+    allay.persistentData.putInt('casting',1 )
+
+},
+
+//混杂悦灵
+'allay_mix':(stack,env)=>{
+
+    let args= new Args(stack,1)
+    let allay = args.entity(0)
+    let caster =env.caster
+    if(!caster.isPlayer()){throw new MishapBadCaster()}
+    let item=caster.getOffhandItem()
+    if(item.id !== 'hexcasting:quenched_allay_shard'){
+        throw new MishapBadOffhandItem.of(item,'class.q_allay')
+    }
+    let p = Math.random() + item.getCount()/100
+    item.count -= item.count
+    if(p>0.4){
+        let newUUID = UUID.randomUUID();
+        let mix = allay.level.createEntity('miehex:mix_allay')
+        mix.setUUID(newUUID)
+        mix.setPos(allay.x, allay.y, allay.z)
+        mix.spawn()
+        allay.discard()       
+        let iota = EntityIota(mix)
+        stack.push(iota)
+    }
+        else{throw new MishapUnenlightened()}
+    
+    
+
+}
 
 
 

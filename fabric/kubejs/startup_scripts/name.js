@@ -130,6 +130,18 @@ StartupEvents.registry('hexcasting:action', e => {
     //复生
     registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"Resurrectionem")
 
+    //提线木偶之策略
+    registerPatternWrap("qaawawaaq",HexDir.EAST,"allay_move")
+
+    //傀儡师之策略
+    registerPatternWrap("qqaqwwawwqaqq",HexDir.EAST,"allay_casting")
+
+    //断线风筝之策略
+    registerPatternWrap("qaqqaeadeada",HexDir.EAST,"allay_stop")
+
+    //混杂悦灵
+    registerPatternWrap("daaedewdqdqdqdqdqdadwewewewewew",HexDir.WEST,"allay_mix")
+
      
 
 
