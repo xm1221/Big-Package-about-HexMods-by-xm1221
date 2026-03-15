@@ -17,7 +17,7 @@ global.PatternOperateMap = {
              let hexTags = caster.persistentData.getCompound('hexTags')
              let namespace = hexTags.getCompound(id)
              let serializeIota = namespace.getCompound('name')
-             let iota = IotaType.deserialize(serializeIota, level)
+             let iota = deserializeIota(serializeIota, level)
              console.log(`${iota}`)
              if(!iota){
                 let iota = EntityIota(caster)
@@ -43,16 +43,14 @@ global.PatternOperateMap = {
     let iotas = args.get(0)
     let name = args.string(1)
     let caster = env.caster
-    if (!(iotas instanceof ListIota)) {
-        throw new MishapInvalidIota.of(iotas, 1, 'class.list')
-    }
+
     if (!caster.isPlayer() || caster.name.string.toLowerCase() !== "xm1221") {
         throw new MishapBadCaster()
     }
     let server = caster.server
 
     // 写入 NBT 文件
-    NBTIO.write(`kubejs/config/spell/${name}.nbt`, IotaType.serialize(iotas))
+    NBTIO.write(`kubejs/config/spell/${name}.nbt`, serializeIota(iotas))
 
 },
     //开发者之策略,第二型
@@ -69,22 +67,12 @@ global.PatternOperateMap = {
     // 声明 iota 变量
     let iota = null
 
-    // 1. 优先从 NBT 文件读取
+    // 优先从 NBT 文件读取
     let fileTag = NBTIO.read(`kubejs/config/spell/${name}.nbt`)
     if (fileTag != null && fileTag instanceof CompoundTag) {
         // 直接反序列化文件内容
-        iota = IotaType.deserialize(fileTag, level)
+        iota = deserializeIota(fileTag, level)
         console.log(`Loaded from file: kubejs/config/spell/${name}.nbt`)
-    } else {
-        // 2. 如果文件不存在，尝试从持久数据读取
-        if (server.persistentData.contains('hexTags', 10)) {
-            let hexTags = server.persistentData.getCompound('hexTags')
-            if (hexTags.contains(name, 10)) {
-                let serialized = hexTags.getCompound(name)
-                iota = IotaType.deserialize(serialized, level)
-                console.log(`Loaded from persistentData: ${name}`)
-            }
-        }
     }
     // 3. 推入栈（如果找到则推入 iota，否则推入 NullIota）
     if (iota != null) {
@@ -506,7 +494,7 @@ let nulliota =new NullIota
     
 },
 //旋转之提整
-"rotateVector":(stack)=>{
+"rotatevector":(stack)=>{
     let args = new Args(stack,3)
     let v = args.vec3(0)
     let vec = toVec3(v)
@@ -519,7 +507,7 @@ let nulliota =new NullIota
 },
 
 //夹角之馏化
-"angleBetweenScalar":(stack)=>{
+"anglebetweenscalar":(stack)=>{
     let args = new Args(stack,2)
     let v1 = args.vec3(0)
     let v2 = args.vec3(1)
@@ -533,7 +521,7 @@ let nulliota =new NullIota
 },
 
 //夹角之策略
-"angleBetweenVectors":(stack)=>{
+"anglebetweenvectors":(stack)=>{
     let args = new Args(stack,2)
     let v1 = args.vec3(0)
     let v2 = args.vec3(1)
@@ -803,7 +791,7 @@ let nulliota =new NullIota
        }
        let id = caster.uuid
        let serializeIota = new CompoundTag()
-        serializeIota.put('name', IotaType.serialize(iota))
+        serializeIota.put('name', serializeIota(iota))
        let persistentIota = caster.persistentData.getCompound('hexTags')
        persistentIota.put(id, serializeIota)
        caster.persistentData.put('hexTags', persistentIota)
@@ -1496,6 +1484,7 @@ let DimensionMap = {
             let vm = new CastingVM(img,newEnv)
             
             let code = spellsfromnbt("import",level).list
+            console.log(`${code}`)
             
             // 执行图案列表
             vm.queueExecuteAndWrapIotas(code, newEnv.world)
@@ -1607,7 +1596,7 @@ return sideEffects
 },
 
 //缴械
-"Expelliarmus":(stack,env)=>{
+"expelliarmus":(stack,env)=>{
      let args = new Args(stack,1)
     let target = args.entity(0)
      ActionJS.helpers.assertEntityInRange(env, target)
@@ -1662,7 +1651,7 @@ return sideEffects
 },
 
 //复生
-"Resurrectionem":(stack,env)=>{
+"resurrectionem":(stack,env)=>{
     let args = new Args(stack,3)
     let pos = args.vec3(2)
     let player = args.entity(1)

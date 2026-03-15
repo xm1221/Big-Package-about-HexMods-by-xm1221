@@ -1,4 +1,78 @@
 // priority:10
+//手动序列化
+function serializeIota(iota) {
+    let tag = new CompoundTag();
+    if (iota instanceof DoubleIota) {
+        tag.putString('type', 'double');
+        tag.putDouble('value', iota.double);
+    } else if (iota instanceof BooleanIota) {
+        tag.putString('type', 'boolean');
+        tag.putBoolean('value', iota.bool);
+    } else if (iota instanceof Vec3Iota) {
+        tag.putString('type', 'vec3');
+        let vec = iota.vec3;
+        tag.putDouble('x', vec.x());
+        tag.putDouble('y', vec.y());
+        tag.putDouble('z', vec.z());
+    } else if (iota instanceof EntityIota) {
+        tag.putString('type', 'entity');
+        tag.putUUID('uuid', iota.entity.uuid);
+    } else if (iota instanceof PatternIota) {
+        tag.putString('type', 'pattern');
+        let pattern = iota.pattern;
+        tag.putString('angles', pattern.anglesSignature());
+    } else if (iota instanceof ListIota) {
+        tag.putString('type', 'list');
+        let listTag = new ListTag();
+        iota.list.list.forEach(subIota => {
+            listTag.add(serializeIota(subIota));
+        });
+        tag.put('value', listTag);
+    } else if (iota instanceof NullIota) {
+        tag.putString('type', 'null');
+    } else {
+        // 未知类型（如 GarbageIota）存为占位符
+        tag.putString('type', 'unknown');
+    }
+    return tag;
+}
+
+// 从 CompoundTag 反序列化 Iota
+function deserializeIota(tag, level) {
+    let type = tag.getString('type');
+    switch (type) {
+        case 'double':
+            return new DoubleIota(tag.getDouble('value'));
+        case 'boolean':
+            return new BooleanIota(tag.getBoolean('value'));
+        case 'vec3':
+            return new Vec3Iota(new Vec3(
+                tag.getDouble('x'),
+                tag.getDouble('y'),
+                tag.getDouble('z')
+            ));
+        case 'entity': {
+            let uuid = tag.getUUID('uuid');
+            let entity = level.getEntity(uuid);
+            return entity ? new EntityIota(entity) : NullIota();
+        }
+        case 'pattern': {
+            let angles = tag.getString('angles');
+            let dir = HexDir.EAST;
+            return new PatternIota(HexPattern.fromAngles(angles, dir));
+        }
+        case 'list': {
+            let listTag = tag.getList('value', 10); // 10 表示 CompoundTag
+            let list = [];
+            listTag.forEach(subTag => list.push(deserializeIota(subTag, level)));
+            return new ListIota(list);
+        }
+        case 'null':
+            return new NullIota();
+        default:
+            return new GarbageIota();
+    }
+}
 
 //从外部nbt中获取iota列表
 
@@ -7,21 +81,12 @@ function spellsfromnbt(name,level){
     let fileTag = NBTIO.read(`kubejs/config/spell/${name}.nbt`)
     if (fileTag != null && fileTag instanceof CompoundTag) {
         // 直接反序列化文件内容
-        let iota = IotaType.deserialize(fileTag, level)
+        let iota = deserializeIota(fileTag, level)
         return iota
-    } else {
-        // 2. 如果文件不存在，尝试从持久数据读取
-        if (server.persistentData.contains('hexTags', 10)) {
-            let hexTags = server.persistentData.getCompound('hexTags')
-            if (hexTags.contains(name, 10)) {
-                let serialized = hexTags.getCompound(name)
-                let iota = IotaType.deserialize(serialized, level)
-                return iota
-            }
-        }
     }
     
-}
+        }
+
 
 
 
@@ -210,11 +275,10 @@ function mobCasting(spell,mob,name){
         // 创建空虚拟机
         let vm = CastingVM.empty(env);
 
-        //let Iotas = global.spells.nbt(spell,level)
-        let List =Iotas.list
+        let Iotas = spellsfromnbt(spell,level).list
 
         // 执行
-        vm.queueExecuteAndWrapIotas(List, env.world);
+        vm.queueExecuteAndWrapIotas(Iotas, env.world);
 }
 //有限生物施法（悦灵）
 function allaycasting(spells,mob,media){
@@ -231,7 +295,6 @@ function allaycasting(spells,mob,media){
     let inv = caster.getInventory()
     let slot = Math.floor(Math.random()*10+5)
     inv.setStackInSlot(slot,item)
-    //caster.setItemInHand(InteractionHand.MAIN_HAND, item)
     caster.runCommandSilent('advancement grant @s only hexcasting:enlightenment');
     caster.setPos(x,y-1,z)
     caster.setRotation(yaw,pitch)
@@ -245,7 +308,6 @@ function allaycasting(spells,mob,media){
         // 创建空虚拟机
         let vm = CastingVM.empty(env);
         let List =spells
-        let stop = global.spells.nbt('stop',level).list
 
         // 执行
         vm.queueExecuteAndWrapIotas(List, env.world);
@@ -264,7 +326,7 @@ global.spells = {
 
 // 命名空间
 function RL(string) {
-    let length = string.length
+    let length = string.length()
     let firstChar = string.charAt(0)
     let lastChar = string.charAt(length - 1)
     if (firstChar !== lastChar) {

@@ -158,7 +158,7 @@ ServerEvents.chestLootTables(event => {
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：云腾'));
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：丝绸之触'));
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：提取'));
-    pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+    
   });
 
   // 废弃阿卡夏
@@ -171,6 +171,7 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('hexcasting:quenched_allay_shard').weight(1);
       pool.addItem('hexcasting:slate').weight(1);
       pool.addItem('hexcasting:slate_block').weight(1);
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
     });
     loot.addPool(pool => {
       pool.addItem('hexcasting:slate_block').weight(1);

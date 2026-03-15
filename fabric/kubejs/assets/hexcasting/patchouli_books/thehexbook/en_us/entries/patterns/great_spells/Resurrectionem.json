@@ -8,8 +8,8 @@
   "pages": [
     {
       "type": "hexcasting:pattern",
-      "op_id": "miehex:Resurrectionem",
-      "anchor": "miehex:Resurrectionem",
+      "op_id": "miehex:resurrectionem",
+      "anchor": "miehex:resurrectionem",
       "input": "unknown",
       "output": "unknown",
       "text": "“被钉在十字架上，死了，葬了。下到阴间；第三天从死里复活。”"

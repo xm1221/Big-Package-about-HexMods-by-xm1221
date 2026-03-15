@@ -54,13 +54,13 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("wadwdqdwd",HexDir.EAST,"get_target")
 
     //旋转之提整
-    registerPatternWrap("wdww",HexDir.EAST,"rotateVector")
+    registerPatternWrap("wdww",HexDir.EAST,"rotatevector")
 
     //夹角之馏化
-    registerPatternWrap("wadewqaeaqwed",HexDir.EAST,"angleBetweenScalar")
+    registerPatternWrap("wadewqaeaqwed",HexDir.EAST,"anglebetweenscalar")
 
     //夹角之策略
-    registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"angleBetweenVectors")
+    registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"anglebetweenvectors")
 
     //连接卓伟
     registerPatternWrap("daaedewdweeqawa", HexDir.WEST,"great_connect");
@@ -122,13 +122,13 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("dwewdweqawqwa",HexDir.EAST,"item_control")
 
     //缴械
-    registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"Expelliarmus")
+    registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"expelliarmus")
 
     //惑心
     registerPatternWrap("dwewdweqawqwaewqqqwaw",HexDir.EAST,"puzzle")
 
     //复生
-    registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"Resurrectionem")
+    registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"resurrectionem")
 
     //提线木偶之策略
     registerPatternWrap("qaawawaaq",HexDir.EAST,"allay_move")

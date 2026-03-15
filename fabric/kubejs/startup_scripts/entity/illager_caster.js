@@ -1,35 +1,4 @@
-/*EntityJSEvents.modifyEntity(e=>{
-    e.modify("minecraft:evoker",builder=>{
-         let artifact ={
-            boom:["boom",Item.of('hexcasting:artifact','{"hexcasting:media":64000L,"hexcasting:start_media":6400000L,patterns:[{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,1B,4B,5B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,5B,4B,4B,0B],start_dir:2b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,0B,4B,4B,0B,4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"}],pigment:{owner:[I;0,0,0,0],stack:{Count:1b,id:"hexcasting:default_colorizer"}}}')]
-         }
-        builder.tick(entity => {
-            let target = entity.target
-            let server = target.server
-        if (target != null) {
-             if (entity.age % 40 == 0 && entity.getMainHandItem().id=='hexcasting:artifact'){
-                if(target.isPlayer()){
-                    let iota = "HexPattern[EAST, aawaawaa]"
-                    let id = target.name.string
-                    server.runCommandSilent(`title ${id} title {"text":"${iota}"}`)
-                }
-                 server.scheduleInTicks(30,callback=>{
-                    if(entity.getMainHandItem()==artifact.boom[1]){
-                        mobCasting(artifact.boom[0],entity,"evoker")
-                    }
-             })
-            }
-         }})
-        
-        builder.onAddedToWorld(entity=>{
-             if (entity.level.isClientSide()) return
-             //概率在主手生成造物
-            if (Math.random() < 0.35) {
-                let item = artifact.boom[1]
-                entity.setItemSlot('mainhand',item )}
-            })
-    })
-})*/
+
 // ==================== 法术配置映射 ====================
 // 键：法术类型标识（字符串），值包含 item、spellName、iotaMessage 等
 let spellMap = {
@@ -39,9 +8,10 @@ let spellMap = {
         spellName: 'boom',                          // 传递给 mobCasting 的法术名
         iotaMessage: 'HexPattern[EAST, aawaawaa]',  // 显示给玩家的标题文字
         spawnWeight: 1,
-        colddown: 180                              
+        colddown: 180,
+        wolulu:100                              
     },
-    catch:{
+    /*catch:{
         item:Item.of('hexcasting:cypher', '{"hexcasting:media":900000L,"hexcasting:start_media":900000L,patterns:[{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,1B,4B,5B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,2B,4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,2B,0B,2B,5B,2B,0B,2B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,0B,2B,2B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;2B,1B,2B,2B,0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,5B,4B,0B],start_dir:2b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,0B,5B,5B,5B,0B,4B,5B,0B],start_dir:3b}},"hexcasting:type":"hexcasting:pattern"}],pigment:{owner:[I;0,0,0,0],stack:{Count:1b,id:"hexcasting:default_colorizer"}}}'),
         spellName:'catch',
         iotaMessage: 'HexPattern[SOUTH_WEST, awqqqwaqw]',
@@ -74,7 +44,7 @@ let spellMap = {
         colddown: 5,
         wolulu:1  
 
-    }
+    }*/
 
 
     
@@ -231,7 +201,7 @@ EntityJSEvents.modifyEntity(e => {
                     // 再次检查当前主手物品ID是否仍匹配
                     let currentHand = entity.getMainHandItem()
                     if (currentHand.id == spell.item.id) {
-                        mobCasting(spell.spellName, entity, "evoker")
+                        mobCasting(spell.spellName, entity, "sorcerer")
                     }
                 })
             }
