@@ -142,7 +142,16 @@ StartupEvents.registry('hexcasting:action', e => {
     //混杂悦灵
     registerPatternWrap("daaedewdqdqdqdqdqdadwewewewewew",HexDir.WEST,"allay_mix")
 
-     
+    //锚定现实
+    registerPatternWrap("qaqeqwedqedwwwdewdwq",HexDir.NORTH_EAST,"chunkloader_permanent")
+
+    //创建临时稳定锚
+    registerPatternWrap("aawewewaqweedeewqawewe",HexDir.NORTH_EAST,"entity_anchor")
+
+
+
+
+
 
 
 

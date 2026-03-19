@@ -33,7 +33,7 @@
 
 	[Pattern.FactorCut]
 		#if not, Factor Cut pattern will be disabled
-		EnablesFactorCutSpell = true
+		EnablesFactorCutSpell = false
 		#const cost for prime factors (in 1e-4 dust)
 		#Range: > 0
 		FactorCutPrimeCost = 10000
@@ -54,7 +54,7 @@
 
 ["Personal Media"]
 	#Enables player's personal media pool
-	EnablesPersonalMediaPool = false
+	EnablesPersonalMediaPool = true
 	#Max media (in 0.0001 dust) for personal pool
 	#Range: > 0
 	PersonalMediaMax = 1000000

@@ -543,6 +543,9 @@ let nulliota =new NullIota
     if (!(env instanceof CircleCastEnv)) {
         throw new MishapBadCaster()
     }
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
 
     let args = new Args(stack, 1);
     let listIota = args.list(0);               // 获取列表 iota
@@ -1033,6 +1036,10 @@ let nulliota =new NullIota
     if (!level.hasChunk(chunkX, chunkZ)) {
         throw new MishapBadLocation(pos,'too_far')
     }
+    if(caster.isPlayer()){
+        let id = caster.username
+        server.runCommandSilent(`advancement grant ${id} only miehex:main/root/nature`)
+    }
 
     let dimension = level.dimension;
     let fillBiomeCommand = `execute in ${dimension} run fillbiome ${x} ${y} ${z} ${x} ${y} ${z} ${biomeId}`;
@@ -1108,6 +1115,12 @@ let nulliota =new NullIota
     // 4. 生成传送门粒子（使用命令）
     let particleCommand = `particle minecraft:portal ${caster.x} ${caster.y} ${caster.z} 0.5 0.5 0.5 0.1 20 force`;
     server.runCommandSilent(particleCommand);
+    if(caster.isPlayer()){
+        let server = caster.server
+        let id = caster.username
+        server.runCommandSilent(`advancement grant ${id} only miehex:main/root/enter_idea_world`)
+    }
+
 
     return [];
 },
@@ -1397,7 +1410,8 @@ let DimensionMap = {
     let x = Math.floor(pos.x());
     let y = Math.floor(pos.y());
     let z = Math.floor(pos.z());
-    let playerid= caster.id
+    let id = caster.username
+    server.runCommandSilent(`advancement grant ${id} only miehex:main/root/load`)
 
     
 
@@ -1774,11 +1788,75 @@ return sideEffects
         let iota = EntityIota(mix)
         stack.push(iota)
     }
+    if(caster.isPlayer()){
+        let server = caster.server
+        let id = caster.username
+        server.runCommandSilent(`advancement grant ${id} only miehex:main/root/mix_allay`)
+    }
         else{throw new MishapUnenlightened()}
     
     
 
-}
+},
+//锚定现实
+"chunkloader_permanent": (stack, env) => {
+    let args = new Args(stack, 1);
+    let pos = args.vec3(0);
+    let level = env.world;
+    let chunkX = Math.floor(pos.x()) >> 4;
+    let chunkZ = Math.floor(pos.z()) >> 4;
+    let caster = env.caster
+
+    // 检查施法范围
+    ActionJS.helpers.assertVecInRange(env,pos);
+
+    // 消耗媒质
+    let cost = 50000;
+    requireMedia(env, cost);
+
+    // 强制加载区块
+    level.setChunkForced(chunkX, chunkZ, true);
+
+    if(caster.isPlayer()){
+        let server = caster.server
+        let id = caster.username
+        server.runCommandSilent(`advancement grant ${id} only miehex:main/root/load`)
+    }
+
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)];
+    return sideEffects;
+},
+
+//创建临时稳定锚
+"entity_anchor": (stack, env) => {
+    let args = new Args(stack, 1);
+    let pos = args.vec3(0);
+    let level = env.world
+    let caster = env.caster
+    ActionJS.helpers.assertVecInRange(env,pos);
+    let cost = 1000
+    requireMedia(env, cost); 
+        let chunkPos = new ChunkPos(Math.floor(pos.x()) >> 4, Math.floor(pos.z()) >> 4)
+        let blockPos = new BlockPos(pos.x(),pos.y(),pos.z())
+        level.getChunkSource().addRegionTicket(
+            TicketType.PORTAL,
+            chunkPos,
+            31,
+            blockPos
+        )
+        if(caster.isPlayer()){
+        let server = caster.server
+        let id = caster.username
+        server.runCommandSilent(`advancement grant ${id} only miehex:main/root/load`)
+    }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)];
+    return sideEffects;
+},
+
+
+
+
+
 
 
 

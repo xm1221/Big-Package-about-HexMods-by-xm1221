@@ -80,6 +80,7 @@ ServerEvents.chestLootTables(event => {
   event.modify('ruined_portal', loot => {
     loot.addPool(pool => {
       addCypherVariants(pool, '远古杂件：烈焰弹');
+      pool.addItem('#minecraft:structure_symbol')
     });
   });
 
@@ -117,6 +118,8 @@ ServerEvents.chestLootTables(event => {
   // 要塞图书馆
   event.modify('stronghold_library', loot => {
     loot.addPool(pool => addBooks(pool));
+    loot.addPool(pool => addVariantItems(pool, 'hexcasting:focus', VARIANTS));
+    loot.addPool(pool => addVariantItems(pool, 'hexcasting:artifact', VARIANTS));
   });
 
   // 沉船地图箱
@@ -240,6 +243,7 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('#hexcasting:staves').weight(1);
       pool.addItem('minecraft:air').weight(1);
       pool.addItem('minecraft:air').weight(1);
+      pool.addItem(Item.of('miehex:miehex_tower_structure_symbol')).weight(1)
     });
     loot.addPool(pool => {
       pool.addItem("@hexpigmentplus").weight(1);
@@ -247,6 +251,7 @@ ServerEvents.chestLootTables(event => {
       pool.addItem(Item.of('hexcasting:jeweler_hammer', '{Damage:1000}')).weight(1);
       pool.addItem(Item.of('hexcasting:jeweler_hammer', '{Damage:500}')).weight(1);
       pool.addItem(Item.of('hexical:media_jar', '{BlockEntityTag:{media:6400000L}}')).weight(1);
+      pool.addItem(Item.of('miehex:miehex_tower_structure_symbol')).weight(2);
     });
     // 多个紫水晶粉/充能紫水晶池
     for (let i = 0; i < 4; i++) {

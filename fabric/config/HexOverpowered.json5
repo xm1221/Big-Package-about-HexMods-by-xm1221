@@ -25,7 +25,7 @@
 		*/
 		"TrulyHurtLevel": 2,
 		// <Pattern.FactorCut> if not, Factor Cut pattern will be disabled
-		"EnablesFactorCutSpell": true,
+		"EnablesFactorCutSpell": false,
 		// <Pattern.FactorCut> const cost for prime factors (in 1e-4 dust)
 		"FactorCutPrimeCost": 10000,
 		// <Pattern.FactorCut> const cost for non-prime factors (multiplied by the factor itself, in 1e-4 dust)
@@ -39,7 +39,7 @@
 		// <Pattern.FactorCut> entities with health under hou many points can be wiped for free
 		"FactorCutKillingBlowLine": 1,
 		// <Personal Media> Enables player's personal media pool
-		"EnablesPersonalMediaPool": false,
+		"EnablesPersonalMediaPool": true,
 		// <Personal Media> Max media (in 0.0001 dust) for personal pool
 		"PersonalMediaMax": 1000000,
 		// <Personal Media> How many media points (in 0.0001 dust) personal pool regenerates each time

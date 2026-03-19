@@ -194,7 +194,7 @@
     "mob_groups": {
       "piglins": {
         "required_game_stage": "expert",
-        "chance": 0.25,
+        "chance": 0.15,
         "is_scaled_by_crd": true,
         "leader_types": [
           {
@@ -413,14 +413,14 @@
     "crd_penalty": 0.5
   },
   "undead_army": {
-    "is_enabled": true,
+    "is_enabled": false,
     "reset_all_participants_kills": true,
     "wave_duration": 1200.0,
     "preparing_duration": 10.0,
     "highlight_delay": 300.0,
     "extra_size_ratio_per_player": 0.5,
     "area_radius": 70,
-    "kill_requirement": 100,
+    "kill_requirement": 75,
     "kill_requirement_first": 25,
     "kill_requirement_warning": 3,
     "waves": [

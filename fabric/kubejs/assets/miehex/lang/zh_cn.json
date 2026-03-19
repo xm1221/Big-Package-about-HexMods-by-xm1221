@@ -145,6 +145,8 @@
     "hexcasting.action.miehex:allay_casting":"傀儡师之策略",
     "hexcasting.action.miehex:allay_stop":"断线风筝之策略",
     "hexcasting.action.miehex:allay_mix":"制造淬晶悦灵",
+    "hexcasting.action.miehex:chunkloader_permanent":"锚定现实",
+    "hexcasting.action.miehex:entity_anchor":"创建临时稳定锚",
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.bad_item.class.q_allay":"淬灵晶碎片",

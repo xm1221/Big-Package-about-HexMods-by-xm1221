@@ -4943,6 +4943,9 @@
 		},
 		"variant=1647": {
 			"model": "minecraft:block/tall_grass"
+		},
+		"variant=1648": {
+			"model": "minecraft:block/netherrack"
 		}
 	}
 }

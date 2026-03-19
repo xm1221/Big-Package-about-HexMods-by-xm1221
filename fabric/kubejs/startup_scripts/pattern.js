@@ -323,6 +323,28 @@ global.spells = {
     hurts:typeHurt
 }
 
+// 全局存储：锚定实体 UUID 字符串集合
+global.anchorEntities = global.anchorEntities || new Set()
+
+// 锚定实体当前加载的区块信息 {uuid, cx, cz}
+global.anchorCurrentChunk = global.anchorCurrentChunk || new Map()
+
+// 辅助：安全强制加载/卸载区块
+function forceChunk(level, cx, cz, load) {
+    if (!level) return;
+    level.setChunkForced(cx, cz, load);
+}
+
+// 辅助：获取区块坐标（从实体）
+function getChunkPosFromEntity(entity) {
+    let chunkPos = entity.chunkPosition();
+    return { cx: chunkPos.x, cz: chunkPos.z };
+}
+
+function getDimKey(level) {
+    return level.dimension;
+}
+
 
 // 命名空间
 function RL(string) {

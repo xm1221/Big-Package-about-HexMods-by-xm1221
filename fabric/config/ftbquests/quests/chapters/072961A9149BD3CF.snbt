@@ -31,6 +31,7 @@
 			description: [
 				"栈，具有后进先出的性质，即后放入的iota在栈顶，要移除iota时也必须从上往下进行操作，即先移除最上面的iota。而自然给予我们一些图案，可以较为容易的改变栈内iota的顺序或者移除和复制栈内的iota。"
 				"最为常用的是初学者之策略、弄臣之策略与双子之分解，初学者之策略可以移除栈顶的一个iota，而弄成之策略则会交换栈顶两个iota的顺序。双子之分解会把一个与现在栈顶的iota相同的iita置入栈顶。"
+				"{@pagebreak}"
 				"还有许许多多的栈操作，这些图案丰富了操作法术、操纵iota的方法和可能性，另外的一些图案也可以去咒术笔记中翻阅和查找。"
 				"相关章节："
 				"{\"text\":\"栈操作\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/stackmanip 1\"}}"
@@ -130,6 +131,7 @@
 			description: [
 				"在施法过程中，有的时候会需要进行逻辑判断：“如果……为真，那么那么释放这个咒术，如果……为假，则什么也不做”"
 				"比较常用的逻辑判断方法是使用占卜师之提整，它会从上到下依次读取栈顶的三个值，从上往下的第三个值应当为一个布尔值（True or False），它会先移除这个布尔值，如果移除的是True（真），那么保留第二个参数并移除栈顶参数，反之，若移除的是False（假）移除第二个参数并保留栈顶参数。"
+				"{@pagebreak}"
 				"如果先用逻辑运算中的种种运算方法，如“相等之馏化”等处理收集到的iota并做出真与假的判断，然后再提供两种不同的咒术的图案列表，再使用占卜师之提整，最后用赫尔墨斯之策略执行经过占卜师之提整筛选过的图案列表。这样就可以根据具体情况来施展咒术了。"
 				"相关章节："
 				"{\"text\":\"逻辑运算\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/logic 1\"}}"
@@ -773,28 +775,49 @@
 			y: 1.5d
 		}
 		{
-			description: ["*本包已禁用沼气驱动、个人媒质条等破坏平衡的组件，如有需要请自行配置。"]
+			description: ["*本包已禁用沼气驱动、因数切割等破坏平衡的组件，如有需要请自行配置。"]
 			id: "2B52AD57B32C20CA"
 			invisible: true
-			rewards: [{
-				id: "53F77C4F7B0A2821"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			subtitle: "“不存在的恶臭法术”"
-			tasks: [{
-				id: "1665CDBD8D75AAEF"
-				item: {
-					Count: 1
-					id: "hexcasting:scroll"
-					tag: {
-						op_id: "hexoverpowered:yjsp_media"
-					}
+			rewards: [
+				{
+					id: "53F77C4F7B0A2821"
+					item: "minecraft:budding_amethyst"
+					type: "item"
 				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
+				{
+					exclude_from_claim_all: true
+					id: "796C97EFA9655591"
+					table_id: 4181570100285425864L
+					type: "random"
+				}
+			]
+			subtitle: "“不存在的恶臭法术”"
+			tasks: [
+				{
+					id: "1665CDBD8D75AAEF"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexoverpowered:yjsp_media"
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "3DF161A6959CA930"
+					item: {
+						Count: 1
+						id: "hexcasting:scroll"
+						tag: {
+							op_id: "hexoverpowered:factor_cut"
+						}
+					}
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: -3.5d
 		}

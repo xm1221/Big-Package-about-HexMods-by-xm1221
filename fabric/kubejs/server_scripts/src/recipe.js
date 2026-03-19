@@ -29,10 +29,15 @@ ServerEvents.recipes(event =>{
 })
 ServerEvents.recipes(event=>{
     
-        event.shapeless('minecraft:experience_bottle',['minecraft:gunpowder','#forge:potions','minecraft:sculk'
+        event.shapeless('minecraft:experience_bottle',['minecraft:gunpowder','minecraft:glass_bottle','minecraft:sculk'
             ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
             ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
         ])
+
+        event.shapeless('hex_machina:mind_phial',['hexcasting:battery','hexcasting:quenched_allay_shard','miehex:media_iron',
+            'miehex:media_copper','miehex:pure_allay_shard','minecraft:sculk','#minecraft:biome_symbols','minecraft:gold_ingot','minecraft:lapis_lazuli'])
+        event.remove({id:'hex_machina:crafting/mind_phial'})
+        
         
     
 })
@@ -49,6 +54,9 @@ ServerEvents.recipes(e=>{
         ["miehex:pure_allay_block","#minecraft:biome_symbols","miehex:pure_allay_block"],
         ["miehex:pure_allay_block",'miehex:ideas_world_entry',"miehex:pure_allay_block"]
     ]).id("miehex:carpet")
+    e.shapeless('miehex:pure_allay_block',[
+        'miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard'
+    ])
 })
 
 //结构精魄

@@ -239,6 +239,22 @@
       "input": "list",
       "output": "",
       "text": "接受一个图案列表，创建一个新的法杖施法环境（继承原施法者），并在其中执行该列表。此图案只能在法术环中施放。"
+    },
+    {
+  "type": "hexcasting:pattern",
+  "op_id": "miehex:chunkloader_permanent",
+  "anchor": "miehex:chunkloader_permanent",
+  "input": "vec",
+  "output": "",
+  "text": "锚定所给位置的现实--消耗 1 枚紫水晶碎片，将目标位置所在的区块永久强加载。"
+    },
+    {
+  "type": "hexcasting:pattern",
+  "op_id": "miehex:entity_anchor",
+  "anchor": "miehex:entity_anchor",
+  "input": "vec",
+  "output": "",
+  "text": "临时锚定所给位置的现实--消耗少量媒质，将目标位置所在的区块暂时加载15秒左右"
     }
   ]
 }

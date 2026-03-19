@@ -132,11 +132,13 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["75889B61B3A9923D"]
 			description: [
 				"使用“加深印象”这个图案，会移除栈顶的一个图案列表，将那个图案列表深刻的记忆下来，当你按下R键，就会在1秒的吟唱之后使用那个图案列表所对应的法术——这比使用施法物品慢多了，不过，也许在有的场合会更有用一些。"
 				"相关图案："
 				"{\"text\":\"加深印象\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/evocation 1\"}}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:player_head"

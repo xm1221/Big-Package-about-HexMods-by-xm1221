@@ -405,7 +405,6 @@
 			dependency_requirement: "one_completed"
 			description: [
 				"如果填入磁带的延时咒术可以做到&l把自己的复制品填回磁带中延时释放&r，那么每隔一段时间这一咒术就会被释放一次，这样就实现了&l常态化的、持续性&r的施法，古人称之为“&e守护进程&r”"
-				"&o试想，每5秒钟就用”&e旅者之飞行&r“给自己施加6秒的飞行能力，那岂不是能一直飞？&r"
 				"这种用“&d咒术去释放咒术&r”的方法，如今已经失传了，不知道现代人能不能复原它。"
 				"相关章节："
 				"{\"text\":\"守护进程\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:async 5\"}}"

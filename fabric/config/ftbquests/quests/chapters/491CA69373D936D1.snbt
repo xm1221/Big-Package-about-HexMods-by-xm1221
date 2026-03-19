@@ -13,8 +13,7 @@
 			"2.任务线不是必要的，仅仅作为新手引导和实践案例分享。"
 			"3.本包修改和增加了一些合成配方，JEI中一般都有记述。"
 			"4.如果你是新手，请一定要多翻书！多看任务描述！这会很大的提升你的游玩体验！"
-			"5.本包已禁用沼气驱动、个人媒质条等破坏平衡的组件，如有需要请自行配置。"
-			"6.记得装数据包！！！"
+			"5.本包已禁用沼气驱动、因数切割等过于强大的组件，如有需要请自行配置。"
 			"相关章节："
 			"{\"text\":\"大包新增图案\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/miehex 1\"}}"
 		]
