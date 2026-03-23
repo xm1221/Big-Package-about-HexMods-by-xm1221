@@ -4946,6 +4946,42 @@
 		},
 		"variant=1648": {
 			"model": "minecraft:block/netherrack"
+		},
+		"variant=1649": {
+			"model": "storagedrawers:block/bamboo_half_drawers_2"
+		},
+		"variant=1650": {
+			"model": "farmersdelight:block/safety_net"
+		},
+		"variant=1651": {
+			"model": "minecraft:block/orange_banner"
+		},
+		"variant=1652": {
+			"model": "minecraft:block/white_glazed_terracotta"
+		},
+		"variant=1653": {
+			"model": "minecells:block/orange_wilted_leaves"
+		},
+		"variant=1654": {
+			"model": "minecraft:block/fire_coral_wall_fan"
+		},
+		"variant=1655": {
+			"model": "farmersdelight:block/white_canvas_sign"
+		},
+		"variant=1656": {
+			"model": "minecraft:block/cyan_carpet"
+		},
+		"variant=1657": {
+			"model": "minecraft:block/yellow_wool"
+		},
+		"variant=1658": {
+			"model": "minecraft:block/polished_diorite_stairs"
+		},
+		"variant=1659": {
+			"model": "minecraft:block/light_blue_bed"
+		},
+		"variant=1660": {
+			"model": "minecells:block/insufferable_crypt_doorway"
 		}
 	}
 }

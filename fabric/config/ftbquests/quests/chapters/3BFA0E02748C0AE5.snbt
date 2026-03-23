@@ -1107,6 +1107,47 @@
 			x: -3.0d
 			y: 0.5d
 		}
+		{
+			description: [
+				"次级门径作为对‘门径’这一卓越的模仿，有许多的限制。使用&e创建次级门径&r这一法术，可以&n仅在这次施法结束前&r确定&e次级门径传送&r的目的地。"
+				"什么叫“施法结束”呢？比如说，用法杖施法时，如果栈和渡鸦之思都清空，施法会自然终止，而造物这类施法物品会在执行完其中咒术后停止施法，循环式咒灵虽然可以继承每次施法的栈和渡鸦之思，但并不会继承上一次施法时标记的次级门径。因此，似乎也只能当做一种在传送大量实体时的经济办法了。"
+				"&o如果有什么可以一直在同一个施法环境施法或者反复继承上一个施法环境的施法数据的施法方法就好了......&r"
+				""
+				"相关图案："
+				"{\"text\":\"次级门径\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/lesser_gates 1\"}}"
+			]
+			icon: "minecraft:iron_door"
+			id: "4D039443BCF8658C"
+			shape: "hexagon"
+			subtitle: "“对卓越的小小模仿”"
+			tasks: [{
+				id: "166C2BBD454BDCC7"
+				title: "次级门径"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"“区块加载”是什么东西，古代和近代的咒法大师们研究了很久也不是很清楚，不过，可以确定的是：如果能使区块长时间维持加载，那么去远方旅行时家里的设备就不会轻易停止工作，家中的宠物也不会一直偷懒。"
+				"“&e锚定现实&r”和“&e创建临时稳定锚&r”可以轻松的实现永久的或临时的区块加载——值得一提的是，“创建临时稳定锚”也可以避免咒灵在离开主人太远时停止行动，&n也许可以凭此创建出真正能自律行动的咒灵吧&r。"
+				""
+				"相关章节："
+				"{\"text\":\"锚定现实\",\"color\":\"yellow\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"点击以查看\"}},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @s hexcasting:thehexbook hexcasting:patterns/spells/world 1\"}}"
+			]
+			icon: "minecraft:map"
+			id: "01E21F0403CDC85D"
+			shape: "hexagon"
+			subtitle: "“我眼中的世界”"
+			tasks: [{
+				id: "2FF5E017541D17D4"
+				title: "区块加载法术"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
 	]
 	title: "简单法术"
 }

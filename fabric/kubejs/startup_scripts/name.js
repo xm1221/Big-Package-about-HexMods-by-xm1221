@@ -148,6 +148,23 @@ StartupEvents.registry('hexcasting:action', e => {
     //创建临时稳定锚
     registerPatternWrap("aawewewaqweedeewqawewe",HexDir.NORTH_EAST,"entity_anchor")
 
+    //开启临时门径
+    registerPatternWrap("wwaqqqqqeawqwqwqwqwqw",HexDir.EAST,'lesser_gate')
+
+    //关闭临时门径
+    registerPatternWrap("wwaqqqqqe",HexDir.EAST,'lesser_gate/close')
+
+    //吸纳媒质
+    registerPatternWrap("qdwae",HexDir.EAST,'personal_media')
+
+    //加速成长
+    registerPatternWrap("wadaweeeeew",HexDir.SOUTH_EAST,"grow_up")
+
+    //移星
+    registerPatternWrap("weedwaqqwdewewewewewe",HexDir.SOUTH_EAST,"time_add")
+
+    //记忆
+    registerPatternWrap("qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq",HexDir.NORTH_EAST,"memory")
 
 
 

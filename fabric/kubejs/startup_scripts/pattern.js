@@ -105,7 +105,7 @@ global.summonWisp = function(options) {
     let caster = options.caster || null;
 
     let spellList = spellsfromnbt(options.spellList,options.level) || ListIota([]); // 确保不为 null
-    console.log(`${spellList}`)
+
 
     let wisp;
     if (type === 'ticking') {
@@ -345,6 +345,59 @@ function getDimKey(level) {
     return level.dimension;
 }
 
+/**
+ * 获取玩家的当前个人媒质值
+ * @param {Internal.ServerPlayer} player
+ * @returns {number} 当前媒质值，若属性未初始化则返回 0
+ */
+function getPersonalMedia(player) {
+    let instance = player.getAttribute(HexOPAttributes.PERSONAL_MEDIA);
+    if (!instance) return 0;
+    let value = instance.getBaseValue();
+    // 如果值为初始化标记（-1919810.0），视为 0
+    if (value === HexOPAttributes.INIT_MEDIA_MARKER) return 0;
+    return value;
+}
+
+/**
+ * 设置玩家的当前个人媒质（自动限制在 [0, 最大值] 之间）
+ * @param {Internal.ServerPlayer} player
+ * @param {number} value 要设置的新值
+ */
+function setPersonalMedia(player, value) {
+    let instance = player.getAttribute(HexOPAttributes.PERSONAL_MEDIA);
+    if (!instance) return;
+    // 获取最大值
+    let maxValue = player.getAttributeValue(HexOPAttributes.PERSONAL_MEDIA_MAX)
+    let newValue = Math.max(0, Math.min(value, maxValue));
+    instance.setBaseValue(newValue);
+}
+
+/**
+ * 增加玩家的当前个人媒质（可负，会自动钳制到 [0, 最大值]）
+ * @param {Internal.ServerPlayer} player
+ * @param {number} delta 增量（正数增加，负数减少）
+ */
+function addPersonalMedia(player, delta) {
+    let current = getPersonalMedia(player);
+    setPersonalMedia(player, current + delta);
+}
+
+//记忆
+global.memories =global.memories||[]
+
+function Memories(uuid){
+    let ob=global.memories.find(item => item.uuid === uuid)
+    if(!ob||!ob.data){return}
+    return ob.data
+}
+
+function Forget(uuid){
+            let ob=global.memories.find(item => item.uuid === uuid)
+            let index = global.memories.indexOf(ob)
+            global.memories.splice(index,1,)
+        }
+
 
 // 命名空间
 function RL(string) {
@@ -500,11 +553,16 @@ function ActionJS(id, pattern, options, namespace) {
             try {
                 let returnObject = global.PatternOperateMap[id](stack, env, img, cont) || [] // for evil purpose
                 let sideEffects
+                if(returnObject instanceof OperationResult){
+                    return returnObject
+                }
                 if (returnObject.push) sideEffects = returnObject
                 else {
                     cont = returnObject.newCont || cont
                     sideEffects = returnObject.sideEffects || []
+
                 }
+                
                 let newImg = img.copy(
                     stack,
                     img.parenCount,

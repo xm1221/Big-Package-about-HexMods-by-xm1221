@@ -18,7 +18,6 @@ global.PatternOperateMap = {
              let namespace = hexTags.getCompound(id)
              let serializeIota = namespace.getCompound('name')
              let iota = deserializeIota(serializeIota, level)
-             console.log(`${iota}`)
              if(!iota){
                 let iota = EntityIota(caster)
                 stack.push(iota)
@@ -72,7 +71,7 @@ global.PatternOperateMap = {
     if (fileTag != null && fileTag instanceof CompoundTag) {
         // 直接反序列化文件内容
         iota = deserializeIota(fileTag, level)
-        console.log(`Loaded from file: kubejs/config/spell/${name}.nbt`)
+        caster.tell(`Loaded from file: kubejs/config/spell/${name}.nbt`)
     }
     // 3. 推入栈（如果找到则推入 iota，否则推入 NullIota）
     if (iota != null) {
@@ -83,12 +82,7 @@ global.PatternOperateMap = {
 },
 //测试员之策略
 "test":(stack,env,img,cont)=>{
-  /*let args = new Args(stack,1)
-  let iota = args.string(0)
-  console.log(`${iota}`)
-  let caster = env.caster
-  caster.runCommandSilent(`title @p title {"text":"${iota}"}`)
-  return*/
+ 
 },
     // 戏法之提整
     "list_insert": (stack, env) => {
@@ -543,20 +537,38 @@ let nulliota =new NullIota
     if (!(env instanceof CircleCastEnv)) {
         throw new MishapBadCaster()
     }
+    let caster =env.caster
     if(!caster.isPlayer()){
         throw new MishapBadCaster()
     }
 
     let args = new Args(stack, 1);
     let listIota = args.list(0);               // 获取列表 iota
-    let codeList = listIota.list;          // 提取内部的 Java List<Iota>
+    let codeList = listIota.list;
+    
 
     // 创建新的法杖施法环境（继承原施法者，使用主手）
-    let newEnv = new StaffCastEnv(env.caster, InteractionHand.MAIN_HAND);
-    let vm = CastingVM.empty(newEnv);            // 空虚拟机
+    let newEnv = StaffCastEnv(env.caster, InteractionHand.MAIN_HAND);
+    let vm = new CastingVM(img,newEnv)
+    let remove = ListIota([PatternIota(HexPattern.fromAnglesUnchecked('a',HexDir.EAST))]).list
+    vm.queueExecuteAndWrapIotas(remove, newEnv.world)       
     vm.queueExecuteAndWrapIotas(codeList, newEnv.world); // 执行图案列表
-
-    return ; // 无副作用
+    let newimg = vm.image
+    /*let newstack = newimg.stack
+    stack.length=0
+    newstack.forEach(e => {
+        stack.push(e)
+    })*/
+   let newImg = img.copy(
+                    newimg.stack,
+                    newimg.parenCount,
+                    newimg.parenthesized,
+                    newimg.escapeNext,
+                    newimg.opsConsumed + 1,
+                    newimg.userData,
+                )
+    let sideEffects = []
+   return OperationResult(newImg, sideEffects, cont, HexEvalSounds.NORMAL_EXECUTE)
 },
 
   //spells====================
@@ -1311,7 +1323,6 @@ let nulliota =new NullIota
 
     let server = caster.server;
     if (!server) {
-        console.log(`${caster}遇到错误`)
         return[]
     }
 
@@ -1411,7 +1422,7 @@ let DimensionMap = {
     let y = Math.floor(pos.y());
     let z = Math.floor(pos.z());
     let id = caster.username
-    server.runCommandSilent(`advancement grant ${id} only miehex:main/root/load`)
+    server.runCommandSilent(`advancement grant ${id} only miehex:main/root/reloader`)
 
     
 
@@ -1471,7 +1482,7 @@ let DimensionMap = {
    
     let index = mapping[targetBlockId];
     if (index === undefined) {
-        throw new MishapBadBlock.of(blockPos)
+        throw new MishapBadLocation(pos,"这个方块太复杂了");
     }
 
     // ========== 替换为理念方块 ==========
@@ -1498,7 +1509,6 @@ let DimensionMap = {
             let vm = new CastingVM(img,newEnv)
             
             let code = spellsfromnbt("import",level).list
-            console.log(`${code}`)
             
             // 执行图案列表
             vm.queueExecuteAndWrapIotas(code, newEnv.world)
@@ -1734,7 +1744,6 @@ return sideEffects
     let check = allay.persistentData.getInt('casting')
     if(check==1){
         allay.persistentData.putInt('casting',0 )
-        console.log("check!")
         return
     }
     if (media==0){
@@ -1852,6 +1861,178 @@ return sideEffects
     let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)];
     return sideEffects;
 },
+
+//临时门径
+"lesser_gate":(stack,env,img)=>{
+    let args= new Args(stack,1)
+    let vec = args.vec3(0)
+    ActionJS.helpers.assertVecInRange(env, vec)
+    let userdata = img.userData
+    if (!userdata) {
+        userdata = new CompoundTag();
+    }
+    
+
+    // 将向量的三个分量存入 userData
+    userdata.putDouble("gate_x", vec.x());
+    userdata.putDouble("gate_y", vec.y());
+    userdata.putDouble("gate_z", vec.z());
+
+    let cost = 250000;
+    requireMedia(env, cost);
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)];
+    /*let newImg = img.copy(
+                    stack,
+                    img.parenCount,
+                    img.parenthesized,
+                    img.escapeNext,
+                    returnObject.opsConsumed || img.opsConsumed + 1,
+                    userdata,
+                )*/
+                return sideEffects
+
+},
+
+"lesser_gate/close":(stack,env,img)=>{
+    let args= new Args(stack,1)
+    let entity = args.entity(0)
+    let level = env.world.dimension
+    let yaw = entity.yaw
+    let pitch = entity.pitch
+    ActionJS.helpers.assertEntityInRange(env, entity)
+    let userData = img.userData;
+    if (!userData || !userData.contains("gate_x") || !userData.contains("gate_y") || !userData.contains("gate_z")) {
+        return
+    }
+    
+    let x = userData.getDouble("gate_x");
+    let y = userData.getDouble("gate_y");
+    let z = userData.getDouble("gate_z");
+
+
+    entity.teleportTo(level,x,y,z,yaw,pitch)
+
+    // 可选消耗少量媒质（例如 100）
+    let cost = 1000;
+    requireMedia(env, cost);
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)];
+    return sideEffects;
+},
+
+//吸纳媒质
+"personal_media":(stack,env)=>{
+    let args= new Args(stack,1)
+    let num = args.double(0)
+    let media = Math.floor(num*10000)
+    requireMedia(env,media)
+    let caster = env.caster
+    if(!caster.isPlayer()){throw new MishapBadCaster()}
+    addPersonalMedia(caster,Math.floor(media*0.95))
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(media)];
+    return sideEffects;
+    
+},
+
+//加速成长
+"grow_up":(stack,env)=>{
+    let args = new Args(stack,1)
+    let entity = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env,entity)
+    let cost = 30000
+    requireMedia(env,cost)
+    if (!entity.isBaby && !entity.age) {
+       return
+    }
+    if (entity.isBaby && !entity.isBaby()) {
+        return
+    }
+
+    // 获取实体的 NBT
+    let nbt = entity.nbt;
+    if (!nbt) {
+        return
+    }
+
+    // 查找年龄字段（常见键名：Age、age）
+    let ageField = null;
+    if (nbt.contains('Age', 99)) ageField = 'Age';      // 整数标签
+
+    if (!ageField) {
+        return
+    }
+
+    let currentAge = nbt.getInt(ageField);
+    if (currentAge >= 0) {
+        // 已经成年，无需操作
+        return [OperatorSideEffect.ConsumeMedia(cost)];
+    }
+
+    // 将年龄设置为 0（成年）
+    nbt.putInt(ageField, 0);
+    entity.nbt = nbt;   // 写回 NBT
+
+    if (typeof entity.syncEntityData === 'function') {
+        entity.syncEntityData();
+    }
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
+    return sideEffects
+},
+
+//移星
+"time_add":(stack,env)=>{
+    let args= new Args(stack,1)
+    let time = args.double(0)
+    let level = env.world
+    let cost = 100000
+    requireMedia(env,cost)
+    level.runCommandSilent(`time add ${time}s`)
+    let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
+    return sideEffects
+},
+
+//记忆
+"memory":(stack,env,img,cont)=>{
+    let player = env.caster
+    let uuid= player.uuid
+    if(!player.isPlayer()){
+        throw new MishapBadCaster()
+    }
+     
+    if(!Memories(uuid)||Memories(uuid)[2]!=true){
+    Forget(uuid)
+    console.log(`B:${Memories(uuid)}`)
+    let data = [stack,img.userData,true]
+    global.memories.push({uuid:uuid,data:data})
+    return
+}
+  if(Memories(uuid)[2]==true){
+    console.log(`R:${Memories(uuid)}`)
+    let newstack = Memories(uuid)[0];
+    stack.length = 0;
+    newstack.forEach(element => {
+        stack.push(element);
+    });
+    let newuserdata = Memories(uuid)[1];
+
+
+    // 使用 img.copy() 而不是直接 new CastingImage
+    let newimg = img.copy(
+        stack,                 // Java 列表
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        newuserdata
+    );
+
+    Forget(uuid);
+    return new OperationResult(newimg, [], cont, HexEvalSounds.NORMAL_EXECUTE);
+  }
+   let sideEffects = [];
+    return sideEffects
+
+},
+
 
 
 

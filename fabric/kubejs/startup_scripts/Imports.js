@@ -219,3 +219,6 @@ let StringIota = Java.loadClass('ram.talia.moreiotas.api.casting.iota.StringIota
 
 // io.yukkuric.hexop.ext.SilencedCastingEnv 相关
 let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
+
+//op
+let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')

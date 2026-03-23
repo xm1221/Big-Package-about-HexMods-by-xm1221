@@ -1,7 +1,5 @@
 ServerEvents.recipes(event=>{
-    
-  
-   event.custom(
+ event.custom(
 {
   "type": "hexcasting:brainsweep",
   "blockIn": {
@@ -49,12 +47,6 @@ event.custom(
     "name": 'miehex:xm1221'
   }
 }).id("miehex_xm1221")
-
-
-
-
-
-
 
 })
   

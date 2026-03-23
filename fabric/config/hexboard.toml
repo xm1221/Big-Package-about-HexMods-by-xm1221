@@ -1,0 +1,15 @@
+boardSectionColor = 255
+boardTargetColor = 16773494
+boardGoodColor = 65280
+boardBadColor = 16711680
+quartzTypeblockPatternColor = 16698342
+lapisTypeblockPatternColor = 16777215
+redstoneTypeblockPatternColor = 16777215
+hudLineHeight = 10
+hudInfoX = 2
+hudInfoY = 2
+hudInfoStaffModeColor = 16777215
+hudInfoTargetIndexColor = 16777215
+hudInfoQuartzTypeblockColor = 16777215
+hudInfoWoolTypeblockColor = 16777215
+maxResolvedIota = 2048

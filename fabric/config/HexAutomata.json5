@@ -1,0 +1,10 @@
+{
+	"common": {
+		// <Scope> Reactive Focus(es) inside player's inventory (including main/off hand) take effect
+		"EnablesFocusInsideInventory": true,
+		// <Scope> Reactive Focus(es) inside player's curios/trinkets slots take effect
+		"EnablesFocusInsideAccessories": true,
+		// <Scope> Only the first Reactive Focus of a type met take effect; if set to false, all Focuses of certain type are triggered for each event (may cause performance impact)
+		"FirstFocusOnly": true
+	}
+}

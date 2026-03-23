@@ -332,9 +332,7 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
         if((!entity.isPlayer()) && entity.isAlive())
             {
         let cost = Math.floor(entity.getHealth())/2
-        console.log(`${cost}`)
          let item = player.getMainHandItem()
-         console.log(`${item.id}`)
          if (item.id !== 'miehex:pure_allay_shard') return;
         if (item.count < cost) {
               return[]

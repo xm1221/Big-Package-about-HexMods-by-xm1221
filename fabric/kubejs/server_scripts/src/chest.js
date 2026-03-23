@@ -289,4 +289,33 @@ ServerEvents.chestLootTables(event => {
       addCypherVariants(pool, '远古杂件：提取');
     });
   });
-});
+
+  event.modify("classroom",loot=>{
+    loot.addPool(pool => {
+      addVariantItems(pool, 'hexcasting:focus', VARIANTS);
+      addVariantItems(pool, 'hexcasting:artifact', VARIANTS);
+      addCypherVariants(pool, '远古杂件：驾雾');
+      addCypherVariants(pool, '远古杂件：云腾');
+      addCypherVariants(pool, '远古杂件：丝绸之触');
+      addCypherVariants(pool, '远古杂件：提取');
+    });
+    for (let i = 0; i < 10; i++) {
+      loot.addPool(pool => {
+        pool.addItem('hexcasting:amethyst_dust').weight(1);
+        pool.addItem('hexcasting:charged_amethyst').weight(1);
+        pool.addItem('minecraft:book').weight(1)
+        pool.addItem(Item.of('miehex:pure_allay_shard')).weight(1);
+        if (i % 2 === 0) pool.addItem('minecraft:air').weight(1); // 模拟原脚本随机 air
+      });
+  }
+  loot.addPool(pool => {
+      pool.addItem(Item.of('hexboard:quartz_typeblock')).weight(1);
+      pool.addItem(Item.of('hexboard:redstone_typeblock')).weight(1);
+      pool.addItem(Item.of('miehex:pure_allay_shard')).weight(1);
+      pool.addItem(Item.of('hexboard:lapis_typeblock')).weight(1);
+      pool.addItem(Item.of('hexboard:board_staff')).weight(2);
+    });
+
+})
+
+})

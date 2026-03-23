@@ -474,10 +474,16 @@
 			shape: "hexagon"
 			subtitle: "”挖掘者的梦想“"
 			tasks: [{
-				consume_items: true
-				count: 1768L
-				id: "1943049A7323CBD2"
-				item: { Count: 1768, id: "minecraft:deepslate" }
+				count: 1728L
+				id: "368C9B0A0BC5EE5D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:stone_crafting_materials"
+					}
+				}
+				title: "Any #minecraft:stone_crafting_materials"
 				type: "item"
 			}]
 			title: "大采集术"
@@ -600,15 +606,15 @@
 			subtitle: "“真正的矿工”"
 			tasks: [{
 				count: 1728L
-				id: "2C656D9BD81DA2EC"
+				id: "49EE9BAFDFFE13D3"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:ores/iron"
+						value: "minecraft:iron_ores"
 					}
 				}
-				title: "Any #forge:ores/iron"
+				title: "Any #minecraft:iron_ores"
 				type: "item"
 			}]
 			title: "连锁采集与连锁采集之后"

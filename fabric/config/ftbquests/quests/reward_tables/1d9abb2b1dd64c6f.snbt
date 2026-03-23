@@ -15,17 +15,6 @@
 			type: "xp"
 			xp: 100
 		}
-		{
-			advancement: "hexcasting:opened_eyes"
-			criterion: ""
-			type: "advancement"
-		}
-		{
-			advancement: "hexcasting:enlightenment"
-			criterion: ""
-			type: "advancement"
-			weight: 0.5f
-		}
 		{ item: "minecraft:oak_sapling" }
 		{ item: "minecraft:spruce_sapling" }
 		{ item: "minecraft:jungle_sapling" }
