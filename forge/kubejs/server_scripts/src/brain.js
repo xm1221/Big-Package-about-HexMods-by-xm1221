@@ -1,7 +1,11 @@
 ServerEvents.recipes(event=>{
+<<<<<<< Updated upstream
     
   
    event.custom(
+=======
+ event.custom(
+>>>>>>> Stashed changes
 {
   "type": "hexcasting:brainsweep",
   "blockIn": {
@@ -50,12 +54,15 @@ event.custom(
   }
 }).id("miehex_xm1221")
 
+<<<<<<< Updated upstream
 
 
 
 
 
 
+=======
+>>>>>>> Stashed changes
 })
   
 

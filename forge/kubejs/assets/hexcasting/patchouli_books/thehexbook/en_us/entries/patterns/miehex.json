@@ -72,8 +72,13 @@
       "type": "hexcasting:pattern",
      "op_id": "miehex:imposter", 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
      "anchor": "miehex:imposter", "input": "player,list of patterns", 
      "output": "", "text": "这个罪恶的法术接受一个玩家实体和一个图案列表，那之后便会控制那个玩家释放那个图案列表中所规定的法术，仅需64枚充能紫水晶，只能在法杖中释放"
+=======
+     "anchor": "miehex:imposter", "input": "any", 
+     "output": "", "text": "这个法术拥有奇怪的效果，可以改变施法者使用意识之精思时返回的iota————不过在这么做之前，至少应该保存一下自己原本的真名。"
+>>>>>>> Stashed changes
 =======
      "anchor": "miehex:imposter", "input": "any", 
      "output": "", "text": "这个法术拥有奇怪的效果，可以改变施法者使用意识之精思时返回的iota————不过在这么做之前，至少应该保存一下自己原本的真名。"
@@ -128,7 +133,10 @@
     {
       "type": "hexcasting:pattern",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "op_id": "miehex:get_spawn",
       "anchor": "miehex:get_spawn",
       "input": "",
@@ -137,6 +145,9 @@
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "op_id": "miehex:create_block/idea",
       "anchor": "miehex:create_block/idea",
@@ -176,9 +187,12 @@
       "output": "",
       "text": "接受一个玩家实体，从其脑中弹出一份其已经服用的磁带，消耗一枚充能紫水晶。"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     }
 
 =======
+=======
+>>>>>>> Stashed changes
     },
     {
       "type": "hexcasting:pattern",
@@ -198,8 +212,13 @@
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
       "op_id": "miehex:Expelliarmus",
       "anchor": "miehex:Expelliarmus",
+=======
+      "op_id": "miehex:expelliarmus",
+      "anchor": "miehex:expelliarmus",
+>>>>>>> Stashed changes
       "input": "entity",
       "output": "",
       "text": "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。"
@@ -222,24 +241,39 @@
     },
         {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
       "op_id": "miehex:angleBetweenVectors",
       "anchor": "miehex:angleBetweenVectors",
+=======
+      "op_id": "miehex:anglebetweenvectors",
+      "anchor": "miehex:anglebetweenvectors",
+>>>>>>> Stashed changes
       "input": "vec, vec",
       "output": "num, num",
       "text": "接受两个向量，计算从第一个向量指向第二个向量所需的偏航角和俯仰角（弧度），依次压入栈中（先偏航，后俯仰）。"
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
       "op_id": "miehex:angleBetweenScalar",
       "anchor": "miehex:angleBetweenScalar",
+=======
+      "op_id": "miehex:anglebetweenscalar",
+      "anchor": "miehex:anglebetweenscalar",
+>>>>>>> Stashed changes
       "input": "vec, vec",
       "output": "num",
       "text": "接受两个向量，计算它们之间的空间夹角（弧度）。"
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
       "op_id": "miehex:rotateVector",
       "anchor": "miehex:rotateVector",
+=======
+      "op_id": "miehex:rotatevector",
+      "anchor": "miehex:rotatevector",
+>>>>>>> Stashed changes
       "input": "vec, num, num",
       "output": "vec",
       "text": "接受一个向量、偏航角和俯仰角（均为弧度），先将向量绕 Y 轴旋转偏航角，再绕 X 轴旋转俯仰角，返回旋转后的新向量。"
@@ -250,8 +284,70 @@
       "anchor": "miehex:great_connect",
       "input": "list",
       "output": "",
+<<<<<<< Updated upstream
       "text": "接受一个图案列表，创建一个新的法杖施法环境（继承原施法者），并在其中执行该列表。此图案只能在法术环中施放。"
     }
+>>>>>>> Stashed changes
+=======
+      "text": "接受一个列表，创建一个新的法杖施法环境（继承法术环的施法者，栈、渡鸦之思与次级门径目的地），在其中执行该列表，将执行后的栈与其他数据覆盖原栈与原本数据，只能在法术环中施放。"
+    },
+    {
+  "type": "hexcasting:pattern",
+  "op_id": "miehex:chunkloader_permanent",
+  "anchor": "miehex:chunkloader_permanent",
+  "input": "vec",
+  "output": "",
+  "text": "锚定所给位置的现实--消耗 1 枚紫水晶碎片，将目标位置所在的区块永久强加载。"
+    },
+    {
+  "type": "hexcasting:pattern",
+  "op_id": "miehex:entity_anchor",
+  "anchor": "miehex:entity_anchor",
+  "input": "vec",
+  "output": "",
+  "text": "临时锚定所给位置的现实--消耗少量媒质，将目标位置所在的区块暂时加载15秒左右"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:lesser_gate",
+      "anchor": "miehex:lesser_gate",
+      "input": "vec",
+      "output": "",
+      "text": "接受一个施法范围内的向量，直到这次施法结束为止，将这个向量当做'次级门径传送'的目的地，消耗5枚紫水晶碎片"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:lesser_gate/close",
+      "anchor": "miehex:lesser_gate/close",
+      "input": "entity",
+      "output": "",
+      "text": "接受一个实体，将其传送到由'创建次级门径'所确定的位置,消耗少量媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:personal_media",
+      "anchor": "miehex:personal_media",
+      "input": "num",
+      "output": "",
+      "text": "接受一个数，消耗这个数量的以紫水晶粉记的媒质，将其充入个人媒质条中，会有一些微小的损耗"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:grow_up",
+      "anchor": "miehex:grow_up",
+      "input": "entity",
+      "output": "",
+      "text": "接受一个生物实体，消耗三份紫水晶粉的媒质，使其立刻成年。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:memory",
+      "anchor": "miehex:memory",
+      "input": "",
+      "output":"many",
+      "text": "记忆自己当前的栈和施法状态，再次释放时根据记忆覆写当前栈和施法状态并清空记录。"
+    }
+    
 >>>>>>> Stashed changes
   ]
 }

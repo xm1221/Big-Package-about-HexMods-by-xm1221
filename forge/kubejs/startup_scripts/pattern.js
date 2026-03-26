@@ -1,4 +1,81 @@
 // priority:10
+<<<<<<< Updated upstream
+=======
+//手动序列化
+function serializeIota(iota) {
+    let tag = new CompoundTag();
+    if (iota instanceof DoubleIota) {
+        tag.putString('type', 'double');
+        tag.putDouble('value', iota.double);
+    } else if (iota instanceof BooleanIota) {
+        tag.putString('type', 'boolean');
+        tag.putBoolean('value', iota.bool);
+    } else if (iota instanceof Vec3Iota) {
+        tag.putString('type', 'vec3');
+        let vec = iota.vec3;
+        tag.putDouble('x', vec.x());
+        tag.putDouble('y', vec.y());
+        tag.putDouble('z', vec.z());
+    } else if (iota instanceof EntityIota) {
+        tag.putString('type', 'entity');
+        tag.putUUID('uuid', iota.entity.uuid);
+    } else if (iota instanceof PatternIota) {
+        tag.putString('type', 'pattern');
+        let pattern = iota.pattern;
+        tag.putString('angles', pattern.anglesSignature());
+    } else if (iota instanceof ListIota) {
+        tag.putString('type', 'list');
+        let listTag = new ListTag();
+        iota.list.list.forEach(subIota => {
+            listTag.add(serializeIota(subIota));
+        });
+        tag.put('value', listTag);
+    } else if (iota instanceof NullIota) {
+        tag.putString('type', 'null');
+    } else {
+        // 未知类型（如 GarbageIota）存为占位符
+        tag.putString('type', 'unknown');
+    }
+    return tag;
+}
+
+// 从 CompoundTag 反序列化 Iota
+function deserializeIota(tag, level) {
+    let type = tag.getString('type');
+    switch (type) {
+        case 'double':
+            return new DoubleIota(tag.getDouble('value'));
+        case 'boolean':
+            return new BooleanIota(tag.getBoolean('value'));
+        case 'vec3':
+            return new Vec3Iota(new Vec3(
+                tag.getDouble('x'),
+                tag.getDouble('y'),
+                tag.getDouble('z')
+            ));
+        case 'entity': {
+            let uuid = tag.getUUID('uuid');
+            let entity = level.getEntity(uuid);
+            return entity ? new EntityIota(entity) : NullIota();
+        }
+        case 'pattern': {
+            let angles = tag.getString('angles');
+            let dir = HexDir.EAST;
+            return new PatternIota(HexPattern.fromAngles(angles, dir));
+        }
+        case 'list': {
+            let listTag = tag.getList('value', 10); // 10 表示 CompoundTag
+            let list = [];
+            listTag.forEach(subTag => list.push(deserializeIota(subTag, level)));
+            return new ListIota(list);
+        }
+        case 'null':
+            return new NullIota();
+        default:
+            return new GarbageIota();
+    }
+}
+>>>>>>> Stashed changes
 
 //从外部nbt中获取iota列表
 
@@ -7,6 +84,7 @@ function spellsfromnbt(name,level){
     let fileTag = NBTIO.read(`kubejs/config/spell/${name}.nbt`)
     if (fileTag != null && fileTag instanceof CompoundTag) {
         // 直接反序列化文件内容
+<<<<<<< Updated upstream
         let iota = IotaType.deserialize(fileTag, level)
         return iota
     } else {
@@ -22,6 +100,14 @@ function spellsfromnbt(name,level){
     }
     
 }
+=======
+        let iota = deserializeIota(fileTag, level)
+        return iota
+    }
+    
+        }
+
+>>>>>>> Stashed changes
 
 
 
@@ -40,7 +126,11 @@ global.summonWisp = function(options) {
     let caster = options.caster || null;
 
     let spellList = spellsfromnbt(options.spellList,options.level) || ListIota([]); // 确保不为 null
+<<<<<<< Updated upstream
     console.log(`${spellList}`)
+=======
+
+>>>>>>> Stashed changes
 
     let wisp;
     if (type === 'ticking') {
@@ -199,6 +289,7 @@ function mobCasting(spell,mob,name){
     let item = Item.of('hexcasting:creative_unlocker')
     let caster = global.Faker.create(level,name)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     caster.setItemInHand(InteractionHand.MAIN_HAND, item)
     caster.setPos(x,y,z)
     caster.setRotation(yaw,pitch)
@@ -225,6 +316,8 @@ global.spells = {
 }
 
 =======
+=======
+>>>>>>> Stashed changes
     let inv = caster.getInventory()
     let slot = Math.floor(Math.random()*10+5)
     inv.setStackInSlot(slot,item)
@@ -237,11 +330,18 @@ global.spells = {
         // 创建空虚拟机
         let vm = CastingVM.empty(env);
 
+<<<<<<< Updated upstream
         //let Iotas = global.spells.nbt(spell,level)
         let List =Iotas.list
 
         // 执行
         vm.queueExecuteAndWrapIotas(List, env.world);
+=======
+        let Iotas = spellsfromnbt(spell,level).list
+
+        // 执行
+        vm.queueExecuteAndWrapIotas(Iotas, env.world);
+>>>>>>> Stashed changes
 }
 //有限生物施法（悦灵）
 function allaycasting(spells,mob,media){
@@ -258,7 +358,10 @@ function allaycasting(spells,mob,media){
     let inv = caster.getInventory()
     let slot = Math.floor(Math.random()*10+5)
     inv.setStackInSlot(slot,item)
+<<<<<<< Updated upstream
     //caster.setItemInHand(InteractionHand.MAIN_HAND, item)
+=======
+>>>>>>> Stashed changes
     caster.runCommandSilent('advancement grant @s only hexcasting:enlightenment');
     caster.setPos(x,y-1,z)
     caster.setRotation(yaw,pitch)
@@ -272,7 +375,10 @@ function allaycasting(spells,mob,media){
         // 创建空虚拟机
         let vm = CastingVM.empty(env);
         let List =spells
+<<<<<<< Updated upstream
         let stop = global.spells.nbt('stop',level).list
+=======
+>>>>>>> Stashed changes
 
         // 执行
         vm.queueExecuteAndWrapIotas(List, env.world);
@@ -288,11 +394,93 @@ global.spells = {
     hurts:typeHurt
 }
 
+<<<<<<< Updated upstream
 
 >>>>>>> Stashed changes
 // 命名空间
 function RL(string) {
     let length = string.length
+=======
+// 全局存储：锚定实体 UUID 字符串集合
+global.anchorEntities = global.anchorEntities || new Set()
+
+// 锚定实体当前加载的区块信息 {uuid, cx, cz}
+global.anchorCurrentChunk = global.anchorCurrentChunk || new Map()
+
+// 辅助：安全强制加载/卸载区块
+function forceChunk(level, cx, cz, load) {
+    if (!level) return;
+    level.setChunkForced(cx, cz, load);
+}
+
+// 辅助：获取区块坐标（从实体）
+function getChunkPosFromEntity(entity) {
+    let chunkPos = entity.chunkPosition();
+    return { cx: chunkPos.x, cz: chunkPos.z };
+}
+
+function getDimKey(level) {
+    return level.dimension;
+}
+
+/**
+ * 获取玩家的当前个人媒质值
+ * @param {Internal.ServerPlayer} player
+ * @returns {number} 当前媒质值，若属性未初始化则返回 0
+ */
+function getPersonalMedia(player) {
+    let instance = player.getAttribute(HexOPAttributes.PERSONAL_MEDIA);
+    if (!instance) return 0;
+    let value = instance.getBaseValue();
+    // 如果值为初始化标记（-1919810.0），视为 0
+    if (value === HexOPAttributes.INIT_MEDIA_MARKER) return 0;
+    return value;
+}
+
+/**
+ * 设置玩家的当前个人媒质（自动限制在 [0, 最大值] 之间）
+ * @param {Internal.ServerPlayer} player
+ * @param {number} value 要设置的新值
+ */
+function setPersonalMedia(player, value) {
+    let instance = player.getAttribute(HexOPAttributes.PERSONAL_MEDIA);
+    if (!instance) return;
+    // 获取最大值
+    let maxValue = player.getAttributeValue(HexOPAttributes.PERSONAL_MEDIA_MAX)
+    let newValue = Math.max(0, Math.min(value, maxValue));
+    instance.setBaseValue(newValue);
+}
+
+/**
+ * 增加玩家的当前个人媒质（可负，会自动钳制到 [0, 最大值]）
+ * @param {Internal.ServerPlayer} player
+ * @param {number} delta 增量（正数增加，负数减少）
+ */
+function addPersonalMedia(player, delta) {
+    let current = getPersonalMedia(player);
+    setPersonalMedia(player, current + delta);
+}
+
+//记忆
+global.memories =global.memories||[]
+
+function Memories(uuid){
+    let ob=global.memories.find(item => item.uuid === uuid)
+    if(!ob||!ob.data){return}
+    return ob.data
+}
+
+function Forget(uuid){
+            let ob=global.memories.find(item => item.uuid === uuid)
+            let index = global.memories.indexOf(ob)
+            global.memories.splice(index,1,)
+        }
+
+
+// 命名空间
+function RL(string) {
+    let length = string.length()
+>>>>>>> Stashed changes
     let firstChar = string.charAt(0)
     let lastChar = string.charAt(length - 1)
     if (firstChar !== lastChar) {
@@ -408,6 +596,12 @@ let _buildGetter = (key, keyMishap) => {
     return function (i) {
         let iota = this.data[i]
         let res = iota[key]
+<<<<<<< Updated upstream
+=======
+        if (typeof res === 'function') {
+            return res.call(iota);
+        }
+>>>>>>> Stashed changes
         if (res === undefined) throw MishapInvalidIota.of(iota, this.data.length - i - 1, keyMishap)
         return res
     }
@@ -429,7 +623,11 @@ Args.prototype = {
     }
 }
 
+<<<<<<< Updated upstream
 for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean']) {
+=======
+for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean','enchant']) {
+>>>>>>> Stashed changes
     let [key, keyMishap] = pair.split('/')
     Args.prototype[key] = _buildGetter(key, keyMishap)
 }
@@ -444,11 +642,23 @@ function ActionJS(id, pattern, options, namespace) {
             try {
                 let returnObject = global.PatternOperateMap[id](stack, env, img, cont) || [] // for evil purpose
                 let sideEffects
+<<<<<<< Updated upstream
+=======
+                if(returnObject instanceof OperationResult){
+                    return returnObject
+                }
+>>>>>>> Stashed changes
                 if (returnObject.push) sideEffects = returnObject
                 else {
                     cont = returnObject.newCont || cont
                     sideEffects = returnObject.sideEffects || []
+<<<<<<< Updated upstream
                 }
+=======
+
+                }
+                
+>>>>>>> Stashed changes
                 let newImg = img.copy(
                     stack,
                     img.parenCount,
@@ -484,12 +694,39 @@ ActionJS.helpers = {
         if (!ctx.isEntityInRange(entity)) throw new MishapEntityTooFarAway(entity)
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 }
 
 function requireMedia(env, cost) { 
     if (env.extractMedia(cost, true) > 0) {
         throw new MishapNotEnoughMedia(cost);
     }
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 }
+=======
+}
+
+//附魔
+function toStandardGalactic(text) {
+    // 字符映射表（根据 Minecraft 附魔台实际显示整理）
+    let sgaMap = {
+        'A': 'ꓯ', 'B': '𐊡', 'C': 'Ↄ', 'D': '◖', 'E': 'Ǝ', 'F': 'Ⅎ',
+        'G': '⅁', 'H': 'H', 'I': 'I', 'J': 'ſ', 'K': '⋊', 'L': '⅂',
+        'M': 'W', 'N': 'N', 'O': 'O', 'P': 'Ԁ', 'Q': 'Ό', 'R': 'ᴚ',
+        'S': 'S', 'T': '⊥', 'U': '∩', 'V': 'ʌ', 'W': 'M', 'X': 'X',
+        'Y': '⅄', 'Z': 'Z',
+        'a': 'ɐ', 'b': 'q', 'c': 'ɔ', 'd': 'p', 'e': 'ǝ', 'f': 'ɟ',
+        'g': 'ƃ', 'h': 'ɥ', 'i': 'ı', 'j': 'ɾ', 'k': 'ʞ', 'l': 'ʃ',
+        'm': 'ɯ', 'n': 'u', 'o': 'o', 'p': 'd', 'q': 'b', 'r': 'ɹ',
+        's': 's', 't': 'ʇ', 'u': 'n', 'v': 'ʌ', 'w': 'ʍ', 'x': 'x',
+        'y': 'ʎ', 'z': 'z'
+    };
+    
+    return text.split('').map(ch => sgaMap[ch] || ch).join('');
+}
+
+>>>>>>> Stashed changes

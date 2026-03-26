@@ -142,7 +142,11 @@ BlockEvents.rightClicked('miehex:media_netherite', event => {
     server.runCommandSilent(`playsound minecraft:block.anvil.place block @a ${x} ${y} ${z} 1 1`);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // 消耗一个物品（非创造模式）
+=======
+    // 消耗一个物品
+>>>>>>> Stashed changes
 =======
     // 消耗一个物品
 >>>>>>> Stashed changes
@@ -299,8 +303,11 @@ BlockEvents.rightClicked('miehex:idea_block', event => {
     event.block.set('miehex:idea_block', { variant: String(index) });
     event.cancel();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 });
 =======
+=======
+>>>>>>> Stashed changes
 });
 //理念世界传送毯
 BlockEvents.rightClicked('miehex:idea_portal',event=>{
@@ -339,9 +346,13 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
         if((!entity.isPlayer()) && entity.isAlive())
             {
         let cost = Math.floor(entity.getHealth())/2
+<<<<<<< Updated upstream
         console.log(`${cost}`)
          let item = player.getMainHandItem()
          console.log(`${item.id}`)
+=======
+         let item = player.getMainHandItem()
+>>>>>>> Stashed changes
          if (item.id !== 'miehex:pure_allay_shard') return;
         if (item.count < cost) {
               return[]
@@ -370,4 +381,7 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
 })
 })
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

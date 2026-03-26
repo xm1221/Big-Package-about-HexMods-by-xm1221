@@ -31,7 +31,10 @@
       "output": "",
       "text": "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     },
     {
       "type": "patchouli:crafting",
@@ -41,6 +44,9 @@
     {
       "type": "patchouli:text",
       "text": "传送规则如下：$(br)- 主世界：$(bold)ideas_world_1$()$(br)- 下界：$(bold)ideas_world_0$()$(br)- 末地：$(bold)ideas_world_2$()$(br)注意：与进入理念世界的法术不同，传送毯不会在目标位置生成立足的方块。被传送者可能会直接坠入虚空或卡在固体方块中。建议确保目标位置安全，或配合其他装置使用。$(br2)当传送玩家以外的生物实体时，会消耗主手上相当于生物一半生命值的粹灵晶碎片。"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 

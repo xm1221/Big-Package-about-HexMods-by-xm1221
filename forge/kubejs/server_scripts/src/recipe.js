@@ -5,7 +5,11 @@ ServerEvents.recipes(event =>{
     
     event.remove({id:'ftbquests:book'})
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     event.remove({id:'hierophantics:flay_bed'})
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -27,7 +31,11 @@ ServerEvents.recipes(event =>{
     event.smithing('hexchanting:amethyst_shovel','hexcasting:artifact','minecraft:diamond_shovel','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_hoe','hexcasting:artifact','minecraft:diamond_hoe','hexcasting:charged_amethyst')
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     event.smithing('hierophantics:flay_bed','minecraft:end_crystal','#minecraft:beds','hexcasting:quenched_allay_shard')
+=======
+   
+>>>>>>> Stashed changes
 =======
    
 >>>>>>> Stashed changes
@@ -37,10 +45,22 @@ ServerEvents.recipes(event =>{
 })
 ServerEvents.recipes(event=>{
     
+<<<<<<< Updated upstream
         event.shapeless('minecraft:experience_bottle',['minecraft:gunpowder','#forge:potions','minecraft:sculk'
             ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
             ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
         ])
+=======
+        event.shapeless('minecraft:experience_bottle',['minecraft:gunpowder','minecraft:glass_bottle','minecraft:sculk'
+            ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
+            ,'minecraft:sculk','minecraft:sculk','minecraft:sculk'
+        ])
+
+        event.shapeless('hex_machina:mind_phial',['hexcasting:battery','hexcasting:quenched_allay_shard','miehex:media_iron',
+            'miehex:media_copper','miehex:pure_allay_shard','minecraft:sculk','#minecraft:biome_symbols','minecraft:gold_ingot','minecraft:lapis_lazuli'])
+        event.remove({id:'hex_machina:crafting/mind_phial'})
+        
+>>>>>>> Stashed changes
         
     
 })
@@ -53,12 +73,21 @@ ServerEvents.recipes(e=>{
         ["hexcasting:quenched_allay_shard","miehex:pure_allay_shard","hexcasting:quenched_allay_shard"]
     ]).id("miehex:entry")
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     e.shaped('miehex:idea_portal',[
         ["miehex:pure_allay_block","hexcasting:quenched_allay_shard","miehex:pure_allay_block"],
         ["miehex:pure_allay_block","#minecraft:biome_symbols","miehex:pure_allay_block"],
         ["miehex:pure_allay_block",'miehex:ideas_world_entry',"miehex:pure_allay_block"]
     ]).id("miehex:carpet")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    e.shapeless('miehex:pure_allay_block',[
+        'miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard'
+    ])
 >>>>>>> Stashed changes
 })
 
@@ -163,7 +192,11 @@ ServerEvents.recipes(e=>{
 
     // 其他原版结构
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:ender_pearl", "minecraft:plains"],
+=======
+    ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:stone", "minecraft:plains"],
+>>>>>>> Stashed changes
 =======
     ["minecraft:stronghold", "minecraft:stone_bricks", "minecraft:stone", "minecraft:plains"],
 >>>>>>> Stashed changes
@@ -178,8 +211,13 @@ ServerEvents.recipes(e=>{
     ["minecraft:ocean_ruin", "minecraft:stone_bricks", "minecraft:prismarine", "minecraft:ocean"],
     ["minecraft:bastion_remnant", "minecraft:blackstone", "minecraft:gold_ingot", "minecraft:nether_wastes"],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:blaze_rod", "minecraft:nether_wastes"],
     ["minecraft:end_city", "minecraft:purpur_block", "minecraft:shulker_shell", "minecraft:the_end"],
+=======
+    ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:nether_bricks", "minecraft:nether_wastes"],
+    ["minecraft:end_city", "minecraft:purpur_block", "minecraft:purpur_block", "minecraft:the_end"],
+>>>>>>> Stashed changes
 =======
     ["minecraft:fortress", "minecraft:nether_bricks", "minecraft:nether_bricks", "minecraft:nether_wastes"],
     ["minecraft:end_city", "minecraft:purpur_block", "minecraft:purpur_block", "minecraft:the_end"],

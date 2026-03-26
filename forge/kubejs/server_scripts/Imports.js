@@ -34,7 +34,14 @@ let StringIota = Java.loadClass('ram.talia.moreiotas.api.casting.iota.StringIota
 let HexDir = Java.loadClass('at.petrak.hexcasting.api.casting.math.HexDir')
 let HexPattern = Java.loadClass('at.petrak.hexcasting.api.casting.math.HexPattern')
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
+=======
+let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
+let Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3')
+let AABB = Java.loadClass('net.minecraft.world.phys.AABB')
+let HashSet = Java.loadClass('java.util.HashSet')
+>>>>>>> Stashed changes
 =======
 let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
 let Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3')

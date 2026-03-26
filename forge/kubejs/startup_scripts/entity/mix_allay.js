@@ -58,6 +58,10 @@ StartupEvents.registry('entity_type', event => {
 })
     builder.animationResource(entity => 'miehex:animations/entity/mix_allay.animation.json')
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     // 右键交互示例：给予物品（比如手持钻石时，生物发出声音）
     /*builder.onInteract(context => {
         const { entity, player, hand } = context

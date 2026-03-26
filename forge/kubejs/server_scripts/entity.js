@@ -20,7 +20,11 @@ EntityJSEvents.addGoalSelectors('miehex:mix_allay', event => {
         },
         true,                              // isInterruptable
         (mob) => {
+<<<<<<< Updated upstream
             //console.log(`${mob,mob.persistentData.get('Target')}start!`)
+=======
+
+>>>>>>> Stashed changes
         },                        // start
         (mob) => mob.getNavigation().stop(), // stop
         true,                               // requiresUpdateEveryTick (必须显式提供)

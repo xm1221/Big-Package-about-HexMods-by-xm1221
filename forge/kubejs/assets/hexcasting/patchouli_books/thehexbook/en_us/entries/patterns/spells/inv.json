@@ -32,8 +32,13 @@
     },
     {
       "type": "hexcasting:pattern",
+<<<<<<< Updated upstream
       "op_id": "miehex:Expelliarmus",
       "anchor": "miehex:Expelliarmus",
+=======
+      "op_id": "miehex:expelliarmus",
+      "anchor": "miehex:expelliarmus",
+>>>>>>> Stashed changes
       "input": "entity",
       "output": "",
       "text": "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。"

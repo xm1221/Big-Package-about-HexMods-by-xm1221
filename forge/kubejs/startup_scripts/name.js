@@ -12,11 +12,14 @@ StartupEvents.registry('hexcasting:action', e => {
         e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     //开发者之策略
     registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
     //开发者之策略，二
     registerPatternWrap("qqqaq",HexDir.NORTH_EAST,"xmbug")
 =======
+=======
+>>>>>>> Stashed changes
     //意识之精思
     registerPatternWrap("qaq",HexDir.NORTH_EAST,"get_caster",false,null,"miehex")
 
@@ -29,6 +32,9 @@ StartupEvents.registry('hexcasting:action', e => {
     //测试员之策略
     registerPatternWrap("adaw",HexDir.SOUTH_EAST,'test')
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     //捐献
     registerPatternWrap('dadawaawad',HexDir.NORTH_EAST,'donate',false,null,'miehex')
@@ -55,7 +61,10 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap('qqqqqwdeddwwded', HexDir.SOUTH_EAST, 'zone_entity/by_name',false,null,"miehex")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     //故乡之精思
     registerPatternWrap('wqaqwawqwwawwqwwa',HexDir.NORTH_EAST,'get_spawn')
 
@@ -63,6 +72,7 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("wadwdqdwd",HexDir.EAST,"get_target")
 
     //旋转之提整
+<<<<<<< Updated upstream
     registerPatternWrap("wdww",HexDir.EAST,"rotateVector")
 
     //夹角之馏化
@@ -70,10 +80,22 @@ StartupEvents.registry('hexcasting:action', e => {
 
     //夹角之策略
     registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"angleBetweenVectors")
+=======
+    registerPatternWrap("wdww",HexDir.EAST,"rotatevector")
+
+    //夹角之馏化
+    registerPatternWrap("wadewqaeaqwed",HexDir.EAST,"anglebetweenscalar")
+
+    //夹角之策略
+    registerPatternWrap("qaeaqeqaea",HexDir.NORTH_WEST,"anglebetweenvectors")
+>>>>>>> Stashed changes
 
     //连接卓伟
     registerPatternWrap("daaedewdweeqawa", HexDir.WEST,"great_connect");
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     //spells===============================
 
@@ -114,8 +136,13 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap('edeeeeeqdwdwww',HexDir.EAST,"locate")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     //分海
 //    registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
+=======
+    //分海(fabric only)
+    registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
+>>>>>>> Stashed changes
 =======
     //分海(fabric only)
     registerPatternWrap("qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",HexDir.EAST,"worldreloader")
@@ -131,7 +158,10 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",HexDir.NORTH_EAST,"crash")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     //随心
     registerPatternWrap("qwawqwadawqwa",HexDir.EAST,"inventory_control")
 
@@ -139,13 +169,21 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("dwewdweqawqwa",HexDir.EAST,"item_control")
 
     //缴械
+<<<<<<< Updated upstream
     registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"Expelliarmus")
+=======
+    registerPatternWrap("dqdaedeadqdaede",HexDir.EAST,"expelliarmus")
+>>>>>>> Stashed changes
 
     //惑心
     registerPatternWrap("dwewdweqawqwaewqqqwaw",HexDir.EAST,"puzzle")
 
     //复生
+<<<<<<< Updated upstream
     registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"Resurrectionem")
+=======
+    registerPatternWrap("wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",HexDir.NORTH_EAST,"resurrectionem")
+>>>>>>> Stashed changes
 
     //提线木偶之策略
     registerPatternWrap("qaawawaaq",HexDir.EAST,"allay_move")
@@ -159,8 +197,46 @@ StartupEvents.registry('hexcasting:action', e => {
     //混杂悦灵
     registerPatternWrap("daaedewdqdqdqdqdqdadwewewewewew",HexDir.WEST,"allay_mix")
 
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
      
+=======
+    //锚定现实
+    registerPatternWrap("qaqeqwedqedwwwdewdwq",HexDir.NORTH_EAST,"chunkloader_permanent")
+
+    //创建临时稳定锚
+    registerPatternWrap("aawewewaqweedeewqawewe",HexDir.NORTH_EAST,"entity_anchor")
+
+    //开启临时门径
+    registerPatternWrap("wwaqqqqqeawqwqwqwqwqw",HexDir.EAST,'lesser_gate')
+
+    //关闭临时门径
+    registerPatternWrap("wwaqqqqqe",HexDir.EAST,'lesser_gate/close')
+
+    //吸纳媒质
+    registerPatternWrap("qdwae",HexDir.EAST,'personal_media')
+
+    //加速成长
+    registerPatternWrap("wadaweeeeew",HexDir.SOUTH_EAST,"grow_up")
+
+    //移星
+    registerPatternWrap("weedwaqqwdewewewewewe",HexDir.SOUTH_EAST,"time_add")
+
+    //记忆
+    registerPatternWrap("qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq",HexDir.NORTH_EAST,"memory")
+
+    //附魔师之纯化
+    registerPatternWrap("awaeqwawq",HexDir.NORTH_EAST,"get_enchant")
+
+    //附魔师之策略
+    registerPatternWrap("dwdqewdwe",HexDir.NORTH_WEST,"give_enchant")
+
+    //铁砧之馏化
+    registerPatternWrap("qawwwwaqeeeaqwwqaee",HexDir.EAST,"enchant_add")
+
+
+
+>>>>>>> Stashed changes
 
 
 

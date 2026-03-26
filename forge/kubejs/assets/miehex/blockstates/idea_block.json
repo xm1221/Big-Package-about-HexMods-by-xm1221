@@ -5,6 +5,7 @@
 		},
 		"variant=1": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 			"model": "minecraft:block/brown_glazed_terracotta"
 		},
 		"variant=2": {
@@ -838,6 +839,8 @@
 		"variant=278": {
 			"model": "minecraft:block/crimson_stairs"
 =======
+=======
+>>>>>>> Stashed changes
 			"model": "minecraft:block/stone_stairs"
 		},
 		"variant=2": {
@@ -1670,12 +1673,16 @@
 		},
 		"variant=278": {
 			"model": "minecraft:block/bedrock"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 		},
 		"variant=279": {
 			"model": "minecraft:block/dried_kelp_block"
 		},
 		"variant=280": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 			"model": "minecraft:block/respawn_anchor"
 		},
@@ -3218,6 +3225,8 @@
 		"variant=793": {
 			"model": "minecraft:block/crying_obsidian"
 =======
+=======
+>>>>>>> Stashed changes
 			"model": "farmersdelight:block/gray_canvas_sign"
 		},
 		"variant=281": {
@@ -4758,12 +4767,16 @@
 		},
 		"variant=793": {
 			"model": "minecraft:block/deepslate_copper_ore"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 		},
 		"variant=794": {
 			"model": "minecraft:block/large_fern"
 		},
 		"variant=795": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 			"model": "minecraft:block/jungle_trapdoor"
 		},
@@ -7320,6 +7333,8 @@
 		"variant=1646": {
 			"model": "farmersdelight:block/brown_mushroom_colony"
 =======
+=======
+>>>>>>> Stashed changes
 			"model": "minecraft:block/lime_concrete_powder"
 		},
 		"variant=796": {
@@ -9877,6 +9892,3444 @@
 		},
 		"variant=1647": {
 			"model": "minecraft:block/tall_grass"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+		},
+		"variant=1648": {
+			"model": "minecraft:block/netherrack"
+		},
+		"variant=1649": {
+			"model": "storagedrawers:block/bamboo_half_drawers_2"
+		},
+		"variant=1650": {
+			"model": "farmersdelight:block/safety_net"
+		},
+		"variant=1651": {
+			"model": "minecraft:block/orange_banner"
+		},
+		"variant=1652": {
+			"model": "minecraft:block/white_glazed_terracotta"
+		},
+		"variant=1653": {
+			"model": "minecells:block/orange_wilted_leaves"
+		},
+		"variant=1654": {
+			"model": "minecraft:block/fire_coral_wall_fan"
+		},
+		"variant=1655": {
+			"model": "farmersdelight:block/white_canvas_sign"
+		},
+		"variant=1656": {
+			"model": "minecraft:block/cyan_carpet"
+		},
+		"variant=1657": {
+			"model": "minecraft:block/yellow_wool"
+		},
+		"variant=1658": {
+			"model": "minecraft:block/polished_diorite_stairs"
+		},
+		"variant=1659": {
+			"model": "minecraft:block/light_blue_bed"
+		},
+		"variant=1660": {
+			"model": "minecells:block/insufferable_crypt_doorway"
+		},
+		"variant=1661": {
+			"model": "minecells:block/ramparts_flag"
+		},
+		"variant=1662": {
+			"model": "minecraft:block/blackstone"
+		},
+		"variant=1663": {
+			"model": "minecraft:block/pink_tulip"
+		},
+		"variant=1664": {
+			"model": "minecraft:block/oak_wood"
+		},
+		"variant=1665": {
+			"model": "create:block/polished_cut_deepslate_wall"
+		},
+		"variant=1666": {
+			"model": "create:block/asurine"
+		},
+		"variant=1667": {
+			"model": "create:block/waxed_exposed_copper_tiles"
+		},
+		"variant=1668": {
+			"model": "minecraft:block/black_banner"
+		},
+		"variant=1669": {
+			"model": "botania:block/natura_pylon"
+		},
+		"variant=1670": {
+			"model": "create:block/cut_deepslate_wall"
+		},
+		"variant=1671": {
+			"model": "botania:block/mana_quartz_pillar"
+		},
+		"variant=1672": {
+			"model": "minecraft:block/smooth_basalt"
+		},
+		"variant=1673": {
+			"model": "minecraft:block/light_gray_candle"
+		},
+		"variant=1674": {
+			"model": "create:block/mangrove_window_pane"
+		},
+		"variant=1675": {
+			"model": "botania:block/azulejo_14"
+		},
+		"variant=1676": {
+			"model": "create:block/warped_window_pane"
+		},
+		"variant=1677": {
+			"model": "minecraft:block/stripped_mangrove_wood"
+		},
+		"variant=1678": {
+			"model": "minecraft:block/bell"
+		},
+		"variant=1679": {
+			"model": "hexcasting:block/conjured_light"
+		},
+		"variant=1680": {
+			"model": "minecraft:block/mangrove_button"
+		},
+		"variant=1681": {
+			"model": "minecraft:block/bubble_column"
+		},
+		"variant=1682": {
+			"model": "botania:block/gray_shiny_flower"
+		},
+		"variant=1683": {
+			"model": "minecraft:block/cobblestone_wall"
+		},
+		"variant=1684": {
+			"model": "minecraft:block/mangrove_door"
+		},
+		"variant=1685": {
+			"model": "minecraft:block/waxed_weathered_cut_copper_stairs"
+		},
+		"variant=1686": {
+			"model": "botania:block/metamorphic_mountain_bricks_slab"
+		},
+		"variant=1687": {
+			"model": "minecraft:block/cherry_sapling"
+		},
+		"variant=1688": {
+			"model": "botania:block/agricarnation_chibi"
+		},
+		"variant=1689": {
+			"model": "minecraft:block/sandstone_wall"
+		},
+		"variant=1690": {
+			"model": "botania:block/livingrock_bricks_slab"
+		},
+		"variant=1691": {
+			"model": "create:block/mechanical_mixer"
+		},
+		"variant=1692": {
+			"model": "kaleidoscope_cookery:block/table_spruce"
+		},
+		"variant=1693": {
+			"model": "minecraft:block/lapis_block"
+		},
+		"variant=1694": {
+			"model": "botania:block/livingwood_planks"
+		},
+		"variant=1695": {
+			"model": "botania:block/glimmering_dreamwood"
+		},
+		"variant=1696": {
+			"model": "create:block/layered_calcite"
+		},
+		"variant=1697": {
+			"model": "farmersdelight:block/sweet_berry_cheesecake"
+		},
+		"variant=1698": {
+			"model": "botania:block/potted_light_gray_mushroom"
+		},
+		"variant=1699": {
+			"model": "minecraft:block/magenta_candle"
+		},
+		"variant=1700": {
+			"model": "botania:block/potted_daffomill"
+		},
+		"variant=1701": {
+			"model": "create:block/controls"
+		},
+		"variant=1702": {
+			"model": "create:block/wooden_bracket"
+		},
+		"variant=1703": {
+			"model": "create:block/small_crimsite_bricks"
+		},
+		"variant=1704": {
+			"model": "botania:block/gray_double_flower"
+		},
+		"variant=1705": {
+			"model": "minecraft:block/vine"
+		},
+		"variant=1706": {
+			"model": "minecraft:block/chiseled_polished_blackstone"
+		},
+		"variant=1707": {
+			"model": "botania:block/apothecary_mesa"
+		},
+		"variant=1708": {
+			"model": "create:block/vertical_framed_glass_pane"
+		},
+		"variant=1709": {
+			"model": "minecraft:block/yellow_concrete_powder"
+		},
+		"variant=1710": {
+			"model": "botania:block/chiseled_livingrock_bricks"
+		},
+		"variant=1711": {
+			"model": "botania:block/apothecary_livingrock"
+		},
+		"variant=1712": {
+			"model": "botania:block/light_blue_floating_flower"
+		},
+		"variant=1713": {
+			"model": "dimdoors:block/red_ancient_fabric"
+		},
+		"variant=1714": {
+			"model": "dimdoors:block/brown_ancient_fabric"
+		},
+		"variant=1715": {
+			"model": "minecraft:block/gold_ore"
+		},
+		"variant=1716": {
+			"model": "minecraft:block/bamboo_fence"
+		},
+		"variant=1717": {
+			"model": "minecraft:block/crimson_stairs"
+		},
+		"variant=1718": {
+			"model": "minecraft:block/cobbled_deepslate_slab"
+		},
+		"variant=1719": {
+			"model": "create:block/small_dripstone_bricks"
+		},
+		"variant=1720": {
+			"model": "dimdoors:block/deepslate_stairs"
+		},
+		"variant=1721": {
+			"model": "create:block/depot"
+		},
+		"variant=1722": {
+			"model": "minecraft:block/andesite_stairs"
+		},
+		"variant=1723": {
+			"model": "create:block/black_sail"
+		},
+		"variant=1724": {
+			"model": "botania:block/glimmering_stripped_livingwood"
+		},
+		"variant=1725": {
+			"model": "botania:block/brown_mystical_flower"
+		},
+		"variant=1726": {
+			"model": "create:block/factory_gauge"
+		},
+		"variant=1727": {
+			"model": "minecraft:block/cherry_wall_sign"
+		},
+		"variant=1728": {
+			"model": "create:block/belt"
+		},
+		"variant=1729": {
+			"model": "minecraft:block/gray_wool"
+		},
+		"variant=1730": {
+			"model": "minecraft:block/white_banner"
+		},
+		"variant=1731": {
+			"model": "minecraft:block/warped_stairs"
+		},
+		"variant=1732": {
+			"model": "minecraft:block/white_stained_glass_pane"
+		},
+		"variant=1733": {
+			"model": "create:block/pink_valve_handle"
+		},
+		"variant=1734": {
+			"model": "minecraft:block/polished_granite_stairs"
+		},
+		"variant=1735": {
+			"model": "minecraft:block/cherry_trapdoor"
+		},
+		"variant=1736": {
+			"model": "create:block/item_drain"
+		},
+		"variant=1737": {
+			"model": "botania:block/potted_lime_mystical_flower"
+		},
+		"variant=1738": {
+			"model": "botania:block/kekimurus"
+		},
+		"variant=1739": {
+			"model": "minecraft:block/birch_door"
+		},
+		"variant=1740": {
+			"model": "minecraft:block/blue_stained_glass"
+		},
+		"variant=1741": {
+			"model": "hexcasting:block/amethyst_tiles"
+		},
+		"variant=1742": {
+			"model": "botania:block/azulejo_4"
+		},
+		"variant=1743": {
+			"model": "botania:block/shimmerwood_planks_stairs"
+		},
+		"variant=1744": {
+			"model": "create:block/gray_seat"
+		},
+		"variant=1745": {
+			"model": "dimdoors:block/driftwood_wood"
+		},
+		"variant=1746": {
+			"model": "farmersdelight:block/rice_bag"
+		},
+		"variant=1747": {
+			"model": "create:block/cut_limestone_bricks"
+		},
+		"variant=1748": {
+			"model": "botania:block/gourmaryllis"
+		},
+		"variant=1749": {
+			"model": "botania:block/floating_marimorphosis_chibi"
+		},
+		"variant=1750": {
+			"model": "create:block/cut_crimsite_brick_stairs"
+		},
+		"variant=1751": {
+			"model": "botania:block/corporea_crystal_cube"
+		},
+		"variant=1752": {
+			"model": "create:block/shaft"
+		},
+		"variant=1753": {
+			"model": "botania:block/azulejo_15"
+		},
+		"variant=1754": {
+			"model": "botania:block/metamorphic_forest_bricks"
+		},
+		"variant=1755": {
+			"model": "extrabotany:block/twinstar"
+		},
+		"variant=1756": {
+			"model": "minecraft:block/mangrove_roots"
+		},
+		"variant=1757": {
+			"model": "dimdoors:block/gravel_wall"
+		},
+		"variant=1758": {
+			"model": "extrabotany:block/potted_moonlight_lily"
+		},
+		"variant=1759": {
+			"model": "minecraft:block/bamboo_sign"
+		},
+		"variant=1760": {
+			"model": "create:block/blue_valve_handle"
+		},
+		"variant=1761": {
+			"model": "minecraft:block/scaffolding"
+		},
+		"variant=1762": {
+			"model": "botania:block/black_mushroom"
+		},
+		"variant=1763": {
+			"model": "botania:block/corporea_block"
+		},
+		"variant=1764": {
+			"model": "farmersdelight:block/stuffed_pumpkin_block"
+		},
+		"variant=1765": {
+			"model": "minecraft:block/potted_cactus"
+		},
+		"variant=1766": {
+			"model": "botania:block/potted_entropinnyum"
+		},
+		"variant=1767": {
+			"model": "minecraft:block/crimson_trapdoor"
+		},
+		"variant=1768": {
+			"model": "minecraft:block/carved_pumpkin"
+		},
+		"variant=1769": {
+			"model": "minecraft:block/jungle_door"
+		},
+		"variant=1770": {
+			"model": "create:block/polished_cut_granite"
+		},
+		"variant=1771": {
+			"model": "minecraft:block/mangrove_wood"
+		},
+		"variant=1772": {
+			"model": "minecraft:block/magma_block"
+		},
+		"variant=1773": {
+			"model": "create:block/deepslate_pillar"
+		},
+		"variant=1774": {
+			"model": "botania:block/prism"
+		},
+		"variant=1775": {
+			"model": "minecraft:block/green_stained_glass_pane"
+		},
+		"variant=1776": {
+			"model": "minecraft:block/blackstone"
+		},
+		"variant=1777": {
+			"model": "minecraft:block/stone_brick_slab"
+		},
+		"variant=1778": {
+			"model": "minecraft:block/cobbled_deepslate_wall"
+		},
+		"variant=1779": {
+			"model": "botania:block/light_gray_shiny_flower"
+		},
+		"variant=1780": {
+			"model": "create:block/dripstone_pillar"
+		},
+		"variant=1781": {
+			"model": "minecraft:block/green_bed"
+		},
+		"variant=1782": {
+			"model": "minecraft:block/lily_pad"
+		},
+		"variant=1783": {
+			"model": "minecraft:block/mossy_cobblestone_slab"
+		},
+		"variant=1784": {
+			"model": "dimdoors:block/purple_ancient_fabric"
+		},
+		"variant=1785": {
+			"model": "hexcasting:block/edified_planks"
+		},
+		"variant=1786": {
+			"model": "botania:block/metamorphic_forest_stone_wall"
+		},
+		"variant=1787": {
+			"model": "minecraft:block/magenta_stained_glass"
+		},
+		"variant=1788": {
+			"model": "kaleidoscope_cookery:block/chair_bamboo"
+		},
+		"variant=1789": {
+			"model": "create:block/andesite_door"
+		},
+		"variant=1790": {
+			"model": "create:block/layered_asurine"
+		},
+		"variant=1791": {
+			"model": "minecraft:block/potted_lily_of_the_valley"
+		},
+		"variant=1792": {
+			"model": "minecraft:block/waxed_exposed_copper"
+		},
+		"variant=1793": {
+			"model": "minecraft:block/red_glazed_terracotta"
+		},
+		"variant=1794": {
+			"model": "minecraft:block/crimson_fence"
+		},
+		"variant=1795": {
+			"model": "botania:block/livingrock_slate"
+		},
+		"variant=1796": {
+			"model": "minecraft:block/dried_kelp_block"
+		},
+		"variant=1797": {
+			"model": "extrabotany:block/woodienia"
+		},
+		"variant=1798": {
+			"model": "dimdoors:block/unfolded_block"
+		},
+		"variant=1799": {
+			"model": "farmersdelight:block/rice_roll_medley_block"
+		},
+		"variant=1800": {
+			"model": "botania:block/drum_canopy"
+		},
+		"variant=1801": {
+			"model": "botania:block/yellow_pavement_stairs"
+		},
+		"variant=1802": {
+			"model": "create:block/brass_bars"
+		},
+		"variant=1803": {
+			"model": "minecraft:block/dragon_egg"
+		},
+		"variant=1804": {
+			"model": "minecraft:block/dead_fire_coral_wall_fan"
+		},
+		"variant=1805": {
+			"model": "create:block/layered_tuff"
+		},
+		"variant=1806": {
+			"model": "create:block/mechanical_crafter"
+		},
+		"variant=1807": {
+			"model": "minecraft:block/potted_crimson_roots"
+		},
+		"variant=1808": {
+			"model": "create:block/hand_crank"
+		},
+		"variant=1809": {
+			"model": "minecraft:block/beehive"
+		},
+		"variant=1810": {
+			"model": "hexcasting:block/amethyst_edified_leaves"
+		},
+		"variant=1811": {
+			"model": "minecraft:block/end_portal_frame"
+		},
+		"variant=1812": {
+			"model": "botania:block/manastar"
+		},
+		"variant=1813": {
+			"model": "hexdim:block/skybox"
+		},
+		"variant=1814": {
+			"model": "minecraft:block/potted_oxeye_daisy"
+		},
+		"variant=1815": {
+			"model": "create:block/magenta_postbox"
+		},
+		"variant=1816": {
+			"model": "minecraft:block/crimson_planks"
+		},
+		"variant=1817": {
+			"model": "minecraft:block/acacia_wood"
+		},
+		"variant=1818": {
+			"model": "create:block/schematicannon"
+		},
+		"variant=1819": {
+			"model": "extrabotany:block/potted_mirrowtunia"
+		},
+		"variant=1820": {
+			"model": "hexcasting:block/stripped_edified_wood"
+		},
+		"variant=1821": {
+			"model": "minecraft:block/calcite"
+		},
+		"variant=1822": {
+			"model": "minecraft:block/tall_grass"
+		},
+		"variant=1823": {
+			"model": "create:block/cyan_table_cloth"
+		},
+		"variant=1824": {
+			"model": "minecraft:block/granite_slab"
+		},
+		"variant=1825": {
+			"model": "create:block/polished_cut_dripstone_stairs"
+		},
+		"variant=1826": {
+			"model": "botania:block/shulk_me_not"
+		},
+		"variant=1827": {
+			"model": "botania:block/blue_buried_petals"
+		},
+		"variant=1828": {
+			"model": "botania:block/potted_magenta_mystical_flower"
+		},
+		"variant=1829": {
+			"model": "botania:block/orange_mushroom"
+		},
+		"variant=1830": {
+			"model": "minecraft:block/horn_coral_block"
+		},
+		"variant=1831": {
+			"model": "minecraft:block/weathered_cut_copper_slab"
+		},
+		"variant=1832": {
+			"model": "create:block/cyan_valve_handle"
+		},
+		"variant=1833": {
+			"model": "minecraft:block/potted_azure_bluet"
+		},
+		"variant=1834": {
+			"model": "kaleidoscope_cookery:block/chili_crop"
+		},
+		"variant=1835": {
+			"model": "create:block/cut_calcite_brick_wall"
+		},
+		"variant=1836": {
+			"model": "botania:block/pattern_framed_livingwood"
+		},
+		"variant=1837": {
+			"model": "botania:block/shimmerwood_planks_slab"
+		},
+		"variant=1838": {
+			"model": "botania:block/enchanter"
+		},
+		"variant=1839": {
+			"model": "create:block/brass_encased_cogwheel"
+		},
+		"variant=1840": {
+			"model": "botania:block/yellow_double_flower"
+		},
+		"variant=1841": {
+			"model": "botania:block/floating_clayconia_chibi"
+		},
+		"variant=1842": {
+			"model": "hexcasting:block/quenched_allay_bricks"
+		},
+		"variant=1843": {
+			"model": "botania:block/magenta_petal_block"
+		},
+		"variant=1844": {
+			"model": "create:block/red_seat"
+		},
+		"variant=1845": {
+			"model": "dimdoors:block/clay_wall"
+		},
+		"variant=1846": {
+			"model": "minecraft:block/diorite_stairs"
+		},
+		"variant=1847": {
+			"model": "farmersdelight:block/beetroot_crate"
+		},
+		"variant=1848": {
+			"model": "minecraft:block/dark_oak_wall_sign"
+		},
+		"variant=1849": {
+			"model": "minecraft:block/potted_jungle_sapling"
+		},
+		"variant=1850": {
+			"model": "create:block/schematic_table"
+		},
+		"variant=1851": {
+			"model": "dimdoors:block/rust"
+		},
+		"variant=1852": {
+			"model": "minecraft:block/jungle_sapling"
+		},
+		"variant=1853": {
+			"model": "botania:block/pink_double_flower"
+		},
+		"variant=1854": {
+			"model": "minecraft:block/nether_portal"
+		},
+		"variant=1855": {
+			"model": "hexical:block/pedestal"
+		},
+		"variant=1856": {
+			"model": "minecraft:block/crying_obsidian"
+		},
+		"variant=1857": {
+			"model": "botania:block/green_pavement_stairs"
+		},
+		"variant=1858": {
+			"model": "botania:block/metamorphic_mesa_bricks_stairs"
+		},
+		"variant=1859": {
+			"model": "create:block/cut_veridium_slab"
+		},
+		"variant=1860": {
+			"model": "botania:block/light_gray_floating_flower"
+		},
+		"variant=1861": {
+			"model": "minecraft:block/raw_gold_block"
+		},
+		"variant=1862": {
+			"model": "create:block/rose_quartz_tiles"
+		},
+		"variant=1863": {
+			"model": "extrabotany:block/floating_blood_enchantress"
+		},
+		"variant=1864": {
+			"model": "minecraft:block/polished_diorite"
+		},
+		"variant=1865": {
+			"model": "create:block/orange_sail"
+		},
+		"variant=1866": {
+			"model": "botania:block/potted_munchdew"
+		},
+		"variant=1867": {
+			"model": "botania:block/potted_purple_mystical_flower"
+		},
+		"variant=1868": {
+			"model": "botania:block/metamorphic_desert_cobblestone_stairs"
+		},
+		"variant=1869": {
+			"model": "create:block/deployer"
+		},
+		"variant=1870": {
+			"model": "create:block/polished_cut_dripstone_wall"
+		},
+		"variant=1871": {
+			"model": "minecraft:block/purple_terracotta"
+		},
+		"variant=1872": {
+			"model": "kaleidoscope_cookery:block/suspicious_stir_fry"
+		},
+		"variant=1873": {
+			"model": "minecraft:block/flower_pot"
+		},
+		"variant=1874": {
+			"model": "minecraft:block/orange_candle"
+		},
+		"variant=1875": {
+			"model": "botania:block/metamorphic_mountain_cobblestone_stairs"
+		},
+		"variant=1876": {
+			"model": "minecraft:block/green_terracotta"
+		},
+		"variant=1877": {
+			"model": "botania:block/metamorphic_desert_stone"
+		},
+		"variant=1878": {
+			"model": "create:block/polished_cut_limestone_stairs"
+		},
+		"variant=1879": {
+			"model": "minecraft:block/crimson_roots"
+		},
+		"variant=1880": {
+			"model": "minecraft:block/black_carpet"
+		},
+		"variant=1881": {
+			"model": "minecraft:block/nether_sprouts"
+		},
+		"variant=1882": {
+			"model": "minecraft:block/yellow_stained_glass"
+		},
+		"variant=1883": {
+			"model": "botania:block/azulejo_7"
+		},
+		"variant=1884": {
+			"model": "minecraft:block/acacia_sapling"
+		},
+		"variant=1885": {
+			"model": "create:block/cut_andesite_brick_stairs"
+		},
+		"variant=1886": {
+			"model": "extrabotany:block/floating_tinkle"
+		},
+		"variant=1887": {
+			"model": "minecraft:block/pink_terracotta"
+		},
+		"variant=1888": {
+			"model": "botania:block/gray_mushroom"
+		},
+		"variant=1889": {
+			"model": "hexcasting:block/amethyst_bricks_small"
+		},
+		"variant=1890": {
+			"model": "create:block/polished_cut_calcite_wall"
+		},
+		"variant=1891": {
+			"model": "minecraft:block/lectern"
+		},
+		"variant=1892": {
+			"model": "minecraft:block/waxed_exposed_cut_copper"
+		},
+		"variant=1893": {
+			"model": "botania:block/spectrolus"
+		},
+		"variant=1894": {
+			"model": "botania:block/livingwood_fence_gate"
+		},
+		"variant=1895": {
+			"model": "minecraft:block/zombie_wall_head"
+		},
+		"variant=1896": {
+			"model": "botania:block/potted_tigerseye"
+		},
+		"variant=1897": {
+			"model": "kaleidoscope_cookery:block/stockpot"
+		},
+		"variant=1898": {
+			"model": "create:block/small_scorchia_brick_slab"
+		},
+		"variant=1899": {
+			"model": "create:block/netherite_backtank"
+		},
+		"variant=1900": {
+			"model": "extrabotany:block/smooth_elementium_quartz_stairs"
+		},
+		"variant=1901": {
+			"model": "minecraft:block/blue_terracotta"
+		},
+		"variant=1902": {
+			"model": "minecraft:block/birch_wall_sign"
+		},
+		"variant=1903": {
+			"model": "minecraft:block/cauldron"
+		},
+		"variant=1904": {
+			"model": "create:block/polished_cut_scorchia_wall"
+		},
+		"variant=1905": {
+			"model": "minecraft:block/deepslate_coal_ore"
+		},
+		"variant=1906": {
+			"model": "minecraft:block/crimson_wall_sign"
+		},
+		"variant=1907": {
+			"model": "botania:block/metamorphic_mesa_bricks_slab"
+		},
+		"variant=1908": {
+			"model": "minecraft:block/bubble_coral"
+		},
+		"variant=1909": {
+			"model": "create:block/copycat_panel"
+		},
+		"variant=1910": {
+			"model": "extrabotany:block/pedestal_livingrock"
+		},
+		"variant=1911": {
+			"model": "create:block/brown_valve_handle"
+		},
+		"variant=1912": {
+			"model": "create:block/cut_scorchia"
+		},
+		"variant=1913": {
+			"model": "hexcasting:block/amethyst_pillar"
+		},
+		"variant=1914": {
+			"model": "botania:block/terrasteel_block"
+		},
+		"variant=1915": {
+			"model": "minecraft:block/cherry_stairs"
+		},
+		"variant=1916": {
+			"model": "botania:block/terra_plate"
+		},
+		"variant=1917": {
+			"model": "minecraft:block/detector_rail"
+		},
+		"variant=1918": {
+			"model": "extrabotany:block/potted_resoncund"
+		},
+		"variant=1919": {
+			"model": "minecraft:block/potted_acacia_sapling"
+		},
+		"variant=1920": {
+			"model": "create:block/layered_granite"
+		},
+		"variant=1921": {
+			"model": "dimdoors:block/sand_slab"
+		},
+		"variant=1922": {
+			"model": "dimdoors:block/cyan_fabric"
+		},
+		"variant=1923": {
+			"model": "extrabotany:block/enchanter"
+		},
+		"variant=1924": {
+			"model": "botania:block/toggle_light_relay"
+		},
+		"variant=1925": {
+			"model": "create:block/lime_table_cloth"
+		},
+		"variant=1926": {
+			"model": "dimdoors:block/marking_plate"
+		},
+		"variant=1927": {
+			"model": "botania:block/shimmerwood_planks"
+		},
+		"variant=1928": {
+			"model": "minecraft:block/polished_andesite"
+		},
+		"variant=1929": {
+			"model": "botania:block/tiny_potato"
+		},
+		"variant=1930": {
+			"model": "create:block/smart_fluid_pipe"
+		},
+		"variant=1931": {
+			"model": "create:block/haunted_bell"
+		},
+		"variant=1932": {
+			"model": "create:block/small_dripstone_brick_wall"
+		},
+		"variant=1933": {
+			"model": "minecraft:block/waxed_cut_copper_slab"
+		},
+		"variant=1934": {
+			"model": "create:block/cut_ochrum_wall"
+		},
+		"variant=1935": {
+			"model": "botania:block/floating_loonium"
+		},
+		"variant=1936": {
+			"model": "create:block/black_toolbox"
+		},
+		"variant=1937": {
+			"model": "botania:block/potted_medumone"
+		},
+		"variant=1938": {
+			"model": "minecraft:block/mangrove_planks"
+		},
+		"variant=1939": {
+			"model": "botania:block/daffomill"
+		},
+		"variant=1940": {
+			"model": "botania:block/dark_quartz_slab"
+		},
+		"variant=1941": {
+			"model": "kaleidoscope_cookery:block/pot"
+		},
+		"variant=1942": {
+			"model": "create:block/copper_shingles"
+		},
+		"variant=1943": {
+			"model": "create:block/layered_dripstone"
+		},
+		"variant=1944": {
+			"model": "minecraft:block/stripped_cherry_wood"
+		},
+		"variant=1945": {
+			"model": "minecraft:block/chiseled_stone_bricks"
+		},
+		"variant=1946": {
+			"model": "create:block/cut_limestone"
+		},
+		"variant=1947": {
+			"model": "create:block/purple_toolbox"
+		},
+		"variant=1948": {
+			"model": "minecraft:block/blue_candle"
+		},
+		"variant=1949": {
+			"model": "botania:block/dandelifeon"
+		},
+		"variant=1950": {
+			"model": "create:block/brown_seat"
+		},
+		"variant=1951": {
+			"model": "dimdoors:block/yellow_fabric"
+		},
+		"variant=1952": {
+			"model": "create:block/zinc_block"
+		},
+		"variant=1953": {
+			"model": "botania:block/elven_spreader"
+		},
+		"variant=1954": {
+			"model": "botania:block/potted_heisei_dream"
+		},
+		"variant=1955": {
+			"model": "kaleidoscope_cookery:block/braised_fish"
+		},
+		"variant=1956": {
+			"model": "minecraft:block/acacia_fence_gate"
+		},
+		"variant=1957": {
+			"model": "minecraft:block/cocoa"
+		},
+		"variant=1958": {
+			"model": "minecraft:block/warped_stem"
+		},
+		"variant=1959": {
+			"model": "create:block/black_valve_handle"
+		},
+		"variant=1960": {
+			"model": "hexcasting:block/slate_amethyst_pillar"
+		},
+		"variant=1961": {
+			"model": "minecraft:block/birch_pressure_plate"
+		},
+		"variant=1962": {
+			"model": "dimdoors:block/sand_wall"
+		},
+		"variant=1963": {
+			"model": "create:block/fake_track"
+		},
+		"variant=1964": {
+			"model": "botania:block/potted_shulk_me_not"
+		},
+		"variant=1965": {
+			"model": "botania:block/dreamwood_wall"
+		},
+		"variant=1966": {
+			"model": "create:block/mechanical_piston_head"
+		},
+		"variant=1967": {
+			"model": "extrabotany:block/potted_necrofleur"
+		},
+		"variant=1968": {
+			"model": "extrabotany:block/chiseled_elementium_quartz_block"
+		},
+		"variant=1969": {
+			"model": "botania:block/floating_rannuncarpus"
+		},
+		"variant=1970": {
+			"model": "minecraft:block/bamboo_mosaic"
+		},
+		"variant=1971": {
+			"model": "create:block/shadow_steel_casing"
+		},
+		"variant=1972": {
+			"model": "create:block/crimson_window_pane"
+		},
+		"variant=1973": {
+			"model": "minecraft:block/purple_concrete"
+		},
+		"variant=1974": {
+			"model": "botania:block/potted_bellethorn"
+		},
+		"variant=1975": {
+			"model": "minecraft:block/pink_concrete"
+		},
+		"variant=1976": {
+			"model": "minecraft:block/light_gray_concrete_powder"
+		},
+		"variant=1977": {
+			"model": "botania:block/blaze_quartz_stairs"
+		},
+		"variant=1978": {
+			"model": "create:block/hose_pulley"
+		},
+		"variant=1979": {
+			"model": "botania:block/potted_exoflame"
+		},
+		"variant=1980": {
+			"model": "create:block/cut_asurine_wall"
+		},
+		"variant=1981": {
+			"model": "create:block/polished_cut_scorchia_stairs"
+		},
+		"variant=1982": {
+			"model": "create:block/cut_veridium_bricks"
+		},
+		"variant=1983": {
+			"model": "minecraft:block/barrel"
+		},
+		"variant=1984": {
+			"model": "minecraft:block/chipped_anvil"
+		},
+		"variant=1985": {
+			"model": "create:block/lime_toolbox"
+		},
+		"variant=1986": {
+			"model": "kaleidoscope_cookery:block/lettuce_crop"
+		},
+		"variant=1987": {
+			"model": "minecraft:block/azure_bluet"
+		},
+		"variant=1988": {
+			"model": "minecraft:block/basalt"
+		},
+		"variant=1989": {
+			"model": "minecraft:block/red_carpet"
+		},
+		"variant=1990": {
+			"model": "create:block/train_trapdoor"
+		},
+		"variant=1991": {
+			"model": "minecraft:block/potted_pink_tulip"
+		},
+		"variant=1992": {
+			"model": "create:block/layered_veridium"
+		},
+		"variant=1993": {
+			"model": "create:block/cut_calcite_slab"
+		},
+		"variant=1994": {
+			"model": "minecraft:block/warped_fungus"
+		},
+		"variant=1995": {
+			"model": "create:block/yellow_valve_handle"
+		},
+		"variant=1996": {
+			"model": "hexcasting:block/scroll_paper"
+		},
+		"variant=1997": {
+			"model": "minecraft:block/crimson_hanging_sign"
+		},
+		"variant=1998": {
+			"model": "botania:block/cyan_double_flower"
+		},
+		"variant=1999": {
+			"model": "minecraft:block/candle_cake"
+		},
+		"variant=2000": {
+			"model": "create:block/refined_radiance_casing"
+		},
+		"variant=2001": {
+			"model": "extrabotany:block/potted_bellflower"
+		},
+		"variant=2002": {
+			"model": "minecraft:block/mangrove_slab"
+		},
+		"variant=2003": {
+			"model": "create:block/metal_bracket"
+		},
+		"variant=2004": {
+			"model": "minecraft:block/chorus_plant"
+		},
+		"variant=2005": {
+			"model": "create:block/lit_blaze_burner"
+		},
+		"variant=2006": {
+			"model": "minecraft:block/nether_quartz_ore"
+		},
+		"variant=2007": {
+			"model": "create:block/polished_cut_crimsite"
+		},
+		"variant=2008": {
+			"model": "botania:block/dreamwood_stairs"
+		},
+		"variant=2009": {
+			"model": "kaleidoscope_cookery:block/blaze_lamb_chop"
+		},
+		"variant=2010": {
+			"model": "botania:block/azulejo_5"
+		},
+		"variant=2011": {
+			"model": "create:block/cut_asurine_brick_stairs"
+		},
+		"variant=2012": {
+			"model": "minecraft:block/black_shulker_box"
+		},
+		"variant=2013": {
+			"model": "minecraft:block/dead_tube_coral_fan"
+		},
+		"variant=2014": {
+			"model": "minecraft:block/gray_bed"
+		},
+		"variant=2015": {
+			"model": "botania:block/fabulous_pool"
+		},
+		"variant=2016": {
+			"model": "minecraft:block/purple_candle_cake"
+		},
+		"variant=2017": {
+			"model": "extrabotany:block/reikarlily"
+		},
+		"variant=2018": {
+			"model": "create:block/waxed_weathered_copper_tile_stairs"
+		},
+		"variant=2019": {
+			"model": "minecraft:block/mangrove_trapdoor"
+		},
+		"variant=2020": {
+			"model": "create:block/polished_cut_veridium_wall"
+		},
+		"variant=2021": {
+			"model": "minecraft:block/brown_concrete_powder"
+		},
+		"variant=2022": {
+			"model": "create:block/lime_seat"
+		},
+		"variant=2023": {
+			"model": "farmersdelight:block/crimson_cabinet"
+		},
+		"variant=2024": {
+			"model": "botania:block/fel_pumpkin"
+		},
+		"variant=2025": {
+			"model": "botania:block/cacophonium_block"
+		},
+		"variant=2026": {
+			"model": "farmersdelight:block/warped_cabinet"
+		},
+		"variant=2027": {
+			"model": "create:block/water_wheel_structure"
+		},
+		"variant=2028": {
+			"model": "create:block/cut_granite"
+		},
+		"variant=2029": {
+			"model": "create:block/cut_granite_wall"
+		},
+		"variant=2030": {
+			"model": "create:block/turntable"
+		},
+		"variant=2031": {
+			"model": "create:block/clockwork_bearing"
+		},
+		"variant=2032": {
+			"model": "create:block/polished_cut_granite_slab"
+		},
+		"variant=2033": {
+			"model": "minecraft:block/oak_fence"
+		},
+		"variant=2034": {
+			"model": "botania:block/dreamwood_planks_slab"
+		},
+		"variant=2035": {
+			"model": "botania:block/dreamwood_planks"
+		},
+		"variant=2036": {
+			"model": "minecraft:block/oak_sapling"
+		},
+		"variant=2037": {
+			"model": "minecraft:block/lapis_ore"
+		},
+		"variant=2038": {
+			"model": "kaleidoscope_cookery:block/cook_stool_warped"
+		},
+		"variant=2039": {
+			"model": "minecraft:block/packed_mud"
+		},
+		"variant=2040": {
+			"model": "minecraft:block/netherrack"
+		},
+		"variant=2041": {
+			"model": "minecraft:block/white_concrete_powder"
+		},
+		"variant=2042": {
+			"model": "minecraft:block/oak_button"
+		},
+		"variant=2043": {
+			"model": "minecraft:block/magenta_wall_banner"
+		},
+		"variant=2044": {
+			"model": "minecraft:block/brain_coral_block"
+		},
+		"variant=2045": {
+			"model": "minecraft:block/spruce_sapling"
+		},
+		"variant=2046": {
+			"model": "create:block/polished_cut_scoria_wall"
+		},
+		"variant=2047": {
+			"model": "create:block/oak_window"
+		},
+		"variant=2048": {
+			"model": "create:block/small_deepslate_brick_slab"
+		},
+		"variant=2049": {
+			"model": "botania:block/black_floating_flower"
+		},
+		"variant=2050": {
+			"model": "hexdebug:block/enlightened_splicing_table"
+		},
+		"variant=2051": {
+			"model": "minecraft:block/weeping_vines_plant"
+		},
+		"variant=2052": {
+			"model": "minecraft:block/frogspawn"
+		},
+		"variant=2053": {
+			"model": "minecraft:block/medium_amethyst_bud"
+		},
+		"variant=2054": {
+			"model": "dimdoors:block/clay_stairs"
+		},
+		"variant=2055": {
+			"model": "farmersdelight:block/roast_chicken_block"
+		},
+		"variant=2056": {
+			"model": "minecraft:block/birch_wood"
+		},
+		"variant=2057": {
+			"model": "hexcasting:block/slate_bricks_small"
+		},
+		"variant=2058": {
+			"model": "create:block/copper_tiles"
+		},
+		"variant=2059": {
+			"model": "create:block/purple_sail"
+		},
+		"variant=2060": {
+			"model": "minecraft:block/cyan_concrete"
+		},
+		"variant=2061": {
+			"model": "botania:block/orechid_ignem"
+		},
+		"variant=2062": {
+			"model": "botania:block/mossy_dreamwood_planks"
+		},
+		"variant=2063": {
+			"model": "create:block/polished_cut_scorchia"
+		},
+		"variant=2064": {
+			"model": "botania:block/floating_heisei_dream"
+		},
+		"variant=2065": {
+			"model": "extrabotany:block/floating_sunshine_lily"
+		},
+		"variant=2066": {
+			"model": "minecraft:block/gold_block"
+		},
+		"variant=2067": {
+			"model": "minecraft:block/birch_trapdoor"
+		},
+		"variant=2068": {
+			"model": "minecraft:block/cobbled_deepslate"
+		},
+		"variant=2069": {
+			"model": "minecraft:block/daylight_detector"
+		},
+		"variant=2070": {
+			"model": "botania:block/blaze_quartz_slab"
+		},
+		"variant=2071": {
+			"model": "minecraft:block/fire_coral"
+		},
+		"variant=2072": {
+			"model": "minecraft:block/stone_stairs"
+		},
+		"variant=2073": {
+			"model": "botania:block/floating_pure_daisy"
+		},
+		"variant=2074": {
+			"model": "create:block/rotation_speed_controller"
+		},
+		"variant=2075": {
+			"model": "create:block/pulse_extender"
+		},
+		"variant=2076": {
+			"model": "botania:block/potted_pollidisiac"
+		},
+		"variant=2077": {
+			"model": "create:block/andesite_table_cloth"
+		},
+		"variant=2078": {
+			"model": "create:block/linear_chassis"
+		},
+		"variant=2079": {
+			"model": "minecraft:block/bamboo_hanging_sign"
+		},
+		"variant=2080": {
+			"model": "create:block/cut_andesite_slab"
+		},
+		"variant=2081": {
+			"model": "create:block/ornate_iron_window_pane"
+		},
+		"variant=2082": {
+			"model": "create:block/small_limestone_brick_stairs"
+		},
+		"variant=2083": {
+			"model": "minecraft:block/dead_bubble_coral_wall_fan"
+		},
+		"variant=2084": {
+			"model": "create:block/waxed_copper_shingle_stairs"
+		},
+		"variant=2085": {
+			"model": "minecraft:block/warped_trapdoor"
+		},
+		"variant=2086": {
+			"model": "minecraft:block/deepslate_tile_slab"
+		},
+		"variant=2087": {
+			"model": "create:block/blue_toolbox"
+		},
+		"variant=2088": {
+			"model": "create:block/mysterious_cuckoo_clock"
+		},
+		"variant=2089": {
+			"model": "minecraft:block/white_candle_cake"
+		},
+		"variant=2090": {
+			"model": "botania:block/corporea_brick"
+		},
+		"variant=2091": {
+			"model": "create:block/cut_calcite_stairs"
+		},
+		"variant=2092": {
+			"model": "minecraft:block/acacia_stairs"
+		},
+		"variant=2093": {
+			"model": "hexautomata:block/focus_bundle"
+		},
+		"variant=2094": {
+			"model": "minecraft:block/lightning_rod"
+		},
+		"variant=2095": {
+			"model": "dimdoors:block/yellow_ancient_fabric"
+		},
+		"variant=2096": {
+			"model": "botania:block/floating_tangleberrie"
+		},
+		"variant=2097": {
+			"model": "create:block/small_tuff_bricks"
+		},
+		"variant=2098": {
+			"model": "hexcasting:block/edified_tile"
+		},
+		"variant=2099": {
+			"model": "minecraft:block/bamboo_fence_gate"
+		},
+		"variant=2100": {
+			"model": "botania:block/potted_tangleberrie_chibi"
+		},
+		"variant=2101": {
+			"model": "minecraft:block/purple_candle"
+		},
+		"variant=2102": {
+			"model": "hexcasting:block/amethyst_sconce"
+		},
+		"variant=2103": {
+			"model": "extrabotany:block/necrofleur_chibi"
+		},
+		"variant=2104": {
+			"model": "minecraft:block/red_stained_glass_pane"
+		},
+		"variant=2105": {
+			"model": "botania:block/mana_quartz"
+		},
+		"variant=2106": {
+			"model": "dimdoors:block/unraveled_spike"
+		},
+		"variant=2107": {
+			"model": "minecraft:block/lilac"
+		},
+		"variant=2108": {
+			"model": "minecraft:block/lever"
+		},
+		"variant=2109": {
+			"model": "minecraft:block/rail"
+		},
+		"variant=2110": {
+			"model": "minecraft:block/snow_block"
+		},
+		"variant=2111": {
+			"model": "focalworks:block/impetus/memory"
+		},
+		"variant=2112": {
+			"model": "minecraft:block/heavy_weighted_pressure_plate"
+		},
+		"variant=2113": {
+			"model": "minecraft:block/cherry_fence_gate"
+		},
+		"variant=2114": {
+			"model": "minecraft:block/soul_fire"
+		},
+		"variant=2115": {
+			"model": "minecraft:block/dragon_wall_head"
+		},
+		"variant=2116": {
+			"model": "botania:block/brown_floating_flower"
+		},
+		"variant=2117": {
+			"model": "botania:block/metamorphic_taiga_cobblestone"
+		},
+		"variant=2118": {
+			"model": "botania:block/potted_brown_shiny_flower"
+		},
+		"variant=2119": {
+			"model": "botania:block/livingrock_stairs"
+		},
+		"variant=2120": {
+			"model": "botania:block/alfheim_portal"
+		},
+		"variant=2121": {
+			"model": "botania:block/labellia"
+		},
+		"variant=2122": {
+			"model": "minecraft:block/pink_glazed_terracotta"
+		},
+		"variant=2123": {
+			"model": "botania:block/blaze_quartz"
+		},
+		"variant=2124": {
+			"model": "create:block/bound_cardboard_block"
+		},
+		"variant=2125": {
+			"model": "botania:block/pink_buried_petals"
+		},
+		"variant=2126": {
+			"model": "botania:block/metamorphic_fungal_bricks_stairs"
+		},
+		"variant=2127": {
+			"model": "minecraft:block/dispenser"
+		},
+		"variant=2128": {
+			"model": "minecraft:block/cherry_button"
+		},
+		"variant=2129": {
+			"model": "extrabotany:block/elementium_quartz_block"
+		},
+		"variant=2130": {
+			"model": "minecraft:block/bamboo_stairs"
+		},
+		"variant=2131": {
+			"model": "minecraft:block/purple_concrete_powder"
+		},
+		"variant=2132": {
+			"model": "minecraft:block/melon"
+		},
+		"variant=2133": {
+			"model": "minecraft:block/mossy_stone_brick_slab"
+		},
+		"variant=2134": {
+			"model": "botania:block/floating_spectrolus"
+		},
+		"variant=2135": {
+			"model": "create:block/waxed_oxidized_copper_shingle_slab"
+		},
+		"variant=2136": {
+			"model": "extrabotany:block/gaia_quartz_slab"
+		},
+		"variant=2137": {
+			"model": "create:block/polished_cut_scoria"
+		},
+		"variant=2138": {
+			"model": "botania:block/light_blue_mystical_flower"
+		},
+		"variant=2139": {
+			"model": "minecraft:block/light_gray_wall_banner"
+		},
+		"variant=2140": {
+			"model": "botania:block/metamorphic_plains_stone_stairs"
+		},
+		"variant=2141": {
+			"model": "create:block/light_blue_seat"
+		},
+		"variant=2142": {
+			"model": "create:block/packager"
+		},
+		"variant=2143": {
+			"model": "botania:block/potted_pink_shiny_flower"
+		},
+		"variant=2144": {
+			"model": "create:block/cut_tuff_bricks"
+		},
+		"variant=2145": {
+			"model": "dimdoors:block/black_ancient_fabric"
+		},
+		"variant=2146": {
+			"model": "create:block/oak_window_pane"
+		},
+		"variant=2147": {
+			"model": "botania:block/piston_relay"
+		},
+		"variant=2148": {
+			"model": "minecraft:block/brown_mushroom_block"
+		},
+		"variant=2149": {
+			"model": "minecraft:block/light_gray_stained_glass_pane"
+		},
+		"variant=2150": {
+			"model": "minecraft:block/sculk_sensor"
+		},
+		"variant=2151": {
+			"model": "create:block/small_deepslate_brick_wall"
+		},
+		"variant=2152": {
+			"model": "kaleidoscope_cookery:block/desert_style_sashimi"
+		},
+		"variant=2153": {
+			"model": "create:block/red_table_cloth"
+		},
+		"variant=2154": {
+			"model": "kaleidoscope_cookery:block/cook_stool_acacia"
+		},
+		"variant=2155": {
+			"model": "dimdoors:block/driftwood_stairs"
+		},
+		"variant=2156": {
+			"model": "create:block/oxidized_copper_shingle_slab"
+		},
+		"variant=2157": {
+			"model": "minecraft:block/stripped_bamboo_block"
+		},
+		"variant=2158": {
+			"model": "kaleidoscope_cookery:block/nether_style_sashimi"
+		},
+		"variant=2159": {
+			"model": "create:block/small_scoria_bricks"
+		},
+		"variant=2160": {
+			"model": "minecraft:block/deepslate_diamond_ore"
+		},
+		"variant=2161": {
+			"model": "minecraft:block/potted_blue_orchid"
+		},
+		"variant=2162": {
+			"model": "create:block/waxed_weathered_copper_tile_slab"
+		},
+		"variant=2163": {
+			"model": "minecraft:block/bamboo_trapdoor"
+		},
+		"variant=2164": {
+			"model": "botania:block/purple_double_flower"
+		},
+		"variant=2165": {
+			"model": "botania:block/potted_light_blue_mushroom"
+		},
+		"variant=2166": {
+			"model": "create:block/nozzle"
+		},
+		"variant=2167": {
+			"model": "dimdoors:block/gray_ancient_fabric"
+		},
+		"variant=2168": {
+			"model": "minecraft:block/sculk_shrieker"
+		},
+		"variant=2169": {
+			"model": "create:block/lectern_controller"
+		},
+		"variant=2170": {
+			"model": "botania:block/apothecary_taiga"
+		},
+		"variant=2171": {
+			"model": "minecraft:block/sea_lantern"
+		},
+		"variant=2172": {
+			"model": "minecraft:block/dead_brain_coral_block"
+		},
+		"variant=2173": {
+			"model": "minecraft:block/polished_granite_slab"
+		},
+		"variant=2174": {
+			"model": "minecraft:block/oak_sign"
+		},
+		"variant=2175": {
+			"model": "dimdoors:block/lime_fabric"
+		},
+		"variant=2176": {
+			"model": "kaleidoscope_cookery:block/chili_ristra"
+		},
+		"variant=2177": {
+			"model": "botania:block/munchdew"
+		},
+		"variant=2178": {
+			"model": "botania:block/potted_bellethorn_chibi"
+		},
+		"variant=2179": {
+			"model": "create:block/small_calcite_brick_slab"
+		},
+		"variant=2180": {
+			"model": "farmersdelight:block/pink_canvas_sign"
+		},
+		"variant=2181": {
+			"model": "minecraft:block/mossy_stone_brick_stairs"
+		},
+		"variant=2182": {
+			"model": "create:block/cyan_sail"
+		},
+		"variant=2183": {
+			"model": "farmersdelight:block/rich_soil_farmland"
+		},
+		"variant=2184": {
+			"model": "kaleidoscope_cookery:block/chair_dark_oak"
+		},
+		"variant=2185": {
+			"model": "minecraft:block/chiseled_quartz_block"
+		},
+		"variant=2186": {
+			"model": "minecraft:block/cyan_glazed_terracotta"
+		},
+		"variant=2187": {
+			"model": "dimdoors:block/cyan_ancient_fabric"
+		},
+		"variant=2188": {
+			"model": "farmersdelight:block/wild_tomatoes"
+		},
+		"variant=2189": {
+			"model": "botania:block/infused_grass"
+		},
+		"variant=2190": {
+			"model": "minecraft:block/yellow_wool"
+		},
+		"variant=2191": {
+			"model": "botania:block/potted_daybloom_motif"
+		},
+		"variant=2192": {
+			"model": "create:block/cut_scorchia_brick_wall"
+		},
+		"variant=2193": {
+			"model": "create:block/cyan_toolbox"
+		},
+		"variant=2194": {
+			"model": "hexal:block/mediafied_storage"
+		},
+		"variant=2195": {
+			"model": "create:block/cuckoo_clock"
+		},
+		"variant=2196": {
+			"model": "minecraft:block/light_gray_carpet"
+		},
+		"variant=2197": {
+			"model": "minecraft:block/rooted_dirt"
+		},
+		"variant=2198": {
+			"model": "minecraft:block/dark_oak_fence_gate"
+		},
+		"variant=2199": {
+			"model": "botania:block/hydroangeas_motif"
+		},
+		"variant=2200": {
+			"model": "hexcasting:block/slate_amethyst_bricks_small"
+		},
+		"variant=2201": {
+			"model": "dimdoors:block/amalgam_ore"
+		},
+		"variant=2202": {
+			"model": "hexical:block/periwinkle"
+		},
+		"variant=2203": {
+			"model": "ftbquests:block/screen_1"
+		},
+		"variant=2204": {
+			"model": "minecraft:block/dark_oak_planks"
+		},
+		"variant=2205": {
+			"model": "create:block/small_crimsite_brick_slab"
+		},
+		"variant=2206": {
+			"model": "botania:block/potted_marimorphosis_chibi"
+		},
+		"variant=2207": {
+			"model": "minecraft:block/diorite_wall"
+		},
+		"variant=2208": {
+			"model": "create:block/cut_ochrum_stairs"
+		},
+		"variant=2209": {
+			"model": "minecraft:block/crimson_sign"
+		},
+		"variant=2210": {
+			"model": "botania:block/potted_kekimurus"
+		},
+		"variant=2211": {
+			"model": "kaleidoscope_cookery:block/chair_cherry"
+		},
+		"variant=2212": {
+			"model": "minecraft:block/cherry_wall_hanging_sign"
+		},
+		"variant=2213": {
+			"model": "create:block/small_limestone_brick_slab"
+		},
+		"variant=2214": {
+			"model": "create:block/windmill_bearing"
+		},
+		"variant=2215": {
+			"model": "create:block/cyan_seat"
+		},
+		"variant=2216": {
+			"model": "dimdoors:block/driftwood_gate"
+		},
+		"variant=2217": {
+			"model": "minecraft:block/redstone_wire"
+		},
+		"variant=2218": {
+			"model": "minecraft:block/horn_coral_wall_fan"
+		},
+		"variant=2219": {
+			"model": "create:block/cut_limestone_wall"
+		},
+		"variant=2220": {
+			"model": "botania:block/potted_rafflowsia"
+		},
+		"variant=2221": {
+			"model": "create:block/gearshift"
+		},
+		"variant=2222": {
+			"model": "create:block/track_observer"
+		},
+		"variant=2223": {
+			"model": "create:block/cut_scorchia_brick_stairs"
+		},
+		"variant=2224": {
+			"model": "minecraft:block/end_stone_brick_slab"
+		},
+		"variant=2225": {
+			"model": "create:block/polished_cut_ochrum_wall"
+		},
+		"variant=2226": {
+			"model": "minecraft:block/brown_stained_glass"
+		},
+		"variant=2227": {
+			"model": "create:block/millstone"
+		},
+		"variant=2228": {
+			"model": "botania:block/green_mystical_flower"
+		},
+		"variant=2229": {
+			"model": "minecraft:block/lime_terracotta"
+		},
+		"variant=2230": {
+			"model": "dimdoors:block/black_fabric"
+		},
+		"variant=2231": {
+			"model": "farmersdelight:block/full_tatami_mat"
+		},
+		"variant=2232": {
+			"model": "farmersdelight:block/light_blue_canvas_wall_sign"
+		},
+		"variant=2233": {
+			"model": "minecraft:block/fire_coral_fan"
+		},
+		"variant=2234": {
+			"model": "botania:block/metamorphic_taiga_stone_wall"
+		},
+		"variant=2235": {
+			"model": "farmersdelight:block/red_canvas_wall_sign"
+		},
+		"variant=2236": {
+			"model": "botania:block/chiseled_dark_quartz"
+		},
+		"variant=2237": {
+			"model": "hexcasting:block/edified_pressure_plate"
+		},
+		"variant=2238": {
+			"model": "minecraft:block/blue_ice"
+		},
+		"variant=2239": {
+			"model": "dimdoors:block/unraveled_slab"
+		},
+		"variant=2240": {
+			"model": "create:block/content_observer"
+		},
+		"variant=2241": {
+			"model": "create:block/small_tuff_brick_stairs"
+		},
+		"variant=2242": {
+			"model": "botania:block/orange_mystical_flower"
+		},
+		"variant=2243": {
+			"model": "minecraft:block/red_sandstone"
+		},
+		"variant=2244": {
+			"model": "minecraft:block/nether_wart"
+		},
+		"variant=2245": {
+			"model": "minecraft:block/command_block"
+		},
+		"variant=2246": {
+			"model": "minecraft:block/potted_white_tulip"
+		},
+		"variant=2247": {
+			"model": "minecraft:block/rose_bush"
+		},
+		"variant=2248": {
+			"model": "minecraft:block/warped_button"
+		},
+		"variant=2249": {
+			"model": "botania:block/gaia_wall_head"
+		},
+		"variant=2250": {
+			"model": "create:block/exposed_copper_shingles"
+		},
+		"variant=2251": {
+			"model": "botania:block/floating_manastar"
+		},
+		"variant=2252": {
+			"model": "create:block/exposed_copper_shingle_slab"
+		},
+		"variant=2253": {
+			"model": "minecraft:block/prismarine_brick_stairs"
+		},
+		"variant=2254": {
+			"model": "minecraft:block/red_sandstone_slab"
+		},
+		"variant=2255": {
+			"model": "minecraft:block/air"
+		},
+		"variant=2256": {
+			"model": "minecraft:block/brain_coral"
+		},
+		"variant=2257": {
+			"model": "botania:block/floating_bellethorn"
+		},
+		"variant=2258": {
+			"model": "create:block/small_ochrum_bricks"
+		},
+		"variant=2259": {
+			"model": "minecraft:block/waxed_exposed_cut_copper_stairs"
+		},
+		"variant=2260": {
+			"model": "minecraft:block/purple_carpet"
+		},
+		"variant=2261": {
+			"model": "minecraft:block/infested_deepslate"
+		},
+		"variant=2262": {
+			"model": "minecraft:block/light_weighted_pressure_plate"
+		},
+		"variant=2263": {
+			"model": "extrabotany:block/elementium_quartz_stairs"
+		},
+		"variant=2264": {
+			"model": "create:block/cut_deepslate_stairs"
+		},
+		"variant=2265": {
+			"model": "botania:block/potted_nightshade_motif"
+		},
+		"variant=2266": {
+			"model": "botania:block/mana_glass_pane"
+		},
+		"variant=2267": {
+			"model": "minecraft:block/bamboo_wall_sign"
+		},
+		"variant=2268": {
+			"model": "botania:block/gray_mystical_flower"
+		},
+		"variant=2269": {
+			"model": "create:block/smart_chute"
+		},
+		"variant=2270": {
+			"model": "farmersdelight:block/acacia_cabinet"
+		},
+		"variant=2271": {
+			"model": "ftbquests:block/aux_task_screen"
+		},
+		"variant=2272": {
+			"model": "extrabotany:block/chiseled_gaia_quartz_block"
+		},
+		"variant=2273": {
+			"model": "botania:block/light_gray_buried_petals"
+		},
+		"variant=2274": {
+			"model": "botania:block/blue_mystical_flower"
+		},
+		"variant=2275": {
+			"model": "create:block/polished_cut_deepslate"
+		},
+		"variant=2276": {
+			"model": "create:block/crushing_wheel_controller"
+		},
+		"variant=2277": {
+			"model": "create:block/cut_ochrum_brick_wall"
+		},
+		"variant=2278": {
+			"model": "minecraft:block/green_stained_glass"
+		},
+		"variant=2279": {
+			"model": "minecraft:block/quartz_stairs"
+		},
+		"variant=2280": {
+			"model": "minecraft:block/brown_candle"
+		},
+		"variant=2281": {
+			"model": "farmersdelight:block/rich_soil"
+		},
+		"variant=2282": {
+			"model": "kaleidoscope_cookery:block/frost_lamb_chop"
+		},
+		"variant=2283": {
+			"model": "kaleidoscope_cookery:block/chair_jungle"
+		},
+		"variant=2284": {
+			"model": "create:block/light_blue_toolbox"
+		},
+		"variant=2285": {
+			"model": "kaleidoscope_cookery:block/chair_spruce"
+		},
+		"variant=2286": {
+			"model": "botania:block/corporea_slab"
+		},
+		"variant=2287": {
+			"model": "create:block/red_nixie_tube"
+		},
+		"variant=2288": {
+			"model": "minecraft:block/potted_dead_bush"
+		},
+		"variant=2289": {
+			"model": "botania:block/lime_shiny_flower"
+		},
+		"variant=2290": {
+			"model": "create:block/copper_tile_slab"
+		},
+		"variant=2291": {
+			"model": "minecraft:block/dark_oak_trapdoor"
+		},
+		"variant=2292": {
+			"model": "create:block/cut_asurine_slab"
+		},
+		"variant=2293": {
+			"model": "botania:block/orange_buried_petals"
+		},
+		"variant=2294": {
+			"model": "create:block/creative_crate"
+		},
+		"variant=2295": {
+			"model": "create:block/dark_oak_window"
+		},
+		"variant=2296": {
+			"model": "illagerinvasion:block/imbuing_table"
+		},
+		"variant=2297": {
+			"model": "botania:block/stripped_dreamwood_stairs"
+		},
+		"variant=2298": {
+			"model": "minecraft:block/nether_brick_slab"
+		},
+		"variant=2299": {
+			"model": "minecraft:block/jungle_slab"
+		},
+		"variant=2300": {
+			"model": "minecraft:block/mossy_cobblestone_stairs"
+		},
+		"variant=2301": {
+			"model": "minecraft:block/magenta_candle_cake"
+		},
+		"variant=2302": {
+			"model": "botania:block/sunny_quartz_slab"
+		},
+		"variant=2303": {
+			"model": "botania:block/metamorphic_mountain_stone"
+		},
+		"variant=2304": {
+			"model": "create:block/small_veridium_brick_wall"
+		},
+		"variant=2305": {
+			"model": "extrabotany:block/potted_omniviolet"
+		},
+		"variant=2306": {
+			"model": "minecraft:block/bamboo_door"
+		},
+		"variant=2307": {
+			"model": "hexcasting:block/amethyst_bricks"
+		},
+		"variant=2308": {
+			"model": "minecraft:block/spawner"
+		},
+		"variant=2309": {
+			"model": "create:block/stockpile_switch"
+		},
+		"variant=2310": {
+			"model": "minecraft:block/verdant_froglight"
+		},
+		"variant=2311": {
+			"model": "minecraft:block/end_stone_bricks"
+		},
+		"variant=2312": {
+			"model": "create:block/mechanical_bearing"
+		},
+		"variant=2313": {
+			"model": "minecraft:block/beacon"
+		},
+		"variant=2314": {
+			"model": "minecraft:block/gray_banner"
+		},
+		"variant=2315": {
+			"model": "create:block/green_toolbox"
+		},
+		"variant=2316": {
+			"model": "minecraft:block/acacia_hanging_sign"
+		},
+		"variant=2317": {
+			"model": "minecraft:block/dead_bush"
+		},
+		"variant=2318": {
+			"model": "minecraft:block/warped_nylium"
+		},
+		"variant=2319": {
+			"model": "create:block/cut_calcite"
+		},
+		"variant=2320": {
+			"model": "create:block/pink_nixie_tube"
+		},
+		"variant=2321": {
+			"model": "create:block/small_dripstone_brick_stairs"
+		},
+		"variant=2322": {
+			"model": "botania:block/lavender_quartz"
+		},
+		"variant=2323": {
+			"model": "kaleidoscope_cookery:block/cold_style_sashimi"
+		},
+		"variant=2324": {
+			"model": "minecraft:block/chain_command_block"
+		},
+		"variant=2325": {
+			"model": "minecraft:block/cartography_table"
+		},
+		"variant=2326": {
+			"model": "minecraft:block/oak_door"
+		},
+		"variant=2327": {
+			"model": "kaleidoscope_cookery:block/chair_acacia"
+		},
+		"variant=2328": {
+			"model": "minecraft:block/stripped_jungle_wood"
+		},
+		"variant=2329": {
+			"model": "dimdoors:block/green_fabric"
+		},
+		"variant=2330": {
+			"model": "minecraft:block/polished_diorite_slab"
+		},
+		"variant=2331": {
+			"model": "minecraft:block/polished_deepslate_wall"
+		},
+		"variant=2332": {
+			"model": "kaleidoscope_cookery:block/cook_stool_crimson"
+		},
+		"variant=2333": {
+			"model": "botania:block/floating_hopperhock_chibi"
+		},
+		"variant=2334": {
+			"model": "extrabotany:block/floating_manalink"
+		},
+		"variant=2335": {
+			"model": "botania:block/lavender_quartz_stairs"
+		},
+		"variant=2336": {
+			"model": "create:block/contraption_controls"
+		},
+		"variant=2337": {
+			"model": "create:block/deepslate_zinc_ore"
+		},
+		"variant=2338": {
+			"model": "kaleidoscope_cookery:block/crystal_lamb_chop"
+		},
+		"variant=2339": {
+			"model": "minecraft:block/potted_oak_sapling"
+		},
+		"variant=2340": {
+			"model": "botania:block/light_gray_mystical_flower"
+		},
+		"variant=2341": {
+			"model": "minecraft:block/yellow_candle_cake"
+		},
+		"variant=2342": {
+			"model": "create:block/mechanical_plough"
+		},
+		"variant=2343": {
+			"model": "create:block/andesite_alloy_block"
+		},
+		"variant=2344": {
+			"model": "extrabotany:block/elementium_quartz_pillar"
+		},
+		"variant=2345": {
+			"model": "botania:block/floating_bellethorn_chibi"
+		},
+		"variant=2346": {
+			"model": "extrabotany:block/power_frame"
+		},
+		"variant=2347": {
+			"model": "botania:block/magenta_mystical_flower"
+		},
+		"variant=2348": {
+			"model": "dimdoors:block/driftwood_log"
+		},
+		"variant=2349": {
+			"model": "minecraft:block/tube_coral_block"
+		},
+		"variant=2350": {
+			"model": "hexcasting:block/akashic_connector"
+		},
+		"variant=2351": {
+			"model": "farmersdelight:block/carrot_crate"
+		},
+		"variant=2352": {
+			"model": "minecraft:block/spore_blossom"
+		},
+		"variant=2353": {
+			"model": "botania:block/golden_grass"
+		},
+		"variant=2354": {
+			"model": "minecraft:block/oak_leaves"
+		},
+		"variant=2355": {
+			"model": "botania:block/magenta_double_flower"
+		},
+		"variant=2356": {
+			"model": "botania:block/potted_clayconia_chibi"
+		},
+		"variant=2357": {
+			"model": "botania:block/shimmerrock_stairs"
+		},
+		"variant=2358": {
+			"model": "minecraft:block/diorite_slab"
+		},
+		"variant=2359": {
+			"model": "dimdoors:block/netherrack_wall"
+		},
+		"variant=2360": {
+			"model": "create:block/lime_valve_handle"
+		},
+		"variant=2361": {
+			"model": "create:block/polished_cut_scorchia_slab"
+		},
+		"variant=2362": {
+			"model": "farmersdelight:block/rope"
+		},
+		"variant=2363": {
+			"model": "botania:block/elf_quartz"
+		},
+		"variant=2364": {
+			"model": "minecraft:block/powder_snow_cauldron"
+		},
+		"variant=2365": {
+			"model": "botania:block/gray_petal_block"
+		},
+		"variant=2366": {
+			"model": "create:block/andesite_encased_cogwheel"
+		},
+		"variant=2367": {
+			"model": "farmersdelight:block/budding_tomatoes"
+		},
+		"variant=2368": {
+			"model": "botania:block/cyan_buried_petals"
+		},
+		"variant=2369": {
+			"model": "hexcasting:block/edified_fence_gate"
+		},
+		"variant=2370": {
+			"model": "minecraft:block/iron_ore"
+		},
+		"variant=2371": {
+			"model": "botania:block/floating_bubbell"
+		},
+		"variant=2372": {
+			"model": "botania:block/livingrock_wall"
+		},
+		"variant=2373": {
+			"model": "botania:block/stripped_livingwood_log"
+		},
+		"variant=2374": {
+			"model": "minecraft:block/dead_fire_coral_fan"
+		},
+		"variant=2375": {
+			"model": "botania:block/pink_mystical_flower"
+		},
+		"variant=2376": {
+			"model": "create:block/dark_oak_window_pane"
+		},
+		"variant=2377": {
+			"model": "botania:block/metamorphic_fungal_bricks"
+		},
+		"variant=2378": {
+			"model": "create:block/cut_tuff_wall"
+		},
+		"variant=2379": {
+			"model": "minecraft:block/sandstone_slab"
+		},
+		"variant=2380": {
+			"model": "botania:block/apothecary_deepslate"
+		},
+		"variant=2381": {
+			"model": "farmersdelight:block/canvas_rug"
+		},
+		"variant=2382": {
+			"model": "create:block/encased_fluid_pipe"
+		},
+		"variant=2383": {
+			"model": "minecraft:block/magenta_concrete_powder"
+		},
+		"variant=2384": {
+			"model": "botania:block/sunny_quartz_pillar"
+		},
+		"variant=2385": {
+			"model": "minecraft:block/blue_glazed_terracotta"
+		},
+		"variant=2386": {
+			"model": "create:block/framed_glass_door"
+		},
+		"variant=2387": {
+			"model": "create:block/cut_diorite"
+		},
+		"variant=2388": {
+			"model": "minecraft:block/chorus_flower"
+		},
+		"variant=2389": {
+			"model": "kaleidoscope_cookery:block/tundra_style_sashimi"
+		},
+		"variant=2390": {
+			"model": "minecraft:block/petrified_oak_slab"
+		},
+		"variant=2391": {
+			"model": "create:block/white_toolbox"
+		},
+		"variant=2392": {
+			"model": "create:block/small_crimsite_brick_wall"
+		},
+		"variant=2393": {
+			"model": "minecraft:block/jungle_leaves"
+		},
+		"variant=2394": {
+			"model": "create:block/copper_bars"
+		},
+		"variant=2395": {
+			"model": "botania:block/potted_gray_mystical_flower"
+		},
+		"variant=2396": {
+			"model": "botania:block/azulejo_11"
+		},
+		"variant=2397": {
+			"model": "minecraft:block/jungle_log"
+		},
+		"variant=2398": {
+			"model": "botania:block/apothecary_desert"
+		},
+		"variant=2399": {
+			"model": "create:block/cut_diorite_bricks"
+		},
+		"variant=2400": {
+			"model": "botania:block/tangleberrie_chibi"
+		},
+		"variant=2401": {
+			"model": "kaleidoscope_cookery:block/stove"
+		},
+		"variant=2402": {
+			"model": "minecraft:block/smooth_red_sandstone_slab"
+		},
+		"variant=2403": {
+			"model": "botania:block/pattern_framed_dreamwood"
+		},
+		"variant=2404": {
+			"model": "create:block/yellow_table_cloth"
+		},
+		"variant=2405": {
+			"model": "create:block/small_calcite_brick_stairs"
+		},
+		"variant=2406": {
+			"model": "create:block/black_seat"
+		},
+		"variant=2407": {
+			"model": "minecraft:block/smooth_sandstone_slab"
+		},
+		"variant=2408": {
+			"model": "botania:block/yellow_shiny_flower"
+		},
+		"variant=2409": {
+			"model": "create:block/honey"
+		},
+		"variant=2410": {
+			"model": "minecraft:block/dark_oak_pressure_plate"
+		},
+		"variant=2411": {
+			"model": "create:block/horizontal_framed_glass"
+		},
+		"variant=2412": {
+			"model": "create:block/polished_cut_scoria_stairs"
+		},
+		"variant=2413": {
+			"model": "minecraft:block/mud"
+		},
+		"variant=2414": {
+			"model": "botania:block/yellow_petal_block"
+		},
+		"variant=2415": {
+			"model": "minecraft:block/polished_andesite_stairs"
+		},
+		"variant=2416": {
+			"model": "minecraft:block/red_mushroom"
+		},
+		"variant=2417": {
+			"model": "botania:block/sunny_quartz"
+		},
+		"variant=2418": {
+			"model": "botania:block/metamorphic_fungal_cobblestone_wall"
+		},
+		"variant=2419": {
+			"model": "kaleidoscope_cookery:block/cook_stool_jungle"
+		},
+		"variant=2420": {
+			"model": "extrabotany:block/floating_omniviolet"
+		},
+		"variant=2421": {
+			"model": "minecraft:block/white_tulip"
+		},
+		"variant=2422": {
+			"model": "create:block/small_veridium_brick_stairs"
+		},
+		"variant=2423": {
+			"model": "minecraft:block/brown_bed"
+		},
+		"variant=2424": {
+			"model": "dimdoors:block/deepslate_wall"
+		},
+		"variant=2425": {
+			"model": "minecraft:block/deepslate_tile_stairs"
+		},
+		"variant=2426": {
+			"model": "minecraft:block/fire_coral_block"
+		},
+		"variant=2427": {
+			"model": "botania:block/stripped_dreamwood_wall"
+		},
+		"variant=2428": {
+			"model": "farmersdelight:block/green_canvas_sign"
+		},
+		"variant=2429": {
+			"model": "create:block/waxed_weathered_copper_shingle_slab"
+		},
+		"variant=2430": {
+			"model": "create:block/cut_veridium_brick_stairs"
+		},
+		"variant=2431": {
+			"model": "botania:block/metamorphic_fungal_stone_slab"
+		},
+		"variant=2432": {
+			"model": "create:block/cut_granite_brick_slab"
+		},
+		"variant=2433": {
+			"model": "minecraft:block/light_blue_wall_banner"
+		},
+		"variant=2434": {
+			"model": "botania:block/yellow_mystical_flower"
+		},
+		"variant=2435": {
+			"model": "botania:block/potted_tangleberrie"
+		},
+		"variant=2436": {
+			"model": "minecraft:block/iron_bars"
+		},
+		"variant=2437": {
+			"model": "botania:block/white_shiny_flower"
+		},
+		"variant=2438": {
+			"model": "minecraft:block/chest"
+		},
+		"variant=2439": {
+			"model": "botania:block/potted_red_mushroom"
+		},
+		"variant=2440": {
+			"model": "botania:block/orange_petal_block"
+		},
+		"variant=2441": {
+			"model": "botania:block/drum_wild"
+		},
+		"variant=2442": {
+			"model": "botania:block/spectranthemum"
+		},
+		"variant=2443": {
+			"model": "farmersdelight:block/oak_cabinet"
+		},
+		"variant=2444": {
+			"model": "create:block/black_table_cloth"
+		},
+		"variant=2445": {
+			"model": "create:block/oxidized_copper_tiles"
+		},
+		"variant=2446": {
+			"model": "minecraft:block/deepslate_tiles"
+		},
+		"variant=2447": {
+			"model": "botania:block/floating_agricarnation"
+		},
+		"variant=2448": {
+			"model": "create:block/scorchia"
+		},
+		"variant=2449": {
+			"model": "minecraft:block/jungle_hanging_sign"
+		},
+		"variant=2450": {
+			"model": "botania:block/chiseled_metamorphic_mesa_bricks"
+		},
+		"variant=2451": {
+			"model": "minecraft:block/deepslate_brick_slab"
+		},
+		"variant=2452": {
+			"model": "minecraft:block/potted_allium"
+		},
+		"variant=2453": {
+			"model": "minecraft:block/birch_fence_gate"
+		},
+		"variant=2454": {
+			"model": "minecraft:block/horn_coral"
+		},
+		"variant=2455": {
+			"model": "botania:block/hourglass"
+		},
+		"variant=2456": {
+			"model": "minecraft:block/warped_wall_hanging_sign"
+		},
+		"variant=2457": {
+			"model": "minecraft:block/light_gray_stained_glass"
+		},
+		"variant=2458": {
+			"model": "farmersdelight:block/rice"
+		},
+		"variant=2459": {
+			"model": "minecraft:block/jungle_stairs"
+		},
+		"variant=2460": {
+			"model": "botania:block/apothecary_mossy"
+		},
+		"variant=2461": {
+			"model": "hexcasting:block/scroll_paper_lantern"
+		},
+		"variant=2462": {
+			"model": "botania:block/white_pavement_stairs"
+		},
+		"variant=2463": {
+			"model": "minecraft:block/black_stained_glass_pane"
+		},
+		"variant=2464": {
+			"model": "minecraft:block/mangrove_stairs"
+		},
+		"variant=2465": {
+			"model": "minecraft:block/dark_oak_hanging_sign"
+		},
+		"variant=2466": {
+			"model": "botania:block/mana_pylon"
+		},
+		"variant=2467": {
+			"model": "minecraft:block/stripped_oak_log"
+		},
+		"variant=2468": {
+			"model": "botania:block/blaze_block"
+		},
+		"variant=2469": {
+			"model": "minecraft:block/turtle_egg"
+		},
+		"variant=2470": {
+			"model": "minecraft:block/red_nether_brick_stairs"
+		},
+		"variant=2471": {
+			"model": "minecraft:block/sandstone_stairs"
+		},
+		"variant=2472": {
+			"model": "create:block/polished_cut_scoria_slab"
+		},
+		"variant=2473": {
+			"model": "botania:block/mossy_livingwood_planks"
+		},
+		"variant=2474": {
+			"model": "botania:block/infrangible_platform"
+		},
+		"variant=2475": {
+			"model": "farmersdelight:block/apple_pie"
+		},
+		"variant=2476": {
+			"model": "extrabotany:block/potted_enchanter"
+		},
+		"variant=2477": {
+			"model": "minecraft:block/potted_flowering_azalea_bush"
+		},
+		"variant=2478": {
+			"model": "create:block/cut_deepslate_slab"
+		},
+		"variant=2479": {
+			"model": "minecraft:block/slime_block"
+		},
+		"variant=2480": {
+			"model": "botania:block/lime_petal_block"
+		},
+		"variant=2481": {
+			"model": "botania:block/bellethorn_chibi"
+		},
+		"variant=2482": {
+			"model": "minecraft:block/blackstone_wall"
+		},
+		"variant=2483": {
+			"model": "botania:block/purple_floating_flower"
+		},
+		"variant=2484": {
+			"model": "dimdoors:block/netherrack_slab"
+		},
+		"variant=2485": {
+			"model": "create:block/acacia_window_pane"
+		},
+		"variant=2486": {
+			"model": "botania:block/chiseled_metamorphic_mountain_bricks"
+		},
+		"variant=2487": {
+			"model": "create:block/cut_diorite_stairs"
+		},
+		"variant=2488": {
+			"model": "create:block/ornate_iron_window"
+		},
+		"variant=2489": {
+			"model": "minecraft:block/deepslate_bricks"
+		},
+		"variant=2490": {
+			"model": "minecraft:block/smooth_red_sandstone"
+		},
+		"variant=2491": {
+			"model": "minecraft:block/dark_oak_wood"
+		},
+		"variant=2492": {
+			"model": "extrabotany:block/trade_orchid"
+		},
+		"variant=2493": {
+			"model": "hexical:block/sentinel_bed"
+		},
+		"variant=2494": {
+			"model": "minecraft:block/brown_wool"
+		},
+		"variant=2495": {
+			"model": "botania:block/diluted_pool"
+		},
+		"variant=2496": {
+			"model": "minecraft:block/cyan_candle"
+		},
+		"variant=2497": {
+			"model": "botania:block/azulejo_1"
+		},
+		"variant=2498": {
+			"model": "botania:block/corporea_brick_wall"
+		},
+		"variant=2499": {
+			"model": "create:block/waxed_exposed_copper_shingle_stairs"
+		},
+		"variant=2500": {
+			"model": "minecraft:block/dandelion"
+		},
+		"variant=2501": {
+			"model": "dimdoors:block/dark_sand"
+		},
+		"variant=2502": {
+			"model": "minecraft:block/pitcher_plant"
+		},
+		"variant=2503": {
+			"model": "farmersdelight:block/chocolate_pie"
+		},
+		"variant=2504": {
+			"model": "extrabotany:block/shadowium_block"
+		},
+		"variant=2505": {
+			"model": "minecraft:block/dark_oak_sign"
+		},
+		"variant=2506": {
+			"model": "create:block/mechanical_arm"
+		},
+		"variant=2507": {
+			"model": "botania:block/potted_solegnolia"
+		},
+		"variant=2508": {
+			"model": "botania:block/potted_loonium"
+		},
+		"variant=2509": {
+			"model": "dimdoors:block/stone_player"
+		},
+		"variant=2510": {
+			"model": "minecraft:block/bamboo"
+		},
+		"variant=2511": {
+			"model": "create:block/polished_cut_asurine"
+		},
+		"variant=2512": {
+			"model": "create:block/green_nixie_tube"
+		},
+		"variant=2513": {
+			"model": "botania:block/yellow_mushroom"
+		},
+		"variant=2514": {
+			"model": "farmersdelight:block/stove"
+		},
+		"variant=2515": {
+			"model": "botania:block/mana_detector"
+		},
+		"variant=2516": {
+			"model": "minecraft:block/blast_furnace"
+		},
+		"variant=2517": {
+			"model": "hexcasting:block/edified_wood"
+		},
+		"variant=2518": {
+			"model": "minecraft:block/white_concrete"
+		},
+		"variant=2519": {
+			"model": "extrabotany:block/potted_serenitian"
+		},
+		"variant=2520": {
+			"model": "extrabotany:block/necrofleur"
+		},
+		"variant=2521": {
+			"model": "minecraft:block/lime_bed"
+		},
+		"variant=2522": {
+			"model": "minecraft:block/large_amethyst_bud"
+		},
+		"variant=2523": {
+			"model": "minecraft:block/smooth_stone"
+		},
+		"variant=2524": {
+			"model": "create:block/flywheel"
+		},
+		"variant=2525": {
+			"model": "create:block/oxidized_copper_shingle_stairs"
+		},
+		"variant=2526": {
+			"model": "create:block/copper_shingle_slab"
+		},
+		"variant=2527": {
+			"model": "minecraft:block/black_candle_cake"
+		},
+		"variant=2528": {
+			"model": "botania:block/elf_quartz_pillar"
+		},
+		"variant=2529": {
+			"model": "botania:block/potted_spectrolus"
+		},
+		"variant=2530": {
+			"model": "dimdoors:block/red_sand_wall"
+		},
+		"variant=2531": {
+			"model": "extrabotany:block/floating_enchanter"
+		},
+		"variant=2532": {
+			"model": "minecraft:block/oxidized_cut_copper_stairs"
+		},
+		"variant=2533": {
+			"model": "create:block/green_valve_handle"
+		},
+		"variant=2534": {
+			"model": "botania:block/potted_bubbell_chibi"
+		},
+		"variant=2535": {
+			"model": "botania:block/chiseled_mana_quartz"
+		},
+		"variant=2536": {
+			"model": "create:block/creative_fluid_tank"
+		},
+		"variant=2537": {
+			"model": "minecraft:block/conduit"
+		},
+		"variant=2538": {
+			"model": "minecraft:block/flowering_azalea"
+		},
+		"variant=2539": {
+			"model": "minecraft:block/jungle_wall_hanging_sign"
+		},
+		"variant=2540": {
+			"model": "botania:block/metamorphic_mesa_bricks"
+		},
+		"variant=2541": {
+			"model": "minecraft:block/cracked_nether_bricks"
+		},
+		"variant=2542": {
+			"model": "botania:block/green_mushroom"
+		},
+		"variant=2543": {
+			"model": "minecraft:block/mangrove_sign"
+		},
+		"variant=2544": {
+			"model": "botania:block/bifrost_pane"
+		},
+		"variant=2545": {
+			"model": "minecraft:block/potted_dandelion"
+		},
+		"variant=2546": {
+			"model": "botania:block/black_double_flower"
+		},
+		"variant=2547": {
+			"model": "minecraft:block/purpur_stairs"
+		},
+		"variant=2548": {
+			"model": "minecraft:block/decorated_pot"
+		},
+		"variant=2549": {
+			"model": "extrabotany:block/smooth_gaia_quartz"
+		},
+		"variant=2550": {
+			"model": "create:block/waxed_oxidized_copper_shingles"
+		},
+		"variant=2551": {
+			"model": "create:block/orange_postbox"
+		},
+		"variant=2552": {
+			"model": "create:block/track"
+		},
+		"variant=2553": {
+			"model": "minecraft:block/brown_mushroom"
+		},
+		"variant=2554": {
+			"model": "botania:block/white_petal_block"
+		},
+		"variant=2555": {
+			"model": "minecraft:block/pearlescent_froglight"
+		},
+		"variant=2556": {
+			"model": "hexautomata:block/reactive_focus/hurt"
+		},
+		"variant=2557": {
+			"model": "botania:block/metamorphic_swamp_stone_slab"
+		},
+		"variant=2558": {
+			"model": "minecraft:block/ice"
+		},
+		"variant=2559": {
+			"model": "minecraft:block/ancient_debris"
+		},
+		"variant=2560": {
+			"model": "botania:block/metamorphic_desert_cobblestone"
+		},
+		"variant=2561": {
+			"model": "minecraft:block/pointed_dripstone"
+		},
+		"variant=2562": {
+			"model": "create:block/yellow_sail"
+		},
+		"variant=2563": {
+			"model": "extrabotany:block/gaia_quartz_block"
+		},
+		"variant=2564": {
+			"model": "botania:block/potted_purple_mushroom"
+		},
+		"variant=2565": {
+			"model": "minecraft:block/diamond_ore"
+		},
+		"variant=2566": {
+			"model": "botania:block/metamorphic_forest_cobblestone_stairs"
+		},
+		"variant=2567": {
+			"model": "farmersdelight:block/skillet"
+		},
+		"variant=2568": {
+			"model": "kaleidoscope_cookery:block/chair_crimson"
+		},
+		"variant=2569": {
+			"model": "botania:block/black_shiny_flower"
+		},
+		"variant=2570": {
+			"model": "minecraft:block/loom"
+		},
+		"variant=2571": {
+			"model": "minecraft:block/torch"
+		},
+		"variant=2572": {
+			"model": "minecraft:block/purple_wall_banner"
+		},
+		"variant=2573": {
+			"model": "minecraft:block/light_blue_carpet"
+		},
+		"variant=2574": {
+			"model": "botania:block/red_string_fertilizer"
+		},
+		"variant=2575": {
+			"model": "botania:block/chiseled_red_quartz"
+		},
+		"variant=2576": {
+			"model": "create:block/redstone_contact"
+		},
+		"variant=2577": {
+			"model": "minecraft:block/mud_brick_wall"
+		},
+		"variant=2578": {
+			"model": "minecraft:block/gray_terracotta"
+		},
+		"variant=2579": {
+			"model": "create:block/magenta_valve_handle"
+		},
+		"variant=2580": {
+			"model": "create:block/nixie_tube"
+		},
+		"variant=2581": {
+			"model": "extrabotany:block/bellflower"
+		},
+		"variant=2582": {
+			"model": "extrabotany:block/potted_blood_enchantress"
+		},
+		"variant=2583": {
+			"model": "botania:block/manasteel_block"
+		},
+		"variant=2584": {
+			"model": "minecraft:block/sniffer_egg"
+		},
+		"variant=2585": {
+			"model": "botania:block/floating_hydroangeas"
+		},
+		"variant=2586": {
+			"model": "create:block/diorite_pillar"
+		},
+		"variant=2587": {
+			"model": "kaleidoscope_cookery:block/table_bamboo"
+		},
+		"variant=2588": {
+			"model": "minecraft:block/oak_pressure_plate"
+		},
+		"variant=2589": {
+			"model": "botania:block/white_pavement"
+		},
+		"variant=2590": {
+			"model": "create:block/rose_quartz_block"
+		},
+		"variant=2591": {
+			"model": "create:block/cut_asurine_stairs"
+		},
+		"variant=2592": {
+			"model": "minecraft:block/light_gray_terracotta"
+		},
+		"variant=2593": {
+			"model": "create:block/copper_shingle_stairs"
+		},
+		"variant=2594": {
+			"model": "minecraft:block/dead_tube_coral_wall_fan"
+		},
+		"variant=2595": {
+			"model": "botania:block/starfield"
+		},
+		"variant=2596": {
+			"model": "farmersdelight:block/magenta_canvas_wall_sign"
+		},
+		"variant=2597": {
+			"model": "minecraft:block/quartz_bricks"
+		},
+		"variant=2598": {
+			"model": "botania:block/blue_pavement"
+		},
+		"variant=2599": {
+			"model": "create:block/waxed_copper_tiles"
+		},
+		"variant=2600": {
+			"model": "create:block/cut_tuff_slab"
+		},
+		"variant=2601": {
+			"model": "dimdoors:block/driftwood_trapdoor"
+		},
+		"variant=2602": {
+			"model": "create:block/glass_fluid_pipe"
+		},
+		"variant=2603": {
+			"model": "dimdoors:block/clod_ore"
+		},
+		"variant=2604": {
+			"model": "extrabotany:block/orichalcos_block"
+		},
+		"variant=2605": {
+			"model": "extrabotany:block/dimension_catalyst"
+		},
+		"variant=2606": {
+			"model": "minecraft:block/acacia_planks"
+		},
+		"variant=2607": {
+			"model": "create:block/clutch"
+		},
+		"variant=2608": {
+			"model": "create:block/andesite_belt_funnel"
+		},
+		"variant=2609": {
+			"model": "create:block/cut_calcite_brick_stairs"
+		},
+		"variant=2610": {
+			"model": "minecraft:block/cherry_log"
+		},
+		"variant=2611": {
+			"model": "gravity_changer:block/plating"
+		},
+		"variant=2612": {
+			"model": "minecraft:block/white_carpet"
+		},
+		"variant=2613": {
+			"model": "minecraft:block/pitcher_crop"
+		},
+		"variant=2614": {
+			"model": "create:block/train_door"
+		},
+		"variant=2615": {
+			"model": "extrabotany:block/potted_sunshine_lily"
+		},
+		"variant=2616": {
+			"model": "minecraft:block/pink_stained_glass_pane"
+		},
+		"variant=2617": {
+			"model": "minecraft:block/orange_concrete"
+		},
+		"variant=2618": {
+			"model": "create:block/brown_nixie_tube"
+		},
+		"variant=2619": {
+			"model": "minecraft:block/acacia_door"
+		},
+		"variant=2620": {
+			"model": "minecraft:block/gray_carpet"
+		},
+		"variant=2621": {
+			"model": "kaleidoscope_cookery:block/spicy_chicken"
+		},
+		"variant=2622": {
+			"model": "minecraft:block/oak_slab"
+		},
+		"variant=2623": {
+			"model": "minecraft:block/iron_block"
+		},
+		"variant=2624": {
+			"model": "farmersdelight:block/rice_panicle"
+		},
+		"variant=2625": {
+			"model": "minecraft:block/warped_wall_sign"
+		},
+		"variant=2626": {
+			"model": "create:block/cut_granite_slab"
+		},
+		"variant=2627": {
+			"model": "dimdoors:block/unraveled_fence"
+		},
+		"variant=2628": {
+			"model": "ftbquests:block/screen_7"
+		},
+		"variant=2629": {
+			"model": "botania:block/chiseled_metamorphic_taiga_bricks"
+		},
+		"variant=2630": {
+			"model": "extrabotany:block/floating_necrofleur_chibi"
+		},
+		"variant=2631": {
+			"model": "minecraft:block/stripped_dark_oak_wood"
+		},
+		"variant=2632": {
+			"model": "botania:block/corporea_index"
+		},
+		"variant=2633": {
+			"model": "create:block/powered_toggle_latch"
+		},
+		"variant=2634": {
+			"model": "minecraft:block/dark_prismarine"
+		},
+		"variant=2635": {
+			"model": "create:block/small_asurine_brick_slab"
+		},
+		"variant=2636": {
+			"model": "botania:block/alchemy_catalyst"
+		},
+		"variant=2637": {
+			"model": "botania:block/corporea_interceptor"
+		},
+		"variant=2638": {
+			"model": "create:block/small_granite_brick_slab"
+		},
+		"variant=2639": {
+			"model": "minecraft:block/orange_bed"
+		},
+		"variant=2640": {
+			"model": "create:block/pink_sail"
+		},
+		"variant=2641": {
+			"model": "minecraft:block/raw_iron_block"
+		},
+		"variant=2642": {
+			"model": "kaleidoscope_cookery:block/chair_birch"
+		},
+		"variant=2643": {
+			"model": "minecraft:block/acacia_pressure_plate"
+		},
+		"variant=2644": {
+			"model": "minecraft:block/cut_red_sandstone"
+		},
+		"variant=2645": {
+			"model": "botania:block/mossy_livingrock_bricks_wall"
+		},
+		"variant=2646": {
+			"model": "minecraft:block/lime_banner"
+		},
+		"variant=2647": {
+			"model": "create:block/small_asurine_bricks"
+		},
+		"variant=2648": {
+			"model": "create:block/mechanical_press"
+		},
+		"variant=2649": {
+			"model": "create:block/experience_block"
+		},
+		"variant=2650": {
+			"model": "hexcasting:block/edified_panel"
+		},
+		"variant=2651": {
+			"model": "create:block/cut_andesite_brick_slab"
+		},
+		"variant=2652": {
+			"model": "botania:block/potted_green_mystical_flower"
+		},
+		"variant=2653": {
+			"model": "minecraft:block/pink_candle"
+		},
+		"variant=2654": {
+			"model": "minecraft:block/tinted_glass"
+		},
+		"variant=2655": {
+			"model": "create:block/waxed_weathered_copper_shingle_stairs"
+		},
+		"variant=2656": {
+			"model": "create:block/cyan_postbox"
+		},
+		"variant=2657": {
+			"model": "dimdoors:block/gravel_slab"
+		},
+		"variant=2658": {
+			"model": "botania:block/metamorphic_mountain_bricks"
+		},
+		"variant=2659": {
+			"model": "dimdoors:block/gravel_stairs"
+		},
+		"variant=2660": {
+			"model": "minecraft:block/acacia_leaves"
+		},
+		"variant=2661": {
+			"model": "minecraft:block/orange_banner"
+		},
+		"variant=2662": {
+			"model": "extrabotany:block/mana_charger"
+		},
+		"variant=2663": {
+			"model": "create:block/white_table_cloth"
+		},
+		"variant=2664": {
+			"model": "extrabotany:block/blood_enchantress"
+		},
+		"variant=2665": {
+			"model": "minecraft:block/packed_ice"
+		},
+		"variant=2666": {
+			"model": "botania:block/potted_hydroangeas"
+		},
+		"variant=2667": {
+			"model": "botania:block/potted_cyan_shiny_flower"
+		},
+		"variant=2668": {
+			"model": "create:block/cut_diorite_brick_wall"
+		},
+		"variant=2669": {
+			"model": "create:block/cut_limestone_brick_wall"
+		},
+		"variant=2670": {
+			"model": "create:block/red_toolbox"
+		},
+		"variant=2671": {
+			"model": "minecraft:block/chiseled_nether_bricks"
+		},
+		"variant=2672": {
+			"model": "minecraft:block/waxed_weathered_copper"
+		},
+		"variant=2673": {
+			"model": "botania:block/metamorphic_plains_bricks"
+		},
+		"variant=2674": {
+			"model": "minecraft:block/jungle_trapdoor"
+		},
+		"variant=2675": {
+			"model": "botania:block/metamorphic_fungal_cobblestone_stairs"
+		},
+		"variant=2676": {
+			"model": "botania:block/runic_altar"
+		},
+		"variant=2677": {
+			"model": "dimdoors:block/quartz_door"
+		},
+		"variant=2678": {
+			"model": "botania:block/tangleberrie"
+		},
+		"variant=2679": {
+			"model": "create:block/waxed_exposed_copper_tile_slab"
+		},
+		"variant=2680": {
+			"model": "create:block/cut_tuff"
+		},
+		"variant=2681": {
+			"model": "create:block/brass_tunnel"
+		},
+		"variant=2682": {
+			"model": "dimdoors:block/end_stone_stairs"
+		},
+		"variant=2683": {
+			"model": "botania:block/metamorphic_swamp_stone_wall"
+		},
+		"variant=2684": {
+			"model": "create:block/controller_rail"
+		},
+		"variant=2685": {
+			"model": "kaleidoscope_cookery:block/fruit_basket"
+		},
+		"variant=2686": {
+			"model": "minecraft:block/blue_orchid"
+		},
+		"variant=2687": {
+			"model": "ephemera:block/testblock"
+		},
+		"variant=2688": {
+			"model": "botania:block/ender_eye_block"
+		},
+		"variant=2689": {
+			"model": "botania:block/red_mystical_flower"
+		},
+		"variant=2690": {
+			"model": "create:block/small_crimsite_brick_stairs"
+		},
+		"variant=2691": {
+			"model": "hexcasting:block/edified_stairs"
+		},
+		"variant=2692": {
+			"model": "create:block/small_ochrum_brick_stairs"
+		},
+		"variant=2693": {
+			"model": "botania:block/cyan_petal_block"
+		},
+		"variant=2694": {
+			"model": "minecraft:block/diamond_block"
+		},
+		"variant=2695": {
+			"model": "create:block/copycat_base"
+		},
+		"variant=2696": {
+			"model": "minecraft:block/clay"
+		},
+		"variant=2697": {
+			"model": "botania:block/marimorphosis_chibi"
+		},
+		"variant=2698": {
+			"model": "create:block/andesite_casing"
+		},
+		"variant=2699": {
+			"model": "minecraft:block/exposed_cut_copper"
+		},
+		"variant=2700": {
+			"model": "dimdoors:block/netherrack_stairs"
+		},
+		"variant=2701": {
+			"model": "minecraft:block/dead_bubble_coral"
+		},
+		"variant=2702": {
+			"model": "botania:block/potted_solegnolia_chibi"
+		},
+		"variant=2703": {
+			"model": "create:block/ochrum_pillar"
+		},
+		"variant=2704": {
+			"model": "create:block/purple_postbox"
+		},
+		"variant=2705": {
+			"model": "minecraft:block/acacia_sign"
+		},
+		"variant=2706": {
+			"model": "minecraft:block/potted_fern"
+		},
+		"variant=2707": {
+			"model": "kaleidoscope_cookery:block/straw_block"
+		},
+		"variant=2708": {
+			"model": "botania:block/chiseled_metamorphic_plains_bricks"
+		},
+		"variant=2709": {
+			"model": "create:block/copper_scaffolding"
+		},
+		"variant=2710": {
+			"model": "create:block/layered_scorchia"
+		},
+		"variant=2711": {
+			"model": "hexical:block/casting_carpet"
+		},
+		"variant=2712": {
+			"model": "extrabotany:block/gaia_quartz_bricks"
+		},
+		"variant=2713": {
+			"model": "minecraft:block/fire_coral_wall_fan"
+		},
+		"variant=2714": {
+			"model": "minecraft:block/mangrove_leaves"
+		},
+		"variant=2715": {
+			"model": "botania:block/metamorphic_plains_bricks_wall"
+		},
+		"variant=2716": {
+			"model": "minecraft:block/obsidian"
+		},
+		"variant=2717": {
+			"model": "botania:block/metamorphic_forest_stone_stairs"
+		},
+		"variant=2718": {
+			"model": "create:block/copper_table_cloth"
+		},
+		"variant=2719": {
+			"model": "minecraft:block/bamboo_mosaic_slab"
+		},
+		"variant=2720": {
+			"model": "minecraft:block/magenta_carpet"
+		},
+		"variant=2721": {
+			"model": "botania:block/dreadthorn"
+		},
+		"variant=2722": {
+			"model": "minecraft:block/cyan_concrete_powder"
+		},
+		"variant=2723": {
+			"model": "minecraft:block/brown_glazed_terracotta"
+		},
+		"variant=2724": {
+			"model": "minecraft:block/wheat"
+		},
+		"variant=2725": {
+			"model": "create:block/metal_girder"
+		},
+		"variant=2726": {
+			"model": "minecraft:block/acacia_trapdoor"
+		},
+		"variant=2727": {
+			"model": "minecraft:block/cherry_leaves"
+		},
+		"variant=2728": {
+			"model": "create:block/small_rose_quartz_tiles"
+		},
+		"variant=2729": {
+			"model": "farmersdelight:block/cabbages"
+		},
+		"variant=2730": {
+			"model": "create:block/brown_postbox"
+		},
+		"variant=2731": {
+			"model": "botania:block/yellow_floating_flower"
+		},
+		"variant=2732": {
+			"model": "minecraft:block/dead_fire_coral"
+		},
+		"variant=2733": {
+			"model": "minecraft:block/respawn_anchor"
+		},
+		"variant=2734": {
+			"model": "minecraft:block/quartz_slab"
+		},
+		"variant=2735": {
+			"model": "kaleidoscope_cookery:block/table_warped"
+		},
+		"variant=2736": {
+			"model": "extrabotany:block/floating_edelweiss"
+		},
+		"variant=2737": {
+			"model": "minecraft:block/dead_tube_coral"
+		},
+		"variant=2738": {
+			"model": "botania:block/bifrost"
+		},
+		"variant=2739": {
+			"model": "farmersdelight:block/onion_crate"
+		},
+		"variant=2740": {
+			"model": "minecraft:block/prismarine_bricks"
+		},
+		"variant=2741": {
+			"model": "minecraft:block/piglin_head"
+		},
+		"variant=2742": {
+			"model": "botania:block/floating_dreadthorn"
+		},
+		"variant=2743": {
+			"model": "botania:block/floating_marimorphosis"
+		},
+		"variant=2744": {
+			"model": "farmersdelight:block/tomato_crate"
+		},
+		"variant=2745": {
+			"model": "botania:block/potted_pink_mushroom"
+		},
+		"variant=2746": {
+			"model": "create:block/cut_asurine_bricks"
+		},
+		"variant=2747": {
+			"model": "create:block/small_ochrum_brick_wall"
+		},
+		"variant=2748": {
+			"model": "minecraft:block/stone_button"
+		},
+		"variant=2749": {
+			"model": "dimdoors:block/dimensional_portal"
+		},
+		"variant=2750": {
+			"model": "botania:block/potted_lime_shiny_flower"
+		},
+		"variant=2751": {
+			"model": "botania:block/livingwood_slab"
+		},
+		"variant=2752": {
+			"model": "minecraft:block/waxed_oxidized_cut_copper_stairs"
+		},
+		"variant=2753": {
+			"model": "create:block/polished_cut_crimsite_wall"
+		},
+		"variant=2754": {
+			"model": "create:block/waxed_weathered_copper_tiles"
+		},
+		"variant=2755": {
+			"model": "minecraft:block/deepslate_tile_wall"
+		},
+		"variant=2756": {
+			"model": "minecraft:block/potted_mangrove_propagule"
+		},
+		"variant=2757": {
+			"model": "minecraft:block/stripped_crimson_hyphae"
+		},
+		"variant=2758": {
+			"model": "botania:block/metamorphic_mountain_bricks_wall"
+		},
+		"variant=2759": {
+			"model": "minecraft:block/tnt"
+		},
+		"variant=2760": {
+			"model": "minecraft:block/deepslate_emerald_ore"
+		},
+		"variant=2761": {
+			"model": "create:block/purple_valve_handle"
+		},
+		"variant=2762": {
+			"model": "create:block/light_blue_postbox"
+		},
+		"variant=2763": {
+			"model": "botania:block/metamorphic_swamp_cobblestone_slab"
+		},
+		"variant=2764": {
+			"model": "create:block/layered_ochrum"
+		},
+		"variant=2765": {
+			"model": "create:block/cut_granite_brick_stairs"
+		},
+		"variant=2766": {
+			"model": "botania:block/green_floating_flower"
+		},
+		"variant=2767": {
+			"model": "minecraft:block/observer"
+		},
+		"variant=2768": {
+			"model": "botania:block/cracked_livingrock_bricks"
+		},
+		"variant=2769": {
+			"model": "create:block/metal_girder_encased_shaft"
+		},
+		"variant=2770": {
+			"model": "farmersdelight:block/dark_oak_cabinet"
+		},
+		"variant=2771": {
+			"model": "hexautomata:block/reactive_focus/shoot"
+		},
+		"variant=2772": {
+			"model": "create:block/small_bogey"
+		},
+		"variant=2773": {
+			"model": "create:block/clipboard"
+		},
+		"variant=2774": {
+			"model": "farmersdelight:block/black_canvas_wall_sign"
+		},
+		"variant=2775": {
+			"model": "minecraft:block/water"
+		},
+		"variant=2776": {
+			"model": "dimdoors:block/dark_sand_button"
+		},
+		"variant=2777": {
+			"model": "botania:block/red_pavement_slab"
+		},
+		"variant=2778": {
+			"model": "farmersdelight:block/gray_canvas_wall_sign"
+		},
+		"variant=2779": {
+			"model": "minecraft:block/player_wall_head"
+		},
+		"variant=2780": {
+			"model": "botania:block/potted_cyan_mushroom"
+		},
+		"variant=2781": {
+			"model": "minecraft:block/lime_carpet"
+		},
+		"variant=2782": {
+			"model": "create:block/purple_nixie_tube"
+		},
+		"variant=2783": {
+			"model": "minecraft:block/spruce_stairs"
+		},
+		"variant=2784": {
+			"model": "create:block/cut_scoria_wall"
+		},
+		"variant=2785": {
+			"model": "create:block/large_water_wheel"
+		},
+		"variant=2786": {
+			"model": "create:block/fluid_tank"
+		},
+		"variant=2787": {
+			"model": "ephemera:block/fakeslate"
+		},
+		"variant=2788": {
+			"model": "minecraft:block/green_concrete"
+		},
+		"variant=2789": {
+			"model": "create:block/cut_andesite"
+		},
+		"variant=2790": {
+			"model": "botania:block/green_double_flower"
+		},
+		"variant=2791": {
+			"model": "botania:block/stripped_livingwood_slab"
+		},
+		"variant=2792": {
+			"model": "botania:block/bubbell_chibi"
 >>>>>>> Stashed changes
 		}
 	}

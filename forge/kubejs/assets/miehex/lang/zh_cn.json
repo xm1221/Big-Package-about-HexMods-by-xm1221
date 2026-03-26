@@ -8,6 +8,10 @@
     "item.miehex.pure_allay_shard":"粹灵晶碎片",
     "item.miehex.media_netherite":"合金意志",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    "item.miehex.mix_allay":"淬晶悦灵刷怪蛋",
+>>>>>>> Stashed changes
 =======
     "item.miehex.mix_allay":"淬晶悦灵刷怪蛋",
 >>>>>>> Stashed changes
@@ -106,9 +110,15 @@
     "block.miehex.media_netherite":"合金意志",
     "block.miehex.idea_block":"理念方块",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     "block.miehex.idea_portal":"理念世界传送毯",
     "entity.miehex.mix_allay":"淬晶悦灵",
+>>>>>>> Stashed changes
+=======
+    "block.miehex.idea_portal":"理念世界传送毯",
+    "entity.miehex.mix_allay":"淬晶悦灵",
+    "hexcasting.iota.miehex:enchant":"附魔",
 >>>>>>> Stashed changes
     "hexcasting.action.miehex:xmdebug":"开发者之策略",
     "hexcasting.action.miehex:xmbug":"开发者之策略,第二型",
@@ -122,11 +132,18 @@
     "hexcasting.action.miehex:create_sapling": "创造树苗",
     "hexcasting.action.miehex:cube_types": "立方体诸类型之提整",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "hexcasting.action.miehex:imposter": "强制施法",
 =======
     "hexcasting.action.miehex:rotateVector":"旋转之提整",
     "hexcasting.action.miehex:angleBetweenScalar":"夹角之馏化",
     "hexcasting.action.miehex:angleBetweenVectors":"夹角之策略",
+    "hexcasting.action.miehex:imposter": "冒名顶替",
+>>>>>>> Stashed changes
+=======
+    "hexcasting.action.miehex:rotatevector":"旋转之提整",
+    "hexcasting.action.miehex:anglebetweenscalar":"夹角之馏化",
+    "hexcasting.action.miehex:anglebetweenvectors":"夹角之策略",
     "hexcasting.action.miehex:imposter": "冒名顶替",
 >>>>>>> Stashed changes
     "hexcasting.action.miehex:zone_entity/by_name": "区域名号之提整",
@@ -143,6 +160,7 @@
     "hexcasting.action.miehex:crash":"进程崩溃",
     "hexcasting.action.miehex:push":"污染",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
 =======
@@ -151,6 +169,13 @@
     "hexcasting.action.miehex:Expelliarmus":"缴械",
     "hexcasting.action.miehex:puzzle":"惑心",
     "hexcasting.action.miehex:Resurrectionem":"复生",
+=======
+    "hexcasting.action.miehex:inventory_control":"随心",
+    "hexcasting.action.miehex:item_control":"所欲",
+    "hexcasting.action.miehex:expelliarmus":"缴械",
+    "hexcasting.action.miehex:puzzle":"惑心",
+    "hexcasting.action.miehex:resurrectionem":"复生",
+>>>>>>> Stashed changes
     "hexcasting.action.miehex:get_caster":"意识之精思",
     "hexcasting.action.miehex:get_spawn":"故乡之精思",
     "hexcasting.action.miehex:get_target":"仇雠之纯化",
@@ -159,6 +184,23 @@
     "hexcasting.action.miehex:allay_casting":"傀儡师之策略",
     "hexcasting.action.miehex:allay_stop":"断线风筝之策略",
     "hexcasting.action.miehex:allay_mix":"制造淬晶悦灵",
+<<<<<<< Updated upstream
+    "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
+    "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
+    "hexcasting.mishap.bad_item.class.q_allay":"淬灵晶碎片",
+>>>>>>> Stashed changes
+=======
+    "hexcasting.action.miehex:chunkloader_permanent":"锚定现实",
+    "hexcasting.action.miehex:entity_anchor":"创建临时稳定锚",
+    "hexcasting.action.miehex:lesser_gate":"创建次级门径",
+    "hexcasting.action.miehex:lesser_gate/close":"次级门径传送",
+    "hexcasting.action.miehex:personal_media":"吸纳媒质",
+    "hexcasting.action.miehex:grow_up":"加速成长",
+    "hexcasting.action.miehex:time_add":"移星",
+    "hexcasting.action.miehex:memory":"记忆",
+    "hexcasting.action.miehex:get_enchant":"附魔师之纯化",
+    "hexcasting.action.miehex:give_enchant":"附魔师之策略",
+    "hexcasting.action.miehex:enchant_add":"铁砧之馏化",
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.bad_item.class.q_allay":"淬灵晶碎片",
@@ -171,13 +213,22 @@
     "hexcasting.mishap.invalid_value.class.sapling":"树苗id",
     "hexcasting.mishap.invalid_value.class.item":"物品",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "hexcasting.mishap.bad_item.class.structure":"结构精魄"
 =======
+=======
+>>>>>>> Stashed changes
     "hexcasting.mishap.invalid_value.class.item_control":"物品或一个数",
     "hexcasting.mishap.invalid_value.class.slot":"一个合适范围的数",
     "hexcasting.mishap.bad_item.class.structure":"结构精魄",
     "hexcasting.mishap.invalid_value.class.respawn_0":"合适的载体",
+<<<<<<< Updated upstream
     "hexcasting.mishap.invalid_value.class.respawn_1":"一个与死者有密切联系的坐标"
+>>>>>>> Stashed changes
+=======
+    "hexcasting.mishap.invalid_value.class.respawn_1":"一个与死者有密切联系的坐标",
+    "hexcasting.mishap.invalid_value.class.enchant":"一个附魔iota",
+    "hexcasting.mishap.invalid_value.class.same_enchant":"两个相同的附魔iota"
 >>>>>>> Stashed changes
 
 

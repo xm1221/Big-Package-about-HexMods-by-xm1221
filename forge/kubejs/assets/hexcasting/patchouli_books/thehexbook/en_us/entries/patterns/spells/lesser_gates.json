@@ -1,0 +1,31 @@
+{
+  "name": "次级门径",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:end_portal_frame",
+  "sortnum": 18,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "次级门径是一种简单的传送方式，尽管有许多限制，但在没有获得卓越的知识时，也不失为一种好办法。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:lesser_gate",
+      "anchor": "miehex:lesser_gate",
+      "input": "vec",
+      "output": "",
+      "text": "接受一个施法范围内的向量，直到这次施法结束为止，将这个向量当做'次级门径传送'的目的地，消耗5枚紫水晶碎片"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:lesser_gate/close",
+      "anchor": "miehex:lesser_gate/close",
+      "input": "entity",
+      "output": "",
+      "text": "接受一个实体，将其传送到由'创建次级门径'所确定的位置,消耗少量媒质.如果预先没有确定，则无效果。"
+    }
+
+  ]
+}

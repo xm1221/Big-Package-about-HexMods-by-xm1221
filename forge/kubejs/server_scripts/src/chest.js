@@ -54,6 +54,10 @@ ServerEvents.chestLootTables(event => {
       addCypherVariants(pool, '远古杂件：丝绸之触');
       addCypherVariants(pool, '远古杂件：提取');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
 =======
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
 >>>>>>> Stashed changes
@@ -68,6 +72,10 @@ ServerEvents.chestLootTables(event => {
       addVariantItems(pool, 'hexcasting:artifact', VARIANTS);
       addCypherVariants(pool, '远古杂件：驾雾');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
 =======
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
 >>>>>>> Stashed changes
@@ -86,6 +94,10 @@ ServerEvents.chestLootTables(event => {
   event.modify('ruined_portal', loot => {
     loot.addPool(pool => {
       addCypherVariants(pool, '远古杂件：烈焰弹');
+<<<<<<< Updated upstream
+=======
+      pool.addItem('#minecraft:structure_symbol')
+>>>>>>> Stashed changes
     });
   });
 
@@ -116,6 +128,10 @@ ServerEvents.chestLootTables(event => {
       addCypherVariants(pool, '远古杂件：云腾');
       addCypherVariants(pool, '远古杂件：驾雾');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
 =======
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
 >>>>>>> Stashed changes
@@ -126,6 +142,11 @@ ServerEvents.chestLootTables(event => {
   // 要塞图书馆
   event.modify('stronghold_library', loot => {
     loot.addPool(pool => addBooks(pool));
+<<<<<<< Updated upstream
+=======
+    loot.addPool(pool => addVariantItems(pool, 'hexcasting:focus', VARIANTS));
+    loot.addPool(pool => addVariantItems(pool, 'hexcasting:artifact', VARIANTS));
+>>>>>>> Stashed changes
   });
 
   // 沉船地图箱
@@ -168,8 +189,12 @@ ServerEvents.chestLootTables(event => {
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：丝绸之触'));
     loot.addPool(pool => addCypherVariants(pool, '远古杂件：提取'));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
+=======
+    
 >>>>>>> Stashed changes
   });
 
@@ -180,12 +205,20 @@ ServerEvents.chestLootTables(event => {
       pool.addItem(Item.of('hexdebug:debugger').enchant('minecraft:bane_of_arthropods', 1)).weight(1);
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"hexcasting:brainsweep"}')).weight(1);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
 >>>>>>> Stashed changes
       pool.addItem('hexcasting:quenched_allay_shard').weight(1);
       pool.addItem('hexcasting:slate').weight(1);
       pool.addItem('hexcasting:slate_block').weight(1);
+=======
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+      pool.addItem('hexcasting:quenched_allay_shard').weight(1);
+      pool.addItem('hexcasting:slate').weight(1);
+      pool.addItem('hexcasting:slate_block').weight(1);
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
     });
     loot.addPool(pool => {
       pool.addItem('hexcasting:slate_block').weight(1);
@@ -248,7 +281,11 @@ ServerEvents.chestLootTables(event => {
   });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   // 废弃伟大工程房间
+=======
+  // 废弃卓伟房间
+>>>>>>> Stashed changes
 =======
   // 废弃卓伟房间
 >>>>>>> Stashed changes
@@ -258,6 +295,10 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('#hexcasting:staves').weight(1);
       pool.addItem('minecraft:air').weight(1);
       pool.addItem('minecraft:air').weight(1);
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('miehex:miehex_tower_structure_symbol')).weight(1)
+>>>>>>> Stashed changes
     });
     loot.addPool(pool => {
       pool.addItem("@hexpigmentplus").weight(1);
@@ -265,6 +306,10 @@ ServerEvents.chestLootTables(event => {
       pool.addItem(Item.of('hexcasting:jeweler_hammer', '{Damage:1000}')).weight(1);
       pool.addItem(Item.of('hexcasting:jeweler_hammer', '{Damage:500}')).weight(1);
       pool.addItem(Item.of('hexical:media_jar', '{BlockEntityTag:{media:6400000L}}')).weight(1);
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('miehex:miehex_tower_structure_symbol')).weight(2);
+>>>>>>> Stashed changes
     });
     // 多个紫水晶粉/充能紫水晶池
     for (let i = 0; i < 4; i++) {
@@ -292,6 +337,10 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('minecraft:air').weight(1);
       pool.addItem('@hex_machina').weight(1);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
+>>>>>>> Stashed changes
 =======
       pool.addItem(Item.of('hexcasting:scroll', '{op_id:"miehex:allay_mix"}')).weight(1)
 >>>>>>> Stashed changes
@@ -305,4 +354,37 @@ ServerEvents.chestLootTables(event => {
       addCypherVariants(pool, '远古杂件：提取');
     });
   });
+<<<<<<< Updated upstream
 });
+=======
+
+  event.modify("classroom",loot=>{
+    loot.addPool(pool => {
+      addVariantItems(pool, 'hexcasting:focus', VARIANTS);
+      addVariantItems(pool, 'hexcasting:artifact', VARIANTS);
+      addCypherVariants(pool, '远古杂件：驾雾');
+      addCypherVariants(pool, '远古杂件：云腾');
+      addCypherVariants(pool, '远古杂件：丝绸之触');
+      addCypherVariants(pool, '远古杂件：提取');
+    });
+    for (let i = 0; i < 10; i++) {
+      loot.addPool(pool => {
+        pool.addItem('hexcasting:amethyst_dust').weight(1);
+        pool.addItem('hexcasting:charged_amethyst').weight(1);
+        pool.addItem('minecraft:book').weight(1)
+        pool.addItem(Item.of('miehex:pure_allay_shard')).weight(1);
+        if (i % 2 === 0) pool.addItem('minecraft:air').weight(1); // 模拟原脚本随机 air
+      });
+  }
+  loot.addPool(pool => {
+      pool.addItem(Item.of('hexboard:quartz_typeblock')).weight(1);
+      pool.addItem(Item.of('hexboard:redstone_typeblock')).weight(1);
+      pool.addItem(Item.of('miehex:pure_allay_shard')).weight(1);
+      pool.addItem(Item.of('hexboard:lapis_typeblock')).weight(1);
+      pool.addItem(Item.of('hexboard:board_staff')).weight(2);
+    });
+
+})
+
+})
+>>>>>>> Stashed changes

@@ -61,13 +61,20 @@ let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
 let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 //息壤相关
 //let WR = Java.loadClass('com.worldreloader.WorldReloader')
 =======
+=======
+>>>>>>> Stashed changes
 let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
 let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
 
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 
 >>>>>>> Stashed changes
 
@@ -129,6 +136,10 @@ let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.Sta
 let CircleCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv')
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -176,6 +187,10 @@ let MishapUnenlightened = Java.loadClass('at.petrak.hexcasting.api.casting.misha
 let MishapUnescapedValue = Java.loadClass('at.petrak.hexcasting.api.casting.mishaps.MishapUnescapedValue')
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -229,4 +244,15 @@ let MatrixIota = Java.loadClass('ram.talia.moreiotas.api.casting.iota.MatrixIota
 let StringIota = Java.loadClass('ram.talia.moreiotas.api.casting.iota.StringIota')
 
 // io.yukkuric.hexop.ext.SilencedCastingEnv 相关
+<<<<<<< Updated upstream
 let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
+=======
+let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEnv')
+
+//op
+let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
+
+//miehex
+let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
+let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
+>>>>>>> Stashed changes

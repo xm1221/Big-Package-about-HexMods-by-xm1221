@@ -189,8 +189,30 @@
             "processors": "minecraft:empty",
             "location": "miehex:abadoned_greatwork_room_12"
         }
+<<<<<<< Updated upstream
     }
 
+=======
+    },
+    {
+        "weight": 1,
+        "element": {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "processors": "minecraft:empty",
+            "location": "miehex:abadoned_greatwork_room_13"
+        }
+    },
+    {
+        "weight": 1,
+        "element": {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "processors": "minecraft:empty",
+            "location": "miehex:abadoned_greatwork_classroom"
+        }
+    }
+>>>>>>> Stashed changes
     
     
     

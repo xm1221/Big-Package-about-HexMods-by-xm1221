@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /*EntityJSEvents.modifyEntity(e=>{
     e.modify("minecraft:evoker",builder=>{
          let artifact ={
@@ -30,6 +31,9 @@
             })
     })
 })*/
+=======
+
+>>>>>>> Stashed changes
 // ==================== 法术配置映射 ====================
 // 键：法术类型标识（字符串），值包含 item、spellName、iotaMessage 等
 let spellMap = {
@@ -39,9 +43,16 @@ let spellMap = {
         spellName: 'boom',                          // 传递给 mobCasting 的法术名
         iotaMessage: 'HexPattern[EAST, aawaawaa]',  // 显示给玩家的标题文字
         spawnWeight: 1,
+<<<<<<< Updated upstream
         colddown: 180                              
     },
     catch:{
+=======
+        colddown: 180,
+        wolulu:100                              
+    },
+    /*catch:{
+>>>>>>> Stashed changes
         item:Item.of('hexcasting:cypher', '{"hexcasting:media":900000L,"hexcasting:start_media":900000L,patterns:[{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,1B,4B,5B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,2B,4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,2B,0B,2B,5B,2B,0B,2B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,0B,2B,2B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;2B,1B,2B,2B,0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,5B,4B,0B],start_dir:2b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,0B,5B,5B,5B,0B,4B,5B,0B],start_dir:3b}},"hexcasting:type":"hexcasting:pattern"}],pigment:{owner:[I;0,0,0,0],stack:{Count:1b,id:"hexcasting:default_colorizer"}}}'),
         spellName:'catch',
         iotaMessage: 'HexPattern[SOUTH_WEST, awqqqwaqw]',
@@ -74,7 +85,11 @@ let spellMap = {
         colddown: 5,
         wolulu:1  
 
+<<<<<<< Updated upstream
     }
+=======
+    }*/
+>>>>>>> Stashed changes
 
 
     
@@ -231,7 +246,11 @@ EntityJSEvents.modifyEntity(e => {
                     // 再次检查当前主手物品ID是否仍匹配
                     let currentHand = entity.getMainHandItem()
                     if (currentHand.id == spell.item.id) {
+<<<<<<< Updated upstream
                         mobCasting(spell.spellName, entity, "evoker")
+=======
+                        mobCasting(spell.spellName, entity, "sorcerer")
+>>>>>>> Stashed changes
                     }
                 })
             }
