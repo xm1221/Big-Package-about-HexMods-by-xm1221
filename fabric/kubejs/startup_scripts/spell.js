@@ -82,8 +82,8 @@ global.PatternOperateMap = {
 },
 //测试员之策略
 "test":(stack,env,img,cont)=>{
- 
-},
+
+    },
     // 戏法之提整
     "list_insert": (stack, env) => {
         let args = new Args(stack, 3)
@@ -2032,6 +2032,86 @@ return sideEffects
     return sideEffects
 
 },
+
+//附魔师之纯化
+"get_enchant":(stack,env)=>{
+    let args = new Args(stack, 1)
+    let entity = args.entity(0)
+    ActionJS.helpers.assertEntityInRange(env,entity)
+    if (entity.type !== 'minecraft:item') {
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item');
+    }
+    let item = args.entity(0).getItem()
+    let isEnchantedBook = (item) => item.id === 'minecraft:enchanted_book';
+
+    // 获取附魔列表（根据物品类型读取相应标签）
+    let getEnchantments = (item) => {
+        let nbt = item.nbt || {};
+        if (isEnchantedBook(item)) {
+            return nbt.StoredEnchantments || [];
+        } else {
+            return nbt.Enchantments || [];
+        }
+    };
+    let list = []
+    let ench = getEnchantments(item)
+    ench.forEach(element => {
+        let iota = EnchantIota(element.id,element.lvl)
+        list.push(iota)
+    });
+    stack.push(ListIota(list))
+},
+
+//附魔注入
+"give_enchant":(stack,env)=>{
+  let args = new Args(stack, 2)
+  let ench = args.enchant(0)
+  let entity = args.entity(1)
+  ActionJS.helpers.assertEntityInRange(env,entity)
+  if (entity.type !== 'minecraft:item') {
+        throw new MishapInvalidIota.of(args.get(0), 1, 'class.item');
+    }
+    let lvl = ench.level
+    let id =ench.id
+    let cost = (lvl**3+5)*10000
+    requireMedia(env,cost)
+    let Ench = [{id:id,lvl:lvl}]
+    let item = entity.getItem()
+    let isEnchantedBook = (item) => item.id === 'minecraft:enchanted_book'
+let setEnchantments = (item, enchantments, targetIsBook) => {
+        let nbt = item.nbt || {};
+        if (targetIsBook) {
+            nbt.StoredEnchantments = enchantments;
+            delete nbt.Enchantments; // 清除可能的旧标签
+        } else {
+            nbt.Enchantments = enchantments;
+            delete nbt.StoredEnchantments;
+        }
+        item.nbt = nbt; // 更新 NBT
+    }
+    let Isbook = isEnchantedBook(item)
+    setEnchantments(item,Ench,Isbook)
+    return [OperatorSideEffect.ConsumeMedia(cost)]
+},
+
+//铁砧之馏化
+"enchant_add":(stack,env)=>{
+
+    let args = new Args(stack, 2)
+    let ench1 = args.enchant(0)
+    let ench2 = args.enchant(1)
+    let id = ench1.id
+    if(ench1.id!=ench2.id){
+        throw new MishapInvalidIota.of(args.get(0),1,'class.same_enchant')
+    }
+    let lvl = ench1.level + ench2.level
+    if(lvl>255){lvl = 255}
+    let Ench = new EnchantIota(id,lvl)
+    stack.push(Ench)
+    return
+
+},
+
 
 
 

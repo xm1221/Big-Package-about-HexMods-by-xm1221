@@ -4982,6 +4982,12 @@
 		},
 		"variant=1660": {
 			"model": "minecells:block/insufferable_crypt_doorway"
+		},
+		"variant=1661": {
+			"model": "minecells:block/ramparts_flag"
+		},
+		"variant=1662": {
+			"model": "minecraft:block/blackstone"
 		}
 	}
 }

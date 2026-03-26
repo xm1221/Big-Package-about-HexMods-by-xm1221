@@ -104,6 +104,7 @@
     "block.miehex.idea_block":"理念方块",
     "block.miehex.idea_portal":"理念世界传送毯",
     "entity.miehex.mix_allay":"淬晶悦灵",
+    "hexcasting.iota.miehex:enchant":"附魔",
     "hexcasting.action.miehex:xmdebug":"开发者之策略",
     "hexcasting.action.miehex:xmbug":"开发者之策略,第二型",
     "hexcasting.action.miehex:list_insert": "戏法之提整",
@@ -153,6 +154,9 @@
     "hexcasting.action.miehex:grow_up":"加速成长",
     "hexcasting.action.miehex:time_add":"移星",
     "hexcasting.action.miehex:memory":"记忆",
+    "hexcasting.action.miehex:get_enchant":"附魔师之纯化",
+    "hexcasting.action.miehex:give_enchant":"附魔师之策略",
+    "hexcasting.action.miehex:enchant_add":"铁砧之馏化",
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.bad_item.class.q_allay":"淬灵晶碎片",
@@ -167,7 +171,9 @@
     "hexcasting.mishap.invalid_value.class.slot":"一个合适范围的数",
     "hexcasting.mishap.bad_item.class.structure":"结构精魄",
     "hexcasting.mishap.invalid_value.class.respawn_0":"合适的载体",
-    "hexcasting.mishap.invalid_value.class.respawn_1":"一个与死者有密切联系的坐标"
+    "hexcasting.mishap.invalid_value.class.respawn_1":"一个与死者有密切联系的坐标",
+    "hexcasting.mishap.invalid_value.class.enchant":"一个附魔iota",
+    "hexcasting.mishap.invalid_value.class.same_enchant":"两个相同的附魔iota"
 
 
 }

@@ -222,3 +222,7 @@ let SilencedCastingEnv = Java.loadClass('io.yukkuric.hexop.ext.SilencedCastingEn
 
 //op
 let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
+
+//miehex
+let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
+let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')

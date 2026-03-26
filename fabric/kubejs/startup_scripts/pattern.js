@@ -517,6 +517,9 @@ let _buildGetter = (key, keyMishap) => {
     return function (i) {
         let iota = this.data[i]
         let res = iota[key]
+        if (typeof res === 'function') {
+            return res.call(iota);
+        }
         if (res === undefined) throw MishapInvalidIota.of(iota, this.data.length - i - 1, keyMishap)
         return res
     }
@@ -538,7 +541,7 @@ Args.prototype = {
     }
 }
 
-for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean']) {
+for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean','enchant']) {
     let [key, keyMishap] = pair.split('/')
     Args.prototype[key] = _buildGetter(key, keyMishap)
 }
@@ -604,3 +607,23 @@ function requireMedia(env, cost) {
         throw new MishapNotEnoughMedia(cost);
     }
 }
+
+//附魔
+function toStandardGalactic(text) {
+    // 字符映射表（根据 Minecraft 附魔台实际显示整理）
+    let sgaMap = {
+        'A': 'ꓯ', 'B': '𐊡', 'C': 'Ↄ', 'D': '◖', 'E': 'Ǝ', 'F': 'Ⅎ',
+        'G': '⅁', 'H': 'H', 'I': 'I', 'J': 'ſ', 'K': '⋊', 'L': '⅂',
+        'M': 'W', 'N': 'N', 'O': 'O', 'P': 'Ԁ', 'Q': 'Ό', 'R': 'ᴚ',
+        'S': 'S', 'T': '⊥', 'U': '∩', 'V': 'ʌ', 'W': 'M', 'X': 'X',
+        'Y': '⅄', 'Z': 'Z',
+        'a': 'ɐ', 'b': 'q', 'c': 'ɔ', 'd': 'p', 'e': 'ǝ', 'f': 'ɟ',
+        'g': 'ƃ', 'h': 'ɥ', 'i': 'ı', 'j': 'ɾ', 'k': 'ʞ', 'l': 'ʃ',
+        'm': 'ɯ', 'n': 'u', 'o': 'o', 'p': 'd', 'q': 'b', 'r': 'ɹ',
+        's': 's', 't': 'ʇ', 'u': 'n', 'v': 'ʌ', 'w': 'ʍ', 'x': 'x',
+        'y': 'ʎ', 'z': 'z'
+    };
+    
+    return text.split('').map(ch => sgaMap[ch] || ch).join('');
+}
+

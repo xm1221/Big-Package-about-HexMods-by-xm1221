@@ -166,6 +166,14 @@ StartupEvents.registry('hexcasting:action', e => {
     //记忆
     registerPatternWrap("qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq",HexDir.NORTH_EAST,"memory")
 
+    //附魔师之纯化
+    registerPatternWrap("awaeqwawq",HexDir.NORTH_EAST,"get_enchant")
+
+    //附魔师之策略
+    registerPatternWrap("dwdqewdwe",HexDir.NORTH_WEST,"give_enchant")
+
+    //铁砧之馏化
+    registerPatternWrap("qawwwwaqeeeaqwwqaee",HexDir.EAST,"enchant_add")
 
 
 

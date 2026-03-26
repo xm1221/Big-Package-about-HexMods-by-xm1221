@@ -1,0 +1,38 @@
+{
+  "name": "附魔iota",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:enchanted_book",
+  "advancement": "hexcasting:root",
+  "sortnum": 13,
+  "read_by_default": false,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "我发现物品的所谓附魔，实际上可以抽象出来形成Iota，利用这些Iota，我可以简单与方便的使用咒术来为物品附魔"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:get_enchant",
+      "anchor": "miehex:get_enchant",
+      "input": "entity",
+      "output": "list of enchant",
+      "text": "接受一个物品实体，返回由其上所有附魔对应的iota组成的列表"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:give_enchant",
+      "anchor": "miehex:give_enchant",
+      "input": "enchant,entity",
+      "output": "",
+      "text": "接受一个附魔iota和一个物品实体，附魔那个物品，消耗魔咒等级的立方数值的紫水晶粉加上一个紫水晶碎片的媒质"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:enchant_add",
+      "anchor": "miehex:enchant_add",
+      "input": "enchant,enchant",
+      "output": "enchant",
+      "text": "接受两个同种魔咒的附魔iota，将它们的等级相加，返回新的高等级魔咒"
+    }
+  ]
+}
