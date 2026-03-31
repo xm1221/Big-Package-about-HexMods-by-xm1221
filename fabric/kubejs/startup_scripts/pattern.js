@@ -541,7 +541,7 @@ Args.prototype = {
     }
 }
 
-for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean','enchant']) {
+for (let pair of ['double', 'entity', 'list', 'string', 'pattern', 'vec3/vector', 'bool/boolean','enchant','idea']) {
     let [key, keyMishap] = pair.split('/')
     Args.prototype[key] = _buildGetter(key, keyMishap)
 }
@@ -626,4 +626,20 @@ function toStandardGalactic(text) {
     
     return text.split('').map(ch => sgaMap[ch] || ch).join('');
 }
+
+//guide
+function guideText([text1,text2,path]) {
+     let Text1= Text.of(text1).color('white')
+     text2 = '\n'+text2
+     let Text2= Text.of(text2)
+     .color('yellow').
+     underlined(true)
+     .hover(Text.of('点击以查看'))
+     .clickRunCommand(`/open-patchouli-book @s hexcasting:thehexbook hexcasting:${path}`)
+     let text = Text.literal("普罗米修斯：").color('gold').append(Text1)//.append(Text2)
+     //暂时不显示超链接
+     return text
+}
+
+
 

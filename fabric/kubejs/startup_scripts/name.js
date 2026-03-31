@@ -76,7 +76,7 @@ StartupEvents.registry('hexcasting:action', e => {
      // 创造树苗
     registerPatternWrap('wawwwewdwewww', HexDir.EAST, 'create_sapling',false,null,'miehex')
 
-    // 强制施法
+    // 冒名顶替
     registerPatternWrap('daaedewdwee', HexDir.WEST, 'imposter',false,null,"miehex")
 
     // 构筑媒质剑
@@ -174,6 +174,26 @@ StartupEvents.registry('hexcasting:action', e => {
 
     //铁砧之馏化
     registerPatternWrap("qawwwwaqeeeaqwwqaee",HexDir.EAST,"enchant_add")
+
+    //柏拉图之精思
+    registerPatternWrap("qwqwqwqwqwq",HexDir.EAST,"new_idea")
+
+    //苏格拉底之馏化
+    registerPatternWrap("qwwwdwewdwwwqwqwwwdwewdwwwqqqwe",HexDir.EAST,"idea_get")
+
+    //蒂迈欧之馏化
+    registerPatternWrap("wqwqawdeaqqdeewew",HexDir.NORTH_EAST,"summon_idea_entity")
+
+    //亚里士多德之提整
+    registerPatternWrap("wewedwaqdeeaqqwqw",HexDir.NORTH_WEST,"idea_modify")
+
+    //普罗米修斯之启示
+    registerPatternWrap("ede",HexDir.NORTH_WEST,"guide")
+
+    //厄庇墨透斯之卓见
+    //registerPatternWrap("edeee",HexDir.NORTH_WEST,"guide_write")
+
+    
 
 
 

@@ -2,5 +2,13 @@
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay_shard":"粹灵晶碎片",
     "hexcasting.iota.miehex:enchant":"附魔",
-    "hexcasting.mishap.invalid_value.class.enchant":"附魔iota"
+    "hexcasting.mishap.invalid_value.class.enchant":"附魔iota",
+    "hexcasting.mishap.invalid_value.class.same_enchant":"两个相同的附魔iota",
+     "hexcasting.action.miehex:new_idea": "柏拉图之精思",
+    "hexcasting.action.miehex:idea_get": "苏格拉底之馏化",
+    "hexcasting.action.miehex:summon_idea_entity": "蒂迈欧之馏化",
+    "hexcasting.action.miehex:idea_modify": "亚里士多德之提整",
+    "hexcasting.mishap.invalid_value.class.empty_idea": "一个空理型 Iota",
+    "hexcasting.mishap.invalid_value.class.idea": "一个理型 Iota",
+    "hexcasting.mishap.invalid_value.class.bad_idea": "一个合适的理型 Iota"
 }

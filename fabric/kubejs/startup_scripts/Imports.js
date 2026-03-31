@@ -62,6 +62,8 @@ let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
 let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
 let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
+let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
+let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 
 
 

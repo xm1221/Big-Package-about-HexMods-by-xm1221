@@ -58,12 +58,6 @@ StartupEvents.registry('entity_type', event => {
 })
     builder.animationResource(entity => 'miehex:animations/entity/mix_allay.animation.json')
 
-    // 基础属性（生命值、飞行速度等）
-    builder.attributes(attribute => {
-        attribute.add('minecraft:generic.max_health', 28)
-        attribute.add('minecraft:generic.flying_speed', 0.15)
-        attribute.add('minecraft:generic.movement_speed', 0.14)
-    })
 
     // 右键交互示例：给予物品（比如手持钻石时，生物发出声音）
     /*builder.onInteract(context => {

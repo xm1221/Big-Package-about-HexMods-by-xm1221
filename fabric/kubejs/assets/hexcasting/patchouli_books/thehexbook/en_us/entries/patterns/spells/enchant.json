@@ -8,7 +8,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "我发现物品的所谓附魔，实际上可以抽象出来形成Iota，利用这些Iota，我可以简单与方便的使用咒术来为物品附魔"
+      "text": "我发现物品的附魔，实际上可以抽象出来形成Iota，利用这些Iota，我可以简单和方便地使用咒术来为物品附魔"
     },
     {
       "type": "hexcasting:pattern",

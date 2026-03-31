@@ -6,6 +6,7 @@ let HexDir = Java.loadClass('at.petrak.hexcasting.api.casting.math.HexDir');
 let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv');
 let InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand');
 let SpellList = Java.loadClass('at.petrak.hexcasting.api.casting.SpellList');
+
 //媒质剑
 EntityEvents.hurt(event => {
     let source = event.source;
@@ -361,3 +362,8 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
 })
 })
 
+ItemEvents.foodEaten("hexcasting:amethyst_dust", e=>{
+    e.player.potionEffects.add('hexcasting:enlarge_grid', 200, 0)
+
+  
+})

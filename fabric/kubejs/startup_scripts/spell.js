@@ -1983,9 +1983,10 @@ return sideEffects
     let args= new Args(stack,1)
     let time = args.double(0)
     let level = env.world
+    let server = level.server
     let cost = 100000
     requireMedia(env,cost)
-    level.runCommandSilent(`time add ${time}s`)
+    server.runCommandSilent(`time add ${time}s`)
     let sideEffects = [OperatorSideEffect.ConsumeMedia(cost)]
     return sideEffects
 },
@@ -2000,13 +2001,11 @@ return sideEffects
      
     if(!Memories(uuid)||Memories(uuid)[2]!=true){
     Forget(uuid)
-    console.log(`B:${Memories(uuid)}`)
     let data = [stack,img.userData,true]
     global.memories.push({uuid:uuid,data:data})
     return
 }
   if(Memories(uuid)[2]==true){
-    console.log(`R:${Memories(uuid)}`)
     let newstack = Memories(uuid)[0];
     stack.length = 0;
     newstack.forEach(element => {
@@ -2071,26 +2070,32 @@ return sideEffects
   if (entity.type !== 'minecraft:item') {
         throw new MishapInvalidIota.of(args.get(0), 1, 'class.item');
     }
-    let lvl = ench.level
-    let id =ench.id
-    let cost = (lvl**3+5)*10000
+    let lvl = Math.floor(ench.level)
+    let id = ench.id
+    let cost = ((lvl**3)+5)*10000
     requireMedia(env,cost)
-    let Ench = [{id:id,lvl:lvl}]
+    let Ench = {id:id,lvl:lvl}
     let item = entity.getItem()
     let isEnchantedBook = (item) => item.id === 'minecraft:enchanted_book'
-let setEnchantments = (item, enchantments, targetIsBook) => {
+let addEnchantments = (item, enchantments, targetIsBook) => {
         let nbt = item.nbt || {};
         if (targetIsBook) {
-            nbt.StoredEnchantments = enchantments;
-            delete nbt.Enchantments; // 清除可能的旧标签
+            if (!nbt.StoredEnchantments) {
+                nbt.StoredEnchantments = [];
+            }
+            nbt.StoredEnchantments.push(enchantments);
+                delete nbt.Enchantments;
         } else {
-            nbt.Enchantments = enchantments;
+            if (!nbt.Enchantments) {
+                nbt.Enchantments = [];
+            }
+            nbt.Enchantments.push(enchantments);
             delete nbt.StoredEnchantments;
         }
         item.nbt = nbt; // 更新 NBT
     }
     let Isbook = isEnchantedBook(item)
-    setEnchantments(item,Ench,Isbook)
+    addEnchantments(item,Ench,Isbook)
     return [OperatorSideEffect.ConsumeMedia(cost)]
 },
 
@@ -2111,6 +2116,243 @@ let setEnchantments = (item, enchantments, targetIsBook) => {
     return
 
 },
+
+//柏拉图之精思
+"new_idea":(stack,env)=>{
+    let idea = new IdeaIota("EMPTY",0,0,0,0)
+    stack.push(idea)
+},
+
+//苏格拉底之馏化
+"idea_get":(stack,env)=>{
+    let args = new Args(stack, 2)
+    let entity = args.entity(0)
+    let idea = args.idea(1)
+    let id =entity.type
+    let maxHealth = 0 
+    let movementSpeed = 0
+    let attackDamage = 0
+    let armor = 0
+    if(idea.entityTypeId!="EMPTY"){
+        throw new MishapInvalidIota.of(args.get(1),1,"class.empty_idea")
+    }
+    let healthAttr = entity.getAttribute(Attributes.MAX_HEALTH);
+    if (healthAttr) maxHealth = healthAttr.getValue();
+
+    let speedAttr = entity.getAttribute(Attributes.MOVEMENT_SPEED);
+    if (speedAttr) movementSpeed = speedAttr.getValue();
+
+    let dmgAttr = entity.getAttribute(Attributes.ATTACK_DAMAGE);
+    if (dmgAttr) attackDamage = dmgAttr.getValue();
+
+    let armorAttr = entity.getAttribute(Attributes.ARMOR);
+    if (armorAttr) armor = armorAttr.getValue();
+
+    let iota = new IdeaIota(id,maxHealth,movementSpeed,attackDamage,armor)
+
+    stack.push(iota)
+},
+
+//蒂迈欧之馏化
+"summon_idea_entity": (stack, env) => {
+    let args = new Args(stack, 2);
+    let data = args.idea(0)
+    let pos = args.vec3(1);
+
+    let entityTypeId = data.entityTypeId;
+    let maxHealth = data.maxHealth;
+    let movementSpeed = data.movementSpeed;
+    let attackDamage = data.attackDamage;
+    let armor = data.armor;
+
+    // 范围检查
+    ActionJS.helpers.assertVecInRange(env,pos)
+
+    // 计算媒质消耗（可自行调整系数）
+    let cost = Math.floor((maxHealth * 10 + movementSpeed * 1000 + attackDamage * 100 + armor * 50)*10000)
+    if (cost < 100000) cost = 100000;
+    requireMedia(env,cost)
+
+    let level = env.world;
+
+    let blacklistPath = 'kubejs/config/realism_entities.json';
+    let blacklist = JsonIO.read(blacklistPath);
+    let realism = blacklist["blacklist"]
+    
+
+    if (realism.indexOf(entityTypeId)!=-1) {
+        throw new MishapInvalidIota.of(args.get(0),1,"class.bad_idea")
+    }
+
+    // 获取实体类型
+    let entityType = EntityType.byString(entityTypeId).orElse(null);
+    if (!entityType) {
+        throw new MishapInvalidIota.of(args.get(0),1,"class.idea")
+    }
+
+    // 创建实体
+    let entity = entityType.create(level);
+    if (!entity) {
+        throw "Oh,no!it failed!"
+    }
+
+    // 设置位置和朝向
+    entity.setPos(pos.x(), pos.y(), pos.z());
+
+    // 应用属性
+    // 生命值
+    let healthAttr = entity.getAttribute(Attributes.MAX_HEALTH);
+    if (healthAttr) healthAttr.setBaseValue(maxHealth);
+    entity.setHealth(maxHealth);
+
+    // 移动速度
+    let speedAttr = entity.getAttribute(Attributes.MOVEMENT_SPEED);
+    if (speedAttr) speedAttr.setBaseValue(movementSpeed);
+
+    // 攻击力
+    let damageAttr = entity.getAttribute(Attributes.ATTACK_DAMAGE);
+    if (damageAttr) damageAttr.setBaseValue(attackDamage);
+
+    // 护甲
+    let armorAttr = entity.getAttribute(Attributes.ARMOR);
+    if (armorAttr) armorAttr.setBaseValue(armor);
+
+    // 生成到世界
+    level.addFreshEntity(entity);
+    let iota = new  EntityIota(entity)
+    stack.push(iota)
+
+    // 副作用：消耗媒质 + 粒子效果
+    let sideEffects = [
+        OperatorSideEffect.ConsumeMedia(cost),
+        OperatorSideEffect.Particles(ParticleSpray.burst(pos, 1, 30))
+    ];
+    return sideEffects;
+},
+
+//亚里士多德之提整
+"idea_modify":(stack,env)=>{
+    let args = new Args(stack, 3);
+    let idea = args.idea(0)
+    let index = args.double(1)
+    let value = args.double(2)
+    let mapping = {
+        1:idea.maxHealth,
+        2:idea.movementSpeed,
+        3:idea.attackDamage,
+        4:idea.armor
+    }
+        mapping[index]=value
+    let iota = new IdeaIota(idea.entityTypeId,mapping[1],mapping[2],mapping[3],mapping[4])
+    stack.push(iota) 
+    
+},
+
+//普罗米修斯之启示
+"guide":(stack,env)=>{
+        let caster = env.caster
+        if(!caster.isPlayer()){
+            throw new MishapBadCaster()
+        }
+    try{
+        let args = new Args(stack,1)
+        let iota = args.get(0)
+            if(iota instanceof EntityIota&& iota.entity==caster){
+                let res =guideText(["你想让我分析你吗？被爱着的孩子","",""])
+                caster.tell(res)
+                return
+            }
+            if(iota instanceof Vec3Iota){
+                let res =guideText(["向量是一门高深的学问，不过只是实用的话并不算难，不要害怕它们","",""])
+                caster.tell(res)
+                return
+            }
+            if(iota instanceof IdeaIota){
+                let res =guideText(["理型是造物的尺度，是世间万物的原型，你可以试试用理型来创造生物","",""])
+                caster.tell(res)
+                return
+            }
+            if(iota instanceof StringIota){
+                let res =guideText(["你想对我说什么？很可惜，我的意识已经无法看清复杂的文字了，对不起。","",""])
+                caster.tell(res)
+                return
+            }
+            if(iota instanceof ListIota){
+                let res =guideText(["竟然是列表，我会尽量解读其中的图案的","",""])
+                caster.tell(res)
+                let list = iota.list
+                list.forEach(iota=>{
+                    let guide=JsonIO.read('kubejs/config/guide.json')
+                    if(iota instanceof PatternIota){
+                        let pat=iota.pattern
+                        let sign=pat.anglesSignature()
+                        let result = guide[sign]
+                        let Text1 = Text.literal("这些知识我已经遗忘了……")
+                        if(!result&&result== undefined){
+                            caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text1))
+                            }
+                        else{
+                            let results= guideText(result)
+                            caster.tell(results)
+                        }
+                    }
+                })
+                return
+            }
+            if(iota instanceof GarbageIota){
+                let res =guideText(["垃圾吗？我不太想解读它们，还是不要浪费我的意识了","",""])                
+                caster.tell(res)
+            }
+            if(iota instanceof EntityIota){
+                let res =guideText(["对别人好一点，世界也会更爱你一分","",""])                
+                caster.tell(res)
+            }
+            if(iota instanceof MoteIota){
+                let res =guideText(["物元？这是个好东西，可以用来拯救咒法师们糟糕的库存","",""])                
+                caster.tell(res)
+            }
+            if(iota instanceof GateIota){
+                let res =guideText(["原来这就是门径啊，有意思.....","",""])                
+                caster.tell(res)
+            }
+            if(iota instanceof ContinuationIota){
+                let res =guideText(["有意思......这是什么？","",""])                
+                caster.tell(res)
+            }
+        let pat=iota.pattern
+        let sign=pat.anglesSignature()
+        let guide=JsonIO.read('kubejs/config/guide.json')
+        let result = guide[sign]
+        let Text1 = Text.literal("这些知识我已经遗忘了……")
+        if(!result){
+            caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text1))
+            return
+        }
+        let results= guideText(result)
+        caster.tell(results)
+    }
+    catch(e){
+           let res =guideText(["我只能为你解释我知道的图案，试试使用考察来“转义”图案得到图案iota再来问我吧","相关章节","patterns/patterns_as_iotas 2"])
+           caster.tell(res)
+        }
+    
+},
+
+//厄庇墨透斯之卓见
+/*"guide_write":(stack,env)=>{
+    let args = new Args(stack,2)
+    let caster = env.caster
+        if(!caster.isPlayer()){
+            throw new MishapBadCaster()
+        }
+    let pat = args.pattern(0)
+    let text = args.string(1)
+    let sign=pat.anglesSignature()
+    let guide=JsonIO.read('kubejs/config/guide.json')
+    guide[sign]=[text,"相关章节","pattern/"]
+    JsonIO.write('kubejs/config/guide.json',guide)
+}*/
+
 
 
 

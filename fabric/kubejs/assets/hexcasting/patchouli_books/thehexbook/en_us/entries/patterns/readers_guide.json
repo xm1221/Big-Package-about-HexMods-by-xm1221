@@ -20,6 +20,15 @@
     {
       "type": "patchouli:text",
       "text": "hexcasting.page.readers_guide.4"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:guide",
+      "anchor": "miehex:guide",
+      "input": "",
+      "output": "pattern|any",
+      "text": "当研究不明白时，也可以尝试使用这个图案来询问一位智者，他自称普罗米修斯，据说是一位先知。不过他的意识似乎被困在了这个图案里，无法离开，所以他只能通过图案来和我交流。"
+
     }
   ]
 }

@@ -18,6 +18,16 @@ ItemEvents.modification(e => {
     e.modify("miehex:ideas_world_entry",item =>{
         item.rarity = 'EPIC'
     })
+    e.modify('hexcasting:amethyst_dust',item =>{
+       item.foodProperties = food => {
+        food.hunger(1)
+        food.saturation(0.5)
+        food.alwaysEdible(true)
+        food.meat(false)
+        food.fastToEat(true)
+    }
+       
+})
 
 
 

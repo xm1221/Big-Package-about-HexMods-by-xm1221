@@ -1,0 +1,5288 @@
+{
+	"qaq": [
+		"这是意识之精思，绘制它返回施法者，也就是你自己，少数情况下，会返回Null",
+		"相关章节",
+		"patterns/basics 1"
+	],
+	"aa": [
+		"这是指南针之纯化，接受一个实体iota，返回其眼部的位置",
+		"相关章节",
+		"patterns/basics 1"
+	],
+	"dd": [
+		"这是指南针之纯化第二型，接受一个实体iota，返回其脚部的位置",
+		"相关章节",
+		"patterns/basics 2"
+	],
+	"wa": [
+		"这是照准仪之纯化，接受一个实体iota，返回其视线方向上的单位向量",
+		"相关章节",
+		"patterns/basics 3"
+	],
+	"wqaawdd": [
+		"这是弓箭手之馏化，接受两个向量（位置和方向），返回所看到的方块位置，若未击中或目标在你施法范围外则返回Null",
+		"相关章节",
+		"patterns/basics 4"
+	],
+	"weddwaa": [
+		"这是建筑师之馏化，与弓箭手之馏化类似，但返回所看到方块面的法向量",
+		"相关章节",
+		"patterns/basics 5"
+	],
+	"weaqa": [
+		"这是侦查员之馏化，与弓箭手之馏化类似，但返回所看到的实体，若未击中则返回Null",
+		"相关章节",
+		"patterns/basics 6"
+	],
+	"de": [
+		"这是揭示，它会让自然向施法者展示栈顶的iota",
+		"相关章节",
+		"patterns/basics 7"
+	],
+	"awq": [
+		"这是测高仪之纯化，接受一个实体iota，返回其高度",
+		"相关章节",
+		"patterns/basics 8"
+	],
+	"wq": [
+		"这是步伐之纯化，接受一个实体iota，返回其移动方向上的向量，模长为移动速度",
+		"相关章节",
+		"patterns/basics 9"
+	],
+	"aqaa": [
+		"这是数字之精思，通过绘制特定方向的线段来构建一个数字",
+		"相关章节",
+		"patterns/numbers 1"
+	],
+	"waaw": [
+		"这是加法之馏化，可对两个数、一个数和一个向量、或两个向量执行加法",
+		"相关章节",
+		"patterns/math 1"
+	],
+	"wddw": [
+		"这是减法之馏化，可对两个数、一个数和一个向量、或两个向量执行减法",
+		"相关章节",
+		"patterns/math 2"
+	],
+	"waqaw": [
+		"这是乘法之馏化，可对两个数、一个数和一个向量、或两个向量执行乘法（或点积）",
+		"相关章节",
+		"patterns/math 3"
+	],
+	"wdedw": [
+		"这是除法之馏化，可对两个数、一个数和一个向量、或两个向量执行除法（或叉积）",
+		"相关章节",
+		"patterns/math 4"
+	],
+	"wqaqw": [
+		"这是长度之纯化，计算一个数的绝对值或一个向量的模长",
+		"相关章节",
+		"patterns/math 5"
+	],
+	"wedew": [
+		"这是乘方之馏化，可对两个数、一个数和一个向量、或两个向量执行乘方（或向量射影）",
+		"相关章节",
+		"patterns/math 6"
+	],
+	"ewq": [
+		"这是取底之纯化，对一个数或向量的每个分量向下取整",
+		"相关章节",
+		"patterns/math 7"
+	],
+	"qwe": [
+		"这是取顶之纯化，对一个数或向量的每个分量向上取整",
+		"相关章节",
+		"patterns/math 8"
+	],
+	"eqqqqq": [
+		"这是向量之提整，将三个数组合为一个向量",
+		"相关章节",
+		"patterns/math 9"
+	],
+	"qeeeee": [
+		"这是向量之拆解，将一个向量拆分为三个数",
+		"相关章节",
+		"patterns/math 10"
+	],
+	"addwaad": [
+		"这是余数之馏化，计算两个数或两个向量的对应分量的余数",
+		"相关章节",
+		"patterns/math 11"
+	],
+	"qqqqqaww": [
+		"这是轴向之纯化，若为向量则返回与其夹角最小的轴向单位向量；若为数则返回其符号",
+		"相关章节",
+		"patterns/math 12"
+	],
+	"eqqq": [
+		"这是熵之精思，返回一个0到1之间的随机数",
+		"相关章节",
+		"patterns/math 13"
+	],
+	"a": [
+		"这是初学者之策略，移除栈顶的iota",
+		"相关章节",
+		"patterns/stackmanip 1"
+	],
+	"aawdd": [
+		"这是弄臣之策略，交换栈顶两个iota的位置",
+		"相关章节",
+		"patterns/stackmanip 2"
+	],
+	"aaeaa": [
+		"这是轮换之策略，将栈顶往下第三元素拉至栈顶",
+		"相关章节",
+		"patterns/stackmanip 3"
+	],
+	"ddqdd": [
+		"这是轮换之策略第二型，将栈顶元素沉至栈顶往下第三位",
+		"相关章节",
+		"patterns/stackmanip 4"
+	],
+	"aadaa": [
+		"这是双子之分解，复制栈顶的iota",
+		"相关章节",
+		"patterns/stackmanip 5"
+	],
+	"aaedd": [
+		"这是勘探者之策略，将栈顶往下第二元素复制至栈顶",
+		"相关章节",
+		"patterns/stackmanip 6"
+	],
+	"ddqaa": [
+		"这是送葬者之策略，将栈底元素复制至栈顶往下第二元素下方",
+		"相关章节",
+		"patterns/stackmanip 7"
+	],
+	"aadaadaa": [
+		"这是双子之策略，将移除后的栈顶元素复制指定次数",
+		"相关章节",
+		"patterns/stackmanip 8"
+	],
+	"aadadaaw": [
+		"这是狄俄斯库里之策略，复制栈顶的两个iota",
+		"相关章节",
+		"patterns/stackmanip 9"
+	],
+	"qwaeawqaeaqa": [
+		"这是群体之精思，以数的形式压入栈中元素的个数",
+		"相关章节",
+		"patterns/stackmanip 10"
+	],
+	"ddad": [
+		"这是渔夫之策略，提出下标为所给数的元素并将其置于栈顶",
+		"相关章节",
+		"patterns/stackmanip 11"
+	],
+	"aada": [
+		"这是渔夫之策略第二型，复制下标为所给数的元素并将其置于栈顶",
+		"相关章节",
+		"patterns/stackmanip 12"
+	],
+	"aeea": [
+		"这是簿记员之策略，根据凹槽和横线移除或保留栈中元素",
+		"相关章节",
+		"patterns/stackmanip 13"
+	],
+	"qaawdde": [
+		"这是骗徒之策略，根据数字代码重排栈顶若干元素",
+		"相关章节",
+		"patterns/stackmanip 14"
+	],
+	"aqae": [
+		"这是真之精思，返回True",
+		"相关章节",
+		"patterns/consts 1"
+	],
+	"dedq": [
+		"这是假之精思，返回False",
+		"相关章节",
+		"patterns/consts 2"
+	],
+	"d": [
+		"这是空元之精思，返回Null这一虚指",
+		"相关章节",
+		"patterns/consts 3"
+	],
+	"qqqqq": [
+		"这是向量之精思零型，返回(0, 0, 0)",
+		"相关章节",
+		"patterns/consts 4"
+	],
+	"qqqqqea": [
+		"这是向量之精思+X型（逆时针）或-X型（顺时针），返回(1,0,0)或(-1,0,0)",
+		"相关章节",
+		"patterns/consts 5"
+	],
+	"qqqqqew": [
+		"这是向量之精思+Y型（逆时针）或-Y型（顺时针），返回(0,1,0)或(0,-1,0)",
+		"相关章节",
+		"patterns/consts 6"
+	],
+	"qqqqqed": [
+		"这是向量之精思+Z型（逆时针）或-Z型（顺时针），返回(0,0,1)或(0,0,-1)",
+		"相关章节",
+		"patterns/consts 7"
+	],
+	"eawae": [
+		"这是圆之精思，返回τ（约6.28318）",
+		"相关章节",
+		"patterns/consts 8"
+	],
+	"qdwdq": [
+		"这是弧之精思，返回π（约3.14159）",
+		"相关章节",
+		"patterns/consts 9"
+	],
+	"aaq": [
+		"这是欧拉之精思，返回e（约2.71828）",
+		"相关章节",
+		"patterns/consts 10"
+	],
+	"aw": [
+		"这是占卜师之纯化，将参数变换为布尔值",
+		"相关章节",
+		"patterns/logic 1"
+	],
+	"dw": [
+		"这是取非之纯化，如果参数是True则返回False，反之亦然",
+		"相关章节",
+		"patterns/logic 2"
+	],
+	"waw": [
+		"这是析取之馏化，如果至少有一个参数是True则返回True",
+		"相关章节",
+		"patterns/logic 3"
+	],
+	"wdw": [
+		"这是合取之馏化，如果两个参数都是True则返回True",
+		"相关章节",
+		"patterns/logic 4"
+	],
+	"dwa": [
+		"这是互斥之馏化，如果参数中仅一个是True则返回True",
+		"相关章节",
+		"patterns/logic 5"
+	],
+	"awdd": [
+		"这是占卜师之提整，根据布尔值选择保留第二个或第三个参数",
+		"相关章节",
+		"patterns/logic 6"
+	],
+	"ad": [
+		"这是相等之馏化，如果第一个参数等于第二个则返回True",
+		"相关章节",
+		"patterns/logic 7"
+	],
+	"da": [
+		"这是不等之馏化，如果第一个参数不等于第二个则返回True",
+		"相关章节",
+		"patterns/logic 8"
+	],
+	"e": [
+		"这是至大之馏化，如果第一个参数大于第二个则返回True",
+		"相关章节",
+		"patterns/logic 9"
+	],
+	"q": [
+		"这是至小之馏化，如果第一个参数小于第二个则返回True",
+		"相关章节",
+		"patterns/logic 10"
+	],
+	"ee": [
+		"这是至大之馏化第二型，如果第一个参数大于或等于第二个则返回True",
+		"相关章节",
+		"patterns/logic 11"
+	],
+	"qq": [
+		"这是至小之馏化第二型，如果第一个参数小于或等于第二个则返回True",
+		"相关章节",
+		"patterns/logic 12"
+	],
+	"qqqaw": [
+		"这是考察，将随后绘制的一个图案作为iota压入栈中，你与我沟通也需要通过这个来“转义”图案",
+		"相关章节",
+		"patterns/patterns_as_iotas 1"
+	],
+	"qqq": [
+		"这是内省，开始一个列表的构建，直到遇到反思",
+		"相关章节",
+		"patterns/patterns_as_iotas 3"
+	],
+	"eee": [
+		"这是反思，结束由内省开始的列表构建，并将列表压入栈中",
+		"相关章节",
+		"patterns/patterns_as_iotas 3"
+	],
+	"eeedw": [
+		"这是消解，移除内省-反思对中最后绘制的图案",
+		"相关章节",
+		"patterns/patterns_as_iotas 4"
+	],
+	"aqqqqq": [
+		"这是书吏之精思，复制另一只手所持物品中的iota，将其压入栈顶，用作读取",
+		"相关章节",
+		"patterns/readwrite 1"
+	],
+	"deeeee": [
+		"这是书吏之策略，移除栈顶iota并将其写入另一只手中的物品，用作写入",
+		"相关章节",
+		"patterns/readwrite 2"
+	],
+	"wawqwqwqwqwqw": [
+		"这是编年史家之纯化，与书吏之精思类似，但从方块中读取iota，比如物品展示框",
+		"相关章节",
+		"patterns/readwrite_blocks 1"
+	],
+	"wdwewewewewew": [
+		"这是编年史家之策略，与书吏之策略类似，但是向方块写入iota，比如物品展示框",
+		"相关章节",
+		"patterns/readwrite_blocks 2"
+	],
+	"aqqqqqe": [
+		"这是审计员之精思，如果另一只手中物品可读则返回True",
+		"相关章节",
+		"patterns/readwrite 3"
+	],
+	"deeeeeq": [
+		"这是估价员之精思，如果另一只手中物品可写则返回True",
+		"相关章节",
+		"patterns/readwrite 4"
+	],
+	"eqqwawqaaw": [
+		"这是福金之策略，移除栈顶iota并将其写入渡鸦之思",
+		"相关章节",
+		"patterns/readwrite 5"
+	],
+	"qeewdweddw": [
+		"这是雾尼之精思，将渡鸦之思中的iota复制出来",
+		"相关章节",
+		"patterns/readwrite 6"
+	],
+	"qqaeaae": [
+		"这是空无之精思，压入一个空列表",
+		"相关章节",
+		"patterns/lists 1"
+	],
+	"adeeed": [
+		"这是单体之纯化，移除栈顶元素并返回一个仅包含该元素的列表",
+		"相关章节",
+		"patterns/lists 2"
+	],
+	"deeed": [
+		"这是选择之馏化，返回列表中指定下标的元素",
+		"相关章节",
+		"patterns/lists 3"
+	],
+	"qaeaqwded": [
+		"这是选择之提整，返回所给列表的指定切片",
+		"相关章节",
+		"patterns/lists 4"
+	],
+	"edqde": [
+		"这是整合之馏化，将元素添加到所给列表末尾",
+		"相关章节",
+		"patterns/lists 5"
+	],
+	"qaeaq": [
+		"这是派生之分解，移除所给列表末尾的元素",
+		"相关章节",
+		"patterns/lists 6"
+	],
+	"qqqaede": [
+		"这是逆行之纯化，倒置所给列表",
+		"相关章节",
+		"patterns/lists 7"
+	],
+	"dedqde": [
+		"这是定位器之馏化，返回所给元素在所给列表中第一次出现的位置",
+		"相关章节",
+		"patterns/lists 8"
+	],
+	"edqdewaqa": [
+		"这是切除器之馏化，移除列表中指定下标的元素",
+		"相关章节",
+		"patterns/lists 9"
+	],
+	"wqaeaqw": [
+		"这是外科医师之提整，替换列表中指定下标的元素",
+		"相关章节",
+		"patterns/lists 10"
+	],
+	"ewdqdwe": [
+		"这是群体之策略，将指定数量的元素打包成一个列表",
+		"相关章节",
+		"patterns/lists 11"
+	],
+	"qwaeawq": [
+		"这是群体之拆解，将列表中的所有元素弹出到栈中",
+		"相关章节",
+		"patterns/lists 12"
+	],
+	"ddewedd": [
+		"这是演讲者之馏化，将元素添加到列表开头",
+		"相关章节",
+		"patterns/lists 13"
+	],
+	"aaqwqaa": [
+		"这是演讲者之分解，移除所给列表中的第一个元素",
+		"相关章节",
+		"patterns/lists 14"
+	],
+	"deaqq": [
+		"这是赫尔墨斯之策略，运行栈顶的图案列表",
+		"相关章节",
+		"patterns/meta 1"
+	],
+	"qwaqde": [
+		"这是伊里斯之策略，类似赫尔墨斯之策略，但会在开始前压入一个跳转iota",
+		"相关章节",
+		"patterns/meta 2"
+	],
+	"dadad": [
+		"这是托特之策略，对列表中的每个元素运行图案列表",
+		"相关章节",
+		"patterns/meta 3"
+	],
+	"aqdee": [
+		"这是卡戎之策略，强制停止当前咒术的施放",
+		"相关章节",
+		"patterns/meta 4"
+	],
+	"qqaed": [
+		"这是塔纳托斯之精思，返回咒术仍能运行的图案数",
+		"相关章节",
+		"patterns/meta 5"
+	],
+	"aaaaaa": [
+		"这是放置方块，在指定位置放置一个方块",
+		"相关章节",
+		"patterns/spells/basic 1"
+	],
+	"qaqqqqq": [
+		"这是破坏方块，破坏指定位置的方块",
+		"相关章节",
+		"patterns/spells/basic 2"
+	],
+	"aqawqadaq": [
+		"这是制造水源，在指定位置生成一格水",
+		"相关章节",
+		"patterns/spells/basic 3"
+	],
+	"dedwedade": [
+		"这是清除流体，清除指定位置的液体",
+		"相关章节",
+		"patterns/spells/basic 4"
+	],
+	"qqa": [
+		"这是构筑方块，在指定位置构筑一个构筑的方块",
+		"相关章节",
+		"patterns/spells/basic 5"
+	],
+	"qqd": [
+		"这是构筑光源，在指定位置构筑一个魔法光源",
+		"相关章节",
+		"patterns/spells/basic 6"
+	],
+	"wqaqwawqaqw": [
+		"这是催生，促进植物生长",
+		"相关章节",
+		"patterns/spells/basic 7"
+	],
+	"wqaqwd": [
+		"这是启迪树苗，将树苗变为启迪树",
+		"相关章节",
+		"patterns/spells/basic 8"
+	],
+	"aaqawawa": [
+		"这是点燃，在指定位置生火或点燃实体，我觉得这个法术和我有很大关系",
+		"相关章节",
+		"patterns/spells/basic 9"
+	],
+	"ddedwdwd": [
+		"这是广域熄灭，熄灭周围较大区域内的火焰",
+		"相关章节",
+		"patterns/spells/basic 10"
+	],
+	"awqqqwaqw": [
+		"这是驱动，可以给予实体动量，如果在一次施法中对一个实体多次使用消耗会增加",
+		"相关章节",
+		"patterns/spells/basic 11"
+	],
+	"awqqqwaq": [
+		"这是闪现，将实体沿其视线方向传送所给格数的距离",
+		"相关章节",
+		"patterns/spells/basic 12"
+	],
+	"adaa": [
+		"这是弹奏音符，在指定位置播放音符",
+		"相关章节",
+		"patterns/spells/basic 13"
+	],
+	"aawaawaa": [
+		"这是爆炸，在指定位置产生爆炸",
+		"相关章节",
+		"patterns/spells/basic 14"
+	],
+	"ddwddwdd": [
+		"这是火球，在指定位置产生带火焰的爆炸",
+		"相关章节",
+		"patterns/spells/basic 15"
+	],
+	"waeawae": [
+		"这是召唤哨卫，在指定位置召唤哨卫",
+		"相关章节",
+		"patterns/spells/sentinels 1"
+	],
+	"qdwdqdw": [
+		"这是驱除哨卫，驱除你或别人的哨卫",
+		"相关章节",
+		"patterns/spells/sentinels 2"
+	],
+	"waeawaede": [
+		"这是定位哨卫，返回你的哨卫的位置",
+		"相关章节",
+		"patterns/spells/sentinels 3"
+	],
+	"waeawaedwa": [
+		"这是寻路至哨卫，返回从你的位置指向哨卫的单位向量",
+		"相关章节",
+		"patterns/spells/sentinels 4"
+	],
+	"awddwqawqwawq": [
+		"这是内化染色剂，消耗染色剂改变你意识的颜色......你觉得你是什么颜色的呢？",
+		"相关章节",
+		"patterns/spells/colorize 1"
+	],
+	"dwaawedwewdwe": [
+		"这是施法者之魅力，改变副手施法物品的外表",
+		"相关章节",
+		"patterns/spells/cyclevariant 1"
+	],
+	"qaqqqqqdeeeqeee": [
+    "瞄准方块结构中的弱电，从而提供产量,就好像是时运魔咒一样，强度参数为 0、1、2 时相应消耗大约 1、3、5 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:break_fortune 1"
+  ],
+  "wwwaqdadaadadqqqeaeq": [
+    "好在，咒法学是门适用面很广的技艺，有寻回几乎任何事物的能力。",
+    "相关章节",
+    "patterns/hexical:periwinkle 1"
+  ],
+  "dee": [
+    "在所给位置构筑一个术师方块。消耗 3 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:conjure_mage_block 1"
+  ],
+  "eeeeewaqaawa": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非动物实体的列表。",
+    "相关章节",
+    "patterns/entity/hexcasting:zone_entity/not_animal 1"
+  ],
+  "waqdee": [
+    "移除栈顶数，将珠算计数器设为该数。",
+    "相关章节",
+    "patterns/overevaluate:soroban_set 1"
+  ],
+  "dewedaewdwewd": [
+    "自定义门径位置？",
+    "相关章节",
+    "patterns/hexdim:dim/downgrade/pos 1"
+  ],
+  "awedqdewa": [
+    "获取所绑定的枢纽剩余的空间。",
+    "相关章节",
+    "patterns/hexal:mote/storage/remaining_capacity/get 1"
+  ],
+  "adeqqaq": [
+    "将染色剂施加于视斑，可在构筑后更改其颜色。",
+    "相关章节",
+    "patterns/hexical:pigment_specklike 1"
+  ],
+  "aweeeeewaweeeee": [
+    "立即填满生物的氧气条，消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:gasp 1"
+  ],
+  "waeawaeqqqwqwqqwq": [
+    "召唤一个比普通哨卫要强大的哨卫。消耗大约 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:sentinel/create/great 1"
+  ],
+  "qqqwwqqqwqqawdedw": [
+    "移除栈顶锚定门径，或未锚定门径与位置向量。将所有被所给门径标记的实体传送至其锚定位置或所给位置。消耗 1/2 个紫水晶碎片。若为未锚定门径，则每个实体每传送 1 格额外消耗 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:gate/close 1"
+  ],
+  "eewwqwqwqwqwqwweewaqaaww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非 BIT 的列表。",
+    "相关章节",
+    "patterns/complexhex:zone_entity/not_bit 1"
+  ],
+  "dwawdaqqwwqq": [
+    "获取位面出生点的位置向量。",
+    "相关章节",
+    "patterns/hexxyplanes:plane_pos 1"
+  ],
+  "wwaadee": [
+    "返回给定类型实体在离开其呼吸环境后需多少秒开始窒息。",
+    "相关章节",
+    "patterns/hexpose:get_max_air 1"
+  ],
+  "aaeaad": [
+    "剔除栈顶往下第 n 个元素，具体由图案的尾部长度决定。上方的示例分别会剔除第 2 个、第 3 个、第 4 个 iota。",
+    "相关章节",
+    "patterns/overevaluate:geb 1"
+  ],
+  "qqaw": [
+    "将我所持的法术书向右翻一页。",
+    "相关章节",
+    "patterns/hextweaks:page/right 1"
+  ],
+  "adaqqqdd": [
+    "接受一个物品标识，检验它是否可被我食用。",
+    "相关章节",
+    "patterns/hexpose:edible 1"
+  ],
+  "eqqqqqaaqw": [
+    "构筑积尘粒子，这些粒子与受重力影响但悬浮的方块所产生的类似。需要接受方块标识。",
+    "相关章节",
+    "patterns/efhexs:play_falling_dust_particle 1"
+  ],
+  "eeeeeqwaqaeaq": [
+    "Transitions the caster to a male! No more periods!",
+    "相关章节",
+    "patterns/hexgender:male_transition 1"
+  ],
+  "ewdedwqwqwdedwqwaaw": [
+    "与威廉姆斯之策略类似，但可在回响之杖被占用时，由其他施法方式施放。",
+    "相关章节",
+    "patterns/oneironaut:writerodramremote 1"
+  ],
+  "eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww": [
+    "还可用此图案自动终止磁带。接受一个 iota，若存在标签为所给 iota 的磁带，则令其出队列。",
+    "相关章节",
+    "patterns/hexcassettes:dequeue 1"
+  ],
+  "ddewaa": [
+    "返回所给意识的触发条件，若无则返回 Null。",
+    "相关章节",
+    "patterns/hierophantics:get_mind_trigger 1"
+  ],
+  "eqeweweweweqedwqeeeeewwqqwqwqqw": [
+    "终止所有磁带，效果与“并行处理”事故类似。",
+    "相关章节",
+    "patterns/hexcassettes:killall 1"
+  ],
+  "qwawqwaadwa": [
+    "接受一个物品，将其重命名为给定文本。传入 Null 时重置名称。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexical:item_name 1"
+  ],
+  "awaqeeeeede": [
+    "接受一个文本，设置其是否为斜体。",
+    "相关章节",
+    "patterns/hexpose:text_italics 1"
+  ],
+  "deaqqwqqqw": [
+    "接受一个正整数。停止当前循环，并将冷却时间从 1 秒缩短至所给数个 1/20 秒。事故造成的冷却不受影响。",
+    "相关章节",
+    "patterns/oneironaut:resetrod 1"
+  ],
+  "qwdeeadewseaqqedwswqqwdedsdadeaaqqe": [
+    "Takes a block position and a positive number, and ages the block (or how I call it, induces a random tick) there that many times. Costs 1 shard per age-up, but 3.5 if the target is Budding Amethyst.",
+    "相关章节",
+    "patterns/lapisworks:hastenature 1"
+  ],
+  "wdeeeeeqa": [
+    "返回 1 的系数。",
+    "相关章节",
+    "patterns/complexhex:qw 1"
+  ],
+  "weeeweeqeeeewqaqweeee": [
+    "接受一个染色剂 iota 并内化它。",
+    "相关章节",
+    "patterns/hexical:take_on_pigment 1"
+  ],
+  "eawwaeawawaa": [
+    "此法术会将一束媒质在我身旁塑成翅膀状，并赋予其足够物质性，从而允许施法者滑翔。",
+    "相关章节",
+    "patterns/hexcasting:flight 1"
+  ],
+  "wdeaqq": [
+    "压入珠算计数器的当前值，而后令其增加 1。计数器自 0 起始。",
+    "相关章节",
+    "patterns/overevaluate:soroban_increment 1"
+  ],
+  "qqqqqawwqwedweq": [
+    "创建一个在我击中其他实体时激活的触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_attack_trigger 1"
+  ],
+  "waawweeeeewaa": [
+    "获取玩家法杖空间栈的元素总数。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_stack/size 1"
+  ],
+  "eqqedwewew": [
+    "检验所给实体是否处于骑乘状态，若未在骑乘或未乘坐载具，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:entity_vehicle 1"
+  ],
+  "qdewedqwqaq": [
+    "返回法术环中媒质波所处石板的法向量。",
+    "相关章节",
+    "patterns/hextweaks:normal 1"
+  ],
+  "aqaeqeeeee": [
+    "这种咒灵被召唤时会像箭一样被弹射出去，而后会在其击中的事物上施放咒术。其初始栈包含一个代表其自身的 iota 和一个代表其击中的事物的 iota。",
+    "相关章节",
+    "patterns/hexal:wisp/summon/projectile 1"
+  ],
+  "adeeqw": [
+    "更改图案视斑笔触的粗细，接受 0 与 10 之间的数。此数表示以 1/20 格计的大小，默认为 0。",
+    "相关章节",
+    "patterns/hexical:thickness_specklike 1"
+  ],
+  "wqaeaqweeeedww": [
+    "若所给向量处有剪接台，且其副槽位物品可读，则将该向量替换为 True；否则返回 False。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/readable 1"
+  ],
+  "wqwqwqwqwqwaeqqe": [
+    "返回象征着我所处维度的空间印记。消耗极少量媒质。",
+    "相关章节",
+    "patterns/oneironaut:getdim1 1"
+  ],
+  "qqqqqdaqa": [
+    "将栈顶位置向量变为该处实体（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity 1"
+  ],
+  "dwqaeaqwd": [
+    "若所给位置的物元枢纽中包含所给类型的物元，或包含可与所给物元合并的物元，则返回 True，否则返回 False。",
+    "相关章节",
+    "patterns/hexal:mote/storage/contains 1"
+  ],
+  "aqaweewaqaweedw": [
+    "将咒灵媒质库中剩余的媒质量压入栈顶。此操作必须由咒灵执行。尝试用法杖执行会招致可怖的事故。",
+    "相关章节",
+    "patterns/hexal:wisp/media 1"
+  ],
+  "eaqwqaewede": [
+    "以单位向量返回该法术环的促动石的面朝方向。",
+    "相关章节",
+    "patterns/hexcasting:circle/impetus_dir 1"
+  ],
+  "eaeeeeeae": [
+    "接受一个状态效果和一个向量，并返回该处带有该状态效果的实体。",
+    "相关章节",
+    "patterns/ephemera:getbystatussingle 1"
+  ],
+  "awqwawqaw": [
+    "移除栈顶位置向量。运行此图案的循环式咒灵会沿直线移动至所给位置（会与途中地形地貌等碰撞），直至抵达该位置处。",
+    "相关章节",
+    "patterns/hexal:wisp/move/target/set 1"
+  ],
+  "eqqadaq": [
+    "使我听到一段咔哒声，其他事物无法听见。",
+    "相关章节",
+    "patterns/hexical:click 1"
+  ],
+  "wedqdewaqddqd": [
+    "与放映员之策略类似，但会修改副槽位中法术书当前的页码，而非主槽位。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/spellbook_index/write 1"
+  ],
+  "weqqqqqwaeaeaeaeaea": [
+    "在给定位置构筑一株花，品种任选。所需的花卉必须先经过标识。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:flower 1"
+  ],
+  "qaqwqaqwqaq": [
+    "锚定一个物元枢纽，并将自身与其绑定，所有我媒质化的物品都会存入该枢纽。若锚定至其他枢纽则会自动解开与原枢纽的绑定。消耗 32 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:mote/storage/bind 1"
+  ],
+  "qwqqqwqaww": [
+    "接受一个图案，并移除永恒之书中该图案对应的条目。",
+    "相关章节",
+    "patterns/hexal:everbook/delete 1"
+  ],
+  "edewedewede": [
+    "锚定一个物元枢纽，在当前咒术结束前将自身与其绑定。其在本咒术内会暂时覆盖永久性绑定的枢纽。消耗 1/1000 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:mote/storage/bind/temp 1"
+  ],
+  "wdeeeeeqd": [
+    "返回 k 的系数。",
+    "相关章节",
+    "patterns/complexhex:qz 1"
+  ],
+  "qwqwqawdqqaqqdwaqwqwq": [
+    "返回给定位置向量处生物群系类别的标识。",
+    "相关章节",
+    "patterns/hexpose:get_biome 1"
+  ],
+  "aawqqwqqq": [
+    "Pushes the percentage filled of the mind container at the given position to the stack.",
+    "相关章节",
+    "patterns/lapisworks:check_mind 1"
+  ],
+  "qaqqqeqqqwqaww": [
+    "返回所给方块的侧征列表。",
+    "相关章节",
+    "patterns/hexpose:get_blockstates 1"
+  ],
+  "dwdwdeweaqa": [
+    "检查玩家是否处于隐士之飞行或旅者之飞行的影响之下。",
+    "相关章节",
+    "patterns/hexcasting:flight/can_fly 1"
+  ],
+  "wdwewdwdwqwawwwawewawwwaw": [
+    "Peacefully put my Enchanted Sentinel to rest for a negligible amount of media, letting it rest for a time. Perhaps the ethical option, considering \"falling apart\" may not be the most painless.",
+    "相关章节",
+    "patterns/lapisworks:banish_my_enchsent 1"
+  ],
+  "eaqdaadqaeewq": [
+    "将媒质波的当前速度压入栈顶。测量方法是：在流入下一块石板前，媒质波需等待多少个 1/20 秒。",
+    "相关章节",
+    "patterns/slate_work:wave_speed 1"
+  ],
+  "qeeeeedww": [
+    "返回自身的链接个数。",
+    "相关章节",
+    "patterns/hexal:link/num 1"
+  ],
+  "adaqqqddqw": [
+    "接受一个物品标识，返回其饱和度。这一数据大致与饱腹感的持续时间对应。",
+    "相关章节",
+    "patterns/hexpose:get_saturation 1"
+  ],
+  "qqae": [
+    "将所有位左移 num 次。",
+    "相关章节",
+    "patterns/complexhex:shift/left 1"
+  ],
+  "awqqwaqd": [
+    "将书中记载组为文本列表返回；如所给参数不是书，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:read_book 1"
+  ],
+  "eaded": [
+    "Returns the entity that a given entity is riding. Null if the entity isn't riding anything.",
+    "相关章节",
+    "patterns/hyperhexcast:getmt 1"
+  ],
+  "wqwqwqwqwqwaqeeeeedww": [
+    "以给定四元数旋转 BIT。",
+    "相关章节",
+    "patterns/complexhex:rotatebit 1"
+  ],
+  "dadadedadadwqaeaqeww": [
+    "清除列表内所有注释iota，返回处理后的列表。",
+    "相关章节",
+    "patterns/hexparse:remove_comments 1"
+  ],
+  "wdwddwewddwdw": [
+    "Takes in an expression and a lone symbol and returns the partial derivative of the expression with respect to the symbol.",
+    "相关章节",
+    "patterns/complexhex:derivative 1"
+  ],
+  "eeeeede": [
+    "移除一个位置向量，然后挑选一个方块并放在给定位置。 消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:place_block 1"
+  ],
+  "wwdeeeeeqdwewewewewewwwdwqwdwqwdwqwdwqwdwqwdw": [
+    "滚 出 去",
+    "相关章节",
+    "patterns/hexdim:dim/kick 1"
+  ],
+  "aeqeawaeqeaaee": [
+    "移除栈顶结构，返回其经历的变换，格式为 [镜像, 垂直镜像, X轴旋转, Y轴旋转, Z轴旋转]。",
+    "相关章节",
+    "patterns/hexstruction:transformations 1"
+  ],
+  "aaweeqqaed": [
+    "根据所给标识、标签、图标、位置创建图标标记。",
+    "相关章节",
+    "patterns/hexmapping:create_marker/icon 1"
+  ],
+  "ewaqawe": [
+    "在开始发信之后绘制，意味着发信过程结束。如果开始发信或结束发信是由中介施法者（如咒灵）运行的话，则会产生事故。",
+    "相关章节",
+    "patterns/hexal:link/comm/close_transmit 1"
+  ],
+  "wqqqaqwdd": [
+    "获取效果的持续时间，以 1/20 秒计，无给定效果则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:get_effect_duration 1"
+  ],
+  "qaqqqqdweee": [
+    "接受一个向量，进行归一化，并令我的意识向该方向冲刺。如果传入零向量则让速度归零。无需消耗媒质。如果我当前不能冲刺，则无效果。需要雌激素。",
+    "相关章节",
+    "patterns/hextrogen:dash 1"
+  ],
+  "qded": [
+    "将物元中所有物品返还到所给位置处。若传入数，则最多返还该数个物品。消耗 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:mote/return 1"
+  ],
+  "ddwaa": [
+    "返回一个数，这个数似乎与自然记录时间的方式有关。如果先绘制一遍此图案，在 1 秒后再绘制一遍，返回的数会增加 20。",
+    "相关章节",
+    "patterns/hexal:current_tick 1"
+  ],
+  "qdqdqdqdqdq": [
+    "返回一个封泡 iota。在运行（赫尔墨斯之策略等）中弹出此类 iota 时，其会将内部的 iota 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:bubble 1"
+  ],
+  "awaqeeeeewded": [
+    "接受一个文本 iota 和一个颜色；颜色由各分量为 0 到 1 的向量定义。返回设置为该颜色的文本。",
+    "相关章节",
+    "patterns/hexpose:text_color 1"
+  ],
+  "eeewwweeewwaqqddqdqd": [
+    "召雨的反面。此法术会将我所处世界的雨水驱离。消耗大约 1 个紫水晶碎片。若未在下雨就无效。",
+    "相关章节",
+    "patterns/hexcasting:dispel_rain 1"
+  ],
+  "qqwwqqqadwewdeq": [
+    "用紫金石包裹双足，以此阻断距离在 10 格以下的摔落，每级阻断上限增加 10 格。不会降低伤害。共 2 级。每级 5 个充能紫水晶和 32 个紫金石。",
+    "相关章节",
+    "patterns/lapisworks:falldmgres 1"
+  ],
+  "eqqaqqwaaw": [
+    "接受一个实体，返回在该实体上方落座的实体列表。",
+    "相关章节",
+    "patterns/ephemera:getrider 1"
+  ],
+  "eweeewedqdeddw": [
+    "接受指向阿卡夏记录的位置向量，与一个作为键的图案，并返回永恒之书中对应键处的 iota，若能存储则同时会将其存至给定的阿卡夏记录中。",
+    "相关章节",
+    "patterns/hexal:everbook/read 1"
+  ],
+  "eaqqdee": [
+    "将所有位右移 num 次。",
+    "相关章节",
+    "patterns/complexhex:shift/right/logical 1"
+  ],
+  "qwawqwa": [
+    "将我当前持有物品的组别返回为数。",
+    "相关章节",
+    "patterns/hexical:get_hotbar 1"
+  ],
+  "wedqdewqqqqaww": [
+    "若所给向量处有剪接台，且其副槽位物品可写，则将该向量替换为 True；否则返回 False。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/writable 1"
+  ],
+  "wdeeeeeq": [
+    "返回一个数和一个向量，数为所给四元数的标量部，向量的 x、y、z 值分别为所给四元数的 i、j、k 的系数。",
+    "相关章节",
+    "patterns/complexhex:qunmake 1"
+  ],
+  "aaqwdwwwdwwwdweede": [
+    "接受一个索引、一个缩放因数。缩放像图。",
+    "相关章节",
+    "patterns/scryglass:scale_icon 1"
+  ],
+  "qqawwawqwqwaewaw": [
+    "接受一个传送门和一个位置向量，将其入口移动至所给位置。消耗略低于创建传送门，窥视门的消耗更少。",
+    "相关章节",
+    "patterns/hexways:moveportalinput 1"
+  ],
+  "wwaqqqqqeqdedwwqwqwwdedwwqwqw": [
+    "刻入一份咒术，此后按住唤咒键 1 秒即可唤咒施放。消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexical:set_evocation 1"
+  ],
+  "wdeeqawqwqwadeaqadeaedaqae": [
+    "接受一个传送门入口向量、一个传送门出口向量、一个传送门朝向向量，以及一个初始半径数。消耗随距离对数式增加。",
+    "相关章节",
+    "patterns/hexways:twowayportal 1"
+  ],
+  "eeeeewaqaawd": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非生物实体的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/not_living 1"
+  ],
+  "wwqaqwwdw": [
+    "召唤一个会缓慢飞向所给实体的弹射物，击中则造成一颗心的伤害。消耗 1 个紫水晶粉。会将纸飞机压栈。",
+    "相关章节",
+    "patterns/yaha:paper_plane 1"
+  ],
+  "wqwqwqwqwqwawedewdwedew": [
+    "返回象征着主世界的空间印记。消耗 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/oneironaut:getdim/overworld 1"
+  ],
+  "waqqedwewewdawdwwwdw": [
+    "这个好用的图案会返回传送门的出口位置向量（对于双向传送门来说，是出口传送门的位置）。配合传送门影响范围有大用处。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexways:getoutputinfo 1"
+  ],
+  "qqaqqqd": [
+    "获取我的个人媒质条最多可容纳多少媒质（以 0.0001 粉为单位）。",
+    "相关章节",
+    "patterns/hexoverpowered:get_personal_media_max 1"
+  ],
+  "deewad": [
+    "设置术师方块所发出的红石信号的强度。",
+    "相关章节",
+    "patterns/hexical:modify_block_energized 1"
+  ],
+  "awaqeeeeedw": [
+    "接受一个文本，设置其是否有下划线。",
+    "相关章节",
+    "patterns/hexpose:text_underline 1"
+  ],
+  "awewaawew": [
+    "Gives the bounciness of the target's breasts",
+    "相关章节",
+    "patterns/hexgender:get_bounciness 1"
+  ],
+  "aqeeqaaeweeewe": [
+    "接受栈顶字符串和实体，并将该实体的名称设定为该字符串。若为物品实体，则会同时更改物品的名称。消耗 1/100 个紫水晶粉。",
+    "相关章节",
+    "patterns/moreiotas:string/name/set 1"
+  ],
+  "qaqqae": [
+    "由物品标识和组内物品数制造物品。",
+    "相关章节",
+    "patterns/hexpose:create_stack 1"
+  ],
+  "aqwed": [
+    "移除栈顶位置向量和面向量，并返回与该位置处方块对应面交互时可获得的物品组列表（若面向量为零向量则检索所有面）。",
+    "相关章节",
+    "patterns/moreiotas:item/inventory/stacks 1"
+  ],
+  "waqqqqqew": [
+    "取反 i、j、k 的系数。",
+    "相关章节",
+    "patterns/complexhex:qinvert 1"
+  ],
+  "wdwewewewewewqw": [
+    "与估价员之精思类似，但会检测实体可写性，而非手中物品。",
+    "相关章节",
+    "patterns/hexcasting:writable/entity 2"
+  ],
+  "adadee": [
+    "只应在托特之策略内部使用。详情见下一页。小心“钻研过深”事故。",
+    "相关章节",
+    "patterns/overevaluate:castor 1"
+  ],
+  "waawaawaqwaeaeaeaeaea": [
+    "接受一个图案，并以此生成一个无法手动绘制的、因人而异的图案。 似乎会给予某些法术更多能量。",
+    "相关章节",
+    "patterns/hextweaks:infusion 1"
+  ],
+  "edqdewawddw": [
+    "接收重排范围和自底向上的序号列表，对剩余栈执行相应重排动作。例如，3和[1,2,0]对应轮换之策略，2和[0,1,0,1]对应狄俄斯库里之策略",
+    "相关章节",
+    "patterns/hexflow:mass_rotate 1"
+  ],
+  "qedqaw": [
+    "与忒提斯之策略类似，但它会将当前运行的跳转标签设置至所给 iota。若该 iota 为 Null，则其效果与忒提斯之策略等价。",
+    "相关章节",
+    "patterns/caduceus:eval/prompt_at 1"
+  ],
+  "dwewdweq": [
+    "移除栈顶向量和字符串。若该向量坐标处有一告示牌或讲台，则会将所给字符串写至其上。消耗 1/100 个紫水晶粉。",
+    "相关章节",
+    "patterns/moreiotas:string/block/set 1"
+  ],
+  "eewdweqaqewdwee": [
+    "让我只能看见最为重要的事物……",
+    "相关章节",
+    "patterns/hexical:shader_media 1"
+  ],
+  "eqaedw": [
+    "与阿尔刻之策略类似，但它只会转移到闭合的忒提斯之策略，第二型，且其携带的跳转标签应匹配所给 iota。若该 iota 为 Null，则其效果与阿尔刻之策略等价。",
+    "相关章节",
+    "patterns/caduceus:eval/control_at 1"
+  ],
+  "awawaawq": [
+    "受范围限制的飞行法术。",
+    "相关章节",
+    "patterns/hexcasting:flight/range 1"
+  ],
+  "deqqeddqwqqqwq": [
+    "接受栈顶实体，并返回其名称。若为物品实体，则返回物品的名称。",
+    "相关章节",
+    "patterns/moreiotas:string/name/get 1"
+  ],
+  "wqqqdqqqw": [
+    "Gives the bust size of the target",
+    "相关章节",
+    "patterns/hexgender:get_bust_size 1"
+  ],
+  "waadwawdaaweewq": [
+    "我能命令苍穹！此法术会在我所想之处召唤一道落雷。消耗大约 3 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexcasting:lightning 1"
+  ],
+  "waawaw": [
+    "压入一个仅含单个换行符的字符串。其在连接其他字符串方面十分有用。",
+    "相关章节",
+    "patterns/moreiotas:string/newline 1"
+  ],
+  "edqdewqaeaq": [
+    "传入一个实体（在影响范围内）和一个向量，并将实体位置的小数部分变为所给向量（有上下限截断）。若传入数，则代表所有分量均为该数的向量。消耗极少量媒质，效果也是弱得可怜。",
+    "相关章节",
+    "patterns/lessertp:lesser_tp 1"
+  ],
+  "aawawaa": [
+    "以向量返回我视野的全宽和全高。",
+    "相关章节",
+    "patterns/scryglass:get_window_size 1"
+  ],
+  "dwdwdewq": [
+    "受时间限制的飞行法术。",
+    "相关章节",
+    "patterns/hexcasting:flight/time 1"
+  ],
+  "eaqaaeqqqqqaweaqaaw": [
+    "将施法者链接至栈顶实体，且实体必须为可链接的。消耗 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexal:link 1"
+  ],
+  "weeeqqeeew": [
+    "Sets the cleavage of the caster's breasts",
+    "相关章节",
+    "patterns/hexgender:set_cleavage 1"
+  ],
+  "aawe": [
+    "创造一个指向随机质性的质性 iota。向宇宙蚀刻这道法则需消耗大约 5 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexcellular:create_property 1"
+  ],
+  "eqqqqqaaw": [
+    "在给定位置以给定速度（格每 1/20 秒）构筑特定粒子。消耗大约 1/32 个紫水晶粉。",
+    "相关章节",
+    "patterns/efhexs:play_particle 1"
+  ],
+  "wqqqadee": [
+    "获取食物或药水提供的状态效果列表。",
+    "相关章节",
+    "patterns/hexpose:get_effects_item 1"
+  ],
+  "qqqqadww": [
+    "Specific hand version of Auditor's Reflection. Pushes whether the item in the specified hand can be read from or not.",
+    "相关章节",
+    "patterns/lapisworks:readable_spechand 1"
+  ],
+  "wdwdwedewdwaaw": [
+    "返回施重力的效果在所给实体上还会持续多少个 1/20 秒。若实体未受施重力影响，则返回 0。",
+    "相关章节",
+    "patterns/hexodus:get_duration 1"
+  ],
+  "ade": [
+    "按照所给 iota、位置、朝向构筑视斑。消耗极少量媒质。压入视斑 iota。",
+    "相关章节",
+    "patterns/hexical:conjure_speck 1"
+  ],
+  "deaqd": [
+    "使用参数数目和数列表创建理栈 iota。",
+    "相关章节",
+    "patterns/overevaluate:create_jumble 1"
+  ],
+  "aqqqqa": [
+    "Specific hand version of Scribe's Reflection. Pushes the Iota stored in the Iota holder in the specified hand to the stack.",
+    "相关章节",
+    "patterns/lapisworks:read_spechand 1"
+  ],
+  "qaqda": [
+    "压入我按下向右移动键的时间，以 1/20 秒计，如果未按下则返回 -1。很容易和左躲之精思区分，因为右避之精思名字里有个“右”。",
+    "相关章节",
+    "patterns/hexical:moving_right 1"
+  ],
+  "weaqaweewwawqwaw": [
+    "接受一个传送门、一个高度数、一个宽度数，以此更改传送门的大小。神奇的是，此图案同时会把传送门的外形变回六边形。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexways:resizeportal 1"
+  ],
+  "waqqqqqedeqdqdqdqdqe": [
+    "向咒符物品内部的存储空间写入 iota。可能会招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:write_charmed 1"
+  ],
+  "qaqqqqqewaawaawa": [
+    "压入给定类型方块对爆炸的抗性。",
+    "相关章节",
+    "patterns/hexpose:block_blast_resistance 1"
+  ],
+  "dwwdqdwwddawd": [
+    "将栈顶矩阵依其长宽转换为数、向量或列表。",
+    "相关章节",
+    "patterns/moreiotas:matrix/unmake 1"
+  ],
+  "wqaeaqweeeedq": [
+    "移除栈顶向量，返回代表该处剪接台当前选中区域的两个值。",
+    "相关章节",
+    "patterns/hexdebug:splicing/selection/read 1"
+  ],
+  "qqqqqwdeddww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有掉落的物品的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/item 1"
+  ],
+  "ewded": [
+    "返回上一次传给筛具之策略的字符串。",
+    "相关章节",
+    "patterns/moreiotas:string/chat/prefix/get 1"
+  ],
+  "deaqqd": [
+    "弹出一个图案或图案列表，在栈顶往下一定位置处施放所给图案或列表，向下的元素数即是图案尾部的长度。达成的效果与外科医师之提整类似。",
+    "相关章节",
+    "patterns/overevaluate:nephthys 1"
+  ],
+  "awaqdwaaw": [
+    "检验活体是否处于幼年状态。奇怪的是对盔甲架也有效。",
+    "相关章节",
+    "patterns/hexpose:is_baby 1"
+  ],
+  "aqadqqdaqa": [
+    "接受一个属于我的咒灵或游走咒灵，并像乘坐矿车一样坐到其上。我必须处于咒灵的影响范围内，或距游走咒灵 4 格以内。消耗 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/ephemera:ridewisp 1"
+  ],
+  "qqqqqewaa": [
+    "若栈由调试杖或运行杖执行，则返回 True；否则返回 False。",
+    "相关章节",
+    "patterns/hexdebug:const/debugging 1"
+  ],
+  "dadqqqqqdad": [
+    "从栈顶获取实体类型和位置向量，返回该位置符合该类型的实体（若有）。",
+    "相关章节",
+    "patterns/moreiotas:get_entity/type 1"
+  ],
+  "qqqqqad": [
+    "计算所给角（弧度制）的余弦，也即该角在单位圆上的横坐标。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:cos 1"
+  ],
+  "qwedewqqqqq": [
+    "返回所给方块在地图上的颜色。",
+    "相关章节",
+    "patterns/hexpose:block_map_color 1"
+  ],
+  "eqqqqqaww": [
+    "移除栈顶数，并返回对应编号的链接所连的实体。",
+    "相关章节",
+    "patterns/hexal:link/get 1"
+  ],
+  "wawdedwaw": [
+    "移除栈顶数，返回其阶乘。例如输入 4 则会返回 4 * 3 * 2 * 1 = 24。",
+    "相关章节",
+    "patterns/hexal:factorial 1"
+  ],
+  "wdwddwqq": [
+    "Summons a parametric surface at the given position. The expression given will have a u&v-value (0-1), x/y/z position, and time (w) substituted in and must resolve to a vector on the surface",
+    "相关章节",
+    "patterns/complexhex:summon/surface 1"
+  ],
+  "waqqqqqe": [
+    "返回一个四元数，其标量部为所给数，i、j、k 的系数分别为所给向量的 x、y、z 值。",
+    "相关章节",
+    "patterns/complexhex:qmake 1"
+  ],
+  "weeeweedada": [
+    "冻结所给坐标处方块。例如，水变为冰，冰变为浮冰。消耗 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:freeze 1"
+  ],
+  "aaweqde": [
+    "根据所给标识、标签、位置列表或 Hexical 的网斑实体创建折线标记。",
+    "相关章节",
+    "patterns/hexmapping:create_marker/polyline 1"
+  ],
+  "wawdwawawdwawawdwewdwqwdwqwdwqwdwqwdwqwdw": [
+    "为我制造一个新维室。",
+    "相关章节",
+    "patterns/hexdim:dim/create 1"
+  ],
+  "qqaqqea": [
+    "获取我的个人媒质条中有多少媒质（以 0.0001 粉为单位）。",
+    "相关章节",
+    "patterns/hexoverpowered:get_personal_media 1"
+  ],
+  "aqdea": [
+    "只应在托特之策略或西西弗斯之策略内部使用。效果与卡戎之策略类似，但不会完全停止迭代，而只是会跳过当前迭代剩余的部分。",
+    "相关章节",
+    "patterns/overevaluate:atalanta 1"
+  ],
+  "qqqqqwdeddwe": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有玩家的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/player 1"
+  ],
+  "wwwdwdwwwawqqeqwqqwqeqwqq": [
+    "在法术运行的那一刻，加速所给位置处方块的运作。",
+    "相关章节",
+    "patterns/hexal:tick 1"
+  ],
+  "qaqqqqqwqqqdeeweweeaeewewee": [
+    "在所给位置构筑一个网斑，并压入一个网斑实体。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:conjure_mesh 1"
+  ],
+  "awdwa": [
+    "压入一个空字符串。其在连接其他字符串方面十分有用。",
+    "相关章节",
+    "patterns/moreiotas:string/empty 1"
+  ],
+  "eaqawqadaqd": [
+    "在给定位置生成一格熔岩（或给流体容器注入至多一桶熔岩）。消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexcasting:create_lava 1"
+  ],
+  "daqqqqwa": [
+    "在屏幕中央显示 iota。这么做会阻碍视野，消散也要时间，因此不应经常使用。",
+    "相关章节",
+    "patterns/hexical:shout_telepathy 1"
+  ],
+  "adeaw": [
+    "令视斑实体的朝向变为所给向量。",
+    "相关章节",
+    "patterns/hexical:rotate_specklike 1"
+  ],
+  "aadee": [
+    "立即终止当前咒术，无视所有限制。",
+    "相关章节",
+    "patterns/overevaluate:janus 1"
+  ],
+  "qeqwqwqwqwqeqaweqqqqqwweeweweewqdwwewewwewweweww": [
+    "令一个咒术入队列，并在所给数个 1/20 秒后施放。还需一个 iota 作为磁带的标签。",
+    "相关章节",
+    "patterns/hexcassettes:enqueue 1"
+  ],
+  "ddeawawa": [
+    "从我的意识里永久性移除一个内嵌意识。",
+    "相关章节",
+    "patterns/hierophantics:free_mind 1"
+  ],
+  "eadeeeeew": [
+    "计算所给数的反正切，也即正切为该值的角。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:arctan 1"
+  ],
+  "aqawwqaw": [
+    "取走我法杖栈的栈顶 iota，并交给当前施法环境；或是会压入垃圾。会招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:grok_pull 1"
+  ],
+  "aqaew": [
+    "检验玩家、猫、狐狸、以及其他实体是否处于睡眠状态。",
+    "相关章节",
+    "patterns/hexpose:is_sleeping 1"
+  ],
+  "qqqqqeeqqqq": [
+    "Obtains the target's selected gender as an ordinal (number)",
+    "相关章节",
+    "patterns/hexgender:get_gender 1"
+  ],
+  "qqawqaqw": [
+    "接受任意 iota，转换成哈希值。",
+    "相关章节",
+    "patterns/ephemera:hash 1"
+  ],
+  "dade": [
+    "什么都不会做，但图案尾部可为任意形状。适合用作替换占位符。",
+    "相关章节",
+    "patterns/hexthings:noop 1"
+  ],
+  "qqqqqawwqdwdwd": [
+    "创建一个在我跳跃时激活的触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_jump_trigger 1"
+  ],
+  "eaedweew": [
+    "返回书的作者及书的复制代数。",
+    "相关章节",
+    "patterns/hexpose:book_sources 1"
+  ],
+  "wqeawaqddaqw": [
+    "接受一个活体实体，并返回其在生命值受影响前能吸收的伤害量。",
+    "相关章节",
+    "patterns/ephemera:getabsorption 1"
+  ],
+  "wwqaqwwdedde": [
+    "返回纸飞机的目标，若没有则返回 Null。",
+    "相关章节",
+    "patterns/yaha:paper_plane_target 1"
+  ],
+  "qaawawaeqqqdd": [
+    "给予急迫。每 3 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/haste 1"
+  ],
+  "qqqqqwdeddwa": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有动物的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/animal 1"
+  ],
+  "qqqqqaw": [
+    "获取存储所给物元的枢纽的位置。",
+    "相关章节",
+    "patterns/hexal:mote/storage/get 1"
+  ],
+  "aaqqaeea": [
+    "将我意识中的魔法手投射出来，以在世界中使用魔袋中的物品交互。如果魔袋为空，则表现为空手交互。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:mage_hand 1"
+  ],
+  "aaddaddad": [
+    "放下神灯的那一刹那，它会额外施法一次。这个图案能判断精灵的施法是否是最后一次，并据此做出反应。",
+    "相关章节",
+    "patterns/hexical:lamp_finale 1"
+  ],
+  "qqaa": [
+    "那名巫师将紫金石灌注到了构筑方块里，随后他发现他可以借此为方块染色。消耗 2 个紫水晶粉，同时需指定染料对应的数。更多解释见后页。",
+    "相关章节",
+    "patterns/lapisworks:conjure_color 1"
+  ],
+  "qaqwddedqeed": [
+    "判断玩家当前是否已启动大精灵神灯。",
+    "相关章节",
+    "patterns/hexical:has_arch_lamp 1"
+  ],
+  "qqqqqdaqaawe": [
+    "将栈顶位置向量变为该处玩家（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity/player 1"
+  ],
+  "wqqqaqwd": [
+    "将数列表转换回图案，以供检视与运行。是笔迹师之纯化的逆法术。",
+    "相关章节",
+    "patterns/hexical:deserialize_pattern 1"
+  ],
+  "edqdeq": [
+    "返回 iota 的类型。可用来判断两个 iota 是否是同一类型。",
+    "相关章节",
+    "patterns/hexpose:classify 1"
+  ],
+  "qqqadaddq": [
+    "返回玩家的饱和度。这一数据大致与饱腹感的持续时间对应。",
+    "相关章节",
+    "patterns/hexpose:get_player_saturation 1"
+  ],
+  "wddweddwwddwedd": [
+    "移除地图中使用所给标识的标记。",
+    "相关章节",
+    "patterns/hexmapping:remove_marker 1"
+  ],
+  "eeeeq": [
+    "返回 0 与 1 之间的随机数，服从正态分布，其均值为 0，标准差为 1。",
+    "相关章节",
+    "patterns/ephemera:gaussianrand 1"
+  ],
+  "eaqaaw": [
+    "从所给物元中拆分出所给数个物品，以此创建一条物元记录并返回对应物元 iota。",
+    "相关章节",
+    "patterns/hexal:mote/split 1"
+  ],
+  "wqwaeawq": [
+    "返回字典的值列表。",
+    "相关章节",
+    "patterns/hexthings:dict_vals 1"
+  ],
+  "awdedwawawwaeawwa": [
+    "接受一个 n×m 矩阵与一个 0 到 n 间的整数，返回由原矩阵在所给整数行处上下分割所得的两个矩阵。",
+    "相关章节",
+    "patterns/moreiotas:matrix/split/vert 1"
+  ],
+  "adaqqqddaed": [
+    "接受一个物品标识，检验它是否是肉类，也即狼能否食用。",
+    "相关章节",
+    "patterns/hexpose:is_meat 1"
+  ],
+  "aaqqadaqwqa": [
+    "将法术环连接至影响范围内的支座，以将其视作另一只手。适合需要另一只手中持有物品的法术。",
+    "相关章节",
+    "patterns/hexical:absorb_arm 1"
+  ],
+  "ewdewwde": [
+    "移除栈顶 iota 并将其压入法杖栈栈顶。会招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:grok_push 1"
+  ],
+  "qqqqqe": [
+    "将实体的标识或位置向量处方块的标识压入栈顶。",
+    "相关章节",
+    "patterns/hexpose:identify 1"
+  ],
+  "dwqqqqqwddww": [
+    "获取当前绑定的枢纽中所有物元的类型。",
+    "相关章节",
+    "patterns/hexal:mote/contained_type/get 1"
+  ],
+  "daqqqa": [
+    "接受一个位置向量和一个数，并使所给位置上方块的体积消失所给数秒。消耗 1/1000 与消失时间的平方的乘积个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:interop/fabric_only/phase_block 1"
+  ],
+  "qde": [
+    "接受一个玩家和一个长度少于 256 个字符的 iota，并向所给玩家展示该 iota，如同他们来施放揭示一般；同时也告诉他们信息的发送者。消耗与给定玩家上一次作为此法术目标后经过的时间成反比例。",
+    "相关章节",
+    "patterns/ephemera:revealtoother 1"
+  ],
+  "qaqdd": [
+    "清除栈，栈顶 n 个元素除外，具体由图案的尾部长度决定。上方的示例分别会保留 0 个、1 个、2 个 iota。",
+    "相关章节",
+    "patterns/overevaluate:sekhmet 1"
+  ],
+  "qqqaqqq": [
+    "检验实体是否“被魔法手段去除了意识”。我总觉得它和剥离意识之间有种紧密的联系……",
+    "相关章节",
+    "patterns/hexpose:is_brainswept 1"
+  ],
+  "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq": [
+    "消耗大约 10 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexcasting:craft/artifact 1"
+  ],
+  "qwqqadadadewewewe": [
+    "接受一个物品实体，并像熔炉一样烧炼它。熔炉每需烧炼 10 秒消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:smelt 1"
+  ],
+  "dqqqaw": [
+    "对最近最多 32 条聊天栏消息执行新闻之精思；每个消息的执行结果各自组为列表，再将这些列表组为列表返回。",
+    "相关章节",
+    "patterns/hexpose:get_chat 1"
+  ],
+  "qwqqqwqawaa": [
+    "使用回响之杖施放时，返回当前循环开始时我的眼部位置。",
+    "相关章节",
+    "patterns/oneironaut:getrodpos 1"
+  ],
+  "wqqa": [
+    "将 1 + 0i 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/complex/1 1"
+  ],
+  "edewqaqqqqqwqqq": [
+    "在给定位置和时间获取染色剂颜色，返回为向量，各分量对应红、绿、蓝，取值范围为 0 到 1。",
+    "相关章节",
+    "patterns/hexical:sample_pigment 1"
+  ],
+  "edade": [
+    "获取一个空 JSON 对象。",
+    "相关章节",
+    "patterns/hexweb:create_json 1"
+  ],
+  "dwaqqw": [
+    "为可染色的方块或实体染色。消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:dye 1"
+  ],
+  "qqqqqadwawaww": [
+    "给予中毒。每 3 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/poison 1"
+  ],
+  "wwdeeeeeqeaqawwewewwaqawwewew": [
+    "返回刻入我意识的咒术。",
+    "相关章节",
+    "patterns/hexical:get_evocation 1"
+  ],
+  "aeqeawaeqea": [
+    "移除栈顶结构原点向量和一个结构，并尝试在该原点的位置处放置结构，同时清除其他存储位置中代表同一结构的 iota。如果结构的任意一个部分与其他方块重叠，即会招致事故。 每放置一个方块消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexstruction:load_structure 1"
+  ],
+  "wqded": [
+    "与侦查员之馏化类似，但能够接受一个实体类型 iota 列表。类型不在该列表内的实体会被忽略。消耗的媒质量略多于上文所提图案的“极少量”。",
+    "相关章节",
+    "patterns/ephemera:filteredentityraycast 1"
+  ],
+  "wwweeewwweewdawdwad": [
+    "我能控制云彩！此法术会在我所处世界各处召来雨水。消耗大约 1 个充能紫水晶。若已在下雨就无效。",
+    "相关章节",
+    "patterns/hexcasting:summon_rain 1"
+  ],
+  "qaqqqqqeawa": [
+    "接收一个方块和一个侧征，返回该侧征的值。",
+    "相关章节",
+    "patterns/hexpose:query_blockstate 1"
+  ],
+  "wdedwdwwdqdww": [
+    "将第一个 n×m 矩阵中各元素与另一个 n×m 矩阵中相应元素相除。",
+    "相关章节",
+    "patterns/moreiotas:altdiv 1"
+  ],
+  "waqqqqqea": [
+    "将 1 + 0i + 0j + 0k 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/quaternion/1 1"
+  ],
+  "wwawwqwwawwaqdq": [
+    "接受一个物品展示框实体与一个 0 到 7 的整数，并将物品朝向设置为该数。消耗极少量媒质。",
+    "相关章节",
+    "patterns/ephemera:setframerotation 1"
+  ],
+  "dqddq": [
+    "返回我所有全部初等哨卫的位置列表。",
+    "相关章节",
+    "patterns/hexical:get_lesser_sentinels 1"
+  ],
+  "edwdwda": [
+    "查询剩余的“发送能量”点数。",
+    "相关章节",
+    "patterns/mediatransport:check_rate_limit 1"
+  ],
+  "eeeeeqawa": [
+    "接受一个状态效果，并根据该效果对生物产生正面、负面，或中性影响返回一个数。",
+    "相关章节",
+    "patterns/ephemera:getstatuscategory 1"
+  ],
+  "wdeaqe": [
+    "运行栈中的图案或图案列表，与赫尔墨斯之策略完全一致；区别在于，其内部的阿尔刻之策略无法获取其外部的 iota。",
+    "相关章节",
+    "patterns/caduceus:eval/prompt 1"
+  ],
+  "aaqqadaa": [
+    "此法术能让我吃下魔袋中的物品，填饱我的肚子，或是给予我药水效果。消耗大约 1 个紫水晶粉，若物品无法食用则招致事故。",
+    "相关章节",
+    "patterns/hexical:mage_mouth 1"
+  ],
+  "qaqqaeawaeaeqqqeqqwwqqeqqq": [
+    "我死亡时，各个内嵌意识会失稳并停止运作。此法术可让它们回到工作状态。每恢复 1 个意识消耗 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hierophantics:reenable_minds 1"
+  ],
+  "eqqwqqqwaaw": [
+    "接受一个非列表 iota，并将其存入当前循环。该 iota 会在循环结束时丢失。",
+    "相关章节",
+    "patterns/oneironaut:writerodram 1"
+  ],
+  "qeeeeedweqqqqqaww": [
+    "接受两个可链接事物，若其间存在链接，则会将其断开。消耗 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:link/unlink/others 1"
+  ],
+  "eewdead": [
+    "返回实体身上的火焰距自然熄灭剩余多少秒，实体未在燃烧则返回 -1。",
+    "相关章节",
+    "patterns/hexpose:burning 1"
+  ],
+  "qaqqqqqwwdwewdw": [
+    "接受一个向量，以字符串列表形式返回该位置处方块各状态值。",
+    "相关章节",
+    "patterns/ephemera:getproperties 1"
+  ],
+  "wawqwqwqwqwqwew": [
+    "与审计员之精思类似，但会检测实体可读性，而非手中物品。",
+    "相关章节",
+    "patterns/hexcasting:readable/entity 2"
+  ],
+  "wedqdewqqqqae": [
+    "移除栈顶向量和两个值，按照前页描述根据所给的两个值设置该处剪接台的选中区域。",
+    "相关章节",
+    "patterns/hexdebug:splicing/selection/write 1"
+  ],
+  "waqa": [
+    "将施法者发至聊天框的最后一条消息作为字符串压入栈顶。",
+    "相关章节",
+    "patterns/moreiotas:string/chat/caster 1"
+  ],
+  "qqqqqawwwqaqqqqq": [
+    "创建一个在我破坏方块时激活的触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_break_trigger 1"
+  ],
+  "wdwdd": [
+    "Creates a new symbol with the given (single character) label",
+    "相关章节",
+    "patterns/complexhex:new_symbol 1"
+  ],
+  "adaaddad": [
+    "和壶罐之精思类似，但会从跳转 iota 的顶部帧所对应的跳转标签中读出。",
+    "相关章节",
+    "patterns/caduceus:read/mark/iota 1"
+  ],
+  "wwaqqqqqeaqeaeqqqeaeq": [
+    "消耗大约 5 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexcasting:craft/trinket 1"
+  ],
+  "qaeaqeaa": [
+    "挑选列表中自然认作 True的元素，以列表形式返回它们的下标。",
+    "相关章节",
+    "patterns/hexthings:uiua_where 1"
+  ],
+  "qqqqqaqwawaw": [
+    "给予虚弱。每 10 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/weakness 1"
+  ],
+  "awaqeeeeeda": [
+    "接受一个文本，设置其是否显示为随机文本。",
+    "相关章节",
+    "patterns/hexpose:text_obfuscated 1"
+  ],
+  "eewaqaweedd": [
+    "返回执行此图案的时间炸弹的位置。不由炸弹执行会招致事故。",
+    "相关章节",
+    "patterns/yaha:time_bomb_pos 1"
+  ],
+  "wwaqqqqqeqdedwqeaeqwdedwqeaeq": [
+    "Cracks the unprogrammed casting device or Curio in my offhand. Cracked casting devices proudly display their Hexes. Costs about one Charged Amethyst.",
+    "相关章节",
+    "patterns/hexical:jailbreak 1"
+  ],
+  "wwqwqwadwawdawqwaeqqaqqe": [
+    "掌控一整组紫金石和十块充能紫水晶的力量，让人变得犹如诞生自下界！",
+    "相关章节",
+    "patterns/lapisworks:fireresist 1"
+  ],
+  "qwaawewaawdqqwawwqwwawqdeqqqqqa": [
+    "读取已注册的回调法术。",
+    "相关章节",
+    "patterns/hex_ars_link:get_callback 1"
+  ],
+  "waawaawawdeddwaaqawdwddwddw": [
+    "将敌人的生命值视为整数，使用输入整数进行因数分解，质因数拥有更高效率。 用法1：living -> int 读取实体生命值等效的待分解正整数；...",
+    "相关章节",
+    "patterns/hexoverpowered:factor_cut 1"
+  ],
+  "eaddaddaeaeaddaddaeaeaddaddae": [
+    "充能当前施法环境至等量于114514紫水晶粉的媒质。",
+    "相关章节",
+    "patterns/hexoverpowered:yjsp_media 1"
+  ],
+  "qeqwqwqwqwqeqaweqqqqqwweeweweew": [
+    "返回我目前的空闲磁带槽总数。",
+    "相关章节",
+    "patterns/hexcassettes:free 1"
+  ],
+  "aqaeqwaawewaawdwawwawwqwwawwwded": [
+    "使用给定玩家的真名施放法术。 所使用的每个魔符将花费1 充能水晶媒质。",
+    "相关章节",
+    "patterns/hex_ars_link:cast_spell_as 1"
+  ],
+  "edeeee": [
+    "返回实体副手的物品。",
+    "相关章节",
+    "patterns/hexpose:get_offhand 1"
+  ],
+  "waaqqqqqe": [
+    "Reads the iota from the necklace I'm currently wearing, mishapping if there is no readable necklace available. (Drawing aid: the pattern is a line into almost a triangle, then a counterclockwise circle much like Scribe's Reflection.)",
+    "相关章节",
+    "patterns/lapisworks:read_necklace 1"
+  ],
+  "aeaeaeaeaeaaedwaq": [
+    "即将前往：巴西，我的领域，欢 乐 的 地 方",
+    "相关章节",
+    "patterns/hexdim:dim/kidnap 1"
+  ],
+  "qqqqqwdeddwq": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有怪物的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/monster 1"
+  ],
+  "aawda": [
+    "检查地图中是否存在使用所给标识的标记。",
+    "相关章节",
+    "patterns/hexmapping:has_marker 1"
+  ],
+  "aqwqaeaqa": [
+    "向副手咒典写入一个图案至图案列表的绑定关系。",
+    "相关章节",
+    "patterns/hexical:write_grimoire 1"
+  ],
+  "dqwaeawqd": [
+    "返回字典中的键值对，各键值对均为长度为 2 的列表。",
+    "相关章节",
+    "patterns/hexthings:dict_ents 1"
+  ],
+  "eeeeeqeaqaawqeeeee": [
+    "接受一个咒灵实体（所有者需是我）和一个编号数，并禁止该咒灵与该编号链接另一端的事物交换媒质。",
+    "相关章节",
+    "patterns/hexal:wisp/transfer/others/disallow 1"
+  ],
+  "aawddeeqqqqqaw": [
+    "反转数值触发条件的阈值。例如，“速度高于 5.0”会变成“速度低于 5.0”。对其他种类的触发条件没有效果。",
+    "相关章节",
+    "patterns/hierophantics:invert_trigger 1"
+  ],
+  "edeeeeeqdee": [
+    "返回实体装有的全部物品组成的列表；若实体无法容纳物品，则返回 Null。试图访问其他玩家的物品栏会招致事故。",
+    "相关章节",
+    "patterns/hexpose:get_inventory 1"
+  ],
+  "edwaqwaa": [
+    "Converts a number into a Float tag. These seem similar to Doubles, albeit with less precision.",
+    "相关章节",
+    "patterns/hexic:nbt/liftf 1"
+  ],
+  "qaqwedeeaqqqqq": [
+    "如果咒符物品本身就可以存储 iota（如核心），则从该存储空间读取 iota。",
+    "相关章节",
+    "patterns/hexical:read_charmed_proxy 1"
+  ],
+  "waeawaewawwa": [
+    "接受一个向量列表，并尝试将伪哨卫移动到对应位置。",
+    "相关章节",
+    "patterns/slate_work:set_sents 1"
+  ],
+  "qaqwddedadw": [
+    "将我开始使用大精灵神灯时的朝向压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_rotation 1"
+  ],
+  "qqqqqdaqaawq": [
+    "将栈顶位置向量变为该处怪物（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity/monster 1"
+  ],
+  "waqqqqqed": [
+    "将 0 + 0i + 0j + 1k 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/quaternion/k 1"
+  ],
+  "ewqqqqqadqe": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:tanh 1"
+  ],
+  "awwqqqwwa": [
+    "Transform all the Amethyst Lazuli in my other hand into Amethyst Shards. The Lapis turns into a fine mist which spreads quickly in the air. Excess shards spill onto the ground. Costs one shard.",
+    "相关章节",
+    "patterns/lapisworks:reclaim_ameth 1"
+  ],
+  "qqqqqwdeddwdawqqqwaq": [
+    "接受需传送的实体，用于访问网络的可链接事物，以及目的地。如果实体位于所给可链接事物 8 格之内，且距目的地 4 格之内存在网络节点，则实体会被传送。消耗量由被传送实体的类型决定。",
+    "相关章节",
+    "patterns/ephemera:networktp 1"
+  ],
+  "ddwqaq": [
+    "反照栈顶三个 iota 的顺序，将 A, B, C 变为 C, B, A。相当于交换栈顶元素和栈顶往下第三元素。",
+    "相关章节",
+    "patterns/overevaluate:swap_one_three 1"
+  ],
+  "qqqqqwaeaeaeaeaeadawa": [
+    "接受一个物品实体，将所给物品实体切制为目标物品的形状。消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:stonecut 1"
+  ],
+  "eaqdaadqae": [
+    "将促动石的当前媒质量压入栈顶，以紫水晶粉计。",
+    "相关章节",
+    "patterns/slate_work:media_reflection 1"
+  ],
+  "eqeweweweweqedwqeeeee": [
+    "若所给标签无对应活动中磁带，返回 Null；若有，返回磁带的咒术。我听传言称，这个图案能用来存储 iota，也可用来在咒术间传递信息。",
+    "相关章节",
+    "patterns/hexcassettes:inspect 1"
+  ],
+  "aawq": [
+    "设置质性 iota 的值。消耗大约 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcellular:set_property 1"
+  ],
+  "qwddedqwddwa": [
+    "将神灯开始使用后经过的时间压入栈顶。该数除以 20 即为秒数。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_use_time 1"
+  ],
+  "wdwdwedewqq": [
+    "返回施重力对实体的施力方向。若实体未受施重力影响，则返回 Null。",
+    "相关章节",
+    "patterns/hexodus:get_direction 1"
+  ],
+  "wqaeaqwdeaaea": [
+    "与放映员之纯化类似，但会读取副槽位中法术书当前的页码，而非主槽位。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/spellbook_index/read 1"
+  ],
+  "edwdwad": [
+    "将栈顶 iota 发送至以太，以便我当前的形象接收。可能会因多种理由而失败。固定消耗 1 点“发送能量”。",
+    "相关章节",
+    "patterns/mediatransport:send_fsb 1"
+  ],
+  "edead": [
+    "压入我按下向左移动键的时间，以 1/20 秒计，如果未按下则返回 -1。很容易和右避之精思区分，因为左躲之精思名字里有个“左”。",
+    "相关章节",
+    "patterns/hexical:moving_left 1"
+  ],
+  "aweeeeewa": [
+    "移除施法者接收队列中所有未读 iota。",
+    "相关章节",
+    "patterns/hexal:link/comm/clear 1"
+  ],
+  "wedqdewawdedw": [
+    "移除栈顶向量和数，移动该处剪接台的视野，以让所给下标的元素在视野最左侧。",
+    "相关章节",
+    "patterns/hexdebug:splicing/view_index/write 1"
+  ],
+  "wqqadaw": [
+    "对某种影像保持注意力，就可通过此图案探测到注意力的强度。压入我按下唤起心灵感应键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:get_telepathy 1"
+  ],
+  "qqqqqedwdwd": [
+    "接受一个实体和一个状态效果，并返回目标身上所给状态效果的持续时间，以秒计。",
+    "相关章节",
+    "patterns/ephemera:getstatusduration 1"
+  ],
+  "qaqqqqqwaea": [
+    "压入一个 0 到 1 的数，对应农作物的生长进度，对蜂巢、堆肥桶、炼药锅同样有效。奇怪的是，对蛋糕也有效。",
+    "相关章节",
+    "patterns/hexpose:blockstate_crop 1"
+  ],
+  "qwaawewaawdwawwawwqwwaww": [
+    "从我自己施放给定的法术。 所使用的每个魔符将花费1 粉末媒质。",
+    "相关章节",
+    "patterns/hex_ars_link:cast_spell 1"
+  ],
+  "edwaqwww": [
+    "Converts a number into an Int tag, between roughly negative 2 billion and positive 2 billion.",
+    "相关章节",
+    "patterns/hexic:nbt/lift4 1"
+  ],
+  "awwaeawwawawddw": [
+    "接受向量 v 与数 θ，返回对应以 v 为轴正向旋转 θ 弧度的旋转矩阵。",
+    "相关章节",
+    "patterns/moreiotas:matrix/rotation 1"
+  ],
+  "qwqwqwqwqwqqqeqaqeq": [
+    "接受一个有效键, 并返回刻印对应 iota 的时间，或是返回 -1。不消耗媒质。",
+    "相关章节",
+    "patterns/oneironaut:readideatime 1"
+  ],
+  "qaqdedaedqqdedaqaedeqd": [
+    "将我的视野分裂为多个小块，和蜘蛛的视野大概差不多。不太清楚为什么这么做能让我看得更清晰……",
+    "相关章节",
+    "patterns/hexical:shader_spider 1"
+  ],
+  "edewqaqqdeeeee": [
+    "如果咒符物品本身就可以存储 iota（如核心），则向该存储空间写入 iota。",
+    "相关章节",
+    "patterns/hexical:write_charmed_proxy 1"
+  ],
+  "eadqqqa": [
+    "接受一个图案，并将其转换为长度为 1 的向量列表。这些向量的 Z 分量为 0。也许对某些艺术性咒术很有用。",
+    "相关章节",
+    "patterns/hexical:draw_pattern 1"
+  ],
+  "ddqwaqeqa": [
+    "为所给实体的双足附魔，以此提升其移动速度。消耗 1 倍紫金石和 5 倍紫水晶碎片。上限为平常的 3 倍。对我来说大约是 1。",
+    "相关章节",
+    "patterns/lapisworks:moar_speed 1"
+  ],
+  "aqadea": [
+    "Returns whether or not the given entity is considered the \"Driver\" of its vehicle. Null if the entity isn't riding a vehicle.",
+    "相关章节",
+    "patterns/hyperhexcast:isdrvr 1"
+  ],
+  "eqqqqqaaq": [
+    "构筑给定颜色的尘埃。参数中的数大致对应量级和持续时间。",
+    "相关章节",
+    "patterns/efhexs:play_dust_particle 1"
+  ],
+  "wwdqdwwdqaq": [
+    "接受一个 n×n 矩阵并返回一个 n×n 矩阵，使得原矩阵和返回矩阵相乘得单位矩阵。",
+    "相关章节",
+    "patterns/moreiotas:matrix/inverse 1"
+  ],
+  "eaqwqae": [
+    "返回该法术环的促动石的位置。",
+    "相关章节",
+    "patterns/hexcasting:circle/impetus_pos 1"
+  ],
+  "awqaqqq": [
+    "检验所给玩家是否和我一样经过启迪。",
+    "相关章节",
+    "patterns/hexpose:am_enlightened 1"
+  ],
+  "aawwdd": [
+    "从 Pl3xmap 中读出当前维度的地图列表，并压入栈顶。",
+    "相关章节",
+    "patterns/hexmapping:get_maps/pl3xmap 1"
+  ],
+  "qaqqqwaaq": [
+    "检验该图案是否由施法者的主手施放。在没有手的施法者身上可能会产生奇怪的效果。",
+    "相关章节",
+    "patterns/hexpose:env_offhand 1"
+  ],
+  "wqwqwqwqwqwaeaqaaeaqaa": [
+    "假设存在以给定位置为中心、半径为所给数（限 1 到 64）的球，返回该球表面所有方块的坐标列表。消耗极少量媒质。",
+    "相关章节",
+    "patterns/lapisworks:spherical_dstl 1"
+  ],
+  "qqqqqwwaawewaawdww": [
+    "接受一个向量和一个数，并返回以所给位置为起始，指向范围内带有遮罩的实体的单位向量列表，侦测半径为所给数。",
+    "相关章节",
+    "patterns/oneironaut:detectshroud 1"
+  ],
+  "qqqqwaqa": [
+    "将 iota 暂时显示在快捷栏上方。如果持续施放，则每次施放都会立刻覆盖上一次的结果。",
+    "相关章节",
+    "patterns/hexical:send_telepathy 1"
+  ],
+  "dqd": [
+    "用第二列表指定的咒术“折叠”/“fold”第一列表。",
+    "相关章节",
+    "patterns/overevaluate:apep 1"
+  ],
+  "qqqwaqaaqeeewdedde": [
+    "构筑一枚蛋。可能可以孵出小鸡。消耗大约 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:egg 1"
+  ],
+  "dwqqwdedwqqwddwww": [
+    "移除一个咒灵实体和一个实体，若该实体是该咒灵的所有者，返回 True；否则返回 False。",
+    "相关章节",
+    "patterns/hexal:wisp/owner 1"
+  ],
+  "wqqd": [
+    "取反栈顶 iota 的虚部。",
+    "相关章节",
+    "patterns/complexhex:conjugate 1"
+  ],
+  "aeaae": [
+    "驱除已有的全部初等哨卫，再在列表中各位置处部署一个初等哨卫。",
+    "相关章节",
+    "patterns/hexical:set_lesser_sentinels 1"
+  ],
+  "aqaeaqdeeweweedq": [
+    "轻柔地破坏方块，从而更好地保留方块构造。消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:break_silk 1"
+  ],
+  "qwdea": [
+    "返回我另一只手中物品在损毁前还能使用的次数，会影响耐久度使用的效果不计。",
+    "相关章节",
+    "patterns/ephemera:getdurabilitymainhand 1"
+  ],
+  "qaeaqdadad": [
+    "从累积栈中弹出一个 iota 并压入当前栈。在托特之策略外部使用会招致事故。",
+    "相关章节",
+    "patterns/ephemera:thothyoink 1"
+  ],
+  "ddeeeeewd": [
+    "构筑一个不会造成伤害的雪球。消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:snowball 1"
+  ],
+  "wdeeqawqwqwaedaqwqad": [
+    "要是传送门的影响太过惹眼，此法术即可解决问题，直接消去一个传送门对。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexways:removeportal 1"
+  ],
+  "qqqwqqqqqaqeeaqwqae": [
+    "此图案会为目标位置处的法术刻印器绑定一个图案和一个 iota。",
+    "相关章节",
+    "patterns/slate_work:set_macro 1"
+  ],
+  "adeqqaawdd": [
+    "令视斑在所给数个二十分之一秒后消失。",
+    "相关章节",
+    "patterns/hexical:lifetime_specklike 1"
+  ],
+  "eewaqaweewaqaaww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非咒灵实体的列表。",
+    "相关章节",
+    "patterns/hexal:zone_entity/not_wisp 1"
+  ],
+  "aeede": [
+    "返回麦克风最后获取到的 16 种新声音。",
+    "相关章节",
+    "patterns/efhexs:get_sounds 1"
+  ],
+  "edwdwq": [
+    "获取队列中 iota 的个数。",
+    "相关章节",
+    "patterns/mediatransport:check_queue 1"
+  ],
+  "wddwaqqwqaddaqqwddwaqqwqaddaq": [
+    "压入世界经过的时间，主要用来计时，不受睡觉等事件的影响。以 1/20 秒计。",
+    "相关章节",
+    "patterns/hexpose:get_time 1"
+  ],
+  "qqqeawqwawq": [
+    "适用于支持槽位的来源，即常见的物品存储空间。返回其中所有物品组组成的列表，列表索引即为其槽位数。",
+    "相关章节",
+    "patterns/hexical:index_hopper 1"
+  ],
+  "awdedwaaw": [
+    "和普通的数一样，自然也没好心到给出对我们来说足够简单的创建方法。 （详情见后页）",
+    "相关章节",
+    "patterns/complexhex:long 1"
+  ],
+  "waqdeq": [
+    "运行栈中的图案或图案列表，与伊里斯之策略类似。必须绘制于忒提斯之策略内部。",
+    "相关章节",
+    "patterns/caduceus:eval/control 1"
+  ],
+  "adadaqadadaawwqde": [
+    "将输入的注释Iota转换为字符串Iota，或其它内容转换为注释Iota；若未安装MoreIotas则无效果。",
+    "相关章节",
+    "patterns/hexparse:comment_switcher 1"
+  ],
+  "qqqqqwaeaeaeaeaea": [
+    "给另一只手中能装媒质的物品重新充能。每个物品消耗大约 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexcasting:recharge 1"
+  ],
+  "qqqqwaadq": [
+    "检验实体是否身处雨中、水中、或气泡柱中。",
+    "相关章节",
+    "patterns/hexpose:is_wet 1"
+  ],
+  "qdeqa": [
+    "重置通过邮递员之策略向我发送信息的消耗，也即 1/10 个紫水晶粉。消耗 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/ephemera:clearrevealcost 1"
+  ],
+  "dwwdqdwwdwdwa": [
+    "与解阵之纯化类似，但此图案只会返回由仅含数的列表组成的列表。",
+    "相关章节",
+    "patterns/moreiotas:matrix/unmake/direct 1"
+  ],
+  "qqqdaqqqa": [
+    "根据所给俯仰角和偏航角旋转实体，需以弧度为量度。",
+    "相关章节",
+    "patterns/hexical:rotate_entity 1"
+  ],
+  "waqqqqqeq": [
+    "将 0 + 1i + 0j + 0k 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/quaternion/i 1"
+  ],
+  "qwawqwaqea": [
+    "获取物品的名称。",
+    "相关章节",
+    "patterns/hexpose:item_name 1"
+  ],
+  "wqwawqwqqwqwq": [
+    "假设存在从点 A 至点 B 的空心（传入 True）或实心（传入 False）立方体，返回组成该立方体所有方块的坐标列表。消耗极少量媒质。",
+    "相关章节",
+    "patterns/lapisworks:cubic_exalt 1"
+  ],
+  "qqqqqawwqdwa": [
+    "创建一个在我受到伤害时激活的触发条件。为避免产生致命的链式反应，由过度施法造成的伤害不会激活此类触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_damage_trigger 1"
+  ],
+  "eeewdqdee": [
+    "返回循环式咒灵自身当前速度上限。",
+    "相关章节",
+    "patterns/hexal:wisp/move/speed/get 1"
+  ],
+  "wawwwdwdwwaqqqqqe": [
+    "接受一个生物和一个数，并给予该实体持续所给数秒的咒术侦测护盾。每秒持续时间消耗 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/oneironaut:resistdetection 1"
+  ],
+  "qwqwqwqwqwqqaedwaqd": [
+    "压入咒术施放时所处维度的标识。",
+    "相关章节",
+    "patterns/hexpose:get_dimension 1"
+  ],
+  "aeawwaeawaw": [
+    "接受一方阵并返回其行列式。若对 4×4 以上方阵使用，则会产生事故。",
+    "相关章节",
+    "patterns/moreiotas:matrix/determinant 1"
+  ],
+  "aeqeawaeqeaeed": [
+    "将所存结构绕 Z 轴顺时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_clockwise_z 1"
+  ],
+  "awd": [
+    "移除栈顶元素，并返回该 iota 的类型。",
+    "相关章节",
+    "patterns/moreiotas:type/iota 1"
+  ],
+  "waawweeeeaaeaeaeaeaw": [
+    "获取当前法杖画布内所有图案列表，按绘制先后顺序返回。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_patterns 1"
+  ],
+  "dwewdweedwa": [
+    "接受一个物品和一个文本列表，将文本列表加至物品作为描述。传入 Null 时清除描述。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexical:item_lore 1"
+  ],
+  "dwdwdewqded": [
+    "如果目标处于隐士之飞行影响下，返回 True；如果处于旅者之飞行影响下，返回 False；两者都不适用返回 Null。",
+    "相关章节",
+    "patterns/ephemera:getflight/type 1"
+  ],
+  "dwaqawdwdwwdqdwwd": [
+    "接受一个 n×m 矩阵与一个 0 到 m 间的整数，返回由原矩阵在所给整数列处左右分割所得的两个矩阵。",
+    "相关章节",
+    "patterns/moreiotas:matrix/split/hori 1"
+  ],
+  "eqqqqqawweqqqqqawweqqqqqawwdeqewwwwweqeeeqewwwwweqe": [
+    "和用于制造传统施法物品的法术类似。消耗 10 个充能紫水晶。",
+    "相关章节",
+    "patterns/oneironaut:craftrod 1"
+  ],
+  "edwaqw": [
+    "Converts a number into a Byte tag: an integer between -128 and 127, inclusive.",
+    "相关章节",
+    "patterns/hexic:nbt/lift1 1"
+  ],
+  "wqqwwqqw": [
+    "Gets whether the target's breasts are a uniboob",
+    "相关章节",
+    "patterns/hexgender:get_uniboob 1"
+  ],
+  "aqawded": [
+    "移除栈顶数，然后将咒灵下一次施法时刻更改为延迟所给数个 1/20 秒。所有可用于延迟咒灵施法的操作均能使咒灵的常态消耗减半，直到下一次施法为止。",
+    "相关章节",
+    "patterns/hexal:wisp/trigger/tick 1"
+  ],
+  "waqwwqaweede": [
+    "获取物品中给定魔咒的强度。",
+    "相关章节",
+    "patterns/hexpose:get_enchantment_strength 1"
+  ],
+  "qwqqqwqaeaqaaw": [
+    "接受指向阿卡夏记录的位置向量，与一个作为键的图案，并将阿卡夏记录中该图案对应的 iota 以同一图案存至永恒之书中。",
+    "相关章节",
+    "patterns/hexal:everbook/write 1"
+  ],
+  "wqaedeqd": [
+    "将图案转换为数列表，以供拆分与分析。是书法师之纯化的逆法术。",
+    "相关章节",
+    "patterns/hexical:serialize_pattern 1"
+  ],
+  "qaqqaeawaea": [
+    "将代表我的内嵌意识的各 iota 组为列表返回。",
+    "相关章节",
+    "patterns/hierophantics:get_minds 1"
+  ],
+  "aawwawqwwdd": [
+    "Teach the Live Jukebox at that location (which must be within ambit) these notes (a list of nums 0-24) at this frequency (0-20) for a shard of media. After being hit via Use, it plays the notes like an automatic Note Block.",
+    "相关章节",
+    "patterns/lapisworks:teach_song 1"
+  ],
+  "aqawdwaqawd": [
+    "移除栈顶实体，并返回其剩余氧气值（也即距其溺水还有多少氧气值可消耗）。",
+    "相关章节",
+    "patterns/hexal:breath 1"
+  ],
+  "qeqwqwqwqwqeqawewawqwawadeeeee": [
+    "将村民的职业返回为标识。",
+    "相关章节",
+    "patterns/hexpose:villager_profession 1"
+  ],
+  "edwaqwwww": [
+    "Converts a number into a Long tag: bounded to 9 quintillion, which I will likely never reach.",
+    "相关章节",
+    "patterns/hexic:nbt/lift8 1"
+  ],
+  "eedw": [
+    "将我所持的法术书向左翻一页。",
+    "相关章节",
+    "patterns/hextweaks:page/left 1"
+  ],
+  "weeeewedewdw": [
+    "返回实体所受重力的强度相对基线的倍数。",
+    "相关章节",
+    "patterns/hexodus:get_true_strength 1"
+  ],
+  "deaqqeawqqwwqqq": [
+    "Teach the Simple Impetus at the provided coordinates (which must be within ambit) the provided pattern for a two dust. The Simple Impetus will not remember this pattern when broken.",
+    "相关章节",
+    "patterns/lapisworks:teach_simp 1"
+  ],
+  "qwaeawqaqded": [
+    "返回我栈中所有 iota 的总大小，类列表 iota 中的各元素会拆出计算。若返回的数达到 1024，那么整个栈都将变为垃圾。",
+    "相关章节",
+    "patterns/ephemera:getstacksizedeep 1"
+  ],
+  "wawwwqwwawwwqadaqeda": [
+    "返回画的类型。",
+    "相关章节",
+    "patterns/hexpose:painting_variant 1"
+  ],
+  "aadedade": [
+    "返回所给弹射物实体的发射者，若无发射者或不是弹射物，则返回 Null。如果发射者在我影响范围之外，也会返回 Null。",
+    "相关章节",
+    "patterns/hexpose:shooter 1"
+  ],
+  "qdaqwawqeewde": [
+    "检验玩家是否驯服了所给动物，若未驯服或玩家在影响范围之外，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:pet_owner 1"
+  ],
+  "aqqqdae": [
+    "接受一个图案和一个数，返回同外形不同笔顺的图案。我找到的一些笔记中称古代的咒术师会把这些图案用在某种庞大的图书馆中。",
+    "相关章节",
+    "patterns/hexical:shuffle_pattern 1"
+  ],
+  "deew": [
+    "返回复数实部。",
+    "相关章节",
+    "patterns/complexhex:real 1"
+  ],
+  "dweaqqqqd": [
+    "如果世界中有对应的特殊力量，则会以文本形式返回雅典娜之策略最后一次捕获到的事故。",
+    "相关章节",
+    "patterns/overevaluate:athena_log 1"
+  ],
+  "wqwawqwqwqwqwqw": [
+    "移除栈顶位置向量，并使该处方块下落，就像沙子和沙砾一样。消耗 3/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:falling_block 1"
+  ],
+  "deaqqwqqqeaeqqqeadedaqaaee": [
+    "Constructs a Patchwork iota from the userdata (iota stored inside), display iota (visible to my eyes), color, and an overload map.",
+    "相关章节",
+    "patterns/hexic:metatable 1"
+  ],
+  "aeqqqqqawwd": [
+    "移除栈顶实体，并返回自身与该实体相连的链接的编号。若施法者与其无链接则返回 -1。",
+    "相关章节",
+    "patterns/hexal:link/get_index 1"
+  ],
+  "wqaeaqweeeedw": [
+    "移除栈顶向量，复制该处剪接台副槽位中物品的存储内容并返回。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/read 1"
+  ],
+  "qqqqqwdeddwqde": [
+    "返回视斑实体，效果与其他区域之馏化类似。",
+    "相关章节",
+    "patterns/hexical:zone_specklike 1"
+  ],
+  "aweewaqaweewaawww": [
+    "移除一个咒灵实体，并返回该咒灵所携带的咒术。所给 iota 必须代表由我召唤的咒灵，或允许与施法者或其所有者转送的咒灵。",
+    "相关章节",
+    "patterns/hexal:wisp/hex 1"
+  ],
+  "qed": [
+    "接受一个布尔值和任意 iota。若布尔值为 False，则产生事故并打印 iota。",
+    "相关章节",
+    "patterns/overevaluate:maat 1"
+  ],
+  "deeeewaaddwqqqqa": [
+    "接受两个向量和两个数，并由其触发一束粒子。消耗极少量媒质。",
+    "相关章节",
+    "patterns/ephemera:particleburst 1"
+  ],
+  "qawde": [
+    "移除栈顶实体，并返回该实体的类型。",
+    "相关章节",
+    "patterns/moreiotas:type/entity 1"
+  ],
+  "aawwdee": [
+    "从 Dynmap 中读出当前维度的地图列表，并压入栈顶。",
+    "相关章节",
+    "patterns/hexmapping:get_maps/dynmap 1"
+  ],
+  "eaqdaadqaeeaa": [
+    "将媒质波的当前位置压入栈顶。",
+    "相关章节",
+    "patterns/slate_work:wave_position 1"
+  ],
+  "waawweeeeedd": [
+    "弹出当前栈顶的元素，放入玩家法杖空间栈顶。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_stack/push 1"
+  ],
+  "wawqwawwwewwwewwwawqwawwwewwwewdeaweewaqaweewaawwww": [
+    "移除栈顶咒灵实体，并拆解该咒灵。咒灵携带的图案不可追回，但是如果此法术是由其他咒灵施放的，那么被拆解咒灵所剩的媒质还可再加利用。",
+    "相关章节",
+    "patterns/hexal:wisp/consume 1"
+  ],
+  "eaqwqaeqwqqwqwwqwqqweqwaweadwawwwawdaewawq": [
+    "此图案接受一个咒术，并对所存储的所有物品组（运行时置于栈顶）运行。运行该咒术后，图案还需要栈中按顺序存在一个整数，一个向量和一个布尔值。",
+    "相关章节",
+    "patterns/slate_work:get_item 1"
+  ],
+  "aeqeawaeqeaqqwe": [
+    "前后翻转结构，也即跨 Z 轴镜像。",
+    "相关章节",
+    "patterns/hexstruction:mirror_front_back 1"
+  ],
+  "edeewadwewdwe": [
+    "消耗极少量媒质。返回下述问题的答案：“如果我站在给定位置，那么我可以直接看见目标位置吗？”两位置向量均需在我影响范围内。",
+    "相关章节",
+    "patterns/lapisworks:visible_dstl 1"
+  ],
+  "eaqwqaeqqdeewweedq": [
+    "返回当前法术环激活的容具。大概可以用来检查法术环是否获取到了容具。",
+    "相关章节",
+    "patterns/slate_work:get_storage 1"
+  ],
+  "aawea": [
+    "若标记类型合适（圆形、矩形、多边形），设置标记的填充颜色。",
+    "相关章节",
+    "patterns/hexmapping:set_fill_color 1"
+  ],
+  "qadaadadqaqdadqaq": [
+    "Sieves the torrent of information using the (full) artificial mind at the given position. 3/5 chance of replacing the pattern in my other hand with one of the correct stroke order.",
+    "相关章节",
+    "patterns/lapisworks:thought_sieve 1"
+  ],
+  "dwawdaawwwa": [
+    "返回我咒法位面的出口维度和坐标。",
+    "相关章节",
+    "patterns/hexxyplanes:exit_deconstruct 1"
+  ],
+  "deqed": [
+    "Takes a list of iotas (or a single non-iota, which is treated as a list with one element) and displays them permanently to the caster. Displayed iotas survive all methods that would clear a normal Reveal, and can only be cleared by another casting of Greater Reveal.",
+    "相关章节",
+    "patterns/hexic:reveal 1"
+  ],
+  "eeweeewdeq": [
+    "接受一个物品，返回物品所受的损坏值。",
+    "相关章节",
+    "patterns/hexpose:damage_stack 1"
+  ],
+  "adeq": [
+    "接受栈顶实体，返回其主手中的物品组。对物品展示框和物品实体同样有效。",
+    "相关章节",
+    "patterns/moreiotas:item/main_hand 1"
+  ],
+  "qqqqaawawaedd": [
+    "给予生命恢复。每 1 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/regeneration 1"
+  ],
+  "wede": [
+    "压入我按下潜行键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:sneaking 1"
+  ],
+  "aaqqadeeeq": [
+    "表演一次魔法花招，将物品偷来放入魔袋，或是将魔袋中的物品扔出来。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:sleight 1"
+  ],
+  "wqwawqwqaqqa": [
+    "使得活线卷轴的纸张隐形，图案保留不变，看上去就像图案被蚀刻在方块表面一样。",
+    "相关章节",
+    "patterns/hexical:vanish_scroll 1"
+  ],
+  "eeeeewaqaaww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非物品实体的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/not_item 1"
+  ],
+  "eeeweeeeede": [
+    "在阿卡夏图书馆的记录处将 iota 和所给图案对应起来。有存储距离限制。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:akashic/write 1"
+  ],
+  "wdwddwawdd": [
+    "Creates a piecewise expression that simplifies to the second argument if the first simplifies to 1.0, otherwise simplifies to the third argument.",
+    "相关章节",
+    "patterns/complexhex:piecewise 1"
+  ],
+  "qdewedq": [
+    "返回法术环中媒质波的未知。",
+    "相关章节",
+    "patterns/hextweaks:wave 1"
+  ],
+  "eaqdaadqaeewa": [
+    "将媒质波的当前朝向压入栈顶。如果当前方块没有朝向，则返回 (0, 0, 0)。",
+    "相关章节",
+    "patterns/slate_work:wave_normal 1"
+  ],
+  "wqqaewd": [
+    "在运行此图案后，也即在运行下一图案之前，暂停调试杖。",
+    "相关章节",
+    "patterns/hexdebug:breakpoint/after 1"
+  ],
+  "aawawaeqqqqdd": [
+    "给予力量。每 3 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/strength 1"
+  ],
+  "qeqqqdqqqeqaqdwwdq": [
+    "Gives the floppiness of the target's breasts",
+    "相关章节",
+    "patterns/hexgender:get_floppiness 1"
+  ],
+  "eaqwqaeqawawaedd": [
+    "将口袋模拟器中的物品返回为物品组 iota。无需消耗媒质。",
+    "相关章节",
+    "patterns/slate_work:get_items 1"
+  ],
+  "edewawede": [
+    "大幅改善我在暗处的视野，不过光照会同时变得极为刺眼。",
+    "相关章节",
+    "patterns/hexical:shader_owl 1"
+  ],
+  "aeqeawaeqeaaewq": [
+    "左右翻转结构，也即跨 X 轴镜像。",
+    "相关章节",
+    "patterns/hexstruction:mirror_left_right 1"
+  ],
+  "awwaeawwa": [
+    "接受两个正整数 n 和 m，返回 n×m 的零矩阵（即处处为 0 的矩阵）。",
+    "相关章节",
+    "patterns/moreiotas:matrix/zero 1"
+  ],
+  "qwaqa": [
+    "接受一个字符串。所有此后发出的以此字符串起始的消息将不再对他人可见。同时，耳语之精思也将只能读取上述消息。",
+    "相关章节",
+    "patterns/moreiotas:string/chat/prefix/set 1"
+  ],
+  "aqqqqqwdeddw": [
+    "咒灵将在其收到至少一次通信后才进行下一次施法。",
+    "相关章节",
+    "patterns/hexal:wisp/trigger/comm 1"
+  ],
+  "qqqqqaewawaweqa": [
+    "和其他天顶法术功能类似，给予隐形，每 3 秒持续时间消耗 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/ephemera:invisibility 1"
+  ],
+  "eeewdw": [
+    "构筑一个咒术软糖：一种小零食，能提供大约 1/10 个紫水晶粉的媒质。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:conjure_gummy 1"
+  ],
+  "weeaaeqeaae": [
+    "与建筑师之馏化类似，但会额外接受一个标识。在抵达标识对应的方块前，此操作会无视其他方块。",
+    "相关章节",
+    "patterns/hexpose:piercing_surface_raycast 1"
+  ],
+  "qaqqqqqdaqa": [
+    "接受一个向量，并检查该向量是否在该位置方块的内部或边缘。似乎与我在意识中见到的方框有所关联。",
+    "相关章节",
+    "patterns/ephemera:collisionprobe 1"
+  ],
+  "qqqqqeqeeeee": [
+    "Returns whether the two blocks are equivalent/roughly equal (the same kind of block), so wheat seeds equals a full wheat crop. Both blocks must be within my ambit.",
+    "相关章节",
+    "patterns/lapisworks:equiv_block 1"
+  ],
+  "qaqqqqeedaqqqa": [
+    "无需任何媒质，就可将环中实体传送至同一法术环中任意一处。与卓越传送不同在于，此法术接受的是绝对坐标。消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:displace 1"
+  ],
+  "wewdwewewewewdwew": [
+    "增大我的肺容量，和水下呼吸魔咒类似，但此魔咒的效力是其两倍。共 2 级。每级 1 个充能紫水晶和 10 个紫金石。",
+    "相关章节",
+    "patterns/lapisworks:longbreath 1"
+  ],
+  "qwqqqwqaqddq": [
+    "接受一个正整数。使用回响之杖施放时，将下一次施法延迟所给数个 1/20 秒。",
+    "相关章节",
+    "patterns/oneironaut:delayrod 1"
+  ],
+  "dwaawaqwa": [
+    "如果物品会受到施法者之魅力的影响，则返回其当前外形对应的索引；否则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:item_variant 1"
+  ],
+  "edeqqaq": [
+    "移除栈顶门径与实体，并取消该实体的标记。若其已被开启门径标记，下一次门径关闭时其将不会被传送。",
+    "相关章节",
+    "patterns/hexal:gate/unmark 1"
+  ],
+  "qwqqqwqawaaw": [
+    "使用回响之杖施放时，返回当前循环开始时的时间戳。",
+    "相关章节",
+    "patterns/oneironaut:getrodstamp 1"
+  ],
+  "qaeaqwd": [
+    "根据第二参数保留列表元素。若参数为正数，则保留列表中的开头 n 个元素；若为负，则保留末尾 n 个。若第二参数为列表，则将其视作要保留元素的下标。",
+    "相关章节",
+    "patterns/hexthings:uiua_take 1"
+  ],
+  "qwqwqwqwqwqqeawwaeaww": [
+    "Pushes a 4x4 matrix representing the Bit's Transformation.",
+    "相关章节",
+    "patterns/complexhex:get_bit_4x4 1"
+  ],
+  "qqqqqdaqaawd": [
+    "将栈顶位置向量变为该处生物（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity/living 1"
+  ],
+  "awaqeeeeedq": [
+    "接受一个文本，设置其是否有删除线。",
+    "相关章节",
+    "patterns/hexpose:text_strikethrough 1"
+  ],
+  "eqeweweweweqedwqeeeeedww": [
+    "若所给标签无对应活动中磁带，返回 Null；若有，返回其还需多少个 1/20 秒才启动。",
+    "相关章节",
+    "patterns/hexcassettes:foretell 1"
+  ],
+  "wqwawqwqawawa": [
+    "将卷轴的纸页恢复到未经改动的状态。",
+    "相关章节",
+    "patterns/hexical:normalize_scroll 1"
+  ],
+  "aea": [
+    "接受栈顶列表，并计算其前缀和。例如输入 [1, 2, 5] 则会返回 [1, 3, 8]。",
+    "相关章节",
+    "patterns/hexal:running/sum 1"
+  ],
+  "qeqwqwqwqwqeqaeqeaqeqaeqaqded": [
+    "我搞不懂这个法术……说实话，我也不清楚我到底想不想搞懂。",
+    "相关章节",
+    "patterns/hexcasting:brainsweep 1"
+  ],
+  "aqdeeqeaeaeaeaeae": [
+    "双维度在手",
+    "相关章节",
+    "patterns/hexdim:dim/cast/deactivate 1"
+  ],
+  "eeeeedaqdewed": [
+    "接受一个实体和一个状态效果，并移除该实体身上的所给状态效果。消耗由效果自身的伤害性、强度、剩余持续时间决定。",
+    "相关章节",
+    "patterns/ephemera:removestatus 1"
+  ],
+  "qqqqqeqdeddweqqqqq": [
+    "相应地，此操作接受一个编号数，并禁止咒灵与该编号链接另一端的事物交换媒质。",
+    "相关章节",
+    "patterns/hexal:wisp/transfer/disallow 1"
+  ],
+  "qaqqqada": [
+    "读取阿卡夏书架的 iota。",
+    "相关章节",
+    "patterns/hexical:read_shelf 1"
+  ],
+  "eaqwedqdqddqqwae": [
+    "导出促动石中的媒质，每清除大约 11 个紫水晶粉产出 10 个紫水晶粉。需提供一个位置和代表紫水晶粉数量的数，最多接受一组。",
+    "相关章节",
+    "patterns/hexical:create_dust 1"
+  ],
+  "waeawaeddwwd": [
+    "接受一个向量和一个玩家，并返回该位置到所给玩家哨卫的距离，或者返回 Null。消耗极少量媒质。",
+    "相关章节",
+    "patterns/oneironaut:readsentinel 1"
+  ],
+  "qwawqwaeqqq": [
+    "立即将所有物品从来源传输到目的。消耗量取决于所传输物质的量，每组 64 个物品消耗大约 3 个紫水晶粉。数可选，详情见后页。",
+    "相关章节",
+    "patterns/hexical:hopper 1"
+  ],
+  "wwqqqqqaw": [
+    "检验给定玩家是否为所给物品组签过名。",
+    "相关章节",
+    "patterns/hexical:has_autograph 1"
+  ],
+  "aaqdwdwdewaq": [
+    "接受一个索引、一个位置、一个尺寸、一个颜色。构筑一个显示所定义长方形的像图。",
+    "相关章节",
+    "patterns/scryglass:draw_rect 1"
+  ],
+  "dqeqdwdqeqd": [
+    "移除栈顶两个位置向量，并吞噬这两个位置作为角落所定义的区域，然后把产物存储为结构 iota。 每吞噬一个方块消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexstruction:save_structure 1"
+  ],
+  "aaewwwwwaqwawqwadawqwwwawwwqwwwaw": [
+    "制作一支能施放咒术的调试杖。这个图案和我之前用过的某些图案有些相似。",
+    "相关章节",
+    "patterns/hexdebug:craft/debugger 1"
+  ],
+  "wqaeaqwdwaqaw": [
+    "移除栈顶向量，返回该处剪接台视野最左侧 iota 的索引下标。",
+    "相关章节",
+    "patterns/hexdebug:splicing/view_index/read 1"
+  ],
+  "qeda": [
+    "接受栈顶实体，返回其副手中的物品组。",
+    "相关章节",
+    "patterns/moreiotas:item/off_hand 1"
+  ],
+  "wweedadw": [
+    "在某位置附近发出一阵与某生物有关的声音，就好像鹦鹉模仿了那个生物的声音一样。消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:parrot 1"
+  ],
+  "wqqqqqwaeaeaeaeae": [
+    "构筑一个易爆的火球，敲击可发射。消耗大约 3 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:ghast_fireball 1"
+  ],
+  "eweweweweweeeaedqdqde": [
+    "压入一个代表天气的数。0 为晴天，1 为降雨，2 为雷暴。",
+    "相关章节",
+    "patterns/hexpose:get_weather 1"
+  ],
+  "ddewdd": [
+    "将所给触发条件存入意识。如果其中已经存在触发条件，则进行覆盖。消耗 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hierophantics:set_mind_trigger 1"
+  ],
+  "qqqqqdaqaawa": [
+    "将栈顶位置向量变为该处动物（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity/animal 1"
+  ],
+  "awddeqaedd": [
+    "在给定位置以给定方向、速率、速度制造一阵类似烟花的响声及一簇色彩鲜艳的粒子。消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:confetti 1"
+  ],
+  "aqwedeweeeewweeew": [
+    "接受一个有色染料 iota，并转换为染色剂；接受一个玩家并返回其染色剂；或是接受一个内含染色剂的物品，并返回其染色剂。",
+    "相关章节",
+    "patterns/hexical:to_pigment 1"
+  ],
+  "adaqqqddqe": [
+    "接受一个物品标识，返回它为我带来的饱腹感的量。",
+    "相关章节",
+    "patterns/hexpose:get_hunger 1"
+  ],
+  "waaqdeaqwqae": [
+    "检验该图案是否由某种卓伟之作施放。",
+    "相关章节",
+    "patterns/hexpose:env_circle 1"
+  ],
+  "weeeeew": [
+    "当接收到 iota 时其将被加至一个队列中。此图案会将该队列中的首个 iota 压入栈顶并移出队列。",
+    "相关章节",
+    "patterns/hexal:link/comm/read 1"
+  ],
+  "awawaawe": [
+    "去除当前的飞行能力，消耗 1/10 个紫水晶粉。在同一刻施放新的飞行法术可继续飞行，可借此更改参数。",
+    "相关章节",
+    "patterns/ephemera:cancelflight 1"
+  ],
+  "eeedeewaaw": [
+    "接受一个实体，返回其所骑乘的实体。",
+    "相关章节",
+    "patterns/ephemera:getmount 1"
+  ],
+  "wqaqwweeeeeqdeaqq": [
+    "获取当前环境上一次延时执行的图案列表。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_env/running_code 1"
+  ],
+  "qeeweeewddw": [
+    "返回当前循环中存储的 iota。默认为 Null。",
+    "相关章节",
+    "patterns/oneironaut:readrodram 1"
+  ],
+  "qqqqqewdedw": [
+    "Transitions the caster to a female! I wonder how I'd look in a skirt...",
+    "相关章节",
+    "patterns/hexgender:female_transition 1"
+  ],
+  "aedwq": [
+    "和前页图案类似，但它会以施法用手中的物品为目标。最适合配合各种形式的延迟施法使用。",
+    "相关章节",
+    "patterns/ephemera:getdurabilityoffhand 1"
+  ],
+  "dqddedwa": [
+    "移除栈顶 iota，将其写入当前运行所对应的跳转标签。 和编年史家之策略一样，不可向其写入真名。",
+    "相关章节",
+    "patterns/caduceus:write/mark/local 1"
+  ],
+  "wqwaeawqw": [
+    "与外科医师之提整类似，但会使用第二列表中的各元素替换第一列表中的元素，而非以列表整体进行替换。",
+    "相关章节",
+    "patterns/hexthings:insert 1"
+  ],
+  "wwawwawwqqawwdwwdwwaqwqwqwqwq": [
+    "返回当天时间的进程，返回值在 0（一天刚开始）到 1（一天要结束）之间。",
+    "相关章节",
+    "patterns/hexpose:get_day 1"
+  ],
+  "edadeedd": [
+    "根据所给键获取对应 iota。无对应 iota 时会招致事故。",
+    "相关章节",
+    "patterns/hexweb:get_element 1"
+  ],
+  "aqqq": [
+    "此图案可用于直接将原始 iota 置入内省-反思对。绘制此图案后，所有后续的图案会被“取消转义”，运行时会按原有功能执行。此效应的作用范围停止于反掷。",
+    "相关章节",
+    "patterns/hexthings:unquote 1"
+  ],
+  "wwawdedwawdewwdwaqawdwwedwawdedwaww": [
+    "接受物元，物元组成的列表，或物元列表组成的列表。并返回包含以对应物品合成所得产物的列表。例如，输入“石头 x128”会返回 [石头按钮 x128]。",
+    "相关章节",
+    "patterns/hexal:mote/craft 1"
+  ],
+  "wqaeaqwqqqwqwqqwq": [
+    "移除栈顶向量，返回该处制念台当前融注的咒术，若尚未融注则返回 Null。",
+    "相关章节",
+    "patterns/hexdebug:splicing/enlightened/hex/read 1"
+  ],
+  "qweqadeqadeqadqqqwdaqedaqedaqeqaqdwawdwawdwaqawdwawdwawddwwwwwqdeddw": [
+    "接受带有锋利魔咒的物品，或放有此类物品的物品展示框，并将锋利转换为同等级的意识撕裂。消耗由魔咒等级决定，目标为书时额外消耗 50%。",
+    "相关章节",
+    "patterns/oneironaut:applymindrender 1"
+  ],
+  "aqawdedq": [
+    "起始累计数字为0；将初始方向置于→，所有↗将使结果* 2 + 1，所有→使结果* 2，所有↘使结果/ 10。右侧图案将使总结果取相反数。",
+    "相关章节",
+    "patterns/hexflow:noob_num 1"
+  ],
+  "wqwqwqwqwqwawaaqawdeddw": [
+    "在给定位置召唤一个文本展示体实体，以展示给定字符串。消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/complexhex:summontextdisplay 1"
+  ],
+  "wqqqaqwa": [
+    "获取实体身上某效果的强度，无给定效果则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:get_effect_amplifier 1"
+  ],
+  "wwaqqqqqeqqqwwwqqeqqwwwqqweqadadadaqeqeqadadadaqe": [
+    "接受一个向量，并向该位置方块中注入媒质，以嬗变该方块。消耗量与具体效果随目标变化而变。",
+    "相关章节",
+    "patterns/oneironaut:infusemedia 1"
+  ],
+  "qeqwqqedeeeeeaqwqeqaqedqde": [
+    "接受一个已剥离意识的生物，并创造一个人工伪意识融入其中。对村民或悦灵使用时消耗 16 个充能紫水晶，其余情况消耗 10 个紫水晶碎片。",
+    "相关章节",
+    "patterns/oneironaut:reviveflayed 1"
+  ],
+  "aaqqa": [
+    "此法术会令另一只手中的物品组消失；也可重新让其出现，如果手中已经持有物品则会交换。消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:wristpocket 1"
+  ],
+  "eaqa": [
+    "将世界中的物品（物品实体、物品展示框）转换为物元。若传入物元，则会将所给物体与该物元合并。媒质化 1 份物品消耗 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:mote/make 1"
+  ],
+  "awwaeawwaadwa": [
+    "将栈顶元素转换为矩阵。接受数、向量和列表。",
+    "相关章节",
+    "patterns/moreiotas:matrix/make 1"
+  ],
+  "wawdedwaaw": [
+    "来回转换双精度数和长整型数。 转换至长整型时会进行截尾。",
+    "相关章节",
+    "patterns/complexhex:long/convert 1"
+  ],
+  "adeqaa": [
+    "将视斑实体移动至所给位置。",
+    "相关章节",
+    "patterns/hexical:move_specklike 1"
+  ],
+  "wqwqwqwqwqwaqeeq": [
+    "返回象征着我哨卫所处维度的空间印记。消耗 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/oneironaut:getdim2 1"
+  ],
+  "edwdwwaa": [
+    "从接收队列中获取下一个 iota，队列为空会招致事故。",
+    "相关章节",
+    "patterns/mediatransport:recv_fsb 1"
+  ],
+  "aqqqqqeawqwqwqwqwqwweeeeed": [
+    "从剪贴板读取代码，并将其解析至我手持的核心。 只能在法杖内施放。",
+    "相关章节",
+    "patterns/hexparse:code2focus 1"
+  ],
+  "awaqeeeee": [
+    "接受一个 iota，返回代表其的文本 iota。如果接受的是文本 iota，则清除其样式。",
+    "相关章节",
+    "patterns/hexpose:create_text 1"
+  ],
+  "qaqwawqwqqwqwqwqwqwqq": [
+    "为我副手中的神灯充能，以紫水晶粉计。只消耗我送入神灯的媒质。",
+    "相关章节",
+    "patterns/hexical:recharge_lamp 1"
+  ],
+  "qaqqqqqwadeeed": [
+    "压入方块的朝向向量。若该类方块不区分朝向，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:blockstate_rotation 1"
+  ],
+  "edwdwwdde": [
+    "请求自然发送其对我当前所用形象的首选项。消耗 1 点“发送能量”。详情参见协议文档。",
+    "相关章节",
+    "patterns/mediatransport:send_server_info 1"
+  ],
+  "aeqeawaeqeadqa": [
+    "将所存结构绕 Z 轴逆时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_counterclockwise_z 1"
+  ],
+  "wwawawwd": [
+    "产生一道可视的振动波，其会从一个位置向量处到一个实体或另一个位置向量处飞行，总计所给数秒。消耗大约 1/16 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:vibration 1"
+  ],
+  "eqqqqa": [
+    "接受一个位置向量或一个由位置向量组成的列表，并在所给位置处生成粒子，或在所给列表各位置之间生成粒子连线。每个位置向量消耗 1/500 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:particles 1"
+  ],
+  "qeadeeeeewq": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:atanh 1"
+  ],
+  "qqqawq": [
+    "Applies the given trace to the top Iota.",
+    "相关章节",
+    "patterns/hextrace:trace 1"
+  ],
+  "qqqqqwdeddwd": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有生物的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/living 1"
+  ],
+  "wedewaqawa": [
+    "给定树木位置，从中提取出其树种。",
+    "相关章节",
+    "patterns/dthexcasting:get_species 1"
+  ],
+  "eweweweweweewedeaqqqd": [
+    "向精灵许愿，希望它能为我施放咒术。而因为我是在教导意识，而非蚀刻施法物品，可在后续任意时刻教导精灵新咒术，不会因此损失媒质。",
+    "相关章节",
+    "patterns/hexical:wish 1"
+  ],
+  "edeeweeew": [
+    "接受一个物品，返回其中最多可堆叠多少物品。",
+    "相关章节",
+    "patterns/hexpose:count_max_stack 1"
+  ],
+  "eqqqqqaq": [
+    "返回麦克风捕获的最近 16 种新粒子。",
+    "相关章节",
+    "patterns/efhexs:get_particles 1"
+  ],
+  "wwqwaawewaawdwawwawwqwwaww": [
+    "在给定的位置或实体上施放给定法术。法术列表前将自动添加一个魔符：触摸。 所使用的每个魔符将花费1 粉末媒质，并且额外花费1 紫水晶媒质。",
+    "相关章节",
+    "patterns/hex_ars_link:cast_spell_touch 1"
+  ],
+  "qadee": [
+    "压入我按下攻击/摧毁键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:left_click 1"
+  ],
+  "qqqqqedwd": [
+    "接受一个生物，并返回目标当前所有效果组成的列表 iota。",
+    "相关章节",
+    "patterns/ephemera:getstatus 1"
+  ],
+  "awdwaaww": [
+    "压入一个仅含单个空格的字符串。其在连接其他字符串方面十分有用。",
+    "相关章节",
+    "patterns/moreiotas:string/space 1"
+  ],
+  "aaqdwdwdeww": [
+    "接受一个索引、两个位置、一个颜色。构筑连接两点的细线像图。",
+    "相关章节",
+    "patterns/scryglass:draw_line 1"
+  ],
+  "wewdawdewqewdqqeedqe": [
+    "为实体的双拳附魔以闪电。每等级消耗 20 个充能紫水晶。共 3 级。每级都能增强使用者对闪电的引导能力。",
+    "相关章节",
+    "patterns/lapisworks:lightningbending 1"
+  ],
+  "qwddedqwaqqqqq": [
+    "请求精灵为我记忆一个 iota。奇特的是，这个图案不会招致“违犯他人”事故，也许是因为使用神灯时需要我维持注意力集中吧。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_storage 1"
+  ],
+  "qaqqqq": [
+    "返回实体主手的物品。",
+    "相关章节",
+    "patterns/hexpose:get_mainhand 1"
+  ],
+  "eaqwqaeqqwaeadaeawq": [
+    "在某些情况下，容具会变得杂乱无章，同种物品被分散到不同的容具里去。这条好用的法术就可以整理它们，但它有代价：需消耗 5 个充能紫水晶。",
+    "相关章节",
+    "patterns/slate_work:sort_items 1"
+  ],
+  "waqqqqqee": [
+    "将 0 + 0i + 1j + 0k 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/quaternion/j 1"
+  ],
+  "eedwwdwewewd": [
+    "与单向传送门类似，但无法穿过，只能看见另一侧。消耗随距离增加而增加，但增加速度远低于其他传送门。",
+    "相关章节",
+    "patterns/hexways:summonscry 1"
+  ],
+  "qqwdedwqqwdeddww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有咒灵的列表。",
+    "相关章节",
+    "patterns/hexal:zone_entity/wisp 1"
+  ],
+  "dwwdqdwwdwdwaqawd": [
+    "接受一个 n×m 矩阵与一个 n×p 矩阵，返回一个 n×(m+p) 矩阵，其中第一个矩阵位于第二个矩阵左方。",
+    "相关章节",
+    "patterns/moreiotas:matrix/concat/hori 1"
+  ],
+  "wwwwwaqqqqqeaqeaeaeaeaeq": [
+    "Coerces my staff to cast a Hex. The hex uses the stack of the outer casting environment.",
+    "相关章节",
+    "patterns/hexic:staffcast_factory 1"
+  ],
+  "dwawddww": [
+    "强令目标退出咒法位面。若对除我之外的事物使用，消耗 5 个紫水晶碎片；否则无需消耗媒质。不在位面内施放会招致事故。",
+    "相关章节",
+    "patterns/hexxyplanes:plane_banish 1"
+  ],
+  "aawd": [
+    "观测质性 iota 当前的值。",
+    "相关章节",
+    "patterns/hexcellular:observe_property 1"
+  ],
+  "qaqqwqqqw": [
+    "接受一个物品，返回其中物品数量。",
+    "相关章节",
+    "patterns/hexpose:count_stack 1"
+  ],
+  "qaqwddedqew": [
+    "将我开始使用大精灵神灯时的速度压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_velocity 1"
+  ],
+  "qqqqqawwqdwaqqwawqwa": [
+    "创建一个在我受到伤害时激活的触发条件，且伤害必须为特定类型。触发条件会直接使用我最近一次所受伤害的类型。",
+    "相关章节",
+    "patterns/hierophantics:make_damage_type_trigger 1"
+  ],
+  "wdwewdwdw": [
+    "将栈顶图案转换为其名字。如果该图案不对应任何操作，或对应的操作是卓越法术，则返回 Null。",
+    "相关章节",
+    "patterns/moreiotas:string/action 1"
+  ],
+  "aedqa": [
+    "将理栈 iota 拆回数和数列表。",
+    "相关章节",
+    "patterns/overevaluate:dissolve_jumble 1"
+  ],
+  "weewweew": [
+    "Sets whether the caster's breasts are a uniboob",
+    "相关章节",
+    "patterns/hexgender:set_uniboob 1"
+  ],
+  "daqqad": [
+    "我能更轻松地访问方块了。",
+    "相关章节",
+    "patterns/hexdim:dim/rel/from 1"
+  ],
+  "ewqqqqqwe": [
+    "接受一个状态效果，一个向量和一个数（n），返回该位置给定距离范围（n）内所有带有给定状态效果生物的列表。",
+    "相关章节",
+    "patterns/ephemera:getbystatus 1"
+  ],
+  "aeawqqqae": [
+    "移除栈顶数，并将循环式咒灵自身的速度上限设为该数。",
+    "相关章节",
+    "patterns/hexal:wisp/move/speed/set 1"
+  ],
+  "qdaeqeawaeqeadqqdeed": [
+    "接受一个活体，在 1 分钟内即可在世界各处访问所给活体。基础消耗 1 个紫水晶碎片，在效应消退前每施放一次额外消耗 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/oneironaut:applynotmissing 1"
+  ],
+  "qqqwqqqqqaq": [
+    "在阿卡夏记录处从阿卡夏图书馆中读出所给图案对应的 iota。没有读取距离限制。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:akashic/read 1"
+  ],
+  "qwawqwaqwweqqqq": [
+    "Answers the question, \"is there only air there?\" for negligible media cost. Vector must be in my ambit.",
+    "相关章节",
+    "patterns/lapisworks:empty_prfn 1"
+  ],
+  "awqwawqe": [
+    "移除栈顶向量，若该向量坐标处有一告示牌或讲台，返回其上文本。否则返回 Null。",
+    "相关章节",
+    "patterns/moreiotas:string/block/get 1"
+  ],
+  "waqqedwewewdqwdw": [
+    "旋转向量变化无常，确实麻烦。好在我可以用这个法术改变给定传送门的朝向。对于双向传送门而言，最后一个参数决定了朝向修改是否仅作用于一侧。",
+    "相关章节",
+    "patterns/hexways:rotateportal 1"
+  ],
+  "qwqwqwqwqwqaeqedeqe": [
+    "接受一个有效键和一个代表玩家的 iota，并检验对应 iota 是否由所给玩家刻印。不消耗媒质。",
+    "相关章节",
+    "patterns/oneironaut:readideawriter 1"
+  ],
+  "qeqwqwqwqwqeqaweqqqqqwded": [
+    "返回村民生长环境的文化类别，如沙漠、针叶林等。",
+    "相关章节",
+    "patterns/hexpose:villager_type 1"
+  ],
+  "qaqddqeeeeqd": [
+    "返回实体穿着的全部物品组成的列表，顺序自下向上。",
+    "相关章节",
+    "patterns/hexpose:get_armor 1"
+  ],
+  "wqqddqeqddq": [
+    "与弓箭手之馏化类似，但会额外接受一个标识。在抵达标识对应的方块前，此操作会无视其他方块。",
+    "相关章节",
+    "patterns/hexpose:piercing_raycast 1"
+  ],
+  "qqqqqawweaqaddwd": [
+    "创建一个在我丢下物品时激活的触发条件。非主动的丢弃，如死亡或使用卓越传送导致的物品散落等，不会激活此类触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_drop_trigger 1"
+  ],
+  "qqqqqwqqwqqeqqwqqqw": [
+    "接受一个实体和一个偏移向量，实体传送前后都应在我影响范围内，同时向量的长度不得超过 16。此图案会沿向量方向传送实体。消耗 2.5 个紫水晶粉。",
+    "相关章节",
+    "patterns/lessertp:simpler_tp 1"
+  ],
+  "eewaqawee": [
+    "构筑一个悬浮的弹射物，其会在给定时限后施法。消耗 1 个充能紫水晶，额外消耗给予炸弹的媒质。会将时间炸弹压栈。",
+    "相关章节",
+    "patterns/yaha:time_bomb 1"
+  ],
+  "deeeaw": [
+    "在所给位置构筑一个术师方块。消耗 3 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:reset_mage_block 1"
+  ],
+  "wwaade": [
+    "压入实体距离窒息剩余多少秒。对脱水的海洋生物和溺水的陆地生物均有效。",
+    "相关章节",
+    "patterns/hexpose:get_air 1"
+  ],
+  "qaqwddedqwddwa": [
+    "将大精灵神灯开始使用后经过的时间压入栈顶。该数除以 20 即为秒数。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_use_time 1"
+  ],
+  "wwaeawwaeqqwqwqwqwqwq": [
+    "接受一个空间印记，并将我的哨卫移动到对应维度，坐标相应缩放。消耗 1 个紫水晶碎片。如果我当前没有哨卫则招致事故。",
+    "相关章节",
+    "patterns/oneironaut:shiftsentinel 1"
+  ],
+  "edqdeqdwewwdwqwdwwew": [
+    "将#0列表复制并写回#1下标处",
+    "相关章节",
+    "patterns/hexflow:build_nested 1"
+  ],
+  "aweaqa": [
+    "去除列表内重复的元素。",
+    "相关章节",
+    "patterns/hexcasting:unique 2"
+  ],
+  "aawqqwqqqaede": [
+    "Absorbs the entirety of the mind within the container into the rechargeable item in my other hand. If there is any extra, it is discarded. A full container yields one Charged Amethyst.",
+    "相关章节",
+    "patterns/lapisworks:absorb_mind 1"
+  ],
+  "wqaqwdedwd": [
+    "给定树木位置，从中将树木的结构提取为 Base64 字符串。",
+    "相关章节",
+    "patterns/dthexcasting:get_jocode 1"
+  ],
+  "aeqeawaeqeaqqaq": [
+    "将所存结构逆时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_counterclockwise 1"
+  ],
+  "ewdwewdea": [
+    "返回物品展示框的旋转方向，为 0 到 7 的整数。",
+    "相关章节",
+    "patterns/hexpose:item_frame_rotation 1"
+  ],
+  "edadeqdwedw": [
+    "Turns the given String into a JSON object. If it cannot be parsed into a JSON object itself, a wrapper JSON object will be created.",
+    "相关章节",
+    "patterns/hexweb:parse_json 1"
+  ],
+  "wqaeaqwedqddq": [
+    "移除栈顶向量，返回该处剪接台或核心框架主槽位中法术书当前的页码（以 1 起始）。",
+    "相关章节",
+    "patterns/hexdebug:splicing/list/spellbook_index/read 1"
+  ],
+  "qwddedqedeeeee": [
+    "取出手持式神灯内部存储的 iota 压入栈顶。先前若未进行保存，则返回 Null。",
+    "相关章节",
+    "patterns/hexical:set_hand_lamp_storage 1"
+  ],
+  "qedd": [
+    "Returns a list of nonnegative integers below the input. Mishaps if the input is less than 0.",
+    "相关章节",
+    "patterns/hyperhexcast:range 1"
+  ],
+  "wqq": [
+    "将 0 + 1i 压入栈顶。",
+    "相关章节",
+    "patterns/complexhex:const/complex/i 1"
+  ],
+  "aqadq": [
+    "Returns a list of entities that are riding a given entity.",
+    "相关章节",
+    "patterns/hyperhexcast:getpsgr 1"
+  ],
+  "qaqwddedaeeeee": [
+    "将大精灵神灯中剩余的媒质量压入栈顶，以紫水晶粉计。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_media 1"
+  ],
+  "aeaeaeaeaeawqqqqq": [
+    "在给定位置构筑一个给定光照强度的隐形光源。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:light 1"
+  ],
+  "dweaqqw": [
+    "运行一个图案列表，方式类似赫尔墨斯之策略，但能够处理事故。",
+    "相关章节",
+    "patterns/overevaluate:athena 1"
+  ],
+  "eedqa": [
+    "什么都不会做。",
+    "相关章节",
+    "patterns/overevaluate:tutu 1"
+  ],
+  "wqwqwqwqwqwaqdeaqqe": [
+    "奇怪的图案，似乎是赫尔墨斯之策略的变种。接受一个空间印记和一个可执行的 iota，并尝试在所给维度内施放所给 iota。",
+    "相关章节",
+    "patterns/oneironaut:extradimensionaleval 1"
+  ],
+  "dwaawaqwawq": [
+    "如果物品会受到施法者之魅力的影响，则返回其可变化的外形总数；否则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:item_variant_max 1"
+  ],
+  "wedqdewqaeaae": [
+    "移除栈顶向量和数，将该处剪接台或核心框架主槽位中的法术书翻到对应页。",
+    "相关章节",
+    "patterns/hexdebug:splicing/list/spellbook_index/write 1"
+  ],
+  "adeaqde": [
+    "强令视斑实体消失。",
+    "相关章节",
+    "patterns/hexical:kill_specklike 1"
+  ],
+  "waeawaeqqq": [
+    "检验我当前的哨卫是否是卓越哨卫，无哨卫则返回 Null。",
+    "相关章节",
+    "patterns/hexthings:isgreatersent 1"
+  ],
+  "wwewdawdewqewedadad": [
+    "为实体的双拳附魔以火焰，以此在三秒内点燃击中的所有实体。消耗 10 个充能紫水晶。有 1 个等级。",
+    "相关章节",
+    "patterns/lapisworks:fireyfists 1"
+  ],
+  "deewedeeeee": [
+    "破坏失稳的术师方块会连带破坏与其相连的术师方块。这种效果能逐块传播，一发即可破坏所有相连的失稳方块。",
+    "相关章节",
+    "patterns/hexical:modify_block_volatile 1"
+  ],
+  "qqqqqawwewawqada": [
+    "创建一个在我生命值降至给定值以下时激活的触发条件。完整的标准生命条为 20。",
+    "相关章节",
+    "patterns/hierophantics:make_health_trigger 1"
+  ],
+  "wdwadad": [
+    "移除栈顶的图案列表。检视而不移除其下方的 iota，并运行被移除的图案列表，当且仅当占卜师之纯化会对被检视的 iota 返回 True。检视和运行会一直持续，直至被检视的 iota 不再返回 True。",
+    "相关章节",
+    "patterns/hextweaks:while 1"
+  ],
+  "wqawawaqwqwqawawaqw": [
+    "将我传送最多 128 格，传送目的以我的位置和朝向为参照。消耗大约 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:greater_blink 1"
+  ],
+  "wqwqwqwqwqwaqedeaaedeq": [
+    "在给定位置召唤一个物品展示体实体，以展示给定物品。（所给字符串需是内部名称，如“minecraft:stick”，而非“木棍”。） 消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/complexhex:summonitemdisplay 1"
+  ],
+  "dwawdqaqwwwqaeqwq": [
+    "将目标位置设为我咒法位面的退出点，传入 Null 则将出口设为我的出生点。此后，对自己使用位面之驱逐时即会被传送至该处。",
+    "相关章节",
+    "patterns/hexxyplanes:plane_exit 1"
+  ],
+  "wewdwwwdwaawawdwawaqwdwwdada": [
+    "将栈顶 iota 发送出去，以便栈顶往下第二位置处的玩家接收。它所用的接收器似乎独立于同类法术。通常消耗 2 点“发送能量”，但可能因为服务端配置不同而变化。",
+    "相关章节",
+    "patterns/mediatransport:send_other 1"
+  ],
+  "wqqqqqadw": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:cosh 1"
+  ],
+  "wadeeeeew": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:acosh 1"
+  ],
+  "qwqwqwqwqwqqqwedewq": [
+    "接受一个有效键，并返回相应 iota。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/oneironaut:readidea 1"
+  ],
+  "waqawawwaeaww": [
+    "将第一个 n×m 矩阵中各元素与另一个 n×m 矩阵中相应元素相乘。",
+    "相关章节",
+    "patterns/moreiotas:altmul 1"
+  ],
+  "wded": [
+    "将任何人发至聊天框的最后一条消息作为字符串压入栈顶。",
+    "相关章节",
+    "patterns/moreiotas:string/chat/all 1"
+  ],
+  "qeqwqwqwqwqeqaweqqqqq": [
+    "返回我目前的磁带槽总数。",
+    "相关章节",
+    "patterns/hexcassettes:specs 1"
+  ],
+  "wddeeeeea": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:asinh 1"
+  ],
+  "ddeeeee": [
+    "计算所给数（绝对值小于 1）的反正弦，也即正弦为该值的角。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:arcsin 1"
+  ],
+  "qaqdqaqdeeewedw": [
+    "返回我末影箱中全部物品组成的列表。",
+    "相关章节",
+    "patterns/hexpose:get_ender_chest 1"
+  ],
+  "qaweqqwqqewaqeqqqqqad": [
+    "接受作为盔甲接收方的玩家，盔甲的耐久度，盔甲的护甲值（最多为 10），施加的状态效果，状态效果的等级。最后两个参数可用其他类型的 iota 代替，此时这两个参数会被忽略。",
+    "相关章节",
+    "patterns/ephemera:magearmor 1"
+  ],
+  "eweeewedww": [
+    "接受一个图案，并以该图案标记永恒之书中对应条目，使得绘制该图案所产生的效果和自然创造的其他图案相仿。",
+    "相关章节",
+    "patterns/hexal:everbook/toggle_macro 1"
+  ],
+  "waqdqqwqqdqawwqqqqqaqedeq": [
+    "接受自然包含媒质的物品实体，用其修复我另一只手中的工具。",
+    "相关章节",
+    "patterns/ephemera:repair 1"
+  ],
+  "eeeeeqaqeeeee": [
+    "终止我当前拥有的所有着色器法术。很适合在过度实验后“缓缓”眼睛。",
+    "相关章节",
+    "patterns/hexical:shader_clear 1"
+  ],
+  "qqqqqawwaedwda": [
+    "创建一个在我饥饿值降至给定值以下时激活的触发条件。完整的饥饿条为 20。",
+    "相关章节",
+    "patterns/hierophantics:make_hunger_trigger 1"
+  ],
+  "dqqqqqaaw": [
+    "Evaluates the hyperbolic sine of the argument",
+    "相关章节",
+    "patterns/complexhex:sinh 1"
+  ],
+  "dweaqqqqa": [
+    "揭示所处咒术内雅典娜之策略最后一次捕获到的事故。",
+    "相关章节",
+    "patterns/overevaluate:athena_print 1"
+  ],
+  "awdedwaawwqded": [
+    "接受代表村民的 iota，并返回该村民所有的交易选项，返回结果是列表的列表的列表。每项交易由两个列表组成，内容分别为给出的物品和换得的物品。换得物品列表由对应的物品类型和可换得物品的数量组成。",
+    "相关章节",
+    "patterns/hexal:mote/trade/get 1"
+  ],
+  "dwewdwedwwwadwewdwedw": [
+    "Negligible cost. Answers the question, \"are there no opaque blocks between these points?\". Both vectors must be in my ambit.",
+    "相关章节",
+    "patterns/lapisworks:empty_dstl 1"
+  ],
+  "aqqqqqeawqwqwqwqwqwwqqeqqeqqeqqeqqeqqdqeeeeed": [
+    "从手持物品（远古卷轴、核心、制成的施法道具等）内提取卓越法术图案，返回装有解码器本次学习内容的列表。",
+    "相关章节",
+    "patterns/hexparse:learn_patterns 1"
+  ],
+  "eadewde": [
+    "Make an entity ride another entity. Costs about 2 Amethyst Dust if the top of the stack is a non-player entity, 1 if it is you, and about a crystal's worth if is it another player.",
+    "相关章节",
+    "patterns/hyperhexcast:mount 1"
+  ],
+  "wwaqqqqqeeaqawwewewwaqawwewew": [
+    "压入玩家唤咒的时间，未在唤咒则为 -1。",
+    "相关章节",
+    "patterns/hexical:is_evoking 1"
+  ],
+  "qaeaqewqwaawewaawdwawwawwqwwaww": [
+    "从给定位置与角度施放弹射物法术。给定法术列表前将自动添加一个魔符：弹射物。 所使用的每个魔符将花费1 粉末媒质，并且额外花费1 紫水晶媒质。",
+    "相关章节",
+    "patterns/hex_ars_link:cast_spell_shoot 1"
+  ],
+  "deee": [
+    "在内投后绘制时，其会将栈上的所有 iota 置入转义的列表，并将栈恢复到原先的状态。",
+    "相关章节",
+    "patterns/hexthings:requote 1"
+  ],
+  "qqqqwqdqddqe": [
+    "使用所给数据向所给网络连接端点发送 HTTP 请求。",
+    "相关章节",
+    "patterns/hexweb:request 1"
+  ],
+  "qaqwede": [
+    "接受一个图案列表，并持续不断运行，直至遇到卡戎之策略或雅努斯之策略。",
+    "相关章节",
+    "patterns/overevaluate:sisyphus 1"
+  ],
+  "dedwaqwwawwqa": [
+    "根据我详细给定的参数构筑一道烟花。这是我迄今为止发现的最复杂的法术之一。消耗量与其他烟花法术一致。",
+    "相关章节",
+    "patterns/hexical:conjure_firework 1"
+  ],
+  "eqqqqqaewawqwaw": [
+    "构筑一团可视的媒质，和我的咒术出的纰漏类似。需要一个颜色。",
+    "相关章节",
+    "patterns/efhexs:play_hex_particle 1"
+  ],
+  "eaqwqaeqwaeaeqqeaeaw": [
+    "向容具存入物品比取出容易。此图案会接受一个物品实体，并将其轻巧地存入激活的存储容具。每有一个激活的容具消耗 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/slate_work:store_item 1"
+  ],
+  "wqqed": [
+    "测量物品的稀有度，返回为数，值越大越稀有。魔咒等特殊性质可能会提升物品的稀有度。",
+    "相关章节",
+    "patterns/hexpose:item_rarity 1"
+  ],
+  "awqqaee": [
+    "让我从施法时骑乘的实体上离开。消耗 1/100 个紫水晶粉。",
+    "相关章节",
+    "patterns/ephemera:dismount 1"
+  ],
+  "adeeqed": [
+    "更改视斑的大小，接受 0 与 10 之间的数。此数表示以格计的大小，默认为 0。",
+    "相关章节",
+    "patterns/hexical:size_specklike 1"
+  ],
+  "waqqqqqedaqqqa": [
+    "返回一个四元数，此四元数代表沿所给向量旋转所给数个弧度的旋转操作。",
+    "相关章节",
+    "patterns/complexhex:axisangle 1"
+  ],
+  "qqqadaddw": [
+    "返回玩家的饥饿值。使用半个火腿作为单位。",
+    "相关章节",
+    "patterns/hexpose:get_player_hunger 1"
+  ],
+  "eaq": [
+    "检验玩家、猫、狐狸、以及其他实体是否在疾跑。速泳和疾跑后离地均算作疾跑。",
+    "相关章节",
+    "patterns/hexpose:is_sprinting 1"
+  ],
+  "wwqeeeeewqqqqqewwaqeqwqeqqqeqwqeq": [
+    "向另一只手中的无底缀品写入咒术。消耗 10 个充能紫水晶。",
+    "相关章节",
+    "patterns/oneironaut:craftbottomlesstrinket 1"
+  ],
+  "qdqawwaww": [
+    "清除另一只手中写有咒术或存有 iota 的物品。每个物品消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:erase 1"
+  ],
+  "aqdeeweeew": [
+    "使用回响之杖施放时，强制停止当前循环。",
+    "相关章节",
+    "patterns/oneironaut:haltrod 1"
+  ],
+  "dwawd": [
+    "返回代表我咒法位面的 iota。",
+    "相关章节",
+    "patterns/hexxyplanes:get_plane 1"
+  ],
+  "aqwawqa": [
+    "移除栈顶实体，并返回其剩余生命值（也即距其死亡还有多少生命值可损失）。",
+    "相关章节",
+    "patterns/hexal:health 1"
+  ],
+  "aqaeaqwqa": [
+    "获取副手咒典中所有图案的列表。",
+    "相关章节",
+    "patterns/hexical:index_grimoire 1"
+  ],
+  "wqwawqwqqqeqq": [
+    "Takes a block position and an axis vector and pushes the block along that vector. Costs an eighth of an Amethyst Dust.",
+    "相关章节",
+    "patterns/hexical:piston 1"
+  ],
+  "wqqqaawd": [
+    "获取某效果对承受者造成的效应是“良性”与否。-1 为负面，0 为中性，1 为正面。",
+    "相关章节",
+    "patterns/hexpose:get_effect_category 1"
+  ],
+  "qqqqqwded": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有实体的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity 1"
+  ],
+  "ddweeee": [
+    "根据布尔值压制所给意识施法产生的声音和粒子。传入 True，则静默意识；传入 False，则取消其静默。",
+    "相关章节",
+    "patterns/hierophantics:mute_mind 1"
+  ],
+  "wqqqwaawqqqw": [
+    "Gives the physics of the target's breasts",
+    "相关章节",
+    "patterns/hexgender:get_physics 1"
+  ],
+  "qaeaqweeee": [
+    "按所给量移动列表元素，“超出”列表的元素会从另一端返回。",
+    "相关章节",
+    "patterns/hexthings:uiua_rotate 1"
+  ],
+  "wqwwawwqwwaqwewaawewa": [
+    "将副手紫金石灌注到主手物品中。它不像灌注青金石法术那样浪费。古代的“青金工程师”会用这个法术为工具灌注紫金石。",
+    "相关章节",
+    "patterns/lapisworks:imbue_amel 1"
+  ],
+  "dedwaqwede": [
+    "返回苦力怕爆炸的进度。",
+    "相关章节",
+    "patterns/hexpose:creeper_fuse 1"
+  ],
+  "aeqeawaeqeaaede": [
+    "将所存结构顺时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_clockwise 1"
+  ],
+  "waqqqqqeaqeaeaeaeaeq": [
+    "将咒符物品内部存有的 iota 压入栈顶。",
+    "相关章节",
+    "patterns/hexical:read_charmed 1"
+  ],
+  "aeqeawaeqeadqaa": [
+    "将所存结构绕 X 轴逆时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_counterclockwise_x 1"
+  ],
+  "qa": [
+    "压入一个仅含单个半角逗号的字符串。其在连接其他字符串方面十分有用。",
+    "相关章节",
+    "patterns/moreiotas:string/comma 1"
+  ],
+  "ddwdwwdwwd": [
+    "设置实体的大小倍数，需传入一个与其原本大小的比值。消耗大约 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexcasting:interop/pehkui/set 1"
+  ],
+  "qaqqadaq": [
+    "读取阿卡夏书架的键。",
+    "相关章节",
+    "patterns/hexical:key_shelf 1"
+  ],
+  "wwqaqwwdwawwedeww": [
+    "De-phiangles two phiangle-ables, erasing the link between them. Costs three Charged Amethyst. I can cast this when I wish not to break the block, due to having other links for example.",
+    "相关章节",
+    "patterns/lapisworks:dephiangle 1"
+  ],
+  "eaqq": [
+    "将所有位右移 num 次，且保留符号。",
+    "相关章节",
+    "patterns/complexhex:shift/right/arithmetic 1"
+  ],
+  "eqaqe": [
+    "计算以栈顶元素为底的，栈顶往下第二元素为真数的对数。与 e 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:logarithm 1"
+  ],
+  "deeeeeqawqwaw": [
+    "从实体或方块中读出一个列表 iota，并将该列表中给定下标处的元素修改为所给 iota，最后把修改后的列表写入原实体或方块。",
+    "相关章节",
+    "patterns/ioticblocks:write/index 1"
+  ],
+  "daqweewqaeaqweewqaqwwww": [
+    "返回我当前绑定的咒灵。（这并不是卓越法术，记载于此是为了方便查找。）",
+    "相关章节",
+    "patterns/hexal:wisp/seon/get 1"
+  ],
+  "dwqaqw": [
+    "构筑一个能造成少量伤害的黏性弹射物。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:llama_spit 1"
+  ],
+  "wwadeeeeeqw": [
+    "Pushes if attempting to write to my necklace will succeed.",
+    "相关章节",
+    "patterns/lapisworks:writeable_necklace 1"
+  ],
+  "qaqwddaaeawaea": [
+    "解除咒符而不影响其他属性。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:discharm 1"
+  ],
+  "qqwqqwqqqqq": [
+    "让村民前去其床铺小睡一番。如果没有空床铺即无效。消耗 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/hierophantics:villager_sleep 1"
+  ],
+  "qweeeeewq": [
+    "接受一个状态效果，一个向量和一个数（n），返回该位置给定距离范围（n）内所有无给定状态效果生物的列表。",
+    "相关章节",
+    "patterns/ephemera:getbystatusinverse 1"
+  ],
+  "adaqqqddaq": [
+    "接受一个物品标识，检验它是否算作小食。",
+    "相关章节",
+    "patterns/hexpose:is_snack 1"
+  ],
+  "qqwwewewewewewwqqwdeddww": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有 BIT 的列表。",
+    "相关章节",
+    "patterns/complexhex:zone_entity/bit 1"
+  ],
+  "aawdde": [
+    "将栈顶元素沉至栈顶往下第 n 个元素处，具体由图案的尾部长度决定。上方的示例分别会沉至第 2 个、第 3 个、第 4 个 iota 处。",
+    "相关章节",
+    "patterns/overevaluate:nut 1"
+  ],
+  "edeedq": [
+    "返回所给物品实体对应的物品。",
+    "相关章节",
+    "patterns/hexpose:get_stack 1"
+  ],
+  "qqwqqqwaqe": [
+    "接受一个物品，返回物品的耐久度上限。",
+    "相关章节",
+    "patterns/hexpose:damage_max_stack 1"
+  ],
+  "eweweweweweewwddawaddww": [
+    "返回比较器对准给定位置时会输出的红石信号强度。",
+    "相关章节",
+    "patterns/hexpose:get_comparator 1"
+  ],
+  "eweweweweweeweeedadw": [
+    "返回当前的月相，返回值为可见的月亮照亮区域的占比。",
+    "相关章节",
+    "patterns/hexpose:get_moon 1"
+  ],
+  "wawawqaqwa": [
+    "接受一个实体，一个代表新重力方向的轴向向量，以及相对于标准重力强度的倍数。细节见后页。",
+    "相关章节",
+    "patterns/hexodus:change_gravity 1"
+  ],
+  "qqqqqaewawawe": [
+    "给予凋零。每 1 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/wither 1"
+  ],
+  "awqdeew": [
+    "在运行此图案前，暂停调试杖。",
+    "相关章节",
+    "patterns/hexdebug:breakpoint/before 1"
+  ],
+  "ddeaq": [
+    "接受一个物品实体，若其无法存储媒质，返回 Null；否则返回其媒质存储上限。",
+    "相关章节",
+    "patterns/hexpose:media_max_stack 1"
+  ],
+  "qaqqd": [
+    "在给定位置以给定音量和音高播放声音。消耗大约 1/16 个紫水晶粉。",
+    "相关章节",
+    "patterns/efhexs:play_sound 1"
+  ],
+  "waaq": [
+    "检验该图案是否由法杖施放。",
+    "相关章节",
+    "patterns/hexpose:env_staff 1"
+  ],
+  "qqqaawawaeqdd": [
+    "给予夜视。每 5 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/night_vision 1"
+  ],
+  "qwddedqdd": [
+    "将我开始使用神灯时的位置压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_position 1"
+  ],
+  "dewqa": [
+    "移除栈顶位置向量和面向量，并返回与该位置处方块对应面交互时可获得的物品类型列表（若面向量为零向量则检索所有面）。",
+    "相关章节",
+    "patterns/moreiotas:item/inventory/items 1"
+  ],
+  "wawqwawaw": [
+    "将栈顶元素转换为字符串。",
+    "相关章节",
+    "patterns/moreiotas:string/iota 1"
+  ],
+  "aaqd": [
+    "检验两个图案的外形、笔顺、方向是否相同。",
+    "相关章节",
+    "patterns/hexical:congruent 1"
+  ],
+  "aaqqada": [
+    "返回魔袋中的物品，如果魔袋为空则返回 Null。",
+    "相关章节",
+    "patterns/hexical:wristpocket_item 1"
+  ],
+  "wawqqqeqdqqqwaw": [
+    "Gets the offset of the target's breasts",
+    "相关章节",
+    "patterns/hexgender:get_breast_offsets 1"
+  ],
+  "eeeeewaqaawe": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非玩家实体的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/not_player 1"
+  ],
+  "qwddedaeeeee": [
+    "将神灯中剩余的媒质量压入栈顶，以紫水晶粉计。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_media 1"
+  ],
+  "eaqwqaeqwaeadawwadaeaw": [
+    "为样板组装器设置合成配方。接受包含 Null、物品、物品变种的列表，并将此列表应用于目标组装器。",
+    "相关章节",
+    "patterns/slate_work:set_craft 1"
+  ],
+  "eweweweweweeewqaqwe": [
+    "接受一个有效键以及任意 iota，并将所给 iota 存入相应位置。消耗大约 1/4 个紫水晶粉。",
+    "相关章节",
+    "patterns/oneironaut:writeidea 1"
+  ],
+  "awqwqwadadadaadadaqwdee": [
+    "参数与双向传送门相同，但制造出的传送门仅供单向通行。奇怪的是，自然并未因传送门的能力缩减而降低消耗。",
+    "相关章节",
+    "patterns/hexways:onewayportal 1"
+  ],
+  "qaqwddedqwaqqqqq": [
+    "可由施法物品、法杖，以及大精灵神灯自身运行。获取神灯的 iota 存储。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_storage 1"
+  ],
+  "awaqeeeeedwe": [
+    "将文本 iota 拆分成各个字符。",
+    "相关章节",
+    "patterns/hexpose:split_text 1"
+  ],
+  "aqwqawaaqa": [
+    "返回该法术环影响范围的东南靠上转角的位置。",
+    "相关章节",
+    "patterns/hexcasting:circle/bounds/max 1"
+  ],
+  "dewaqawed": [
+    "Extracts an iota from the given list, and breaks the list apart around it. Returns all items before the iota, all items after the iota, and finally the iota itself.",
+    "相关章节",
+    "patterns/hexic:extract 1"
+  ],
+  "wqqqwwwwwqqqwwwqdaqadwqqwdaqadweqeqqqqeqeqaqeqedeqeqa": [
+    "接受均由两个向量组成的两个列表，用于定义两个长方体，以及一个空间印记。所定义的长方体必须保证尺寸与朝向一致。",
+    "相关章节",
+    "patterns/oneironaut:swapspace 1"
+  ],
+  "wadqaqdawewadqaqdaw": [
+    "Phiangles two phiangle-ables. Costs a flat three Charged Amethyst, and a scalable one Amel per 32 blocks of distance, with a minimum of one.",
+    "相关章节",
+    "patterns/lapisworks:phiangle 1"
+  ],
+  "edeedade": [
+    "清除给定的阿卡夏书架。",
+    "相关章节",
+    "patterns/hexical:clear_shelf 1"
+  ],
+  "weedewqaq": [
+    "与建筑师之馏化类似，但只会瞄准液体，无视其余方块。",
+    "相关章节",
+    "patterns/hexpose:fluid_surface_raycast 1"
+  ],
+  "qaawaaq": [
+    "接受栈顶列表，并计算其前缀积。例如输入 [1, 2, 5] 则会返回 [1, 2, 10]。",
+    "相关章节",
+    "patterns/hexal:running/mul 1"
+  ],
+  "aqqqqqwwewewewewewdqeeeeed": [
+    "读取我手中的核心，将其内容解析为代码输出至聊天窗口。 只能在法杖内施放。",
+    "相关章节",
+    "patterns/hexparse:focus2code 1"
+  ],
+  "qdeaaqqqqq": [
+    "接受一个玩家，返回紫水晶粉的数量，对应通过邮递员之策略向其发送信息的消耗，范围在 1/10 个到 10 个之间。",
+    "相关章节",
+    "patterns/ephemera:getrevealcost 1"
+  ],
+  "weedwa": [
+    "获取方块、实体、方块标识、物品标识的染料。",
+    "相关章节",
+    "patterns/hexical:get_dye 1"
+  ],
+  "qaqqqqqwqqqdeewewee": [
+    "接受一个向量列表，需遵守前页指定的规则，并将网斑编织成所给形状，无需消耗媒质。",
+    "相关章节",
+    "patterns/hexical:weave_mesh 1"
+  ],
+  "dqqqqqedwda": [
+    "截停飞行的药水，将其变为物品实体。消耗 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/yaha:potion_to_item 1"
+  ],
+  "aqwqaweeeeewwaaw": [
+    "尝试读取所给向量处的 Iota 之门。如果该处无 Iota 之门则返回垃圾。 在法术环外施放不会招致事故，无需消耗媒质媒质，也不受影响范围限制。",
+    "相关章节",
+    "patterns/slate_work:read_broadcast 1"
+  ],
+  "wqaeaqwqqqwqwqqwwqqeaeqqeqqeaeqqw": [
+    "移除栈顶向量和图案列表，将该列表融注到该处制念台中。 消耗大约 5 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexdebug:splicing/enlightened/hex/write 1"
+  ],
+  "ddew": [
+    "返回物品中的，或生物含有的，或生物持有的，或特种媒质存储方块含有的媒质。",
+    "相关章节",
+    "patterns/hexpose:get_media 1"
+  ],
+  "deadeeeeewd": [
+    "计算所给纵坐标与横坐标的反正切，也即计算 X 轴正向，与原点至所给坐标的射线间的夹角。",
+    "相关章节",
+    "patterns/hexcasting:arctan2 1"
+  ],
+  "aedd": [
+    "检验两个图案的外形是否相同，笔顺不考虑。",
+    "相关章节",
+    "patterns/hexical:similar 1"
+  ],
+  "eawwaedeqeeeaeeeqe": [
+    "Sets the floppiness of the caster's breasts",
+    "相关章节",
+    "patterns/hexgender:set_floppiness 1"
+  ],
+  "qaqqeawawa": [
+    "立即恢复所有冲刺次数。消耗大约 1 个充能紫水晶。自然大概真的很不想让我一直冲刺。需要雌激素。",
+    "相关章节",
+    "patterns/hextrogen:refresh_dashes 1"
+  ],
+  "wqqqdqqqwqaedea": [
+    "Sets the bust size of the caster",
+    "相关章节",
+    "patterns/hexgender:set_bust_size 1"
+  ],
+  "aweeeeewaa": [
+    "返回接收队列中未读 iota 的个数。",
+    "相关章节",
+    "patterns/hexal:link/comm/num 1"
+  ],
+  "dwaad": [
+    "接受一个列表和一个图案列表，或一个列表与单个图案；在第一参数处运行第二参数，并排序结果，运行的过程与托特之策略类似。",
+    "相关章节",
+    "patterns/overevaluate:themis 1"
+  ],
+  "edeeeeeweeeaqqwqwqq": [
+    "将网斑的外形返回为向量列表。可用于复制网斑。",
+    "相关章节",
+    "patterns/hexical:read_mesh 1"
+  ],
+  "aawwddad": [
+    "从 Bluemap 中读出当前维度的地图列表，并压入栈顶。",
+    "相关章节",
+    "patterns/hexmapping:get_maps/bluemap 1"
+  ],
+  "eaqwqaeqqddqeeqddq": [
+    "检查物品的功能和唤回物品类似。但它只需要咒术返回一个布尔值。如果所有布尔值中有一个为 True，则法术结束并返回 True。",
+    "相关章节",
+    "patterns/slate_work:check_item 1"
+  ],
+  "wedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqe": [
+    "从图案的参数签名来看，我只能推测出它是会召唤个什么。",
+    "相关章节",
+    "patterns/hexical:horrible 1"
+  ],
+  "qqqqqwaeaeaeaeaeadwaqaeaq": [
+    "我们完成了吗？",
+    "相关章节",
+    "patterns/hexdim:dim/carved 1"
+  ],
+  "edadee": [
+    "检验所给 JSON iota 有无给定键。",
+    "相关章节",
+    "patterns/hexweb:has_element 1"
+  ],
+  "qeewwwweeqeqeewwwweeqdqqdwwwdqeqdwwwdqdadwwdqdwwddadaqadaawww": [
+    "接受一个实体和一个空间印记，将所给实体传送入对应维度的同一位置。消耗 20 个充能紫水晶。",
+    "相关章节",
+    "patterns/oneironaut:dimteleport 1"
+  ],
+  "wqqaqwede": [
+    "与弓箭手之馏化类似，但只会瞄准液体，无视其余方块。",
+    "相关章节",
+    "patterns/hexpose:fluid_raycast 1"
+  ],
+  "wwawwawwqaqwedwwwq": [
+    "命令我所持的压载向给定方向以给定力度摔落。无需消耗媒质。",
+    "相关章节",
+    "patterns/hexodus:alter_ballast 1"
+  ],
+  "wqqqwqqadad": [
+    "移除栈顶位置向量、物品实体或物元，然后烧炼该处方块，或同时烧炼物品实体或物元中所有物品。",
+    "相关章节",
+    "patterns/spells/hexal_spells 1"
+  ],
+  "aqaddq": [
+    "压入你按下向前移动键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/spells/hexical:moving_up 1"
+  ],
+  "eeeeedeeeee": [
+    "接受一个物品类型或物元和一个位置向量，并会尝试在该位置处放置所给物品类型的方块。若传入物元，则会从对应的物元记录中放置。消耗 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/spells/hexal:place_type 1"
+  ],
+  "qwqqqwqawa": [
+    "使用回响之杖施放时，返回当前循环开始时我的视线向量。",
+    "相关章节",
+    "patterns/oneironaut:getrodlook 1"
+  ],
+  "wadeeeeeq": [
+    "Writes the iota to the necklace I'm currently wearing, mishapping if there is no writeable necklace available. (Drawing aid: the pattern is a line into almost a triangle, then a clockwise circle much like Scribe's Gambit.)",
+    "相关章节",
+    "patterns/lapisworks:write_necklace 1"
+  ],
+  "eweweweweweewwdqdwwdq": [
+    "Sets the Transformation of a BIT to the given 4x4 matrix.",
+    "相关章节",
+    "patterns/complexhex:set_bit_4x4 1"
+  ],
+  "awdedwaeqded": [
+    "接受代表村民的 iota，由物元组成的列表（用于交易），和代表交易次序的整数（可选）。（上方的 int? 表示可传入 2 或 3 个参数，可选的第三个参数需为整数。）",
+    "相关章节",
+    "patterns/hexal:mote/trade 1"
+  ],
+  "ddeqaa": [
+    "返回所给意识中的咒术，若无则返回 Null。",
+    "相关章节",
+    "patterns/hierophantics:get_mind_hex 1"
+  ],
+  "eeeeedw": [
+    "将所给物元对应的记录转移到所给位置处的物元枢纽中，并会返回指向新记录的物元 iota，且所有指向原记录的物元均会失效。",
+    "相关章节",
+    "patterns/hexal:mote/storage/set 1"
+  ],
+  "aawawwawwa": [
+    "获取实体的大小倍数，也即当前大小和原本大小的比值。对大多数实体而言，此值为 1。",
+    "相关章节",
+    "patterns/hexcasting:interop/pehkui/get 1"
+  ],
+  "qqqqqawwawawd": [
+    "给予飘浮。每 5 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/levitation 1"
+  ],
+  "aeqeawaeqeaqqeqaqeq": [
+    "移除栈顶结构，返回其尺寸，格式为 [x, y, z]。",
+    "相关章节",
+    "patterns/hexstruction:bounding_box 1"
+  ],
+  "aeqqqqea": [
+    "移除栈顶实体，并返回其盔甲韧性（盔甲的另一属性）。",
+    "相关章节",
+    "patterns/hexal:toughness 1"
+  ],
+  "qqqaww": [
+    "与考察相同，不过拥有最低的执行优先级，在嵌套的内省-反思内部不会以 2^n 形式指数增长",
+    "相关章节",
+    "patterns/hexflow:weak_escape 1"
+  ],
+  "wwwaqeeqawww": [
+    "返回所给实体在给定范畴（由数指定）内所获增强的量。前页的图案已经过排序，0 对应最大生命值，1 对应攻击伤害，以此类推。消耗极少量媒质。",
+    "相关章节",
+    "patterns/lapisworks:check_attr 1"
+  ],
+  "aqqwwqqawdadedad": [
+    "特种化的烧炼，会模拟营火。它的适用范围更窄；大概是永远都用不上了。",
+    "相关章节",
+    "patterns/hexical:roast 1"
+  ],
+  "ddwwwwwwedwewdweqewdwwwewwwdwwwew": [
+    "制作一支能施放咒术的淬灵调试杖。这个图案和我之前用过的某些图案有些相似。",
+    "相关章节",
+    "patterns/hexdebug:craft/quenched_debugger 1"
+  ],
+  "qeeqawqwqw": [
+    "返回骑乘所给实体的实体列表。",
+    "相关章节",
+    "patterns/hexpose:entity_passengers 1"
+  ],
+  "qqqqqawwdaqqqaq": [
+    "创建一个在我速度（以格每刻计）超过给定值时激活的触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_velocity_trigger 1"
+  ],
+  "wwwaqqqqqeaqeaeaeaeaeq": [
+    "Coerces my staff to cast a Hex. The hex uses the stack of the staff itself, but keeps the outer environment's ravenmind.",
+    "相关章节",
+    "patterns/hexic:staffcast_factory/lazy 1"
+  ],
+  "wqwawqwqawawaedd": [
+    "改变活线卷轴墨迹的颜色，具体由所给向量决定；各分量对应红、绿、蓝，取值范围为 0 到 1。",
+    "相关章节",
+    "patterns/hexical:color_scroll 1"
+  ],
+  "dedwdq": [
+    "压入我按下向后移动键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:moving_down 1"
+  ],
+  "wwaaqqqqqew": [
+    "Pushes if attempting to read from my necklace will succeed.",
+    "相关章节",
+    "patterns/lapisworks:readable_necklace 1"
+  ],
+  "dqa": [
+    "在给定位置以给定颜色和持续时间制造一颗闪光的小粒子。消耗极少量媒质。",
+    "相关章节",
+    "patterns/hexical:sparkle 1"
+  ],
+  "awqwawqdqawwwaq": [
+    "也算是室友？",
+    "相关章节",
+    "patterns/hexdim:dim/downgrade 1"
+  ],
+  "dwe": [
+    "类似测高仪之纯化，但返回的不是实体的高度，而是实体的宽度。",
+    "相关章节",
+    "patterns/hexpose:entity_width 1"
+  ],
+  "dqwaeawq": [
+    "返回字典的键列表。",
+    "相关章节",
+    "patterns/hexthings:dict_keys 1"
+  ],
+  "wqwawqwqawwddwwa": [
+    "令活线卷轴的纸页泛黄，产物和我找到的一些远古卷轴极为相似。",
+    "相关章节",
+    "patterns/hexical:age_scroll 1"
+  ],
+  "deeqa": [
+    "让方块和黏液块一样弹性十足。无论我是否潜行都会把我弹起来。很有趣！",
+    "相关章节",
+    "patterns/hexical:modify_block_bouncy 1"
+  ],
+  "dedqeaqa": [
+    "若第一参数物元可与第二参数（物元、物品组、物品实体、物品展示框）中物品合并，返回 True，否则返回 False。",
+    "相关章节",
+    "patterns/hexal:mote/combinable 1"
+  ],
+  "waqeaeqawqwawaw": [
+    "获取物品上魔咒组成的列表。",
+    "相关章节",
+    "patterns/hexpose:get_enchantments 1"
+  ],
+  "wawaw": [
+    "检验所给位置或实体是否处于影响范围中。",
+    "相关章节",
+    "patterns/hexpose:env_ambit 1"
+  ],
+  "wdwddwdw": [
+    "Substitutes the third expression/number in place of the second expression within the first.",
+    "相关章节",
+    "patterns/complexhex:substitute 1"
+  ],
+  "wqqq": [
+    "获取实体当前状态效果组成的列表。",
+    "相关章节",
+    "patterns/hexpose:get_effects_entity 1"
+  ],
+  "qwqqadadadewweewwe": [
+    "特种化的烧炼，会模拟高炉。它只能处理矿石，但速度更快，变相降低消耗。",
+    "相关章节",
+    "patterns/hexical:blast 1"
+  ],
+  "aaweed": [
+    "若标记类型合适（圆形、矩形、折线、多边形），设置标记的描边线宽。",
+    "相关章节",
+    "patterns/hexmapping:set_line_weight 1"
+  ],
+  "wqaqwadad": [
+    "返回塞莎特之策略可访问的 iota 数目。在托特之策略外部使用会返回 -1。",
+    "相关章节",
+    "patterns/ephemera:thothcount 1"
+  ],
+  "dadadedadaddwwwa": [
+    "在栈内添加一个具有给定数目空格缩进的换行注释iota。",
+    "相关章节",
+    "patterns/hexparse:create_linebreak 1"
+  ],
+  "qawqadq": [
+    "Make an entity stop riding the entity they are riding. Costs about 1 Amethyst Dust, or a negligible amount when cast on yourself (but why would you).",
+    "相关章节",
+    "patterns/hyperhexcast:dismount 1"
+  ],
+  "qdqdqdqdww": [
+    "接受一个非空气位置，一个轴向向量，按秒延迟最长 10 秒后，在给定位置构筑一个尖刺。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:spike 1"
+  ],
+  "aqqqaqwwaqqqqqeqaqqqawwqwqwqwqwqw": [
+    "将媒质注入一个玻璃瓶，从而制成试剂瓶。",
+    "相关章节",
+    "patterns/hexcasting:craft/battery 1"
+  ],
+  "aadaadqaq": [
+    "使用所给 iota 在给定位置构筑一枚咒术星爆糖。消耗大约 1 个紫水晶粉。可能招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:conjure_hexburst 1"
+  ],
+  "qaqqqqqdwawqwaw": [
+    "接受一个向量和一个字符串，以该字符串为键返回目标方块的对应状态值；若无对应值则返回 Null。",
+    "相关章节",
+    "patterns/ephemera:getpropertyvalue 1"
+  ],
+  "dwdwdewqdedd": [
+    "返回目标距其飞行法术结束的量度，返回值的意义可变。可以是距飞行界限的距离，也可以是剩余的飞行秒数。",
+    "相关章节",
+    "patterns/ephemera:getflight/remaining 1"
+  ],
+  "qqqqqwaeaeaeaeaeadqwdwqwdwdwqw": [
+    "How much longer must I wait",
+    "相关章节",
+    "patterns/hexdim:dim/time 1"
+  ],
+  "qwddedadw": [
+    "将我开始使用神灯时的朝向压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_rotation 1"
+  ],
+  "qaqqdwdwd": [
+    "Deposits into the given unit the amount of media specified, in dust. Costs the media specified, plus a tax of 10% of it. Overflow is discarded!",
+    "相关章节",
+    "patterns/lapisworks:deposit 1"
+  ],
+  "wqaeaqwedqddqw": [
+    "若所给向量处有剪接台或核心框架，且其主槽位中法术书至少有一页记有内容，则将该向量替换为 True；否则返回 False。",
+    "相关章节",
+    "patterns/hexdebug:splicing/list/spellbook_index/readable 1"
+  ],
+  "qwawqwadadwewdwe": [
+    "Returns whether the two blocks are exactly equal, so wheat seeds do NOT equal a full wheat crop. Blocks must be within my ambit.",
+    "相关章节",
+    "patterns/lapisworks:equal_block 1"
+  ],
+  "qqwwewewewewewwqqdaqaaww": [
+    "将栈顶位置向量变为该处 BIT（若无则返回 Null）。",
+    "相关章节",
+    "patterns/complexhex:get_entity/bit 1"
+  ],
+  "waadadaa": [
+    "接受一个数，并复制栈顶开始所给数个元素，保留顺序。",
+    "相关章节",
+    "patterns/overevaluate:dup_many 1"
+  ],
+  "wewdwewwawwewdwew": [
+    "令我的视野中出现奇怪的线条，且视野的中心“向我”突出。大概是有所致敬……",
+    "相关章节",
+    "patterns/hexical:shader_tv 1"
+  ],
+  "edewwqewdwwewdaw": [
+    "Enchants the given player's arms, increasing their reach by 3 blocks and the range from which they can attack by 1 block. Costs 16 Amel and one Amethyst Shard in media. There is no customizability here.",
+    "相关章节",
+    "patterns/lapisworks:gib_reach 1"
+  ],
+  "wdwwaawwewdwwewwdwwe": [
+    "将染料的颜色转换为向量，各分量对应红、绿、蓝，取值范围为 0 到 1。",
+    "相关章节",
+    "patterns/hexical:translate_dye 1"
+  ],
+  "aaweeaeawaea": [
+    "根据所给 标识、标签、位置列表或 Hexical 的网斑实体创建多边形标记。",
+    "相关章节",
+    "patterns/hexmapping:create_marker/polygon 1"
+  ],
+  "edadedaa": [
+    "设置所给键对应的 iota。",
+    "相关章节",
+    "patterns/hexweb:set_element 1"
+  ],
+  "qwqwqwqwqwqqeaeaeaeaeae": [
+    "压入一个新的门径。所有此 iota 的复制品都指向同一个门径。消耗 32 个充能紫水晶。若传入 Null，则构造未锚定门径；若传入一个向量，则构造位置锚定门径；若传入一个向量和一个实体，则构造实体锚定门径。",
+    "相关章节",
+    "patterns/hexal:gate/make 1"
+  ],
+  "qaqqaea": [
+    "接受物元，并返回代表该物元对应的记录中物品的物品组。",
+    "相关章节",
+    "patterns/moreiotas:type/to_item 3"
+  ],
+  "eqqqqqaaeaq": [
+    "构筑可视的碎屑，与工具损毁时产生的粒子类似。需要一个物品 iota。",
+    "相关章节",
+    "patterns/efhexs:play_item_particle 1"
+  ],
+  "qedqde": [
+    "移除栈顶位置向量，并返回该处光照强度。",
+    "相关章节",
+    "patterns/hexal:light_level 1"
+  ],
+  "dde": [
+    "返回当前施放可用的媒质的量。",
+    "相关章节",
+    "patterns/hexpose:env_media 1"
+  ],
+  "dwwdwwdwdd": [
+    "移除栈顶字符串和布尔值（Null 也可）。若为 True，将字符串改为全大写并返回；若为 False，则改为全小写；若为 Null，则切换所有字符的大小写。",
+    "相关章节",
+    "patterns/moreiotas:string/case 1"
+  ],
+  "adeeda": [
+    "应该能让事情更简单些。",
+    "相关章节",
+    "patterns/hexdim:dim/rel/to 1"
+  ],
+  "waawedaqqqqdeaqq": [
+    "将给定iota列表延迟给定时间（tick数）后执行；每种执行途径同时最多只能有一个延时，发起新延时将取消已有延时动作。若延时不大于0，则法术将立刻执行。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_env/schedule 1"
+  ],
+  "wwawwqwwawwaeae": [
+    "接受一个物品展示框实体，并返回其中物品的朝向，值必然在 0 到 7 之间。",
+    "相关章节",
+    "patterns/ephemera:readframerotation 1"
+  ],
+  "eew": [
+    "返回复数虚部。",
+    "相关章节",
+    "patterns/complexhex:imaginary 1"
+  ],
+  "aaweeqwaqw": [
+    "根据所给标识、标签、顶部角位置、底部角位置创建矩形标记。",
+    "相关章节",
+    "patterns/hexmapping:create_marker/rectangle 1"
+  ],
+  "eaaea": [
+    "创建一个空字典 iota。",
+    "相关章节",
+    "patterns/hexthings:empty_dict 1"
+  ],
+  "qqwdedwqqdaqaaww": [
+    "将栈顶位置向量变为该处咒灵（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexal:get_entity/wisp 1"
+  ],
+  "eqqqqqaweqaeaqa": [
+    "接受用于访问网络的可链接事物，以及任意 iota。如果网络中有继链器毗邻网络路由索引，且索引中存有同一 iota，则返回该继链器的位置。消耗 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/ephemera:networkindex 1"
+  ],
+  "qdeddqeeeeedwqdeddw": [
+    "断开施法者的编号为所给数的链接。消耗 2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:link/unlink 1"
+  ],
+  "qqqqwweaaead": [
+    "Given a Response Iota, attempt to parse the results. Will Mishap if too early or an IOException is thrown.",
+    "相关章节",
+    "patterns/hexweb:get_response 1"
+  ],
+  "qwddedqew": [
+    "将你开始使用神灯时的速度压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_hand_lamp_velocity 1"
+  ],
+  "wawawqwqwqwqwqw": [
+    "接受一个空间印记，返回对应维度中1格距离相当于主世界中的几格距离。",
+    "相关章节",
+    "patterns/oneironaut:getdimscale 1"
+  ],
+  "wqaqwweeeee": [
+    "弹出玩家法杖空间栈顶的元素，放入当前栈顶。",
+    "相关章节",
+    "patterns/hexoverpowered:mind_stack/pop 1"
+  ],
+  "wedewqawwawqwa": [
+    "计算第一个 n×m 矩阵中各元素为底数，另一个 n×m 矩阵中相应元素为指数的幂矩阵。",
+    "相关章节",
+    "patterns/moreiotas:altpow 1"
+  ],
+  "qqqqqawweaqaawaaqa": [
+    "创建一个在你传送时激活的触发条件。因为我无法指明的原因，此类触发条件检测不到距离在 1.5 格以下的传送。",
+    "相关章节",
+    "patterns/hierophantics:make_teleport_trigger 1"
+  ],
+  "qqqwqqqqaa": [
+    "接受一个物元和一个实体或位置向量和法向量。并对实体或所给位置处方块使用物元中物品。物元本身需只能含有一个物品，除非其中物品极为简单（无 NBT 数据）。",
+    "相关章节",
+    "patterns/hexal:mote/use_on 1"
+  ],
+  "eqqqada": [
+    "使你听到一段扣弦声，其他人无法听见。",
+    "相关章节",
+    "patterns/hexical:pling 1"
+  ],
+  "aeqeawaeqeaqed": [
+    "移除栈顶的结构原点向量、一个结构和一个 0 到 72000 之间的数，第三参数代表持续时间。",
+    "相关章节",
+    "patterns/hexstruction:display_structure 1"
+  ],
+  "qqwdedwqqaww": [
+    "接受代表村民的 iota，并返回代表该村民在其职业上熟练度的数。",
+    "相关章节",
+    "patterns/hexal:mote/villager/level/get 1"
+  ],
+  "aeaaqawd": [
+    "复制当前运行所对应的跳转标签中存储的 iota，并压入栈顶。",
+    "相关章节",
+    "patterns/caduceus:read/mark/local 1"
+  ],
+  "wqqqeeqqqw": [
+    "Gets the cleavage of the target's breasts",
+    "相关章节",
+    "patterns/hexgender:get_cleavage 1"
+  ],
+  "awqqqwqwqwqwqwq": [
+    "接受一个空间印记，返回对应维度中可存在方块的最低和最高海拔。",
+    "相关章节",
+    "patterns/oneironaut:getdimheight 1"
+  ],
+  "edwwdeeede": [
+    "移除栈顶门径和实体，判断该实体是否被该门径标记。",
+    "相关章节",
+    "patterns/hexal:gate/mark/get 1"
+  ],
+  "wqwqwqwqwqwaqaaqaw": [
+    "返回象征着下界的空间印记。消耗 1/10 个紫水晶粉。 这个法术的施放总有些不够顺畅。也许我需要再精进我的技术……",
+    "相关章节",
+    "patterns/oneironaut:getdim/nether 1"
+  ],
+  "awaqeeeeedd": [
+    "接受一个文本，设置其是否为粗体。",
+    "相关章节",
+    "patterns/hexpose:text_bold 1"
+  ],
+  "qqqqqadwawaw": [
+    "给予缓慢。每 5 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/slowness 1"
+  ],
+  "edeeedad": [
+    "以图案键向阿卡夏书架写入 iota。",
+    "相关章节",
+    "patterns/hexical:write_shelf 1"
+  ],
+  "awawa": [
+    "立刻清除所给像图。",
+    "相关章节",
+    "patterns/scryglass:remove_icon 1"
+  ],
+  "eeeqwdeaqqeawqqwwqqq": [
+    "Simple Impeti are pretty gullible. Returns the pattern the Simple Impetus at the given location (which must be within ambit) is listening for, or null if it's not listening for any particular pattern. Free.",
+    "相关章节",
+    "patterns/lapisworks:ask_simp 1"
+  ],
+  "qqqqqawweqqqqqaa": [
+    "创建一个在我氧气值降至给定值以下时激活的触发条件。完整的氧气条为 10。",
+    "相关章节",
+    "patterns/hierophantics:make_breath_trigger 1"
+  ],
+  "wqwawqwqawawaewdwdw": [
+    "使得活线卷轴的墨迹在所有光照条件下均发光。",
+    "相关章节",
+    "patterns/hexical:glow_scroll 1"
+  ],
+  "qaqeede": [
+    "移除栈顶实体与门径，并标记该实体，被标记的实体会在对应门径关闭时被传送。消耗 1/20 个紫水晶粉————不过要怎么才能得到一个门径呢？",
+    "相关章节",
+    "patterns/hexal:gate/mark 1"
+  ],
+  "qqqqqdaqaaww": [
+    "将栈顶位置向量变为该处物品实体（若无则返回 Null）。",
+    "相关章节",
+    "patterns/hexcasting:get_entity/item 1"
+  ],
+  "eeeeeqqedqde": [
+    "Transitions the caster to androgynous! Hmm... this is... interesting...",
+    "相关章节",
+    "patterns/hexgender:other_transition 1"
+  ],
+  "eeeeedwqwawwwawewawwwaw": [
+    "Banish another's Enchanted Sentinel if it's at that block for 5 dust.",
+    "相关章节",
+    "patterns/lapisworks:banish_other_enchsent 1"
+  ],
+  "wdwddwq": [
+    "Summons a parametric line at the given position. The expression given will have a t-value (0-1), x/y/z position, and time (w) substituted in and must resolve to a vector on the line.",
+    "相关章节",
+    "patterns/complexhex:summon/line 1"
+  ],
+  "qaqwddedqedeeeee": [
+    "可由施法物品、法杖，以及大精灵神灯自身运行。设定神灯的 iota 存储。和手持式神灯不同，这个图案可能招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:set_arch_lamp_storage 1"
+  ],
+  "aawede": [
+    "使得栈顶往下第三元素上浮过栈顶往下第二元素，相当于交换它们。",
+    "相关章节",
+    "patterns/overevaluate:swap_two_three 1"
+  ],
+  "aawee": [
+    "若标记类型合适（圆形、矩形、折线、多边形），设置标记的描边颜色。",
+    "相关章节",
+    "patterns/hexmapping:set_line_color 1"
+  ],
+  "wddwaqqwawq": [
+    "压入实体距离死亡还有多远。使用半颗心作为单位。",
+    "相关章节",
+    "patterns/hexpose:get_health 1"
+  ],
+  "waaqwwaqqqqq": [
+    "检验该图案是否由任意施法物品施放。",
+    "相关章节",
+    "patterns/hexpose:env_packaged_hex 1"
+  ],
+  "eeeeeqwweqqqqq": [
+    "接受一个咒灵实体（所有者需是我）和一个编号数，并允许该咒灵与该编号链接另一端的事物交换媒质。",
+    "相关章节",
+    "patterns/hexal:wisp/transfer/others/allow 1"
+  ],
+  "eqqqqqaawqqqae": [
+    "构筑可视的残屑，与破坏方块时产生的粒子类似。需要接受方块标识。",
+    "相关章节",
+    "patterns/efhexs:play_block_particle 1"
+  ],
+  "dwdeqqqqqawq": [
+    "将列表中各元素转换为文本（原来就是文本则保留不变），并拼接结果。",
+    "相关章节",
+    "patterns/hexpose:combine_text 1"
+  ],
+  "aqwawqwqqwqwqwqwqwq": [
+    "检验指南针和钟可否在此维度运作。",
+    "相关章节",
+    "patterns/hexpose:get_einstein 1"
+  ],
+  "wdeeeeeqq": [
+    "返回 i 的系数。",
+    "相关章节",
+    "patterns/complexhex:qx 1"
+  ],
+  "qwaeawqaqdedd": [
+    "接受任意 iota，返回其总大小。",
+    "相关章节",
+    "patterns/ephemera:getiotasize 1"
+  ],
+  "eqqqqqaaqda": [
+    "构筑渐变色的尘埃，它会在给定秒数内在两种颜色间平滑过渡，我记得这个法术不一定工作正常",
+    "相关章节",
+    "patterns/efhexs:play_dust_transition_particle 1"
+  ],
+  "waawadadad": [
+    "类似托特之策略；对长度n的列表只执行n - 1次，第一次初始栈为前2个元素，随后每次执行使用上次执行后的栈。",
+    "相关章节",
+    "patterns/hexflow:pure_reduce 1"
+  ],
+  "qwaqawewewaqawewddw": [
+    "与威廉姆斯之精思类似，但可在回响之杖被占用时，由其他施法方式施放。",
+    "相关章节",
+    "patterns/oneironaut:readrodramremote 1"
+  ],
+  "qaqqqqqeaqq": [
+    "返回容器装有的全部物品组成的列表；若方块无法容纳物品，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:get_block_inventory 1"
+  ],
+  "dadaqq": [
+    "卡斯托耳之策略的兄弟图案，此图案会将新迭代置于所有迭代的末尾。同样有风险招致“钻研过深”事故。",
+    "相关章节",
+    "patterns/overevaluate:pollux 1"
+  ],
+  "wqwqwqwqwqwawqaqqqqqe": [
+    "在给定位置召唤一个方块展示体实体，以展示给定方块。（所给字符串需是内部名称，如“minecraft:dirt”，而非“泥土”。） 消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/complexhex:summonblockdisplay 1"
+  ],
+  "wqaeaqwdeaaeae": [
+    "与快门之纯化类似，但会检验副槽位中的法术书，而非主槽位。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/spellbook_index/readable 1"
+  ],
+  "aqaweewaqawee": [
+    "此法术与召唤弹射式咒灵类似，但只会接受一个代表召唤位置的向量。循环式咒灵一经召唤就不再移动，并会以每秒 20 次的频率施法。",
+    "相关章节",
+    "patterns/hexal:wisp/summon/ticking 1"
+  ],
+  "eeeeewaqaawq": [
+    "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非怪物实体的列表。",
+    "相关章节",
+    "patterns/hexcasting:zone_entity/not_monster 1"
+  ],
+  "qadwawdaqqeae": [
+    "将副手中的所有青金石转化成一种由媒质松散结合而成的材料，即紫晶青金石，或简称紫金石。消耗 2 倍于副手中青金石数量的紫水晶碎片。",
+    "相关章节",
+    "patterns/lapisworks:imbue_lap 1"
+  ],
+  "aaqdwdwd": [
+    "接受一个索引、一个位置、一个数、一个任意 iota。将该 iota 构筑显示为像图。",
+    "相关章节",
+    "patterns/scryglass:draw_text 1"
+  ],
+  "waeawaewawwaeq": [
+    "按激活顺序获取所有伪哨卫当前的位置。无需消耗媒质。",
+    "相关章节",
+    "patterns/slate_work:get_sents 1"
+  ],
+  "ewdwewdew": [
+    "返回循环式咒灵当前目标位置的位置向量。",
+    "相关章节",
+    "patterns/hexal:wisp/move/target/get 1"
+  ],
+  "qadeeee": [
+    "压入你在心灵感应后滚轮滚动的量。",
+    "相关章节",
+    "patterns/hexical:scroll 1"
+  ],
+  "adeeaqa": [
+    "更改视斑对应的 iota。",
+    "相关章节",
+    "patterns/hexical:iota_speck 1"
+  ],
+  "edeeeeeweewadeeed": [
+    "将方块旋转为朝向给定向量。需方块可旋转。消耗大约 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:rotate_block 1"
+  ],
+  "qwqqqwqaqded": [
+    "检查施法者是否正在使用回响之杖，不要求是在使用当前杖。",
+    "相关章节",
+    "patterns/oneironaut:rodloopactive 1"
+  ],
+  "adeeedew": [
+    "接受栈顶物品组，返回其中物品数量。",
+    "相关章节",
+    "patterns/moreiotas:item/prop/size/set 1"
+  ],
+  "eeeeeww": [
+    "为副手中的物品永久签上你的名字，以你的染色剂为颜色。对你已签过名的物品再次签名，会将你的签名移至首位。",
+    "相关章节",
+    "patterns/hexical:autograph 1"
+  ],
+  "waweeeeewaw": [
+    "从栈顶获取实体类型、位置向量及最大距离，返回该位置给定距离范围内所有符合给定类型的实体的列表。",
+    "相关章节",
+    "patterns/moreiotas:zone_entity/type 1"
+  ],
+  "aawawqeqqqqqwa": [
+    "只让玩家列表内的玩家受我制造的特殊效果影响。若传入 Null，可让所有人都能感受到我的效果。",
+    "相关章节",
+    "patterns/efhexs:set_target 1"
+  ],
+  "dedwqqwdedwqqaw": [
+    "返回一个代表施法咒灵的 iota。此操作必须由咒灵执行。尝试用法杖执行会招致可怖的事故。",
+    "相关章节",
+    "patterns/hexal:wisp/self 1"
+  ],
+  "wwdwaqawdwaqwwawdedwawwqawdwaqawdww": [
+    "参数与合成相同，且除物元外还能接受物品组。返回物品组列表，各元素代表合成接受相应物元时产出的各产物。",
+    "相关章节",
+    "patterns/hexal:mote/craft/preview 1"
+  ],
+  "waqqqqq": [
+    "创造一个杂件，将含有媒质的物品实体当做核心，所给列表作为法术刻印其上，消耗大约 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexcasting:craft/cypher 1"
+  ],
+  "qqqqqawweawawa": [
+    "创建一个在我摔落超过给定距离（以格计）时激活的触发条件。",
+    "相关章节",
+    "patterns/hierophantics:make_fall_trigger 1"
+  ],
+  "wqwawwqwaqeq": [
+    "虽然我能把紫金石塑造成任意形态，但我还是选择了我最熟悉的三种。我可以用这个图案来为副手中的紫金石塑形，无需消耗媒质。",
+    "相关章节",
+    "patterns/lapisworks:swap_amel 1"
+  ],
+  "qwdedwq": [
+    "与内省类似。在绘制结束发信后，所有我绘制的图案会通过编号为栈顶数的链接发送出去。",
+    "相关章节",
+    "patterns/hexal:link/comm/open_transmit 1"
+  ],
+  "waawedwdwd": [
+    "返回玩家的魔法心数。使用半颗心作为单位。",
+    "相关章节",
+    "patterns/hexpose:absorption_hearts 1"
+  ],
+  "qaqdaqqa": [
+    "压入我按下跳跃键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:jumping 1"
+  ],
+  "eqqqeawqwqwqwqwqw": [
+    "将物品实体埋入沙子或沙砾方块，从而形成可疑的沙子/沙砾。消耗 1/8 个紫水晶粉。",
+    "相关章节",
+    "patterns/yaha:sussify_block 1"
+  ],
+  "wqwqqwqwawaaw": [
+    "返回猫的品种。",
+    "相关章节",
+    "patterns/hexpose:cat_variant 1"
+  ],
+  "dqaqdqaqdqaeadawadadawadadawa": [
+    "将所给咒术融注入另一只手中的紫水晶装备，后续使用装备时即会施法。消耗 9 个充能紫水晶；箭除外，它仅需消耗 5 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexchanting:imbue_equipment 1"
+  ],
+  "qwaawewaawdwaqwqqqwq": [
+    "从给定的实体读取所有魔符：可以是一个道具例如魔符、施法道具、法术羊皮纸等，或包含上述道具的展示框，或一个学习了魔符的玩家。 如果我选择拒绝HexParse.的邪恶力量，这将是唯一的获取魔符iota的方式。",
+    "相关章节",
+    "patterns/hex_ars_link:read_glyphs 1"
+  ],
+  "wwaqwa": [
+    "Adds the phrase on the tip of my tongue to the stack, regardless of whether I intend to say it.",
+    "相关章节",
+    "patterns/hexic:murmur 1"
+  ],
+  "wddwwawaeqwawq": [
+    "压入实体处于完全健康状态时的生命值。使用半颗心作为单位。",
+    "相关章节",
+    "patterns/hexpose:get_max_health 1"
+  ],
+  "wedewedew": [
+    "产生一类小型魔法效果，这种效果与目标的性质和功能基本一致。消耗大约 1/10 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:prestidigitation 1"
+  ],
+  "eaqwqaeqawawa": [
+    "接受 0 到 5（两端闭）的数，并依此设置口袋模拟器的手持槽位。无需消耗媒质。",
+    "相关章节",
+    "patterns/slate_work:set_slot 1"
+  ],
+  "edeeeeeqaaqeeeadweeqeeqdqeeqeeqde": [
+    "施加所给咒术的咒符。接受一个咒术，还需提供存入的媒质量，以紫水晶粉计。消耗相应媒质量和额外 3 个充能紫水晶。",
+    "相关章节",
+    "patterns/hexical:charm 1"
+  ],
+  "weeeewedewqq": [
+    "返回重力对实体的方向。",
+    "相关章节",
+    "patterns/hexodus:get_true_direction 1"
+  ],
+  "awaaqdqaawa": [
+    "检验动物是否处于热恋状态，准备繁衍生息；若该生物无法进行此类繁殖行为，则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:breedable 1"
+  ],
+  "dwewdwedea": [
+    "获取物品的说明。",
+    "相关章节",
+    "patterns/hexpose:item_lore 1"
+  ],
+  "aeqeawaeqeaeedd": [
+    "将结构iota所存结构绕 X 轴顺时针旋转 90 度。",
+    "相关章节",
+    "patterns/hexstruction:rotate_clockwise_x 1"
+  ],
+  "adeeeee": [
+    "计算所给数（绝对值小于 1）的反余弦，也即余弦为该值的角。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:arccos 1"
+  ],
+  "eeeeeqawawa": [
+    "接受一个实体和一个状态效果，并返回目标身上所给状态效果的强度。",
+    "相关章节",
+    "patterns/ephemera:getstatuslevel 1"
+  ],
+  "eqqqqqawqeeeeedww": [
+    "可在任意施法器件上运行。将两个实体链接，且两实体必须均为可链接的。消耗 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexal:link/others 1"
+  ],
+  "eaqwqaewdd": [
+    "返回该法术环影响范围的西北靠下转角的位置。",
+    "相关章节",
+    "patterns/hexcasting:circle/bounds/min 1"
+  ],
+  "eawdwae": [
+    "将串中的字符转换为代表该字符的数，也可反方向转换。 使用UTF-16字符编码表。",
+    "相关章节",
+    "patterns/complexhex:ascii 1"
+  ],
+  "qqqqqewwqeeeee": [
+    "当两咒灵连接时，它们会相互转送媒质，直至两者平衡。默认状况下，仅所有者相同的咒灵会自发转送。此操作接受一个编号数，并显式允许咒灵与该编号链接另一端的事物交换媒质。",
+    "相关章节",
+    "patterns/hexal:wisp/transfer/allow 1"
+  ],
+  "qeqwqwqwqwqeqawewwqqwwqwwqqww": [
+    "返回最适宜所给生物群系的村民文化类别，若无则返回 Null。",
+    "相关章节",
+    "patterns/hexpose:biome_to_villager 1"
+  ],
+  "daawdda": [
+    "与余数之馏化类似，但两者在负数上的表现不同：-8 %₁ 3 = -2，而 -8 %₂ 3 = 1。",
+    "相关章节",
+    "patterns/hexic:modulo 1"
+  ],
+  "dwawdeewedwwqqqwwqq": [
+    "将目标送入所给咒法位面。若目标未在咒法位面内部，消耗 2 个充能紫水晶；否则消耗 5 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexxyplanes:enter_plane 1"
+  ],
+  "deeeed": [
+    "Specific hand version of Scribe's Gambit. Writes the given Iota to the Iota holder in the specified hand.",
+    "相关章节",
+    "patterns/lapisworks:write_spechand 1"
+  ],
+  "qwaawewaawdqqwawwqwwawqdqdeaqq": [
+    "将给定法术列表注册为回调，其将会在\"触发回调\"符文执行时运行。",
+    "相关章节",
+    "patterns/hex_ars_link:set_callback 1"
+  ],
+  "dqdwdqdqaa": [
+    "构筑一个紫水晶砧，它会根据其速度造成伤害。伤害量不会超过 5 颗心。消耗 1 个充能紫水晶。会将其自身压栈。",
+    "相关章节",
+    "patterns/yaha:anvil 1"
+  ],
+  "aqweewqaeaqweewqaqwww": [
+    "在我的咒灵和我之间建立更紧密的联系。我只能同时绑定一个咒灵，但绑定咒灵的常态消耗将大大减少。",
+    "相关章节",
+    "patterns/hexal:wisp/seon/set 1"
+  ],
+  "daadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaadaadaddaddaadaddaadaadaddaddaadaddaddaadaddaadaadadda": [
+    "How could one even begin to draw this?",
+    "相关章节",
+    "patterns/hexic:whatthefuck 1"
+  ],
+  "edaqq": [
+    "压入我按下使用物品/放置方块键的时间，以 1/20 秒计，如果未按下则返回 -1。",
+    "相关章节",
+    "patterns/hexical:right_click 1"
+  ],
+  "deewwaawd": [
+    "设置术师方块在消失前能持续存在的时间。",
+    "相关章节",
+    "patterns/hexical:modify_block_ephemeral 1"
+  ],
+  "aawa": [
+    "以给定质性 iota 对应的质性为基础制造一个只读副本，非常安全",
+    "相关章节",
+    "patterns/hexcellular:readonly_property 1"
+  ],
+  "aweeeeewaaww": [
+    "获取当前绑定的枢纽中所有和所给物品类型对应的，或所有可与所给物元合并的物元。",
+    "相关章节",
+    "patterns/hexal:mote/contained/get 1"
+  ],
+  "aqwaq": [
+    "移除栈顶字符串，并返回字符串所解析得的数（若无法解析则返回 Null）。",
+    "相关章节",
+    "patterns/moreiotas:string/parse 1"
+  ],
+  "qeqwqwqwqwqeqawdaeaeaeaeaea": [
+    "返回代表村民技艺功底和精通程度的数。",
+    "相关章节",
+    "patterns/hexpose:villager_level 1"
+  ],
+  "adeqqqqq": [
+    "接受一个 0 与 1 之间的数，用作旋转圈数，并依此旋转视斑。",
+    "相关章节",
+    "patterns/hexical:roll_specklike 1"
+  ],
+  "aeeedw": [
+    "以文本形式返回最近一次使用聊天栏的玩家，同时以文本形式返回该消息，以及发送时间距现在有多少个 1/20 秒。",
+    "相关章节",
+    "patterns/hexpose:get_message 1"
+  ],
+  "ddeedd": [
+    "将所给咒术存入意识。如果其中已经存在咒术，则进行覆盖。消耗 1 个充能紫水晶。",
+    "相关章节",
+    "patterns/hierophantics:set_mind_hex 1"
+  ],
+  "dadadad": [
+    "这个啊，她类似与托特之策略，但不拷贝初始栈，又叫纯净托特",
+    "相关章节",
+    "patterns/hexflow:pure_map 1"
+  ],
+  "qaqqqqqeeeeedq": [
+    "压入挖掘给定类型方块的难易程度。",
+    "相关章节",
+    "patterns/hexpose:block_hardness 1"
+  ],
+  "aqaeawdwwwdwqwdwwwdwesdwdwdswqdedqqwdewaawdeq": [
+    "Summons an enchanted version of the Greater Sentinel at the given position (which must be within 32 blocks around me) and the given ambit (which can be from 1-64). Costs 5 amethyst dust to summon.",
+    "相关章节",
+    "patterns/lapisworks:create_enchsent 1"
+  ],
+  "qaqww": [
+    "构筑一小片紫水晶，对命中目标固定造成 1 颗心的伤害，同时强令目标退后。消耗大约 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:magic_missile 1"
+  ],
+  "qwqwqwqwqwqqwwaadwdaaww": [
+    "返回给定位置的红石信号强度。",
+    "相关章节",
+    "patterns/hexpose:get_power 1"
+  ],
+  "qaqwddedqdd": [
+    "将我开始使用大精灵神灯时的位置压入栈顶。",
+    "相关章节",
+    "patterns/hexical:get_arch_lamp_position 1"
+  ],
+  "wdeaqqdqeedqadqeedqaeadeaqqeadeaqqdqdeaqqeaeedqaw": [
+    "向栈顶压入一个认知危害，哈哈哈，我也不记得这个有什么用了",
+    "相关章节",
+    "patterns/hexdebug:const/cognitohazard 1"
+  ],
+  "qaeaqda": [
+    "维持之馏化的反操作，会删除指定的元素，而不是删除未指定的。",
+    "相关章节",
+    "patterns/hexthings:uiua_drop 1"
+  ],
+  "eqqqqqaweqaeaq": [
+    "递归扫描与输入端可链接事物相连的链接网络，最大深度为所给数（最高为 32），并返回所有可链接事物组成的列表。消耗极少量媒质。",
+    "相关章节",
+    "patterns/ephemera:networkscan 1"
+  ],
+  "wqwqwqwqwqwaeqqqqaeqaeaeaeaw": [
+    "返回给定位置的光照等级，返回值在 0 到 15 之间。如果位置处于不透明方块内部，返回 0。",
+    "相关章节",
+    "patterns/hexpose:get_light 1"
+  ],
+  "qaqdqaqdwawaw": [
+    "在给定位置构筑一片咒力多滋。消耗大约 2 个紫水晶粉。如果你试图在多滋中写进他人的实体iota，可能招致“违犯他人”事故。",
+    "相关章节",
+    "patterns/hexical:conjure_hextito 1"
+  ],
+  "qqqqqwdeddw": [
+    "移除栈顶元素与数，而后向编号为该数的链接发送该元素。消耗 1/100 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexal:link/comm/send 1"
+  ],
+  "wdwqqqqqwdw": [
+    "从栈顶获取实体类型、位置向量及最大距离，返回该位置给定距离范围内所有不符合给定类型的实体的列表。",
+    "相关章节",
+    "patterns/moreiotas:zone_entity/not_type 1"
+  ],
+  "wqaa": [
+    "类似照准仪之纯化，但返回向量并不指向实体的视线，而是自其头部指向上方。",
+    "相关章节",
+    "patterns/hexpose:theodolite 1"
+  ],
+  "waqqqqqeeawwaeaww": [
+    "返回一个四元数，此四元数应当与给定矩阵代表同一旋转操作。",
+    "相关章节",
+    "patterns/complexhex:mattoquat 1"
+  ],
+  "dwawdqaqwwwqa": [
+    "向我展示我咒法位面的出口。",
+    "相关章节",
+    "patterns/hexxyplanes:exit_reveal 1"
+  ],
+  "qwqqadadadewdqqdwe": [
+    "特种化的烧炼，会模拟烟熏炉。它只能处理食物，但速度更快，变相降低消耗。",
+    "相关章节",
+    "patterns/hexical:smoke 1"
+  ],
+  "qaqwweaeaqwww": [
+    "传入一个实体和一个代表半颗红心数量的数，并为所给实体的双拳附魔，以此提升其造成的物理伤害。每提升 1 个半红心消耗 1 个紫金石和 5 个紫水晶碎片。上限为平常的 4 倍，对我来说就是 4。",
+    "相关章节",
+    "patterns/lapisworks:moar_attack 1"
+  ],
+  "qwqqqwqaeaqa": [
+    "检查当前施法者是否正在使用回响之杖，返回一个布尔值。",
+    "相关章节",
+    "patterns/oneironaut:queryrod 1"
+  ],
+  "qweedeqeedeqdqdwewewwewewwewe": [
+    "让神灯进化，在另一只手中持有神灯时施放。消耗大约 10 个充能紫水晶和所需祭品。",
+    "相关章节",
+    "patterns/hexical:promote_lamp 1"
+  ],
+  "awwaeawwawawdedwa": [
+    "接受一个 m×n 矩阵与一个 p×n 矩阵，返回一个 (m+p)×n 矩阵，其中第一个矩阵位于第二个矩阵上方。",
+    "相关章节",
+    "patterns/moreiotas:matrix/concat/vert 1"
+  ],
+  "wdeeeeeqeawwaeaww": [
+    "返回一个矩阵，此矩阵应当与给定四元数代表同一旋转操作。",
+    "相关章节",
+    "patterns/complexhex:quattomat 1"
+  ],
+  "wdeeeeeqe": [
+    "返回 j 的系数。",
+    "相关章节",
+    "patterns/complexhex:qy 1"
+  ],
+  "qqqqqaa": [
+    "计算所给角（弧度制）的正弦，也即该角在单位圆上的纵坐标。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:sin 1"
+  ],
+  "eeewdwqqwwdweee": [
+    "Sets the offset of the caster's breasts",
+    "相关章节",
+    "patterns/hexgender:set_breast_offsets 1"
+  ],
+  "qqaawawaeqqdd": [
+    "给予伤害吸收。每 1 秒持续时间的基础消耗为 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexcasting:potion/absorption 1"
+  ],
+  "dwdwd": [
+    "返回你拥有的所有像图的索引列表。返回的似乎是一个数列表。",
+    "相关章节",
+    "patterns/scryglass:get_icons 1"
+  ],
+  "wdwawedqdewawdw": [
+    "输入#0为待修改嵌套列表，将按照#1数字列表给定的下标顺序逐级深入，在最后一层将对应元素设置为#2内容； 返回修改后的嵌套列表。",
+    "相关章节",
+    "patterns/hexflow:nested_modify 1"
+  ],
+  "wdwddwqad": [
+    "Creates an expression that equals 1 if the two expressions are equal, and 0 otherwise.",
+    "相关章节",
+    "patterns/complexhex:equals 1"
+  ],
+  "aaqdwdwdedd": [
+    "接受一个索引，和一个代表逆时针旋转量的数，以整圆计。旋转像图。",
+    "相关章节",
+    "patterns/scryglass:rotate_icon 1"
+  ],
+  "eedwwawwdee": [
+    "将世界变为黑白细线。很适合用来辨别微妙的差异。",
+    "相关章节",
+    "patterns/hexical:shader_lines 1"
+  ],
+  "dedwaqwqqwqa": [
+    "分析另一只手中的烟火之星，并构筑一道烟花，位置、速度、与火药量有关的飞行时间均由烟火之星决定。消耗大约 1 个紫水晶碎片。",
+    "相关章节",
+    "patterns/hexical:simulate_firework 1"
+  ],
+  "wqwqwqwqwqwaqdwddwdq": [
+    "清理并移除给定 BIT。",
+    "相关章节",
+    "patterns/complexhex:killbit 1"
+  ],
+  "wqadaqwwawwwqwwawdwawwqwwwwa": [
+    "传入一个实体和一个代表半颗红心数量的数，并为所给实体的皮肤附魔，以此提升其生命值。消耗所给数个紫金石，同时消耗 2 倍于紫金石消耗量的媒质。后页继续……",
+    "相关章节",
+    "patterns/lapisworks:moar_health 1"
+  ],
+  "eqdeeqdweeqddqdwwdew": [
+    "将所给染色剂内化到我副手中的物品（如施法物品）里。",
+    "相关章节",
+    "patterns/hexic:dye_offhand 1"
+  ],
+  "wwqqqqq": [
+    "更暴力的清除物品，甚至能抹掉签名。消耗大约 1 个紫水晶粉，与清除物品类似。",
+    "相关章节",
+    "patterns/hexical:unautograph 1"
+  ],
+  "aqwqaqded": [
+    "若副手持有咒典，擦除其中相应的图案列表绑定。",
+    "相关章节",
+    "patterns/hexical:erase_grimoire 1"
+  ],
+  "edeedqd": [
+    "若施法者副手中有物品，则将其类型压入栈顶；若无，则压入施法用手中物品的类型。",
+    "相关章节",
+    "patterns/moreiotas:type/item_held 1"
+  ],
+  "aqqqqqedwewewewdw": [
+    "从实体或方块中读出一个列表 iota，并将 iota 压入栈中给定下标处。",
+    "相关章节",
+    "patterns/ioticblocks:read/index 1"
+  ],
+  "wqqqqw": [
+    "移除栈顶实体，并返回其护甲值。",
+    "相关章节",
+    "patterns/hexal:armour 1"
+  ],
+  "aqwaqa": [
+    "移除栈顶两字符串，并以第二个字符串为分隔符拆分第一个字符串，结果作为列表返回。",
+    "相关章节",
+    "patterns/moreiotas:string/split 1"
+  ],
+  "eqwawqwaqww": [
+    "让咒灵将在其抵达被导向的位置后才进行下一次施法。",
+    "相关章节",
+    "patterns/hexal:wisp/trigger/move 1"
+  ],
+  "wqwqwqwqwqwawwaawaawa": [
+    "以给定向量缩放 BIT。",
+    "相关章节",
+    "patterns/complexhex:scalebit 1"
+  ],
+  "deaqqeweeeeewdqdqdqdqdq": [
+    "独属我自己的施法空间。",
+    "相关章节",
+    "patterns/hexdim:dim/cast/activate 1"
+  ],
+  "wqqqqddqqqqw": [
+    "Sets the physics of the caster's breasts",
+    "相关章节",
+    "patterns/hexgender:set_physics 1"
+  ],
+  "eawaeqeawaeaw": [
+    "上下翻转结构，也即跨 Y 轴镜像。",
+    "相关章节",
+    "patterns/hexstruction:mirror_vertical 1"
+  ],
+  "awwaeawwaqw": [
+    "接受一个正整数 n，返回 n 阶单位矩阵（即主对角线处为 1，其余各处为 0 的方阵）。",
+    "相关章节",
+    "patterns/moreiotas:matrix/identity 1"
+  ],
+  "qdeeaae": [
+    "将珠算计数器重置为 0。",
+    "相关章节",
+    "patterns/overevaluate:soroban_reset 1"
+  ],
+  "eqdweeqdwweeqddqdwwwdeww": [
+    "接受一个向量与代表染色剂的物品类型。如果目标为我自己的方块，消耗极少量媒质；否则消耗 1 个紫水晶粉。",
+    "相关章节",
+    "patterns/ephemera:paintconjured 1"
+  ],
+  "wqwqwqwqwqwawwaqaeaqe": [
+    "以给定偏移量平移 BIT。",
+    "相关章节",
+    "patterns/complexhex:translatebit 1"
+  ],
+  "wdwdwedewdw": [
+    "返回施重力的效果强度相对基线的倍数。若实体未受施重力影响，则返回 Null。",
+    "相关章节",
+    "patterns/hexodus:get_strength 1"
+  ],
+  "wedqdewqqqqaw": [
+    "移除栈顶向量和 iota，将该 iota 保存至该处剪接台副槽位中的物品。 和编年史家之策略类似，我不可用此图案写入我的真名。",
+    "相关章节",
+    "patterns/hexdebug:splicing/clipboard/write 1"
+  ],
+  "wqwawqwddaeeead": [
+    "接受一个物品实体、一个位置、一个轴向向量，并依此发射物品。对大多数使用环境而言，消耗大约 1/2 个紫水晶粉。",
+    "相关章节",
+    "patterns/hexical:dispense 1"
+  ],
+  "aaweeqqqqq": [
+    "根据所给标识、标签、位置、半径创建圆形标记。",
+    "相关章节",
+    "patterns/hexmapping:create_marker/circle 1"
+  ],
+  "qaqwwdwdw": [
+    "Withdraws, from the given unit, into the Phial in my other hand, the amount specified in dust. Costs 10% of the media specified. Overflow into the Phial is discarded!",
+    "相关章节",
+    "patterns/lapisworks:withdraw 1"
+  ],
+  "dwewdwe": [
+    "接受一个 0 到 8 的数，并将我当前持有的物品放至该栏位。",
+    "相关章节",
+    "patterns/hexical:set_hotbar 1"
+  ],
+  "wqqqqqadq": [
+    "计算所给角（弧度制）的正切，也即该角在单位圆上的斜率。与 π 和 τ 的值有关。",
+    "相关章节",
+    "patterns/hexcasting:tan 1"
+  ],
+  "qqqqqeawqwqwqwqwqwwded": [
+    "这个图案会返回一个特殊的图案列表，这个图案列表在一次赫尔墨斯之策略后，仍得其本身，也许这会有什么好的作用。",
+    "相关章节",
+    "patterns/miehex 0"
+  ],
+  "eeeeewdqdqdqdqdqdadwdwd": [
+    "接受两个物品实体iota，交换两者的附有的魔咒，或使一个拥有魔咒的物品失去其魔咒，另一个不具有魔咒的物品获得一样的附魔,消耗1枚充能紫水晶",
+    "相关章节",
+    "patterns/miehex 1"
+  ],
+  "ddeweeedq": [
+    "将栈下标为0处的iota加入在栈下标为一处的列表首位，将栈下标为0处的iota加入那个列表的末尾，输出最后得到的列表",
+    "相关章节",
+    "patterns/miehex 3"
+  ],
+  "wawaqw": [
+    "在栈下标为0处接受一个列表，1处接受一个列表，2处接受一个数，0处接受的列表从下标为所给数的元素后面依次填入一处所给的列表中的每一个元素，原有的0处所给列表的其余元素不变",
+    "相关章节",
+    "patterns/miehex 4"
+  ],
+  "wedwdw": [
+    "在栈下标为0处接受一个列表，栈下标为1、2处，各接收一个数字，返回所给列表中下标为第一个数往后的总共由第二个数数量的元素所组成的列表，以及原先列表剩余所有元素组成的列表",
+    "相关章节",
+    "patterns/miehex 5"
+  ],
+  "wewdwewaqwqwa": [
+    "接受两个位置向量与一个字符串，返回两个位置向量所确定的立方体中所有ID与所给字符串相同的方块的坐标的列表",
+    "相关章节",
+    "patterns/miehex 6"
+  ],
+  "wewdwewaqwqwaada": [
+    "接受两个位置向量与一个字符串列表，返回由两个位置向量所确定的立方体中所有ID与所给列表中任意一个字符串相同的方块的坐标所组成的列表",
+    "相关章节",
+    "patterns/miehex 7"
+  ],
+  "qqqqqwdeddwwded": [
+    "获取位置及最大距离和一个字符串，返回该位置为中心给定距离立方体范围内所有与字符串名称相同的实体组成的列表，若提供的字符串是注册名，返回注册名与字符串相同的实体组成的列表",
+    "相关章节",
+    "patterns/miehex 8"
+  ],
+  "wawwwewdwewww": [
+    "这个法术接受一个位置向量和一个字符串，那之后便会在那个位置向量上放置一个方块ID与所给字符串相同的树苗,消耗一个紫水晶粉。",
+    "相关章节",
+    "patterns/miehex 9"
+  ],
+  "daaedewdwee": [
+    "这个法术拥有奇怪的效果，可以改变施法者使用意识之精思时返回的iota————不过在这么做之前，至少应该保存一下自己原本的真名。",
+    "相关章节",
+    "patterns/miehex 10"
+  ],
+  "eadeaqwwdwqqeaqqweewwqadaqwwww": [
+    "这个法术接受一个玩家实体,那之后给予那玩家一柄媒质剑，附有抢夺三魔咒，不可破坏，仅需10枚充能紫水晶",
+    "相关章节",
+    "patterns/miehex 11"
+  ],
+  "wqwqwqwqwqwawwaqqqqqddewqa": [
+    "获取目标位置的群系，将副手的1个粹灵晶碎片转化为16个群系精魄，消耗一个紫水晶碎片",
+    "相关章节",
+    "patterns/miehex 13"
+  ],
+  "wedweaqqwq": [
+    "消耗副手的一个群系精魄，把目标向量处的一小片区域转变为对应群系，消耗少量媒质",
+    "相关章节",
+    "patterns/miehex 14"
+  ],
+  "wqwawewawqwdwewdwwwdwwqaq": [
+    "接受一个位置向量和一个介于0，1，2之间的整数，消耗副手的一个理念世界入口，消耗极少量媒质。将自己传送到那个世界对应的坐标，这里的整数似乎是指这个位面的三个不同侧面，又或者本来就是指向三个不同的维度。",
+    "相关章节",
+    "patterns/miehex 15"
+  ],
+  "wedwewwdwew": [
+    "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。",
+    "相关章节",
+    "patterns/miehex 16"
+  ],
+  "wqaqwawqwwawwqwwa": [
+    "返回重生点位置向量",
+    "相关章节",
+    "patterns/miehex 17"
+  ],
+  "edeeeeeqdwdwww": [
+    "接受一个位置向量，消耗副手的一个结构精魄，返回那个位置向量所对应的坐标离结构所在坐标的水平距离",
+    "相关章节",
+    "patterns/miehex 20"
+  ],
+  "aq": [
+    "接受一个玩家实体和一个iota，把那iota置入玩家法杖栈中，并使那iota在其视野中央显示一段时间，消耗一份紫水晶粉",
+    "相关章节",
+    "patterns/miehex 21"
+  ],
+  "qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww": [
+    "接受一个玩家实体，从其脑中弹出一份其已经服用的磁带，消耗一枚充能紫水晶。",
+    "相关章节",
+    "patterns/miehex 22"
+  ],
+  "qwawqwadawqwa": [
+    "接受两个物品栏的索引，交换自身物品栏相应槽位的物品，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。",
+    "相关章节",
+    "patterns/miehex 23"
+  ],
+  "dwewdweqawqwa": [
+    "接受一个物品栏的索引或一个物品实体，将索引对应槽位的物品丢出一份，或者把那些物品实体填入自身物品栏的空槽位中，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。",
+    "相关章节",
+    "patterns/miehex 24"
+  ],
+  "dqdaedeadqdaede": [
+    "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。",
+    "相关章节",
+    "patterns/miehex 25"
+  ],
+  "dwewdweqawqwaewqqqwaw": [
+    "接受玩家和其两个物品栏的索引，交换其物品栏相应槽位的物品，消耗一个充能紫水晶，只接受范围内的索引。",
+    "相关章节",
+    "patterns/miehex 26"
+  ],
+  "wadwdqdwd": [
+    "接受一个实体，返回其想要攻击的实体。",
+    "相关章节",
+    "patterns/miehex 27"
+  ],
+  "qaeaqeqaea": [
+    "接受两个向量，计算从第一个向量指向第二个向量所需的偏航角和俯仰角（弧度），依次压入栈中（先偏航，后俯仰）。",
+    "相关章节",
+    "patterns/miehex 28"
+  ],
+  "wadewqaeaqwed": [
+    "接受两个向量，计算它们之间的空间夹角（弧度）。",
+    "相关章节",
+    "patterns/miehex 29"
+  ],
+  "wdww": [
+    "接受一个向量、偏航角和俯仰角（均为弧度），先将向量绕 Y 轴旋转偏航角，再绕 X 轴旋转俯仰角，返回旋转后的新向量。",
+    "相关章节",
+    "patterns/miehex 30"
+  ],
+  "daaedewdweeqawa": [
+    "接受一个列表，创建一个新的法杖施法环境（继承法术环的施法者，栈、渡鸦之思与次级门径目的地），在其中执行该列表，将执行后的栈与其他数据覆盖原栈与原本数据，只能在法术环中施放。",
+    "相关章节",
+    "patterns/miehex 31"
+  ],
+  "qdwae": [
+    "接受一个数，消耗这个数量的以紫水晶粉记的媒质，将其充入个人媒质条中，会有一些微小的损耗",
+    "相关章节",
+    "patterns/miehex 36"
+  ],
+  "wadaweeeeew": [
+    "接受一个生物实体，消耗三份紫水晶粉的媒质，使其立刻成年。",
+    "相关章节",
+    "patterns/miehex 37"
+  ],
+  "qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq": [
+    "记忆自己当前的栈和施法状态，再次释放时根据记忆覆写当前栈和施法状态并清空记录。",
+    "相关章节",
+    "patterns/miehex 38"
+  ],
+  "awaeqwawq": [
+    "接受一个物品实体，返回由其上所有附魔对应的iota组成的列表",
+    "相关章节",
+    "patterns/spells/enchant 1"
+  ],
+  "dwdqewdwe": [
+    "接受一个附魔iota和一个物品实体，附魔那个物品，消耗魔咒等级的立方数值的紫水晶粉加上一个紫水晶碎片的媒质",
+    "相关章节",
+    "patterns/spells/enchant 2"
+  ],
+  "qawwwwaqeeeaqwwqaee": [
+    "接受两个同种魔咒的附魔iota，将它们的等级相加，返回新的高等级魔咒",
+    "相关章节",
+    "patterns/spells/enchant 3"
+  ],
+  "qqqqqwqqwqwqwqwqwwqaeqawwwawwwaww": [
+    "接受一个由生物实体组成的列表和一个位置，收集它们逸散在外的意识能量，并集中在那个位置处，一段时间后那个位置处聚集的意识能量便会形成特殊的方块，",
+    "相关章节",
+    "patterns/spells/collect_consciousness 2"
+  ],
+  "qwqwqwqwqwq": [
+    "返回空理型",
+    "相关章节",
+    "patterns/spells/idea 1"
+  ],
+  "qwwwdwewdwwwqwqwwwdwewdwwwqqqwe": [
+    "消耗少量媒质，从目标实体提取各项基础属性（最大生命值、移动速度、攻击力、护甲），填入一个空理型中，生成一个对应生物的理型 Iota 并压入栈顶。",
+    "相关章节",
+    "patterns/spells/idea 2"
+  ],
+  "wqwqawdeaqqdeewew": [
+    "根据所给理型在目标位置生成一个生物实体，并返回实体 Iota。实体的各项属性依照理型设定。消耗（最大生命值 * 10 + 移动速度 * 1000 + 攻击力 * 100 + 护甲 * 50）数量的紫水晶粉，至少会消耗一个充能紫水晶",
+    "相关章节",
+    "patterns/spells/idea 3"
+  ],
+  "wewedwaqdeeaqqwqw": [
+    "消耗少量媒质，修改理型的某一项属性。索引 1~4 分别对应：最大生命值、移动速度、攻击力、护甲。返回一个新的理型 Iota ",
+    "相关章节",
+    "patterns/spells/idea 4"
+  ],
+  "qaqeqwedqedwwwdewdwq": [
+    "锚定所给位置的现实--消耗 1 枚紫水晶碎片，将目标位置所在的区块永久强加载。",
+    "相关章节",
+    "patterns/spells/world 1"
+  ],
+  "aawewewaqweedeewqawewe": [
+    "临时锚定所给位置的现实--消耗少量媒质，将目标位置所在的区块暂时加载15秒左右",
+    "相关章节",
+    "patterns/spells/world 2"
+  ],
+  "wqwawqwqwqwqwqaweeeee": [
+    "接受一个位置向量，在目标位置生成一个理念方块，消耗少量媒质",
+    "相关章节",
+    "patterns/spells/idea_blocks 1"
+  ],
+  "wqwawqwqwqwqwqawew": [
+    "接受一个位置向量，将目标方块转化为其理念方块，消耗少量媒质",
+    "相关章节",
+    "patterns/spells/idea_blocks 2"
+  ],
+  "ede":[
+	"这是普罗米修斯，也就是我",
+	"相关章节",
+	""
+  ]
+  
+}

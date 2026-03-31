@@ -4988,6 +4988,21 @@
 		},
 		"variant=1662": {
 			"model": "minecraft:block/blackstone"
+		},
+		"variant=1663": {
+			"model": "minecells:block/putrid_board_stairs"
+		},
+		"variant=1664": {
+			"model": "minecraft:block/bedrock"
+		},
+		"variant=1665": {
+			"model": "minecraft:block/warped_nylium"
+		},
+		"variant=1666": {
+			"model": "minecraft:block/green_wall_banner"
+		},
+		"variant=1667": {
+			"model": "farmersdelight:block/wild_rice"
 		}
 	}
 }
