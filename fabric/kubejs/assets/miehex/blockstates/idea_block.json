@@ -5003,6 +5003,9 @@
 		},
 		"variant=1667": {
 			"model": "farmersdelight:block/wild_rice"
+		},
+		"variant=1668": {
+			"model": "minecraft:block/blue_wall_banner"
 		}
 	}
 }

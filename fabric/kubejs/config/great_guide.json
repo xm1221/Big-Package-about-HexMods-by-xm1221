@@ -1,0 +1,222 @@
+{
+  "complexhex:summonblockdisplay": [
+    "你可以在给定位置召唤一个方块展示体，用以展示指定的方块。需要提供方块的内部名称（如“minecraft:dirt”）。消耗大约1个充能紫水晶。",
+    "相关章节",
+    "pattern/great_spells/complexhex:summonblockdisplay"
+  ],
+  "complexhex:summonitemdisplay": [
+    "你可以在给定位置召唤一个物品展示体，用以展示指定的物品。需要提供物品的内部名称（如“minecraft:stick”）。消耗大约1个充能紫水晶。",
+    "相关章节",
+    "pattern/great_spells/complexhex:summonitemdisplay"
+  ],
+  "complexhex:summontextdisplay": [
+    "你可以在给定位置召唤一个文本展示体，用以展示指定的字符串。消耗大约1个充能紫水晶。",
+    "相关章节",
+    "pattern/great_spells/complexhex:summontextdisplay"
+  ],
+  "ephemera:invisibility": [
+    "你可以给予一个实体隐形的效果，每3秒持续时间消耗1个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/ephemera:invisibility"
+  ],
+  "ephemera:magearmor": [
+    "你可以为玩家生成一层防护屏障，其耐久度、护甲值和附加效果都可自由设定。消耗较为复杂，与护甲值、耐久度和附加效果等级相关。",
+    "相关章节",
+    "pattern/great_spells/ephemera:magearmor"
+  ],
+  "ephemera:repair": [
+    "你可以用含有媒质的物品实体来修复你另一只手中的工具。每个紫水晶粉的媒质可修复20点耐久度，可惜只能修补有着经验修补魔咒的物品",
+    "相关章节",
+    "pattern/great_spells/ephemera:repair"
+  ],
+  "hex_machina:expose_mind": [
+    "让一个实体的意识暴露在外，以便使用意识之瓶收集",
+    "相关章节",
+    "pattern/great_spells/hex_machina:expose_mind"
+  ],
+  "hexal:gate/make": [
+    "创造一个门径。门径可以是位置锚定、实体锚定或未锚定三种类型，可用于廉价的远距离传送。消耗32个充能紫水晶",
+    "相关章节",
+    "pattern/great_spells/hexal:gate/make"
+  ],
+  "hexal:wisp/consume": [
+    "你可以用它拆解一个咒灵，如果这个法术由咒灵释放，还可以回收其剩余的媒质。如果被拆解咒灵的所有者是你，消耗1个紫水晶碎片；否则消耗其媒质库容量的一半。",
+    "相关章节",
+    "pattern/great_spells/hexal:wisp/consume"
+  ],
+  "hexal:wisp/seon/set": [
+    "你可以在你的咒灵和你之间建立更紧密的联系。只能同时绑定一个，但绑定咒灵的常态消耗会大大减少，还会拓展其施法范围",
+    "相关章节",
+    "pattern/great_spells/hexal:wisp/seon/set"
+  ],
+  "hexcasting:brainsweep": [
+    "你真的想知道吗？而且，你已经知道了，不是吗？",
+    "相关章节",
+    "pattern/great_spells/hexcasting:brainsweep"
+  ],
+  "hexcasting:craft/battery": [
+    "你可以将媒质注入一个玻璃瓶，从而制成试剂瓶。需要另一只手中持有玻璃瓶，并提供一个媒质物品实体作为储库。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:craft/battery"
+  ],
+  "hexcasting:create_lava": [
+    "你可以在给定位置生成一格熔岩。消耗大约1个充能紫水晶————讲道理，这个法术的应该和创造水差不多才对，真是名不副实的卓越法术啊",
+    "相关章节",
+    "pattern/great_spells/hexcasting:create_lava"
+  ],
+  "hexcasting:dispel_rain": [
+    "你可以将你所处世界的雨水驱离。若未在下雨则无效。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:dispel_rain"
+  ],
+  "hexcasting:lightning": [
+    "你可以召唤一道落雷到你所想之处，很酷吧？",
+    "相关章节",
+    "pattern/great_spells/hexcasting:lightning"
+  ],
+  "hexcasting:potion/haste": [
+    "你可以给予一个实体急迫效果，每3秒持续时间的基础消耗为1个紫水晶粉。效果强度影响消耗的立方。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:potion/haste"
+  ],
+  "hexcasting:potion/night_vision": [
+    "你可以给予一个实体夜视效果，每5秒持续时间的基础消耗为1个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:potion/night_vision"
+  ],
+  "hexcasting:potion/strength": [
+    "你可以给予一个实体力量效果，每3秒持续时间的基础消耗为1个紫水晶粉。效果强度影响消耗的立方。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:potion/strength"
+  ],
+  "hexcasting:sentinel/create/great": [
+    "你可以召唤一个比普通哨卫更强大的卓越哨卫。它会将你的法术影响范围扩展到其周围16格内。消耗大约2个紫水晶粉，有一种不断连续施放这个法术的技术可以让你将你的卓越哨卫召唤到很远的办法，称之为“步进哨卫”，大概就是在每次召唤哨卫之后再在哨卫施法范围的边缘召唤下一个哨卫，以此类推",
+    "相关章节",
+    "pattern/great_spells/hexcasting:sentinel/create/great"
+  ],
+  "hexcasting:teleport/great": [
+    "你可以利用这个法术将实体传送到世界上几乎任何一处，不过要小心，在远距离传送玩家时可能会导致物品丢失。",
+    "相关章节",
+    "pattern/great_spells/hexcasting:teleport/great"
+  ],
+  "hexdim:dim/create": [
+    "你可以为自己制造一个新的维室。新维室需要时间“雕琢”完毕后才能使用。消耗与维室大小相关的淬灵晶块。",
+    "相关章节",
+    "pattern/great_spells/hexdim:dim/create"
+  ],
+  "hexical:charm": [
+    "你可以将任意物品变为独立的魔法物品（也即咒符物品）。它会有一个媒质储库，耗尽即消散。消耗相应媒质和3个充能紫水晶......这个法术似乎远不止这么简单，你可以多研究研究。",
+    "相关章节",
+    "pattern/great_spells/hexical:charm"
+  ],
+  "hexical:conjure_mesh": [
+    "你可以构筑一个网斑实体，它能在三维空间中连接向量列表形成网状结构。消耗大约1个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/hexical:conjure_mesh"
+  ],
+  "hexical:greater_blink": [
+    "你可以利用卓越闪现将自己传送最多128格，传送目的以你的位置和朝向为参照，消耗大约2个紫水晶粉————虽然便宜，但是可不好算哦。",
+    "相关章节",
+    "pattern/great_spells/hexical:greater_blink"
+  ],
+  "hexical:promote_lamp": [
+    "你可以将一只手持式神灯晋升为大精灵神灯，使其能在物品栏中持续施法。需要消耗大约10个充能紫水晶和一个村民祭品————你想着我干什么？",
+    "相关章节",
+    "pattern/great_spells/hexical:promote_lamp"
+  ],
+  "hexparse:compile": [
+    "利用它，你可以将输入的字符串iota编译为其他iota",
+    "相关章节",
+    "pattern/great_spells/hexparse:compile"
+  ],
+  "hexportation:make_conduit": [
+    "待补充",
+    "相关章节",
+    "pattern/great_spells/hexportation:make_conduit"
+  ],
+  "hexthingy:allaycreation": [
+    "使用这个法术，可以将恼鬼转化为悦灵",
+    "相关章节",
+    "pattern/great_spells/hexthingy:allaycreation"
+  ],
+  "hexthingy:smite": [
+    "这也是用于修补的法术",
+    "相关章节",
+    "pattern/great_spells/hexthingy:smite"
+  ],
+  "hexxyplanes:enter_plane": [
+    "你可以将目标送入你的咒法位面。若目标不在位面内，消耗2个充能紫水晶；否则消耗5个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/hexxyplanes:enter_plane"
+  ],
+  "miehex:allay_mix": [
+    "这个法术用于将悦灵转化为淬晶悦灵，需要消耗淬灵晶若干",
+    "相关章节",
+    "pattern/great_spells/miehex:allay_mix"
+  ],
+  "miehex:destroy_components": [
+    "这个邪恶的法术足以摧毁任何我认知范围内的物品的内部结构，让它们归于平庸",
+    "相关章节",
+    "pattern/great_spells/miehex:destroy_components"
+  ],
+  "miehex:resurrectionem": [
+    "复生？你也会考虑死亡吗？",
+    "相关章节",
+    "pattern/great_spells/miehex:resurrectionem"
+  ],
+  "miehex:worldreloader": [
+    "这是改变世界的大法术，能够在局部复现创世的权柄",
+    "相关章节",
+    "pattern/great_spells/miehex:worldreloader"
+  ],
+  "oneironaut:applymindrender": [
+    "你可以将锋利魔咒转换为同等级的意识撕裂魔咒。消耗由魔咒等级决定，对书使用时额外消耗50%。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:applymindrender"
+  ],
+  "oneironaut:applynotmissing": [
+    "你可以给予一个活体生物一种共振效果，使其在1分钟内可以被从远处访问。基础消耗1个紫水晶碎片，每额外施放一次多消耗1个。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:applynotmissing"
+  ],
+  "oneironaut:dimteleport": [
+    "你可以将一个实体传送入另一个维度的同一位置。消耗20个充能紫水晶。若短时间往返，消耗可减少到5个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:dimteleport"
+  ],
+  "oneironaut:erosionshield": [
+    "待补充",
+    "相关章节",
+    "pattern/great_spells/oneironaut:erosionshield"
+  ],
+  "oneironaut:extradimensionaleval": [
+    "你可以利用它尝试在另一个维度内施放一个可执行的iota。它会额外消耗25%的媒质。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:extradimensionaleval"
+  ],
+  "oneironaut:infusemedia": [
+    "你可以向目标位置方块中注入媒质，使其嬗变。消耗量与具体效果随目标变化而变。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:infusemedia"
+  ],
+  "oneironaut:resistdetection": [
+    "你可以给予一个生物咒术侦测护盾，使其难以被侦测。每秒持续时间消耗2个紫水晶粉，同时消耗目标1/10个紫水晶粉。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:resistdetection"
+  ],
+  "oneironaut:swapspace": [
+    "你可以将当前维度中一个长方体内的方块与另一维度中一个长方体内的方块互换。消耗复杂，两维度之一或两者均需为智识界。",
+    "相关章节",
+    "pattern/great_spells/oneironaut:swapspace"
+  ],
+  "phlexiful:destroy_block": [
+    "摧毁方块而不产生任何掉落物，消耗0.1粉，在遇到流体时消耗激增。",
+    "相关章节",
+    "pattern/great_spells/phlexiful:destroy_block"
+  ],
+  "pregxxy:greater_pregxxy": [
+    "待补充",
+    "相关章节",
+    "pattern/great_spells/pregxxy:greater_pregxxy"
+  ]
+}

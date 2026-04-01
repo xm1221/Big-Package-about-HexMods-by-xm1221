@@ -190,8 +190,11 @@ StartupEvents.registry('hexcasting:action', e => {
     //普罗米修斯之启示
     registerPatternWrap("ede",HexDir.NORTH_WEST,"guide")
 
-    //厄庇墨透斯之卓见
-    //registerPatternWrap("edeee",HexDir.NORTH_WEST,"guide_write")
+    //毛茸茸之策略
+    registerPatternWrap("deeeeweewee",HexDir.NORTH_EAST,"wool_write")
+
+    //毛茸茸之馏化
+    registerPatternWrap("aqqqqwqqwqq",HexDir.NORTH_WEST,"wool_read")
 
     
 

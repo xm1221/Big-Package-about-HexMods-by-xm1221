@@ -64,6 +64,7 @@ let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventor
 let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
 let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
 let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
+let WorldGenLevel = Java.loadClass('net.minecraft.world.level.WorldGenLevel')
 
 
 
@@ -228,3 +229,11 @@ let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
 //miehex
 let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
 let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
+let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
+
+//hexboard
+let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternLookUpUtil")
+
+//PerWorldPatterns
+let ScrungledPatternsSave = Java.loadClass("at.petrak.hexcasting.server.ScrungledPatternsSave")
+

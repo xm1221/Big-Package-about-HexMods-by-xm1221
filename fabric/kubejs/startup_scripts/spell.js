@@ -2250,13 +2250,14 @@ let addEnchantments = (item, enchantments, targetIsBook) => {
 
 //普罗米修斯之启示
 "guide":(stack,env)=>{
+    //验证玩家
         let caster = env.caster
         if(!caster.isPlayer()){
             throw new MishapBadCaster()
         }
-    try{
-        let args = new Args(stack,1)
-        let iota = args.get(0)
+        
+    //定义函数
+    function guide(iota,caster){
             if(iota instanceof EntityIota&& iota.entity==caster){
                 let res =guideText(["你想让我分析你吗？被爱着的孩子","",""])
                 caster.tell(res)
@@ -2282,20 +2283,7 @@ let addEnchantments = (item, enchantments, targetIsBook) => {
                 caster.tell(res)
                 let list = iota.list
                 list.forEach(iota=>{
-                    let guide=JsonIO.read('kubejs/config/guide.json')
-                    if(iota instanceof PatternIota){
-                        let pat=iota.pattern
-                        let sign=pat.anglesSignature()
-                        let result = guide[sign]
-                        let Text1 = Text.literal("这些知识我已经遗忘了……")
-                        if(!result&&result== undefined){
-                            caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text1))
-                            }
-                        else{
-                            let results= guideText(result)
-                            caster.tell(results)
-                        }
-                    }
+                    guide(iota,caster)
                 })
                 return
             }
@@ -2306,52 +2294,124 @@ let addEnchantments = (item, enchantments, targetIsBook) => {
             if(iota instanceof EntityIota){
                 let res =guideText(["对别人好一点，世界也会更爱你一分","",""])                
                 caster.tell(res)
+                return
             }
             if(iota instanceof MoteIota){
                 let res =guideText(["物元？这是个好东西，可以用来拯救咒法师们糟糕的库存","",""])                
                 caster.tell(res)
+                return
             }
             if(iota instanceof GateIota){
                 let res =guideText(["原来这就是门径啊，有意思.....","",""])                
                 caster.tell(res)
+                return
             }
             if(iota instanceof ContinuationIota){
                 let res =guideText(["有意思......这是什么？","",""])                
                 caster.tell(res)
+                return
             }
-        let pat=iota.pattern
-        let sign=pat.anglesSignature()
-        let guide=JsonIO.read('kubejs/config/guide.json')
-        let result = guide[sign]
-        let Text1 = Text.literal("这些知识我已经遗忘了……")
-        if(!result){
-            caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text1))
+            if(iota instanceof PatternIota){
+                let pat=iota.pattern
+                let sign=pat.anglesSignature()
+                //读数据
+                let greatGuide=JsonIO.read('kubejs/config/great_guide.json')
+                let guide=JsonIO.read('kubejs/config/guide.json')
+                let result = guide[sign]
+                let Text0 = Text.literal("这个图案……是")
+                //拿id
+                let Name
+                let key 
+                let commonOp = PatternLookUpUtil.lookUpIdCommon(pat)
+                if(commonOp.isPresent()){
+                    key=commonOp.map(value=>{return value}).get().getKey().location()
+                    Name = Text.translatable("hexcasting.action." + key).color("blue");
+                }
+                else{
+                    let greatOp = PatternLookUpUtil.lookUpIdPerWorld(pat)
+                    if(greatOp.isPresent()){
+                        key=greatOp.map(value=>{return value}).get().getKey().location()
+                        Name = Text.translatable("hexcasting.action." + key);
+                    }
+                }
+        
+        let Text1 = Text.literal("？还是祂的类似物？可惜关于祂的知识我已经遗忘了……")
+        
+        if(result){
+            //let res = Text.literal("这个是").append(Name).append(Text.literal("吗？"))
+            //caster.tell(res)
+            let results = guideText(result)
+            caster.tell(results)
             return
         }
-        let results= guideText(result)
-        caster.tell(results)
-    }
-    catch(e){
+        //卓越同形
+        else if(Name){
+            //检查是否是正确卓越
+            let level = caster.level
+            let perworldpats = ScrungledPatternsSave.open(level)
+            let entry = perworldpats.lookup(sign)
+            //检查是否启迪
+            let hesAdv = caster.isAdvancementDone("hexcasting:enlightenment")
+            if(!entry&&hesAdv==false){
+                caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text0).append(Name).append(Text1))
+                return
+            }
+            if(entry&&hesAdv==false){
+                caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text0).append(Name).append(Text.literal("？竟然是真的，不过你要运用这个法术还为时尚早。")))
+                return
+            }
+            if(entry&&hesAdv==true){
+                let greatResult = greatGuide[key]
+                if(greatResult){
+                    let res = guideText(greatResult)
+                    caster.tell(res)
+                }
+                else{
+                    greatGuide[key]=["","","pattern/great_spells/"+key]
+                    JsonIO.write('kubejs/config/great_guide.json',greatGuide)
+                }
+                return
+            }
+            }
+
+        caster.tell(Text.literal("普罗米修斯：").color('gold').append(Text.literal("我不认识这个图案")))
+        return
+        
+    }      
            let res =guideText(["我只能为你解释我知道的图案，试试使用考察来“转义”图案得到图案iota再来问我吧","相关章节","patterns/patterns_as_iotas 2"])
            caster.tell(res)
+}
+      try{
+            let args = new Args(stack,1)
+            let iota = args.get(0)
+            guide(iota,caster)
         }
+        catch(e){
+            let res =guideText(["我只能为你解释我知道的图案，试试使用考察来“转义”图案得到图案iota再来问我吧","相关章节","patterns/patterns_as_iotas 2"])
+            caster.tell(res)
+        }
+        
     
 },
 
-//厄庇墨透斯之卓见
-/*"guide_write":(stack,env)=>{
-    let args = new Args(stack,2)
-    let caster = env.caster
-        if(!caster.isPlayer()){
-            throw new MishapBadCaster()
-        }
-    let pat = args.pattern(0)
-    let text = args.string(1)
-    let sign=pat.anglesSignature()
-    let guide=JsonIO.read('kubejs/config/guide.json')
-    guide[sign]=[text,"相关章节","pattern/"]
-    JsonIO.write('kubejs/config/guide.json',guide)
-}*/
+//毛茸茸之策略
+"wool_write":(stack,env)=>{
+    let args =new Args(stack,2)
+    let target = args.get(0)
+    let iota = args.get(1)
+
+},
+
+//毛茸茸之馏化
+"wool_read":(stack,env)=>{
+
+},
+
+
+
+
+
+
 
 
 

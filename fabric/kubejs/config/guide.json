@@ -20,12 +20,12 @@
 		"patterns/basics 3"
 	],
 	"wqaawdd": [
-		"这是弓箭手之馏化，接受两个向量（位置和方向），返回所看到的方块位置，若未击中或目标在你施法范围外则返回Null",
+		"这是弓箭手之馏化，接受两个向量（位置和方向），返回所看到的方块位置，若未击中或目标在你施法范围外则返回Null，比如说依次使用 意识之精思、指南针之纯化、意识之精思、照准仪之纯化、弓箭手之馏化 就会返回你看到的第一个方块的坐标",
 		"相关章节",
 		"patterns/basics 4"
 	],
 	"weddwaa": [
-		"这是建筑师之馏化，与弓箭手之馏化类似，但返回所看到方块面的法向量",
+		"这是建筑师之馏化，与弓箭手之馏化类似，但是会返回所看到方块面的法向量",
 		"相关章节",
 		"patterns/basics 5"
 	],
@@ -55,22 +55,22 @@
 		"patterns/numbers 1"
 	],
 	"waaw": [
-		"这是加法之馏化，可对两个数、一个数和一个向量、或两个向量执行加法",
+		"这是加法之馏化，可对两个数、一个数和一个向量、或两个向量执行加法，向量之间的加法遵循平行四边形法则。",
 		"相关章节",
 		"patterns/math 1"
 	],
 	"wddw": [
-		"这是减法之馏化，可对两个数、一个数和一个向量、或两个向量执行减法",
+		"这是减法之馏化，可对两个数、一个数和一个向量、或两个向量执行减法，这是加法的逆运算。",
 		"相关章节",
 		"patterns/math 2"
 	],
 	"waqaw": [
-		"这是乘法之馏化，可对两个数、一个数和一个向量、或两个向量执行乘法（或点积）",
+		"这是乘法之馏化，可对两个数、一个数和一个向量、或两个向量执行乘法（或称点积）所谓点积，又叫数量积，是两个向量的模长与它们之间夹角的余弦值的乘积",
 		"相关章节",
 		"patterns/math 3"
 	],
 	"wdedw": [
-		"这是除法之馏化，可对两个数、一个数和一个向量、或两个向量执行除法（或叉积）",
+		"这是除法之馏化，可对两个数、一个数和一个向量、或两个向量执行除法（或称叉积）所谓叉积，又叫向量积，得到的是模长为两个向量的模长与它们两个之间夹角的正弦值的乘积，而且方向遵循右手原则同这两个向量所确定的平面相垂直的向量",
 		"相关章节",
 		"patterns/math 4"
 	],
@@ -80,7 +80,7 @@
 		"patterns/math 5"
 	],
 	"wedew": [
-		"这是乘方之馏化，可对两个数、一个数和一个向量、或两个向量执行乘方（或向量射影）",
+		"这是乘方之馏化，可对两个数、一个数和一个向量、或两个向量执行乘方（或称向量射影）",
 		"相关章节",
 		"patterns/math 6"
 	],
@@ -95,17 +95,17 @@
 		"patterns/math 8"
 	],
 	"eqqqqq": [
-		"这是向量之提整，将三个数组合为一个向量",
+		"这是向量之提整，它接受三个数。并从下到上依次把它们作为x，y和z坐标，如此将三个数组合为一个向量",
 		"相关章节",
 		"patterns/math 9"
 	],
 	"qeeeee": [
-		"这是向量之拆解，将一个向量拆分为三个数",
+		"这是向量之拆解，将一个向量拆分为它的三个坐标",
 		"相关章节",
 		"patterns/math 10"
 	],
 	"addwaad": [
-		"这是余数之馏化，计算两个数或两个向量的对应分量的余数",
+		"这是余数之馏化，计算两个数或两个向量的对应分量之间整除后所剩的余数",
 		"相关章节",
 		"patterns/math 11"
 	],
@@ -165,7 +165,7 @@
 		"patterns/stackmanip 9"
 	],
 	"qwaeawqaeaqa": [
-		"这是群体之精思，以数的形式压入栈中元素的个数",
+		"这是群体之精思，以数的形式压入现在栈中元素的个数",
 		"相关章节",
 		"patterns/stackmanip 10"
 	],
@@ -240,7 +240,7 @@
 		"patterns/consts 10"
 	],
 	"aw": [
-		"这是占卜师之纯化，将参数变换为布尔值",
+		"这是占卜师之纯化，将所给参数变换为布尔值",
 		"相关章节",
 		"patterns/logic 1"
 	],
@@ -250,22 +250,22 @@
 		"patterns/logic 2"
 	],
 	"waw": [
-		"这是析取之馏化，如果至少有一个参数是True则返回True",
+		"这是析取之馏化，如果至少有一个参数是True则返回True，这就是“或”运算了",
 		"相关章节",
 		"patterns/logic 3"
 	],
 	"wdw": [
-		"这是合取之馏化，如果两个参数都是True则返回True",
+		"这是合取之馏化，如果两个参数都是True则返回True，这就是“且”运算了",
 		"相关章节",
 		"patterns/logic 4"
 	],
 	"dwa": [
-		"这是互斥之馏化，如果参数中仅一个是True则返回True",
+		"这是互斥之馏化，如果参数中仅一个是True则返回True，这是“异或”，或者说仅有传入一真一假时，它才返回true",
 		"相关章节",
 		"patterns/logic 5"
 	],
 	"awdd": [
-		"这是占卜师之提整，根据布尔值选择保留第二个或第三个参数",
+		"这是占卜师之提整，根据布尔值选择保留第二个或第三个参数，咒法师一般用它进行逻辑判断，当栈中元素形如[True,A,B]时使用它，只会保留A，若换是false，保留B，如果A、B都是图案列表，再加上赫尔墨斯之策略，不就可以实现在不同的判断结果（True或False）下，使用不同的咒术了",
 		"相关章节",
 		"patterns/logic 6"
 	],
@@ -340,12 +340,12 @@
 		"patterns/readwrite_blocks 2"
 	],
 	"aqqqqqe": [
-		"这是审计员之精思，如果另一只手中物品可读则返回True",
+		"这是审计员之精思，如果另一只手中物品可以被读取则返回True",
 		"相关章节",
 		"patterns/readwrite 3"
 	],
 	"deeeeeq": [
-		"这是估价员之精思，如果另一只手中物品可写则返回True",
+		"这是估价员之精思，如果另一只手中物品可以被写入则返回True",
 		"相关章节",
 		"patterns/readwrite 4"
 	],
@@ -355,22 +355,22 @@
 		"patterns/readwrite 5"
 	],
 	"qeewdweddw": [
-		"这是雾尼之精思，将渡鸦之思中的iota复制出来",
+		"这是雾尼之精思，将渡鸦之思中的iota复制出来置入栈顶",
 		"相关章节",
 		"patterns/readwrite 6"
 	],
 	"qqaeaae": [
-		"这是空无之精思，压入一个空列表",
+		"这是空无之精思，它会压入一个空列表",
 		"相关章节",
 		"patterns/lists 1"
 	],
 	"adeeed": [
-		"这是单体之纯化，移除栈顶元素并返回一个仅包含该元素的列表",
+		"这是单体之纯化，它会移除栈顶元素并返回一个仅包含该元素的列表……咒法师总是独行呢",
 		"相关章节",
 		"patterns/lists 2"
 	],
 	"deeed": [
-		"这是选择之馏化，返回列表中指定下标的元素",
+		"这是选择之馏化，接受一个列表，返回列表中指定下标的元素——如果说预先准备一个由图案列表所组成的列表，再加上赫尔墨斯之策略，就可以根据传入的数字，在不同的情况下施展不同的咒术了。",
 		"相关章节",
 		"patterns/lists 3"
 	],
@@ -385,7 +385,7 @@
 		"patterns/lists 5"
 	],
 	"qaeaq": [
-		"这是派生之分解，移除所给列表末尾的元素",
+		"这是派生之分解，移除所给列表末尾的元素，并将其入栈",
 		"相关章节",
 		"patterns/lists 6"
 	],
@@ -405,7 +405,7 @@
 		"patterns/lists 9"
 	],
 	"wqaeaqw": [
-		"这是外科医师之提整，替换列表中指定下标的元素",
+		"这是外科医师之提整，它行替换列表中指定下标的元素",
 		"相关章节",
 		"patterns/lists 10"
 	],
@@ -425,12 +425,12 @@
 		"patterns/lists 13"
 	],
 	"aaqwqaa": [
-		"这是演讲者之分解，移除所给列表中的第一个元素",
+		"这是演讲者之分解，移除所给列表中的第一个元素并将其入栈",
 		"相关章节",
 		"patterns/lists 14"
 	],
 	"deaqq": [
-		"这是赫尔墨斯之策略，运行栈顶的图案列表",
+		"这是赫尔墨斯之策略，他会运行栈顶的图案列表，这个图案让伟大自然的咒法系统成为了“图灵完备”的系统，这小子被当作魔法之神，倒也不是全无道理",
 		"相关章节",
 		"patterns/meta 1"
 	],
@@ -440,12 +440,12 @@
 		"patterns/meta 2"
 	],
 	"dadad": [
-		"这是托特之策略，对列表中的每个元素运行图案列表",
+		"这是托特之策略，会对所给列表中的每个元素运行所给图案列表，准确些说，他会对列表中的每一个元素创建一个新栈，这个新栈中会包含原栈中的所有元素和那一元素，之后在每一个新栈中各自执行所给图案列表，再将这所有栈中的所有元素压入一个列表中输出",
 		"相关章节",
 		"patterns/meta 3"
 	],
 	"aqdee": [
-		"这是卡戎之策略，强制停止当前咒术的施放",
+		"这是卡戎之策略，会强制停止当前咒术的施放",
 		"相关章节",
 		"patterns/meta 4"
 	],
@@ -455,17 +455,17 @@
 		"patterns/meta 5"
 	],
 	"aaaaaa": [
-		"这是放置方块，在指定位置放置一个方块",
+		"这是放置方块，在指定位置放置一个方块，一般来说，会优先从你的物品栏中选取在你法杖右侧的最近可放置物品",
 		"相关章节",
 		"patterns/spells/basic 1"
 	],
 	"qaqqqqq": [
-		"这是破坏方块，破坏指定位置的方块",
+		"这是破坏方块，会破坏指定位置的方块",
 		"相关章节",
 		"patterns/spells/basic 2"
 	],
 	"aqawqadaq": [
-		"这是制造水源，在指定位置生成一格水",
+		"这是制造水源，在指定位置创造一格水",
 		"相关章节",
 		"patterns/spells/basic 3"
 	],
@@ -485,17 +485,17 @@
 		"patterns/spells/basic 6"
 	],
 	"wqaqwawqaqw": [
-		"这是催生，促进植物生长",
+		"这是催生，促进植物生长，注意不要对植株脚下的方块释放",
 		"相关章节",
 		"patterns/spells/basic 7"
 	],
 	"wqaqwd": [
-		"这是启迪树苗，将树苗变为启迪树",
+		"这是启迪树苗，将所给位置上树苗变为启迪树，显然那个位置必须得是树苗才行",
 		"相关章节",
 		"patterns/spells/basic 8"
 	],
 	"aaqawawa": [
-		"这是点燃，在指定位置生火或点燃实体，我觉得这个法术和我有很大关系",
+		"这是点燃，在指定位置生火或点燃实体，使用这个法术时记得念着点我的好",
 		"相关章节",
 		"patterns/spells/basic 9"
 	],
@@ -520,7 +520,7 @@
 		"patterns/spells/basic 13"
 	],
 	"aawaawaa": [
-		"这是爆炸，在指定位置产生爆炸",
+		"这是爆炸，在指定位置产生指定强度爆炸",
 		"相关章节",
 		"patterns/spells/basic 14"
 	],
@@ -530,7 +530,7 @@
 		"patterns/spells/basic 15"
 	],
 	"waeawae": [
-		"这是召唤哨卫，在指定位置召唤哨卫",
+		"这是召唤哨卫，会在指定位置召唤哨卫，普通哨卫只不过是在地图上标定一个点而已，但有时也许可以方便你的施法？",
 		"相关章节",
 		"patterns/spells/sentinels 1"
 	],
@@ -555,7 +555,7 @@
 		"patterns/spells/colorize 1"
 	],
 	"dwaawedwewdwe": [
-		"这是施法者之魅力，改变副手施法物品的外表",
+		"这是施法者之魅力，会改变副手施法物品的外表",
 		"相关章节",
 		"patterns/spells/cyclevariant 1"
 	],
@@ -590,7 +590,7 @@
     "patterns/hexdim:dim/downgrade/pos 1"
   ],
   "awedqdewa": [
-    "获取所绑定的枢纽剩余的空间。",
+    "获取你所绑定的物元枢纽剩余的空间。",
     "相关章节",
     "patterns/hexal:mote/storage/remaining_capacity/get 1"
   ],
@@ -604,23 +604,13 @@
     "相关章节",
     "patterns/hexical:gasp 1"
   ],
-  "waeawaeqqqwqwqqwq": [
-    "召唤一个比普通哨卫要强大的哨卫。消耗大约 2 个紫水晶粉。",
-    "相关章节",
-    "patterns/hexcasting:sentinel/create/great 1"
-  ],
-  "qqqwwqqqwqqawdedw": [
-    "移除栈顶锚定门径，或未锚定门径与位置向量。将所有被所给门径标记的实体传送至其锚定位置或所给位置。消耗 1/2 个紫水晶碎片。若为未锚定门径，则每个实体每传送 1 格额外消耗 1 个紫水晶粉。",
-    "相关章节",
-    "patterns/hexal:gate/close 1"
-  ],
   "eewwqwqwqwqwqwweewaqaaww": [
     "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有非 BIT 的列表。",
     "相关章节",
     "patterns/complexhex:zone_entity/not_bit 1"
   ],
   "dwawdaqqwwqq": [
-    "获取位面出生点的位置向量。",
+    "获取你咒法位面出生点的位置向量。",
     "相关章节",
     "patterns/hexxyplanes:plane_pos 1"
   ],
@@ -629,18 +619,8 @@
     "相关章节",
     "patterns/hexpose:get_max_air 1"
   ],
-  "aaeaad": [
-    "剔除栈顶往下第 n 个元素，具体由图案的尾部长度决定。上方的示例分别会剔除第 2 个、第 3 个、第 4 个 iota。",
-    "相关章节",
-    "patterns/overevaluate:geb 1"
-  ],
-  "qqaw": [
-    "将我所持的法术书向右翻一页。",
-    "相关章节",
-    "patterns/hextweaks:page/right 1"
-  ],
   "adaqqqdd": [
-    "接受一个物品标识，检验它是否可被我食用。",
+    "接受一个物品标识，检验它是否可被你食用。",
     "相关章节",
     "patterns/hexpose:edible 1"
   ],
@@ -660,7 +640,7 @@
     "patterns/oneironaut:writerodramremote 1"
   ],
   "eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww": [
-    "还可用此图案自动终止磁带。接受一个 iota，若存在标签为所给 iota 的磁带，则令其出队列。",
+    "可用此图案自动终止磁带。接受一个 iota，若存在标签为所给 iota 的磁带，则令其出队列。",
     "相关章节",
     "patterns/hexcassettes:dequeue 1"
   ],
@@ -704,11 +684,6 @@
     "相关章节",
     "patterns/hexical:take_on_pigment 1"
   ],
-  "eawwaeawawaa": [
-    "此法术会将一束媒质在我身旁塑成翅膀状，并赋予其足够物质性，从而允许施法者滑翔。",
-    "相关章节",
-    "patterns/hexcasting:flight 1"
-  ],
   "wdeaqq": [
     "压入珠算计数器的当前值，而后令其增加 1。计数器自 0 起始。",
     "相关章节",
@@ -750,7 +725,7 @@
     "patterns/hexdebug:splicing/clipboard/readable 1"
   ],
   "wqwqwqwqwqwaeqqe": [
-    "返回象征着我所处维度的空间印记。消耗极少量媒质。",
+    "返回象征着你所处维度的空间印记。消耗极少量媒质。",
     "相关章节",
     "patterns/oneironaut:getdim1 1"
   ],
@@ -785,7 +760,7 @@
     "patterns/hexal:wisp/move/target/set 1"
   ],
   "eqqadaq": [
-    "使我听到一段咔哒声，其他事物无法听见。",
+    "使你听到一段咔哒声，其他事物无法听见。",
     "相关章节",
     "patterns/hexical:click 1"
   ],
@@ -895,7 +870,7 @@
     "patterns/hexcasting:place_block 1"
   ],
   "wwdeeeeeqdwewewewewewwwdwqwdwqwdwqwdwqwdwqwdw": [
-    "滚 出 去",
+    "将实体从咒法维度中驱逐",
     "相关章节",
     "patterns/hexdim:dim/kick 1"
   ],
@@ -919,11 +894,6 @@
     "相关章节",
     "patterns/hexpose:get_effect_duration 1"
   ],
-  "qaqqqqdweee": [
-    "接受一个向量，进行归一化，并令我的意识向该方向冲刺。如果传入零向量则让速度归零。无需消耗媒质。如果我当前不能冲刺，则无效果。需要雌激素。",
-    "相关章节",
-    "patterns/hextrogen:dash 1"
-  ],
   "qded": [
     "将物元中所有物品返还到所给位置处。若传入数，则最多返还该数个物品。消耗 1/10 个紫水晶粉。",
     "相关章节",
@@ -935,7 +905,7 @@
     "patterns/hexal:current_tick 1"
   ],
   "qdqdqdqdqdq": [
-    "返回一个封泡 iota。在运行（赫尔墨斯之策略等）中弹出此类 iota 时，其会将内部的 iota 压入栈顶。",
+    "接受一个iota，返回一个封泡 iota。在运行（赫尔墨斯之策略等）中弹出此类 iota 时，其会将内部的 iota 压入栈顶。",
     "相关章节",
     "patterns/complexhex:bubble 1"
   ],
@@ -943,11 +913,6 @@
     "接受一个文本 iota 和一个颜色；颜色由各分量为 0 到 1 的向量定义。返回设置为该颜色的文本。",
     "相关章节",
     "patterns/hexpose:text_color 1"
-  ],
-  "eeewwweeewwaqqddqdqd": [
-    "召雨的反面。此法术会将我所处世界的雨水驱离。消耗大约 1 个紫水晶碎片。若未在下雨就无效。",
-    "相关章节",
-    "patterns/hexcasting:dispel_rain 1"
   ],
   "qqwwqqqadwewdeq": [
     "用紫金石包裹双足，以此阻断距离在 10 格以下的摔落，每级阻断上限增加 10 格。不会降低伤害。共 2 级。每级 5 个充能紫水晶和 32 个紫金石。",
@@ -960,7 +925,7 @@
     "patterns/ephemera:getrider 1"
   ],
   "eweeewedqdeddw": [
-    "接受指向阿卡夏记录的位置向量，与一个作为键的图案，并返回永恒之书中对应键处的 iota，若能存储则同时会将其存至给定的阿卡夏记录中。",
+    "它接受指向阿卡夏记录的位置向量，与一个作为键的图案，并返回永恒之书中对应键处的 iota，若能存储则同时会将其存至给定的阿卡夏记录中。",
     "相关章节",
     "patterns/hexal:everbook/read 1"
   ],
@@ -989,11 +954,6 @@
     "相关章节",
     "patterns/scryglass:scale_icon 1"
   ],
-  "qqawwawqwqwaewaw": [
-    "接受一个传送门和一个位置向量，将其入口移动至所给位置。消耗略低于创建传送门，窥视门的消耗更少。",
-    "相关章节",
-    "patterns/hexways:moveportalinput 1"
-  ],
   "wwaqqqqqeqdedwwqwqwwdedwwqwqw": [
     "刻入一份咒术，此后按住唤咒键 1 秒即可唤咒施放。消耗大约 1 个充能紫水晶。",
     "相关章节",
@@ -1010,7 +970,7 @@
     "patterns/hexcasting:zone_entity/not_living 1"
   ],
   "wwqaqwwdw": [
-    "召唤一个会缓慢飞向所给实体的弹射物，击中则造成一颗心的伤害。消耗 1 个紫水晶粉。会将纸飞机压栈。",
+    "召唤一个会缓慢飞向所给实体的弹射物，击中则造成一颗心的伤害。消耗 1 个紫水晶粉。会将纸飞机实体iota压栈。",
     "相关章节",
     "patterns/yaha:paper_plane 1"
   ],
@@ -1019,13 +979,8 @@
     "相关章节",
     "patterns/oneironaut:getdim/overworld 1"
   ],
-  "waqqedwewewdawdwwwdw": [
-    "这个好用的图案会返回传送门的出口位置向量（对于双向传送门来说，是出口传送门的位置）。配合传送门影响范围有大用处。无需消耗媒质。",
-    "相关章节",
-    "patterns/hexways:getoutputinfo 1"
-  ],
   "qqaqqqd": [
-    "获取我的个人媒质条最多可容纳多少媒质（以 0.0001 粉为单位）。",
+    "获取你的个人媒质条最多可容纳多少媒质（以 0.0001 粉为单位）。",
     "相关章节",
     "patterns/hexoverpowered:get_personal_media_max 1"
   ],
@@ -1045,12 +1000,12 @@
     "patterns/hexgender:get_bounciness 1"
   ],
   "aqeeqaaeweeewe": [
-    "接受栈顶字符串和实体，并将该实体的名称设定为该字符串。若为物品实体，则会同时更改物品的名称。消耗 1/100 个紫水晶粉。",
+    "它接受栈顶字符串和实体，并将该实体的名称设定为该字符串。若为物品实体，则会同时更改物品的名称。消耗 1/100 个紫水晶粉。",
     "相关章节",
     "patterns/moreiotas:string/name/set 1"
   ],
   "qaqqae": [
-    "由物品标识和组内物品数制造物品。",
+    "由物品标识和组内物品数制造物品iota。",
     "相关章节",
     "patterns/hexpose:create_stack 1"
   ],
@@ -1070,14 +1025,9 @@
     "patterns/hexcasting:writable/entity 2"
   ],
   "adadee": [
-    "只应在托特之策略内部使用。详情见下一页。小心“钻研过深”事故。",
+    "它只应在托特之策略内部使用。小心“钻研过深”事故。",
     "相关章节",
     "patterns/overevaluate:castor 1"
-  ],
-  "waawaawaqwaeaeaeaeaea": [
-    "接受一个图案，并以此生成一个无法手动绘制的、因人而异的图案。 似乎会给予某些法术更多能量。",
-    "相关章节",
-    "patterns/hextweaks:infusion 1"
   ],
   "edqdewawddw": [
     "接收重排范围和自底向上的序号列表，对剩余栈执行相应重排动作。例如，3和[1,2,0]对应轮换之策略，2和[0,1,0,1]对应狄俄斯库里之策略",
@@ -1095,7 +1045,7 @@
     "patterns/moreiotas:string/block/set 1"
   ],
   "eewdweqaqewdwee": [
-    "让我只能看见最为重要的事物……",
+    "让你只能看见最为重要的事物……",
     "相关章节",
     "patterns/hexical:shader_media 1"
   ],
@@ -1105,7 +1055,7 @@
     "patterns/caduceus:eval/control_at 1"
   ],
   "awawaawq": [
-    "受范围限制的飞行法术。",
+    "这是受范围限制的飞行法术。",
     "相关章节",
     "patterns/hexcasting:flight/range 1"
   ],
@@ -1118,11 +1068,6 @@
     "Gives the bust size of the target",
     "相关章节",
     "patterns/hexgender:get_bust_size 1"
-  ],
-  "waadwawdaaweewq": [
-    "我能命令苍穹！此法术会在我所想之处召唤一道落雷。消耗大约 3 个紫水晶碎片。",
-    "相关章节",
-    "patterns/hexcasting:lightning 1"
   ],
   "waawaw": [
     "压入一个仅含单个换行符的字符串。其在连接其他字符串方面十分有用。",
@@ -1195,14 +1140,9 @@
     "patterns/lapisworks:read_spechand 1"
   ],
   "qaqda": [
-    "压入我按下向右移动键的时间，以 1/20 秒计，如果未按下则返回 -1。很容易和左躲之精思区分，因为右避之精思名字里有个“右”。",
+    "压入你按下向右移动键的时间，以 1/20 秒计，如果未按下则返回 -1。它很容易和左躲之精思区分，因为右避之精思名字里有个“右”。",
     "相关章节",
     "patterns/hexical:moving_right 1"
-  ],
-  "weaqaweewwawqwaw": [
-    "接受一个传送门、一个高度数、一个宽度数，以此更改传送门的大小。神奇的是，此图案同时会把传送门的外形变回六边形。无需消耗媒质。",
-    "相关章节",
-    "patterns/hexways:resizeportal 1"
   ],
   "waqqqqqedeqdqdqdqdqe": [
     "向咒符物品内部的存储空间写入 iota。可能会招致“违犯他人”事故。",
@@ -1299,18 +1239,13 @@
     "相关章节",
     "patterns/hexmapping:create_marker/polyline 1"
   ],
-  "wawdwawawdwawawdwewdwqwdwqwdwqwdwqwdwqwdw": [
-    "为我制造一个新维室。",
-    "相关章节",
-    "patterns/hexdim:dim/create 1"
-  ],
   "qqaqqea": [
-    "获取我的个人媒质条中有多少媒质（以 0.0001 粉为单位）。",
+    "获取你的个人媒质条中有多少媒质（以 0.0001 粉为单位）。",
     "相关章节",
     "patterns/hexoverpowered:get_personal_media 1"
   ],
   "aqdea": [
-    "只应在托特之策略或西西弗斯之策略内部使用。效果与卡戎之策略类似，但不会完全停止迭代，而只是会跳过当前迭代剩余的部分。",
+    "它只应在托特之策略或西西弗斯之策略内部使用。效果与卡戎之策略类似，但不会完全停止迭代，而只是会跳过当前迭代剩余的部分。",
     "相关章节",
     "patterns/overevaluate:atalanta 1"
   ],
@@ -1318,11 +1253,6 @@
     "从栈顶获取位置及最大距离，返回该位置给定距离范围内所有玩家的列表。",
     "相关章节",
     "patterns/hexcasting:zone_entity/player 1"
-  ],
-  "wwwdwdwwwawqqeqwqqwqeqwqq": [
-    "在法术运行的那一刻，加速所给位置处方块的运作。",
-    "相关章节",
-    "patterns/hexal:tick 1"
   ],
   "qaqqqqqwqqqdeeweweeaeewewee": [
     "在所给位置构筑一个网斑，并压入一个网斑实体。消耗大约 1 个紫水晶粉。",
@@ -1385,7 +1315,7 @@
     "patterns/hexgender:get_gender 1"
   ],
   "qqawqaqw": [
-    "接受任意 iota，转换成哈希值。",
+    "接受任意 iota，转换成其哈希值。",
     "相关章节",
     "patterns/ephemera:hash 1"
   ],
@@ -1440,7 +1370,7 @@
     "patterns/hexical:lamp_finale 1"
   ],
   "qqaa": [
-    "那名巫师将紫金石灌注到了构筑方块里，随后他发现他可以借此为方块染色。消耗 2 个紫水晶粉，同时需指定染料对应的数。更多解释见后页。",
+    "曾有名巫师将紫金石灌注到了构筑方块里，随后他发现他可以借此为方块染色。消耗 2 个紫水晶粉，同时需指定染料对应的数。",
     "相关章节",
     "patterns/lapisworks:conjure_color 1"
   ],
@@ -1535,12 +1465,12 @@
     "patterns/overevaluate:sekhmet 1"
   ],
   "qqqaqqq": [
-    "检验实体是否“被魔法手段去除了意识”。我总觉得它和剥离意识之间有种紧密的联系……",
+    "检验实体是否“被魔法手段去除了意识”。你觉得它和剥离意识之间有什么联系？",
     "相关章节",
     "patterns/hexpose:is_brainswept 1"
   ],
   "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq": [
-    "消耗大约 10 个充能紫水晶。",
+    "创造一个造物，接受做为能源的物品实体和要刻录的法术列表，法术本身消耗大约 10 个充能紫水晶。",
     "相关章节",
     "patterns/hexcasting:craft/artifact 1"
   ],
@@ -1569,11 +1499,6 @@
     "相关章节",
     "patterns/hexical:sample_pigment 1"
   ],
-  "edade": [
-    "获取一个空 JSON 对象。",
-    "相关章节",
-    "patterns/hexweb:create_json 1"
-  ],
   "dwaqqw": [
     "为可染色的方块或实体染色。消耗大约 1/8 个紫水晶粉。",
     "相关章节",
@@ -1585,7 +1510,7 @@
     "patterns/hexcasting:potion/poison 1"
   ],
   "wwdeeeeeqeaqawwewewwaqawwewew": [
-    "返回刻入我意识的咒术。",
+    "返回刻入你意识的咒术。",
     "相关章节",
     "patterns/hexical:get_evocation 1"
   ],
@@ -1598,11 +1523,6 @@
     "与侦查员之馏化类似，但能够接受一个实体类型 iota 列表。类型不在该列表内的实体会被忽略。消耗的媒质量略多于上文所提图案的“极少量”。",
     "相关章节",
     "patterns/ephemera:filteredentityraycast 1"
-  ],
-  "wwweeewwweewdawdwad": [
-    "我能控制云彩！此法术会在我所处世界各处召来雨水。消耗大约 1 个充能紫水晶。若已在下雨就无效。",
-    "相关章节",
-    "patterns/hexcasting:summon_rain 1"
   ],
   "qaqqqqqeawa": [
     "接收一个方块和一个侧征，返回该侧征的值。",
@@ -1645,12 +1565,12 @@
     "patterns/caduceus:eval/prompt 1"
   ],
   "aaqqadaa": [
-    "此法术能让我吃下魔袋中的物品，填饱我的肚子，或是给予我药水效果。消耗大约 1 个紫水晶粉，若物品无法食用则招致事故。",
+    "此法术能让你吃下魔袋中的物品，填饱我的肚子，或是给予我药水效果。消耗大约 1 个紫水晶粉，若物品无法食用则招致事故。",
     "相关章节",
     "patterns/hexical:mage_mouth 1"
   ],
   "qaqqaeawaeaeqqqeqqwwqqeqqq": [
-    "我死亡时，各个内嵌意识会失稳并停止运作。此法术可让它们回到工作状态。每恢复 1 个意识消耗 1 个紫水晶粉。",
+    "你死亡时，各个内嵌意识会失稳并停止运作。此法术可让它们回到工作状态。每恢复 1 个意识消耗 1 个紫水晶粉……也许我也需要恢复？",
     "相关章节",
     "patterns/hierophantics:reenable_minds 1"
   ],
@@ -1720,7 +1640,7 @@
     "patterns/hexcasting:potion/weakness 1"
   ],
   "awaqeeeeeda": [
-    "接受一个文本，设置其是否显示为随机文本。",
+    "它接受一个文本，设置其是否显示为随机文本。",
     "相关章节",
     "patterns/hexpose:text_obfuscated 1"
   ],
@@ -1735,7 +1655,7 @@
     "patterns/hexical:jailbreak 1"
   ],
   "wwqwqwadwawdawqwaeqqaqqe": [
-    "掌控一整组紫金石和十块充能紫水晶的力量，让人变得犹如诞生自下界！",
+    "掌控一整组紫金石和十块充能紫水晶的力量，让人变得犹如诞生自下界",
     "相关章节",
     "patterns/lapisworks:fireresist 1"
   ],
@@ -1744,11 +1664,7 @@
     "相关章节",
     "patterns/hex_ars_link:get_callback 1"
   ],
-  "waawaawawdeddwaaqawdwddwddw": [
-    "将敌人的生命值视为整数，使用输入整数进行因数分解，质因数拥有更高效率。 用法1：living -> int 读取实体生命值等效的待分解正整数；...",
-    "相关章节",
-    "patterns/hexoverpowered:factor_cut 1"
-  ],
+  
   "eaddaddaeaeaddaddaeaeaddaddae": [
     "充能当前施法环境至等量于114514紫水晶粉的媒质。",
     "相关章节",
@@ -1758,11 +1674,6 @@
     "返回我目前的空闲磁带槽总数。",
     "相关章节",
     "patterns/hexcassettes:free 1"
-  ],
-  "aqaeqwaawewaawdwawwawwqwwawwwded": [
-    "使用给定玩家的真名施放法术。 所使用的每个魔符将花费1 充能水晶媒质。",
-    "相关章节",
-    "patterns/hex_ars_link:cast_spell_as 1"
   ],
   "edeeee": [
     "返回实体副手的物品。",
@@ -1775,7 +1686,7 @@
     "patterns/lapisworks:read_necklace 1"
   ],
   "aeaeaeaeaeaaedwaq": [
-    "即将前往：巴西，我的领域，欢 乐 的 地 方",
+    "它用于前往维室",
     "相关章节",
     "patterns/hexdim:dim/kidnap 1"
   ],
@@ -1875,7 +1786,7 @@
     "patterns/slate_work:media_reflection 1"
   ],
   "eqeweweweweqedwqeeeee": [
-    "若所给标签无对应活动中磁带，返回 Null；若有，返回磁带的咒术。我听传言称，这个图案能用来存储 iota，也可用来在咒术间传递信息。",
+    "接受一个磁带标签，若所给标签无对应活动中磁带，返回 Null；若有，返回磁带的咒术。我听传言称，这个图案能用来存储 iota，也可用来在咒术间传递信息。",
     "相关章节",
     "patterns/hexcassettes:inspect 1"
   ],
@@ -1900,7 +1811,7 @@
     "patterns/hexdebug:splicing/clipboard/spellbook_index/read 1"
   ],
   "edwdwad": [
-    "将栈顶 iota 发送至以太，以便我当前的形象接收。可能会因多种理由而失败。固定消耗 1 点“发送能量”。",
+    "将栈顶 iota 发送至以太，以便你当前的形象接收。可能会因多种理由而失败。固定消耗 1 点“发送能量”。",
     "相关章节",
     "patterns/mediatransport:send_fsb 1"
   ],
@@ -1955,7 +1866,7 @@
     "patterns/oneironaut:readideatime 1"
   ],
   "qaqdedaedqqdedaqaedeqd": [
-    "将我的视野分裂为多个小块，和蜘蛛的视野大概差不多。不太清楚为什么这么做能让我看得更清晰……",
+    "将你的视野分裂为多个小块，和蜘蛛的视野大概差不多。不太清楚为什么有人说这么做能让他看得更清晰……",
     "相关章节",
     "patterns/hexical:shader_spider 1"
   ],
@@ -1995,7 +1906,7 @@
     "patterns/hexcasting:circle/impetus_pos 1"
   ],
   "awqaqqq": [
-    "检验所给玩家是否和我一样经过启迪。",
+    "检验所给玩家是否和你一样经过启迪。",
     "相关章节",
     "patterns/hexpose:am_enlightened 1"
   ],
@@ -2045,7 +1956,7 @@
     "patterns/complexhex:conjugate 1"
   ],
   "aeaae": [
-    "驱除已有的全部初等哨卫，再在列表中各位置处部署一个初等哨卫。",
+    "接受一个向量列表，驱除已有的全部初等哨卫，再在列表中各位置处部署一个初等哨卫。",
     "相关章节",
     "patterns/hexical:set_lesser_sentinels 1"
   ],
@@ -2068,11 +1979,6 @@
     "构筑一个不会造成伤害的雪球。消耗大约 1/2 个紫水晶粉。",
     "相关章节",
     "patterns/hexical:snowball 1"
-  ],
-  "wdeeqawqwqwaedaqwqad": [
-    "要是传送门的影响太过惹眼，此法术即可解决问题，直接消去一个传送门对。无需消耗媒质。",
-    "相关章节",
-    "patterns/hexways:removeportal 1"
   ],
   "qqqwqqqqqaqeeaqwqae": [
     "此图案会为目标位置处的法术刻印器绑定一个图案和一个 iota。",
@@ -2315,11 +2221,11 @@
     "patterns/hexpose:pet_owner 1"
   ],
   "aqqqdae": [
-    "接受一个图案和一个数，返回同外形不同笔顺的图案。我找到的一些笔记中称古代的咒术师会把这些图案用在某种庞大的图书馆中。",
+    "接受一个图案和一个数，返回同外形不同笔顺的图案。如果你有闲心，也可以试试用它破解卓越法术的奥秘",
     "相关章节",
     "patterns/hexical:shuffle_pattern 1"
   ],
-  "deew": [
+  "deew":[
     "返回复数实部。",
     "相关章节",
     "patterns/complexhex:real 1"
@@ -3975,7 +3881,7 @@
     "patterns/hexal:toughness 1"
   ],
   "qqqaww": [
-    "与考察相同，不过拥有最低的执行优先级，在嵌套的内省-反思内部不会以 2^n 形式指数增长",
+    "作用与考察相同，不过拥有最低的执行优先级，在嵌套的内省-反思内部不会以 2^n 形式指数增长",
     "相关章节",
     "patterns/hexflow:weak_escape 1"
   ],
@@ -5250,7 +5156,7 @@
     "patterns/spells/idea 2"
   ],
   "wqwqawdeaqqdeewew": [
-    "根据所给理型在目标位置生成一个生物实体，并返回实体 Iota。实体的各项属性依照理型设定。消耗（最大生命值 * 10 + 移动速度 * 1000 + 攻击力 * 100 + 护甲 * 50）数量的紫水晶粉，至少会消耗一个充能紫水晶",
+    "根据所给理型在目标位置生成一个生物实体，并返回实体 Iota。实体的各项属性依照理型设定。消耗（最大生命值 * 10 + 移动速度 * 1000 + 攻击力 * 100 + 护甲 * 50）数量的紫水晶粉，至少会消耗一个充能紫水晶……呵呵，你想要染指造物者的权柄么？",
     "相关章节",
     "patterns/spells/idea 3"
   ],

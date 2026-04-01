@@ -2,76 +2,19 @@
 //手动序列化
 function serializeIota(iota) {
     let tag = new CompoundTag();
-    if (iota instanceof DoubleIota) {
-        tag.putString('type', 'double');
-        tag.putDouble('value', iota.double);
-    } else if (iota instanceof BooleanIota) {
-        tag.putString('type', 'boolean');
-        tag.putBoolean('value', iota.bool);
-    } else if (iota instanceof Vec3Iota) {
-        tag.putString('type', 'vec3');
-        let vec = iota.vec3;
-        tag.putDouble('x', vec.x());
-        tag.putDouble('y', vec.y());
-        tag.putDouble('z', vec.z());
-    } else if (iota instanceof EntityIota) {
-        tag.putString('type', 'entity');
-        tag.putUUID('uuid', iota.entity.uuid);
-    } else if (iota instanceof PatternIota) {
-        tag.putString('type', 'pattern');
-        let pattern = iota.pattern;
-        tag.putString('angles', pattern.anglesSignature());
-    } else if (iota instanceof ListIota) {
-        tag.putString('type', 'list');
-        let listTag = new ListTag();
-        iota.list.list.forEach(subIota => {
-            listTag.add(serializeIota(subIota));
-        });
-        tag.put('value', listTag);
-    } else if (iota instanceof NullIota) {
-        tag.putString('type', 'null');
-    } else {
-        // 未知类型（如 GarbageIota）存为占位符
-        tag.putString('type', 'unknown');
-    }
+    let server = Utils.getServer()
+    let level = server.getLevel('minecraft:overworld')
+    let helper = new KubeJSIotaNBTHelper(iota,tag,level)
+    tag = helper.getSerialize()
     return tag;
 }
 
 // 从 CompoundTag 反序列化 Iota
 function deserializeIota(tag, level) {
-    let type = tag.getString('type');
-    switch (type) {
-        case 'double':
-            return new DoubleIota(tag.getDouble('value'));
-        case 'boolean':
-            return new BooleanIota(tag.getBoolean('value'));
-        case 'vec3':
-            return new Vec3Iota(new Vec3(
-                tag.getDouble('x'),
-                tag.getDouble('y'),
-                tag.getDouble('z')
-            ));
-        case 'entity': {
-            let uuid = tag.getUUID('uuid');
-            let entity = level.getEntity(uuid);
-            return entity ? new EntityIota(entity) : NullIota();
-        }
-        case 'pattern': {
-            let angles = tag.getString('angles');
-            let dir = HexDir.EAST;
-            return new PatternIota(HexPattern.fromAngles(angles, dir));
-        }
-        case 'list': {
-            let listTag = tag.getList('value', 10); // 10 表示 CompoundTag
-            let list = [];
-            listTag.forEach(subTag => list.push(deserializeIota(subTag, level)));
-            return new ListIota(list);
-        }
-        case 'null':
-            return new NullIota();
-        default:
-            return new GarbageIota();
-    }
+    let iota = new NullIota
+    let helper = new KubeJSIotaNBTHelper(iota,tag,level)
+    iota = helper.getDeserialize()
+    return iota
 }
 
 //从外部nbt中获取iota列表
@@ -323,11 +266,7 @@ global.spells = {
     hurts:typeHurt
 }
 
-// 全局存储：锚定实体 UUID 字符串集合
-global.anchorEntities = global.anchorEntities || new Set()
 
-// 锚定实体当前加载的区块信息 {uuid, cx, cz}
-global.anchorCurrentChunk = global.anchorCurrentChunk || new Map()
 
 // 辅助：安全强制加载/卸载区块
 function forceChunk(level, cx, cz, load) {
