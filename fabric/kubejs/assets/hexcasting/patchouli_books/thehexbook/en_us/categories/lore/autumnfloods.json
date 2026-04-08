@@ -1,0 +1,8 @@
+{
+  "name": "巴别塔",
+  "icon": "minecraft:end_crystal",
+  "description": "很奇怪，这些知识似乎不来自于任何古籍，而来自于另一个自成系统的世界。此世与彼世在底层逻辑上相似，但是上层的建筑却又截然不同。其中古怪奥妙难以概说，在此我仅仅描摹那些令人印象深刻的图案，他们，目眩神迷……",
+  "parent": "hexcasting:lore",
+  "sortnum": 0,
+  "secret": true
+}

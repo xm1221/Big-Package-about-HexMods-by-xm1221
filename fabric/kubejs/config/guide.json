@@ -5189,6 +5189,71 @@
 	"这是普罗米修斯，也就是我",
 	"相关章节",
 	""
+  ],
+  "qaqdqaqdqaq": [
+    "返回一个列表，包含当前绑定的枢纽中的所有物元。",
+    "相关章节",
+    "patterns/spells/af 1"
+  ],
+  "wwaqqwdedwqq": [
+    "返回一个列表，包含当前绑定的枢纽中所有物元的类型字符串。",
+    "相关章节",
+    "patterns/spells/af 2"
+  ],
+  "wwdeewaqawee": [
+    "返回一个列表，包含当前绑定的枢纽中所有对应于指定类型的物元。",
+    "相关章节",
+    "patterns/spells/af 3"
+  ],
+  "qdedwqqqqq": [
+    "从指定物元中提取指定数量的物品，给予施法者。",
+    "相关章节",
+    "patterns/spells/af 4"
+  ],
+  "eaqaweeeee": [
+    "将指定槽位的物品转换为物元，并存入绑定的枢纽中。",
+    "相关章节",
+    "patterns/spells/af 5"
+  ],
+  "edeedqdweee": [
+    "接受一个物品名称，返回该物品所有合成配方字符串组成的列表。",
+    "相关章节",
+    "patterns/spells/af 6"
+  ],
+  "wwedewqqqqqwed": [
+    "令指定村民补货，消耗 100 点媒质。",
+    "相关章节",
+    "patterns/spells/af 7"
+  ],
+  "wwqaqweeeeewqa": [
+    "将前一村民的两个指定交易移至后者，并增加后者的经验和熟练度，消耗 100,000 点媒质。",
+    "相关章节",
+    "patterns/spells/af 8"
+  ],
+  "qaqqaeawqqq": [
+    "接受一个字符串和一个数字，从绑定的枢纽中自动获取需要的材料，依照字符串进行合成。若材料足够，则返回模拟合成所得的物元；若材料不足以合成，则返回缺失的原料。",
+    "相关章节",
+    "patterns/spells/af 9"
+  ],
+  "eeeeedewdwd": [
+    "以指定方式获取指定容器交互面或其中物品的指定信息。",
+    "相关章节",
+    "patterns/spells/af 10"
+  ],
+  "eeeeedwwdwd": [
+    "将指定容器中指定数量的指定物品以指定顺序转移至指定容器。",
+    "相关章节",
+    "patterns/spells/af 11"
+  ],
+  "eeeeedqwdwd": [
+    "将施法者绑定的物元中指定数量的指定物品以指定顺序转移至指定容器。",
+    "相关章节",
+    "patterns/spells/af 12"
+  ],
+  "eeeeedawdwd": [
+    "将指定容器中指定数量的指定物品存入施法者绑定的物元。",
+    "相关章节",
+    "patterns/spells/af 13"
   ]
   
 }

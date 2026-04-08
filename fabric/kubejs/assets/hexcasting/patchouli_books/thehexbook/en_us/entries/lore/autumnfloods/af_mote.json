@@ -1,0 +1,143 @@
+{
+  "name": "物流",
+  "category": "hexcasting:lore/autumnfloods",
+  "icon": "hexal:mediafied_storage",
+  "sortnum": 3,
+  "advancement": "hexcasting:enlightenment",
+  "read_by_default": true,
+  "secret": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "这一页面用来记述关乎物元和运输的法术，对于运输法术，vec | [vec, vec] 用以指定容器的交互面。若为单一位置向量，则处理该位置向量处容器所有交互面中的所有物品；$(br2)若容器有不同的交互面，则可接受一个由位置向量和任意向量组成的列表，后一向量会被处理为与其夹角最小的轴向单位向量，也即从容器中心指向交互面的法向量，处理该位置向量处容器指定交互面中的所有物品。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "num | str | list 用以指定物品的匹配方式。num 匹配指定槽位中的全部物品，str 匹配指定名称的所有物品，list 由物品名称字符串和物品 NBT 字符串组成，匹配指定名称与 NBT 的所有物品。$(br2)num | bool 代表转移的逻辑，num 会优先尝试转移至指定槽位，True 会优先尝试与容器中的物品堆叠，若为 False，或优先尝试后仍有未转移的物品，则依次尝试存入每个槽位，直至转移指定的数量，或全部的匹配物品，返回转移的总数。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:get_contain",
+      "anchor": "autumnfloods:get_contain",
+      "input": "vec | [vec, vec], num | str | list, null | bool",
+      "output": "any",
+      "text": "$(br)以指定方式获取指定容器交互面或其中物品的指定信息。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "若第三个参数为布尔值，则将返回第二个参数匹配所得物品的信息。True 会返回该物品在三种参数中，不同于第二参数类型的，更为全面的信息；False 则会返回更加抽象的信息。$(br2)若第三个参数为 null，则仅依据第二个参数的$(l)性质/$返回对应的信息：若为 0，则返回交互面中所有槽位数组成的列表，正数返回非空槽位，负数返回空槽位；str 会返回交互面中所有非空槽位的物品名称列表；list 会返回交互面中所有非空槽位的物品的 NBT 列表。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:contain_contain",
+      "anchor": "autumnfloods:contain_contain",
+      "input": "vec | [vec, vec], vec | [vec, vec], num | str | list, num | bool, num",
+      "output": "num",
+      "text": "$(br2)将指定容器中指定数量的指定物品以以指定顺序转移至指定容器。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "从第一个参数指定的容器交互面中，依据第三个参数指定的匹配方式，将符合条件的物品以第四个参数指定的逻辑，转移至第二个参数指定的容器交互面中。$(br2)若转移过程中，对于匹配物品中的某物品而言，目标容器交互面空间不足以全部转移，则仅转移交互面可容纳的数量，而后继续处理下个匹配物品，直至转移第五个参数指定的数量，或匹配于第三个参数的全部物品，返回实际转移的物品数量。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:mote_contain",
+      "anchor": "autumnfloods:mote_contain",
+      "input": "vec | [vec, vec], mote | str | list, num | bool, num",
+      "output": "num",
+      "text": "$(br)将施法者绑定的物元中指定数量的指定物品以指定顺序转移至指定容器。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "物元的匹配方式与容器稍有不同，由于难以获得物元记录的索引数字。因此物元的匹配不再能指定某一个槽位，换而可以选择一条物元，匹配其中的全部物品。$(br2)从施法者绑定的物元枢纽中，以第二个参数指定的匹配方式，以第三个参数指定的逻辑转移至第一个参数指定的容器交互面中，直至转移第四个参数指定的数量，或匹配于第二个参数的全部物品，返回实际转移的物品数量。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:contain_mote",
+      "anchor": "autumnfloods:contain_mote",
+      "input": "vec | [vec, vec], num | str | list, num",
+      "output": "num",
+      "text": "$(br)将指定容器中指定数量的指定物品存入施法者绑定的物元。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "从第一个参数指定的容器交互面中，依据第二个参数指定的匹配方式，将每一份符合条件的物品堆栈依次转化为新的物元存入施法者绑定的物元，不会自行合并至原有的物元中。$(br2)当物元中的剩余空间小于等于 1 时，转移将自行停止。若有足够的空间，则直至转移第三个参数指定的数量，或匹配于第二个参数的全部物品。有关物流的法术和物元一样，均不受施法范围限制。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:motes",
+      "anchor": "autumnfloods:motes",
+      "input": "",
+      "output": "[motes]",
+      "text": "返回一个列表，包含当前绑定的枢纽中的所有物元。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:get_all_motes",
+      "anchor": "autumnfloods:get_all_motes",
+      "input": "",
+      "output": "[string]",
+      "text": "返回一个列表，包含当前绑定的枢纽中所有物元的类型字符串。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:get_contained_motes",
+      "anchor": "autumnfloods:get_contained_motes",
+      "input": "str | mote",
+      "output": "[mote]",
+      "text": "返回一个列表，包含当前绑定的枢纽中所有对应于指定类型的物元。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:download",
+      "anchor": "autumnfloods:download",
+      "input": "mote, num",
+      "output": "",
+      "text": "从指定物元中提取指定数量的物品，给予施法者。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:cloud",
+      "anchor": "autumnfloods:cloud",
+      "input": "num",
+      "output": "",
+      "text": "将指定槽位的物品转换为物元，并存入绑定的枢纽中。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:recipes",
+      "anchor": "autumnfloods:recipes",
+      "input": "str",
+      "output": "[str]",
+      "text": "接受一个物品名称，返回该物品所有合成配方字符串组成的列表。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:restock",
+      "anchor": "autumnfloods:restock",
+      "input": "villager",
+      "output": "",
+      "text": "令指定村民补货，消耗 100 点媒质。"
+    },
+    {
+			"type": "hexcasting:pattern",
+			"op_id": "autumnfloods:merge",
+			"anchor": "autumnfloods:merge",
+			"input": "villager, villager, num, num",
+			"output": "",
+			"text": "将前一村民的两个指定交易移至后者，并增加后者的经验和熟练度，消耗 100,000 点媒质。"
+		},
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:recipe",
+      "anchor": "autumnfloods:recipe",
+      "input": "str, num",
+      "output": "[mote] | [str]",
+      "text": "接受一个字符串和一个数字，从绑定的枢纽中自动获取需要的材料，依照字符串进行合成。若材料足够，则返回模拟合成所得的物元；若材料不足以合成，则返回缺失的原料。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "字符串由物品的名称或占位符构成，中间以英文逗号隔开，占位符由\"*\"表示。最终分隔成九个部分，若不足九个，剩余的部分则会视为空。字符串将被转化为$(l:patterns/spells/motes#hexal:mote/craft)$(action)合成/$中的三维数组。若绑定的枢纽中的原料足够合成指定次数，则返回一个由堆叠后的合成物元组成的列表；若不足以合成指定次数，则返回一个由原料名称组成的列表。譬如，字符串\"minecraft:diamond,minecraft:diamond,minecraft:diamond,*,minecraft:stick,*,*,minecraft:stick,*\"将模拟出钻石镐的合成。"
+    }
+  ]
+}

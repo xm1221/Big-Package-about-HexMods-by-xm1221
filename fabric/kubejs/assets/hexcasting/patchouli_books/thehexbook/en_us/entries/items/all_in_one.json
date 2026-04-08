@@ -1,0 +1,64 @@
+{
+  "name": "万法之杖",
+  "icon": "miehex:all_in_one",
+  "category": "hexcasting:items",
+  "priority": true,
+  "sortnum": 3,
+  "advancement": "hexcasting:root",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "miehex:all_in_one",
+      "title": "万法之杖",
+      "text": "一柄能够存储多个Iota的法杖，每页可存储一个 Iota，通常存放图案列表。手持时可通过快捷键（默认为左右方向键）翻页，当前页码会显示在状态栏，手持时左键可以直接执行所储存的Iota，潜行时左键则会移除当前法杖栈顶Iota并在新施法环境中执行。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:all_in_one_pages",
+      "anchor": "miehex:all_in_one_pages",
+      "input": "num",
+      "output": "",
+      "text": "将万法之杖的当前页面设置为指定页码（从 1 开始）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:all_in_one_read",
+      "anchor": "miehex:all_in_one_read",
+      "input": "",
+      "output": "list",
+      "text": "读取万法之杖所有页面中存储的 Iota，以列表形式返回（列表元素按页码顺序排列）。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:all_eval",
+      "anchor": "miehex:all_eval",
+      "input": "num",
+      "output": "",
+      "text": "执行万法之杖指定页码中存储的图案列表（该页必须存储一个列表 Iota）"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:all_record",
+      "anchor": "miehex:all_record",
+      "input": "",
+      "output": "",
+      "text": "将当前万法之杖的所有Iota以列表的形式保存到世界之中，可以用“东山再起之精思”读取"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:record_read",
+      "anchor": "miehex:record_read",
+      "input": "",
+      "output": "list",
+      "text": "从世界中读取保存的Iota列表（由“勒石记功之策略”保存），压入栈顶。若没有保存过，则返回空列表。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:all_in_one",
+      "anchor": "miehex:all_in_one",
+      "input": "pattern | any",
+      "output": "any | pattern",
+      "text": "将不含有嵌套列表的任意Iota转化为一个图案，或者将这样的图案转换为其原本对应的Iota"
+    }
+  ]
+}

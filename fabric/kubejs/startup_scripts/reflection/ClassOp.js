@@ -5,7 +5,6 @@ if (!global.toRawClass) {
         return global.loadRawClass(clsName)
     }
     global.loadRawClass = clsName => {let cs =Java.class.forName(clsName)
-        console.log(typeof cs)
         return cs
     }
 }

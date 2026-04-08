@@ -1,0 +1,51 @@
+{
+  "name": "元运行",
+  "category": "hexcasting:lore/autumnfloods",
+  "icon": "hexal:mediafied_storage",
+  "sortnum": 2,
+  "advancement": "hexcasting:enlightenment",
+  "read_by_default": true,
+  "secret": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:let_in",
+      "anchor": "autumnfloods:let_in",
+      "input": "any, num | str",
+      "output": "",
+      "text": "将 iota 以指定的数字或字符串作为 ID，存入世界的数据之中，若 iota 为 null，则将对应 ID 的条目移除。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:let_read",
+      "anchor": "autumnfloods:let_read",
+      "input": "num | str, num",
+      "output": "num",
+      "text": "限制指定 ID 条目的可读取次数，并使其可读取次数增加 num，条目将在被读取指定次数后移除，返回剩余的可读取次数。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:let_out",
+      "anchor": "autumnfloods:let_out",
+      "input": "num | str",
+      "output": "any",
+      "text": "返回对应 ID 条目的 iota，若指定 ID 未被使用，则返回 null；若条目被限制了可读取次数，则使可读取次数减一。"
+    },
+    {
+			"type": "hexcasting:pattern",
+			"op_id": "autumnfloods:isis",
+			"anchor": "autumnfloods:isis",
+			"input": "",
+			"output": "jump",
+			"text": "返回一个$(l:patterns/iota#hexcasting:continuation)$(action)书签 iota/$。"
+		},
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "autumnfloods:echo",
+      "anchor": "autumnfloods:echo",
+      "input": "[pattern], num",
+      "output": "any",
+      "text": "将栈顶的$(thing)图案列表/$运行指定次数，运行的$(thing)结果/$会返回$(thing)栈/$中。"
+    }
+  ]
+}

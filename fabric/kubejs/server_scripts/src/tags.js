@@ -6,6 +6,6 @@ ServerEvents.tags('hexcasting:action',event =>{
     event.add('hexcasting:per_world_pattern',great_spells);
     event.add("hexcasting:requires_enlightenment",great_spells);
 })
-ServerEvents.tags('block',event=>{
-    event.add("hexcasting:cheap_to_break_block","miehex:idea_block")
+ServerEvents.tags('item',event=>{
+    event.add("hexcasting:staves","miehex:all_in_one")
 })

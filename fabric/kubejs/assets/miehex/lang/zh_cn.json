@@ -1,4 +1,6 @@
-{
+{   "key.keybinding.miehex.allinone":"万法之杖",
+     "key.miehex.allinone_0":"万法之杖页退",
+     "key.miehex.allinone_1":"万法之杖页进",
     "item.miehex.xm1221":"xm1221",
     "item.miehex.man_made_stone":"人造顽石",
     "item.miehex.media_iron":"意识之铁",
@@ -8,6 +10,7 @@
     "item.miehex.pure_allay_shard":"粹灵晶碎片",
     "item.miehex.media_netherite":"合金意志",
     "item.miehex.mix_allay":"淬晶悦灵刷怪蛋",
+    "item.miehex.all_in_one":"万法之杖",
   "item.miehex.plains_symbol": "平原群系精魄",
   "item.miehex.sunflower_plains_symbol": "向日葵平原群系精魄",
   "item.miehex.snowy_plains_symbol": "雪原群系精魄",
@@ -119,7 +122,6 @@
     "hexcasting.action.miehex:rotatevector":"旋转之提整",
     "hexcasting.action.miehex:anglebetweenscalar":"夹角之馏化",
     "hexcasting.action.miehex:anglebetweenvectors":"夹角之策略",
-    "hexcasting.action.miehex:imposter": "冒名顶替",
     "hexcasting.action.miehex:zone_entity/by_name": "区域名号之提整",
     "hexcasting.action.miehex:create_sword":"构筑媒质剑",
     "hexcasting.action.miehex:collect_consciousness":"收集意识",
@@ -138,7 +140,6 @@
     "hexcasting.action.miehex:expelliarmus":"缴械",
     "hexcasting.action.miehex:puzzle":"惑心",
     "hexcasting.action.miehex:resurrectionem":"复生",
-    "hexcasting.action.miehex:get_caster":"意识之精思",
     "hexcasting.action.miehex:get_spawn":"故乡之精思",
     "hexcasting.action.miehex:get_target":"仇雠之纯化",
     "hexcasting.action.miehex:great_connect":"连接卓伟",
@@ -158,6 +159,13 @@
     "hexcasting.action.miehex:give_enchant":"附魔师之策略",
     "hexcasting.action.miehex:enchant_add":"铁砧之馏化",
     "hexcasting.action.miehex:guide":"普罗米修斯之启示",
+    "hexcasting.action.miehex:all_in_one":"万法之纯化",
+    "hexcasting.action.miehex:all_in_one_pages":"时移势迁之策略",
+    "hexcasting.action.miehex:all_in_one_read":"韦编三绝之精思",
+    "hexcasting.action.miehex:all_eval":"内圣外王之策略",
+    "hexcasting.action.miehex:all_record":"勒石记功之策略",
+    "hexcasting.action.miehex:record_read":"东山再起之精思",
+    "hexcasting.action.miehex:chat_listen":"聆听者之策略",
     "hexcasting.mishap.bad_item.class.symbol":"群系精魄",
     "hexcasting.mishap.bad_item.class.pure_allay":"粹灵晶碎片",
     "hexcasting.mishap.bad_item.class.q_allay":"淬灵晶碎片",
@@ -175,14 +183,12 @@
     "hexcasting.mishap.invalid_value.class.respawn_1":"一个与死者有密切联系的坐标",
     "hexcasting.mishap.invalid_value.class.enchant":"一个附魔iota",
     "hexcasting.mishap.invalid_value.class.same_enchant":"两个相同的附魔iota",
-     "hexcasting.action.miehex:new_idea": "柏拉图之精思",
+    "hexcasting.action.miehex:new_idea": "柏拉图之精思",
     "hexcasting.action.miehex:idea_get": "苏格拉底之馏化",
     "hexcasting.action.miehex:summon_idea_entity": "蒂迈欧之馏化",
     "hexcasting.action.miehex:idea_modify": "亚里士多德之提整",
     "hexcasting.mishap.invalid_value.class.empty_idea": "一个空理型 Iota",
     "hexcasting.mishap.invalid_value.class.idea": "一个理型 Iota",
-    "hexcasting.mishap.invalid_value.class.bad_idea": "一个合适的理型 Iota"
-
-
-
+    "hexcasting.mishap.invalid_value.class.bad_idea": "一个合适的理型 Iota",
+    "hexcasting.mishap.invalid_value.class.[[]]":"没有嵌套列表的Iota"
 }

@@ -6,13 +6,11 @@ StartupEvents.registry('hexcasting:action', e => {
         }
         let resourceKey = (namespace || 'miehex') + ':' + id
         if (isGreat) {
-            global.perWorldPatterns.push(resourceKey)
+            //global.perWorldPatterns.push(resourceKey)
         }
         let pattern = HexPattern.fromAngles(seq, dir)
         e.custom(resourceKey, ActionRegistryEntry(pattern, new ActionJS(id, pattern, options, namespace)))
     }
-    //意识之精思
-    registerPatternWrap("qaq",HexDir.NORTH_EAST,"get_caster",false,null,"miehex")
 
     //开发者之策略
     registerPatternWrap("qaqqq",HexDir.NORTH_EAST,"xmdebug")
@@ -65,6 +63,9 @@ StartupEvents.registry('hexcasting:action', e => {
     //连接卓伟
     registerPatternWrap("daaedewdweeqawa", HexDir.WEST,"great_connect");
 
+    //万法之纯化
+    registerPatternWrap("qqw",HexDir.WEST,"all_in_one")
+
     //spells===============================
 
     // 附魔转移
@@ -76,8 +77,6 @@ StartupEvents.registry('hexcasting:action', e => {
      // 创造树苗
     registerPatternWrap('wawwwewdwewww', HexDir.EAST, 'create_sapling',false,null,'miehex')
 
-    // 冒名顶替
-    registerPatternWrap('daaedewdwee', HexDir.WEST, 'imposter',false,null,"miehex")
 
     // 构筑媒质剑
     registerPatternWrap('eadeaqwwdwqqeaqqweewwqadaqwwww', HexDir.NORTH_EAST, 'create_sword')
@@ -190,19 +189,152 @@ StartupEvents.registry('hexcasting:action', e => {
     //普罗米修斯之启示
     registerPatternWrap("ede",HexDir.NORTH_WEST,"guide")
 
-    //毛茸茸之策略
-    registerPatternWrap("deeeeweewee",HexDir.NORTH_EAST,"wool_write")
+    //时移势迁之策略
+    registerPatternWrap("deeeeweewee",HexDir.NORTH_EAST,"all_in_one_pages")
 
-    //毛茸茸之馏化
-    registerPatternWrap("aqqqqwqqwqq",HexDir.NORTH_WEST,"wool_read")
+    //韦编三绝之精思
+    registerPatternWrap("aqqqqwqqwqq",HexDir.NORTH_WEST,"all_in_one_read")
+
+    //内圣外王之策略
+    registerPatternWrap("wdeqqqqqaewawqwqw",HexDir.SOUTH_EAST,"all_eval")
+
+    //勒石记功之策略
+    registerPatternWrap("deeeeeweeweeqeewee",HexDir.EAST,"all_record")
+
+    //东山再起之精思
+    registerPatternWrap("aqqqqqwqqwqqeqqwqq",HexDir.EAST,"record_read")
+
+    //聆听者之策略
+    registerPatternWrap("qadqa",HexDir.WEST,"chat_listen")
+
+
+
+// ========================= ~~~ 一条华丽的分割线 ~~~ =========================
+try{
+  // 栈操作
+
+    // 标签之纯化
+    registerPatternWrap('dwedewq', HexDir.EAST, 'get_tag', false, null, 'autumnfloods')
+    // 标签之馏化
+    registerPatternWrap('dwedewd', HexDir.EAST, 'has_tag', false, null, 'autumnfloods')
+    // 博尔颂之策略
+    registerPatternWrap('qaeede', HexDir.WEST, 'id_write', false, null, 'autumnfloods')
+    // 密米尔之纯化
+    registerPatternWrap('edqqaq', HexDir.EAST, 'id_read', false, null, 'autumnfloods')
+    // 合焦之提整
+    registerPatternWrap('dwaadw', HexDir.EAST, 'square_block', false, null, 'autumnfloods')
+    // 对焦之提整
+    registerPatternWrap('dwaade', HexDir.EAST, 'rectangle_block', false, null, 'autumnfloods')
+    // 实体之纯化：非玩家
+    registerPatternWrap('qqqqqwdedd', HexDir.SOUTH_EAST, 'get_entity/not_player', false, null, 'autumnfloods')
+    // 区域之馏化：方块
+    registerPatternWrap('qqqqqwdeddwww', HexDir.SOUTH_EAST, 'zone_block', false, null, 'autumnfloods')
+    // 勘探之提整
+    registerPatternWrap('wwa', HexDir.SOUTH_EAST, 'found', false, null, 'autumnfloods')
+    // 维度之精思
+    registerPatternWrap('dwaq', HexDir.EAST, 'world', false, null, 'autumnfloods')
+    // 数读之纯化
+    registerPatternWrap('qeeeeed', HexDir.EAST, 'num_read', false, null, 'autumnfloods')
+    // 数写之纯化
+    registerPatternWrap('eqqqqqa', HexDir.EAST, 'num_write', false, null, 'autumnfloods')
+
+  // 法术
+
+    // 傀影
+    registerPatternWrap('ddwedewdd', HexDir.WEST, 'simulation', false, null, 'autumnfloods')
+    // 拆解
+    registerPatternWrap('qaqqqqqwqqqeqqqeqqq', HexDir.SOUTH_EAST, 'uncrafting', false, null, 'autumnfloods')
+    // 明晰
+    registerPatternWrap('eeedeee', HexDir.NORTH_EAST, 'grid', false, null, 'autumnfloods')
+    // 撕裂
+    registerPatternWrap('wwewwedeadwdaedewweww', HexDir.SOUTH_EAST, 'tear', false, null, 'autumnfloods')
+    // 飞升
+    registerPatternWrap('ewaad', HexDir.EAST, 'high', false, null, 'autumnfloods')
+    // 标识
+    registerPatternWrap('dwwedwe', HexDir.EAST, 'tags', false, null, 'autumnfloods')
+    // 精神控制
+    registerPatternWrap('weeeweedwaqaaq', HexDir.EAST, 'control', false, null, 'autumnfloods')
+    // 视向
+    registerPatternWrap('wad', HexDir.SOUTH_EAST, 'yaw', false, null, 'autumnfloods')
+    // 重力
+    registerPatternWrap('weeeeewq', HexDir.SOUTH_WEST, 'gravity', false, null, 'autumnfloods')
+    // 箭矢
+    registerPatternWrap('awwwqaqw', HexDir.SOUTH_WEST, 'arrow', false, null, 'autumnfloods')
+    // 骑乘
+    registerPatternWrap('qaeeaq', HexDir.SOUTH_WEST, 'ride', false, null, 'autumnfloods')
+    // 禅定
+    registerPatternWrap('eewdeqqwedewwded', HexDir.SOUTH_EAST, 'peace', false, null, 'autumnfloods')
+    
+ // 策略
+
+    // 匝格瑞俄斯之策略
+    //registerPatternWrap('wawqwaqawqwaa', HexDir.SOUTH_WEST, 'event', false, null, 'autumnfloods')
+    // 厄科之策略
+    registerPatternWrap('deaqqeawqwqwqwqwq', HexDir.SOUTH_EAST, 'echo', false, null, 'autumnfloods')
+    // 伊西斯之策略
+    registerPatternWrap('qaawedee', HexDir.EAST, 'isis', false, null, 'autumnfloods')
+    // 狄俄尼索斯之策略
+    registerPatternWrap('qqqqqweeeee', HexDir.NORTH_WEST, 'forever', false, null, 'autumnfloods')
+    // 厄洛斯之策略
+    //registerPatternWrap('qqqqaaw', HexDir.WEST, 'key', false, null, 'autumnfloods')
+    // 克洛托之策略
+    registerPatternWrap('dwdd', HexDir.EAST, 'let_in', false, null, 'autumnfloods')
+    // 拉克西丝之馏化
+    registerPatternWrap('dwaa', HexDir.EAST, 'let_read', false, null, 'autumnfloods')
+    // 阿特洛波斯之纯化
+    registerPatternWrap('ewaa', HexDir.EAST, 'let_out', false, null, 'autumnfloods')
 
     
+ // 大法术
 
+    // 流转
+    registerPatternWrap('wwwwwawwwwwawwwqwwwawwwwwawwwwwaqwqdqdqdqdwedeewq', HexDir.WEST, 'focus', true, null, 'autumnfloods')
+    // 反制
+    registerPatternWrap
+    ('wqwawqwweeeqeewqweeqeeedeeeqeewqweeqeedqweqqqewqqweqqqewaawdwqwdwwwdwqwdw', HexDir.NORTH_EAST, 'reflection', true, null, 'autumnfloods')
+    // 全视
+    registerPatternWrap('wwwdwwwdwewdwdwewwwewewewawqwawwwewewwwwwdwwdwdwewdwqdwwwwwewewwwawawwwewewwwwwdwwdwdwewdwqdwwwwwewewwwawqwawewewew', HexDir.NORTH_WEST, 'eye_of_providence', true, null, 'autumnfloods')
+    // 梅易之精思
+    registerPatternWrap
+    ('wewdwewwqaqqwedeweewaqwedewwqwwedewwqeewaqawwedewewewdwewewedeweewaqwedewwqwwedewwqeeewedewewewdwewewedewwaqawewaqwedewwqwwedewwqeeewedew', HexDir.SOUTH_WEST, 'media', true, null, 'autumnfloods')
+    // 罅隙
+    registerPatternWrap
+    ('wwwwwqwwwwwqwwwwwqwwwwwqwwwwwqwwwwwawwwwwqwwawwqwwqwwqwwqwwqwedewwwewwwedwaewwwedwewwqawwqeewwwedwwaewawwqawwweeeawqeeewwewdedwewwewdedwewwewdedwewweqewwewdedwewweaw', HexDir.SOUTH_WEST, 'space', true, null, 'autumnfloods')
+    // 聚变
+    registerPatternWrap('qwqwqwqwqwqqeaeaeaeaeaewqqqdwqqqwdqqqdwqqqwdqqqdwqqaqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeqqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwew', HexDir.WEST, 'kcit', true, null, 'autumnfloods')
 
+ // 物流
 
-
-
-
-
+    // 检验
+    registerPatternWrap('edeedqdweee', HexDir.SOUTH_EAST, 'recipes', false, null, 'autumnfloods')
+    // 补货
+    registerPatternWrap('wwedewqqqqqwed', HexDir.WEST, 'restock', false, null, 'autumnfloods')
+    // 让度
+    registerPatternWrap('wwqaqweeeeewqa', HexDir.EAST, 'merge', false, null, 'autumnfloods')
+    // 集成
+    registerPatternWrap('qaqqaeawqqq', HexDir.SOUTH_WEST, 'recipe', false, null, 'autumnfloods')
+    // 上传
+    registerPatternWrap('eaqaweeeee', HexDir.WEST, 'cloud', false, null, 'autumnfloods')
+    // 下载
+    registerPatternWrap('qdedwqqqqq', HexDir.WEST, 'download', false, null, 'autumnfloods')
+    // 重新充能
+    registerPatternWrap('waqqqqqwaeaeaeaeaea', HexDir.EAST, 'charge', false, null, 'autumnfloods')
+    // 质元之精思
+    registerPatternWrap('qaqdqaqdqaq', HexDir.NORTH_WEST, 'motes', false, null, 'autumnfloods')
+    // 合质之精思
+    registerPatternWrap('wwaqqwdedwqq', HexDir.EAST, 'get_all_motes', false, null, 'autumnfloods')
+    // 合质之纯化
+    registerPatternWrap('wwdeewaqawee', HexDir.EAST, 'get_contained_motes', false, null, 'autumnfloods')
+    // 冲积之提整
+    registerPatternWrap('eeeeedewdwd', HexDir.NORTH_EAST, 'get_contain', false, null, 'autumnfloods')
+    // 容止
+    registerPatternWrap('eeeeedwwdwd', HexDir.EAST, 'contain_contain', false, null, 'autumnfloods')
+    // 物流
+    registerPatternWrap('eeeeedawdwd', HexDir.SOUTH_WEST, 'contain_mote', false, null, 'autumnfloods')
+    // 枢送
+    registerPatternWrap('eeeeedqwdwd', HexDir.SOUTH_EAST, 'mote_contain', false, null, 'autumnfloods')
+}catch(e){
+    throw e
+}
 
 })

@@ -1,0 +1,28 @@
+{
+  "parent": "hextended:item/staff/long/extended_staff",
+  "overrides": [
+    {
+      "model": "miehex:item/all_in_one",
+      "predicate": { "hexcasting:variant": 0.0 }
+    },
+    {
+      "model": "miehex:item/all_in_one_1",
+      "predicate": { "hexcasting:variant": 0.1 }
+    },
+    {
+      "model": "miehex:item/all_in_one_2",
+      "predicate": { "hexcasting:variant": 0.2 }
+    },
+    {
+      "model": "miehex:item/all_in_one_3",
+      "predicate": { "hexcasting:variant": 0.3 }
+    },
+    {
+      "model": "miehex:item/all_in_one_4",
+      "predicate": { "hexcasting:variant": 0.4}
+    }
+  ],
+  "textures": {
+    "layer0": "miehex:item/all_in_one"
+  }
+}

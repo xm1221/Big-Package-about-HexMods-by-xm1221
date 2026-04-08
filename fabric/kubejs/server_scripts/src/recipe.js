@@ -22,6 +22,11 @@ ServerEvents.recipes(event =>{
     event.smithing('hexchanting:amethyst_pickaxe','hexcasting:artifact','minecraft:diamond_pickaxe','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_shovel','hexcasting:artifact','minecraft:diamond_shovel','hexcasting:charged_amethyst')
     event.smithing('hexchanting:amethyst_hoe','hexcasting:artifact','minecraft:diamond_hoe','hexcasting:charged_amethyst')
+    event.shaped(Item.of('miehex:all_in_one', '{Damage:0,Unbreakable:1b}'),[
+        ['hexcasting:akashic_bookshelf','miehex:all_in_one','hexcasting:akashic_bookshelf'],
+        ['hexcasting:akashic_bookshelf','hexcasting:akashic_record','hexcasting:akashic_bookshelf'],
+        ['hexcasting:akashic_bookshelf','hexcasting:quenched_allay_shard','hexcasting:akashic_bookshelf']
+    ])
    
     
     
@@ -54,6 +59,11 @@ ServerEvents.recipes(e=>{
         ["miehex:pure_allay_block","#minecraft:biome_symbols","miehex:pure_allay_block"],
         ["miehex:pure_allay_block",'miehex:ideas_world_entry',"miehex:pure_allay_block"]
     ]).id("miehex:carpet")
+    e.shaped('miehex:all_in_one',[
+        ['','hexcasting:thought_knot','hexcasting:focus'],
+        ['','#hexcasting:staves',''],
+        ['hexcasting:artifact','hexcasting:thought_knot','']
+    ])
     e.shapeless('miehex:pure_allay_block',[
         'miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard','miehex:pure_allay_shard'
     ])
@@ -191,7 +201,7 @@ ServerEvents.recipes(e=>{
 ]
 
     crafter.forEach(([structureId, A, B, biomeId]) => {
-         console.log(`${symbols[structureId]}`)
+         //console.log(`${symbols[structureId]}`)
          let output=symbols[structureId]
          let biome=symbols[biomeId]
        e.shaped(output,[

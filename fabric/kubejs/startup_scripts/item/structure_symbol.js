@@ -4,7 +4,6 @@ let configPath = 'kubejs/config/structures.json';
 // 读取配置文件，如果不存在或格式错误则创建默认映射
 let structuresMap = JsonIO.read(configPath);
 if (!structuresMap || typeof structuresMap !== 'object' || Array.isArray(structuresMap)) {
-    console.log('[结构精魄] 配置文件不存在或格式错误，正在创建默认映射...');
     structuresMap = {
         // 原版结构
         "minecraft:village_plains": 0xFF8B9A6E,
@@ -32,21 +31,17 @@ if (!structuresMap || typeof structuresMap !== 'object' || Array.isArray(structu
         "miehex:tower": 0xFFA0522D                     
     };
     JsonIO.write(configPath, structuresMap);
-    console.log(`[结构精魄] 默认配置文件已写入: ${configPath}`);
     
     // 验证写入是否成功
     let check = JsonIO.read(configPath);
     if (check && typeof check === 'object' && !Array.isArray(check)) {
-        console.log(`[结构精魄] 配置文件验证成功，包含 ${Object.keys(check).length} 个条目`);
     } else {
-        console.log(`[结构精魄] 警告：配置文件写入失败，请检查路径和权限`);
     }
 }
 
 StartupEvents.registry('item', event => {
     let finalMap = JsonIO.read(configPath);
     if (!finalMap || typeof finalMap !== 'object' || Array.isArray(finalMap)) {
-        console.log('[结构精魄] 无法读取有效的配置文件，物品注册中止');
         return;
     }
 

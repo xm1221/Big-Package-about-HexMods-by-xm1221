@@ -68,12 +68,6 @@
      "anchor": "miehex:create_sapling", "input": "vec,str", 
      "output": "", "text": "这个法术接受一个位置向量和一个字符串，那之后便会在那个位置向量上放置一个方块ID与所给字符串相同的树苗,消耗一个紫水晶粉。"
       },
-       {
-      "type": "hexcasting:pattern",
-     "op_id": "miehex:imposter", 
-     "anchor": "miehex:imposter", "input": "any", 
-     "output": "", "text": "这个法术拥有奇怪的效果，可以改变施法者使用意识之精思时返回的iota————不过在这么做之前，至少应该保存一下自己原本的真名。"
-      },
       {
       "type": "hexcasting:pattern",
      "op_id": "miehex:create_sword", 
@@ -295,6 +289,14 @@
       "input": "",
       "output":"many",
       "text": "记忆自己当前的栈和施法状态，再次释放时根据记忆覆写当前栈和施法状态并清空记录。"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"miehex:chat_listen",
+      "anchor":"miehex:chat_listen",
+      "input":"any",
+      "output":"",
+      "text":"接受一个Iota，在那之后当施法者发送聊天信息时那个Iota就会被执行。"
     }
     
   ]

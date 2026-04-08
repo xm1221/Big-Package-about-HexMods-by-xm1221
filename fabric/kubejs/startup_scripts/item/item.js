@@ -1,9 +1,32 @@
+function IotaHolderRegister(id,path,variant,writable,pageable){
+    KubeJSIotaHolderHelper.register(id,'',path,variant,writable,pageable);
+    ItemEvents.modelProperties(e=>{
+    e.register(id,"hexcasting:variant",(stack)=>{
+        let variant=  stack.getItem().getVariant(stack)/10
+        return variant
+    }
+)
+})
+}
+
+
+
 StartupEvents.registry("item",e =>{
     e.create("miehex:media_sword","sword")
     e.create("miehex:pure_allay_shard","basic"),
     e.create("miehex:ideas_world_entry","basic")
     
 })
+
+let all_in_one = KubeJSIotaHolderHelper.register("all_in_one", "万法之杖", "miehex:item/all_in_one", 5, true, true);
+
+ItemEvents.modelProperties(e=>{
+    e.register('miehex:all_in_one',"hexcasting:variant",(stack)=>{
+        let variant=  stack.getItem().getVariant(stack)/10
+        return variant
+    })
+})
+
 
 ItemEvents.modification(e => {
     e.modify("miehex:media_sword",item =>{
@@ -28,13 +51,17 @@ ItemEvents.modification(e => {
         food.meat(false)
         food.fastToEat(true)
     }
+    e.modify('miehex:all_in_one',item=>{
+        item.rarity = 'UNCOMMON'
+        item.maxDamage=1000
+
+        
+    })
+
        
 })
 
 
 
+})
 
-
-
-
-    })

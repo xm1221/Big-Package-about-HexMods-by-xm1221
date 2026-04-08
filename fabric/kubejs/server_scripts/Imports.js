@@ -98,6 +98,7 @@ let ConstMediaAction = Java.loadClass('at.petrak.hexcasting.api.casting.castable
 let OperationAction = Java.loadClass('at.petrak.hexcasting.api.casting.castables.OperationAction')
 let SpecialHandler = Java.loadClass('at.petrak.hexcasting.api.casting.castables.SpecialHandler')
 let SpellAction = Java.loadClass('at.petrak.hexcasting.api.casting.castables.SpellAction')
+let SpellContinuation = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.SpellContinuation')
 
 // at.petrak.hexcasting.api.casting.eval 相关
 let CastingEnvironment = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastingEnvironment')
@@ -224,6 +225,7 @@ let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
 let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
 let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
 let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
+let CustomIotaHolderItem = Java.loadClass("cn.xm1221.miehex.item.CustomIotaHolderItem")
 
 //hexboard
 let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternLookUpUtil")

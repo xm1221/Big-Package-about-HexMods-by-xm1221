@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "miehex:item/cad/2_all_in_one"
+  }
+}

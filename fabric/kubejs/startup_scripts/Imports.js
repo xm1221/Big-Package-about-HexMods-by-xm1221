@@ -125,6 +125,7 @@ let PackagedItemCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.
 let PlayerBasedCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.PlayerBasedCastEnv')
 let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv')
 let CircleCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv')
+let CastingEnvironment$HeldItemInfo = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastingEnvironment$HeldItemInfo')
 
 
 // at.petrak.hexcasting.api.casting.iota 相关
@@ -230,6 +231,8 @@ let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
 let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
 let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
 let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
+let KubeJSIotaHolderHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaHolderHelper")
+let CustomIotaHolderItem = Java.loadClass("cn.xm1221.miehex.item.CustomIotaHolderItem")
 
 //hexboard
 let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternLookUpUtil")
@@ -237,3 +240,6 @@ let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternL
 //PerWorldPatterns
 let ScrungledPatternsSave = Java.loadClass("at.petrak.hexcasting.server.ScrungledPatternsSave")
 
+//hexweb
+let ResponseIota = Java.loadClass('io.github.techtastic.hexweb.casting.iota.ResponseIota')
+let HTTPRequestsHandler = Java.loadClass('io.github.techtastic.hexweb.HTTPRequestsHandler')
