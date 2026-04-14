@@ -49,15 +49,7 @@ global.PatternOperateMap = {
 },
 //测试员之策略
 "test":(stack,env,img,cont)=>{
-             doBaiduSearch("aaa", (error, response) => {
-            if (error) {
-                env.caster.tell(`§c请求失败: ${error}`);
-            } else{
-                // 百度返回的是 HTML，这里只简单提示
-                env.caster.tell(`${response.body}§a百度搜索完成，状态码 ${response.status}，返回内容长度 ${response.body.length()}`);
-                // 你可以进一步解析 HTML 提取结果，但比较复杂
-            }
-        })
+
     },
     // 戏法之提整
     "list_insert": (stack, env) => {
@@ -1200,7 +1192,7 @@ let nulliota =new NullIota
 
     // 将群系ID转换为物品ID格式
     // 例如 "minecraft:plains" -> "miehex:plains_symbol"
-    let path = biomeId.split(':')[1];  // 提取命名空间后的部分
+    let path = biomeId.replace(":","_")// 提取命名空间后的部分
     let symbolItemId = `miehex:${path}_symbol`;
 
     // 检查该物品是否存在（可选），若不存在则抛出事故
@@ -2087,6 +2079,9 @@ return sideEffects
     if(idea.entityTypeId!="EMPTY"){
         throw new MishapInvalidIota.of(args.get(1),1,"class.empty_idea")
     }
+    if(!entity instanceof LivingEntity){
+        throw new MishapInvalidIota.of(args.get(0),2,"class.living")
+    }
     let healthAttr = entity.getAttribute(Attributes.MAX_HEALTH);
     if (healthAttr) maxHealth = healthAttr.getValue();
 
@@ -2170,6 +2165,7 @@ return sideEffects
 
     // 生成到世界
     level.addFreshEntity(entity);
+    entity.persistentData.putBoolean("no_drop",true)
     let iota = new  EntityIota(entity)
     stack.push(iota)
 
@@ -2588,6 +2584,298 @@ return sideEffects
 
 },
 
+//祈求结构精魄
+"get_structure":(stack,env)=>{
+    let args = new Args(stack, 1)
+    let vec = args.vec3(0)
+    ActionJS.helpers.assertVecInRange(env,vec)
+    let caster = env.caster;
+    if (!caster) throw new MishapBadCaster();
+
+    // 检查副手物品
+    let offhand = caster.getOffhandItem();
+    if (offhand.isEmpty() || offhand.id !== 'miehex:pure_allay_shard') {
+        throw new MishapBadOffhandItem.of(offhand,"class.pure_allay");
+    }
+
+    // 消耗一个物品（非创造模式）
+    if (!caster.isCreative()) {
+        offhand.count--;
+    }
+    let level = env.world
+   let structureRegistry = level.registryAccess().registryOrThrow(Registries.STRUCTURE)
+   let structures =structureRegistry.keySet()
+   let Allstr = []
+   structures.forEach(e=>{
+    let k =e.toString()
+    Allstr.push(k)
+})
+    let index = Math.floor(Allstr.length*Math.random())
+    let structure = Allstr[index]
+    let itemid ="miehex:"+structure.replace(":","_")+"_structure_symbol"
+    let item =Item.of(itemid)
+    let entity = new ItemEntity(level,vec.x(),vec.y(),vec.z(),item)
+    entity.spawn()
+    return[OperatorSideEffect.ConsumeMedia(50000)]
+
+},
+
+//按图索骥之馏化
+"list_by_index":(stack)=>{
+    let args = new Args(stack,2)
+    let list = args.list(0)
+    let index = args.list(1)
+    let List = []
+    list.forEach(e=>{
+        List.push(e)
+    })
+    let res = []
+    index.forEach(e=>{
+        if(!e instanceof DoubleIota || e.double!=Math.floor(e.double))throw MishapInvalidIota.of(args.get(1),1,"class.slot")
+        let num = e.double
+        let iota = List[num]
+        if(!iota){
+            throw MishapInvalidIota.of(args.get(1),1,"class.slot")
+        }
+        res.push(iota)
+    }) 
+    stack.push(new ListIota(res))
+},
+
+//传道者之提整
+"function":(stack,env,img,cont)=>{
+    let args = new Args(stack,3)
+    let input = args.get(0)
+    let list = args.list(1)
+    let code =[]
+    list.forEach(e=>{
+        code.push(e)
+    })
+    code = new ListIota(code)
+    let output = args.get(2)
+    let def = new FunctionIota(input,code,output)
+    stack.push(def)
+},
+
+//传道者之谨慎
+"function_check":(stack,env,img,cont)=>{
+    let args = new Args(stack,2)
+    let def = args.get(1)
+    let inputs = args.get(0)
+    if(! def instanceof FunctionIota){
+        throw new MishapInvalidIota.of(def,1,"class.def")
+    }
+    if(inputs.class == def.getId().class){
+        let code = def.getCode()
+        let newCont =cont
+        let finshEval = FrameFinishEval.INSTANCE
+        newCont= cont.pushFrame(finshEval)
+        let spellList = code.list
+        let halt = new PatternIota(new HexPattern.fromAngles("aqdeeqawqwqwqwqw",HexDir.SOUTH_WEST))
+        halt = new ListIota([halt])
+        let haltlist = halt.list
+        let resevalFrame = new FrameEvaluate(haltlist, false)
+        let evalFrame = new FrameEvaluate(spellList, false)
+        newCont = newCont.pushFrame(resevalFrame)   
+        newCont= newCont.pushFrame(evalFrame)
+
+
+    // 新映像：保持栈不变，只增加操作计数
+    let userdata = img.userData
+    let depth  = userdata.getInt("hierarchy")
+    if(!depth)depth=0
+    userdata.putInt("hierarchy",depth+1)
+    let tags = userdata.getCompound("block_vars")
+    if(!tags)tags = new CompoundTag()
+    let tag = serializeIota(inputs)
+    tags.put((depth+1).toString(),tag)
+    userdata.put("block_vars",tags)
+    let newImg = img.copy(
+        stack,
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        userdata
+    );
+    return new OperationResult(newImg, [], newCont, HexEvalSounds.THOTH);
+    }
+    else{
+        stack.push(inputs)
+        stack.push(def)
+        return
+    }
+},
+
+//传道者之审慎
+"function_check_care":(stack,env,img,cont)=>{
+    let args = new Args(stack,2)
+    let def = args.get(1)
+    let inputs = args.get(0)
+    if(! def instanceof FunctionIota){
+        throw new MishapInvalidIota.of(def,1,"class.def")
+    }
+    if(inputs.toleratesOther(def.getId())==true){
+        let code = def.getCode()
+        let newCont =cont
+        let finshEval = FrameFinishEval.INSTANCE
+        newCont= cont.pushFrame(finshEval)
+        let spellList = code.list
+        let halt = new PatternIota(new HexPattern.fromAngles("aqdeeqawqwqwqwqw",HexDir.SOUTH_WEST))
+        halt = new ListIota([halt])
+        let haltlist = halt.list
+        let resevalFrame = new FrameEvaluate(haltlist, false)
+        let evalFrame = new FrameEvaluate(spellList, false)
+        newCont = newCont.pushFrame(resevalFrame)   
+        newCont= newCont.pushFrame(evalFrame)
+
+    // 新映像：保持栈不变，只增加操作计数
+    let userdata = img.userData
+    let depth  = userdata.getInt("hierarchy")
+    if(!depth)depth=0
+    userdata.putInt("hierarchy",depth+1)
+    let tags = userdata.getCompound("block_vars")
+    if(!tags)tags = new CompoundTag()
+    let tag = serializeIota(inputs)
+    tags.put((depth+1).toString(),tag)
+    userdata.put("block_vars",tags)
+    let newImg = img.copy(
+        stack,
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        userdata
+    );
+    return new OperationResult(newImg, [], newCont, HexEvalSounds.THOTH);
+    }
+    else{
+        stack.push(inputs)
+        stack.push(def)
+        return
+    }
+},
+
+//授业者之策略
+"function_halt": (stack, env, img, cont) => {
+    // 将 Java 栈转为可变的 JS 数组
+    let newStack = Array.from(stack);
+
+    let done = false;
+    let newCont = cont;
+
+    // 循环向上打破帧，直到遇到边界或延续结束
+    while (!done && newCont instanceof SpellContinuation.NotDone) {
+        let frame = newCont.frame;
+        let breakInfo = frame.breakDownwards(newStack);
+        done = breakInfo.first.booleanValue(); // Kotlin Boolean 需拆箱
+        newStack = breakInfo.second;
+        newCont = newCont.next;
+    }
+
+    // 若没有遇到任何边界，则彻底清空栈
+    if (!done) {
+        newStack = [];
+    }
+    let userdata = img.userData
+    let depth  = userdata.getInt("hierarchy")
+    if(!depth||depth==0)depth=1
+    userdata.putInt("hierarchy",depth-1)
+    // 构建新映像：操作计数+1，栈更新
+    let newImg = img.copy(
+        newStack,
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        userdata
+    );
+
+    // 返回操作结果（无额外副作用，使用 SPELL 音效）
+    return new OperationResult(newImg, [], newCont, HexEvalSounds.SPELL);
+},
+
+//解惑者之精思
+"block_var":(stack,env,img,cont)=>{
+   let userdata = img.userData
+   let depth = userdata.getInt("hierarchy")
+   if(!depth||depth==0){
+    stack.push(new NullIota)
+    return
+   }
+   let tags = userdata.get("block_vars")
+   let tag = tags.get(depth.toString())
+   let iota = deserializeIota(tag,env.world)
+   stack.push(iota)
+   return
+},
+
+//解惑者之策略
+"block_var_write":(stack,env,img,cont)=>{
+   let args = new Args(stack,1)
+   let iota = args.get(0)
+   let userdata = img.userData
+   let depth = userdata.getInt("hierarchy")
+   if(!depth||depth==0){
+      throw new MishapDisallowedSpell("这个法术只能在函数内使用！",new ResourceLocation("miehex:block_var_write"))
+   }
+   let tags = userdata.get("block_vars")
+   if(!tags)tags =new CompoundTag()
+    let tag = serializeIota(iota)
+   tags.put((depth).toString(),tag)
+    userdata.put("block_vars",tags)
+    let newImg = img.copy(
+        stack,
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        userdata
+    );
+    return new OperationResult(newImg, [], cont, HexEvalSounds.NORMAL_EXECUTE);
+},
+
+//解惑者之纯化
+"block_var_read":(stack,env,img,cont)=>{
+   let args = new Args(stack,1)
+   let depth = args.double(0)
+   let userdata = img.userData
+   if(!depth||depth==0){
+      throw new MishapDisallowedSpell("这个法术只能在函数内使用！",new ResourceLocation("miehex:block_var_read"))
+   }
+   let tags = userdata.get("block_vars")
+   if(!tags)throw new MishapDisallowedSpell("这个法术只能在函数内使用！",new ResourceLocation("miehex:block_var_read"))
+   let tag = tags.get(depth.toString())
+   if(!tag)throw new MishapDisallowedSpell("这个法术只能在函数内使用！",new ResourceLocation("miehex:block_var_read"))
+   let iota = deserializeIota(tag,env.world)
+   stack.push(iota)
+   return
+},
+
+//解惑者之策略,第二型
+"block_var_writes":(stack,env,img,cont)=>{
+   let args = new Args(stack,2)
+   let iota = args.get(0)
+   let depth = args.double(1)
+   let userdata = img.userData
+   if(!depth||depth==0){
+      throw new MishapDisallowedSpell("这个法术只能在函数内使用！",new ResourceLocation("miehex:block_var_write"))
+   }
+   let tags = userdata.get("block_vars")
+   if(!tags)tags =new CompoundTag()
+    let tag = serializeIota(iota)
+   tags.put((depth).toString(),tag)
+    userdata.put("block_vars",tags)
+    let newImg = img.copy(
+        stack,
+        img.parenCount,
+        img.parenthesized,
+        img.escapeNext,
+        img.opsConsumed + 1,
+        userdata
+    );
+    return new OperationResult(newImg, [], cont, HexEvalSounds.NORMAL_EXECUTE);
+},
  // ========================= ~~~ 一条华丽的分割线 ~~~ =========================
 
 
@@ -3112,12 +3400,7 @@ return sideEffects
         player.getAttribute('hexcasting:grid_zoom').setBaseValue(num)
     },
 
-    // 禅定
-    "peace": (stack, env) => {
-        let server = env.caster?.server??Utils.server
-        let data = !server.persistentData.getBoolean('noSpawnEnabled')
-        server.persistentData.putBoolean('noSpawnEnabled', data)
-    },
+
 
     // 视向
     "yaw": (stack, env) => {

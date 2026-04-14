@@ -66,11 +66,11 @@ ItemEvents.firstLeftClicked('miehex:all_in_one', event => {
         if(!(iota instanceof ListIota)){
          iota = ListIota([iota])
     }   
-        let env = new StaffCastEnv(player,Hand)
+        let env = StaffCastEnv(player,Hand)
         let vm =  new CastingVM.empty(env)
         vm.queueExecuteAndWrapIotas(iota.list,level) 
        let ops=vm.image.opsConsumed
-       let cDam = hand.nbt.get('Damage')
+       let cDam = hand.nbt.getInt('Damage')
         hand.nbt.putInt('Damage',cDam+Math.floor(ops/100))
         hardness.stack=stack
         hardnesss.hardness=hardness
@@ -99,9 +99,10 @@ ItemEvents.firstLeftClicked('miehex:all_in_one', event => {
     let text = Text.translatable("item.miehex.all_in_one").color("gold").append(Text.literal(`[${page}]:`)).append(display)
     player.setStatusMessage(text)
     let ops=vm.image.opsConsumed
-    //player.damageHeldItem(Hand,Math.floor(ops/100))
-    let cDam = hand.nbt.get('Damage')
+    let cDam = hand.nbt.getInt('Damage')
     hand.nbt.putInt('Damage',cDam+Math.floor(ops/100))
+
+ 
     event.cancel()
     
 }

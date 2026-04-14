@@ -24,14 +24,6 @@
       "text": "若布尔值为True或False，则添加或移除以 T_ 起始的字符串标签，为null，则判断实体是否持有指定标签；若字符串为空，则使用发光效果代替字符串标签。"
     },
     {
-			"type": "hexcasting:pattern",
-			"op_id": "autumnfloods:peace",
-			"anchor": "autumnfloods:peace",
-			"input": "",
-			"output": "",
-			"text": "禁止世界中所有敌对生物的生成，再次绘制以允许。"
-		},
-    {
       "type": "hexcasting:pattern",
       "op_id": "autumnfloods:yaw",
       "anchor": "autumnfloods:yaw",

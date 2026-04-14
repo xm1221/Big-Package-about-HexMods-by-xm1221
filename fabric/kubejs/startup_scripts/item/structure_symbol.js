@@ -1,6 +1,7 @@
 // priority: 5
 let configPath = 'kubejs/config/structures.json';
 
+
 // 读取配置文件，如果不存在或格式错误则创建默认映射
 let structuresMap = JsonIO.read(configPath);
 if (!structuresMap || typeof structuresMap !== 'object' || Array.isArray(structuresMap)) {
@@ -25,11 +26,12 @@ if (!structuresMap || typeof structuresMap !== 'object' || Array.isArray(structu
         "minecraft:end_city": 0xFFDAA520,
         // 自定义结构（添加以下五个）
         "miehex:abadoned_greatwork": 0xFF5A4A3A,      
-        "miehex:ruined_circle_overworld": 0xFF6B8E23, 
-        "miehex:ruined_circle_nether": 0xFF8B4513,    
-        "miehex:ruined_circle_shulk": 0xFF2F4F4F,            
+        "miehex:ruined_circles_overworld": 0xFF6B8E23, 
+        "miehex:ruined_circles_nether": 0xFF8B4513,    
+        "miehex:ruined_circles_shulk": 0xFF2F4F4F,            
         "miehex:tower": 0xFFA0522D                     
     };
+}
     JsonIO.write(configPath, structuresMap);
     
     // 验证写入是否成功
@@ -37,7 +39,7 @@ if (!structuresMap || typeof structuresMap !== 'object' || Array.isArray(structu
     if (check && typeof check === 'object' && !Array.isArray(check)) {
     } else {
     }
-}
+
 
 StartupEvents.registry('item', event => {
     let finalMap = JsonIO.read(configPath);
@@ -56,13 +58,13 @@ StartupEvents.registry('item', event => {
 
         let itemIdPart = structureId.replace(':', '_');
         let itemId = `miehex:${itemIdPart}_structure_symbol`;
-
         event.create(itemId)
             .texture('miehex:item/structure_symbol')
             .color(0, (itemstack, index) => Color.rgba(red, green, blue, alpha))
             .tag('structure_symbol')
             .maxStackSize(16)
             .glow(true)
+
     });
 
     console.log(`[结构精魄] 已注册 ${entries.length} 个带颜色的结构精魄`);

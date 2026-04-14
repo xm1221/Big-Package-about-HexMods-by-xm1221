@@ -106,14 +106,17 @@ StartupEvents.registry('item', event => {
         let green = (colorInt >> 8) & 0xFF;
         let blue = colorInt & 0xFF;
 
-        let path = fullId.split(':')[1];
+        let path = fullId.replace(":","_")
+        let langkey = fullId.replace(":",".")
         let itemId = `miehex:${path}_symbol`;
+        let text = Text.translatable("biome."+langkey).append(Text.translatable("miehex.symbol.biome"))
 
         event.create(itemId)
             .texture('miehex:item/symbol')
             .color(0, (itemstack, index) => Color.rgba(red, green, blue, alpha))
             .tag('biome_symbols')
-            .maxStackSize(64);
+            .maxStackSize(64)
+            .displayName(text)
 
         global.biomeMapping[itemId] = fullId;
     });

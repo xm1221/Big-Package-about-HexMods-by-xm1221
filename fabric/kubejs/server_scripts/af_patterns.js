@@ -60,16 +60,7 @@ ServerEvents.tick(event => {
     }
 })
 
-//禅定
-EntityEvents.spawned(event => {
-    let server = event.server
-    if (server.persistentData.contains('noSpawnEnabled') && server.persistentData.getBoolean('noSpawnEnabled')) {
-        let mob = event.entity
-        if (mob.isMonster()) {
-            event.cancel()
-        }
-    }
-})
+
 
 //反制
 EntityEvents.hurt(event => {

@@ -1,0 +1,88 @@
+{
+  "name": "函数Iota",
+  "category": "hexcasting:patterns",
+  "icon": "minecraft:target",
+  "sortnum": 8,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+        "type":"patchouli:text",
+        "text":"我发现函数Iota是一种很特别的Iota，它像是一种经过特殊封装的图案列表Iota，加上了所需参数与输出的标记，但无法一般地用元运行来执行，当它被执行时什么都不会发生，甚至它自己都不会出栈。只有通过一些特殊的图案才能在所需参数被满足时执行它们"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:function",
+      "anchor": "miehex:function",
+      "input": "any,list,any",
+      "output": "function",
+      "text": "以一个所需参数Iota和执行后所得结果Iota为标记，将中间的图案列表打包成函数Iota，值得一提的是，这不一定是真正的返回值与所需Iota。"
+    },
+        {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:function_check",
+      "anchor": "miehex:function_check",
+      "input": "any,function",
+      "output": "many",
+      "text": "在执行函数中的图案列表前会先检查栈顶的第二个Iota（第一个是函数），如果那个Iota的种类与函数所被标记的所需Iota相同，则先移除那个iota，之后执行列表，反之，什么也不做。"
+    },
+        {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:function_check_care",
+      "anchor": "miehex:function_check_care",
+      "input": "any,function",
+      "output": "many",
+      "text": "在执行函数中的图案列表前会先检查栈顶的第二个Iota（第一个是函数），如果那个Iota与函数所被标记的所需Iota完全相同，则先移除那个iota，之后执行列表，反之，什么也不做。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在探索函数 Iota 的奥秘时，我意识到仅仅打包与匹配是不够的。我需要能在函数内部提前终止的手段，也需要在函数内部存储临时数据的能力——就像栈那样，但又不希望这些临时数据污染主栈。于是，我找到了利用咒法映像中“用户数据”的方法，创建了几个辅助图案。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:function_halt",
+      "anchor": "miehex:function_halt",
+      "input": "",
+      "output": "",
+      "text": "此图案是“卡戎之策略”的函数特化版。在函数体内部绘制它，会立即终止当前函数执行，并正确回退到调用处。若不在函数内使用，其效果与普通的卡戎之策略无异。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:block_var",
+      "anchor": "miehex:block_var",
+      "input": "",
+      "output": "any",
+      "text": "获取当前函数层级的“块变量”。在函数被调用时，传入的参数会自动存入当前层级的块变量中。若不在函数内部，则返回 Null。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:block_var_write",
+      "anchor": "miehex:block_var_write",
+      "input": "any",
+      "output": "",
+      "text": "将栈顶的 Iota 存入当前函数层级的块变量，覆盖原有的参数值。可用于在函数执行过程中更新状态。只能在函数内部使用。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:block_var_read",
+      "anchor": "miehex:block_var_read",
+      "input": "number",
+      "output": "any",
+      "text": "读取指定深度的块变量。深度从0开始计数，不在任何函数中时为 0，之后每多嵌套一次深度加 1……这让我得以访问外层函数的变量，实现类似于“闭包”的特性。只能在函数内部使用。"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:block_var_writes",
+      "anchor": "miehex:block_var_writes",
+      "input": "any,number",
+      "output": "",
+      "text": "将栈顶的 Iota 写入指定深度的块变量中。与“解惑者之策略”类似，但允许我修改外层函数的变量。使用不当容易造成混乱，但却是强大能力的代价。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "这些图案共同构成了一套简陋但实用的“词法作用域”系统。虽然尚且不够严谨，但对于我的咒术而言，已是极大的进步。。"
+    }
+    
+    
+  ]
+}

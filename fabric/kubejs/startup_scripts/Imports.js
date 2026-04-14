@@ -46,6 +46,7 @@ let DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource
 let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
 let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation');
 let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+let Registry = Java.loadClass('net.minecraft.core.Registry')
 let BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity')
 let BlockEntityType = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntityType')
 let EntityTypeTags = Java.loadClass('net.minecraft.tags.EntityTypeTags')
@@ -65,7 +66,7 @@ let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
 let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
 let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 let WorldGenLevel = Java.loadClass('net.minecraft.world.level.WorldGenLevel')
-
+let registryAccess = Java.loadClass('net.minecraft.core.RegistryAccess')
 
 
 
@@ -230,9 +231,12 @@ let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
 //miehex
 let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
 let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
+let FunctionIota = Java.loadClass('cn.xm1221.miehex.iota.FunctionIota');
 let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
 let KubeJSIotaHolderHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaHolderHelper")
 let CustomIotaHolderItem = Java.loadClass("cn.xm1221.miehex.item.CustomIotaHolderItem")
+let BrainsweepKJSHelper = Java.loadClass('cn.xm1221.miehex.api.BrainsweepKJSHelper');
+
 
 //hexboard
 let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternLookUpUtil")
@@ -243,3 +247,7 @@ let ScrungledPatternsSave = Java.loadClass("at.petrak.hexcasting.server.Scrungle
 //hexweb
 let ResponseIota = Java.loadClass('io.github.techtastic.hexweb.casting.iota.ResponseIota')
 let HTTPRequestsHandler = Java.loadClass('io.github.techtastic.hexweb.HTTPRequestsHandler')
+
+//hexautomata
+let BrainsweepFunction = Java.loadClass('cn.xm1221.miehex.api.BrainsweepFunction');
+let BrainsweepCallback = Java.loadClass('io.yukkuric.hexautomata.action_patch.brainsweep.BrainsweepCallback');

@@ -154,6 +154,14 @@
      "anchor": "miehex:easy_extract", "input": "list, num, num", 
      "output": "list,list", "text": "在栈下标为0处接受一个列表，栈下标为1、2处，各接收一个数字，返回所给列表中下标为第一个数往后的总共由第二个数数量的元素所组成的列表，以及原先列表剩余所有元素组成的列表"
      },
+     {
+      "type":"hexcasting:pattern",
+      "op_id":"miehex:list_by_index",
+      "anchor":"miehex:list_by_index",
+      "input":"list,list of num",
+      "output":"list",
+      "text":"接受一个列表和一个由其索引组成的列表，将前一个列表中所有对应索引的元素组成一个新列表返回。"
+     },
      { 
       "type": "hexcasting:pattern",
      "op_id": "miehex:cube_type", 

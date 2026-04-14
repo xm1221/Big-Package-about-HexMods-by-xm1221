@@ -1,9 +1,12 @@
+
+//聆听
 PlayerEvents.chat(e=>{
 
     let player = e.player
     let data = player.persistentData
     let level = player.level
     let spell = data.get("chat")
+    if(!spell)return
     spell = deserializeIota(spell,level)
     if(!(spell instanceof ListIota)){
         spell = ListIota([spell])
@@ -12,6 +15,7 @@ PlayerEvents.chat(e=>{
        return
     }
     let env = new StaffCastEnv(player,InteractionHand.MAIN_HAND)
+    
     let vm = new CastingVM.empty(env)
     vm.queueExecuteAndWrapIotas(spell.list,level)
 

@@ -207,7 +207,35 @@ StartupEvents.registry('hexcasting:action', e => {
     //聆听者之策略
     registerPatternWrap("qadqa",HexDir.WEST,"chat_listen")
 
+    //卜杖寻路
+    registerPatternWrap("wwaqqqqqea",HexDir.SOUTH_WEST,"get_structure")
 
+    //按图索骥之馏化
+    registerPatternWrap("wawdwqwaeawqwdwaw",HexDir.SOUTH_EAST,"list_by_index")
+
+    //传道者之提整
+    registerPatternWrap("deaqqdae",HexDir.SOUTH_EAST,"function")
+
+    //传道者之谨慎
+    registerPatternWrap("aqdeeadq",HexDir.SOUTH_WEST,"function_check")
+
+    //传道者之审慎
+    registerPatternWrap("awqdeewadq",HexDir.SOUTH_WEST,"function_check_care")
+
+   //授业者之策略
+   registerPatternWrap("aqdeeqawqwqwqwqw",HexDir.SOUTH_WEST,"function_halt")
+
+   //解惑者之精思
+   registerPatternWrap("aqqqqdae",HexDir.EAST,"block_var")
+
+   //解惑者之策略
+   registerPatternWrap("deeeeadq",HexDir.EAST,"block_var_write")
+
+   //解惑者之纯化
+   registerPatternWrap("waqqqdae",HexDir.NORTH_EAST,"block_var_read")
+
+   //解惑者之策略,第二型
+   registerPatternWrap("waqqqqdae",HexDir.EAST,"block_var_writes")
 
 // ========================= ~~~ 一条华丽的分割线 ~~~ =========================
 try{
@@ -262,8 +290,7 @@ try{
     registerPatternWrap('awwwqaqw', HexDir.SOUTH_WEST, 'arrow', false, null, 'autumnfloods')
     // 骑乘
     registerPatternWrap('qaeeaq', HexDir.SOUTH_WEST, 'ride', false, null, 'autumnfloods')
-    // 禅定
-    registerPatternWrap('eewdeqqwedewwded', HexDir.SOUTH_EAST, 'peace', false, null, 'autumnfloods')
+
     
  // 策略
 
