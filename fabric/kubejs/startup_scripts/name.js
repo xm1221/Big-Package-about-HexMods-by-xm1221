@@ -237,6 +237,9 @@ StartupEvents.registry('hexcasting:action', e => {
    //解惑者之策略,第二型
    registerPatternWrap("waqqqqdae",HexDir.EAST,"block_var_writes")
 
+   //iota隐藏
+   registerPatternWrap("qqawwwdee",HexDir.EAST,"tooltip_hide")
+
 // ========================= ~~~ 一条华丽的分割线 ~~~ =========================
 try{
   // 栈操作
@@ -319,8 +322,7 @@ try{
     // 反制
     registerPatternWrap
     ('wqwawqwweeeqeewqweeqeeedeeeqeewqweeqeedqweqqqewqqweqqqewaawdwqwdwwwdwqwdw', HexDir.NORTH_EAST, 'reflection', true, null, 'autumnfloods')
-    // 全视
-    registerPatternWrap('wwwdwwwdwewdwdwewwwewewewawqwawwwewewwwwwdwwdwdwewdwqdwwwwwewewwwawawwwewewwwwwdwwdwdwewdwqdwwwwwewewwwawqwawewewew', HexDir.NORTH_WEST, 'eye_of_providence', true, null, 'autumnfloods')
+
     // 梅易之精思
     registerPatternWrap
     ('wewdwewwqaqqwedeweewaqwedewwqwwedewwqeewaqawwedewewewdwewewedeweewaqwedewwqwwedewwqeeewedewewewdwewewedewwaqawewaqwedewwqwwedewwqeeewedew', HexDir.SOUTH_WEST, 'media', true, null, 'autumnfloods')

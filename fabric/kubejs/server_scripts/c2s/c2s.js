@@ -60,7 +60,7 @@ ItemEvents.firstLeftClicked('miehex:all_in_one', event => {
         let cc = nbt.getCompound("cardinal_components")
         let hardnesss = cc["hexcasting:harness"]
         let hardness = hardnesss.harness
-        let stack = hardness.stack
+        let stack = hardness.stack||[]
         let tag = stack.shift()
         let iota = deserializeIota(tag,level)
         if(!(iota instanceof ListIota)){

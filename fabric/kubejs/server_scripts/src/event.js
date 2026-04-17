@@ -316,7 +316,7 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
     } else if (currentDim == 'minecraft:the_end') {
         targetDim = 'miehex:ideas_world_2'
     } else {
-        // 如果不在以上维度，默认传送到 ideas_world_0
+        // 如果不在以上维度，默认传送到 ideas_world_1
         targetDim = 'miehex:ideas_world_1'
     }
     // 获取站在该方块上方的所有实体
@@ -347,14 +347,13 @@ BlockEvents.rightClicked('miehex:idea_portal',event=>{
         
         // 传送实体
             entity.teleportTo(
-            targetLevel,                    // arg0: 目标世界
+            new ResourceLocation(targetDim),                    // arg0: 目标世界
             x + 0.5,                         // arg1: 目标 X
             y + 1,                           // arg2: 目标 Y（传送到方块上方一格）
-            z + 0.5,                         // arg3: 目标 Z
-            new HashSet(),         // arg4: 空 Set（不使用相对移动）
+            z + 0.5,                         // arg3: 目标 Z         // arg4: 空 Set（不使用相对移动）
             entity.yaw,                      // arg5: 原偏航角
             entity.pitch                     // arg6: 原俯仰角
-        )
+            )
 
     
     // 在原位置也播放音效
@@ -367,3 +366,6 @@ ItemEvents.foodEaten("hexcasting:amethyst_dust", e=>{
 
   
 })
+
+
+

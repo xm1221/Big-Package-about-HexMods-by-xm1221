@@ -1,4 +1,5 @@
 // priority:10
+
 // net.minecraft 相关
 let Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 let LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
@@ -35,6 +36,7 @@ let MobEffect = Java.loadClass('net.minecraft.world.effect.MobEffect')
 let Rarity = Java.loadClass("net.minecraft.world.item.Rarity")
 let InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 let BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')
+let WorldlyContainer = Java.loadClass('net.minecraft.world.WorldlyContainer')
 let RecipeType = Java.loadClass('net.minecraft.world.item.crafting.RecipeType')
 let CraftingMenu = Java.loadClass('net.minecraft.world.inventory.CraftingMenu')
 let MeleeAttackGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.MeleeAttackGoal")
@@ -44,6 +46,7 @@ let DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource
 let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
 let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation');
 let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+let Registry = Java.loadClass('net.minecraft.core.Registry')
 let BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity')
 let BlockEntityType = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntityType')
 let EntityTypeTags = Java.loadClass('net.minecraft.tags.EntityTypeTags')
@@ -56,13 +59,14 @@ let BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInReg
 let BooleanProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.BooleanProperty')
 let ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
+let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
 let Holder = Java.loadClass("net.minecraft.core.Holder")
 let PlayerInventory = Java.loadClass("net.minecraft.world.entity.player.Inventory")
 let ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
 let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
 let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 let WorldGenLevel = Java.loadClass('net.minecraft.world.level.WorldGenLevel')
-
+let registryAccess = Java.loadClass('net.minecraft.core.RegistryAccess')
 
 
 
@@ -89,6 +93,7 @@ let HexEvalSounds = Java.loadClass('at.petrak.hexcasting.common.lib.hex.HexEvalS
 // at.petrak.hexcasting.api.casting 相关
 let ParticleSpray = Java.loadClass('at.petrak.hexcasting.api.casting.ParticleSpray')
 let SpellList = Java.loadClass('at.petrak.hexcasting.api.casting.SpellList')
+let RenderedSpell = Java.loadClass('at.petrak.hexcasting.api.casting.RenderedSpell')
 let OperatorUtils = Java.loadClass('at.petrak.hexcasting.api.casting.OperatorUtils')
 let ActionRegistryEntry = Java.loadClass('at.petrak.hexcasting.api.casting.ActionRegistryEntry')
 
@@ -98,18 +103,19 @@ let ConstMediaAction = Java.loadClass('at.petrak.hexcasting.api.casting.castable
 let OperationAction = Java.loadClass('at.petrak.hexcasting.api.casting.castables.OperationAction')
 let SpecialHandler = Java.loadClass('at.petrak.hexcasting.api.casting.castables.SpecialHandler')
 let SpellAction = Java.loadClass('at.petrak.hexcasting.api.casting.castables.SpellAction')
-let SpellContinuation = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.SpellContinuation')
 
 // at.petrak.hexcasting.api.casting.eval 相关
 let CastingEnvironment = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastingEnvironment')
 let OperationResult = Java.loadClass('at.petrak.hexcasting.api.casting.eval.OperationResult')
 let CastResult = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastResult')
+let CastingEnvironmentComponent = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastingEnvironmentComponent')
 
 // at.petrak.hexcasting.api.casting.eval.vm 相关
 let CastingImage = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.CastingImage')
 let CastingVM = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.CastingVM')
 let FrameEvaluate = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.FrameEvaluate')
 let FrameFinishEval = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.FrameFinishEval')
+let SpellContinuation = Java.loadClass('at.petrak.hexcasting.api.casting.eval.vm.SpellContinuation')
 
 // at.petrak.hexcasting.api.casting.eval.sideeffects 相关
 let EvalSound = Java.loadClass('at.petrak.hexcasting.api.casting.eval.sideeffects.EvalSound')
@@ -120,6 +126,7 @@ let PackagedItemCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.
 let PlayerBasedCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.PlayerBasedCastEnv')
 let StaffCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv')
 let CircleCastEnv = Java.loadClass('at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv')
+let CastingEnvironment$HeldItemInfo = Java.loadClass('at.petrak.hexcasting.api.casting.eval.CastingEnvironment$HeldItemInfo')
 
 
 // at.petrak.hexcasting.api.casting.iota 相关
@@ -179,7 +186,7 @@ let MishapNoBoundStorage = Java.loadClass('ram.talia.hexal.api.casting.mishaps.M
 let MishapStorageFull = Java.loadClass('ram.talia.hexal.api.casting.mishaps.MishapStorageFull')
 
 // ram.talia.hexal.api.casting.castables 相关
-//let UserDataConstMediaAction = Java.loadClass('ram.talia.hexal.api.casting.castables.UserDataConstMediaAction')
+let UserDataConstMediaAction = Java.loadClass('ram.talia.hexal.api.casting.castables.UserDataConstMediaAction')
 
 // ram.talia.hexal.api.casting.iota 相关
 let GateIota = Java.loadClass('ram.talia.hexal.api.casting.iota.GateIota')
@@ -224,8 +231,12 @@ let HexOPAttributes = Java.loadClass('io.yukkuric.hexop.HexOPAttributes')
 //miehex
 let EnchantIota = Java.loadClass('cn.xm1221.miehex.iota.EnchantIota')
 let IdeaIota = Java.loadClass('cn.xm1221.miehex.iota.IdeaIota')
+let FunctionIota = Java.loadClass('cn.xm1221.miehex.iota.FunctionIota');
 let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
+let KubeJSIotaHolderHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaHolderHelper")
 let CustomIotaHolderItem = Java.loadClass("cn.xm1221.miehex.item.CustomIotaHolderItem")
+
+
 
 //hexboard
 let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternLookUpUtil")
@@ -233,3 +244,14 @@ let PatternLookUpUtil = Java.loadClass("pub.pigeon.yggdyy.hexboard.util.PatternL
 //PerWorldPatterns
 let ScrungledPatternsSave = Java.loadClass("at.petrak.hexcasting.server.ScrungledPatternsSave")
 
+//hexweb
+let ResponseIota = Java.loadClass('io.github.techtastic.hexweb.casting.iota.ResponseIota')
+let HTTPRequestsHandler = Java.loadClass('io.github.techtastic.hexweb.HTTPRequestsHandler')
+
+
+
+//航梦
+let DimIota = Java.loadClass('net.beholderface.oneironaut.casting.iotatypes.DimIota')
+
+//at.petrak.hexcasting.common.lib相关
+let HexAttributes = Java.loadClass('at.petrak.hexcasting.common.lib.HexAttributes')

@@ -49,7 +49,8 @@ global.PatternOperateMap = {
 },
 //测试员之策略
 "test":(stack,env,img,cont)=>{
-
+    
+    
     },
     // 戏法之提整
     "list_insert": (stack, env) => {
@@ -2876,6 +2877,38 @@ return sideEffects
     );
     return new OperationResult(newImg, [], cont, HexEvalSounds.NORMAL_EXECUTE);
 },
+
+//iota隐藏
+"tooltip_hide":(stack,env)=>{
+    let caster = env.caster
+    if(!caster.isPlayer()){
+        throw new MishapBadCaster()
+    }
+    let hand = env.castingHand
+    let items
+    if(hand==InteractionHand.MAIN_HAND){
+        items = caster.getOffHandItem()
+    }
+    else if(hand==InteractionHand.OFF_HAND){
+        items = caster.getMainHandItem()
+    }
+    if(items.isEmpty()){
+       if(hand!=InteractionHand.MAIN_HAND){
+        items = caster.getOffHandItem()
+    }
+    else if(hand!=InteractionHand.OFF_HAND){
+        items = caster.getMainHandItem()
+    }
+    }
+    if(items.nbt.getBoolean("hide")==true){
+        items.nbt.putBoolean("hide",false)
+    }
+    else{
+       items.nbt.putBoolean("hide",true)
+    }
+},
+
+//
  // ========================= ~~~ 一条华丽的分割线 ~~~ =========================
 
 
@@ -3222,47 +3255,6 @@ return sideEffects
             OperatorSideEffect.ConsumeMedia(cost),
             OperatorSideEffect.Particles(ParticleSpray.burst(entity.position(), 0.5, 20))
         ]
-        return effects
-    },
-
-    // 全视
-    "eye_of_providence": (stack, env) => {
-        let args = new Args(stack, 2)
-        let dimension = args.string(0)
-        let infinite = args.bool(1)
-        let server = env.caster?.server??Utils.server
-        let dimensionKeys = server.levelKeys()
-        let dimensionNames = []
-        dimensionKeys.forEach(key => {
-            dimensionNames.push(key.location().toString())
-        })
-        let namespace = RL(dimension)
-        if (!dimensionNames.includes(namespace)) throw MishapInvalidIota.of(args.get(0), 1, 'class.level')
-        let locals = global.PatternOperateMap.eye_of_providence
-        if (!locals.protoComp) {
-            let key = new JavaAdapter(CastingEnvironmentComponent.Key, {})
-            locals.protoComp = {
-                onIsVecInRange(vec, current) {
-                    return true
-                },
-                getKey() {
-                    return key
-                }
-            }
-        }
-        let effects = []
-        if (infinite) {
-            let player = env.caster
-            if (player !== null && player.health) {
-                player.health = 0.0001
-            }
-        } else {
-            effects = [
-                OperatorSideEffect.ConsumeMedia(Math.ceil(100000))
-            ]
-        }
-        env.addExtension(new JavaAdapter(CastingEnvironmentComponent.IsVecInRange, locals.protoComp))
-        global.unsafeSetField(env, 'world', server.getLevel(namespace))
         return effects
     },
 

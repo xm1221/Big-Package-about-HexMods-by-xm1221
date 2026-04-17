@@ -1,16 +1,43 @@
 //剥离注册函数
-function BrainsweepRegister(id,priority,entityType,iota,cost,namespace){
+let BAMishap = null
+function BrainsweepRegister(id,priority,entityId,iotaTypeId,cost,namespace){
+    
     let resourceKey = (namespace||"miehex")+":"+id
-    let callback = new BrainsweepFunction({
-        apply:function(entity,iota,env){
-             let effectFunction = function(innerEnv) {
-                global.BrainsweepActions[id](entity, iota, innerEnv)||function(){};
-            };
-            return BrainsweepCallback.buildResult(effectFunction, cost, []);
-        }
+    let callback = (entity,iota,env)=>{
+  
+                if(!global.BrainsweepActions[id]){env.caster.tell(`DISABLED!`)}
+                try{
+                    let effectFunction=global.BrainsweepActions[id](entity, iota, env)
+                    return BrainsweepCallback.buildResult(effectFunction, cost,ParticleSpray.burst(entity.position(),1.0,2));
+                }
+                catch(e){
+                    if(e instanceof Mishap)throw e
+                }
+                    throw PatchAction.STOP_ALL    
+                }
         
-    })
-    BrainsweepKJSHelper.register(resourceKey,priority,entityType,iota,callback)
+    try{
+    let CallBack = BrainsweepCallback.create(priority,entityId, iotaTypeId,callback)
+    BrainsweepCallback.forceSet(resourceKey, CallBack)
+    }
+    catch(e){
+        console.log(e)
+    }
 }
 
-//BrainsweepRegister("test",1,EntityType.PLAYER,new NullIota(),0,"miehex")
+//全知
+BrainsweepRegister("omniscience",-1,"minecraft:player","oneironaut:dim",100000000,"miehex")
+
+//如鱼得水
+BrainsweepRegister("water_breath_0",0,"minecraft:salmon","hexcasting:entity",10000,"miehex")
+BrainsweepRegister("water_breath_1",0,"minecraft:cod","hexcasting:entity",10000,"miehex")
+BrainsweepRegister("water_breath_2",0,"minecraft:tropical_fish","hexcasting:entity","miehex")
+
+//意识融合
+//BrainsweepRegister("consciousness_fusion",1,"minecraft:player","hexcasting:vec3",100000,"miehex")
+
+
+
+
+
+

@@ -56,3 +56,24 @@ ServerEvents.customCommand("greats",e=>{
   let keys = Object.keys(great_spells).length
   player.tell(`特有图案有${[great_spells]},共${keys}个`)
 })
+
+ServerEvents.customCommand("omniscience_clear",e=>{
+  let player = e.player
+  player.persistentData.put("omniscience",{})
+  let instance=player.getAttribute(HexAttributes.AMBIT_RADIUS)
+  instance.setBaseValue(32)
+  let maxHealth = 20
+        let healthAttr = player.getAttribute(Attributes.MAX_HEALTH);
+        if (healthAttr) healthAttr.setBaseValue(maxHealth);
+    player.persistentData.put("maxhealth",maxHealth)
+    player.setHealth(20)
+})
+
+ServerEvents.customCommand("ambit_r",e=>{
+  let player = e.player
+  player.tell(`${player.getAttributeValue(HexAttributes.AMBIT_RADIUS)}`)
+})
+
+ServerEvents.customCommand("test" ,e=>{
+    e.player.tell(`${Object.keys(EntityType)}`)
+})

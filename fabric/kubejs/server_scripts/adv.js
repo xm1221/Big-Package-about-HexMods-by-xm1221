@@ -169,10 +169,10 @@ AdvJSEvents.advancement(event => {
                 criteriaBuilder.add("idea", TRIGGER.impossible());
             });
     });
-    allay.addChild("nature", childBuilder => {
+    let nature=allay.addChild("nature", childBuilder => {
         childBuilder
             .display(displayBuilder => {
-                displayBuilder.setIcon('miehex:bamboo_jungle_symbol');
+                displayBuilder.setIcon('miehex:minecraft_bamboo_jungle_symbol');
                 displayBuilder.setTitle("动摇根本");
                 displayBuilder.setDescription("制作群系精魄并使用它");
                 displayBuilder.setFrameType(FrameType.CHALLENGE)
@@ -246,6 +246,19 @@ AdvJSEvents.advancement(event => {
                 criteriaBuilder.add("load", TRIGGER.impossible());
             })
     });
+    nature.addChild("dim_casting",childBuilder => {
+        childBuilder
+            .display(displayBuilder => {
+                displayBuilder.setIcon("minecraft:end_portal_frame");      // 图标，可替换
+                displayBuilder.setTitle("天人合一");
+                displayBuilder.setDescription("将自己的意识融入一个维度中");
+                displayBuilder.setFrameType(FrameType.CHALLENGE);
+                // displayBuilder.setHidden(false);
+            })
+            .criteria(criteriaBuilder => {
+               criteriaBuilder.add("load", TRIGGER.impossible());
+            });
+    })
 
 
 
