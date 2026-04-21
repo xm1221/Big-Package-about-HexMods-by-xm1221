@@ -1,5 +1,5 @@
 {
-  "name": "栈操作",
+  "name": "miehex.entry.af_stack",
   "category": "hexcasting:lore/autumnfloods",
   "icon": "hexal:mediafied_storage",
   "sortnum": 0,
@@ -13,7 +13,7 @@
       "anchor": "autumnfloods:world",
       "input": "",
       "output": "str",
-      "text": "返回当前维度的名称。"
+      "text": "miehex.advice.af_world.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,7 +21,7 @@
       "anchor": "autumnfloods:found",
       "input": "vec, num, str",
       "output": "bool",
-      "text": "判断以指定坐标向量为平面中心，2 * num 为平面边长，Y 轴小于等于指定方块，大于等于 -64 的立方体中是否含有指定名称的方块，不受施法范围限制。"
+      "text": "miehex.advice.af_found.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -29,7 +29,7 @@
       "anchor": "autumnfloods:get_entity/not_player",
       "input": "vec",
       "output": "entity",
-      "text": "返回指定坐标向量处非玩家实体。"
+      "text": "miehex.advice.af_get_entity.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -37,7 +37,7 @@
       "anchor": "autumnfloods:zone_block",
       "input": "vec, num",
       "output": "[vec]",
-      "text": "返回以指定坐标向量为中心，指定数值为半径的范围内所有方块实体的位置列表。"
+      "text": "miehex.advice.af_zone_block.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -45,7 +45,7 @@
       "anchor": "autumnfloods:get_tag",
       "input": "entity | num | vec | str | mote",
       "output": "[str]",
-      "text": "$(br)返回指定物品实体，或指定槽位的物品，或指定坐标向量处的方块，或指定名称的物品，或指定物元的所有标签组成的列表。"
+      "text": "miehex.advice.af_get_tag.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -53,7 +53,7 @@
       "anchor": "autumnfloods:has_tag",
       "input": "entity | num | vec | str | mote, str",
       "output": "bool",
-      "text": "$(br)判断指定物品实体，或指定槽位的物品，或指定坐标向量处的方块，或指定名称的物品，或指定物元是否包含指定标签。"
+      "text": "miehex.advice.af_has_tag.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -61,7 +61,7 @@
       "anchor": "autumnfloods:id_write",
       "input": "num, any",
       "output": "",
-      "text": "将栈顶 iota 以给定数字作为序号写入$(l:patterns/readwrite#hexcasting:local)$(thing)渡鸦之思/$。"
+      "text": "miehex.advice.af_id_write.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -69,7 +69,7 @@
       "anchor": "autumnfloods:id_read",
       "input": "num",
       "output": "any",
-      "text": "将以给定数字作为序号的$(l:patterns/readwrite#hexcasting:local)$(thing)渡鸦之思/$中的 iota 复制到栈顶。"
+      "text": "miehex.advice.af_id_read.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -77,7 +77,7 @@
       "anchor": "autumnfloods:num_read",
       "input": "num",
       "output": "any",
-      "text": "复制$(l:patterns/hexcasting#autumnfloods:slot)$(thing)指定槽位/$物品的 iota，并将其压入栈顶，指定槽位无可读 iota 则返回 null。"
+      "text": "miehex.advice.af_num_read.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -85,11 +85,11 @@
       "anchor": "autumnfloods:num_write",
       "input": "any, num",
       "output": "",
-      "text": "移除栈顶元素，若$(l:patterns/hexcasting#autumnfloods:slot)$(thing)指定槽位的/$物品可写入 iota，则将其写入。"
+      "text": "miehex.advice.af_num_write.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "将第一个向量作为起始的坐标向量，若布尔值为 false，则以第二个向量作为坐标向量，返回两坐标连线经过的所有方块的坐标向量组成的列表。$(br2)若布尔值为 true，则以第二个向量作为方向向量，返回以坐标向量沿方向向量延伸过程中经过的一定数量个方块的坐标向量，数量等同于向量的模长取整。"
+      "text": "miehex.entry.af_stack.desc1"
     },
     {
       "type": "hexcasting:pattern",
@@ -97,11 +97,11 @@
       "anchor": "autumnfloods:square_block",
       "input": "vec, num, bool | null",
       "output": "[vec]",
-      "text": "以一个向量和一个正整数确定一个正方体，返回正方体十二条棱，或六个面，或其中的方块的坐标向量组成的列表。"
+      "text": "miehex.advice.af_square_block.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "将一个坐标向量作为正方体的中心坐标，一个正整数作为正方体的二分之边长，若布尔值为 true，返回该正方体所有方块的坐标向量组成的列表。$(br2)若布尔值为 false，返回正方体面上所有方块的坐标向量组成的列表；为 null，返回正方体十二条棱上所有方块的坐标向量组成的列表。"
+      "text": "miehex.entry.af_stack.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -109,11 +109,11 @@
       "anchor": "autumnfloods:rectangle_block",
       "input": "vec, vec, bool | null",
       "output": "[vec]",
-      "text": "以两个向量确定一个立方体，返回立方体十二条棱，或六个面，或其中的方块的坐标向量组成的列表。"
+      "text": "miehex.advice.af_rectangle_block.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "将两个坐标向量作为立方体的两个对角顶点坐标，若布尔值为 true，返回该立方体所有方块的坐标向量组成的列表。$(br2)若布尔值为 false，返回立方体面上所有方块的坐标向量组成的列表；为 null，返回立方体十二条棱上所有方块的坐标向量组成的列表。"
+      "text": "miehex.entry.af_stack.desc3"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "法术",
+  "name": "miehex.entry.af_spell",
   "category": "hexcasting:lore/autumnfloods",
   "icon": "hexal:mediafied_storage",
   "sortnum": 1,
@@ -13,7 +13,7 @@
       "anchor": "autumnfloods:grid",
       "input": "num",
       "output": "",
-      "text": "改变咒术网格的缩放大小，最小值为 0.5，最大值为 4.0。"
+      "text": "miehex.advice.af_grid.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,7 +21,7 @@
       "anchor": "autumnfloods:tags",
       "input": "entity, str, bool | null",
       "output": "any",
-      "text": "若布尔值为True或False，则添加或移除以 T_ 起始的字符串标签，为null，则判断实体是否持有指定标签；若字符串为空，则使用发光效果代替字符串标签。"
+      "text": "miehex.advice.af_tags.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -29,7 +29,7 @@
       "anchor": "autumnfloods:yaw",
       "input": "entity, vec",
       "output": "",
-      "text": "令指定实体看向指定坐标向量。"
+      "text": "miehex.advice.af_yaw.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -37,7 +37,7 @@
       "anchor": "autumnfloods:ride",
       "input": "entity.1, entity.2",
       "output": "",
-      "text": "令 entity.1 骑乘 entity.2，若二者已经处于相互骑乘的状态，则将其解除。当骑乘的作用目标为一些特殊实体时，可能出现危险的结果。"
+      "text": "miehex.advice.af_ride.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -45,7 +45,7 @@
       "anchor": "autumnfloods:high",
       "input": "entity, num",
       "output": "",
-      "text": "将实体的纵坐标与指定数值相加，保留其速度。"
+      "text": "miehex.advice.af_high.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -53,7 +53,7 @@
       "anchor": "autumnfloods:control",
       "input": "entity.1, entity.2",
       "output": "",
-      "text": "将 entity.2 设为 entity.1 的攻击目标，消耗 二者当前生命值中较小值 * 1,000 点媒质。"
+      "text": "miehex.advice.af_control.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -61,7 +61,7 @@
       "anchor": "autumnfloods:simulation",
       "input": "entity, str, num",
       "output": "",
-      "text": "对一个实体造成来源为指定名称的虚拟实体，数值为指定正整数的伤害，对同一实体造成的累计伤害不能超过四点，消耗 100 点媒质。"
+      "text": "miehex.advice.af_simulation.desc"
     },
     {
 			"type": "hexcasting:pattern",
@@ -69,7 +69,7 @@
 			"anchor": "autumnfloods:uncrafting",
 			"input": "entity",
 			"output": "",
-			"text": "将指定物品实体拆解为掉落物品，随机选择指定物品的一个合成配方，将其中每一个原料依据常见，少见，稀有和史诗的稀有度，以 4/5 ~ 1/5 的概率返还，消耗 10,000 点媒质。"
+			"text": "miehex.advice.af_uncrafting.desc"
 		},
     {
       "type": "hexcasting:pattern",
@@ -77,7 +77,7 @@
       "anchor": "autumnfloods:gravity",
       "input": "entity, num",
       "output": "",
-      "text": "设置实体的重力，默认值为 8，零代表无重力，负数代表重力方向向上。若数值在 0 - 8 之间，消耗 100 点媒质；大于 8 为 (num - 8) * 10000 点，小于 0 为 num² * 10000 点。"
+      "text": "miehex.advice.af_gravity.desc"
     },
     {
 			"type": "hexcasting:pattern",
@@ -85,7 +85,7 @@
 			"anchor": "autumnfloods:arrow",
 			"input": "vec, num",
 			"output": "entity",
-			"text": "在指定坐标向量处召唤一只基础伤害等同于指定数值，无视重力的光灵箭，num 为 1 ~ 5 之间的整数，并向栈中压入代表箭矢的实体 iota，消耗 num² * 1,000 点媒质。"
+			"text": "miehex.advice.af_arrow.desc"
 		},
     {
       "type": "hexcasting:pattern",
@@ -93,11 +93,11 @@
       "anchor": "autumnfloods:tear",
       "input": "entity, vec",
       "output": "",
-      "text": "将指定实体沿其当前速度的相反方向撕裂，并依据撕裂前后速度模长的差值计算消耗。"
+      "text": "miehex.advice.af_tear.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "记录实体当前速度为 v，然后给予实体沿指定向量方向，大小等于其模长的速度，并进行撕裂。$(br2)撕裂时，对实体造成|v|与|vec 在 v 相反方向上的分量|中较小值的平方点伤害。若撕裂后速度的模长减去|v|的差值大于 0.1，则消耗(|vec + v| - |v|) * 30,000 点媒质，否则，消耗 100 点媒质。"
+      "text": "miehex.entry.af_spell.desc1"
     }
   ]
 }

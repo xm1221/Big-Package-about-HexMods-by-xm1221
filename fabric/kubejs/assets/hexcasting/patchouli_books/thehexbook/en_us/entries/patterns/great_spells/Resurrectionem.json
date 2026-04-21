@@ -1,5 +1,5 @@
 {
-  "name": "复生",
+  "name": "miehex.entry.resurrectionem",
   "category": "hexcasting:patterns/great_spells",
   "icon": "minecraft:totem_of_undying",
   "sortnum": 8,
@@ -12,7 +12,7 @@
       "anchor": "miehex:resurrectionem",
       "input": "unknown",
       "output": "unknown",
-      "text": "“被钉在十字架上，死了，葬了。下到阴间；第三天从死里复活。”"
+      "text": "miehex.advice.resurrectionem.desc"
     }
   ]
 }

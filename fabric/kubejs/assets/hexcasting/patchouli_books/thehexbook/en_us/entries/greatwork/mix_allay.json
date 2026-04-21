@@ -1,5 +1,5 @@
 {
-  "name": "淬晶悦灵",
+  "name": "miehex.entry.mix_allay",
   "category": "hexcasting:greatwork",
   "icon": "hexcasting:quenched_allay_shard",
   "advancement": "hexcasting:enlightenment",
@@ -8,7 +8,7 @@
   "pages": [
     {
         "type":"patchouli:text",
-        "text":"有一位叫做Whiteord的咒法师创造了制造淬晶悦灵的法术，这种悦灵变种因为融入了大量的淬灵晶而拥有了施法能力，同时也更容易为咒法师们所控制——真是可爱的小家伙啊，不过，它们为什么总是垂着头呢？"
+        "text":"miehex.entry.mix_allay.desc1"
     },
     {
       "type": "patchouli:entity",
@@ -16,7 +16,7 @@
       "y": 44,
       "render_size": 37,
       "entity": "miehex:mix_allay",
-      "text": "可爱又迷人的奇妙生灵"
+      "text": "miehex.entry.mix_allay.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -24,7 +24,7 @@
       "anchor": "miehex:allay_mix",
       "input": "entity",
       "output": "entity",
-      "text": "消耗副手中的所有淬灵晶碎片，尝试将目标悦灵转化为淬晶悦灵。转化概率与碎片数量有关，若转化成功，生成实体被压入栈顶；若失败，大抵是不熟练的缘故罢。"
+      "text": "miehex.advice.allay_mix.desc"
     },
         {
       "type": "hexcasting:pattern",
@@ -32,7 +32,7 @@
       "anchor": "miehex:allay_move",
       "input": "entity, vec",
       "output": "",
-      "text": "接受一个淬晶悦灵实体和一个位置向量，此后，该悦灵会向此目标移动。"
+      "text": "miehex.advice.allay_move.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -40,7 +40,7 @@
       "anchor": "miehex:allay_casting",
       "input": "entity, list, num",
       "output": "",
-      "text": "接受淬晶悦灵实体、数和列表，给予淬晶悦灵所给数的紫水晶粉记的媒质，让其执行指定的法术列表。悦灵会分裂出一个类似玩家的意识在大约0.25秒后施法，因此，使用‘意识之精思’时会返回奇怪的结果。"
+      "text": "miehex.advice.allay_casting.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -48,7 +48,7 @@
       "anchor": "miehex:allay_stop",
       "input": "entity",
       "output": "",
-      "text": "强制中断目标悦灵当前正在执行的所有法术，并清除其施法状态。"
+      "text": "miehex.advice.allay_stop.desc"
     }
   ]
 }

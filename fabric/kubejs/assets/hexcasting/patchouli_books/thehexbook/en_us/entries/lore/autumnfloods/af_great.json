@@ -1,5 +1,5 @@
 {
-  "name": "大法术",
+  "name": "miehex.entry.af_great",
   "category": "hexcasting:lore/autumnfloods",
   "icon": "hexal:mediafied_storage",
   "sortnum": 4,
@@ -13,7 +13,7 @@
       "anchor": "autumnfloods:kcit",
       "input": "vec",
       "output": "",
-      "text": "将指定坐标向量处的方块运行时间减少 1 tick，并有 1/64 的概率触发随机刻，消耗少量媒质。"
+      "text": "miehex.advice.af_kcit.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,11 +21,11 @@
       "anchor": "autumnfloods:space",
       "input": "vec, vec, vec, [str], bool",
       "output": "",
-      "text": "将前两个向量作为立方体的对角顶点坐标，将匹配于黑白名单列表的方块移动至原位置向第三个偏移向量偏移处。"
+      "text": "miehex.advice.af_space.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "对选中区域中的所有方块进行判断，若布尔值为 true，则选中所有名称包含于字符串列表内的方块，为 false，则排除所有名称包含于字符串列表内的方块，将符合条件的方块向第三个向量代表的偏移向量偏移，并清空原区域。$(br2)记录移动的方块总数为 a，移除的方块总数为 b。消耗(Math.log10(a) + 1)² * 100000 + b * 10的万分之一紫水晶粉的媒质。"
+      "text": "miehex.entry.af_great.desc1"
     },
     {
       "type": "hexcasting:pattern",
@@ -33,11 +33,11 @@
       "anchor": "autumnfloods:reflection",
       "input": "",
       "output": "",
-      "text": "一定条件下，取消施法者受到的伤害，并将伤害反制至其来源。"
+      "text": "miehex.advice.af_reflection.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "给予施法者 1 秒的反制效果，反制期间将取消所有伤害，反制效果结束后，进入 6 秒的冷却时长，在反制或冷却期间再次使用，会令施法者获得凋零状态。$(br2)但若是在反制期间内受到来自其他实体的伤害，则会将伤害反制至原实体，并取消冷却，消耗少量媒质。"
+      "text": "miehex.entry.af_great.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -45,11 +45,11 @@
       "anchor": "autumnfloods:focus",
       "input": "entity, vec | num | entity",
       "output": "",
-      "text": "若第二参数是向量，则将实体的速度转向指定向量的方向，保留其速度大小；若第二个参数是实体，则交换两个实体的速度。"
+      "text": "miehex.advice.af_focus.desc"
     },
     {
       "type": "patchouli:text",
-      "text": "若第二个参数是数字，则以当前世界时间加上 此数字 tick 作为返回时间，记录实体当前的速度，然后将实体速度归零，达到返回时间后，将记录的速度加回。$(br2)如果在延迟期间再次释放，则记录实体当前的速度增加至记录值，并将返回时间更新为此次返回时间。"
+      "text": "miehex.entry.af_great.desc3"
     }
   ]
 }

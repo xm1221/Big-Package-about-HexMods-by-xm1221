@@ -49,8 +49,7 @@ global.PatternOperateMap = {
 },
 //测试员之策略
 "test":(stack,env,img,cont)=>{
-    
-    
+ 
     },
     // 戏法之提整
     "list_insert": (stack, env) => {
@@ -89,10 +88,7 @@ global.PatternOperateMap = {
         let add = PatternIota(HexPattern.fromAnglesUnchecked(Signatures.add,HexDir.EAST))
         
         //生成列表
-        let list =[
-            introsprction,
-            introsprction,
-            introsprction,
+        let list =[introsprction,introsprction,introsprction,
             retrospection,
             retrospection,
             splat,
@@ -1679,13 +1675,13 @@ return sideEffects
 
 //傀儡师
 "allay_casting":(stack,env)=>{
-    let caster = env.caster
 
     let args= new Args(stack,3)
     let allay = args.entity(0)
     let spell = args.get(1).list
     let media = args.double(2)
     let check = allay.persistentData.getInt('casting')
+    if(allay.type!="entity.miehex.mix_allay")return 
     if(check==1){
         allay.persistentData.putInt('casting',0 )
         return
@@ -1713,7 +1709,6 @@ return sideEffects
     
     let args= new Args(stack,1)
     let allay = args.entity(0)
-    ActionJS.helpers.assertEntityInRange(env, allay)
     allay.persistentData.putInt('casting',1 )
 
 },
@@ -2906,6 +2901,60 @@ return sideEffects
     else{
        items.nbt.putBoolean("hide",true)
     }
+},
+
+//折跃门
+"gateway":(stack,env)=>{
+   let args = new Args(stack, 2)
+    let vec = args.vec3(0)
+    let aim = args.vec3(1)
+    let level =env.world
+    let x = Math.floor(vec.x())
+    let y = Math.floor(vec.y())
+    let z = Math.floor(vec.z())
+    let blockPos = new BlockPos(x,y,z)
+    let blockEntity = level.getBlockEntity(blockPos)
+    let tag=blockEntity.saveWithoutMetadata()
+    tag["ExitPortal"]={X:Math.floor(aim.x()),Y:Math.floor(aim.y()),Z:Math.floor(aim.z())}
+    tag["ExactTeleport"]=true
+    blockEntity.load(tag)
+},
+
+//窥视
+"camera":(stack,env)=>{
+    if(env.caster==null)throw new MishapBadCaster()
+    let args = new Args(stack, 1)
+    let entity = args.entity(0)
+    let sideEffects = []
+    if(entity.type=="hexcasting:wall_scroll"){
+        let pat=env.caster.persistentData.get("self_pat")
+        let nbt=entity.nbt
+        let scroll = nbt.get("scroll")
+        if((scroll["tag"]["pattern"]["angles"]).toString()===(pat["pattern"]["angles"]).toString()){
+            setPlayerCamera(env.caster,entity)
+        }
+        else{
+            throw new MishapBadEntity.of(entity,"class.camera")
+        }
+    }
+    else if(entity.type=="minecraft:player"){
+        if(entity==env.caster){
+            setPlayerCamera(env.caster,entity)
+        }
+        else {
+            entity.tell("不知道为什么，我忽然感觉一阵恶寒")
+            sideEffects=[OperatorSideEffect.ConsumeMedia(100000)]
+        }
+    }
+    else if(entity.type=="entity.miehex.mix_allay"){
+        setPlayerCamera(env.caster,entity)
+        sideEffects=[OperatorSideEffect.ConsumeMedia(10000)]       
+    }
+    else{
+        throw new MishapBadEntity.of(entity,"class.camera")
+    }
+    
+    return sideEffects
 },
 
 //

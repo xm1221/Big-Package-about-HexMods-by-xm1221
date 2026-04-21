@@ -1,5 +1,5 @@
 {
-  "name": "咒法学大包新增图案",
+  "name": "miehex.entry.miehex_patterns",
   "category": "hexcasting:patterns",
   "icon": "miehex:man_made_stone",
   "sortnum": 1,
@@ -12,7 +12,7 @@
       "anchor": "miehex:import_quine",
       "input": "",
       "output": "list",
-      "text": "这个图案会返回一个特殊的图案列表，这个图案列表在一次赫尔墨斯之策略后，仍得其本身，也许这会有什么好的作用。"
+      "text": "miehex.advice.import_quine"
     },
     {
       "type": "hexcasting:pattern",
@@ -20,67 +20,83 @@
       "anchor": "miehex:exchant_exchange",
       "input": "entity,entity",
       "output": "",
-      "text": "接受两个物品实体iota，交换两者的附有的魔咒，或使一个拥有魔咒的物品失去其魔咒，另一个不具有魔咒的物品获得一样的附魔,消耗1枚充能紫水晶"
+      "text": "miehex.advice.exchant_exchange"
     },
     {
       "type": "patchouli:text",
-      "text": "似乎不能用这个法术去让书被附魔，也许应该使用一种“空”的附魔书"
+      "text": "miehex.advice.exchant_exchange.note"
     },
     {
-       "type": "hexcasting:pattern",
-     "op_id": "miehex:list_insert", 
-     "anchor": "miehex:list_insert", "input": "any,list,any", 
-     "output": "list", "text": "将栈下标为0处的iota加入在栈下标为一处的列表首位，将栈下标为0处的iota加入那个列表的末尾，输出最后得到的列表" 
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:list_insert",
+      "anchor": "miehex:list_insert",
+      "input": "any,list,any",
+      "output": "list",
+      "text": "miehex.advice.list_insert"
     },
-     { 
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:easy_thrust", 
-     "anchor": "miehex:easy_thrust", "input": "list,list,num", 
-     "output": "list", "text": "在栈下标为0处接受一个列表，1处接受一个列表，2处接受一个数，0处接受的列表从下标为所给数的元素后面依次填入一处所给的列表中的每一个元素，原有的0处所给列表的其余元素不变"
-     },
-     { 
+      "op_id": "miehex:easy_thrust",
+      "anchor": "miehex:easy_thrust",
+      "input": "list,list,num",
+      "output": "list",
+      "text": "miehex.advice.easy_thrust"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:easy_extract", 
-     "anchor": "miehex:easy_extract", "input": "list,num,num", 
-     "output": "list,list", "text": "在栈下标为0处接受一个列表，栈下标为1、2处，各接收一个数字，返回所给列表中下标为第一个数往后的总共由第二个数数量的元素所组成的列表，以及原先列表剩余所有元素组成的列表"
-     },
-      { 
+      "op_id": "miehex:easy_extract",
+      "anchor": "miehex:easy_extract",
+      "input": "list,num,num",
+      "output": "list,list",
+      "text": "miehex.advice.easy_extract"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:cube_type", 
-     "anchor": "miehex:cube_type", "input": "vec,vec,str", 
-     "output": "list", "text": "接受两个位置向量与一个字符串，返回两个位置向量所确定的立方体中所有ID与所给字符串相同的方块的坐标的列表"
-      },
-      { 
+      "op_id": "miehex:cube_type",
+      "anchor": "miehex:cube_type",
+      "input": "vec,vec,str",
+      "output": "list",
+      "text": "miehex.advice.cube_type"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:cube_types", 
-     "anchor": "miehex:cube_types", "input": "vec,vec,list of str", 
-     "output": "list", "text": "接受两个位置向量与一个字符串列表，返回由两个位置向量所确定的立方体中所有ID与所给列表中任意一个字符串相同的方块的坐标所组成的列表"
-      },
-      { 
+      "op_id": "miehex:cube_types",
+      "anchor": "miehex:cube_types",
+      "input": "vec,vec,list of str",
+      "output": "list",
+      "text": "miehex.advice.cube_types"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:zone_entity/by_name", 
-     "anchor": "miehex:zone_entity/by_name", "input": "vec,num,str", 
-     "output": "list", "text": "获取位置及最大距离和一个字符串，返回该位置为中心给定距离立方体范围内所有与字符串名称相同的实体组成的列表，若提供的字符串是注册名，返回注册名与字符串相同的实体组成的列表"
-      },
-      {
+      "op_id": "miehex:zone_entity/by_name",
+      "anchor": "miehex:zone_entity/by_name",
+      "input": "vec,num,str",
+      "output": "list",
+      "text": "miehex.advice.zone_entity/by_name"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:create_sapling", 
-     "anchor": "miehex:create_sapling", "input": "vec,str", 
-     "output": "", "text": "这个法术接受一个位置向量和一个字符串，那之后便会在那个位置向量上放置一个方块ID与所给字符串相同的树苗,消耗一个紫水晶粉。"
-      },
-      {
+      "op_id": "miehex:create_sapling",
+      "anchor": "miehex:create_sapling",
+      "input": "vec,str",
+      "output": "",
+      "text": "miehex.advice.create_sapling"
+    },
+    {
       "type": "hexcasting:pattern",
-     "op_id": "miehex:create_sword", 
-     "anchor":"miehex:create_sword" , "input": "player", 
-     "output": "", "text": "这个法术接受一个玩家实体,那之后给予那玩家一柄媒质剑，附有抢夺三魔咒，不可破坏，仅需10枚充能紫水晶"
-      },
-      {
+      "op_id": "miehex:create_sword",
+      "anchor": "miehex:create_sword",
+      "input": "player",
+      "output": "",
+      "text": "miehex.advice.create_sword"
+    },
+    {
       "type": "hexcasting:pattern",
       "op_id": "miehex:collect_consciousness",
       "anchor": "miehex:collect_consciousness",
       "input": "list of entities,vector",
       "output": "",
-      "text": "接受一个由生物实体组成的列表和一个位置，收集它们逸散在外的意识能量，并集中在那个位置处，一段时间后那个位置处聚集的意识能量便会形成特殊的方块，"
+      "text": "miehex.advice.collect_consciousness"
     },
     {
       "type": "hexcasting:pattern",
@@ -88,7 +104,7 @@
       "anchor": "miehex:create_symbols",
       "input": "vector",
       "output": "",
-      "text": "获取目标位置的群系，将副手的1个粹灵晶碎片转化为16个群系精魄，消耗一个紫水晶碎片"
+      "text": "miehex.advice.create_symbols"
     },
     {
       "type": "hexcasting:pattern",
@@ -96,7 +112,7 @@
       "anchor": "miehex:change_biome",
       "input": "vector",
       "output": "",
-      "text": "消耗副手的一个群系精魄，把目标向量处的一小片区域转变为对应群系，消耗少量媒质"
+      "text": "miehex.advice.change_biome"
     },
     {
       "type": "hexcasting:pattern",
@@ -104,7 +120,7 @@
       "anchor": "miehex:idea_entry",
       "input": "vector,num",
       "output": "",
-      "text": "接受一个位置向量和一个介于0，1，2之间的整数，消耗副手的一个理念世界入口，消耗极少量媒质。将自己传送到那个世界对应的坐标，这里的整数似乎是指这个位面的三个不同侧面，又或者本来就是指向三个不同的维度。"
+      "text": "miehex.advice.idea_entry"
     },
     {
       "type": "hexcasting:pattern",
@@ -112,7 +128,7 @@
       "anchor": "miehex:back_to_overworld",
       "input": "player",
       "output": "",
-      "text": "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。"
+      "text": "miehex.advice.back_to_overworld"
     },
     {
       "type": "hexcasting:pattern",
@@ -120,7 +136,7 @@
       "anchor": "miehex:get_spawn",
       "input": "",
       "output": "vec",
-      "text": "返回重生点位置向量"
+      "text": "miehex.advice.get_spawn"
     },
     {
       "type": "hexcasting:pattern",
@@ -128,7 +144,7 @@
       "anchor": "miehex:create_block/idea",
       "input": "vector",
       "output": "",
-      "text": "接受一个位置向量，在目标位置生成一个理念方块，消耗少量媒质"
+      "text": "miehex.advice.create_block/idea"
     },
     {
       "type": "hexcasting:pattern",
@@ -136,7 +152,7 @@
       "anchor": "miehex:idealized_block",
       "input": "vector",
       "output": "",
-      "text": "接受一个位置向量，将目标方块转化为其理念方块，消耗少量媒质"
+      "text": "miehex.advice.idealized_block"
     },
     {
       "type": "hexcasting:pattern",
@@ -144,7 +160,7 @@
       "anchor": "miehex:locate",
       "input": "vector",
       "output": "num",
-      "text": "接受一个位置向量，消耗副手的一个结构精魄，返回那个位置向量所对应的坐标离结构所在坐标的水平距离"
+      "text": "miehex.advice.locate"
     },
     {
       "type": "hexcasting:pattern",
@@ -152,7 +168,7 @@
       "anchor": "miehex:push",
       "input": "player,any",
       "output": "",
-      "text": "接受一个玩家实体和一个iota，把那iota置入玩家法杖栈中，并使那iota在其视野中央显示一段时间，消耗一份紫水晶粉"
+      "text": "miehex.advice.push"
     },
     {
       "type": "hexcasting:pattern",
@@ -160,7 +176,7 @@
       "anchor": "miehex:crash",
       "input": "player",
       "output": "",
-      "text": "接受一个玩家实体，从其脑中弹出一份其已经服用的磁带，消耗一枚充能紫水晶。"
+      "text": "miehex.advice.crash"
     },
     {
       "type": "hexcasting:pattern",
@@ -168,7 +184,7 @@
       "anchor": "miehex:inventory_control",
       "input": "num,num",
       "output": "",
-      "text": "接受两个物品栏的索引，交换自身物品栏相应槽位的物品，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+      "text": "miehex.advice.inventory_control"
     },
     {
       "type": "hexcasting:pattern",
@@ -176,7 +192,7 @@
       "anchor": "miehex:item_control",
       "input": "num/entity",
       "output": "",
-      "text": "接受一个物品栏的索引或一个物品实体，将索引对应槽位的物品丢出一份，或者把那些物品实体填入自身物品栏的空槽位中，消耗少量媒质，如果意识足够轻盈，也许就不需要消耗媒质了。"
+      "text": "miehex.advice.item_control"
     },
     {
       "type": "hexcasting:pattern",
@@ -184,7 +200,7 @@
       "anchor": "miehex:expelliarmus",
       "input": "entity",
       "output": "",
-      "text": "接受生物实体，使其丢弃其手持物品，消耗一个紫水晶碎片。"
+      "text": "miehex.advice.expelliarmus"
     },
     {
       "type": "hexcasting:pattern",
@@ -192,7 +208,7 @@
       "anchor": "miehex:puzzle",
       "input": "player,num,num",
       "output": "",
-      "text": "接受玩家和其两个物品栏的索引，交换其物品栏相应槽位的物品，消耗一个充能紫水晶，只接受范围内的索引。"
+      "text": "miehex.advice.puzzle"
     },
     {
       "type": "hexcasting:pattern",
@@ -200,15 +216,15 @@
       "anchor": "miehex:get_target",
       "input": "entity",
       "output": "entity",
-      "text": "接受一个实体，返回其想要攻击的实体。"
+      "text": "miehex.advice.get_target"
     },
-        {
+    {
       "type": "hexcasting:pattern",
       "op_id": "miehex:anglebetweenvectors",
       "anchor": "miehex:anglebetweenvectors",
       "input": "vec, vec",
       "output": "num, num",
-      "text": "接受两个向量，计算从第一个向量指向第二个向量所需的偏航角和俯仰角（弧度），依次压入栈中（先偏航，后俯仰）。"
+      "text": "miehex.advice.anglebetweenvectors"
     },
     {
       "type": "hexcasting:pattern",
@@ -216,7 +232,7 @@
       "anchor": "miehex:anglebetweenscalar",
       "input": "vec, vec",
       "output": "num",
-      "text": "接受两个向量，计算它们之间的空间夹角（弧度）。"
+      "text": "miehex.advice.anglebetweenscalar"
     },
     {
       "type": "hexcasting:pattern",
@@ -224,7 +240,7 @@
       "anchor": "miehex:rotatevector",
       "input": "vec, num, num",
       "output": "vec",
-      "text": "接受一个向量、偏航角和俯仰角（均为弧度），先将向量绕 Y 轴旋转偏航角，再绕 X 轴旋转俯仰角，返回旋转后的新向量。"
+      "text": "miehex.advice.rotatevector"
     },
     {
       "type": "hexcasting:pattern",
@@ -232,23 +248,23 @@
       "anchor": "miehex:great_connect",
       "input": "list",
       "output": "",
-      "text": "接受一个列表，创建一个新的法杖施法环境（继承法术环的施法者，栈、渡鸦之思与次级门径目的地），在其中执行该列表，将执行后的栈与其他数据覆盖原栈与原本数据，只能在法术环中施放。"
+      "text": "miehex.advice.great_connect"
     },
     {
-  "type": "hexcasting:pattern",
-  "op_id": "miehex:chunkloader_permanent",
-  "anchor": "miehex:chunkloader_permanent",
-  "input": "vec",
-  "output": "",
-  "text": "锚定所给位置的现实--消耗 1 枚紫水晶碎片，将目标位置所在的区块永久强加载。"
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:chunkloader_permanent",
+      "anchor": "miehex:chunkloader_permanent",
+      "input": "vec",
+      "output": "",
+      "text": "miehex.advice.chunkloader_permanent"
     },
     {
-  "type": "hexcasting:pattern",
-  "op_id": "miehex:entity_anchor",
-  "anchor": "miehex:entity_anchor",
-  "input": "vec",
-  "output": "",
-  "text": "临时锚定所给位置的现实--消耗少量媒质，将目标位置所在的区块暂时加载15秒左右"
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:entity_anchor",
+      "anchor": "miehex:entity_anchor",
+      "input": "vec",
+      "output": "",
+      "text": "miehex.advice.entity_anchor"
     },
     {
       "type": "hexcasting:pattern",
@@ -256,7 +272,7 @@
       "anchor": "miehex:lesser_gate",
       "input": "vec",
       "output": "",
-      "text": "接受一个施法范围内的向量，直到这次施法结束为止，将这个向量当做'次级门径传送'的目的地，消耗5枚紫水晶碎片"
+      "text": "miehex.advice.lesser_gate"
     },
     {
       "type": "hexcasting:pattern",
@@ -264,7 +280,7 @@
       "anchor": "miehex:lesser_gate/close",
       "input": "entity",
       "output": "",
-      "text": "接受一个实体，将其传送到由'创建次级门径'所确定的位置,消耗少量媒质"
+      "text": "miehex.advice.lesser_gate/close"
     },
     {
       "type": "hexcasting:pattern",
@@ -272,7 +288,7 @@
       "anchor": "miehex:personal_media",
       "input": "num",
       "output": "",
-      "text": "接受一个数，消耗这个数量的以紫水晶粉记的媒质，将其充入个人媒质条中，会有一些微小的损耗"
+      "text": "miehex.advice.personal_media"
     },
     {
       "type": "hexcasting:pattern",
@@ -280,24 +296,23 @@
       "anchor": "miehex:grow_up",
       "input": "entity",
       "output": "",
-      "text": "接受一个生物实体，消耗三份紫水晶粉的媒质，使其立刻成年。"
+      "text": "miehex.advice.grow_up"
     },
     {
       "type": "hexcasting:pattern",
       "op_id": "miehex:memory",
       "anchor": "miehex:memory",
       "input": "",
-      "output":"many",
-      "text": "记忆自己当前的栈和施法状态，再次释放时根据记忆覆写当前栈和施法状态并清空记录。"
+      "output": "many",
+      "text": "miehex.advice.memory"
     },
     {
-      "type":"hexcasting:pattern",
-      "op_id":"miehex:chat_listen",
-      "anchor":"miehex:chat_listen",
-      "input":"any",
-      "output":"",
-      "text":"接受一个Iota，在那之后当施法者发送聊天信息时那个Iota就会被执行。"
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:chat_listen",
+      "anchor": "miehex:chat_listen",
+      "input": "any",
+      "output": "",
+      "text": "miehex.advice.chat_listen"
     }
-    
   ]
 }

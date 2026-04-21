@@ -6,6 +6,12 @@ global.BrainsweepActions={
         let dimKey = iota.getWorldKey().location().toString()
         let persistentData=entity.persistentData
         let worlds = persistentData.get("omniscience")||{}
+    if(worlds[dimKey]==1){
+        let e=EntityType.VILLAGER.create(innerEnv.world)
+        let health = entity.getHealth()
+        entity.setHealth(health-1)
+        throw new MishapAlreadyBrainswept(e)
+}
     if(worlds[dimKey]!=1){
         let id = entity.username
         AdvCheck(entity,"miehex:main/root/dim_casting",()=>{
@@ -28,12 +34,7 @@ global.BrainsweepActions={
         let text = Text.literal("").append(Text.literal(`${dimKey}`).obfuscated(true)).append(Text.literal("：")).append(Text.literal(`奉献也就是风险，冒险总得有点回报......`).color("blue"))
         entity.tell(text)
 }
-    else {
-        let e = EntityType.BAT.create(innerEnv.world)
-        let health = entity.getHealth()
-        entity.setHealth(health-1)
-        throw new MishapAlreadyBrainswept(e)
-    }
+
     return
         //entity.tell(`${entity.persistentData.get("omniscience")}`)
     },
@@ -57,6 +58,17 @@ global.BrainsweepActions={
         return 
         
     },
+    //自我标记
+    "self_pat":(entity,iota,innerEnv)=>{
+        if(entity!=innerEnv.caster)throw new MishapOthersName(entity)
+        let health = entity.getHealth()
+        entity.setHealth(health-1)
+        let tag = serializeIota(iota)["hexcasting:data"]
+        let tags = new CompoundTag()
+        tags.put("pattern",tag)
+        entity.persistentData.put("self_pat",tags)
+        return 
+    }
 
     
 

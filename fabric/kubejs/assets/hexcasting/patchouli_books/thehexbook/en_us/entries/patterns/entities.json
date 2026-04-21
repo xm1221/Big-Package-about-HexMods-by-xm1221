@@ -138,7 +138,7 @@
       "type": "hexcasting:pattern",
      "op_id": "miehex:zone_entity/by_name", 
      "anchor": "miehex:zone_entity/by_name", "input": "vec,num,str", 
-     "output": "list", "text": "获取位置及最大距离和一个字符串，返回该位置为中心给定距离立方体范围内所有与字符串名称相同的实体组成的列表，若提供的字符串是注册名，返回注册名与字符串相同的实体组成的列表"
+     "output": "list", "text": "miehex.advice.zone_entity_by_name.desc"
       },
     {
       "type": "hexcasting:pattern",

@@ -52,7 +52,7 @@
       "anchor": "miehex:grow_up",
       "input": "entity",
       "output": "",
-      "text": "接受一个生物实体，消耗三份紫水晶粉的媒质，使其立刻成年。"
+      "text": "miehex.advice.grow_up.desc"
     },
     {
       "type": "hexcasting:pattern",
@@ -60,7 +60,7 @@
       "anchor": "miehex:exchant_exchange",
       "input": "entity,entity",
       "output": "",
-      "text": "接受两个物品实体iota，交换两者的附有的魔咒，或使一个拥有魔咒的物品失去其魔咒，另一个不具有魔咒的物品获得一样的附魔,消耗1枚充能紫水晶"
+      "text": "miehex.advice.exchant_exchange.desc"
     },
     {
       "type": "hexcasting:pattern",

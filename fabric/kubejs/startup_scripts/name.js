@@ -240,6 +240,9 @@ StartupEvents.registry('hexcasting:action', e => {
    //iota隐藏
    registerPatternWrap("qqawwwdee",HexDir.EAST,"tooltip_hide")
 
+   //窥视
+   registerPatternWrap("eewqqwqqwwwqqeqqwwwqqwqqwee",HexDir.NORTH_EAST,"camera")
+
 // ========================= ~~~ 一条华丽的分割线 ~~~ =========================
 try{
   // 栈操作

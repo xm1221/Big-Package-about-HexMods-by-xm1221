@@ -140,19 +140,19 @@
        "type": "hexcasting:pattern",
      "op_id": "miehex:list_insert", 
      "anchor": "miehex:list_insert", "input": "any,list,any", 
-     "output": "list", "text": "将栈下标为0处的iota加入在栈下标为一处的列表首位，将栈下标为0处的iota加入那个列表的末尾，输出最后得到的列表" 
+     "output": "list", "text": "miehex.advice.list_insert.desc" 
     },
      { 
       "type": "hexcasting:pattern",
      "op_id": "miehex:easy_thrust", 
      "anchor": "miehex:easy_thrust", "input": "list,list,num", 
-     "output": "list", "text": "在栈下标为0处接受一个列表，1处接受一个列表，2处接受一个数，0处接受的列表从下标为所给数的元素后面依次填入一处所给的列表中的每一个元素，原有的0处所给列表的其余元素不变"
+     "output": "list", "text": "miehex.advice.easy_thrust.desc"
      },
      { 
       "type": "hexcasting:pattern",
      "op_id": "miehex:easy_extract", 
      "anchor": "miehex:easy_extract", "input": "list, num, num", 
-     "output": "list,list", "text": "在栈下标为0处接受一个列表，栈下标为1、2处，各接收一个数字，返回所给列表中下标为第一个数往后的总共由第二个数数量的元素所组成的列表，以及原先列表剩余所有元素组成的列表"
+     "output": "list,list", "text": "miehex.advice.easy_extract.desc"
      },
      {
       "type":"hexcasting:pattern",
@@ -160,19 +160,19 @@
       "anchor":"miehex:list_by_index",
       "input":"list,list of num",
       "output":"list",
-      "text":"接受一个列表和一个由其索引组成的列表，将前一个列表中所有对应索引的元素组成一个新列表返回。"
+      "text":"miehex.advice.list_by_index.desc"
      },
      { 
       "type": "hexcasting:pattern",
      "op_id": "miehex:cube_type", 
      "anchor": "miehex:cube_type", "input": "vec,vec,str", 
-     "output": "list", "text": "接受两个位置向量与一个字符串，返回两个位置向量所确定的立方体中所有ID与所给字符串相同的方块的坐标的列表"
+     "output": "list", "text": "miehex.advice.cube_type.desc"
       },
       { 
       "type": "hexcasting:pattern",
      "op_id": "miehex:cube_types", 
      "anchor": "miehex:cube_types", "input": "vec,vec,list of str", 
-     "output": "list", "text": "接受两个位置向量与一个字符串列表，返回由两个位置向量所确定的立方体中所有ID与所给列表中任意一个字符串相同的方块的坐标所组成的列表"
+     "output": "list", "text": "miehex.advice.cube_types.desc"
       }
     
     

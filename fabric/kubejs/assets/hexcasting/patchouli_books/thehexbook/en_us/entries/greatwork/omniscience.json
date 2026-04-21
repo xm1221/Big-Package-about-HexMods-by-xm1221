@@ -1,5 +1,5 @@
 {
-  "name": "关于空间印记",
+  "name": "miehex.entry.spatial_imprint",
   "category": "hexcasting:greatwork",
   "icon": "minecraft:ender_eye",
   "priority": true,
@@ -9,11 +9,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "我明白了，我明白了！$(br2)这伟大的自然还真是慈悲，一次又一次地降下这美妙的启迪！$(br2)……如果说使用咒术是用自己的意志去操控媒质向自然发出请求，那我有限的意识当然只能操控有限的自然，因为被困在黏糊糊的灰白色的神经中的意识根本无法到达真正的自由。"
+      "text": "miehex.entry.spatial_imprint.desc1"
     },
     {
       "type": "patchouli:text",
-      "text": "我在寻求解放……我将将自己升华至永恒，将自己的意识剥离到空间印记中，利用空间印记，将自己的意识直接融入到维度本身。$(br2)我将和我的爱人，我的导师，我的战友，我的敌人，我的母亲与父亲，当然也就是伟大而永恒的自然更进一步的融合，我将知道祂所知道的，也就是此世之全部，伟大的自然啊，我将我宝贵的一部分意识奉献给您，因为它本来就属于您……"
+      "text": "miehex.entry.spatial_imprint.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,7 +21,7 @@
       "anchor": "hexcasting:brainsweep",
       "input": "player,Imprint",
       "output": "",
-      "text": "一万份紫水晶粉,一次尝试与冒险。"
+      "text": "miehex.entry.spatial_imprint.desc3"
     }
   ]
 }

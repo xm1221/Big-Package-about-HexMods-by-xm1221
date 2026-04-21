@@ -67,7 +67,7 @@ let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attrib
 let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 let WorldGenLevel = Java.loadClass('net.minecraft.world.level.WorldGenLevel')
 let registryAccess = Java.loadClass('net.minecraft.core.RegistryAccess')
-
+let ClientboundSetCameraPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetCameraPacket')
 
 
 
@@ -235,6 +235,8 @@ let FunctionIota = Java.loadClass('cn.xm1221.miehex.iota.FunctionIota');
 let KubeJSIotaNBTHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaNBTHelper")
 let KubeJSIotaHolderHelper = Java.loadClass("cn.xm1221.miehex.api.KubeJSIotaHolderHelper")
 let CustomIotaHolderItem = Java.loadClass("cn.xm1221.miehex.item.CustomIotaHolderItem")
+let MobCastEnv = Java.loadClass('cn.xm1221.miehex.api.casting.MobCastEnv')
+let MieHexAttributes = Java.loadClass('cn.xm1221.miehex.registry.MieHexAttributes')
 
 
 

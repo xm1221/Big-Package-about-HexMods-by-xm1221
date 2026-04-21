@@ -74,6 +74,18 @@ ServerEvents.customCommand("ambit_r",e=>{
   player.tell(`${player.getAttributeValue(HexAttributes.AMBIT_RADIUS)}`)
 })
 
-ServerEvents.customCommand("test" ,e=>{
-    e.player.tell(`${Object.keys(EntityType)}`)
+ServerEvents.customCommand("data" ,e=>{
+    let res=e.player.rayTrace(5)
+    let level = e.player.level
+    if (res.type === 'block') {
+        let targetBlock = res.block
+        let blockPos = new BlockPos(targetBlock.x,targetBlock.y,targetBlock.z)
+        let blockEntity = level.getBlockEntity(blockPos)
+        let tag=blockEntity.saveWithoutMetadata()
+        e.player.tell(`${tag}`)
+        console.log(`${tag}`)
+    }
+
 })
+
+

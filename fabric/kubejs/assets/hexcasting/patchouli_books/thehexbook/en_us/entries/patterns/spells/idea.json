@@ -1,5 +1,5 @@
 {
-  "name": "理型",
+  "name": "miehex.entry.idea",
   "category": "hexcasting:patterns/spells",
   "icon": "minecraft:book",
   "advancement": "hexcasting:root",
@@ -8,39 +8,39 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "理型被认为是永恒不变的模式或范本，我猜测自然根据一个独一无二的、可知的理型作为模板创造了宇宙万物——因此，我也可以根据理型的模板创造生物......甚至修改我创造物的一些属性"
+      "text": "miehex.entry.idea.desc"
     },
     {
-    "type": "hexcasting:pattern",
-    "op_id": "miehex:new_idea",
-    "anchor": "miehex:new_idea",
-    "input": "",
-    "output": "idea",
-    "text": "返回空理型"
-},
-{
-    "type": "hexcasting:pattern",
-    "op_id": "miehex:idea_get",
-    "anchor": "miehex:idea_get",
-    "input": "entity, idea",
-    "output": "idea",
-    "text": "消耗少量媒质，从目标实体提取各项基础属性（最大生命值、移动速度、攻击力、护甲），填入一个空理型中，生成一个对应生物的理型 Iota 并压入栈顶。"
-},
-{
-    "type": "hexcasting:pattern",
-    "op_id": "miehex:summon_idea_entity",
-    "anchor": "miehex:summon_idea_entity",
-    "input": "idea, vec",
-    "output": "entity",
-    "text": "根据所给理型在目标位置生成一个生物实体，并返回实体 Iota。实体的各项属性依照理型设定。消耗（最大生命值 * 10 + 移动速度 * 1000 + 攻击力 * 100 + 护甲 * 50）数量的紫水晶粉，至少会消耗一个充能紫水晶"
-},
-{
-    "type": "hexcasting:pattern",
-    "op_id": "miehex:idea_modify",
-    "anchor": "miehex:idea_modify",
-    "input": "idea, num, num",
-    "output": "idea",
-    "text": "消耗少量媒质，修改理型的某一项属性。索引 1~4 分别对应：最大生命值、移动速度、攻击力、护甲。返回一个新的理型 Iota "
-}
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:new_idea",
+      "anchor": "miehex:new_idea",
+      "input": "",
+      "output": "idea",
+      "text": "miehex.advice.idea_new"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:idea_get",
+      "anchor": "miehex:idea_get",
+      "input": "entity, idea",
+      "output": "idea",
+      "text": "miehex.advice.idea_get"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:summon_idea_entity",
+      "anchor": "miehex:summon_idea_entity",
+      "input": "idea, vec",
+      "output": "entity",
+      "text": "miehex.advice.idea_summon"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:idea_modify",
+      "anchor": "miehex:idea_modify",
+      "input": "idea, num, num",
+      "output": "idea",
+      "text": "miehex.advice.idea_modify"
+    }
   ]
 }

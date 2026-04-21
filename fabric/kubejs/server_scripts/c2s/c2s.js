@@ -76,9 +76,7 @@ ItemEvents.firstLeftClicked('miehex:all_in_one', event => {
         hardnesss.hardness=hardness
         cc["hexcasting:harness"]=hardnesss
         nbt.put("cardinal_components",cc)
-    let helper = new KubeJSIotaNBTHelper(iota,tag,level)
-    let display=helper.getDisplay()
-    let text = Text.translatable("item.miehex.all_in_one").color("gold").append(Text.literal(`:`)).append(display)
+    let text = Text.translatable("item.miehex.all_in_one").color("gold")
     player.setStatusMessage(text)}
     
     else{
@@ -94,9 +92,7 @@ ItemEvents.firstLeftClicked('miehex:all_in_one', event => {
     let vm =  new CastingVM.empty(env)
     vm.queueExecuteAndWrapIotas(iota.list,level)
     let page = CustomIotaHolderItem.GetCurrentPage(hand)
-    let helper = new KubeJSIotaNBTHelper(iota,tag,level)
-    let display=helper.getDisplay()
-    let text = Text.translatable("item.miehex.all_in_one").color("gold").append(Text.literal(`[${page}]:`)).append(display)
+    let text = Text.translatable("item.miehex.all_in_one").color("gold").append(Text.literal(`[${page}]`))
     player.setStatusMessage(text)
     let ops=vm.image.opsConsumed
     let cDam = hand.nbt.getInt('Damage')

@@ -1,0 +1,40 @@
+{
+  "name": "miehex.entry.self_pat",
+  "category": "hexcasting:greatwork",
+  "icon": "minecraft:name_tag",
+  "sortnum": 3,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "read_by_default": false,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "miehex.entry.self_pat.desc1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "miehex.entry.self_pat.desc2"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "miehex.entry.self_pat.desc3"
+    },
+    {
+        "type": "hexcasting:pattern",
+      "op_id": "hexcasting:brainsweep",
+      "anchor": "hexcasting:brainsweep",
+      "input": "player,pattern",
+      "output": "",
+      "text": "miehex.entry.self_pat.desc4"
+
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:camera",
+      "anchor": "miehex:camera",
+      "input": "entity",
+      "output": "",
+      "text": "miehex.advice.camera.desc"
+    }
+  ]
+}

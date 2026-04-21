@@ -1,7 +1,7 @@
-
+//Disabled
 // ==================== 法术配置映射 ====================
 // 键：法术类型标识（字符串），值包含 item、spellName、iotaMessage 等
-let spellMap = {
+/*let spellMap = {
     boom: {
         // 直接使用 Item.of 构造完整的物品堆（包含 NBT）
         item: Item.of('hexcasting:artifact','{"hexcasting:media":64000L,"hexcasting:start_media":6400000L,patterns:[{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,1B,4B,5B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,5B,4B,4B,0B],start_dir:2b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,0B,4B,4B,0B,4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"}],pigment:{owner:[I;0,0,0,0],stack:{Count:1b,id:"hexcasting:default_colorizer"}}}'),
@@ -11,7 +11,7 @@ let spellMap = {
         colddown: 180,
         wolulu:100                              
     },
-    /*catch:{
+    catch:{
         item:Item.of('hexcasting:cypher', '{"hexcasting:media":900000L,"hexcasting:start_media":900000L,patterns:[{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;5B,4B,5B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,1B,4B,5B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,2B,4B,4B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,2B,0B,2B,5B,2B,0B,2B],start_dir:1b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,4B,0B,2B,2B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;2B,1B,2B,2B,0B,4B],start_dir:0b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;0B,4B,5B,4B,0B],start_dir:2b}},"hexcasting:type":"hexcasting:pattern"},{"hexcasting:data":{level:0,parent:{angles:[B;4B,0B,5B,5B,5B,0B,4B,5B,0B],start_dir:3b}},"hexcasting:type":"hexcasting:pattern"}],pigment:{owner:[I;0,0,0,0],stack:{Count:1b,id:"hexcasting:default_colorizer"}}}'),
         spellName:'catch',
         iotaMessage: 'HexPattern[SOUTH_WEST, awqqqwaqw]',
@@ -44,11 +44,11 @@ let spellMap = {
         colddown: 5,
         wolulu:1  
 
-    }*/
+    }
 
 
     
-};
+}
 
 // ==================== 实体修改 ====================
 EntityJSEvents.modifyEntity(e => {
@@ -208,6 +208,7 @@ EntityJSEvents.modifyEntity(e => {
         })
     })
 })
+*/
  
 
 

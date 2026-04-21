@@ -1,5 +1,5 @@
 {
-  "name": "理念世界入口",
+  "name": "miehex.entry.ideas_world_entry",
   "category": "hexcasting:items/ccrecipes",
   "icon": "miehex:ideas_world_entry",
   "sortnum": 8,
@@ -8,12 +8,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "我发现，如果让一些特别的材料聚集到一起，再搭配上一个群系精魄作为引导，就可以创造出一个特殊的入口，通往一个奇妙的世界,那个世界空阔虚无，似乎已经沉寂很久了，我无端的想把它称为理念世界，也许我可以把那里打造成我的伊甸园。"
+      "text": "miehex.entry.ideas_world_entry.desc1"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "miehex:entry",
-      "text": "理念世界的入口，似乎是一次性的消耗品。"
+      "text": "miehex.entry.ideas_world_entry.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,7 +21,7 @@
       "anchor": "miehex:idea_entry",
       "input": "vector,num",
       "output": "",
-      "text": "接受一个位置向量和一个介于0，1，2之间的整数，消耗副手的一个理念世界入口，消耗极少量媒质。将自己传送到那个世界对应的坐标，这里的整数似乎是指这个位面的三个不同侧面，又或者本来就是指向三个不同的维度。"
+      "text": "miehex.advice.idea_entry"
     },
     {
       "type": "hexcasting:pattern",
@@ -29,17 +29,16 @@
       "anchor": "miehex:back_to_overworld",
       "input": "player",
       "output": "",
-      "text": "回家的办法。接受一个玩家实体，将其传送回其在主世界的出生点，消耗一个充能紫水晶。"
+      "text": "miehex.advice.back_to_overworld"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "miehex:carpet",
-      "text": "一种特殊的织造品，上面绣有复杂的咒文。当被右键点击时，会将其上方的实体传送到与当前维度相对应的理念世界，可惜返程并不方便。"
+      "text": "miehex.entry.ideas_world_entry.desc3"
     },
     {
       "type": "patchouli:text",
-      "text": "传送规则如下：$(br)- 主世界：$(bold)ideas_world_1$()$(br)- 下界：$(bold)ideas_world_0$()$(br)- 末地：$(bold)ideas_world_2$()$(br)注意：与进入理念世界的法术不同，传送毯不会在目标位置生成立足的方块。被传送者可能会直接坠入虚空或卡在固体方块中。建议确保目标位置安全，或配合其他装置使用。$(br2)当传送玩家以外的生物实体时，会消耗主手上相当于生物一半生命值的粹灵晶碎片。"
+      "text": "miehex.page.idea_entry.teleport_rules"
     }
-
   ]
 }

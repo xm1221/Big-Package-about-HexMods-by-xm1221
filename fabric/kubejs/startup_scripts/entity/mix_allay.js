@@ -59,21 +59,6 @@ StartupEvents.registry('entity_type', event => {
     builder.animationResource(entity => 'miehex:animations/entity/mix_allay.animation.json')
 
 
-    // 右键交互示例：给予物品（比如手持钻石时，生物发出声音）
-    /*builder.onInteract(context => {
-        const { entity, player, hand } = context
-        if (entity.level.isClientSide()) return
-        let item = player.getItemInHand(hand)
-        if (item.id == 'minecraft:diamond') {
-            player.tell('你给了它一颗钻石，它很高兴！')
-            entity.level.playSound(null, entity.x, entity.y, entity.z,
-                'minecraft:entity.allay.ambient', 'neutral', 1, 1)
-            // 可选：消耗物品
-            // item.shrink(1)
-        }
-        return true // 表示交互已处理
-    })*/
-
      builder.addAnimationController('main_controller', 5, event => {
         if (event.entity.isMoving()) {
             // 如果实体在移动，播放行走动画（假设你定义了 walk 动画）

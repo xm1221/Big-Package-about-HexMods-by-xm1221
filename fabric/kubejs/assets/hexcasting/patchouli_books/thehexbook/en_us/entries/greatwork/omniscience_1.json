@@ -1,5 +1,5 @@
 {
-  "name": "全知",
+  "name": "miehex.entry.omniscience",
   "category": "hexcasting:greatwork",
   "icon": "minecraft:respawn_anchor",
   "priority": true,
@@ -9,11 +9,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "我成功了。$(br2)一万份紫水晶粉，终究是换来了那美人对我的回眸。"
+      "text": "miehex.entry.omniscience.desc1"
     },
     {
       "type": "patchouli:text",
-      "text": "我能感受到我所熟知的这个世界正在和我一同呼吸……尽管我的意识已经残破，但我知道我的能力比以往更为强大。$(br2)只要我还身处这个维度，我就可以访问这个维度上的任何一个位置与任何一个实体——我必将知晓一切……$(br2)当然，也只能是这个维度。毕竟，我已经把那一部分自己永远留在了那里。"
+      "text": "miehex.entry.omniscience.desc2"
     },
     {
       "type": "hexcasting:pattern",
@@ -21,7 +21,7 @@
       "anchor": "hexcasting:brainsweep",
       "input": "player,Imprint",
       "output": "",
-      "text": "不过，如果我分裂了更多意识呢？如果我的一切都与自然融于一体呢？"
+      "text": "miehex.entry.omniscience.desc3"
     }
   ]
 }

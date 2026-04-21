@@ -85,7 +85,7 @@
       "anchor": "miehex:guide",
       "input": "pattern|any",
       "output": "",
-      "text": "当研究不明白时，也可以尝试使用这个图案来询问一位智者，他自称普罗米修斯，据说是一位先知。他的意识似乎被困在了这个图案里，无法离开，所以他只能通过图案来和我交流。"
+      "text": "miehex.advice.guide.desc"
 
     }
   ]

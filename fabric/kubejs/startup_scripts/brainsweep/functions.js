@@ -14,9 +14,7 @@ function BarinSweep(entity){
     if(sweep.getBoolean("brainswept")==true){
        throw new MishapAlreadyBrainswept(entity)
     }
-    console.log(`Shap`)
     sweep.putBoolean("brainswept",true)
-    //console.log(`${sweep}`)
     cc.put("hexcasting:brainswept",sweep)
     nbt.put("cardinal_components",cc)
     entity.nbt=nbt
@@ -53,5 +51,26 @@ function AdvCheck (player,adv,callback){
     else{
         return true
     }
+}
+
+//视角操控
+/**
+ * 向指定玩家发送相机切换数据包，并将其视角绑定到目标实体。
+ * @param {Internal.ServerPlayer} player - 要切换视角的玩家
+ * @param {Internal.Entity} targetEntity - 要绑定的目标实体（可以是任意实体，甚至玩家自己）
+ */
+function setPlayerCamera(player, targetEntity) {
+    // 1. 将KubeJS包装的player对象还原为原生的ServerPlayer实例
+    let serverPlayer = player
+
+    // 2. 创建相机切换数据包，构造参数为目标实体
+    let cameraPacket = new ClientboundSetCameraPacket(targetEntity);
+
+    // 3. 获取玩家的网络连接（Connection）对象
+    let connection = serverPlayer.connection;
+
+    // 4. 通过连接发送数据包
+    connection.send(cameraPacket);
+    connection.resetPosition();
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "锚定现实",
+  "name": "miehex.entry.world",
   "category": "hexcasting:patterns/spells",
   "icon": "hexcasting:pride_colorizer_transgender",
   "sortnum": 12,
@@ -8,23 +8,23 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "这个世界的现实似乎并不总是那么‘真实’与‘稳定’，离我太远的咒灵似乎会停止工作、我不在家时作物似乎也不怎么生长，每当我向远方望去、世界仿佛总是在一片迷雾中......好在，我找到了维持‘真实’的办法。"
+      "text": "miehex.entry.world.desc1"
     },
     {
-  "type": "hexcasting:pattern",
-  "op_id": "miehex:chunkloader_permanent",
-  "anchor": "miehex:chunkloader_permanent",
-  "input": "vec",
-  "output": "",
-  "text": "锚定所给位置的现实--消耗 1 枚紫水晶碎片，将目标位置所在的区块永久强加载。"
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:chunkloader_permanent",
+      "anchor": "miehex:chunkloader_permanent",
+      "input": "vec",
+      "output": "",
+      "text": "miehex.advice.chunkloader_permanent.desc"
     },
     {
-  "type": "hexcasting:pattern",
-  "op_id": "miehex:entity_anchor",
-  "anchor": "miehex:entity_anchor",
-  "input": "vec",
-  "output": "",
-  "text": "临时锚定所给位置的现实--消耗少量媒质，将目标位置所在的区块暂时加载15秒左右"
+      "type": "hexcasting:pattern",
+      "op_id": "miehex:entity_anchor",
+      "anchor": "miehex:entity_anchor",
+      "input": "vec",
+      "output": "",
+      "text": "miehex.advice.entity_anchor.desc"
     }
   ]
 }

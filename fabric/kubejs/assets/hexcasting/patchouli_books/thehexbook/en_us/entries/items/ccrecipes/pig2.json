@@ -1,5 +1,5 @@
 {
-     "name": "探险计划",
+     "name": "miehex.entry.ccrecipes.pig2",
   "category": "hexcasting:items/ccrecipes",
   "icon": "minecraft:golden_axe",
   "sortnum": 4,
@@ -8,7 +8,7 @@
   "pages":[
     {
       "type": "patchouli:text",
-      "text": "搞不懂，搞不懂，到底要怎么样才能正确的让这些远古战士刚烈而坚硬的意志好好的聚拢在一起……老是玩弄这些人造出来的仿制品是没有用的，我得再次前往下界深处去寻找真正的战士……"
+      "text": "miehex.entry.ccrecipes.pig2.desc"
     }
     ]
 }

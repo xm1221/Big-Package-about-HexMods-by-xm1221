@@ -7,8 +7,10 @@ function BrainsweepRegister(id,priority,entityId,iotaTypeId,cost,namespace){
   
                 if(!global.BrainsweepActions[id]){env.caster.tell(`DISABLED!`)}
                 try{
-                    let effectFunction=global.BrainsweepActions[id](entity, iota, env)
-                    return BrainsweepCallback.buildResult(effectFunction, cost,ParticleSpray.burst(entity.position(),1.0,2));
+                    global.BrainsweepActions[id](entity, iota, env)
+                    return BrainsweepCallback.buildResult((InnerEnv)=>{
+                       global.BrainsweepActions[id](entity, iota, InnerEnv)
+                    }, cost,ParticleSpray.burst(entity.position(),1.0,2));
                 }
                 catch(e){
                     if(e instanceof Mishap)throw e
@@ -33,8 +35,8 @@ BrainsweepRegister("water_breath_0",0,"minecraft:salmon","hexcasting:entity",100
 BrainsweepRegister("water_breath_1",0,"minecraft:cod","hexcasting:entity",10000,"miehex")
 BrainsweepRegister("water_breath_2",0,"minecraft:tropical_fish","hexcasting:entity","miehex")
 
-//意识融合
-//BrainsweepRegister("consciousness_fusion",1,"minecraft:player","hexcasting:vec3",100000,"miehex")
+//自我标记
+BrainsweepRegister("self_pat",0,"minecraft:player","pattern",100000,"miehex")
 
 
 
