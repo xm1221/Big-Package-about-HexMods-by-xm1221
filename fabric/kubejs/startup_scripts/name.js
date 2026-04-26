@@ -174,8 +174,8 @@ StartupEvents.registry('hexcasting:action', e => {
     //铁砧之馏化
     registerPatternWrap("qawwwwaqeeeaqwwqaee",HexDir.EAST,"enchant_add")
 
-    //柏拉图之精思
-    registerPatternWrap("qwqwqwqwqwq",HexDir.EAST,"new_idea")
+    //柏拉图之精思  use mods 
+    /*registerPatternWrap("qwqwqwqwqwq",HexDir.EAST,"new_idea")
 
     //苏格拉底之馏化
     registerPatternWrap("qwwwdwewdwwwqwqwwwdwewdwwwqqqwe",HexDir.EAST,"idea_get")
@@ -184,7 +184,7 @@ StartupEvents.registry('hexcasting:action', e => {
     registerPatternWrap("wqwqawdeaqqdeewew",HexDir.NORTH_EAST,"summon_idea_entity")
 
     //亚里士多德之提整
-    registerPatternWrap("wewedwaqdeeaqqwqw",HexDir.NORTH_WEST,"idea_modify")
+    registerPatternWrap("wewedwaqdeeaqqwqw",HexDir.NORTH_WEST,"idea_modify")*/
 
     //普罗米修斯之启示
     registerPatternWrap("ede",HexDir.NORTH_WEST,"guide")

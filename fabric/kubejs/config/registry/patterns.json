@@ -1,0 +1,5602 @@
+{
+	"hexcasting:cycle_variant": {
+		"seq": "dwaawedwewdwe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:cycle_variant"
+	},
+	"hexcassettes:self": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwweeweweew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcassettes:self"
+	},
+	"hexpose:get_biome": {
+		"seq": "qwqwqawdqqaqqdwaqwqwq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_biome"
+	},
+	"complexhex:long/convert": {
+		"seq": "wawdedwaaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:long/convert"
+	},
+	"hexal:wisp/move/speed/get": {
+		"seq": "eeewdqdee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:wisp/move/speed/get"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/write": {
+		"seq": "wedqdewaqddqd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/spellbook_index/write"
+	},
+	"hexcasting:blink": {
+		"seq": "awqqqwaq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:blink"
+	},
+	"miehex:xmdebug": {
+		"seq": "qaqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:xmdebug"
+	},
+	"hexcasting:zone_entity/not_monster": {
+		"seq": "eeeeewaqaawq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/not_monster"
+	},
+	"hexal:everbook/toggle_macro": {
+		"seq": "eweeewedww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:everbook/toggle_macro"
+	},
+	"yaha:paper_plane": {
+		"seq": "wwqaqwwdw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.yaha:paper_plane"
+	},
+	"hexical:hopper": {
+		"seq": "qwawqwaeqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:hopper"
+	},
+	"miehex:get_target": {
+		"seq": "wadwdqdwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:get_target"
+	},
+	"hexxyplanes:plane_exit": {
+		"seq": "dwawdqaqwwwqaeqwq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:plane_exit"
+	},
+	"hexcasting:over": {
+		"seq": "aaedd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:over"
+	},
+	"hexcasting:circle/bounds/max": {
+		"seq": "aqwqawaaqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:circle/bounds/max"
+	},
+	"hexpose:am_enlightened": {
+		"seq": "awqaqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:am_enlightened"
+	},
+	"lapisworks:hastenature0": {
+		"seq": "awawwwdwdww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:hastenature0"
+	},
+	"hexal:link/comm/close_transmit": {
+		"seq": "ewaqawe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:link/comm/close_transmit"
+	},
+	"hexical:write_charmed_proxy": {
+		"seq": "edewqaqqdeeeee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:write_charmed_proxy"
+	},
+	"hexical:shader_media": {
+		"seq": "eewdweqaqewdwee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:shader_media"
+	},
+	"hexpose:env_circle": {
+		"seq": "waaqdeaqwqae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:env_circle"
+	},
+	"hexical:read_shelf": {
+		"seq": "qaqqqada",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:read_shelf"
+	},
+	"hexcasting:get_entity": {
+		"seq": "qqqqqdaqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity"
+	},
+	"lapisworks:ask_simp": {
+		"seq": "eeeqwdeaqqeawqqwwqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:ask_simp"
+	},
+	"autumnfloods:focus": {
+		"seq": "wwwwwawwwwwawwwqwwwawwwwwawwwwwaqwqdqdqdqdwedeewq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:focus"
+	},
+	"hexical:modify_block_volatile": {
+		"seq": "deewedeeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:modify_block_volatile"
+	},
+	"hexpose:book_sources": {
+		"seq": "eaedweew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:book_sources"
+	},
+	"ephemera:getabsorption": {
+		"seq": "wqeawaqddaqw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getabsorption"
+	},
+	"oneironaut:rodloopactive": {
+		"seq": "qwqqqwqaqded",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:rodloopactive"
+	},
+	"ephemera:getmount": {
+		"seq": "eeedeewaaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getmount"
+	},
+	"moreiotas:string/comma": {
+		"seq": "qa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/comma"
+	},
+	"hexical:flower": {
+		"seq": "weqqqqqwaeaeaeaeaea",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:flower"
+	},
+	"hexcasting:write/local": {
+		"seq": "eqqwawqaaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:write/local"
+	},
+	"hexautomata:event/write": {
+		"seq": "aqaedwaqeeeeed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexautomata:event/write"
+	},
+	"hexstruction:rotate_counterclockwise_z": {
+		"seq": "aeqeawaeqeadqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_counterclockwise_z"
+	},
+	"ephemera:networkscan": {
+		"seq": "eqqqqqaweqaeaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:networkscan"
+	},
+	"hexflow:pure_reduce": {
+		"seq": "waawadadad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:pure_reduce"
+	},
+	"hexcassettes:dequeue": {
+		"seq": "eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcassettes:dequeue"
+	},
+	"hexal:everbook/delete": {
+		"seq": "qwqqqwqaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:everbook/delete"
+	},
+	"lapisworks:absorb_mind": {
+		"seq": "aawqqwqqqaede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:absorb_mind"
+	},
+	"hexcasting:zone_entity/not_item": {
+		"seq": "eeeeewaqaaww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/not_item"
+	},
+	"hexpose:item_frame_rotation": {
+		"seq": "ewdwewdea",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:item_frame_rotation"
+	},
+	"hexal:mote/use_on": {
+		"seq": "qqqwqqqqaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:mote/use_on"
+	},
+	"hexweb:create_json": {
+		"seq": "edade",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:create_json"
+	},
+	"hexcasting:extinguish": {
+		"seq": "ddedwdwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:extinguish"
+	},
+	"hexcasting:replace": {
+		"seq": "wqaeaqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:replace"
+	},
+	"hexical:erase_grimoire": {
+		"seq": "aqwqaqded",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:erase_grimoire"
+	},
+	"hexical:move_specklike": {
+		"seq": "adeqaa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:move_specklike"
+	},
+	"pregxxy:greater_pregxxy": {
+		"seq": "wewewewwwwwewewwwwwewewewqadewwdwweweaqwwaeeawww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.pregxxy:greater_pregxxy"
+	},
+	"overevaluate:sisyphus": {
+		"seq": "qaqwede",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:sisyphus"
+	},
+	"hexal:wisp/transfer/others/disallow": {
+		"seq": "eeeeeqeaqaawqeeeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/transfer/others/disallow"
+	},
+	"hexal:wisp/transfer/others/allow": {
+		"seq": "eeeeeqwweqqqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/transfer/others/allow"
+	},
+	"hexical:get_lesser_sentinels": {
+		"seq": "dqddq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:get_lesser_sentinels"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/readable": {
+		"seq": "wqaeaqwdeaaeae",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/spellbook_index/readable"
+	},
+	"miehex:list_insert": {
+		"seq": "ddeweeedq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:list_insert"
+	},
+	"lapisworks:flay_artmind2": {
+		"seq": "ewewedwqwqqwqwqaeqeqaqeqeqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:flay_artmind2"
+	},
+	"hexpose:create_stack": {
+		"seq": "qaqqae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:create_stack"
+	},
+	"lapisworks:flay_artmind3": {
+		"seq": "ewewedwqwaqaeweeeweaqdedaeade",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:flay_artmind3"
+	},
+	"hexal:link/others": {
+		"seq": "eqqqqqawqeeeeedww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:link/others"
+	},
+	"hexical:sparkle": {
+		"seq": "dqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:sparkle"
+	},
+	"hexdebug:splicing/clipboard/write": {
+		"seq": "wedqdewqqqqaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/write"
+	},
+	"overevaluate:castor": {
+		"seq": "adadee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.overevaluate:castor"
+	},
+	"hexical:shout_telepathy": {
+		"seq": "daqqqqwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:shout_telepathy"
+	},
+	"hexdebug:breakpoint/before": {
+		"seq": "awqdeew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:breakpoint/before"
+	},
+	"hexcellular:readonly_property": {
+		"seq": "aawa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcellular:readonly_property"
+	},
+	"hexal:mote/storage/bind": {
+		"seq": "qaqwqaqwqaq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:mote/storage/bind"
+	},
+	"hexparse:donate": {
+		"seq": "qqdqqdqqqqqdqqdqqew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexparse:donate"
+	},
+	"hexcasting:get_entity_height": {
+		"seq": "awq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity_height"
+	},
+	"miehex:get_structure": {
+		"seq": "wwaqqqqqea",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.miehex:get_structure"
+	},
+	"hexweb:get_port": {
+		"seq": "eqewdewqewdd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:get_port"
+	},
+	"hexcasting:2dup": {
+		"seq": "aadadaaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:2dup"
+	},
+	"oneironaut:writerodram": {
+		"seq": "eqqwqqqwaaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:writerodram"
+	},
+	"hexical:vanish_scroll": {
+		"seq": "wqwawqwqaqqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:vanish_scroll"
+	},
+	"hexical:periwinkle": {
+		"seq": "wwwaqdadaadadqqqeaeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:periwinkle"
+	},
+	"hexical:read_charmed_proxy": {
+		"seq": "qaqwedeeaqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:read_charmed_proxy"
+	},
+	"slate_work:check_item": {
+		"seq": "eaqwqaeqqddqeeqddq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:check_item"
+	},
+	"hexpose:is_wet": {
+		"seq": "qqqqwaadq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:is_wet"
+	},
+	"hexweb:set_element": {
+		"seq": "edadedaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:set_element"
+	},
+	"hierophantics:make_breath_trigger": {
+		"seq": "qqqqqawweqqqqqaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_breath_trigger"
+	},
+	"caduceus:eval/prompt": {
+		"seq": "wdeaqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.caduceus:eval/prompt"
+	},
+	"lapisworks:archon_of_meaninglessness": {
+		"seq": "eedqaqddadwddwaeaeadaeqaddwedwqdadedaqqwwqqewwwaeaedqqwwwqwawaedwqqdwwaqweeeqeeewawdwqe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:archon_of_meaninglessness"
+	},
+	"hexpose:get_max_health": {
+		"seq": "wddwwawaeqwawq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_max_health"
+	},
+	"hexical:similar": {
+		"seq": "aedd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:similar"
+	},
+	"hexcasting:potion/haste": {
+		"seq": "qaawawaeqqqdd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:potion/haste"
+	},
+	"hierophantics:get_mind_trigger": {
+		"seq": "ddewaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:get_mind_trigger"
+	},
+	"miehex:inventory_control": {
+		"seq": "qwawqwadawqwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:inventory_control"
+	},
+	"ephemera:getstatusduration": {
+		"seq": "qqqqqedwdwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:getstatusduration"
+	},
+	"hexical:has_autograph": {
+		"seq": "wwqqqqqaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:has_autograph"
+	},
+	"scryglass:scale_vision": {
+		"seq": "aaqwdwwwdwwwdweede",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:scale_vision"
+	},
+	"hexdim:dim/time": {
+		"seq": "qqqqqwaeaeaeaeaeadqwdwqwdwdwqw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexdim:dim/time"
+	},
+	"lapisworks:withdraw": {
+		"seq": "qaqwwdwdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:withdraw"
+	},
+	"moreiotas:string/block/set": {
+		"seq": "dwewdweq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.moreiotas:string/block/set"
+	},
+	"hexcasting:write": {
+		"seq": "deeeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:write"
+	},
+	"hexcasting:erase": {
+		"seq": "qdqawwaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:erase"
+	},
+	"autumnfloods:media": {
+		"seq": "wewdwewwqaqqwedeweewaqwedewwqwwedewwqeewaqawwedewewewdwewewedeweewaqwedewwqwwedewwqeeewedewewewdwewewedewwaqawewaqwedewwqwwedewwqeeewedew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:media"
+	},
+	"miehex:all_in_one_pages": {
+		"seq": "deeeeweewee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:all_in_one_pages"
+	},
+	"miehex:create_sword": {
+		"seq": "eadeaqwwdwqqeaqqweewwqadaqwwww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:create_sword"
+	},
+	"caduceus:write/mark/local": {
+		"seq": "dqddedwa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.caduceus:write/mark/local"
+	},
+	"hexthings:requote": {
+		"seq": "deee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:requote"
+	},
+	"hexical:get_hand_lamp_media": {
+		"seq": "qwddedaeeeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_media"
+	},
+	"hexcasting:tuck": {
+		"seq": "ddqaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:tuck"
+	},
+	"hexpose:text_italics": {
+		"seq": "awaqeeeeede",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_italics"
+	},
+	"oneironaut:writerodramremote": {
+		"seq": "ewdedwqwqwdedwqwaaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:writerodramremote"
+	},
+	"complexhex:summontextdisplay": {
+		"seq": "wqwqwqwqwqwawaaqawdeddw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:summontextdisplay"
+	},
+	"miehex:crash": {
+		"seq": "qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:crash"
+	},
+	"ephemera:getbystatusinverse": {
+		"seq": "qweeeeewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getbystatusinverse"
+	},
+	"hexpose:block_map_color": {
+		"seq": "qwedewqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:block_map_color"
+	},
+	"hexpose:get_light": {
+		"seq": "wqwqwqwqwqwaeqqqqaeqaeaeaeaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_light"
+	},
+	"hex_machina:get_bullet": {
+		"seq": "qaqqqeqaww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hex_machina:get_bullet"
+	},
+	"hexical:moving_left": {
+		"seq": "edead",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:moving_left"
+	},
+	"miehex:chat_listen": {
+		"seq": "qadqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:chat_listen"
+	},
+	"hexical:conjure_gummy": {
+		"seq": "eeewdw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:conjure_gummy"
+	},
+	"hexcasting:modulo": {
+		"seq": "addwaad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:modulo"
+	},
+	"hexical:wristpocket_item": {
+		"seq": "aaqqada",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:wristpocket_item"
+	},
+	"hexical:dye": {
+		"seq": "dwaqqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:dye"
+	},
+	"hexal:link/num": {
+		"seq": "qeeeeedww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:link/num"
+	},
+	"hexical:vibration": {
+		"seq": "wwawawwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:vibration"
+	},
+	"hexportation:get_sink_inv": {
+		"seq": "deeedeqeeeeedw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexportation:get_sink_inv"
+	},
+	"hexical:color_scroll": {
+		"seq": "wqwawqwqawawaedd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:color_scroll"
+	},
+	"scryglass:rotate_vision": {
+		"seq": "aaqdwdwdedd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:rotate_vision"
+	},
+	"hexical:read_charmed": {
+		"seq": "waqqqqqeaqeaeaeaeaeq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:read_charmed"
+	},
+	"hexcasting:get_entity/animal": {
+		"seq": "qqqqqdaqaawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity/animal"
+	},
+	"caduceus:eval/control_at": {
+		"seq": "eqaedw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.caduceus:eval/control_at"
+	},
+	"miehex:item_control": {
+		"seq": "dwewdweqawqwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:item_control"
+	},
+	"hexthingy:allaycreation": {
+		"seq": "qqqqqweeweeaeeqeeeeeweeweeaeeaeeweedqqqqdadedaddwwqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexthingy:allaycreation"
+	},
+	"miehex:block_var_write": {
+		"seq": "deeeeadq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:block_var_write"
+	},
+	"hexpose:item_name": {
+		"seq": "qwawqwaqea",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:item_name"
+	},
+	"lapisworks:hastenature5": {
+		"seq": "aeaeaeaeaeadawawwwdwdww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:hastenature5"
+	},
+	"hexcasting:circle/bounds/min": {
+		"seq": "eaqwqaewdd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:circle/bounds/min"
+	},
+	"miehex:allay_casting": {
+		"seq": "qqaqwwawwqaqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:allay_casting"
+	},
+	"hexal:gate/mark": {
+		"seq": "qaqeede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:gate/mark"
+	},
+	"hexportation:get_view_name": {
+		"seq": "adeeedewe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexportation:get_view_name"
+	},
+	"hexical:reset_mage_block": {
+		"seq": "deeeaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:reset_mage_block"
+	},
+	"hierophantics:make_jump_trigger": {
+		"seq": "qqqqqawwqdwdwd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_jump_trigger"
+	},
+	"hexical:take_on_pigment": {
+		"seq": "weeeweeqeeeewqaqweeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:take_on_pigment"
+	},
+	"moreiotas:matrix/split/vert": {
+		"seq": "awdedwawawwaeawwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:matrix/split/vert"
+	},
+	"hexcasting:arctan2": {
+		"seq": "deadeeeeewd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:arctan2"
+	},
+	"hexpose:get_message": {
+		"seq": "aeeedw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_message"
+	},
+	"hexpose:biome_to_villager": {
+		"seq": "qeqwqwqwqwqeqawewwqqwwqwwqqww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:biome_to_villager"
+	},
+	"autumnfloods:id_read": {
+		"seq": "edqqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:id_read"
+	},
+	"slate_work:wave_position": {
+		"seq": "eaqdaadqaeeaa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:wave_position"
+	},
+	"miehex:function": {
+		"seq": "deaqqdae",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:function"
+	},
+	"ephemera:filteredentityraycast": {
+		"seq": "wqded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:filteredentityraycast"
+	},
+	"hexpose:fluid_raycast": {
+		"seq": "wqqaqwede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:fluid_raycast"
+	},
+	"autumnfloods:found": {
+		"seq": "wwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:found"
+	},
+	"hexpose:text_obfuscated": {
+		"seq": "awaqeeeeeda",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_obfuscated"
+	},
+	"hexical:get_arch_lamp_position": {
+		"seq": "qaqwddedqdd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_position"
+	},
+	"hexextra:run_for": {
+		"seq": "qaweedwaqqwde",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexextra:run_for"
+	},
+	"moreiotas:matrix/identity": {
+		"seq": "awwaeawwaqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/identity"
+	},
+	"moreiotas:matrix/rotation": {
+		"seq": "awwaeawwawawddw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/rotation"
+	},
+	"hexcassettes:specs": {
+		"seq": "qeqwqwqwqwqeqaweqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcassettes:specs"
+	},
+	"hexcasting:const/vec/ny": {
+		"seq": "eeeeeqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/ny"
+	},
+	"hexoverpowered:get_personal_media": {
+		"seq": "qqaqqea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexoverpowered:get_personal_media"
+	},
+	"hexdebug:splicing/clipboard/readable": {
+		"seq": "wqaeaqweeeedww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/readable"
+	},
+	"oneironaut:signitem": {
+		"seq": "qqaqwedeea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:signitem"
+	},
+	"hexcassettes:enqueue": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwweeweweewqdwwewewwewweweww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcassettes:enqueue"
+	},
+	"hexcasting:zone_entity/not_player": {
+		"seq": "eeeeewaqaawe",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/not_player"
+	},
+	"moreiotas:altdiv": {
+		"seq": "wdedwdwwdqdww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:altdiv"
+	},
+	"hexparse:compile": {
+		"seq": "aqqqqqeawqwqwqwqwqwdeweweqeweweqewewe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexparse:compile"
+	},
+	"hexstruction:mirror_left_right": {
+		"seq": "aeqeawaeqeaaewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:mirror_left_right"
+	},
+	"hexal:link/comm/clear": {
+		"seq": "aweeeeewa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:link/comm/clear"
+	},
+	"hexpose:get_player_hunger": {
+		"seq": "qqqadaddw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_player_hunger"
+	},
+	"hexical:promote_lamp": {
+		"seq": "qweedeqeedeqdqdwewewwewewwewe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:promote_lamp"
+	},
+	"oneironaut:getdim/nether": {
+		"seq": "wqwqwqwqwqwaqaaqaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getdim/nether"
+	},
+	"hexcasting:deconstruct_vec": {
+		"seq": "qeeeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:deconstruct_vec"
+	},
+	"hexal:gate/unmark": {
+		"seq": "edeqqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:gate/unmark"
+	},
+	"autumnfloods:control": {
+		"seq": "weeeweedwaqaaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:control"
+	},
+	"hexpose:env_media": {
+		"seq": "dde",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:env_media"
+	},
+	"hex_machina:expose_mind": {
+		"seq": "qwqwqwqwqeqqqaedwqqqqqw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:expose_mind"
+	},
+	"hexcasting:print": {
+		"seq": "de",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:print"
+	},
+	"hexal:place_type": {
+		"seq": "eeeeedeeeee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:place_type"
+	},
+	"autumnfloods:tags": {
+		"seq": "dwwedwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:tags"
+	},
+	"lapisworks:writeable_necklace": {
+		"seq": "wwadeeeeeqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:writeable_necklace"
+	},
+	"lapisworks:lightningbending": {
+		"seq": "wewdawdewqewdqqeedqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:lightningbending"
+	},
+	"miehex:summon_idea_entity": {
+		"seq": "wqwqawdeaqqdeewew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:summon_idea_entity"
+	},
+	"ioticblocks:read/index": {
+		"seq": "aqqqqqedwewewewdw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ioticblocks:read/index"
+	},
+	"hexflow:for_range/line": {
+		"seq": "dadadawwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/line"
+	},
+	"complexhex:zone_entity/not_bit": {
+		"seq": "eewwqwqwqwqwqwweewaqaaww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.complexhex:zone_entity/not_bit"
+	},
+	"hexal:mote/return": {
+		"seq": "qded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:mote/return"
+	},
+	"lapisworks:flay_artmind0": {
+		"seq": "ewewedwqwqqwqwqaeqe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:flay_artmind0"
+	},
+	"ephemera:revealtoother": {
+		"seq": "qde",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:revealtoother"
+	},
+	"moreiotas:type/item_held": {
+		"seq": "edeedqd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:type/item_held"
+	},
+	"hexcasting:if": {
+		"seq": "awdd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:if"
+	},
+	"autumnfloods:rectangle_block": {
+		"seq": "dwaade",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:rectangle_block"
+	},
+	"hexpose:get_enchantment_strength": {
+		"seq": "waqwwqaweede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_enchantment_strength"
+	},
+	"complexhex:get_entity/bit": {
+		"seq": "qqwwewewewewewwqqdaqaaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:get_entity/bit"
+	},
+	"hexal:wisp/self": {
+		"seq": "dedwqqwdedwqqaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:wisp/self"
+	},
+	"hexdim:dim/rel/from": {
+		"seq": "daqqad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexdim:dim/rel/from"
+	},
+	"hexcasting:const/double/e": {
+		"seq": "aaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:const/double/e"
+	},
+	"complexhex:shift/right/arithmetic": {
+		"seq": "eaqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:shift/right/arithmetic"
+	},
+	"complexhex:const/complex/1": {
+		"seq": "wqqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.complexhex:const/complex/1"
+	},
+	"hexpose:is_baby": {
+		"seq": "awaqdwaaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:is_baby"
+	},
+	"moreiotas:item/main_hand": {
+		"seq": "adeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:item/main_hand"
+	},
+	"hexboard:literal_resolve": {
+		"seq": "wqawqwewdewee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexboard:literal_resolve"
+	},
+	"lapisworks:swap_amel": {
+		"seq": "wqwawwqwaqeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:swap_amel"
+	},
+	"hexical:autograph": {
+		"seq": "eeeeeww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:autograph"
+	},
+	"hexcasting:const/true": {
+		"seq": "aqae",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:const/true"
+	},
+	"hexflow:for_range/cube/pure": {
+		"seq": "dadadadqqaqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/cube/pure"
+	},
+	"hexcasting:write/entity": {
+		"seq": "wdwewewewewew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:write/entity"
+	},
+	"hexcasting:craft/trinket": {
+		"seq": "wwaqqqqqeaqeaeqqqeaeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:craft/trinket"
+	},
+	"hexal:mote/storage/set": {
+		"seq": "eeeeedw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/storage/set"
+	},
+	"hexpose:blockstate_rotation": {
+		"seq": "qaqqqqqwadeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:blockstate_rotation"
+	},
+	"hexcassettes:foretell": {
+		"seq": "eqeweweweweqedwqeeeeedww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcassettes:foretell"
+	},
+	"miehex:enchant_add": {
+		"seq": "qawwwwaqeeeaqwwqaee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:enchant_add"
+	},
+	"moreiotas:type/to_item": {
+		"seq": "qaqqaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:type/to_item"
+	},
+	"autumnfloods:get_tag": {
+		"seq": "dwedewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:get_tag"
+	},
+	"hexal:current_tick": {
+		"seq": "ddwaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:current_tick"
+	},
+	"miehex:anglebetweenvectors": {
+		"seq": "qaeaqeqaea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:anglebetweenvectors"
+	},
+	"hexpose:get_effect_category": {
+		"seq": "wqqqaawd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_effect_category"
+	},
+	"hexical:translate_dye": {
+		"seq": "wdwwaawwewdwwewwdwwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:translate_dye"
+	},
+	"hexal:link/get_index": {
+		"seq": "aeqqqqqawwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:link/get_index"
+	},
+	"miehex:all_in_one": {
+		"seq": "qqw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:all_in_one"
+	},
+	"hexpose:block_hardness": {
+		"seq": "qaqqqqqeeeeedq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:block_hardness"
+	},
+	"hexdim:dim/perm/remove": {
+		"seq": "dewedaewdwewd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexdim:dim/perm/remove"
+	},
+	"hexpose:get_armor": {
+		"seq": "qaqddqeeeeqd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_armor"
+	},
+	"hexcellular:set_property": {
+		"seq": "aawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcellular:set_property"
+	},
+	"hexal:wisp/seon/get": {
+		"seq": "daqweewqaeaqweewqaqwwww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:wisp/seon/get"
+	},
+	"hexpose:is_meat": {
+		"seq": "adaqqqddaed",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:is_meat"
+	},
+	"moreiotas:string/empty": {
+		"seq": "awdwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:string/empty"
+	},
+	"autumnfloods:num_write": {
+		"seq": "eqqqqqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:num_write"
+	},
+	"ephemera:hash": {
+		"seq": "qqawqaqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.ephemera:hash"
+	},
+	"hexical:clear_shelf": {
+		"seq": "edeedade",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:clear_shelf"
+	},
+	"miehex:create_block/idea": {
+		"seq": "wqwawqwqwqwqwqaweeeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:create_block/idea"
+	},
+	"hexdebug:splicing/enlightened/hex/read": {
+		"seq": "wqaeaqwqqqwqwqqwq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/enlightened/hex/read"
+	},
+	"hexcasting:const/vec/0": {
+		"seq": "qqqqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/0"
+	},
+	"miehex:cube_types": {
+		"seq": "wewdwewaqwqwaada",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:cube_types"
+	},
+	"overevaluate:soroban_pop": {
+		"seq": "qdeeaae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:soroban_pop"
+	},
+	"ephemera:no": {
+		"seq": "wwaedadqdqdqdade",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:no"
+	},
+	"hexcasting:const/false": {
+		"seq": "dedq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:const/false"
+	},
+	"hexpose:breedable": {
+		"seq": "awaaqdqaawa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:breedable"
+	},
+	"oneironaut:getdimheight": {
+		"seq": "awqqqwqwqwqwqwq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getdimheight"
+	},
+	"phlexiful:destroy_block": {
+		"seq": "qaqqqqqwaeaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.phlexiful:destroy_block"
+	},
+	"hexcasting:zone_entity/monster": {
+		"seq": "qqqqqwdeddwq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/monster"
+	},
+	"miehex:block_var": {
+		"seq": "aqqqqdae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:block_var"
+	},
+	"hexical:modify_block_ephemeral": {
+		"seq": "deewwaawd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:modify_block_ephemeral"
+	},
+	"hexthingy:smite": {
+		"seq": "wweeewwweeeqeeeadweeead",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexthingy:smite"
+	},
+	"hexical:draw_pattern": {
+		"seq": "eadqqqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:draw_pattern"
+	},
+	"hexcasting:sentinel/destroy": {
+		"seq": "qdwdqdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:sentinel/destroy"
+	},
+	"overevaluate:apep": {
+		"seq": "dqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.overevaluate:apep"
+	},
+	"hexpose:blockstate_crop": {
+		"seq": "qaqqqqqwaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:blockstate_crop"
+	},
+	"hexthings:dict_keys": {
+		"seq": "dqwaeawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexthings:dict_keys"
+	},
+	"hexpose:is_snack": {
+		"seq": "adaqqqddaq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:is_snack"
+	},
+	"moreiotas:matrix/concat/hori": {
+		"seq": "dwwdqdwwdwdwaqawd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:matrix/concat/hori"
+	},
+	"hexthings:uiua_rotate": {
+		"seq": "qaeaqweeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:uiua_rotate"
+	},
+	"hexcasting:index_of": {
+		"seq": "dedqde",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:index_of"
+	},
+	"overevaluate:dissolve_jumble": {
+		"seq": "aedqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.overevaluate:dissolve_jumble"
+	},
+	"miehex:allay_stop": {
+		"seq": "qaqqaeadeada",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:allay_stop"
+	},
+	"hexcasting:not_equals": {
+		"seq": "da",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:not_equals"
+	},
+	"complexhex:summonitemdisplay": {
+		"seq": "wqwqwqwqwqwaqedeaaedeq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:summonitemdisplay"
+	},
+	"hexpose:get_block_inventory": {
+		"seq": "qaqqqqqeaqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:get_block_inventory"
+	},
+	"hexcasting:potion/strength": {
+		"seq": "aawawaeqqqqdd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:potion/strength"
+	},
+	"hexal:link/comm/read": {
+		"seq": "weeeeew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:link/comm/read"
+	},
+	"complexhex:shift/right/logical": {
+		"seq": "eaqqdee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:shift/right/logical"
+	},
+	"hexical:shader_lines": {
+		"seq": "eedwwawwdee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:shader_lines"
+	},
+	"scryglass:draw_text": {
+		"seq": "aaqdwdwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:draw_text"
+	},
+	"autumnfloods:get_entity/not_player": {
+		"seq": "qqqqqwdedd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:get_entity/not_player"
+	},
+	"hexical:set_evocation": {
+		"seq": "wwaqqqqqeqdedwwqwqwwdedwwqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:set_evocation"
+	},
+	"hexflow:pure_map": {
+		"seq": "dadadad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:pure_map"
+	},
+	"hex_machina:previous_bullet": {
+		"seq": "qqqwdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:previous_bullet"
+	},
+	"oneironaut:getdim/overworld": {
+		"seq": "wqwqwqwqwqwawedewdwedew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getdim/overworld"
+	},
+	"hierophantics:make_break_trigger": {
+		"seq": "qqqqqawwwqaqqqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_break_trigger"
+	},
+	"autumnfloods:gravity": {
+		"seq": "weeeeewq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:gravity"
+	},
+	"hexal:link/comm/open_transmit": {
+		"seq": "qwdedwq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:link/comm/open_transmit"
+	},
+	"hexal:wisp/hex": {
+		"seq": "aweewaqaweewaawww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:wisp/hex"
+	},
+	"autumnfloods:echo": {
+		"seq": "deaqqeawqwqwqwqwq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:echo"
+	},
+	"miehex:record_read": {
+		"seq": "aqqqqqwqqwqqeqqwqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:record_read"
+	},
+	"hexpose:item_lore": {
+		"seq": "dwewdwedea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexpose:item_lore"
+	},
+	"miehex:push": {
+		"seq": "aq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:push"
+	},
+	"oneironaut:getdim2": {
+		"seq": "wqwqwqwqwqwaqeeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:getdim2"
+	},
+	"hexcasting:recharge": {
+		"seq": "qqqqqwaeaeaeaeaea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:recharge"
+	},
+	"hexstruction:bounding_box": {
+		"seq": "aeqeawaeqeaqqeqaqeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:bounding_box"
+	},
+	"hexpose:creeper_fuse": {
+		"seq": "dedwaqwede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:creeper_fuse"
+	},
+	"hexcasting:zone_entity": {
+		"seq": "qqqqqwded",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity"
+	},
+	"miehex:rotatevector": {
+		"seq": "wdww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:rotatevector"
+	},
+	"oneironaut:swapspace": {
+		"seq": "wqqqwwwwwqqqwwwqdaqadwqqwdaqadweqeqqqqeqeqaqeqedeqeqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:swapspace"
+	},
+	"hexecuteif:eval_if": {
+		"seq": "deaqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexecuteif:eval_if"
+	},
+	"hexcasting:sentinel/wayfind": {
+		"seq": "waeawaedwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:sentinel/wayfind"
+	},
+	"hexthings:isgreatersent": {
+		"seq": "waeawaeqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexthings:isgreatersent"
+	},
+	"overevaluate:swap_one_three": {
+		"seq": "ddwqaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:swap_one_three"
+	},
+	"ephemera:getstatuslevel": {
+		"seq": "eeeeeqawawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getstatuslevel"
+	},
+	"hexpose:get_max_air": {
+		"seq": "wwaadee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:get_max_air"
+	},
+	"hexical:shader_owl": {
+		"seq": "edewawede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:shader_owl"
+	},
+	"hexal:wisp/trigger/comm": {
+		"seq": "aqqqqqwdeddw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:wisp/trigger/comm"
+	},
+	"hexdebug:splicing/selection/read": {
+		"seq": "wqaeaqweeeedq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/selection/read"
+	},
+	"hexxyplanes:get_plane": {
+		"seq": "dwawd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:get_plane"
+	},
+	"ephemera:particleburst": {
+		"seq": "deeeewaaddwqqqqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:particleburst"
+	},
+	"ephemera:getpropertyvalue": {
+		"seq": "qaqqqqqdwawqwaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getpropertyvalue"
+	},
+	"moreiotas:string/chat/prefix/get": {
+		"seq": "ewded",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:string/chat/prefix/get"
+	},
+	"lapisworks:reclaim_ameth": {
+		"seq": "awwqqqwwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:reclaim_ameth"
+	},
+	"miehex:resurrectionem": {
+		"seq": "wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:resurrectionem"
+	},
+	"autumnfloods:yaw": {
+		"seq": "wad",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:yaw"
+	},
+	"hierophantics:mute_mind": {
+		"seq": "ddweeee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:mute_mind"
+	},
+	"moreiotas:string/space": {
+		"seq": "awdwaaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:string/space"
+	},
+	"miehex:allay_move": {
+		"seq": "qaawawaaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:allay_move"
+	},
+	"lapisworks:spherical_dstl": {
+		"seq": "wqwqwqwqwqwaeaqaaeaqaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:spherical_dstl"
+	},
+	"caduceus:eval/control": {
+		"seq": "waqdeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.caduceus:eval/control"
+	},
+	"autumnfloods:isis": {
+		"seq": "qaawedee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:isis"
+	},
+	"lapisworks:dephiangle": {
+		"seq": "wwqaqwwdwawwedeww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:dephiangle"
+	},
+	"overevaluate:dup_many": {
+		"seq": "waadadaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.overevaluate:dup_many"
+	},
+	"autumnfloods:ride": {
+		"seq": "qaeeaq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:ride"
+	},
+	"hexpose:get_comparator": {
+		"seq": "eweweweweweewwddawaddww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_comparator"
+	},
+	"miehex:locate": {
+		"seq": "edeeeeeqdwdwww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:locate"
+	},
+	"hexical:moving_down": {
+		"seq": "dedwdq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:moving_down"
+	},
+	"hexical:set_hand_lamp_storage": {
+		"seq": "qwddedqedeeeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:set_hand_lamp_storage"
+	},
+	"oneironaut:checksignature": {
+		"seq": "qqaqwedeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:checksignature"
+	},
+	"hexdebug:splicing/view_index/write": {
+		"seq": "wedqdewawdedw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/view_index/write"
+	},
+	"hexal:running/mul": {
+		"seq": "qaawaaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:running/mul"
+	},
+	"miehex:idea_get": {
+		"seq": "qwwwdwewdwwwqwqwwwdwewdwwwqqqwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:idea_get"
+	},
+	"oneironaut:circle": {
+		"seq": "wwwwwwqwwwwwwqwwwwwwqwwwwwwqwwwwwwqwwwwww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:circle"
+	},
+	"hexdim:dim/create": {
+		"seq": "wawdwawawdwawawdwewdwqwdwqwdwqwdwqwdwqwdw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdim:dim/create"
+	},
+	"lapisworks:equal_block": {
+		"seq": "qwawqwadadwewdwe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:equal_block"
+	},
+	"lapisworks:checkenchant": {
+		"seq": "aqawwqqwqqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:checkenchant"
+	},
+	"hexpose:villager_level": {
+		"seq": "qeqwqwqwqwqeqawdaeaeaeaeaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:villager_level"
+	},
+	"hexpose:env_offhand": {
+		"seq": "qaqqqwaaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:env_offhand"
+	},
+	"hexcasting:writable": {
+		"seq": "deeeeeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:writable"
+	},
+	"hexpose:get_enchantments": {
+		"seq": "waqeaeqawqwawaw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_enchantments"
+	},
+	"autumnfloods:num_read": {
+		"seq": "qeeeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:num_read"
+	},
+	"miehex:cube_type": {
+		"seq": "wewdwewaqwqwa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:cube_type"
+	},
+	"moreiotas:matrix/make": {
+		"seq": "awwaeawwaadwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/make"
+	},
+	"hexdebug:breakpoint/after": {
+		"seq": "wqqaewd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexdebug:breakpoint/after"
+	},
+	"hexal:health": {
+		"seq": "aqwawqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:health"
+	},
+	"lapisworks:equiv_block": {
+		"seq": "qqqqqeqeeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:equiv_block"
+	},
+	"hexpose:get_power": {
+		"seq": "qwqwqwqwqwqqwwaadwdaaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:get_power"
+	},
+	"ephemera:magearmor": {
+		"seq": "qaweqqwqqewaqeqqqqqad",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:magearmor"
+	},
+	"miehex:destroy_components": {
+		"seq": "aaqqddaqddaqddaqddaqddadw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:destroy_components"
+	},
+	"hexal:tick": {
+		"seq": "wwwdwdwwwawqqeqwqqwqeqwqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:tick"
+	},
+	"lapisworks:banish_my_enchsent": {
+		"seq": "wdwewdwdwqwawwwawewawwwaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:banish_my_enchsent"
+	},
+	"hexcasting:zone_entity/not_animal": {
+		"seq": "eeeeewaqaawa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/not_animal"
+	},
+	"miehex:tooltip_hide": {
+		"seq": "qqawwwdee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:tooltip_hide"
+	},
+	"moreiotas:string/action": {
+		"seq": "wdwewdwdw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:string/action"
+	},
+	"hexpose:get_day": {
+		"seq": "wwawwawwqqawwdwwdwwaqwqwqwqwq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_day"
+	},
+	"hexcasting:stack_len": {
+		"seq": "qwaeawqaeaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:stack_len"
+	},
+	"hexcasting:unappend": {
+		"seq": "qaeaq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:unappend"
+	},
+	"miehex:worldreloader": {
+		"seq": "qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:worldreloader"
+	},
+	"pregxxy:get_age": {
+		"seq": "deaqqwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.pregxxy:get_age"
+	},
+	"hexical:size_specklike": {
+		"seq": "adeeqed",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:size_specklike"
+	},
+	"hexcasting:const/vec/px": {
+		"seq": "qqqqqea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/px"
+	},
+	"hexical:set_hotbar": {
+		"seq": "dwewdwe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:set_hotbar"
+	},
+	"miehex:puzzle": {
+		"seq": "dwewdweqawqwaewqqqwaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:puzzle"
+	},
+	"moreiotas:string/newline": {
+		"seq": "waawaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/newline"
+	},
+	"oneironaut:getdim1": {
+		"seq": "wqwqwqwqwqwaeqqe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:getdim1"
+	},
+	"hexportation:slurp": {
+		"seq": "aqaawdaqqqaqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexportation:slurp"
+	},
+	"hexoverpowered:mind_env/schedule": {
+		"seq": "waawedaqqqqdeaqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_env/schedule"
+	},
+	"ephemera:networktp": {
+		"seq": "qqqqqwdeddwdawqqqwaq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:networktp"
+	},
+	"slate_work:sort_items": {
+		"seq": "eaqwqaeqqwaeadaeawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:sort_items"
+	},
+	"lapisworks:hastenature4": {
+		"seq": "aaqawawweddedwdww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:hastenature4"
+	},
+	"hexical:shuffle_pattern": {
+		"seq": "aqqqdae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:shuffle_pattern"
+	},
+	"hexdebug:splicing/list/spellbook_index/readable": {
+		"seq": "wqaeaqwedqddqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/list/spellbook_index/readable"
+	},
+	"lapisworks:phiangle": {
+		"seq": "wadqaqdawewadqaqdaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:phiangle"
+	},
+	"autumnfloods:contain_mote": {
+		"seq": "eeeeedawdwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:contain_mote"
+	},
+	"oneironaut:reviveflayed": {
+		"seq": "qeqwqqedeeeeeaqwqeqaqedqde",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:reviveflayed"
+	},
+	"hexparse:create_linebreak": {
+		"seq": "dadadedadaddwwwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexparse:create_linebreak"
+	},
+	"hexcasting:sentinel/get_pos": {
+		"seq": "waeawaede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:sentinel/get_pos"
+	},
+	"lapisworks:moar_speed": {
+		"seq": "ddqwaqeqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:moar_speed"
+	},
+	"hexical:get_arch_lamp_velocity": {
+		"seq": "qaqwddedqew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_velocity"
+	},
+	"hexcasting:ceil": {
+		"seq": "qwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:ceil"
+	},
+	"hexcasting:const/null": {
+		"seq": "d",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:const/null"
+	},
+	"hexcasting:rotate_reverse": {
+		"seq": "ddqdd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:rotate_reverse"
+	},
+	"hexical:shader_spider": {
+		"seq": "qaqdedaedqqdedaqaedeqd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:shader_spider"
+	},
+	"lapisworks:visible_dstl": {
+		"seq": "edeewadwewdwe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:visible_dstl"
+	},
+	"oneironaut:shiftsentinel": {
+		"seq": "wwaeawwaeqqwqwqwqwqwq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:shiftsentinel"
+	},
+	"hexpose:media_max_stack": {
+		"seq": "ddeaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:media_max_stack"
+	},
+	"hexcasting:get_entity/monster": {
+		"seq": "qqqqqdaqaawq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity/monster"
+	},
+	"slate_work:wave_speed": {
+		"seq": "eaqdaadqaeewq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:wave_speed"
+	},
+	"hexcasting:equals": {
+		"seq": "ad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:equals"
+	},
+	"yaha:sussify_block": {
+		"seq": "eqqqeawqwqwqwqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.yaha:sussify_block"
+	},
+	"yaha:trident": {
+		"seq": "ddwwdaaeaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.yaha:trident"
+	},
+	"hexpose:damage_stack": {
+		"seq": "eeweeewdeq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:damage_stack"
+	},
+	"hexxyplanes:exit_reveal": {
+		"seq": "dwawdqaqwwwqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:exit_reveal"
+	},
+	"ephemera:getrevealcost": {
+		"seq": "qdeaaqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getrevealcost"
+	},
+	"complexhex:const/complex/i": {
+		"seq": "wqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.complexhex:const/complex/i"
+	},
+	"overevaluate:athena_log": {
+		"seq": "dweaqqqqd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:athena_log"
+	},
+	"hexcasting:random": {
+		"seq": "eqqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:random"
+	},
+	"hexdebug:craft/debugger": {
+		"seq": "aaewwwwwaqwawqwadawqwwwawwwqwwwaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:craft/debugger"
+	},
+	"hexpose:get_blockstates": {
+		"seq": "qaqqqeqqqwqaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:get_blockstates"
+	},
+	"hexical:get_telepathy": {
+		"seq": "wqqadaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:get_telepathy"
+	},
+	"hexical:modify_block_energized": {
+		"seq": "deewad",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:modify_block_energized"
+	},
+	"autumnfloods:get_all_motes": {
+		"seq": "wwaqqwdedwqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:get_all_motes"
+	},
+	"ephemera:repair": {
+		"seq": "waqdqqwqqdqawwqqqqqaqedeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.ephemera:repair"
+	},
+	"lapisworks:empty_prfn": {
+		"seq": "qwawqwaqwweqqqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:empty_prfn"
+	},
+	"hexdim:dim/kick": {
+		"seq": "wwdeeeeeqdwewewewewewwwdwqwdwqwdwqwdwqwdwqwdw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexdim:dim/kick"
+	},
+	"moreiotas:type/iota": {
+		"seq": "awd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:type/iota"
+	},
+	"hexdim:dim/cast/deactivate": {
+		"seq": "aqdeeqeaeaeaeaeae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdim:dim/cast/deactivate"
+	},
+	"miehex:list_by_index": {
+		"seq": "wawdwqwaeawqwdwaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:list_by_index"
+	},
+	"hexpose:text_bold": {
+		"seq": "awaqeeeeedd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_bold"
+	},
+	"moreiotas:item/prop/size/set": {
+		"seq": "adeeedew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:item/prop/size/set"
+	},
+	"hexical:get_hand_lamp_use_time": {
+		"seq": "qwddedqwddwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_use_time"
+	},
+	"hexpose:get_media": {
+		"seq": "ddew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_media"
+	},
+	"autumnfloods:let_read": {
+		"seq": "dwaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:let_read"
+	},
+	"overevaluate:pollux": {
+		"seq": "dadaqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:pollux"
+	},
+	"hierophantics:make_drop_trigger": {
+		"seq": "qqqqqawweaqaddwd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_drop_trigger"
+	},
+	"hexal:link/comm/num": {
+		"seq": "aweeeeewaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:link/comm/num"
+	},
+	"hexical:roast": {
+		"seq": "aqqwwqqawdadedad",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:roast"
+	},
+	"miehex:get_enchant": {
+		"seq": "awaeqwawq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:get_enchant"
+	},
+	"hexthings:dict_vals": {
+		"seq": "wqwaeawq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:dict_vals"
+	},
+	"hexical:write_grimoire": {
+		"seq": "aqwqaeaqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:write_grimoire"
+	},
+	"ephemera:gaussianrand": {
+		"seq": "eeeeq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:gaussianrand"
+	},
+	"moreiotas:zone_entity/not_type": {
+		"seq": "wdwqqqqqwdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:zone_entity/not_type"
+	},
+	"hexthings:uiua_where": {
+		"seq": "qaeaqeaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:uiua_where"
+	},
+	"autumnfloods:grid": {
+		"seq": "eeedeee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:grid"
+	},
+	"moreiotas:matrix/split/hori": {
+		"seq": "dwaqawdwdwwdqdwwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/split/hori"
+	},
+	"lapisworks:imbue_lap": {
+		"seq": "qadwawdaqqeae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:imbue_lap"
+	},
+	"hexpose:piercing_raycast": {
+		"seq": "wqqddqeqddq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:piercing_raycast"
+	},
+	"hexical:spike": {
+		"seq": "qdqdqdqdww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:spike"
+	},
+	"hexpose:get_inventory": {
+		"seq": "edeeeeeqdee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_inventory"
+	},
+	"hexical:write_charmed": {
+		"seq": "waqqqqqedeqdqdqdqdqe",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:write_charmed"
+	},
+	"hexical:get_arch_lamp_storage": {
+		"seq": "qaqwddedqwaqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_storage"
+	},
+	"hexpose:get_mainhand": {
+		"seq": "qaqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_mainhand"
+	},
+	"hexcasting:potion/wither": {
+		"seq": "qqqqqaewawawe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/wither"
+	},
+	"hexpats:check_fire": {
+		"seq": "qqqqqwqw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpats:check_fire"
+	},
+	"hexparse:focus2code": {
+		"seq": "aqqqqqwwewewewewewdqeeeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexparse:focus2code"
+	},
+	"yaha:potion_to_item": {
+		"seq": "dqqqqqedwda",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.yaha:potion_to_item"
+	},
+	"moreiotas:string/iota": {
+		"seq": "wawqwawaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/iota"
+	},
+	"hierophantics:get_minds": {
+		"seq": "qaqqaeawaea",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:get_minds"
+	},
+	"hexportation:make_conduit": {
+		"seq": "eadewewedaedwqeadewewedaedww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexportation:make_conduit"
+	},
+	"hexstruction:rotate_counterclockwise": {
+		"seq": "aeqeawaeqeaqqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_counterclockwise"
+	},
+	"autumnfloods:get_contain": {
+		"seq": "eeeeedewdwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:get_contain"
+	},
+	"hexflow:weak_escape": {
+		"seq": "qqqaww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexflow:weak_escape"
+	},
+	"moreiotas:string/chat/all": {
+		"seq": "wded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/chat/all"
+	},
+	"hexical:gasp": {
+		"seq": "aweeeeewaweeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:gasp"
+	},
+	"lapisworks:create_enchsent3": {
+		"seq": "aqaeawdwwwdwqwdwwwdweqaawddeweaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent3"
+	},
+	"complexhex:cnarg": {
+		"seq": "waqqqqqeww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:cnarg"
+	},
+	"hexcasting:flight/can_fly": {
+		"seq": "dwdwdeweaqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:flight/can_fly"
+	},
+	"overevaluate:tutu": {
+		"seq": "eedqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.overevaluate:tutu"
+	},
+	"hexweb:set": {
+		"seq": "eqewdewqeeaadd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:set"
+	},
+	"overevaluate:soroban_retrieve": {
+		"seq": "waqdee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:soroban_retrieve"
+	},
+	"hexal:factorial": {
+		"seq": "wawdedwaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:factorial"
+	},
+	"overevaluate:rotate_list": {
+		"seq": "wwaadaqadae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.overevaluate:rotate_list"
+	},
+	"hexpose:cat_variant": {
+		"seq": "wqwqqwqwawaaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:cat_variant"
+	},
+	"hexal:interop/fabric_only/phase_block": {
+		"seq": "daqqqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:interop/fabric_only/phase_block"
+	},
+	"oneironaut:advanceautomaton": {
+		"seq": "qqwqwqwaqeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:advanceautomaton"
+	},
+	"hexdebug:const/debugging": {
+		"seq": "qqqqqewaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexdebug:const/debugging"
+	},
+	"hexal:wisp/media": {
+		"seq": "aqaweewaqaweedw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/media"
+	},
+	"ephemera:getflight/type": {
+		"seq": "dwdwdewqded",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getflight/type"
+	},
+	"hexcasting:div": {
+		"seq": "wdedw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:div"
+	},
+	"hexcasting:rotate": {
+		"seq": "aaeaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:rotate"
+	},
+	"complexhex:qw": {
+		"seq": "wdeeeeeqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qw"
+	},
+	"hexcasting:zone_entity/player": {
+		"seq": "qqqqqwdeddwe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/player"
+	},
+	"overevaluate:hadamard": {
+		"seq": "waqaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:hadamard"
+	},
+	"hexpose:entity_width": {
+		"seq": "dwe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexpose:entity_width"
+	},
+	"hexcasting:teleport/great": {
+		"seq": "wwwqqqwwwqqeqqwwwqqwqqdqqqqqdqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:teleport/great"
+	},
+	"complexhex:qz": {
+		"seq": "wdeeeeeqd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qz"
+	},
+	"hexpose:damage_max_stack": {
+		"seq": "qqwqqqwaqe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexpose:damage_max_stack"
+	},
+	"hexpose:env_ambit": {
+		"seq": "wawaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:env_ambit"
+	},
+	"hexcasting:mul": {
+		"seq": "waqaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:mul"
+	},
+	"complexhex:ascii/to": {
+		"seq": "eawdwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.complexhex:ascii/to"
+	},
+	"hexal:toughness": {
+		"seq": "aeqqqqea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:toughness"
+	},
+	"moreiotas:altmul": {
+		"seq": "waqawawwaeaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:altmul"
+	},
+	"miehex:function_check": {
+		"seq": "aqdeeadq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.miehex:function_check"
+	},
+	"hexical:mage_mouth": {
+		"seq": "aaqqadaa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:mage_mouth"
+	},
+	"hexcasting:duplicate": {
+		"seq": "aadaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:duplicate"
+	},
+	"miehex:give_enchant": {
+		"seq": "dwdqewdwe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:give_enchant"
+	},
+	"hexical:get_hotbar": {
+		"seq": "qwawqwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:get_hotbar"
+	},
+	"ephemera:hashbits": {
+		"seq": "eedwedew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:hashbits"
+	},
+	"hexal:wisp/move/target/get": {
+		"seq": "ewdwewdew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:wisp/move/target/get"
+	},
+	"miehex:lesser_gate/close": {
+		"seq": "wwaqqqqqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:lesser_gate/close"
+	},
+	"miehex:chunkloader_permanent": {
+		"seq": "qaqeqwedqedwwwdewdwq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:chunkloader_permanent"
+	},
+	"hierophantics:make_fall_trigger": {
+		"seq": "qqqqqawweawawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_fall_trigger"
+	},
+	"hexstruction:display_structure": {
+		"seq": "aeqeawaeqeaqed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:display_structure"
+	},
+	"hexcasting:get_entity_velocity": {
+		"seq": "wq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity_velocity"
+	},
+	"hexcasting:arccos": {
+		"seq": "adeeeee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:arccos"
+	},
+	"overevaluate:athena": {
+		"seq": "dweaqqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:athena"
+	},
+	"complexhex:imaginary": {
+		"seq": "eew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.complexhex:imaginary"
+	},
+	"hexcasting:potion/night_vision": {
+		"seq": "qqqaawawaeqdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/night_vision"
+	},
+	"lapisworks:create_enchsent5": {
+		"seq": "wdwwwdwqwdwwwdwweeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent5"
+	},
+	"hexdim:dim/kidnap": {
+		"seq": "wawewawewawewawewawewawwwqwqwqwqwqwaeqqqqqaww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdim:dim/kidnap"
+	},
+	"scryglass:draw_rect": {
+		"seq": "aaqdwdwdewaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:draw_rect"
+	},
+	"miehex:test": {
+		"seq": "adaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:test"
+	},
+	"hexical:set_arch_lamp_storage": {
+		"seq": "qaqwddedqedeeeee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:set_arch_lamp_storage"
+	},
+	"complexhex:qunmake": {
+		"seq": "wdeeeeeq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qunmake"
+	},
+	"scryglass:get_window_size": {
+		"seq": "aawawaa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:get_window_size"
+	},
+	"ephemera:getstatuscategory": {
+		"seq": "eeeeeqawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getstatuscategory"
+	},
+	"hexcasting:thanatos": {
+		"seq": "qqaed",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:thanatos"
+	},
+	"hexical:weave_mesh": {
+		"seq": "qaqqqqqwqqqdeewewee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:weave_mesh"
+	},
+	"hexical:get_hand_lamp_velocity": {
+		"seq": "qwddedqew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_velocity"
+	},
+	"hexcasting:potion/absorption": {
+		"seq": "qqaawawaeqqdd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/absorption"
+	},
+	"autumnfloods:motes": {
+		"seq": "qaqdqaqdqaq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:motes"
+	},
+	"miehex:lesser_gate": {
+		"seq": "wwaqqqqqeawqwqwqwqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:lesser_gate"
+	},
+	"moreiotas:string/parse": {
+		"seq": "aqwaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/parse"
+	},
+	"hexweb:request": {
+		"seq": "qqqqwqdqddqe",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexweb:request"
+	},
+	"moreiotas:zone_entity/type": {
+		"seq": "waweeeeewaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:zone_entity/type"
+	},
+	"hexstruction:rotate_clockwise": {
+		"seq": "aeqeawaeqeaaede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_clockwise"
+	},
+	"hexcasting:akashic/read": {
+		"seq": "qqqwqqqqqaq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:akashic/read"
+	},
+	"oneironaut:infusemedia": {
+		"seq": "wwaqqqqqeqqqwwwqqeqqwwwqqweqadadadaqeqeqadadadaqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:infusemedia"
+	},
+	"hexical:stonecut": {
+		"seq": "qqqqqwaeaeaeaeaeadawa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:stonecut"
+	},
+	"oneironaut:readideawriter": {
+		"seq": "qwqwqwqwqwqaeqedeqe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:readideawriter"
+	},
+	"hexpose:env_packaged_hex": {
+		"seq": "waaqwwaqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:env_packaged_hex"
+	},
+	"autumnfloods:restock": {
+		"seq": "wwedewqqqqqwed",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:restock"
+	},
+	"hexpose:theodolite": {
+		"seq": "wqaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:theodolite"
+	},
+	"miehex:grow_up": {
+		"seq": "wadaweeeeew",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:grow_up"
+	},
+	"lapisworks:hastenature2": {
+		"seq": "wawqwaweawawwwdwdww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:hastenature2"
+	},
+	"hexical:get_arch_lamp_media": {
+		"seq": "qaqwddedaeeeee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_media"
+	},
+	"moreiotas:string/split": {
+		"seq": "aqwaqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/split"
+	},
+	"autumnfloods:forever": {
+		"seq": "qqqqqweeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:forever"
+	},
+	"hexpose:edible": {
+		"seq": "adaqqqdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:edible"
+	},
+	"hexical:get_hand_lamp_position": {
+		"seq": "qwddedqdd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_position"
+	},
+	"hexstruction:rotate_clockwise_x": {
+		"seq": "aeqeawaeqeaeedd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_clockwise_x"
+	},
+	"hexpose:text_underline": {
+		"seq": "awaqeeeeedw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_underline"
+	},
+	"lapisworks:gib_reach": {
+		"seq": "edewwqewdwwewdaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:gib_reach"
+	},
+	"autumnfloods:square_block": {
+		"seq": "dwaadw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:square_block"
+	},
+	"hexboard:move": {
+		"seq": "wqawqwewdewew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexboard:move"
+	},
+	"moreiotas:string/name/set": {
+		"seq": "aqeeqaaeweeewe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:string/name/set"
+	},
+	"hexical:prestidigitation": {
+		"seq": "wedewedew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:prestidigitation"
+	},
+	"hexpose:item_rarity": {
+		"seq": "wqqed",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:item_rarity"
+	},
+	"hexcasting:entity_pos/eye": {
+		"seq": "aa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:entity_pos/eye"
+	},
+	"miehex:all_in_one_read": {
+		"seq": "aqqqqwqqwqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:all_in_one_read"
+	},
+	"hexflow:for_range/floodfill/pure": {
+		"seq": "dadadadqadadwdadadwdadaddwwawwaadaddwaaddad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/floodfill/pure"
+	},
+	"hexcasting:greater_eq": {
+		"seq": "ee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:greater_eq"
+	},
+	"hexecuteif:inv_occupied_slots": {
+		"seq": "dwewdwed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexecuteif:inv_occupied_slots"
+	},
+	"hexal:running/sum": {
+		"seq": "aea",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:running/sum"
+	},
+	"ephemera:getbystatus": {
+		"seq": "ewqqqqqwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getbystatus"
+	},
+	"hexportation:transplace": {
+		"seq": "aqaawdaqqqaqeaqaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexportation:transplace"
+	},
+	"hexical:sample_pigment": {
+		"seq": "edewqaqqqqqwqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:sample_pigment"
+	},
+	"hexcasting:coerce_axial": {
+		"seq": "qqqqqaww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:coerce_axial"
+	},
+	"hexal:zone_entity/wisp": {
+		"seq": "qqwdedwqqwdeddww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:zone_entity/wisp"
+	},
+	"slate_work:get_storage": {
+		"seq": "eaqwqaeqqdeewweedq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:get_storage"
+	},
+	"hexcasting:const/vec/nx": {
+		"seq": "eeeeeqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/nx"
+	},
+	"hexal:mote/split": {
+		"seq": "eaqaaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:mote/split"
+	},
+	"hexal:link/unlink/others": {
+		"seq": "qeeeeedweqqqqqaww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:link/unlink/others"
+	},
+	"ephemera:ridewisp": {
+		"seq": "aqadqqdaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:ridewisp"
+	},
+	"hexical:grok_push": {
+		"seq": "ewdewwde",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:grok_push"
+	},
+	"hexcasting:get_entity/item": {
+		"seq": "qqqqqdaqaaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity/item"
+	},
+	"slate_work:get_item": {
+		"seq": "eaqwqaeqwqqwqwwqwqqweqwaweadwawwwawdaewawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:get_item"
+	},
+	"lapisworks:fireyfists": {
+		"seq": "wwewdawdewqewedadad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:fireyfists"
+	},
+	"hierophantics:free_mind": {
+		"seq": "ddeawawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:free_mind"
+	},
+	"hexical:set_lesser_sentinels": {
+		"seq": "aeaae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:set_lesser_sentinels"
+	},
+	"autumnfloods:cloud": {
+		"seq": "eaqaweeeee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:cloud"
+	},
+	"hexical:get_evocation": {
+		"seq": "wwdeeeeeqeaqawwewewwaqawwewew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:get_evocation"
+	},
+	"hexflow:for_range/cube": {
+		"seq": "dadadqqaqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/cube"
+	},
+	"hexweb:has_element": {
+		"seq": "edadee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:has_element"
+	},
+	"miehex:camera": {
+		"seq": "eewqqwqqwwwqqeqqwwwqqwqqwee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:camera"
+	},
+	"oneironaut:erosionshield": {
+		"seq": "wwqwwqwwqwwqwwqwwaeqwwqqqwwqaeadaqadaawww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:erosionshield"
+	},
+	"hexdebug:splicing/clipboard/read": {
+		"seq": "wqaeaqweeeedw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/read"
+	},
+	"hex_machina:contain": {
+		"seq": "qqqqqeawa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:contain"
+	},
+	"hexcasting:summon_rain": {
+		"seq": "wwweeewwweewdawdwad",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:summon_rain"
+	},
+	"hexical:rotate_entity": {
+		"seq": "qqqdaqqqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:rotate_entity"
+	},
+	"hexcasting:const/vec/nz": {
+		"seq": "eeeeeqd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/nz"
+	},
+	"hexal:particles": {
+		"seq": "eqqqqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:particles"
+	},
+	"hexical:thickness_specklike": {
+		"seq": "adeeqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:thickness_specklike"
+	},
+	"hexcasting:create_water": {
+		"seq": "aqawqadaq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:create_water"
+	},
+	"hexical:magic_missile": {
+		"seq": "qaqww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:magic_missile"
+	},
+	"miehex:personal_media": {
+		"seq": "qdwae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:personal_media"
+	},
+	"miehex:change_biome": {
+		"seq": "wedweaqqwq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:change_biome"
+	},
+	"hexdim:dim/rel/to": {
+		"seq": "adeeda",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexdim:dim/rel/to"
+	},
+	"hexical:absorb_arm": {
+		"seq": "aaqqadaqwqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:absorb_arm"
+	},
+	"hexical:conjure_hextito": {
+		"seq": "qaqdqaqdwawaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:conjure_hextito"
+	},
+	"hexical:break_fortune": {
+		"seq": "qaqqqqqdeeeqeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:break_fortune"
+	},
+	"hexcasting:reverse": {
+		"seq": "qqqaede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:reverse"
+	},
+	"oneironaut:detectshroud": {
+		"seq": "qqqqqwwaawewaawdww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:detectshroud"
+	},
+	"hexpose:shooter": {
+		"seq": "aadedade",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:shooter"
+	},
+	"hexcasting:potion/regeneration": {
+		"seq": "qqqqaawawaedd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/regeneration"
+	},
+	"hexpose:get_time": {
+		"seq": "wddwaqqwqaddaqqwddwaqqwqaddaq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_time"
+	},
+	"lapisworks:teach_song": {
+		"seq": "aawwawqwwdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:teach_song"
+	},
+	"miehex:idea_entry": {
+		"seq": "wqwawewawqwdwewdwwwdwwqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:idea_entry"
+	},
+	"hexparse:code2focus": {
+		"seq": "aqqqqqeawqwqwqwqwqwweeeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexparse:code2focus"
+	},
+	"scryglass:remove_vision": {
+		"seq": "awawa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.scryglass:remove_vision"
+	},
+	"hex_machina:roulette": {
+		"seq": "qqqeaqaa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:roulette"
+	},
+	"hexcasting:and": {
+		"seq": "wdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:and"
+	},
+	"hexparse:switch_comment": {
+		"seq": "adadaqadadaawwqde",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexparse:switch_comment"
+	},
+	"complexhex:killbit": {
+		"seq": "wqwqwqwqwqwaqdwddwdq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:killbit"
+	},
+	"oneironaut:delayrod": {
+		"seq": "qwqqqwqaqddq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:delayrod"
+	},
+	"hexcasting:logarithm": {
+		"seq": "eqaqe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:logarithm"
+	},
+	"hexical:ghast_fireball": {
+		"seq": "wqqqqqwaeaeaeaeae",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:ghast_fireball"
+	},
+	"lapisworks:readable_necklace": {
+		"seq": "wwaaqqqqqew",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:readable_necklace"
+	},
+	"hexical:parrot": {
+		"seq": "wweedadw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:parrot"
+	},
+	"hexweb:get_host": {
+		"seq": "eqewdewqeeaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:get_host"
+	},
+	"hexcasting:ignite": {
+		"seq": "aaqawawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:ignite"
+	},
+	"complexhex:scalebit": {
+		"seq": "wqwqwqwqwqwawwaawaawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:scalebit"
+	},
+	"autumnfloods:let_out": {
+		"seq": "ewaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:let_out"
+	},
+	"hexcasting:construct": {
+		"seq": "ddewedd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:construct"
+	},
+	"oneironaut:getsoulprint": {
+		"seq": "qqaqwedee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:getsoulprint"
+	},
+	"hexical:age_scroll": {
+		"seq": "wqwawqwqawwddwwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:age_scroll"
+	},
+	"hexal:wisp/consume": {
+		"seq": "wawqwawwwewwwewwwawqwawwwewwwewdeaweewaqaweewaawwww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/consume"
+	},
+	"hexstruction:rotate_clockwise_z": {
+		"seq": "aeqeawaeqeaeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_clockwise_z"
+	},
+	"hexical:lamp_finale": {
+		"seq": "aaddaddad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:lamp_finale"
+	},
+	"caduceus:eval/prompt_at": {
+		"seq": "qedqaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.caduceus:eval/prompt_at"
+	},
+	"miehex:function_check_care": {
+		"seq": "awqdeewadq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.miehex:function_check_care"
+	},
+	"autumnfloods:recipes": {
+		"seq": "edeedqdweee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:recipes"
+	},
+	"lapisworks:writable_spechand": {
+		"seq": "eeeedaww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:writable_spechand"
+	},
+	"slate_work:media_reflection": {
+		"seq": "eaqdaadqae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:media_reflection"
+	},
+	"lapisworks:readable_spechand": {
+		"seq": "qqqqadww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:readable_spechand"
+	},
+	"hexal:freeze": {
+		"seq": "weeeweedada",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:freeze"
+	},
+	"hexical:dispense": {
+		"seq": "wqwawqwddaeeead",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:dispense"
+	},
+	"ephemera:collisionprobe": {
+		"seq": "qaqqqqqdaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:collisionprobe"
+	},
+	"overevaluate:athena_print": {
+		"seq": "dweaqqqqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:athena_print"
+	},
+	"hexecuteif:can_place_block": {
+		"seq": "eeeeedeed",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexecuteif:can_place_block"
+	},
+	"hexweb:send": {
+		"seq": "qewqawqeq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexweb:send"
+	},
+	"autumnfloods:kcit": {
+		"seq": "qwqwqwqwqwqqeaeaeaeaeaewqqqdwqqqwdqqqdwqqqwdqqqdwqqaqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeqqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:kcit"
+	},
+	"ephemera:readframerotation": {
+		"seq": "wwawwqwwawwaeae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:readframerotation"
+	},
+	"hexcasting:append": {
+		"seq": "edqde",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:append"
+	},
+	"overevaluate:swap_two_three": {
+		"seq": "aawede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.overevaluate:swap_two_three"
+	},
+	"overevaluate:atalanta": {
+		"seq": "aqdea",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.overevaluate:atalanta"
+	},
+	"hexcasting:remove_from": {
+		"seq": "edqdewaqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:remove_from"
+	},
+	"complexhex:qy": {
+		"seq": "wdeeeeeqe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qy"
+	},
+	"oneironaut:dimteleport": {
+		"seq": "qeewwwweeqeqeewwwweeqdqqdwwwdqeqdwwwdqdadwwdqdwwddadaqadaawww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:dimteleport"
+	},
+	"hexcasting:eval": {
+		"seq": "deaqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:eval"
+	},
+	"slate_work:get_trades": {
+		"seq": "eaqwqaewedeadwdwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:get_trades"
+	},
+	"hexcasting:fisherman": {
+		"seq": "ddad",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:fisherman"
+	},
+	"hexcasting:zone_entity/animal": {
+		"seq": "qqqqqwdeddwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/animal"
+	},
+	"hexpose:get_moon": {
+		"seq": "eweweweweweeweeedadw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_moon"
+	},
+	"miehex:easy_thrust": {
+		"seq": "wawaqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:easy_thrust"
+	},
+	"hexdim:dim/cast/activate": {
+		"seq": "deaqqeweeeeewdqdqdqdqdq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexdim:dim/cast/activate"
+	},
+	"slate_work:get_craft_count": {
+		"seq": "eaqwqaeqwaeadawwadaeawdaa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:get_craft_count"
+	},
+	"hexstruction:rotate_counterclockwise_x": {
+		"seq": "aeqeawaeqeadqaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:rotate_counterclockwise_x"
+	},
+	"hexpose:get_effects_item": {
+		"seq": "wqqqadee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_effects_item"
+	},
+	"hexical:greater_blink": {
+		"seq": "wqawawaqwqwqawawaqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:greater_blink"
+	},
+	"hexstruction:save_structure": {
+		"seq": "dqeqdwdqeqd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexstruction:save_structure"
+	},
+	"hexportation:get_view_capacity": {
+		"seq": "adeeedeww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexportation:get_view_capacity"
+	},
+	"scryglass:draw_line": {
+		"seq": "aaqdwdwdeww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.scryglass:draw_line"
+	},
+	"hexical:to_pigment": {
+		"seq": "aqwedeweeeewweeew",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:to_pigment"
+	},
+	"autumnfloods:get_contained_motes": {
+		"seq": "wwdeewaqawee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:get_contained_motes"
+	},
+	"hexcasting:for_each": {
+		"seq": "dadad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:for_each"
+	},
+	"yaha:time_bomb": {
+		"seq": "eewaqawee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.yaha:time_bomb"
+	},
+	"hexal:mote/combinable": {
+		"seq": "dedqeaqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:mote/combinable"
+	},
+	"oneironaut:readrodram": {
+		"seq": "qeeweeewddw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:readrodram"
+	},
+	"slate_work:get_items": {
+		"seq": "eaqwqaeqawawaedd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:get_items"
+	},
+	"lapisworks:create_enchsent2": {
+		"seq": "wdwewdwwwdwwwdwqwdwwwdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent2"
+	},
+	"hexical:conjure_speck": {
+		"seq": "ade",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:conjure_speck"
+	},
+	"hexpose:get_offhand": {
+		"seq": "edeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_offhand"
+	},
+	"hexpose:get_effect_duration": {
+		"seq": "wqqqaqwdd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_effect_duration"
+	},
+	"hexical:item_name": {
+		"seq": "qwawqwaadwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:item_name"
+	},
+	"hexthingy:things/pasteurpurification": {
+		"seq": "aqqqqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthingy:things/pasteurpurification"
+	},
+	"hexautomata:event/read": {
+		"seq": "aqqqqqedwaqded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexautomata:event/read"
+	},
+	"hexpose:identify": {
+		"seq": "qqqqqe",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:identify"
+	},
+	"hexical:smelt": {
+		"seq": "qwqqadadadewewewe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:smelt"
+	},
+	"hexcasting:xor": {
+		"seq": "dwa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:xor"
+	},
+	"miehex:great_connect": {
+		"seq": "daaedewdweeqawa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:great_connect"
+	},
+	"hexpose:burning": {
+		"seq": "eewdead",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:burning"
+	},
+	"ephemera:removestatus": {
+		"seq": "eeeeedaqdewed",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:removestatus"
+	},
+	"hexcasting:sin": {
+		"seq": "qqqqqaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:sin"
+	},
+	"hexcasting:sub": {
+		"seq": "wddw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:sub"
+	},
+	"hexical:jumping": {
+		"seq": "qaqdaqqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:jumping"
+	},
+	"hexecuteif:inv_slot_count": {
+		"seq": "qwawqwaqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexecuteif:inv_slot_count"
+	},
+	"ephemera:getstacksizedeep": {
+		"seq": "qwaeawqaqded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:getstacksizedeep"
+	},
+	"hexical:index_hopper": {
+		"seq": "qqqeawqwawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:index_hopper"
+	},
+	"hexical:tweak_mage_block": {
+		"seq": "deeadwd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:tweak_mage_block"
+	},
+	"hexal:wisp/trigger/tick": {
+		"seq": "aqawded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/trigger/tick"
+	},
+	"hexdebug:splicing/selection/write": {
+		"seq": "wedqdewqqqqae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/selection/write"
+	},
+	"slate_work:set_macro": {
+		"seq": "qqqwqqqqqaqeeaqwqae",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.slate_work:set_macro"
+	},
+	"miehex:back_to_overworld": {
+		"seq": "wedwewwdwew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:back_to_overworld"
+	},
+	"hexcasting:beep": {
+		"seq": "adaa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:beep"
+	},
+	"hexal:breath": {
+		"seq": "aqawdwaqawd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:breath"
+	},
+	"moreiotas:item/inventory/stacks": {
+		"seq": "aqwed",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:item/inventory/stacks"
+	},
+	"hexcasting:flight/time": {
+		"seq": "dwdwdewq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:flight/time"
+	},
+	"hexcasting:not": {
+		"seq": "dw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:not"
+	},
+	"hexical:pling": {
+		"seq": "eqqqada",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:pling"
+	},
+	"complexhex:summonblockdisplay": {
+		"seq": "wqwqwqwqwqwawqaqqqqqe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:summonblockdisplay"
+	},
+	"miehex:zone_entity/by_name": {
+		"seq": "qqqqqwdeddwwded",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:zone_entity/by_name"
+	},
+	"hexcasting:get_entity_look": {
+		"seq": "wa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity_look"
+	},
+	"hexal:wisp/transfer/allow": {
+		"seq": "qqqqqewwqeeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/transfer/allow"
+	},
+	"yaha:paper_plane_target": {
+		"seq": "wwqaqwwdedde",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.yaha:paper_plane_target"
+	},
+	"hexoverpowered:factor_cut": {
+		"seq": "waawaawawdeddwaaqawdwddwddw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexoverpowered:factor_cut"
+	},
+	"hexical:smoke": {
+		"seq": "qwqqadadadewdqqdwe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:smoke"
+	},
+	"autumnfloods:charge": {
+		"seq": "waqqqqqwaeaeaeaeaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:charge"
+	},
+	"hexcasting:flight": {
+		"seq": "eawwaeawawaa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:flight"
+	},
+	"ephemera:setframerotation": {
+		"seq": "wwawwqwwawwaqdq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:setframerotation"
+	},
+	"autumnfloods:simulation": {
+		"seq": "ddwedewdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:simulation"
+	},
+	"hexical:egg": {
+		"seq": "qqqwaqaaqeeewdedde",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:egg"
+	},
+	"autumnfloods:arrow": {
+		"seq": "awwwqaqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:arrow"
+	},
+	"moreiotas:matrix/determinant": {
+		"seq": "aeawwaeawaw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/determinant"
+	},
+	"complexhex:axisangle": {
+		"seq": "waqqqqqedaqqqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:axisangle"
+	},
+	"hexal:zone_entity/not_wisp": {
+		"seq": "eewaqaweewaqaaww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:zone_entity/not_wisp"
+	},
+	"slate_work:wave_normal": {
+		"seq": "eaqdaadqaeewa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:wave_normal"
+	},
+	"hexical:shader_tv": {
+		"seq": "wewdwewwawwewdwew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:shader_tv"
+	},
+	"lapisworks:create_enchsent0": {
+		"seq": "aqaeawdwwwdwqwdwwwdweqqaqwedeewqded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent0"
+	},
+	"hexstruction:transformations": {
+		"seq": "aeqeawaeqeaaee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:transformations"
+	},
+	"ephemera:cancelflight": {
+		"seq": "awawaawe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:cancelflight"
+	},
+	"oneironaut:getrodlook": {
+		"seq": "qwqqqwqawa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getrodlook"
+	},
+	"hexparse:learn_patterns": {
+		"seq": "aqqqqqeawqwqwqwqwqwwqqeqqeqqeqqeqqeqqdqeeeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexparse:learn_patterns"
+	},
+	"moreiotas:altadd": {
+		"seq": "waawawaeawwaea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:altadd"
+	},
+	"hexcasting:arcsin": {
+		"seq": "ddeeeee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:arcsin"
+	},
+	"hexstruction:mirror_front_back": {
+		"seq": "aeqeawaeqeaqqwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:mirror_front_back"
+	},
+	"hexdebug:splicing/list/spellbook_index/write": {
+		"seq": "wedqdewqaeaae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/list/spellbook_index/write"
+	},
+	"hexical:get_arch_lamp_rotation": {
+		"seq": "qaqwddedadw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_rotation"
+	},
+	"hexcasting:halt": {
+		"seq": "aqdee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:halt"
+	},
+	"moreiotas:matrix/unmake": {
+		"seq": "dwwdqdwwddawd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:matrix/unmake"
+	},
+	"hexcasting:construct_vec": {
+		"seq": "eqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:construct_vec"
+	},
+	"hexical:kill_specklike": {
+		"seq": "adeaqde",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:kill_specklike"
+	},
+	"hexal:mote/storage/remaining_capacity/get": {
+		"seq": "awedqdewa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/storage/remaining_capacity/get"
+	},
+	"hexcasting:craft/artifact": {
+		"seq": "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:craft/artifact"
+	},
+	"complexhex:qmake": {
+		"seq": "waqqqqqe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qmake"
+	},
+	"hexical:wristpocket": {
+		"seq": "aaqqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:wristpocket"
+	},
+	"hexal:mote/make": {
+		"seq": "eaqa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:mote/make"
+	},
+	"hexpose:get_weather": {
+		"seq": "eweweweweweeeaedqdqde",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_weather"
+	},
+	"hexpose:fluid_surface_raycast": {
+		"seq": "weedewqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:fluid_surface_raycast"
+	},
+	"lapisworks:imbue_amel": {
+		"seq": "wqwwawwqwwaqwewaawewa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:imbue_amel"
+	},
+	"hexcasting:writable/entity": {
+		"seq": "wdwewewewewewqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:writable/entity"
+	},
+	"lapisworks:thought_sieve": {
+		"seq": "qadaadadqaqdadqaq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:thought_sieve"
+	},
+	"hexcasting:lightning": {
+		"seq": "waadwawdaaweewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:lightning"
+	},
+	"yaha:time_bomb_pos": {
+		"seq": "eewaqaweedd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.yaha:time_bomb_pos"
+	},
+	"pregxxy:nurture": {
+		"seq": "deaqwaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.pregxxy:nurture"
+	},
+	"autumnfloods:mote_contain": {
+		"seq": "eeeeedqwdwd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:mote_contain"
+	},
+	"hexpose:block_blast_resistance": {
+		"seq": "qaqqqqqewaawaawa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:block_blast_resistance"
+	},
+	"hexweb:get_element": {
+		"seq": "edadeedd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:get_element"
+	},
+	"hexical:grok_pull": {
+		"seq": "aqawwqaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:grok_pull"
+	},
+	"hexal:wisp/move/target/set": {
+		"seq": "awqwawqaw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:wisp/move/target/set"
+	},
+	"hex_machina:capsule/has_entity": {
+		"seq": "qqqqqwaddwdww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:capsule/has_entity"
+	},
+	"ephemera:thothyoink": {
+		"seq": "qaeaqdadad",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:thothyoink"
+	},
+	"hexthingy:things/cleaneffect": {
+		"seq": "qqqqwaqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexthingy:things/cleaneffect"
+	},
+	"hexcasting:bool_coerce": {
+		"seq": "aw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:bool_coerce"
+	},
+	"hexoverpowered:mind_env/running_code": {
+		"seq": "wqaqwweeeeeqdeaqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_env/running_code"
+	},
+	"miehex:xmbug": {
+		"seq": "qqqaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:xmbug"
+	},
+	"hexical:read_mesh": {
+		"seq": "edeeeeeweeeaqqwqwqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:read_mesh"
+	},
+	"hexcasting:sentinel/create/great": {
+		"seq": "waeawaeqqqwqwqqwq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:sentinel/create/great"
+	},
+	"hexical:snowball": {
+		"seq": "ddeeeeewd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:snowball"
+	},
+	"hexical:get_dye": {
+		"seq": "weedwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_dye"
+	},
+	"hexflow:call_stack": {
+		"seq": "dwdeaqqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexflow:call_stack"
+	},
+	"hexcasting:create_lava": {
+		"seq": "eaqawqadaqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:create_lava"
+	},
+	"hex_machina:current_bullet": {
+		"seq": "awqqqwaqweaqaaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hex_machina:current_bullet"
+	},
+	"pregxxy:pregxxy": {
+		"seq": "eewewwwwdwwwweweewwdeaqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.pregxxy:pregxxy"
+	},
+	"hexcasting:floor": {
+		"seq": "ewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:floor"
+	},
+	"hexboard:resolve": {
+		"seq": "wqawqwewdeweq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexboard:resolve"
+	},
+	"lapisworks:flay_artmind1": {
+		"seq": "ewewedwqwaqaedqdeaqdewewe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:flay_artmind1"
+	},
+	"moreiotas:item/off_hand": {
+		"seq": "qeda",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:item/off_hand"
+	},
+	"lapisworks:create_enchsent1": {
+		"seq": "aqaeawdwwwdwqwdwwwdwewweaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent1"
+	},
+	"hexoverpowered:yjsp_media": {
+		"seq": "eaddaddaeaeaddaddaeaeaddaddae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexoverpowered:yjsp_media"
+	},
+	"hexpose:painting_variant": {
+		"seq": "wawwwqwwawwwqadaqeda",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:painting_variant"
+	},
+	"hexal:gate/close": {
+		"seq": "qqqwwqqqwqqawdedw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:gate/close"
+	},
+	"complexhex:bubble": {
+		"seq": "qdqdqdqdqdq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:bubble"
+	},
+	"hexal:mote/storage/contains": {
+		"seq": "dwqaeaqwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/storage/contains"
+	},
+	"hierophantics:make_teleport_trigger": {
+		"seq": "qqqqqawweaqaawaaqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_teleport_trigger"
+	},
+	"oneironaut:queryrod": {
+		"seq": "qwqqqwqaeaqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:queryrod"
+	},
+	"hexcasting:get_entity/living": {
+		"seq": "qqqqqdaqaawd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity/living"
+	},
+	"hexcasting:empty_list": {
+		"seq": "qqaeaae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:empty_list"
+	},
+	"hexal:mote/craft/preview": {
+		"seq": "wwdwaqawdwaqwwawdedwawwqawdwaqawdww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/craft/preview"
+	},
+	"miehex:block_var_writes": {
+		"seq": "waqqqqdae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:block_var_writes"
+	},
+	"hexical:moving_up": {
+		"seq": "aqaddq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:moving_up"
+	},
+	"hexweb:read": {
+		"seq": "eqewdewqe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:read"
+	},
+	"miehex:create_symbols": {
+		"seq": "wqwqwqwqwqwawwaqqqqqddewqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:create_symbols"
+	},
+	"autumnfloods:recipe": {
+		"seq": "qaqqaeawqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:recipe"
+	},
+	"lessertp:lesser_tp": {
+		"seq": "edqdewqaeaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lessertp:lesser_tp"
+	},
+	"hexpose:villager_type": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:villager_type"
+	},
+	"complexhex:ascii/from": {
+		"seq": "awdwae",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:ascii/from"
+	},
+	"complexhex:quattomat": {
+		"seq": "wdeeeeeqeawwaeaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:quattomat"
+	},
+	"miehex:entity_anchor": {
+		"seq": "aawewewaqweedeewqawewe",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:entity_anchor"
+	},
+	"miehex:guide": {
+		"seq": "ede",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:guide"
+	},
+	"hierophantics:set_mind_trigger": {
+		"seq": "ddewdd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:set_mind_trigger"
+	},
+	"hexpose:env_staff": {
+		"seq": "waaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:env_staff"
+	},
+	"hexpose:get_effect_amplifier": {
+		"seq": "wqqqaqwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_effect_amplifier"
+	},
+	"hexcasting:last_n_list": {
+		"seq": "ewdqdwe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:last_n_list"
+	},
+	"hexpose:text_strikethrough": {
+		"seq": "awaqeeeeedq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_strikethrough"
+	},
+	"lapisworks:hastenature3": {
+		"seq": "awwdedwwawwdedweawawwwdwdww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:hastenature3"
+	},
+	"hierophantics:make_velocity_trigger": {
+		"seq": "qqqqqawwdaqqqaq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_velocity_trigger"
+	},
+	"hexecuteif:inv_transfer_item": {
+		"seq": "dwewdwedwwadeeedewadeeed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexecuteif:inv_transfer_item"
+	},
+	"hexal:wisp/transfer/disallow": {
+		"seq": "qqqqqeqdeddweqqqqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/transfer/disallow"
+	},
+	"autumnfloods:let_in": {
+		"seq": "dwdd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:let_in"
+	},
+	"hexical:conjure_mesh": {
+		"seq": "qaqqqqqwqqqdeeweweeaeewewee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:conjure_mesh"
+	},
+	"miehex:function_halt": {
+		"seq": "aqdeeqawqwqwqwqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.miehex:function_halt"
+	},
+	"hexdebug:splicing/clipboard/writable": {
+		"seq": "wedqdewqqqqaww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/writable"
+	},
+	"hexxyplanes:enter_plane": {
+		"seq": "dwawdeewedwwqqqwwqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:enter_plane"
+	},
+	"hexpose:entity_vehicle": {
+		"seq": "eqqedwewew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:entity_vehicle"
+	},
+	"hexpose:item_variant_max": {
+		"seq": "dwaawaqwawq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:item_variant_max"
+	},
+	"hexical:create_dust": {
+		"seq": "eaqwedqdqddqqwae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:create_dust"
+	},
+	"hexxyplanes:plane_banish": {
+		"seq": "dwawddww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:plane_banish"
+	},
+	"hexal:gate/mark/get": {
+		"seq": "edwwdeeede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:gate/mark/get"
+	},
+	"complexhex:const/quaternion/j": {
+		"seq": "waqqqqqee",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:const/quaternion/j"
+	},
+	"overevaluate:soroban_push": {
+		"seq": "wdeaqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:soroban_push"
+	},
+	"hexpats:headpat": {
+		"seq": "weweeeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpats:headpat"
+	},
+	"ioticblocks:write/index": {
+		"seq": "deeeeeqawqwaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ioticblocks:write/index"
+	},
+	"hexcasting:raycast/axis": {
+		"seq": "weddwaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:raycast/axis"
+	},
+	"hexical:rotate_block": {
+		"seq": "edeeeeeweewadeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:rotate_block"
+	},
+	"hexoverpowered:mind_stack/pop": {
+		"seq": "wqaqwweeeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_stack/pop"
+	},
+	"hexcasting:deconstruct": {
+		"seq": "aaqwqaa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:deconstruct"
+	},
+	"moreiotas:string/name/get": {
+		"seq": "deqqeddqwqqqwq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:string/name/get"
+	},
+	"hexpose:get_hunger": {
+		"seq": "adaqqqddqe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_hunger"
+	},
+	"hexpose:classify": {
+		"seq": "edqdeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:classify"
+	},
+	"hexical:wish": {
+		"seq": "eweweweweweewedeaqqqd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:wish"
+	},
+	"hexcasting:bonemeal": {
+		"seq": "wqaqwawqaqw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:bonemeal"
+	},
+	"hexical:moving_right": {
+		"seq": "qaqda",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:moving_right"
+	},
+	"oneironaut:craftbottomlesstrinket": {
+		"seq": "wwqeeeeewqqqqqewwaqeqwqeqqqeqwqeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:craftbottomlesstrinket"
+	},
+	"hierophantics:set_mind_hex": {
+		"seq": "ddeedd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:set_mind_hex"
+	},
+	"hexical:sleight": {
+		"seq": "aaqqadeeeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:sleight"
+	},
+	"oneironaut:applynotmissing": {
+		"seq": "qdaeqeawaeqeadqqdeed",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:applynotmissing"
+	},
+	"hexal:gate/make": {
+		"seq": "qwqwqwqwqwqqeaeaeaeaeae",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:gate/make"
+	},
+	"lapisworks:empty_dstl": {
+		"seq": "dwewdwedwwwadwewdwedw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:empty_dstl"
+	},
+	"hexcasting:craft/cypher": {
+		"seq": "waqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:craft/cypher"
+	},
+	"hexweb:parse_json": {
+		"seq": "edadeqdwedw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexweb:parse_json"
+	},
+	"hexcasting:const/double/pi": {
+		"seq": "qdwdq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:const/double/pi"
+	},
+	"hexical:llama_spit": {
+		"seq": "dwqaqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:llama_spit"
+	},
+	"lapisworks:flay_artmind4": {
+		"seq": "ewewedwqwaqeqwqadqwqwqdaqeqwqwq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:flay_artmind4"
+	},
+	"ephemera:getbystatussingle": {
+		"seq": "eaeeeeeae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getbystatussingle"
+	},
+	"hexpose:query_blockstate": {
+		"seq": "qaqqqqqeawa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:query_blockstate"
+	},
+	"hexcasting:interop/pehkui/set": {
+		"seq": "ddwdwwdwwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:interop/pehkui/set"
+	},
+	"miehex:create_sapling": {
+		"seq": "wawwwewdwewww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:create_sapling"
+	},
+	"oneironaut:readsentinel": {
+		"seq": "waeawaeddwwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:readsentinel"
+	},
+	"hexdim:dim/carved": {
+		"seq": "qqqqqwaeaeaeaeaeadwaqaeaq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdim:dim/carved"
+	},
+	"lapisworks:hastenature1": {
+		"seq": "qwdedwqqwdedweawawwwdwdww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:hastenature1"
+	},
+	"hexxyplanes:exit_deconstruct": {
+		"seq": "dwawdaawwwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:exit_deconstruct"
+	},
+	"hexical:light": {
+		"seq": "aeaeaeaeaeawqqqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:light"
+	},
+	"hexical:pigment_specklike": {
+		"seq": "adeqqaq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:pigment_specklike"
+	},
+	"hexchanting:imbue_equipment": {
+		"seq": "dqaqdqaqdqaeadawadadawadadawa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexchanting:imbue_equipment"
+	},
+	"hexcasting:sentinel/create": {
+		"seq": "waeawae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:sentinel/create"
+	},
+	"hexcasting:slice": {
+		"seq": "qaeaqwded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:slice"
+	},
+	"miehex:collect_consciousness": {
+		"seq": "qqqqqwqqwqwqwqwqwwqaeqawwwawwwaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:collect_consciousness"
+	},
+	"lapisworks:conjure_color": {
+		"seq": "qqaa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:conjure_color"
+	},
+	"overevaluate:janus": {
+		"seq": "aadee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.overevaluate:janus"
+	},
+	"hexical:scroll": {
+		"seq": "qadeeee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:scroll"
+	},
+	"hexcasting:const/vec/pz": {
+		"seq": "qqqqqed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/pz"
+	},
+	"hexcellular:create_property": {
+		"seq": "aawe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcellular:create_property"
+	},
+	"complexhex:qx": {
+		"seq": "wdeeeeeqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qx"
+	},
+	"hexoverpowered:mind_stack/push": {
+		"seq": "waawweeeeedd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_stack/push"
+	},
+	"hexcasting:readable/entity": {
+		"seq": "wawqwqwqwqwqwew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:readable/entity"
+	},
+	"hexal:mote/trade/get": {
+		"seq": "awdedwaawwqded",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/trade/get"
+	},
+	"lapisworks:write_necklace": {
+		"seq": "wadeeeeeq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:write_necklace"
+	},
+	"hexal:wisp/summon/projectile": {
+		"seq": "aqaeqeeeee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/summon/projectile"
+	},
+	"lapisworks:check_mind": {
+		"seq": "aawqqwqqq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.lapisworks:check_mind"
+	},
+	"hexal:everbook/write": {
+		"seq": "qwqqqwqaeaqaaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:everbook/write"
+	},
+	"hexical:glow_scroll": {
+		"seq": "wqwawqwqawawaewdwdw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:glow_scroll"
+	},
+	"hexpose:entity_name": {
+		"seq": "edeweedw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:entity_name"
+	},
+	"miehex:all_eval": {
+		"seq": "wdeqqqqqaewawqwqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:all_eval"
+	},
+	"hexpose:is_sprinting": {
+		"seq": "eaq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:is_sprinting"
+	},
+	"yaha:anvil": {
+		"seq": "dqdwdqdqaa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.yaha:anvil"
+	},
+	"hexboard:load": {
+		"seq": "wqawqwewdewea",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexboard:load"
+	},
+	"hex_machina:release": {
+		"seq": "qqqqqwaddwd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hex_machina:release"
+	},
+	"hexecuteif:inv_drop_item": {
+		"seq": "dwewdwedwwadeeed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexecuteif:inv_drop_item"
+	},
+	"hexcasting:get_caster": {
+		"seq": "qaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_caster"
+	},
+	"moreiotas:matrix/inverse": {
+		"seq": "wwdqdwwdqaq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/inverse"
+	},
+	"autumnfloods:contain_contain": {
+		"seq": "eeeeedwwdwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:contain_contain"
+	},
+	"moreiotas:matrix/concat/vert": {
+		"seq": "awwaeawwawawdedwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/concat/vert"
+	},
+	"hexcasting:splat": {
+		"seq": "qwaeawq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:splat"
+	},
+	"hexpose:absorption_hearts": {
+		"seq": "waawedwdwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:absorption_hearts"
+	},
+	"hexautomata:quantum_swap": {
+		"seq": "aqaedwaqded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexautomata:quantum_swap"
+	},
+	"hexal:light_level": {
+		"seq": "qedqde",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:light_level"
+	},
+	"oneironaut:applymindrender": {
+		"seq": "qweqadeqadeqadqqqwdaqedaqedaqeqaqdwawdwawdwaqawdwawdwawddwwwwwqdeddw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:applymindrender"
+	},
+	"hexcasting:circle/impetus_dir": {
+		"seq": "eaqwqaewede",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:circle/impetus_dir"
+	},
+	"hexical:deserialize_pattern": {
+		"seq": "wqqqaqwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:deserialize_pattern"
+	},
+	"ephemera:getiotasize": {
+		"seq": "qwaeawqaqdedd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.ephemera:getiotasize"
+	},
+	"hexical:get_arch_lamp_use_time": {
+		"seq": "qaqwddedqwddwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:get_arch_lamp_use_time"
+	},
+	"hexcasting:swizzle": {
+		"seq": "qaawdde",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:swizzle"
+	},
+	"oneironaut:readideatime": {
+		"seq": "qwqwqwqwqwqqqeqaqeq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:readideatime"
+	},
+	"complexhex:qinvert": {
+		"seq": "waqqqqqew",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:qinvert"
+	},
+	"oneironaut:getdimscale": {
+		"seq": "wawawqwqwqwqwqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:getdimscale"
+	},
+	"hexcasting:interop/pehkui/get": {
+		"seq": "aawawwawwa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:interop/pehkui/get"
+	},
+	"hexpose:count_stack": {
+		"seq": "qaqqwqqqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:count_stack"
+	},
+	"miehex:get_spawn": {
+		"seq": "wqaqwawqwwawwqwwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:get_spawn"
+	},
+	"ephemera:invisibility": {
+		"seq": "qqqqqaewawaweqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:invisibility"
+	},
+	"hexpose:get_einstein": {
+		"seq": "aqwawqwqqwqwqwqwqwq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_einstein"
+	},
+	"hexical:normalize_scroll": {
+		"seq": "wqwawqwqawawa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:normalize_scroll"
+	},
+	"hexecuteif:halt_if": {
+		"seq": "aqdeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexecuteif:halt_if"
+	},
+	"scryglass:get_visions": {
+		"seq": "dwdwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.scryglass:get_visions"
+	},
+	"ephemera:dismount": {
+		"seq": "awqqaee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:dismount"
+	},
+	"hexpose:is_brainswept": {
+		"seq": "qqqaqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:is_brainswept"
+	},
+	"moreiotas:type/entity": {
+		"seq": "qawde",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:type/entity"
+	},
+	"hexal:mote/contained/get": {
+		"seq": "aweeeeewaaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/contained/get"
+	},
+	"hierophantics:make_health_trigger": {
+		"seq": "qqqqqawwewawqada",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_health_trigger"
+	},
+	"hexal:everbook/read": {
+		"seq": "eweeewedqdeddw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:everbook/read"
+	},
+	"miehex:all_record": {
+		"seq": "deeeeeweeweeqeewee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:all_record"
+	},
+	"lapisworks:read_necklace": {
+		"seq": "waaqqqqqe",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:read_necklace"
+	},
+	"autumnfloods:uncrafting": {
+		"seq": "qaqqqqqwqqqeqqqeqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:uncrafting"
+	},
+	"moreiotas:string/chat/caster": {
+		"seq": "waqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/chat/caster"
+	},
+	"complexhex:zone_entity/bit": {
+		"seq": "qqwwewewewewewwqqwdeddww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:zone_entity/bit"
+	},
+	"hexical:rotate_specklike": {
+		"seq": "adeaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:rotate_specklike"
+	},
+	"hexcasting:duplicate_n": {
+		"seq": "aadaadaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:duplicate_n"
+	},
+	"hexcasting:raycast/entity": {
+		"seq": "weaqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:raycast/entity"
+	},
+	"hexical:roll_specklike": {
+		"seq": "adeqqqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:roll_specklike"
+	},
+	"hexpose:get_air": {
+		"seq": "wwaade",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:get_air"
+	},
+	"hexical:confetti": {
+		"seq": "awddeqaedd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:confetti"
+	},
+	"autumnfloods:has_tag": {
+		"seq": "dwedewd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:has_tag"
+	},
+	"miehex:allay_mix": {
+		"seq": "daaedewdqdqdqdqdqdadwewewewewew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.miehex:allay_mix"
+	},
+	"hexal:smelt": {
+		"seq": "wqqqwqqadad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:smelt"
+	},
+	"lapisworks:check_attr": {
+		"seq": "wwwaqeeqawww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:check_attr"
+	},
+	"hexcasting:add_motion": {
+		"seq": "awqqqwaqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:add_motion"
+	},
+	"moreiotas:string/chat/prefix/set": {
+		"seq": "qwaqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:string/chat/prefix/set"
+	},
+	"hexal:wisp/owner": {
+		"seq": "dwqqwdedwqqwddwww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/owner"
+	},
+	"hexcasting:potion/poison": {
+		"seq": "qqqqqadwawaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:potion/poison"
+	},
+	"hexecuteif:inv_slot_item_count": {
+		"seq": "dwewdweedq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexecuteif:inv_slot_item_count"
+	},
+	"hexal:mote/trade": {
+		"seq": "awdedwaeqded",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:mote/trade"
+	},
+	"hexal:mote/storage/get": {
+		"seq": "qqqqqaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:mote/storage/get"
+	},
+	"oneironaut:readidea": {
+		"seq": "qwqwqwqwqwqqqwedewq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:readidea"
+	},
+	"ephemera:thothcount": {
+		"seq": "wqaqwadad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:thothcount"
+	},
+	"hexal:mote/villager/level/get": {
+		"seq": "qqwdedwqqaww",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:mote/villager/level/get"
+	},
+	"slate_work:exchange_mind": {
+		"seq": "eaqwqaeqawawaddwwdqeeqdwwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:exchange_mind"
+	},
+	"hexparse:remove_comments": {
+		"seq": "dadadedadadwqaeaqeww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexparse:remove_comments"
+	},
+	"hexcasting:const/double/tau": {
+		"seq": "eawae",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/double/tau"
+	},
+	"hexcasting:greater": {
+		"seq": "e",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:greater"
+	},
+	"hexportation:get_source_inv": {
+		"seq": "eeeeedwwadeeede",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexportation:get_source_inv"
+	},
+	"hexcasting:explode/fire": {
+		"seq": "ddwddwdd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:explode/fire"
+	},
+	"complexhex:translatebit": {
+		"seq": "wqwqwqwqwqwawwaqaeaqe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:translatebit"
+	},
+	"hexpose:is_sleeping": {
+		"seq": "aqaew",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexpose:is_sleeping"
+	},
+	"phlexiful:get_pants_threshhold": {
+		"seq": "dqawa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.phlexiful:get_pants_threshhold"
+	},
+	"oneironaut:getrodstamp": {
+		"seq": "qwqqqwqawaaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getrodstamp"
+	},
+	"hexical:item_lore": {
+		"seq": "dwewdweedwa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:item_lore"
+	},
+	"hierophantics:make_attack_trigger": {
+		"seq": "qqqqqawwqwedweq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_attack_trigger"
+	},
+	"hexical:is_evoking": {
+		"seq": "wwaqqqqqeeaqawwewewwaqawwewew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:is_evoking"
+	},
+	"hexcasting:read": {
+		"seq": "aqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:read"
+	},
+	"ephemera:paintconjured": {
+		"seq": "eqdweeqdwweeqddqdwwwdeww",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.ephemera:paintconjured"
+	},
+	"hexpose:get_stack": {
+		"seq": "edeedq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_stack"
+	},
+	"hexpose:text_color": {
+		"seq": "awaqeeeeewded",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:text_color"
+	},
+	"lapisworks:read_spechand": {
+		"seq": "aqqqqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:read_spechand"
+	},
+	"hexcasting:fisherman/copy": {
+		"seq": "aada",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:fisherman/copy"
+	},
+	"hexcasting:circle/impetus_pos": {
+		"seq": "eaqwqae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:circle/impetus_pos"
+	},
+	"miehex:idea_modify": {
+		"seq": "wewedwaqdeeaqqwqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.miehex:idea_modify"
+	},
+	"ephemera:networkindex": {
+		"seq": "eqqqqqaweqaeaqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:networkindex"
+	},
+	"miehex:block_var_read": {
+		"seq": "waqqqdae",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:block_var_read"
+	},
+	"autumnfloods:zone_block": {
+		"seq": "qqqqqwdeddwww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:zone_block"
+	},
+	"autumnfloods:reflection": {
+		"seq": "wqwawqwweeeqeewqweeqeeedeeeqeewqweeqeedqweqqqewqqweqqqewaawdwqwdwwwdwqwdw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:reflection"
+	},
+	"hierophantics:make_hunger_trigger": {
+		"seq": "qqqqqawwaedwda",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_hunger_trigger"
+	},
+	"hexcasting:entity_pos/foot": {
+		"seq": "dd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:entity_pos/foot"
+	},
+	"hexcassettes:inspect": {
+		"seq": "eqeweweweweqedwqeeeee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcassettes:inspect"
+	},
+	"autumnfloods:space": {
+		"seq": "wwwwwqwwwwwqwwwwwqwwwwwqwwwwwqwwwwwawwwwwqwwawwqwwqwwqwwqwwqwedewwwewwwedwaewwwedwewwqawwqeewwwedwwaewawwqawwweeeawqeeewwewdedwewwewdedwewwewdedwewweqewwewdedwewweaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.autumnfloods:space"
+	},
+	"hexthings:insert": {
+		"seq": "wqwaeawqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:insert"
+	},
+	"lapisworks:falldmgres": {
+		"seq": "qqwwqqqadwewdeq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:falldmgres"
+	},
+	"hexpose:combine_text": {
+		"seq": "dwdeqqqqqawq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:combine_text"
+	},
+	"hexical:click": {
+		"seq": "eqqadaq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:click"
+	},
+	"complexhex:conjugate": {
+		"seq": "wqqd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.complexhex:conjugate"
+	},
+	"lapisworks:teach_simp": {
+		"seq": "deaqqeawqqwwqqq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:teach_simp"
+	},
+	"lapisworks:moar_attack": {
+		"seq": "qaqwweaeaqwww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:moar_attack"
+	},
+	"hexflow:for_range/line/pure": {
+		"seq": "dadadadawwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/line/pure"
+	},
+	"hexical:send_telepathy": {
+		"seq": "qqqqwaqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:send_telepathy"
+	},
+	"moreiotas:item/inventory/items": {
+		"seq": "dewqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:item/inventory/items"
+	},
+	"lapisworks:deposit": {
+		"seq": "qaqqdwdwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:deposit"
+	},
+	"hexcasting:const/vec/py": {
+		"seq": "qqqqqew",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:const/vec/py"
+	},
+	"hexical:break_silk": {
+		"seq": "aqaeaqdeeweweedq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:break_silk"
+	},
+	"hexdebug:splicing/enlightened/hex/write": {
+		"seq": "wqaeaqwqqqwqwqqwwqqeaeqqeqqeaeqqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/enlightened/hex/write"
+	},
+	"hexical:jailbreak": {
+		"seq": "wwaqqqqqeqdedwqeaeqwdedwqeaeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:jailbreak"
+	},
+	"ephemera:getflight/remaining": {
+		"seq": "dwdwdewqdedd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getflight/remaining"
+	},
+	"hexal:armour": {
+		"seq": "wqqqqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:armour"
+	},
+	"autumnfloods:high": {
+		"seq": "ewaad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:high"
+	},
+	"hexal:link": {
+		"seq": "eaqaaeqqqqqaweaqaaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:link"
+	},
+	"slate_work:set_craft_count": {
+		"seq": "eaqwqaeqwaeadawwadaeawedd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:set_craft_count"
+	},
+	"slate_work:set_sents": {
+		"seq": "waeawaewawwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.slate_work:set_sents"
+	},
+	"complexhex:shift/left": {
+		"seq": "qqae",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.complexhex:shift/left"
+	},
+	"hexical:modify_block_bouncy": {
+		"seq": "deeqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:modify_block_bouncy"
+	},
+	"hexcasting:break_block": {
+		"seq": "qaqqqqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:break_block"
+	},
+	"hexflow:for_range/floodfill": {
+		"seq": "dadadqadadwdadadwdadaddwwawwaadaddwaaddad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexflow:for_range/floodfill"
+	},
+	"oneironaut:getrodpos": {
+		"seq": "qwqqqwqawaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:getrodpos"
+	},
+	"complexhex:rotatebit": {
+		"seq": "wqwqwqwqwqwaqeeeeedww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:rotatebit"
+	},
+	"hexthings:empty_dict": {
+		"seq": "eaaea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:empty_dict"
+	},
+	"moreiotas:get_entity/type": {
+		"seq": "dadqqqqqdad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:get_entity/type"
+	},
+	"hexcasting:tan": {
+		"seq": "wqqqqqadq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:tan"
+	},
+	"hexthings:make_range": {
+		"seq": "qqqqqeweaqa",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:make_range"
+	},
+	"miehex:time_add": {
+		"seq": "weedwaqqwdewewewewewe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.miehex:time_add"
+	},
+	"miehex:import_quine": {
+		"seq": "qqqqqeawqwqwqwqwqwwded",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:import_quine"
+	},
+	"lapisworks:create_enchsent4": {
+		"seq": "wdwwwdwqwdwwwdweqaawdde",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:create_enchsent4"
+	},
+	"hexcasting:get_entity/player": {
+		"seq": "qqqqqdaqaawe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:get_entity/player"
+	},
+	"hexthings:uiua_drop": {
+		"seq": "qaeaqda",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:uiua_drop"
+	},
+	"hierophantics:villager_sleep": {
+		"seq": "qqwqqwqqqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hierophantics:villager_sleep"
+	},
+	"hierophantics:get_mind_hex": {
+		"seq": "ddeqaa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:get_mind_hex"
+	},
+	"complexhex:mattoquat": {
+		"seq": "waqqqqqeeawwaeaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:mattoquat"
+	},
+	"caduceus:read/mark/local": {
+		"seq": "aeaaqawd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.caduceus:read/mark/local"
+	},
+	"hexcasting:read/entity": {
+		"seq": "wawqwqwqwqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:read/entity"
+	},
+	"hex_machina:next_bullet": {
+		"seq": "eeewaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hex_machina:next_bullet"
+	},
+	"hexcasting:craft/battery": {
+		"seq": "aqqqaqwwaqqqqqeqaqqqawwqwqwqwqwqw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:craft/battery"
+	},
+	"hexpose:get_chat": {
+		"seq": "dqqqaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_chat"
+	},
+	"hexdebug:craft/quenched_debugger": {
+		"seq": "ddwwwwwwedwewdweqewdwwwewwwdwwwew",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexdebug:craft/quenched_debugger"
+	},
+	"hexoverpowered:mind_patterns": {
+		"seq": "waawweeeeaaeaeaeaeaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_patterns"
+	},
+	"hexflow:build_nested": {
+		"seq": "edqdeqdwewwdwqwdwwew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexflow:build_nested"
+	},
+	"oneironaut:readrodramremote": {
+		"seq": "qwaqawewewaqawewddw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:readrodramremote"
+	},
+	"hexcellular:observe_property": {
+		"seq": "aawd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcellular:observe_property"
+	},
+	"hexoverpowered:get_personal_media_max": {
+		"seq": "qqaqqqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexoverpowered:get_personal_media_max"
+	},
+	"hexal:mote/craft": {
+		"seq": "wwawdedwawdewwdwaqawdwwedwawdedwaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/craft"
+	},
+	"hexical:index_grimoire": {
+		"seq": "aqaeaqwqa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:index_grimoire"
+	},
+	"hexal:wisp/summon/ticking": {
+		"seq": "aqaweewaqawee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/summon/ticking"
+	},
+	"lapisworks:moar_health": {
+		"seq": "wqadaqwwawwwqwwawdwawwqwwwwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:moar_health"
+	},
+	"hexpose:get_saturation": {
+		"seq": "adaqqqddqw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_saturation"
+	},
+	"autumnfloods:download": {
+		"seq": "qdedwqqqqq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:download"
+	},
+	"hexal:mote/contained_type/get": {
+		"seq": "dwqqqqqwddww",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/contained_type/get"
+	},
+	"overevaluate:maat": {
+		"seq": "qed",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.overevaluate:maat"
+	},
+	"hexportation:get_view_amount": {
+		"seq": "adeeedewq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexportation:get_view_amount"
+	},
+	"hexportation:send_item_filt": {
+		"seq": "deeedewadeeede",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexportation:send_item_filt"
+	},
+	"moreiotas:altpow": {
+		"seq": "wedewqawwawqwa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:altpow"
+	},
+	"hierophantics:make_damage_type_trigger": {
+		"seq": "qqqqqawwqdwaqqwawqwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_damage_type_trigger"
+	},
+	"hexpose:create_text": {
+		"seq": "awaqeeeee",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:create_text"
+	},
+	"hierophantics:invert_trigger": {
+		"seq": "aawddeeqqqqqaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:invert_trigger"
+	},
+	"hexical:get_hand_lamp_storage": {
+		"seq": "qwddedqwaqqqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_storage"
+	},
+	"hexcassettes:killall": {
+		"seq": "eqeweweweweqedwqeeeeewwqqwqwqqw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcassettes:killall"
+	},
+	"hexcasting:zone_entity/not_living": {
+		"seq": "eeeeewaqaawd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/not_living"
+	},
+	"slate_work:set_slot": {
+		"seq": "eaqwqaeqawawa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:set_slot"
+	},
+	"hexical:iota_speck": {
+		"seq": "adeeaqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:iota_speck"
+	},
+	"miehex:memory": {
+		"seq": "qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:memory"
+	},
+	"ephemera:getstatus": {
+		"seq": "qqqqqedwd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.ephemera:getstatus"
+	},
+	"hexical:left_click": {
+		"seq": "qadee",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:left_click"
+	},
+	"complexhex:const/quaternion/i": {
+		"seq": "waqqqqqeq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:const/quaternion/i"
+	},
+	"hexthings:dict_ents": {
+		"seq": "dqwaeawqd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexthings:dict_ents"
+	},
+	"oneironaut:resistdetection": {
+		"seq": "wawwwdwdwwaqqqqqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:resistdetection"
+	},
+	"hexdebug:const/cognitohazard": {
+		"seq": "wdeaqqdqeedqadqeedqaeadeaqqeadeaqqdqdeaqqeaeedqaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:const/cognitohazard"
+	},
+	"hexal:get_entity/wisp": {
+		"seq": "qqwdedwqqdaqaaww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexal:get_entity/wisp"
+	},
+	"hexcasting:cos": {
+		"seq": "qqqqqad",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:cos"
+	},
+	"hexflow:mass_rotate": {
+		"seq": "edqdewawddw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexflow:mass_rotate"
+	},
+	"hierophantics:make_damage_trigger": {
+		"seq": "qqqqqawwqdwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:make_damage_trigger"
+	},
+	"hexpose:villager_profession": {
+		"seq": "qeqwqwqwqwqeqawewawqwawadeeeee",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:villager_profession"
+	},
+	"hexcasting:eval/cc": {
+		"seq": "qwaqde",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:eval/cc"
+	},
+	"hexecuteif:can_break_block": {
+		"seq": "qaqqqqqwa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexecuteif:can_break_block"
+	},
+	"hexcasting:unique": {
+		"seq": "aweaqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:unique"
+	},
+	"slate_work:read_broadcast": {
+		"seq": "aqwqaweeeeewwaaw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.slate_work:read_broadcast"
+	},
+	"hexical:charm": {
+		"seq": "edeeeeeqaaqeeeadweeqeeqdqeeqeeqde",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:charm"
+	},
+	"hexical:unautograph": {
+		"seq": "wwqqqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:unautograph"
+	},
+	"hexical:write_shelf": {
+		"seq": "edeeedad",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:write_shelf"
+	},
+	"hexical:horrible": {
+		"seq": "wedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:horrible"
+	},
+	"hexpose:get_dimension": {
+		"seq": "qwqwqwqwqwqqaedwaqd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_dimension"
+	},
+	"hexal:wisp/move/speed/set": {
+		"seq": "aeawqqqae",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:wisp/move/speed/set"
+	},
+	"slate_work:store_item": {
+		"seq": "eaqwqaeqwaeaeqqeaeaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:store_item"
+	},
+	"ephemera:getproperties": {
+		"seq": "qaqqqqqwwdwewdw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getproperties"
+	},
+	"hexical:displace": {
+		"seq": "qaqqqqeedaqqqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:displace"
+	},
+	"slate_work:set_craft": {
+		"seq": "eaqwqaeqwaeadawwadaeaw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.slate_work:set_craft"
+	},
+	"hexcasting:index": {
+		"seq": "deeed",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:index"
+	},
+	"hexcasting:potion/levitation": {
+		"seq": "qqqqqawwawawd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/levitation"
+	},
+	"hexcasting:less": {
+		"seq": "q",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:less"
+	},
+	"hexthings:uiua_take": {
+		"seq": "qaeaqwd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexthings:uiua_take"
+	},
+	"caduceus:read/mark/iota": {
+		"seq": "adaaddad",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.caduceus:read/mark/iota"
+	},
+	"complexhex:real": {
+		"seq": "deew",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:real"
+	},
+	"lapisworks:cubic_exalt": {
+		"seq": "wqwawqwqqwqwq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lapisworks:cubic_exalt"
+	},
+	"phlexiful:read_pants_media": {
+		"seq": "aeawaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.phlexiful:read_pants_media"
+	},
+	"hexal:link/comm/send": {
+		"seq": "qqqqqwdeddw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexal:link/comm/send"
+	},
+	"hexical:blast": {
+		"seq": "qwqqadadadewweewwe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:blast"
+	},
+	"hexical:simulate_firework": {
+		"seq": "dedwaqwqqwqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:simulate_firework"
+	},
+	"hexcasting:raycast": {
+		"seq": "wqaawdd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:raycast"
+	},
+	"hexpose:get_player_saturation": {
+		"seq": "qqqadaddq",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:get_player_saturation"
+	},
+	"autumnfloods:id_write": {
+		"seq": "qaeede",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.autumnfloods:id_write"
+	},
+	"hexal:link/unlink": {
+		"seq": "qdeddqeeeeedwqdeddw",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexal:link/unlink"
+	},
+	"moreiotas:string/block/get": {
+		"seq": "awqwawqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.moreiotas:string/block/get"
+	},
+	"hexpose:get_ender_chest": {
+		"seq": "qaqdqaqdeeewedw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_ender_chest"
+	},
+	"miehex:anglebetweenscalar": {
+		"seq": "wadewqaeaqwed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:anglebetweenscalar"
+	},
+	"hexportation:send_item": {
+		"seq": "qadeeedewe",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexportation:send_item"
+	},
+	"autumnfloods:world": {
+		"seq": "dwaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:world"
+	},
+	"hexcasting:colorize": {
+		"seq": "awddwqawqwawq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:colorize"
+	},
+	"hexoverpowered:mind_stack/size": {
+		"seq": "waawweeeeewaa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexoverpowered:mind_stack/size"
+	},
+	"hexical:piston": {
+		"seq": "wqwawqwqqqeqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:piston"
+	},
+	"hexportation:spit": {
+		"seq": "daqqqaqeaqaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexportation:spit"
+	},
+	"hexcasting:zone_entity/item": {
+		"seq": "qqqqqwdeddww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/item"
+	},
+	"oneironaut:writeidea": {
+		"seq": "eweweweweweeewqaqwe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:writeidea"
+	},
+	"hexical:get_hand_lamp_rotation": {
+		"seq": "qwddedadw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:get_hand_lamp_rotation"
+	},
+	"miehex:donate": {
+		"seq": "dadawaawad",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.miehex:donate"
+	},
+	"miehex:easy_extract": {
+		"seq": "wedwdw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.miehex:easy_extract"
+	},
+	"overevaluate:themis": {
+		"seq": "dwaad",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.overevaluate:themis"
+	},
+	"hexcasting:zone_entity/living": {
+		"seq": "qqqqqwdeddwd",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:zone_entity/living"
+	},
+	"hexpose:piercing_surface_raycast": {
+		"seq": "weeaaeqeaae",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:piercing_surface_raycast"
+	},
+	"hexpose:entity_passengers": {
+		"seq": "qeeqawqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexpose:entity_passengers"
+	},
+	"hexcasting:flight/range": {
+		"seq": "awawaawq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:flight/range"
+	},
+	"hexal:link/get": {
+		"seq": "eqqqqqaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:link/get"
+	},
+	"complexhex:const/quaternion/k": {
+		"seq": "waqqqqqed",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:const/quaternion/k"
+	},
+	"ephemera:getdurabilitymainhand": {
+		"seq": "qwdea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getdurabilitymainhand"
+	},
+	"lessertp:simpler_tp": {
+		"seq": "qqqqqwqqwqqeqqwqqqw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.lessertp:simpler_tp"
+	},
+	"hexdebug:splicing/list/spellbook_index/read": {
+		"seq": "wqaeaqwedqddq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/list/spellbook_index/read"
+	},
+	"hexal:mote/storage/bind/temp": {
+		"seq": "edewedewede",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexal:mote/storage/bind/temp"
+	},
+	"hexpose:split_text": {
+		"seq": "awaqeeeeedwe",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:split_text"
+	},
+	"hexcasting:brainsweep": {
+		"seq": "qeqwqwqwqwqeqaeqeaqeqaeqaqded",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:brainsweep"
+	},
+	"hexcasting:add": {
+		"seq": "waaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:add"
+	},
+	"hexxyplanes:plane_pos": {
+		"seq": "dwawdaqqwwqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexxyplanes:plane_pos"
+	},
+	"hexical:lifetime_specklike": {
+		"seq": "adeqqaawdd",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:lifetime_specklike"
+	},
+	"oneironaut:craftrod": {
+		"seq": "eqqqqqawweqqqqqawweqqqqqawwdeqewwwwweqeeeqewwwwweqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.oneironaut:craftrod"
+	},
+	"hextra:hextra_conjurearrow": {
+		"seq": "wwdedqde",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hextra:hextra_conjurearrow"
+	},
+	"hexpose:pet_owner": {
+		"seq": "qdaqwawqeewde",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:pet_owner"
+	},
+	"hexcassettes:busy": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqaww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcassettes:busy"
+	},
+	"overevaluate:create_jumble": {
+		"seq": "deaqd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.overevaluate:create_jumble"
+	},
+	"miehex:exchant_exchange": {
+		"seq": "eeeeewdqdqdqdqdqdadwdwd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:exchant_exchange"
+	},
+	"oneironaut:extradimensionaleval": {
+		"seq": "wqwqwqwqwqwaqdeaqqe",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.oneironaut:extradimensionaleval"
+	},
+	"hierophantics:reenable_minds": {
+		"seq": "qaqqaeawaeaeqqqeqqwwqqeqqq",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hierophantics:reenable_minds"
+	},
+	"hexical:conjure_hexburst": {
+		"seq": "aadaadqaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:conjure_hexburst"
+	},
+	"hexal:wisp/trigger/move": {
+		"seq": "eqwawqwaqww",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:wisp/trigger/move"
+	},
+	"miehex:expelliarmus": {
+		"seq": "dqdaedeadqdaede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:expelliarmus"
+	},
+	"hexcasting:conjure_light": {
+		"seq": "qqd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:conjure_light"
+	},
+	"complexhex:const/quaternion/1": {
+		"seq": "waqqqqqea",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.complexhex:const/quaternion/1"
+	},
+	"hexstruction:mirror_vertical": {
+		"seq": "eawaeqeawaeaw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:mirror_vertical"
+	},
+	"hexcasting:abs": {
+		"seq": "wqaqw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:abs"
+	},
+	"hexical:discharm": {
+		"seq": "qaqwddaaeawaea",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:discharm"
+	},
+	"oneironaut:resetrod": {
+		"seq": "deaqqwqqqw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.oneironaut:resetrod"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/read": {
+		"seq": "wqaeaqwdeaaea",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/clipboard/spellbook_index/read"
+	},
+	"hexcasting:destroy_water": {
+		"seq": "dedwedade",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:destroy_water"
+	},
+	"hexical:sneaking": {
+		"seq": "wede",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:sneaking"
+	},
+	"hexcasting:arctan": {
+		"seq": "eadeeeeew",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:arctan"
+	},
+	"hexpose:get_effects_entity": {
+		"seq": "wqqq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexpose:get_effects_entity"
+	},
+	"hexical:congruent": {
+		"seq": "aaqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:congruent"
+	},
+	"hexical:recharge_lamp": {
+		"seq": "qaqwawqwqqwqwqwqwqwqq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:recharge_lamp"
+	},
+	"moreiotas:matrix/unmake/direct": {
+		"seq": "dwwdqdwwdwdwa",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.moreiotas:matrix/unmake/direct"
+	},
+	"hexdebug:splicing/view_index/read": {
+		"seq": "wqaeaqwdwaqaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexdebug:splicing/view_index/read"
+	},
+	"hexical:conjure_firework": {
+		"seq": "dedwaqwwawwqa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexical:conjure_firework"
+	},
+	"autumnfloods:tear": {
+		"seq": "wwewwedeadwdaedewweww",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.autumnfloods:tear"
+	},
+	"hexcasting:conjure_block": {
+		"seq": "qqa",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:conjure_block"
+	},
+	"hexical:has_arch_lamp": {
+		"seq": "qaqwddedqeed",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexical:has_arch_lamp"
+	},
+	"miehex:idealized_block": {
+		"seq": "wqwawqwqwqwqwqawew",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:idealized_block"
+	},
+	"ephemera:getdurabilityoffhand": {
+		"seq": "aedwq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:getdurabilityoffhand"
+	},
+	"hexal:wisp/seon/set": {
+		"seq": "aqweewqaeaqweewqaqwww",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexal:wisp/seon/set"
+	},
+	"hexal:falling_block": {
+		"seq": "wqwawqwqwqwqwqw",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexal:falling_block"
+	},
+	"slate_work:get_sents": {
+		"seq": "waeawaewawwaeq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.slate_work:get_sents"
+	},
+	"hexcasting:potion/weakness": {
+		"seq": "qqqqqaqwawaw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:potion/weakness"
+	},
+	"lapisworks:longbreath": {
+		"seq": "wewdwewewewewdwew",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:longbreath"
+	},
+	"hexcasting:explode": {
+		"seq": "aawaawaa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:explode"
+	},
+	"hexcasting:place_block": {
+		"seq": "eeeeede",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:place_block"
+	},
+	"hexcasting:or": {
+		"seq": "waw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:or"
+	},
+	"ephemera:clearrevealcost": {
+		"seq": "qdeqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.ephemera:clearrevealcost"
+	},
+	"hexical:disguise_mage_block": {
+		"seq": "deeadw",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:disguise_mage_block"
+	},
+	"hexical:key_shelf": {
+		"seq": "qaqqadaq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:key_shelf"
+	},
+	"hexical:conjure_mage_block": {
+		"seq": "dee",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:conjure_mage_block"
+	},
+	"hexflow:nested_modify": {
+		"seq": "wdwawedqdewawdw",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexflow:nested_modify"
+	},
+	"autumnfloods:merge": {
+		"seq": "wwqaqweeeeewqa",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.autumnfloods:merge"
+	},
+	"hexcasting:pow": {
+		"seq": "wedew",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:pow"
+	},
+	"lapisworks:banish_other_enchsent": {
+		"seq": "eeeeedwqwawwwawewawwwaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.lapisworks:banish_other_enchsent"
+	},
+	"oneironaut:haltrod": {
+		"seq": "aqdeeweeew",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.oneironaut:haltrod"
+	},
+	"hexical:shader_clear": {
+		"seq": "eeeeeqaqeeeee",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:shader_clear"
+	},
+	"hexpose:read_book": {
+		"seq": "awqqwaqd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:read_book"
+	},
+	"hexpose:count_max_stack": {
+		"seq": "edeeweeew",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:count_max_stack"
+	},
+	"hexcasting:less_eq": {
+		"seq": "qq",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.hexcasting:less_eq"
+	},
+	"hexboard:delete": {
+		"seq": "wqawqwewdewed",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexboard:delete"
+	},
+	"ephemera:getrider": {
+		"seq": "eqqaqqwaaw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.ephemera:getrider"
+	},
+	"hexstruction:load_structure": {
+		"seq": "aeqeawaeqea",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexstruction:load_structure"
+	},
+	"hexcasting:read/local": {
+		"seq": "qeewdweddw",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:read/local"
+	},
+	"lapisworks:fireresist": {
+		"seq": "wwqwqwadwawdawqwaeqqaqqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:fireresist"
+	},
+	"hexdim:dim/pos/set": {
+		"seq": "awqwawqdqawwwaq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexdim:dim/pos/set"
+	},
+	"hexical:serialize_pattern": {
+		"seq": "wqaedeqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexical:serialize_pattern"
+	},
+	"hexical:mage_hand": {
+		"seq": "aaqqaeea",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexical:mage_hand"
+	},
+	"hexcasting:edify": {
+		"seq": "wqaqwd",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:edify"
+	},
+	"miehex:new_idea": {
+		"seq": "qwqwqwqwqwq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.miehex:new_idea"
+	},
+	"lapisworks:write_spechand": {
+		"seq": "deeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.lapisworks:write_spechand"
+	},
+	"hexcasting:singleton": {
+		"seq": "adeeed",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:singleton"
+	},
+	"phlexiful:set_pants_threshhold": {
+		"seq": "aedwd",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.phlexiful:set_pants_threshhold"
+	},
+	"hexweb:get_response": {
+		"seq": "qqqqwweaaead",
+		"dir": "NORTH_EAST",
+		"langKey": "hexcasting:action.hexweb:get_response"
+	},
+	"moreiotas:string/case": {
+		"seq": "dwwdwwdwdd",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.moreiotas:string/case"
+	},
+	"hexcasting:akashic/write": {
+		"seq": "eeeweeeeede",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:akashic/write"
+	},
+	"hexcasting:swap": {
+		"seq": "aawdd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:swap"
+	},
+	"hexical:zone_specklike": {
+		"seq": "qqqqqwdeddwqde",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexical:zone_specklike"
+	},
+	"hexpose:item_variant": {
+		"seq": "dwaawaqwa",
+		"dir": "WEST",
+		"langKey": "hexcasting:action.hexpose:item_variant"
+	},
+	"hexcasting:readable": {
+		"seq": "aqqqqqe",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:readable"
+	},
+	"moreiotas:matrix/zero": {
+		"seq": "awwaeawwa",
+		"dir": "SOUTH_WEST",
+		"langKey": "hexcasting:action.moreiotas:matrix/zero"
+	},
+	"hexcasting:dispel_rain": {
+		"seq": "eeewwweeewwaqqddqdqd",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.hexcasting:dispel_rain"
+	},
+	"overevaluate:snap_list": {
+		"seq": "eawdq",
+		"dir": "EAST",
+		"langKey": "hexcasting:action.overevaluate:snap_list"
+	},
+	"hexpose:get_health": {
+		"seq": "wddwaqqwawq",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexpose:get_health"
+	},
+	"hexcasting:potion/slowness": {
+		"seq": "qqqqqadwawaw",
+		"dir": "SOUTH_EAST",
+		"langKey": "hexcasting:action.hexcasting:potion/slowness"
+	},
+	"hexical:right_click": {
+		"seq": "edaqq",
+		"dir": "NORTH_WEST",
+		"langKey": "hexcasting:action.hexical:right_click"
+	}
+}

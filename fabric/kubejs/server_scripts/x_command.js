@@ -88,4 +88,34 @@ ServerEvents.customCommand("data" ,e=>{
 
 })
 
+// 放入 kubejs/server_scripts/ 目录，例如 export_patterns.js
+ServerEvents.customCommand("pattern",event => {
+    // 加载必需类
+    let IXplatAbstractions = Java.loadClass('at.petrak.hexcasting.xplat.IXplatAbstractions');
+
+    let registry = IXplatAbstractions.INSTANCE.getActionRegistry();
+    let patterns = {};
+
+    for (let entry of registry.entrySet()) {
+        let key = entry.getKey();
+        let actionEntry = entry.getValue();
+        if (!actionEntry) continue;
+
+        let idStr = key.location().toString();          // 注册名，如 "hexcasting:introspection"
+        let prototype = actionEntry.prototype();        // 原型图案
+        let seq = prototype.anglesSignature();          // 笔顺字符串
+        let startDir = prototype.getStartDir().name();  // 起始方向，如 "NORTH_EAST"
+
+        patterns[idStr] = {
+            seq: seq,
+            dir: startDir,
+            langKey:"hexcasting:action."+idStr
+        };
+    }
+    
+    // 写入 JSON
+    JsonIO.write('kubejs/config/registry/patterns.json', patterns);
+    event.player.tell(`已导出 ${Object.keys(patterns).length} 个图案到 kubejs/config/registry/patterns.json`);
+});
+
 

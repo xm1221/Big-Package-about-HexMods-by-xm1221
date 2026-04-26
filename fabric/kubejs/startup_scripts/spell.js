@@ -2057,7 +2057,7 @@ return sideEffects
 },
 
 //柏拉图之精思
-"new_idea":(stack,env)=>{
+/*"new_idea":(stack,env)=>{
     let idea = new IdeaIota("EMPTY",0,0,0,0)
     stack.push(idea)
 },
@@ -2189,7 +2189,7 @@ return sideEffects
     let iota = new IdeaIota(idea.entityTypeId,mapping[1],mapping[2],mapping[3],mapping[4])
     stack.push(iota) 
     
-},
+},*/
 
 //普罗米修斯之启示
 "guide":(stack,env)=>{
