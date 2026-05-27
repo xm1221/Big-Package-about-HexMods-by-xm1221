@@ -1,0 +1,5 @@
+
+["HexWeb Configs"]
+	#A blacklist of addresses HTTP requests and the like cannot be sent to!
+	"Address Blacklist" = ["127\\.0\\.0\\.1"]
+

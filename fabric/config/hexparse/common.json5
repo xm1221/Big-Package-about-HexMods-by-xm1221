@@ -15,6 +15,8 @@
 	"indentParsingMode": "MANUAL",
 	// code indentation add to `tab_N`'s inside nested macros
 	"addIndentInsideMacro": true,
+	// Forced using short ID for patterns even from addons
+	"alwaysShortName": true,
 	// cost to parse single keyword into iota
 	"parserBaseCost": 0,
 	// display colorful nested lists and intro/retros
@@ -28,5 +30,7 @@
 	// how many continuous blank lines are allowed in parsed spell; excess ones will be ignored
 	"maxBlankLineCount": 0,
 	// randomize property names based on input string
-	"fairPlayPropNames": false
+	"fairPlayPropNames": false,
+	// Whether server sends all `en_us` action names to client on player login
+	"syncDisplayToClient": false
 }

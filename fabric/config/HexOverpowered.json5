@@ -49,7 +49,7 @@
 		// <Personal Media> Fake players (for example, Deployer from Create) won't regenerate their media pool
 		"FakePlayerDontRegenMedia": true,
 		// <Personal Media> Only activates personal media bar after enlightened
-		"PersonalMediaAfterEnlightened": false,
+		"PersonalMediaAfterEnlightened": true,
 		// <Personal Media> Triggers events when personal media pool changed
 		"FiresPersonalMediaEvents": true,
 		// <Amethyst Circle> media waves from circles go through amethyst budding blocks, and accelerates their crystal growth

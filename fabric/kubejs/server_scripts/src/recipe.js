@@ -8,7 +8,7 @@ ServerEvents.recipes(event =>{
 
     })
 
-ServerEvents.recipes(event =>{
+/*ServerEvents.recipes(event =>{
   
     event.remove({input:'minecraft:stick',output:Item.of('hexchanting:amethyst_sword', '{Damage:0}')})
     event.remove({input:'minecraft:stick',output:Item.of('hexchanting:amethyst_axe', '{Damage:0}')})
@@ -130,7 +130,7 @@ ServerEvents.recipes(e=>{
        ])
         .id(output); // 使用唯一ID
     });
-})
+})*/
 
 
 

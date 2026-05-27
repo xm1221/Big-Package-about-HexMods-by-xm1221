@@ -1,7 +1,0 @@
-{
-  "name": "miehex.category.ccrecipes",
-  "icon": "miehex:media_netherite",
-  "description": "miehex.category.ccrecipes.desc",
-  "sortnum": 1,
-  "parent": "hexcasting:items"
-}

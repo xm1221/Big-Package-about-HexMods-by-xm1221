@@ -144,7 +144,7 @@
   "hexcasting.mishap.invalid_value.class.living": "A living entity",
   "hexcasting.mishap.invalid_value.class.def": "A function",
 
-  "miehex.entry.miehex_patterns": "Hexcasting Big Pack Patterns",
+  "miehex.entry.miehex_bp_patterns": "Hexcasting Big Pack Patterns",
   "miehex.entry.miehex_patterns.desc": "New patterns added by the Hexcasting Major Pack",
   "miehex.entry.ideas_world_entry": "Ideas World Entry",
   "miehex.entry.ideas_world_entry.desc": "Creating a portal to another realm of consciousness",

@@ -28,7 +28,7 @@ function BrainsweepRegister(id,priority,entityId,iotaTypeId,cost,namespace){
 }
 
 //全知
-BrainsweepRegister("omniscience",-1,"minecraft:player","oneironaut:dim",100000000,"miehex")
+/*BrainsweepRegister("omniscience",0,"minecraft:player","oneironaut:dim",100000000,"miehex")
 
 //如鱼得水
 BrainsweepRegister("water_breath_0",0,"minecraft:salmon","hexcasting:entity",10000,"miehex")
@@ -36,7 +36,7 @@ BrainsweepRegister("water_breath_1",0,"minecraft:cod","hexcasting:entity",10000,
 BrainsweepRegister("water_breath_2",0,"minecraft:tropical_fish","hexcasting:entity","miehex")
 
 //自我标记
-BrainsweepRegister("self_pat",0,"minecraft:player","pattern",100000,"miehex")
+BrainsweepRegister("self_pat",0,"minecraft:player","pattern",100000,"miehex")*/
 
 
 

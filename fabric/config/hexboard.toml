@@ -12,4 +12,5 @@ hudInfoStaffModeColor = 16777215
 hudInfoTargetIndexColor = 16777215
 hudInfoQuartzTypeblockColor = 16777215
 hudInfoWoolTypeblockColor = 16777215
+patchouliSearchCategories = ["hexcasting:patterns", "hexcasting:patterns/spells", "hexcasting:patterns/great_spells"]
 maxResolvedIota = 2048

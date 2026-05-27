@@ -20,8 +20,8 @@ key_key.smoothCamera:key.keyboard.unknown:NONE
 key_key.fullscreen:key.keyboard.f11:NONE
 key_key.spectatorOutlines:key.keyboard.unknown:NONE
 key_key.swapOffhand:key.keyboard.f:NONE
-key_key.saveToolbarActivator:key.keyboard.c:NONE
-key_key.loadToolbarActivator:key.keyboard.x:NONE
+key_key.saveToolbarActivator:key.keyboard.unknown:NONE
+key_key.loadToolbarActivator:key.keyboard.unknown:NONE
 key_key.advancements:key.keyboard.l:NONE
 key_key.hotbar.1:key.keyboard.1:NONE
 key_key.hotbar.2:key.keyboard.2:NONE
@@ -96,7 +96,9 @@ key_key.jei.previousCategory:key.keyboard.page.up:NONE
 key_key.jei.nextCategory:key.keyboard.page.down:NONE
 key_key.jei.closeRecipeGui:key.keyboard.escape:NONE
 key_key.jei.copy.recipe.id:key.keyboard.unknown:NONE
-key_keys.lapisworks.use_casting_ring:key.keyboard.unknown:NONE
+key_key.miehex.allinone_0:key.keyboard.right:NONE
+key_key.miehex.allinone_1:key.keyboard.left:NONE
+key_keys.lapisworks.use_casting_ring:key.keyboard.v:NONE
 key_key.modmenu.open_menu:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b:NONE
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.c:NONE

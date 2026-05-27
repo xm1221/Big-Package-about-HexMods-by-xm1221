@@ -1,4 +1,4 @@
-ServerEvents.blockLootTables(e => {
+/*ServerEvents.blockLootTables(e => {
     e.addBlock("miehex:pure_allay_block", loot => {
         loot.addPool(pool => {
             pool.addItem('3x miehex:pure_allay_shard').weight(2)
@@ -9,7 +9,7 @@ ServerEvents.blockLootTables(e => {
         })
     })
 
-})
+})*/
 
 function serializeIota(iota) {
     let tag = new CompoundTag();

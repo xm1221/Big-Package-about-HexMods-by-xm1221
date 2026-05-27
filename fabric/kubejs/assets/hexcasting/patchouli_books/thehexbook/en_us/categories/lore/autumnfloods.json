@@ -1,8 +1,0 @@
-{
-  "name": "miehex.category.babel_tower",
-  "icon": "minecraft:end_crystal",
-  "description": "miehex.category.babel_tower.desc",
-  "parent": "hexcasting:lore",
-  "sortnum": 0,
-  "secret": true
-}

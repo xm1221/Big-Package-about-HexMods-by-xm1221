@@ -1,10 +1,18 @@
 {
 	"common": {
+		// <Scope> Reactive Focus(es) inside player's hands take effect; ignored if `Inventory` set to true
+		"EnablesFocusInHands": true,
 		// <Scope> Reactive Focus(es) inside player's inventory (including main/off hand) take effect
 		"EnablesFocusInsideInventory": true,
+		// <Scope> Reactive Focus(es) inside player's ender chest take effect
+		"EnablesFocusInsideEnderChest": false,
 		// <Scope> Reactive Focus(es) inside player's curios/trinkets slots take effect
 		"EnablesFocusInsideAccessories": true,
 		// <Scope> Only the first Reactive Focus of a type met take effect; if set to false, all Focuses of certain type are triggered for each event (may cause performance impact)
-		"FirstFocusOnly": true
+		"FirstFocusOnly": true,
+		// <Execute> Recursive triggered events in a tick deeper than this value will be rejected (e.g. teleport self inside `Teleported` focus)
+		"MaxRecursiveEventsPerTick": 10,
+		// <Execute> per time right before the hex get executed, in 1e-4 dust
+		"EventTriggerTax": 0
 	}
 }

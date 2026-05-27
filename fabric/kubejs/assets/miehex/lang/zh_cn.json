@@ -137,7 +137,7 @@
     "hexcasting.mishap.invalid_value.class.living":"一个生物",
     "hexcasting.mishap.invalid_value.class.def":"一个函数",
 
-  "miehex.entry.miehex_patterns": "咒法学大包图案",
+  "miehex.entry.miehex_bp_patterns": "咒法学大包图案",
   "miehex.entry.miehex_patterns.desc": "咒法学大包新增图案",
   "miehex.entry.ideas_world_entry": "理念世界入口",
   "miehex.entry.ideas_world_entry.desc": "创建一个通往意识领域另一个维度的传送门",
